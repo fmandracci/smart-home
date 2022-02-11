@@ -1,0 +1,5 @@
+L
+1;PLC_T2_humidity                ;00007F;0.00;100.00;
+1;PLC_T2_humidity_bis            ;0000FF;0.00;100.00;
+1;PLC_T2_humidity_ext            ;00AAFF;0.00;100.00;
+1;PLC_T2_heating                 ;FF0000;-1;3.00;

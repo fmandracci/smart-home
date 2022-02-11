@@ -1,0 +1,13 @@
+L
+1;PLC_EP_wattmeter_M_W           ;FF0000;0;4000;
+1;PLC_EP_wattmeter_F_W           ;FF5500;0;4000;
+1;PLC_EP_wattmeter01_W           ;FFAA00;0;4000;
+1;PLC_EP_wattmeter02_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter03_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter04_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter05_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter06_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter07_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter08_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter09_W           ;FFFF00;0;4000;
+1;PLC_EP_wattmeter10_W           ;FFFF00;0;4000;

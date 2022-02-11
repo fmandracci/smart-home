@@ -1,0 +1,5 @@
+L
+1;PLC_EP_wattmeter01_W           ;AAAA00;-4500;4500;
+1;PLC_EP_wattmeter_M_W           ;AA0000;-4500;4500;
+1;PLC_EP_wattmeter_F_W           ;AA6600;-4500;4500;
+0;                               ;FFFF00;-4500;4500;

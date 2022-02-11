@@ -1,0 +1,147 @@
+(****************************************************************************
+**
+** Copyright (C) 2021 Francesco Mandracci
+** Contact: https://github.com/fmandracci/smart-home
+**
+** This file is part of the Smart Home Framework.
+**
+** Commercial License Usage
+** Licensees holding valid commercial licenses may use this file in
+** accordance with the terms contained in a written agreement
+** between you and the copyright owner.
+**
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 3 as published by the Free Software
+** Foundation and appearing in the file LICENSE included in the
+** packaging of this file. Please review the following information to
+** ensure the GNU Lesser General Public License version 3 requirements
+** will be met: https://www.gnu.org/licenses/lgpl-3.0.html.
+**
+****************************************************************************)
+
+CONST
+
+	(* Control Types ------------------------------ *)
+
+	ControlType_0  :UINT := 0;  (* no controls *)
+	ControlType_1  :UINT := 1;  (* EP: *)
+	ControlType_2  :UINT := 2;  (* BA: *) 
+	ControlType_3  :UINT := 3;  (* Tn: *) 
+	ControlType_4  :UINT := 4;  (* Tn: *) 
+	ControlType_5  :UINT := 5;  (* Tn: *) 
+	ControlType_6  :UINT := 6;  (* EP+T1..4+BA: *) 
+	ControlType_7  :UINT := 7;  (* EP+T1..6+BA: *) 
+	ControlType_8  :UINT := 8;  (* Tn: *) 
+	ControlType_10 :UINT := 10; (* Tn: *) 
+	ControlType_11 :UINT := 11; (* Tn: *)
+	ControlType_12 :UINT := 12; (* EP+T1+BA: *)
+	ControlType_13 :UINT := 13; (* EP+T1+BA: *)
+	ControlType_14 :UINT := 14; (* EP+T1+BA: *)
+	ControlType_15 :UINT := 15; (* Tn: *)
+
+	WatchDogTimeout_s : UINT := 2; (* ARQ, MPNE and MPNC *)
+	ControlPeriod : TIME := T#500ms;
+	TacPeriod_s : UINT := 7;
+	Decision_TicInTac : UINT := 2;
+
+	(* ElectricPanel ---------------------------- *)
+
+	BlackoutDetected_enable: BOOL := false;
+	BlackoutDetected_delay : TIME := T#9s;
+
+	(* Thermostats ------------------------------ *)
+
+	RollingAverageSize      : INT :=  16;
+	HalfRollingAverageSize  : INT :=  RollingAverageSize / 2;
+	RollingAverageMaxDeltaT : INT := 42;(* 4.2 °C *)
+
+	TemperatureHysteresis  : INT :=  2; (* 0.2 °C *)
+	HumidityHysteresis     : INT := 70; (* 7.0 %RH *)
+	LowPassTiming          : TIME := T#120s;
+
+	TemperatureSetPoint_min : INT := 100; (* 10.0 °C *)
+	TemperatureSetPoint_max : INT := 300; (* 30.0 °C *)
+
+	TemperatureErrorValue   : INT := -2730; (* -273.0 °C = AnIn read error *)
+	HumidityErrorValue      : INT :=     0; (* 0 % = AnIn read error *)
+
+	HumiditySetPoint_min : INT := 300; (* 30.0 % *)
+	HumiditySetPoint_max : INT := 900; (* 90.0 % *)
+
+	HEATING_OFF      : INT := 0;
+	HEATING_AUTO     : INT := 1;
+	HEATING_ECONOMY  : INT := 2;
+	HEATING_COMFORT  : INT := 3;
+	HEATING_BOOST    : INT := 4;
+	
+	(* Burglar Alarm ---------------------------- *)
+
+	ALARM_STATUS_ZERO    : UINT := 16#0000;
+	ALARM_STATUS_OFF     : UINT := 16#0001;
+	ALARM_STATUS_ARMED   : UINT := 16#0002;
+	ALARM_STATUS_ENABLED : UINT := 16#0003;
+	ALARM_STATUS_RINGING : UINT := 16#0004;
+	ALARM_STATUS_MUTED   : UINT := 16#0005;
+	ALARM_STATUS_TESTING : UINT := 16#C1A0;
+
+	ALARM_INDEX_NOTHING   : UINT := 0;
+	ALARM_INDEX_DAYTIME   : UINT := 1;
+	ALARM_INDEX_NIGHTTIME : UINT := 2;
+	ALARM_INDEX_EVERYTHING: UINT := 3;
+	ALARM_INDEX_COUNT     : UINT := 4;
+
+	ALARM_MASK_NOTHING           : UDINT := 16#00000000;
+
+	ALARM_MASK_DAYTIME_DEFAULT    : UDINT := 16#00FF00FF;
+	ALARM_MASK_NIGHTTIME_DEFAULT  : UDINT := 16#0FFF0FFF;
+	ALARM_MASK_EVERYTHING_DEFAULT : UDINT := 16#FFFFFFFF;
+
+	ALARM_MASK_DAYTIME_DEFAULT_3    : UDINT := 16#00000001;
+	ALARM_MASK_NIGHTTIME_DEFAULT_3  : UDINT := 16#00000003;
+	ALARM_MASK_EVERYTHING_DEFAULT_3 : UDINT := 16#00000007;
+
+	                                            (* BBBBAAAA *)
+	                                            (* F..0F..0 *)
+	ALARM_MASK_DAYTIME_DEFAULT_6    : UDINT := 16#6bbfebfe; (* no i.r. sensors p0, p1, p-1 *)
+	ALARM_MASK_NIGHTTIME_DEFAULT_6  : UDINT := 16#6bbfFbfe; (* no i.r. sensors p0, p1      *)
+	ALARM_MASK_EVERYTHING_DEFAULT_6 : UDINT := 16#6bbfFFff; (* installed sensors           *)
+
+	ALARM_COMMAND_NONE       : UDINT := 16#00000000;
+	ALARM_COMMAND_DAYTIME    : UDINT := 16#c1a0CC01;
+	ALARM_COMMAND_NIGHTTIME  : UDINT := 16#c1a0CC02;
+	ALARM_COMMAND_EVERYTHING : UDINT := 16#c1a0CC03;
+	ALARM_COMMAND_ENABLE     : UDINT := 16#c1a0EEEE;
+	ALARM_COMMAND_DISABLE    : UDINT := 16#c1a0DDDD;
+	ALARM_COMMAND_ACK        : UDINT := 16#c1a0BBBB;
+	ALARM_COMMAND_TEST       : UDINT := 16#c1a0FFFF;
+
+	ALARM_SENSOR_DISABLED : UINT := 0; (* not visible *)
+	ALARM_SENSOR_IGNORED  : UINT := 1; (* dark grey   *)
+	ALARM_SENSOR_STILL_NG : UINT := 2; (* yellow      *)
+	ALARM_SENSOR_GOOD     : UINT := 3; (* green       *)
+	ALARM_SENSOR_NOT_GOOD : UINT := 4; (* red         *)
+	ALARM_SENSOR_WAS_NG   : UINT := 5; (* yellow      *)
+
+	(* General ---------------------------------- *)
+
+	NODE_NO_NODE     : UDINT := 0;
+	NODE_NODE_OK     : UDINT := 1;
+	NODE_TIMEOUT     : UDINT := 2;
+	NODE_BLACKLIST   : UDINT := 3;
+	NODE_DISCONNECTED: UDINT := 4;
+	NODE_DISABLED    : UDINT := 5;
+
+	AnOut_0_10V : UINT := 2;
+
+	AnIn_0_10V : UINT := 2;
+	AnIn_PT100R : UINT := 7;
+	AnIn_LowPass : UINT := 200; (* 200 * 5 ms = 1 s *)
+
+	AnIn_MPNC_Pt100R : UINT := 16#0007;
+	AnIn_MPNCx4_Pt100R : UINT := 16#0777;
+	
+	DigDir_IN : BOOL := false;
+	DigDir_OUT : BOOL := true;
+
+END_CONST

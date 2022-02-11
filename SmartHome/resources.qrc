@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/HeatCool.png</file>
+        <file>icons/SkipBackward.png</file>
+        <file>icons/SeekBackward.png</file>
+        <file>icons/SkipForward.png</file>
+        <file>icons/SeekForward.png</file>
+        <file>icons/Stop.png</file>
+        <file>icons/Start.png</file>
+        <file>icons/Pause.png</file>
+        <file>icons/System.png</file>
+        <file>icons/Antifurto.png</file>
+        <file>icons/Clessidra.png</file>
+        <file>icons/Chronometer.png</file>
+        <file>icons/LampOn.png</file>
+        <file>icons/Flash.png</file>
+        <file>icons/Lamp.png</file>
+        <file>icons/Wattmeter.png</file>
+        <file>icons/LedRed.png</file>
+        <file>icons/LedGreen.png</file>
+        <file>icons/LedDarkGrey.png</file>
+        <file>icons/Turn_off.png</file>
+        <file>icons/LedBeige.png</file>
+        <file>icons/LedDarkGreen.png</file>
+        <file>icons/LedDarkRed.png</file>
+        <file>icons/oox.png</file>
+        <file>icons/oxo.png</file>
+        <file>icons/xoo.png</file>
+        <file>icons/LampGreen.png</file>
+        <file>icons/nymea.png</file>
+        <file>icons/range_scale.png</file>
+        <file>icons/LampIcon.png</file>
+    </qresource>
+    <qresource prefix="/fonts"/>
+</RCC>

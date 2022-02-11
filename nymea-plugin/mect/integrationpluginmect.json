@@ -1,0 +1,698 @@
+{
+    "name": "mect",
+    "displayName": "Mect",
+    "id": "c5405b44-21f0-11ec-8d38-012552767dab",
+    "vendors": [
+        {
+            "name": "mect",
+            "displayName": "Mect",
+            "id": "f1fab412-21f1-11ec-8d38-012552767dab",
+            "thingClasses": [
+            {
+                "name": "mectThermostat",
+                "displayName": "Mect Smart Thermostat",
+                "id": "00415544-21f2-11ec-8d38-012552767dab",
+                "setupMethod": "JustAdd",
+                "createMethods": ["User"],
+                "interfaces": ["thermostat", "connectable"],
+                "settingsTypes": [
+                ],
+                "paramTypes": [
+                    {
+                        "id": "a3458bd4-21fc-11ec-8d38-012552767dab",
+                        "name": "refreshTime",
+                        "type": "int",
+                        "defaultValue": 1,
+                        "minValue": 1,
+                        "maxValue": 600,
+                        "displayName": "Read Period:"
+                    } ,
+                    {
+                        "id": "caab1596-21fb-11ec-8d38-012552767dab",
+                        "name": "ipAddress",
+                        "type": "QString",
+                        "inputType" : "IPv4Address",
+                        "displayName": "IP Address:"
+                    } ,
+                    {
+                        "id": "5757bb1c-22a5-11ec-86f9-1d440477e796",
+                        "name": "ipPort",
+                        "type": "int",
+                        "displayName": "Port:",
+                        "defaultValue": 502
+                    } ,
+                    {
+                        "id": "5b1eb6c4-22b9-11ec-86f9-1d440477e796",
+                        "name": "thermoId",
+                        "type": "int",
+                        "defaultValue": 1,
+                        "minValue": 1,
+                        "maxValue": 6,
+                        "displayName": "Termostat Id:"
+                    } ,
+                    {
+                        "id": "ef9750a0-21f5-11ec-8d38-012552767dab",
+                        "name": "roomName",
+                        "type": "QString",
+                        "displayName": "Room Name:"
+                    }
+                ],
+                "stateTypes": [
+                    {
+                        "id": "bda650b0-2825-11ec-a8ae-a7dc73f7da77",
+                        "name": "zoneName",
+                        "type": "QString",
+                        "writable": false,
+                        "defaultValue": "",
+                        "displayName": "Zona:",
+                        "displayNameEvent": "showZone"
+                    } ,
+                    {
+                        "id": "90b6b2e2-229f-11ec-86f9-1d440477e796",
+                        "name": "connected",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Connesso",
+                        "displayNameEvent": "checkConnection"
+                    } ,
+                    {
+                        "id": "5d4d075a-22c0-11ec-86f9-1d440477e796",
+                        "name": "heartBeat",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "HeartBeat:",
+                        "displayNameEvent": "displayHB"
+                    } ,
+                    {
+                        "id": "66de1f74-4620-11ec-af96-f18e8a9eafa8",
+                        "name": "controlType",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Control Type:",
+                        "displayNameEvent": "displayTH_CT"
+                    } ,
+                    {
+                        "id": "5d0f1b58-2779-11ec-8cb9-81330af72ead",
+                        "name": "isNightTime",
+                        "type": "QString",
+                        "writable": false,
+                        "defaultValue": "",
+                        "displayName": "Periodo:",
+                        "displayNameEvent": "showDT"
+                    } ,
+                    {
+                        "id": "2438c9ba-21f6-11ec-8d38-012552767dab",
+                        "name": "temperature",
+                        "type": "double",
+                        "unit" : "DegreeCelsius",
+                        "writable": false,
+                        "defaultValue": 20,
+                        "minValue": -20,
+                        "maxValue": 60,
+                        "displayName": "Temperatura 1:",
+                        "displayNameEvent": "Room_Temp",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "0c51a71a-22bc-11ec-86f9-1d440477e796",
+                        "name": "temperature2",
+                        "type": "double",
+                        "unit" : "DegreeCelsius",
+                        "writable": false,
+                        "defaultValue": 20,
+                        "minValue": -20,
+                        "maxValue": 60,
+                        "displayName": "Temperatura 2:",
+                        "displayNameEvent": "showTemp2"
+                    } ,
+                    {
+                        "id": "3d03c992-22c1-11ec-86f9-1d440477e796",
+                        "name": "tempExt",
+                        "type": "double",
+                        "unit" : "DegreeCelsius",
+                        "writable": false,
+                        "defaultValue": 20,
+                        "minValue": -20,
+                        "maxValue": 60,
+                        "displayName": "Temperatura Esterna:",
+                        "displayNameEvent": "Ext_Temp",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "341e603a-22bc-11ec-86f9-1d440477e796",
+                        "name": "humidity",
+                        "type": "double",
+                        "unit" : "Percentage",
+                        "writable": false,
+                        "defaultValue": 50,
+                        "minValue": 0,
+                        "maxValue": 100,
+                        "displayName": "Umidità 1:",
+                        "displayNameEvent": "Room_Humidity",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "ac79c952-22c1-11ec-86f9-1d440477e796",
+                        "name": "humidity2",
+                        "type": "double",
+                        "unit" : "Percentage",
+                        "writable": false,
+                        "defaultValue": 50,
+                        "minValue": 0,
+                        "maxValue": 100,
+                        "displayName": "Umidità 2:",
+                        "displayNameEvent": "showHM"
+                    } ,
+                    {
+                        "id": "0d57668a-22c2-11ec-86f9-1d440477e796",
+                        "name": "humidityExt",
+                        "type": "double",
+                        "unit" : "Percentage",
+                        "writable": false,
+                        "defaultValue": 50,
+                        "minValue": 0,
+                        "maxValue": 100,
+                        "displayName": "Umidità Ext:",
+                        "displayNameEvent": "showHM"
+                    } ,
+                    {
+                        "id": "352b879c-2522-11ec-a41b-1b205b7b7f41",
+                        "name": "targetTemperature",
+                        "displayName": "Set Point Temperatura",
+                        "displayNameEvent": "New_SetPoint_T",
+                        "displayNameAction": "Impostato Set Point Temperatura",
+                        "type": "double",
+                        "unit": "DegreeCelsius",
+                        "defaultValue": 21,
+                        "minValue": 5,
+                        "maxValue": 35,
+                        "writable": true,
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "a4ade8a6-25bf-11ec-8c20-5925525cd649",
+                        "name": "targetHumidity",
+                        "displayName": "Set Point Umidità",
+                        "displayNameEvent": "New_SetPoint_H",
+                        "displayNameAction": "Impostato Set Point Umidità",
+                        "type": "int",
+                        "unit": "Percentage",
+                        "defaultValue": 50,
+                        "minValue": 0,
+                        "maxValue": 100,
+                        "writable": true,
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "9f259e22-25c1-11ec-8c20-5925525cd649",
+                        "name": "heatingOn",
+                        "displayName": "Acceso",
+                        "displayNameEvent": "Acceso/Spento Riscaldamento",
+                        "type": "bool",
+                        "defaultValue": false,
+                        "writable": false,
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "8f0d6230-25c2-11ec-8c20-5925525cd649",
+                        "name": "heatingStatus",
+                        "displayName": "Modalità Riscaldamento",
+                        "displayNameEvent": "Nuova Modalità",
+                        "displayNameAction": "Impostata Nuova Modalità",
+                        "type": "QString",
+                        "defaultValue": "Off",
+                        "possibleValues" :  ["Off", "Auto", "-2", "+2", "Boost"],
+                        "writable": true,
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "336e2fce-2688-11ec-b153-fb94fab0dd11",
+                        "name": "heatingTimer",
+                        "displayName": "Timer Riscaldamento",
+                        "displayNameEvent": "varTimer",
+                        "type": "QString",
+                        "defaultValue": "00:00",
+                        "writable": false
+                    } ,
+                    {
+                        "id": "7165d986-4626-11ec-af96-f18e8a9eafa8",
+                        "name": "requestedW",
+                        "displayName": "W Richiesti",
+                        "displayNameEvent": "requestedWE",
+                        "type": "uint",
+                        "unit" : "Watt",
+                        "defaultValue": "0",
+                        "writable": false
+                    }
+                ]
+            } ,
+            {
+                "name": "mectElectricPanel",
+                "displayName": "Mect Smart Electric Panel",
+                "id": "9dbc9a82-26b0-11ec-b153-fb94fab0dd11",
+                "setupMethod": "JustAdd",
+                "createMethods": ["User"],
+                "interfaces": [ "smartmeterconsumer",  "connectable" ],
+                "settingsTypes": [
+                ],
+                "paramTypes": [
+                    {
+                        "id": "b5dd1b64-26b0-11ec-b153-fb94fab0dd11",
+                        "name": "refreshTime",
+                        "type": "int",
+                        "defaultValue": 1,
+                        "minValue": 1,
+                        "maxValue": 600,
+                        "displayName": "Read Period:"
+                    } ,
+                    {
+                        "id": "01c369ac-26b1-11ec-b153-fb94fab0dd11",
+                        "name": "ipAddress",
+                        "type": "QString",
+                        "inputType" : "IPv4Address",
+                        "displayName": "IP Address:"
+                    } ,
+                    {
+                        "id": "0dc2903e-26b1-11ec-b153-fb94fab0dd11",
+                        "name": "ipPort",
+                        "type": "int",
+                        "displayName": "Port:",
+                        "defaultValue": 502
+                    } ,
+                    {
+                        "id": "e24d8d64-26b0-11ec-b153-fb94fab0dd11",
+                        "name": "panelName",
+                        "type": "QString",
+                        "displayName": "Panel Name:"
+                    }
+                ],
+                "stateTypes": [
+                    {
+                        "id": "ae7f2124-2826-11ec-a8ae-a7dc73f7da77",
+                        "name": "epName",
+                        "type": "QString",
+                        "writable": false,
+                        "defaultValue": "",
+                        "displayName": "Pannello:",
+                        "displayNameEvent": "showPN"
+                    } ,
+                    {
+                        "id": "04d85326-2785-11ec-837c-93154f6d0f7e",
+                        "name": "connected",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Connesso",
+                        "displayNameEvent": "checkConnection"
+                    } ,
+                    {
+                        "id": "4ae3aad6-26b9-11ec-b153-fb94fab0dd11",
+                        "name": "heartBeat",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "HeartBeat:",
+                        "displayNameEvent": "displayEPHB"
+                    } ,
+                    {
+                        "id": "a644a78c-4620-11ec-af96-f18e8a9eafa8",
+                        "name": "controlType",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Control Type:",
+                        "displayNameEvent": "displayEP_CT"
+                    } ,
+                    {
+                        "id": "58f97538-26b9-11ec-b153-fb94fab0dd11",
+                        "name": "enabledMeters",
+                        "type": "int",
+                        "writable": false,
+                        "defaultValue": 1,
+                        "displayName": "Enabled Meters:",
+                        "displayNameEvent": "showWM"
+                    } ,
+                    {
+                        "id": "35d27196-462f-11ec-af96-f18e8a9eafa8",
+                        "name": "isBlackOut",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Black Out:",
+                        "displayNameEvent": "isBlackOut",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "412318ca-462f-11ec-af96-f18e8a9eafa8",
+                        "name": "isOverload",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Overload:",
+                        "displayNameEvent": "isOverload",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "61519058-26b9-11ec-b153-fb94fab0dd11",
+                        "name": "inVolt",
+                        "type": "double",
+                        "unit" : "Volt",
+                        "writable": false,
+                        "defaultValue": 110,
+                        "displayName": "Tensione:",
+                        "displayNameEvent": "Main_Voltage",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "6a2d856a-26b9-11ec-b153-fb94fab0dd11",
+                        "name": "inHz",
+                        "type": "double",
+                        "unit" : "Hertz",
+                        "writable": false,
+                        "defaultValue": 60,
+                        "displayName": "Frequenza:",
+                        "displayNameEvent": "Main_Frequency",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "7140f512-278b-11ec-9422-bd4a14aeab88",
+                        "name": "currentPower",
+                        "type": "double",
+                        "unit" : "Watt",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Potenza:",
+                        "displayNameEvent": "Main_Power",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "8d46e53a-3bce-11ec-a04f-b7277e4b5046",
+                        "name": "MainActivePower",
+                        "type": "int",
+                        "unit" : "VoltAmpere",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Potenza Attiva VA:",
+                        "displayNameEvent": "Main_Active_Power",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "12a77f2e-278d-11ec-9422-bd4a14aeab88",
+                        "name": "MainCurrent",
+                        "type": "double",
+                        "unit" : "Ampere",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Corrente:",
+                        "displayNameEvent": "Main_Current",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "48cfef28-2823-11ec-a8ae-a7dc73f7da77",
+                        "name": "totalEnergyConsumed",
+                        "type": "double",
+                        "unit" : "KiloWattHour",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Potenza Totale:",
+                        "displayNameEvent": "Main_Energy_Consumed",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "7492da1a-3bd0-11ec-a04f-b7277e4b5046",
+                        "name": "MainDeltaKWh60s",
+                        "type": "double",
+                        "unit" : "KiloWattHour",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Delta 60s:",
+                        "displayNameEvent": "showKWh60s"
+                    } ,
+                    {
+                        "id": "5d650a0c-462f-11ec-af96-f18e8a9eafa8",
+                        "name": "requestedW",
+                        "type": "uint",
+                        "unit" : "Watt",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "W Richiesti:",
+                        "displayNameEvent": "Requested_Power",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "52f4ef10-462f-11ec-af96-f18e8a9eafa8",
+                        "name": "assignedW",
+                        "type": "uint",
+                        "unit" : "Watt",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "W Assegnati:",
+                        "displayNameEvent": "Assigned_Power",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "2fcc2012-462a-11ec-af96-f18e8a9eafa8",
+                        "name": "FPower",
+                        "type": "int",
+                        "unit" : "Watt",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Potenza F:",
+                        "displayNameEvent": "F_Power",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "3e797af6-462a-11ec-af96-f18e8a9eafa8",
+                        "name": "FActivePower",
+                        "type": "int",
+                        "unit" : "VoltAmpere",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Potenza Attiva F VA:",
+                        "displayNameEvent": "F_VA"
+                    } ,
+                    {
+                        "id": "4bcfd4f2-462a-11ec-af96-f18e8a9eafa8",
+                        "name": "FTotalKWh",
+                        "type": "double",
+                        "unit" : "KiloWattHour",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "KWh Totali F:",
+                        "displayNameEvent": "F_KWh",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "58ef23fe-462a-11ec-af96-f18e8a9eafa8",
+                        "name": "FDeltaKWh60s",
+                        "type": "double",
+                        "unit" : "KiloWattHour",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Delta F 60s:",
+                        "displayNameEvent": "showFKWh60s"
+                    }
+                ]
+            } ,
+            {
+                "name": "mectAntifurto",
+                "displayName": "Mect Smart Burglar Alarm",
+                "id": "5cb7f4fc-2c3a-11ec-9dd3-d3fab96ae548",
+                "setupMethod": "JustAdd",
+                "createMethods": ["User"],
+                "interfaces": ["connectable"],
+                "settingsTypes": [
+                ],
+                "paramTypes": [
+                    {
+                        "id": "9dc3d7ac-2c3c-11ec-9dd3-d3fab96ae548",
+                        "name": "refreshTime",
+                        "type": "int",
+                        "defaultValue": 1,
+                        "minValue": 1,
+                        "maxValue": 600,
+                        "displayName": "Read Period:"
+                    } ,
+                    {
+                        "id": "b7a58bde-2c3c-11ec-9dd3-d3fab96ae548",
+                        "name": "ipAddress",
+                        "type": "QString",
+                        "inputType" : "IPv4Address",
+                        "displayName": "IP Address:"
+                    } ,
+                    {
+                        "id": "c069154c-2c3c-11ec-9dd3-d3fab96ae548",
+                        "name": "ipPort",
+                        "type": "int",
+                        "displayName": "Port:",
+                        "defaultValue": 502
+                    } ,
+                    {
+                        "id": "ae06444c-2c3c-11ec-9dd3-d3fab96ae548",
+                        "name": "locationName",
+                        "type": "QString",
+                        "displayName": "Home Location:"
+                    }
+                ],
+                "stateTypes": [
+                    {
+                        "id": "7b38ff0c-2c3f-11ec-9dd3-d3fab96ae548",
+                        "name": "baName",
+                        "type": "QString",
+                        "writable": false,
+                        "defaultValue": "",
+                        "displayName": "Impianto:",
+                        "displayNameEvent": "baNameE"
+                    } ,
+                    {
+                        "id": "83df3c84-2c3f-11ec-9dd3-d3fab96ae548",
+                        "name": "connected",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Connesso:",
+                        "displayNameEvent": "baconnectedE"
+                    } ,
+                    {
+                        "id": "8dbb89ce-2c3f-11ec-9dd3-d3fab96ae548",
+                        "name": "heartBeat",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "HeartBeat:",
+                        "displayNameEvent": "baheartBeatE"
+                    } ,
+                    {
+                        "id": "d1fc23dc-4620-11ec-af96-f18e8a9eafa8",
+                        "name": "controlType",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Control Type:",
+                        "displayNameEvent": "displayBA_CT"
+                    } ,
+                    {
+                        "id": "499045f2-3bec-11ec-a04f-b7277e4b5046",
+                        "name": "enabledSensors",
+                        "type": "uint",
+                        "writable": false,
+                        "defaultValue": 0,
+                        "displayName": "Enabled Sensors:",
+                        "displayNameEvent": "enabledSensorsE"
+                    } ,
+                    {
+                        "id": "59a43d18-3bec-11ec-a04f-b7277e4b5046",
+                        "name": "baStatus",
+                        "type": "QString",
+                        "writable": false,
+                        "defaultValue": "Off",
+                        "displayName": "Stato Antifurto:",
+                        "displayNameEvent": "BA_Status",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "b99aa160-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "ledGreen",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Led Green:",
+                        "displayNameEvent": "ledGreenE"
+                    } ,
+                    {
+                        "id": "c1a75fe2-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "ledRed",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Led Red:",
+                        "displayNameEvent": "ledRedE"
+                    } ,
+                    {
+                        "id": "cb8b041e-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "ledYellow1",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Led Yellow 1:",
+                        "displayNameEvent": "ledYellow1E"
+                    } ,
+                    {
+                        "id": "d5c8fc6a-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "ledYellow2",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Led Yellow 2:",
+                        "displayNameEvent": "ledYellow2E"
+                    } ,
+                    {
+                        "id": "e1a383d4-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "sirenOn",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Sirena:",
+                        "displayNameEvent": "sirenOn",
+                        "suggestLogging": true
+                    } ,
+                    {
+                        "id": "ebd2cd74-3bf8-11ec-a04f-b7277e4b5046",
+                        "name": "powerFail",
+                        "type": "bool",
+                        "writable": false,
+                        "defaultValue": false,
+                        "displayName": "Black Out Alimentazione:",
+                        "displayNameEvent": "powerFail",
+                        "suggestLogging": true
+                    }
+                ] ,
+                "actionTypes" : [
+                    {
+                      "id": "cef98c74-3e4b-11ec-8160-27a13ab1e418",
+                      "name": "btnOff",
+                      "displayName": "Off",
+                      "paramTypes": []
+                    } ,
+                    {
+                      "id": "3559edf4-4623-11ec-af96-f18e8a9eafa8",
+                      "name": "btnDayTime",
+                      "displayName": "DayTime",
+                      "paramTypes": []
+                    } ,
+                    {
+                      "id": "2831f306-4623-11ec-af96-f18e8a9eafa8",
+                      "name": "btnNight",
+                      "displayName": "NightTime",
+                      "paramTypes": []
+                    } ,
+                    {
+                      "id": "45c60e16-4623-11ec-af96-f18e8a9eafa8",
+                      "name": "btnEverything",
+                      "displayName": "Everything",
+                      "paramTypes": []
+                    } ,
+                    {
+                      "id": "3302eae6-3e4f-11ec-8160-27a13ab1e418",
+                      "name": "btnEnable",
+                      "displayName": "Enable",
+                      "paramTypes": []
+                    } ,
+                    {
+                      "id": "68124da8-3e4f-11ec-8160-27a13ab1e418",
+                      "name": "btnMute",
+                      "displayName": "Mute",
+                      "paramTypes": []
+                    }
+                ]
+            }
+        ]
+        }
+    ]
+}
+
+
+

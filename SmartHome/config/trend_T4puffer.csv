@@ -1,0 +1,5 @@
+L
+1;PLC_T4_temperature             ;CC0000;-10.00;70.00;
+1;PLC_T4_temperature_bis         ;0000CC;-10.00;70.00;
+1;PLC_T3_temperature_ext         ;000000;-10.00;70.00;
+1;PLC_Tn_heating                 ;FF0000;0.00;8.00;
