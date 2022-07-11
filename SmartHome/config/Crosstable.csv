@@ -105,68 +105,68 @@
 1;F;PLC_BA_config_index            ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;103 ;4   ;[RW]0 1 2 3
 1;P;PLC_BA_password                ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;103 ;4   ;[RW]
 ;;;;;;;;;;;;
+1;P;PLC_T1_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T1_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T1_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T2_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T2_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T2_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T3_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T3_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T3_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T4_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T4_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T4_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T5_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T5_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T5_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T6_temperature_offset      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T6_temperature_bis_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
+1;P;PLC_T6_temperature_ext_offset  ;INT      ;1   ;PLC       ;               ;    ;    ;      ;108 ;18  ;[RW]optional temperature offset
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-0;P;PLC_T7_enabled_sensors         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;110 ;1   ;[RW]
-0;P;PLC_T7_enabled_lamps           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;111 ;1   ;[RW]
-0;P;PLC_T7_max_request_W           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;112 ;1   ;[RW]
-0;P;PLC_T7_temperature_setpoint    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;113 ;1   ;[RW]
-0;P;PLC_T7_humidity_setpoint       ;INT      ;1   ;PLC       ;               ;    ;    ;      ;114 ;1   ;[RW]
-0;P;PLC_T7_heating_status          ;INT      ;0   ;PLC       ;               ;    ;    ;      ;115 ;1   ;[RW]
-0;P;PLC_T7_temperature_setpoint_nt ;INT      ;1   ;PLC       ;               ;    ;    ;      ;116 ;1   ;[RW]
-0;P;PLC_T7_humidity_setpoint_nt    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;117 ;1   ;[RW]
-0;P;PLC_T7_daily_heating_s         ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;118 ;1   ;[RW]
-0;P;PLC_T7_monthly_heating_s       ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;119 ;1   ;[RW]
-0;P;PLC_T8_enabled_sensors         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;120 ;1   ;[RW]
-0;P;PLC_T8_enabled_lamps           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;121 ;1   ;[RW]
-0;P;PLC_T8_max_request_W           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;122 ;1   ;[RW]
-0;P;PLC_T8_temperature_setpoint    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;123 ;1   ;[RW]
-0;P;PLC_T8_humidity_setpoint       ;INT      ;1   ;PLC       ;               ;    ;    ;      ;124 ;1   ;[RW]
-0;P;PLC_T8_heating_status          ;INT      ;0   ;PLC       ;               ;    ;    ;      ;125 ;1   ;[RW]
-0;P;PLC_T8_temperature_setpoint_nt ;INT      ;1   ;PLC       ;               ;    ;    ;      ;126 ;1   ;[RW]
-0;P;PLC_T8_humidity_setpoint_nt    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;127 ;1   ;[RW]
-0;P;PLC_T8_daily_heating_s         ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;128 ;1   ;[RW]
-0;P;PLC_T8_monthly_heating_s       ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;129 ;1   ;[RW]
-0;P;PLC_T9_enabled_sensors         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;130 ;1   ;[RW]
-0;P;PLC_T9_enabled_lamps           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;131 ;1   ;[RW]
-0;P;PLC_T9_max_request_W           ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;132 ;1   ;[RW]
-0;P;PLC_T9_temperature_setpoint    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;133 ;1   ;[RW]
-0;P;PLC_T9_humidity_setpoint       ;INT      ;1   ;PLC       ;               ;    ;    ;      ;134 ;1   ;[RW]
-0;P;PLC_T9_heating_status          ;INT      ;0   ;PLC       ;               ;    ;    ;      ;135 ;1   ;[RW]
-0;P;PLC_T9_temperature_setpoint_nt ;INT      ;1   ;PLC       ;               ;    ;    ;      ;136 ;1   ;[RW]
-0;P;PLC_T9_humidity_setpoint_nt    ;INT      ;1   ;PLC       ;               ;    ;    ;      ;137 ;1   ;[RW]
-0;P;PLC_T9_daily_heating_s         ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;138 ;1   ;[RW]
-0;P;PLC_T9_monthly_heating_s       ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;139 ;1   ;[RW]
-0;P;PLC_T10_enabled_sensors        ;INT      ;0   ;PLC       ;               ;    ;    ;      ;140 ;1   ;[RW]
-0;P;PLC_T10_enabled_lamps          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;141 ;1   ;[RW]
-0;P;PLC_T10_max_request_W          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;142 ;1   ;[RW]
-0;P;PLC_T10_temperature_setpoint   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;143 ;1   ;[RW]
-0;P;PLC_T10_humidity_setpoint      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;144 ;1   ;[RW]
-0;P;PLC_T10_heating_status         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;145 ;1   ;[RW]
-0;P;PLC_T10_temperature_setpoint_nt;INT      ;1   ;PLC       ;               ;    ;    ;      ;146 ;1   ;[RW]
-0;P;PLC_T10_humidity_setpoint_nt   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;147 ;1   ;[RW]
-0;P;PLC_T10_daily_heating_s        ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;148 ;1   ;[RW]
-0;P;PLC_T10_monthly_heating_s      ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;149 ;1   ;[RW]
-0;P;PLC_T11_enabled_sensors        ;INT      ;0   ;PLC       ;               ;    ;    ;      ;150 ;1   ;[RW]
-0;P;PLC_T11_enabled_lamps          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;151 ;1   ;[RW]
-0;P;PLC_T11_max_request_W          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;152 ;1   ;[RW]
-0;P;PLC_T11_temperature_setpoint   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;153 ;1   ;[RW]
-0;P;PLC_T11_humidity_setpoint      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;154 ;1   ;[RW]
-0;P;PLC_T11_heating_status         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;155 ;1   ;[RW]
-0;P;PLC_T11_temperature_setpoint_nt;INT      ;1   ;PLC       ;               ;    ;    ;      ;156 ;1   ;[RW]
-0;P;PLC_T11_humidity_setpoint_nt   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;157 ;1   ;[RW]
-0;P;PLC_T11_daily_heating_s        ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;158 ;1   ;[RW]
-0;P;PLC_T11_monthly_heating_s      ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;159 ;1   ;[RW]
-0;P;PLC_T12_enabled_sensors        ;INT      ;0   ;PLC       ;               ;    ;    ;      ;160 ;1   ;[RW]
-0;P;PLC_T12_enabled_lamps          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;161 ;1   ;[RW]
-0;P;PLC_T12_max_request_W          ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;162 ;1   ;[RW]
-0;P;PLC_T12_temperature_setpoint   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;163 ;1   ;[RW]
-0;P;PLC_T12_humidity_setpoint      ;INT      ;1   ;PLC       ;               ;    ;    ;      ;164 ;1   ;[RW]
-0;P;PLC_T12_heating_status         ;INT      ;0   ;PLC       ;               ;    ;    ;      ;165 ;1   ;[RW]
-0;P;PLC_T12_temperature_setpoint_nt;INT      ;1   ;PLC       ;               ;    ;    ;      ;166 ;1   ;[RW]
-0;P;PLC_T12_humidity_setpoint_nt   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;167 ;1   ;[RW]
-0;P;PLC_T12_daily_heating_s        ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;168 ;1   ;[RW]
-0;P;PLC_T12_monthly_heating_s      ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;169 ;1   ;[RW]
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
