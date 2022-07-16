@@ -1227,6 +1227,11 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page022.ui" line="863"/>
+        <source>page: page021  status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page022.ui" line="926"/>
         <location filename="page022.ui" line="929"/>
         <source>&lt;</source>

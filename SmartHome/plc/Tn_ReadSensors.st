@@ -289,29 +289,29 @@ END_VAR
 
 	case n of
 	1:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T1_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T1_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T1_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T1_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T1_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T1_temperature_ext_offset; end_if;
 	2:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T2_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T2_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T2_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T2_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T2_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T2_temperature_ext_offset; end_if;
 	3:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T3_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T3_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T3_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T3_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T3_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T3_temperature_ext_offset; end_if;
 	4:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T4_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T4_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T4_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T4_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T4_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T4_temperature_ext_offset; end_if;
 	5:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T5_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T5_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T5_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T5_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T5_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T5_temperature_ext_offset; end_if;
 	6:
-		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + T6_temperature_offset; end_if;
-		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + T6_temperature_bis_offset; end_if;
-		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + T6_temperature_ext_offset; end_if;
+		if (T1 <> TemperatureErrorValue and ES >= 1) then T1 := T1 + PLC_T6_temperature_offset; end_if;
+		if (T2 <> TemperatureErrorValue and ES >= 2) then T2 := T2 + PLC_T6_temperature_bis_offset; end_if;
+		if (T3 <> TemperatureErrorValue and ES >= 3) then T3 := T3 + PLC_T6_temperature_ext_offset; end_if;
 	else
 		;
 	end_case;

@@ -860,13 +860,13 @@ color: rgb(255, 85, 0);</string>
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string/>
+        <string>page: page021  status: </string>
        </property>
        <property name="whatsThis">
         <string>ATCMbutton widget</string>
        </property>
        <property name="pageName">
-        <string notr="true">page21</string>
+        <string notr="true">page021</string>
        </property>
        <property name="remember">
         <bool>false</bool>
