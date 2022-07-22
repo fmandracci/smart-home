@@ -69,7 +69,7 @@ ATCMlabel
 font: 15pt &quot;DejaVu Sans&quot;;
 }
 
-ATCMlabel#atcmLabel_offset_M, ATCMlabel#atcmLabel_offset_F, ATCMlabel#atcmLabel_offset_1, ATCMlabel#atcmLabel_offset_2, ATCMlabel#atcmLabel_offset_3, ATCMlabel#atcmLabel_offset_4, ATCMlabel#atcmLabel_offset_5, ATCMlabel#atcmLabel_offset_6, ATCMlabel#atcmLabel_offset_7, ATCMlabel#atcmLabel_offset_8, ATCMlabel#atcmLabel_offset_9, ATCMlabel#atcmLabel_offset_10 
+ATCMlabel#atcmLabel_offset_M, ATCMlabel#atcmLabel_offset_F, ATCMlabel#atcmLabel_offset_1, ATCMlabel#atcmLabel_offset_2, ATCMlabel#atcmLabel_offset_3, ATCMlabel#atcmLabel_offset_4, ATCMlabel#atcmLabel_offset_5, ATCMlabel#atcmLabel_offset_6, ATCMlabel#atcmLabel_offset_7, ATCMlabel#atcmLabel_offset_8, ATCMlabel#atcmLabel_offset_9, ATCMlabel#atcmLabel_offset_10
 {
 font: 10pt &quot;DejaVu Sans&quot;;
 }
@@ -1109,6 +1109,12 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>110</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
@@ -1127,7 +1133,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
       <enum>QTabWidget::South</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>6</number>
      </property>
      <widget class="QWidget" name="tab_this">
       <property name="sizePolicy">
@@ -4268,7 +4274,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
+       <item row="0" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_7">
          <property name="enabled">
           <bool>false</bool>
@@ -4530,7 +4536,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
+       <item row="4" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_22">
          <property name="enabled">
           <bool>false</bool>
@@ -4589,7 +4595,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
+       <item row="3" column="2">
         <widget class="ATCMlabel" name="atcmLabel_8">
          <property name="enabled">
           <bool>true</bool>
@@ -4731,7 +4737,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
+       <item row="5" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_23">
          <property name="enabled">
           <bool>false</bool>
@@ -4784,6 +4790,165 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T1_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T1_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T1_temperature_offset</string>
+         </property>
+         <property name="prefix">
+          <string/>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T1_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T1_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T1_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T1_text_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T1_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T1_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_T2">
@@ -4797,7 +4962,96 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="spacing">
         <number>0</number>
        </property>
-       <item row="0" column="1">
+       <item row="3" column="0">
+        <widget class="ATCMlabel" name="atcmLabel_5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>xx</string>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T2_enabled_sensors</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T2_enabled_sensors</string>
+         </property>
+         <property name="prefix">
+          <string>sensors </string>
+         </property>
+         <property name="suffix">
+          <string> / 3</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="bgColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderColor">
+          <color>
+           <red>255</red>
+           <green>170</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="bgSelectColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_10">
          <property name="enabled">
           <bool>false</bool>
@@ -4893,95 +5147,6 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
          <property name="suffix">
           <string> / 5</string>
-         </property>
-         <property name="refresh">
-          <number>200</number>
-         </property>
-         <property name="max">
-          <string notr="true">0</string>
-         </property>
-         <property name="min">
-          <string notr="true">0</string>
-         </property>
-         <property name="viewStatus">
-          <bool>false</bool>
-         </property>
-         <property name="visibilityVar">
-          <string/>
-         </property>
-         <property name="bgColor">
-          <color>
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
-          </color>
-         </property>
-         <property name="borderColor">
-          <color>
-           <red>255</red>
-           <green>170</green>
-           <blue>0</blue>
-          </color>
-         </property>
-         <property name="fontColor">
-          <color>
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
-          </color>
-         </property>
-         <property name="bgSelectColor">
-          <color>
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
-          </color>
-         </property>
-         <property name="borderWidth">
-          <number>1</number>
-         </property>
-         <property name="borderRadius">
-          <number>0</number>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="ATCMlabel" name="atcmLabel_5">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>15</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>xx</string>
-         </property>
-         <property name="toolTip">
-          <string>PLC_T2_enabled_sensors</string>
-         </property>
-         <property name="whatsThis">
-          <string>ATCMlabel widget</string>
-         </property>
-         <property name="variable">
-          <string>PLC_T2_enabled_sensors</string>
-         </property>
-         <property name="prefix">
-          <string>sensors </string>
-         </property>
-         <property name="suffix">
-          <string> / 3</string>
          </property>
          <property name="refresh">
           <number>200</number>
@@ -5148,66 +5313,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
-        <widget class="ATCMcombobox" name="atcmComboBox_21">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>13</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>PLC_T2_heating_status</string>
-         </property>
-         <property name="whatsThis">
-          <string>ATCMcombobox widget</string>
-         </property>
-         <property name="variable">
-          <string>PLC_T2_heating_status</string>
-         </property>
-         <property name="refresh">
-          <number>200</number>
-         </property>
-         <property name="viewStatus">
-          <bool>false</bool>
-         </property>
-         <property name="writeAcknowledge">
-          <bool>false</bool>
-         </property>
-         <property name="visibilityVar">
-          <string/>
-         </property>
-         <property name="fontColor">
-          <color>
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
-          </color>
-         </property>
-         <property name="borderWidth">
-          <number>0</number>
-         </property>
-         <property name="borderRadius">
-          <number>0</number>
-         </property>
-         <property name="mapping">
-          <string>0;DISABLED;1;ENABLED</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
+       <item row="3" column="2">
         <widget class="ATCMlabel" name="atcmLabel_11">
          <property name="enabled">
           <bool>true</bool>
@@ -5296,6 +5402,65 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="4" column="2">
+        <widget class="ATCMcombobox" name="atcmComboBox_21">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T2_heating_status</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMcombobox widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T2_heating_status</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="writeAcknowledge">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>0</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+         <property name="mapping">
+          <string>0;DISABLED;1;ENABLED</string>
+         </property>
+        </widget>
+       </item>
        <item row="5" column="0">
         <widget class="ATCMcombobox" name="atcmComboBox_2">
          <property name="enabled">
@@ -5349,7 +5514,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
+       <item row="5" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_24">
          <property name="enabled">
           <bool>false</bool>
@@ -5402,6 +5567,162 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T2_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T2_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T2_temperature_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T2_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T2_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T2_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T2_text_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T2_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T2_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_T3">
@@ -5415,66 +5736,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="spacing">
         <number>0</number>
        </property>
-       <item row="5" column="1">
-        <widget class="ATCMcombobox" name="atcmComboBox_20">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>13</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>PLC_T3_heating_status</string>
-         </property>
-         <property name="whatsThis">
-          <string>ATCMcombobox widget</string>
-         </property>
-         <property name="variable">
-          <string>PLC_T3_heating_status</string>
-         </property>
-         <property name="refresh">
-          <number>200</number>
-         </property>
-         <property name="viewStatus">
-          <bool>false</bool>
-         </property>
-         <property name="writeAcknowledge">
-          <bool>false</bool>
-         </property>
-         <property name="visibilityVar">
-          <string/>
-         </property>
-         <property name="fontColor">
-          <color>
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
-          </color>
-         </property>
-         <property name="borderWidth">
-          <number>0</number>
-         </property>
-         <property name="borderRadius">
-          <number>0</number>
-         </property>
-         <property name="mapping">
-          <string>0;DISABLED;1;ENABLED</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
+       <item row="4" column="2">
         <widget class="ATCMlabel" name="atcmLabel_15">
          <property name="enabled">
           <bool>true</bool>
@@ -5563,8 +5825,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="ATCMcombobox" name="atcmComboBox_11">
+       <item row="5" column="2">
+        <widget class="ATCMcombobox" name="atcmComboBox_20">
          <property name="enabled">
           <bool>false</bool>
          </property>
@@ -5584,13 +5846,13 @@ font: 24pt &quot;DejaVu Sans&quot;;
           </font>
          </property>
          <property name="toolTip">
-          <string>NODE_04_STATUS</string>
+          <string>PLC_T3_heating_status</string>
          </property>
          <property name="whatsThis">
           <string>ATCMcombobox widget</string>
          </property>
          <property name="variable">
-          <string>NODE_04_STATUS</string>
+          <string>PLC_T3_heating_status</string>
          </property>
          <property name="refresh">
           <number>200</number>
@@ -5618,7 +5880,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <number>0</number>
          </property>
          <property name="mapping">
-          <string>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</string>
+          <string>0;DISABLED;1;ENABLED</string>
          </property>
         </widget>
        </item>
@@ -5708,6 +5970,65 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
          <property name="borderRadius">
           <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="ATCMcombobox" name="atcmComboBox_11">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>NODE_04_STATUS</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMcombobox widget</string>
+         </property>
+         <property name="variable">
+          <string>NODE_04_STATUS</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="writeAcknowledge">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>0</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+         <property name="mapping">
+          <string>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</string>
          </property>
         </widget>
        </item>
@@ -5967,7 +6288,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="6" column="1">
+       <item row="6" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_25">
          <property name="enabled">
           <bool>false</bool>
@@ -6020,6 +6341,162 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T3_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T3_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T3_temperature_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T3_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T3_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T3_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T3_text_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T3_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T3_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_T4">
@@ -6033,7 +6510,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="spacing">
         <number>0</number>
        </property>
-       <item row="0" column="1">
+       <item row="0" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_12">
          <property name="enabled">
           <bool>false</bool>
@@ -6092,8 +6569,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="0">
-        <widget class="ATCMlabel" name="atcmLabel_23">
+       <item row="4" column="0">
+        <widget class="ATCMlabel" name="atcmLabel_20">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -6116,19 +6593,19 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>xx</string>
          </property>
          <property name="toolTip">
-          <string>PLC_T4_enabled_lamps</string>
+          <string>PLC_T4_enabled_sensors</string>
          </property>
          <property name="whatsThis">
           <string>ATCMlabel widget</string>
          </property>
          <property name="variable">
-          <string>PLC_T4_enabled_lamps</string>
+          <string>PLC_T4_enabled_sensors</string>
          </property>
          <property name="prefix">
-          <string>lamps </string>
+          <string>sensors </string>
          </property>
          <property name="suffix">
-          <string> / 5</string>
+          <string> / 3</string>
          </property>
          <property name="refresh">
           <number>200</number>
@@ -6181,8 +6658,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="4" column="0">
-        <widget class="ATCMlabel" name="atcmLabel_20">
+       <item row="5" column="0">
+        <widget class="ATCMlabel" name="atcmLabel_23">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -6205,19 +6682,19 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>xx</string>
          </property>
          <property name="toolTip">
-          <string>PLC_T4_enabled_sensors</string>
+          <string>PLC_T4_enabled_lamps</string>
          </property>
          <property name="whatsThis">
           <string>ATCMlabel widget</string>
          </property>
          <property name="variable">
-          <string>PLC_T4_enabled_sensors</string>
+          <string>PLC_T4_enabled_lamps</string>
          </property>
          <property name="prefix">
-          <string>sensors </string>
+          <string>lamps </string>
          </property>
          <property name="suffix">
-          <string> / 3</string>
+          <string> / 5</string>
          </property>
          <property name="refresh">
           <number>200</number>
@@ -6384,66 +6861,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
-        <widget class="ATCMcombobox" name="atcmComboBox_19">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>13</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>PLC_T4_heating_status</string>
-         </property>
-         <property name="whatsThis">
-          <string>ATCMcombobox widget</string>
-         </property>
-         <property name="variable">
-          <string>PLC_T4_heating_status</string>
-         </property>
-         <property name="refresh">
-          <number>200</number>
-         </property>
-         <property name="viewStatus">
-          <bool>false</bool>
-         </property>
-         <property name="writeAcknowledge">
-          <bool>false</bool>
-         </property>
-         <property name="visibilityVar">
-          <string/>
-         </property>
-         <property name="fontColor">
-          <color>
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
-          </color>
-         </property>
-         <property name="borderWidth">
-          <number>0</number>
-         </property>
-         <property name="borderRadius">
-          <number>0</number>
-         </property>
-         <property name="mapping">
-          <string>0;DISABLED;1;ENABLED</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
+       <item row="4" column="2">
         <widget class="ATCMlabel" name="atcmLabel_21">
          <property name="enabled">
           <bool>true</bool>
@@ -6532,6 +6950,65 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="5" column="2">
+        <widget class="ATCMcombobox" name="atcmComboBox_19">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T4_heating_status</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMcombobox widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_T4_heating_status</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="writeAcknowledge">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>0</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+         <property name="mapping">
+          <string>0;DISABLED;1;ENABLED</string>
+         </property>
+        </widget>
+       </item>
        <item row="6" column="0">
         <widget class="ATCMcombobox" name="atcmComboBox_4">
          <property name="enabled">
@@ -6585,7 +7062,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="6" column="1">
+       <item row="6" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_26">
          <property name="enabled">
           <bool>false</bool>
@@ -6638,6 +7115,162 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T4_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T4_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T4_temperature_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T4_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T4_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T4_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T4_text_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T4_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T4_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_T5">
@@ -6651,65 +7284,6 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="spacing">
         <number>0</number>
        </property>
-       <item row="0" column="1">
-        <widget class="ATCMcombobox" name="atcmComboBox_13">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>13</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>NODE_06_STATUS</string>
-         </property>
-         <property name="whatsThis">
-          <string>ATCMcombobox widget</string>
-         </property>
-         <property name="variable">
-          <string>NODE_06_STATUS</string>
-         </property>
-         <property name="refresh">
-          <number>200</number>
-         </property>
-         <property name="viewStatus">
-          <bool>false</bool>
-         </property>
-         <property name="writeAcknowledge">
-          <bool>false</bool>
-         </property>
-         <property name="visibilityVar">
-          <string/>
-         </property>
-         <property name="fontColor">
-          <color>
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
-          </color>
-         </property>
-         <property name="borderWidth">
-          <number>0</number>
-         </property>
-         <property name="borderRadius">
-          <number>0</number>
-         </property>
-         <property name="mapping">
-          <string>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</string>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="0">
         <widget class="ATCMlabel" name="atcmLabel_29">
          <property name="enabled">
@@ -6888,6 +7462,65 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="2">
+        <widget class="ATCMcombobox" name="atcmComboBox_13">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>NODE_06_STATUS</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMcombobox widget</string>
+         </property>
+         <property name="variable">
+          <string>NODE_06_STATUS</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="writeAcknowledge">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>0</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+         <property name="mapping">
+          <string>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <widget class="ATCMbutton" name="atcmButton_T5">
          <property name="sizePolicy">
@@ -7002,7 +7635,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
+       <item row="5" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_18">
          <property name="enabled">
           <bool>false</bool>
@@ -7061,7 +7694,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
+       <item row="4" column="2">
         <widget class="ATCMlabel" name="atcmLabel_27">
          <property name="enabled">
           <bool>true</bool>
@@ -7203,7 +7836,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="6" column="1">
+       <item row="6" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_27">
          <property name="enabled">
           <bool>false</bool>
@@ -7256,6 +7889,162 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T5_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T5_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T5_temperature_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T5_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T5_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T5_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T5_text_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T5_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T5_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">5</string>
+         </property>
+         <property name="min">
+          <string notr="true">-5</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_T6">
@@ -7269,7 +8058,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="spacing">
         <number>0</number>
        </property>
-       <item row="0" column="1">
+       <item row="0" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_14">
          <property name="enabled">
           <bool>false</bool>
@@ -7620,7 +8409,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="4" column="1">
+       <item row="4" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_16">
          <property name="enabled">
           <bool>false</bool>
@@ -7679,7 +8468,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
+       <item row="3" column="2">
         <widget class="ATCMlabel" name="atcmLabel_33">
          <property name="enabled">
           <bool>true</bool>
@@ -7821,7 +8610,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
         </widget>
        </item>
-       <item row="5" column="1">
+       <item row="5" column="2">
         <widget class="ATCMcombobox" name="atcmComboBox_28">
          <property name="enabled">
           <bool>false</bool>
@@ -7871,6 +8660,162 @@ font: 24pt &quot;DejaVu Sans&quot;;
          </property>
          <property name="mapping">
           <string>0;th1 NO_NODE;1;th1 NODE_OK;2;th1 TIMEOUT;3;th1 BLACKLIST;4;th1 DISCONNECTED;5;th1 DISABLED</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T6_t_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T6_temperature_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T6_temperature_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T6_tbis_offset">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T6_temperature_bis_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T6_temperature_bis_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="ATCMlabel" name="atcmLabel_T6_tbis_offset_2">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>15</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>PLC_T6_temperature_ext_offset</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string notr="true">PLC_T6_temperature_ext_offset</string>
+         </property>
+         <property name="suffix">
+          <string> C°</string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string notr="true"/>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
          </property>
         </widget>
        </item>
