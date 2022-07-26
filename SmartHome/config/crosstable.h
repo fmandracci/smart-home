@@ -760,29 +760,11 @@ int doWrite_PLC_T6_temperature_ext_offset(int16_t value);
 int addWrite_PLC_T6_temperature_ext_offset(int16_t value);
 int getStatus_PLC_T6_temperature_ext_offset(void);
 
-#define ID_Tsoglia_Resistenze 185
-extern int16_t Tsoglia_Resistenze;	/* massima temperatura resistenze (50 .. 135 C) */
-int doWrite_Tsoglia_Resistenze(int16_t value);
-int addWrite_Tsoglia_Resistenze(int16_t value);
-int getStatus_Tsoglia_Resistenze(void);
-
 #define ID_Tsoglia_Massetto 186
 extern int16_t Tsoglia_Massetto;	/* massima temperatura massetto (20 .. 30 C) */
 int doWrite_Tsoglia_Massetto(int16_t value);
 int addWrite_Tsoglia_Massetto(int16_t value);
 int getStatus_Tsoglia_Massetto(void);
-
-#define ID_Tsoglia_Ventola 187
-extern int16_t Tsoglia_Ventola;	/* minima temperatura ventole (50 .. 125 C) */
-int doWrite_Tsoglia_Ventola(int16_t value);
-int addWrite_Tsoglia_Ventola(int16_t value);
-int getStatus_Tsoglia_Ventola(void);
-
-#define ID_Vbase_Ventola 188
-extern u_int16_t Vbase_Ventola;	/* valore base comando ventola (1.00V ..) */
-int doWrite_Vbase_Ventola(u_int16_t value);
-int addWrite_Vbase_Ventola(u_int16_t value);
-int getStatus_Vbase_Ventola(void);
 
 #define ID_TimerValue_1 190
 extern int32_t TimerValue_1;

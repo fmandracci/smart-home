@@ -875,31 +875,10 @@ int16_t PLC_T6_temperature_ext_offset = 0;
 
 
 /*
- * Variable Tsoglia_Resistenze	[ massima temperatura resistenze (50 .. 135 C) ]
- */
-
-int16_t Tsoglia_Resistenze = 0;
-
-
-/*
  * Variable Tsoglia_Massetto	[ massima temperatura massetto (20 .. 30 C) ]
  */
 
 int16_t Tsoglia_Massetto = 0;
-
-
-/*
- * Variable Tsoglia_Ventola	[ minima temperatura ventole (50 .. 125 C) ]
- */
-
-int16_t Tsoglia_Ventola = 0;
-
-
-/*
- * Variable Vbase_Ventola	[ valore base comando ventola (1.00V ..) ]
- */
-
-u_int16_t Vbase_Ventola = 0;
 
 
 /*
@@ -16604,24 +16583,6 @@ getStatus_PLC_T6_temperature_ext_offset(void)
 }
 
 int
-doWrite_Tsoglia_Resistenze(int16_t value)
-{
-	return doWrite(ID_Tsoglia_Resistenze, &value);
-}
-
-int
-addWrite_Tsoglia_Resistenze(int16_t value)
-{
-	return addWrite(ID_Tsoglia_Resistenze, &value);
-}
-
-int
-getStatus_Tsoglia_Resistenze(void)
-{
-	return getStatus(ID_Tsoglia_Resistenze);
-}
-
-int
 doWrite_Tsoglia_Massetto(int16_t value)
 {
 	return doWrite(ID_Tsoglia_Massetto, &value);
@@ -16637,42 +16598,6 @@ int
 getStatus_Tsoglia_Massetto(void)
 {
 	return getStatus(ID_Tsoglia_Massetto);
-}
-
-int
-doWrite_Tsoglia_Ventola(int16_t value)
-{
-	return doWrite(ID_Tsoglia_Ventola, &value);
-}
-
-int
-addWrite_Tsoglia_Ventola(int16_t value)
-{
-	return addWrite(ID_Tsoglia_Ventola, &value);
-}
-
-int
-getStatus_Tsoglia_Ventola(void)
-{
-	return getStatus(ID_Tsoglia_Ventola);
-}
-
-int
-doWrite_Vbase_Ventola(u_int16_t value)
-{
-	return doWrite(ID_Vbase_Ventola, &value);
-}
-
-int
-addWrite_Vbase_Ventola(u_int16_t value)
-{
-	return addWrite(ID_Vbase_Ventola, &value);
-}
-
-int
-getStatus_Vbase_Ventola(void)
-{
-	return getStatus(ID_Vbase_Ventola);
 }
 
 int
@@ -51578,10 +51503,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_T6_temperature_offset, &PLC_T6_temperature_offset);
 	retval += readFromDb(ID_PLC_T6_temperature_bis_offset, &PLC_T6_temperature_bis_offset);
 	retval += readFromDb(ID_PLC_T6_temperature_ext_offset, &PLC_T6_temperature_ext_offset);
-	retval += readFromDb(ID_Tsoglia_Resistenze, &Tsoglia_Resistenze);
 	retval += readFromDb(ID_Tsoglia_Massetto, &Tsoglia_Massetto);
-	retval += readFromDb(ID_Tsoglia_Ventola, &Tsoglia_Ventola);
-	retval += readFromDb(ID_Vbase_Ventola, &Vbase_Ventola);
 	retval += readFromDb(ID_TimerValue_1, &TimerValue_1);
 	retval += readFromDb(ID_TimerValue_2, &TimerValue_2);
 	retval += readFromDb(ID_PLC_RELOAD_CONF, &PLC_RELOAD_CONF);

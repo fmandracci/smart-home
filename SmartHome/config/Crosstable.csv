@@ -182,10 +182,10 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;Tsoglia_Resistenze             ;INT      ;1   ;PLC       ;               ;    ;    ;      ;185 ;4   ;[RW]massima temperatura resistenze (50 .. 135 C)
+;;;;;;;;;;;;
 1;P;Tsoglia_Massetto               ;INT      ;1   ;PLC       ;               ;    ;    ;      ;185 ;4   ;[RW]massima temperatura massetto (20 .. 30 C)
-1;P;Tsoglia_Ventola                ;INT      ;1   ;PLC       ;               ;    ;    ;      ;185 ;4   ;[RW]minima temperatura ventole (50 .. 125 C)
-1;P;Vbase_Ventola                  ;UINT     ;2   ;PLC       ;               ;    ;    ;      ;185 ;4   ;[RW]valore base comando ventola (1.00V ..)
+;;;;;;;;;;;;
+;;;;;;;;;;;;
 ;;;;;;;;;;;;
 1;P;TimerValue_1                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;190 ;2   ;[RW]
 1;P;TimerValue_2                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;190 ;2   ;[RW]

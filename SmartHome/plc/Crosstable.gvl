@@ -120,10 +120,7 @@ VAR_GLOBAL
 	PLC_T6_temperature_offset AT %QW0.492:INT;	(* optional temperature offset *)
 	PLC_T6_temperature_bis_offset AT %QW0.496:INT;	(* optional temperature offset *)
 	PLC_T6_temperature_ext_offset AT %QW0.500:INT;	(* optional temperature offset *)
-	Tsoglia_Resistenze AT %QW0.740:INT;	(* massima temperatura resistenze (50 .. 135 C) *)
 	Tsoglia_Massetto AT %QW0.744:INT;	(* massima temperatura massetto (20 .. 30 C) *)
-	Tsoglia_Ventola AT %QW0.748:INT;	(* minima temperatura ventole (50 .. 125 C) *)
-	Vbase_Ventola AT %QW0.752:UINT;	(* valore base comando ventola (1.00V ..) *)
 	TimerValue_1 AT %QD0.760:DINT;
 	TimerValue_2 AT %QD0.764:DINT;
 	PLC_RELOAD_CONF AT %QX0.772.0:BOOL;
