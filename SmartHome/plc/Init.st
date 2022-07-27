@@ -34,8 +34,6 @@ PROGRAM Init
 
 	(* NB: in hmi.ini: disable_all_nodes=true *)
 
-	if Vbase_Ventola < 100 then Vbase_Ventola := 100; end_if;
-
 	(* TCP0..TCP7 *)
 	if (PLC_EP_exists     and not PLC_Iam_EP) then NODE_01_STATUS := 1; end_if;
 	if (PLC_Tn_count >= 1 and not PLC_Iam_T1) then NODE_02_STATUS := 1; end_if;
