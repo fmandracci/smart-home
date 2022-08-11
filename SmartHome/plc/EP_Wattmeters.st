@@ -37,7 +37,9 @@ END_VAR;
 	mask := 0;
 
     if PLC_EP_enabled_wattmeters >= 1 then
-		if (PLC_control_type = ControlType_6 and NODE_32_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_15_STATUS = NODE_NODE_OK) then
+		if (PLC_control_type = ControlType_6 and NODE_32_STATUS = NODE_NODE_OK)
+		or (PLC_control_type = ControlType_16 and NODE_44_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_15_STATUS = NODE_NODE_OK) then
 			mask := mask + 1;
 			EP_WattmeterFull(1, PLC_EP_wattmeter_M_W, PLC_EP_wattmeter_M_var, PLC_EP_wattmeter_M_VA,
 			                 PLC_EP_wattmeter_M_pf, PLC_EP_wattmeter_M_Hz, PLC_EP_wattmeter_M_V,
@@ -76,7 +78,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 2 then
-		if (PLC_control_type = ControlType_6 and NODE_33_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_16_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_33_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_16_STATUS = NODE_NODE_OK)  then
 			mask := mask + 2;
 			EP_WattmeterFull(2, PLC_EP_wattmeter_F_W, PLC_EP_wattmeter_F_var, PLC_EP_wattmeter_F_VA,
 			                 PLC_EP_wattmeter_F_pf, PLC_EP_wattmeter_F_Hz, PLC_EP_wattmeter_F_V,
@@ -88,7 +91,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 3 then
-		if (PLC_control_type = ControlType_6 and NODE_34_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_17_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_34_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_17_STATUS = NODE_NODE_OK)  then
 			mask := mask + 4;
 			EP_Wattmeter(3, PLC_EP_wattmeter01_W, PLC_EP_wattmeter01_var, PLC_EP_wattmeter01_VA,
 						PLC_EP_wattmeter01_kWh);
@@ -98,7 +102,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 4 then
-		if (PLC_control_type = ControlType_6 and NODE_35_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_18_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_35_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_18_STATUS = NODE_NODE_OK)  then
 			mask := mask + 8;
 			EP_Wattmeter(4, PLC_EP_wattmeter02_W, PLC_EP_wattmeter02_var, PLC_EP_wattmeter02_VA,
 						PLC_EP_wattmeter02_kWh);
@@ -108,7 +113,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 5 then
-		if (PLC_control_type = ControlType_6 and NODE_36_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_19_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_36_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_19_STATUS = NODE_NODE_OK)  then
 			mask := mask + 16;
 			EP_Wattmeter(5, PLC_EP_wattmeter03_W, PLC_EP_wattmeter03_var, PLC_EP_wattmeter03_VA,
 						 PLC_EP_wattmeter03_kWh);
@@ -118,7 +124,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 6 then
-		if (PLC_control_type = ControlType_6 and NODE_37_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_20_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_37_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_20_STATUS = NODE_NODE_OK)  then
 			mask := mask + 32;
 			EP_Wattmeter(6, PLC_EP_wattmeter04_W, PLC_EP_wattmeter04_var, PLC_EP_wattmeter04_VA,
 						 PLC_EP_wattmeter04_kWh);
@@ -128,7 +135,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 7 then
-		if (PLC_control_type = ControlType_6 and NODE_38_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_21_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_38_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_21_STATUS = NODE_NODE_OK)  then
 			mask := mask + 64;
 			EP_Wattmeter(7, PLC_EP_wattmeter05_W, PLC_EP_wattmeter05_var, PLC_EP_wattmeter05_VA,
 						 PLC_EP_wattmeter05_kWh);
@@ -138,7 +146,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 8 then
-		if (PLC_control_type = ControlType_6 and NODE_39_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_22_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_39_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_22_STATUS = NODE_NODE_OK)  then
 			mask := mask + 128;
 			EP_Wattmeter(8, PLC_EP_wattmeter06_W, PLC_EP_wattmeter06_var, PLC_EP_wattmeter06_VA,
 						 PLC_EP_wattmeter06_kWh);
@@ -148,7 +157,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 9 then
-		if (PLC_control_type = ControlType_6 and NODE_40_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_23_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_40_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_23_STATUS = NODE_NODE_OK)  then
 			mask := mask + 256;
 			EP_Wattmeter(9, PLC_EP_wattmeter07_W, PLC_EP_wattmeter07_var, PLC_EP_wattmeter07_VA,
 						 PLC_EP_wattmeter07_kWh);
@@ -158,7 +168,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 10 then
-		if (PLC_control_type = ControlType_6 and NODE_41_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_24_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_41_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_24_STATUS = NODE_NODE_OK)  then
 			mask := mask + 512;
 			EP_Wattmeter(10, PLC_EP_wattmeter08_W, PLC_EP_wattmeter08_var, PLC_EP_wattmeter08_VA,
 						 PLC_EP_wattmeter08_kWh);
@@ -168,7 +179,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 11 then
-		if (PLC_control_type = ControlType_6 and NODE_42_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_25_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_42_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_25_STATUS = NODE_NODE_OK)  then
 			mask := mask + 1024;
 			EP_Wattmeter(11, PLC_EP_wattmeter09_W, PLC_EP_wattmeter09_var, PLC_EP_wattmeter09_VA,
 						 PLC_EP_wattmeter09_kWh);
@@ -178,7 +190,8 @@ END_VAR;
     end_if;
 
     if PLC_EP_enabled_wattmeters >= 12 then
-		if (PLC_control_type = ControlType_6 and NODE_43_STATUS = NODE_NODE_OK) or (PLC_control_type <> ControlType_6 and NODE_26_STATUS = NODE_NODE_OK)  then
+		if (PLC_control_type = ControlType_6 and NODE_43_STATUS = NODE_NODE_OK)
+		or (PLC_control_type <> ControlType_6 and PLC_control_type <> ControlType_16 and NODE_26_STATUS = NODE_NODE_OK)  then
 			mask := mask + 2048;
 			EP_Wattmeter(12, PLC_EP_wattmeter10_W, PLC_EP_wattmeter10_var, PLC_EP_wattmeter10_VA,
 						 PLC_EP_wattmeter10_kWh);

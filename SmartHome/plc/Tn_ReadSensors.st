@@ -38,7 +38,7 @@ VAR_IN_OUT
 END_VAR
 
 	(* INPUT: sensors *)
-	if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_15 then			
+	if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 		(* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		if ES >= 1 then
 			if NODE_31_STATUS = NODE_NODE_OK then

@@ -91,7 +91,7 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
     ui->atcmLabel_Tn_humidity_setpoint_nt->setVariable(Hsp_nt);
     ui->atcmLabel_Tn_humidity_setpoint_nt->setFontColor(color);
 
-    ui->label_range_scale->setVisible(control_type == ControlType_3 or control_type == ControlType_4 or control_type == ControlType_6); // Pt100 only
+    ui->label_range_scale->setVisible(control_type == ControlType_3 or control_type == ControlType_4 or control_type == ControlType_6 or control_type == ControlType_16); // Pt100 only
 
     updateWidgets(sunrise, sunset, Tlabel,
                   Tn_temperature, Tn_temperature_bis,

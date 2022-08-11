@@ -24,7 +24,7 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 1202;
+	PLC_PLC_Version := 1203;
 
 	(* Fast I/O on TPX1043_03_C only *)
 	if PLC_PRODUCT_ID = 16#1043030C then
@@ -81,6 +81,9 @@ PROGRAM Init
 				if PLC_EP_enabled_wattmeters >= 10 then NODE_41_STATUS := 1; end_if;
 				if PLC_EP_enabled_wattmeters >= 11 then NODE_42_STATUS := 1; end_if;
 				if PLC_EP_enabled_wattmeters >= 12 then NODE_43_STATUS := 1; end_if;
+			elsif PLC_control_type = ControlType_16 then
+				(* QEED QC-PM485 wattmeters 1 on RTU0 *)
+				if PLC_EP_enabled_wattmeters >=  1 then NODE_44_STATUS := 1; end_if;
 			end_if;
 		end_if;
 
@@ -116,7 +119,7 @@ PROGRAM Init
 	if PLC_Iam_T1 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_5 or PLC_control_type = ControlType_8 or PLC_control_type = ControlType_12 then
 			NODE_28_STATUS := 1; (* first (T,H) sensor on RTU3 *)
@@ -154,7 +157,7 @@ PROGRAM Init
 			; (* Fast I/O FO8 on GPIO *)
 		elsif PLC_control_type = ControlType_13 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO1..3+4 on RTU3 *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 
@@ -173,7 +176,7 @@ PROGRAM Init
 	if PLC_Iam_T2 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_5 or PLC_control_type = ControlType_8 then
 			NODE_28_STATUS := 1; (* first (T,H) sensor on RTU3 *)
@@ -209,7 +212,7 @@ PROGRAM Init
 			NODE_13_STATUS := 1; (* MPNE_C DO1..4 on RTU0 *)
 		elsif PLC_control_type = ControlType_13 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO1..3+4 on RTU3 *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 
@@ -228,7 +231,7 @@ PROGRAM Init
 	if PLC_Iam_T3 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_5 or PLC_control_type = ControlType_8 then
 			NODE_28_STATUS := 1; (* first (T,H) sensor on RTU3 *)
@@ -264,7 +267,7 @@ PROGRAM Init
 			NODE_13_STATUS := 1; (* MPNE_C DO1..4 on RTU0 *)
 		elsif PLC_control_type = ControlType_13 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO1..3+4 on RTU3 *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 
@@ -283,7 +286,7 @@ PROGRAM Init
 	if PLC_Iam_T4 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_5 or PLC_control_type = ControlType_8 then
 			NODE_28_STATUS := 1; (* first (T,H) sensor on RTU3 *)
@@ -321,7 +324,7 @@ PROGRAM Init
 			NODE_13_STATUS := 1; (* MPNE_C DO1..4 on RTU0 *)
 		elsif PLC_control_type = ControlType_13 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO1..3+4 on RTU3 *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 
@@ -340,7 +343,7 @@ PROGRAM Init
 	if PLC_Iam_T5 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_5 or PLC_control_type = ControlType_8 then
 			NODE_28_STATUS := 1; (* first (T,H) sensor on RTU3 *)
@@ -376,7 +379,7 @@ PROGRAM Init
 			NODE_13_STATUS := 1; (* MPNE_C DO1 on RTU0 *)
 		elsif PLC_control_type = ControlType_13 then
 			; (* no output *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 
@@ -395,7 +398,7 @@ PROGRAM Init
 	if PLC_Iam_T6 then (* --------------------------------------------------------- *)
 
 		(* INPUT: sensors *)
-		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 then			
+		if PLC_control_type = ControlType_3 or PLC_control_type = ControlType_4 (*or PLC_control_type = ControlType_13*) or PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then			
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O AI1..3 on RTU3 *)
 		elsif PLC_control_type = ControlType_13 then
 			; (* T1..T5 only *)
@@ -433,7 +436,7 @@ PROGRAM Init
 			NODE_13_STATUS := 1; (* MPNE_C DO1 on RTU0 *)
 		elsif PLC_control_type = ControlType_13 then
 			; (* T1..T5 only *)
-		elsif PLC_control_type = ControlType_15 then
+		elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 			NODE_31_STATUS := 1; (* TPAC1007_04_AD Local I/O DO8 on RTU3 *)
 		end_if;
 

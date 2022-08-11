@@ -16,7 +16,7 @@ config.path = /local/etc/sysconfig
 splash.files = config/splash.png
 splash.path = /local/etc/sysconfig/img
 
-customtrend.files =  config/trend1.csv config/trend_Wall.csv config/trend_W-M.csv config/trend_W-F.csv config/trend_W01.csv config/trend_W02.csv config/trend_W03.csv config/trend_W04.csv config/trend_W05.csv config/trend_W06.csv config/trend_W07.csv config/trend_W08.csv config/trend_W09.csv config/trend_W10.csv config/trend_Tall.csv config/trend_T1.csv config/trend_T1stufa.csv config/trend_T2.csv config/trend_T2stufa.csv config/trend_T3.csv config/trend_T3stufa.csv config/trend_T4.csv config/trend_T4puffer.csv config/trend_T4stufa.csv config/trend_T5.csv config/trend_T5stufa.csv config/trend_T6.csv config/trend_T6stufa.csv config/trend_H1.csv config/trend_H2.csv config/trend_H3.csv config/trend_H4.csv config/trend_H5.csv config/trend_H6.csv
+customtrend.files =  config/trend1.csv config/trend_Wall.csv config/trend_W-M.csv config/trend_W-F.csv config/trend_W01.csv config/trend_W02.csv config/trend_W03.csv config/trend_W04.csv config/trend_W05.csv config/trend_W06.csv config/trend_W07.csv config/trend_W08.csv config/trend_W09.csv config/trend_W10.csv config/trend_Tall.csv config/trend_T1.csv config/trend_T2.csv config/trend_T3.csv config/trend_T4.csv config/trend_T4puffer.csv config/trend_T5.csv config/trend_T6.csv config/trend_H1.csv config/trend_H2.csv config/trend_H3.csv config/trend_H4.csv config/trend_H5.csv config/trend_H6.csv
 customtrend.path = /local/data/customtrend
 
 INSTALLS += config splash customtrend

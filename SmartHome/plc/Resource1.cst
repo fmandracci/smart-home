@@ -39,6 +39,7 @@ CONST
 	ControlType_13 :UINT := 13; (* EP+T1+BA: *)
 	ControlType_14 :UINT := 14; (* EP+T1+BA: *)
 	ControlType_15 :UINT := 15; (* Tn: *)
+	ControlType_16 :UINT := 16; (* EP+Tn+BA: *)
 
 	WatchDogTimeout_s : UINT := 2; (* ARQ, MPNE and MPNC *)
 	ControlPeriod : TIME := T#500ms;

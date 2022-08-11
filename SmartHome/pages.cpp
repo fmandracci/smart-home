@@ -116,6 +116,11 @@ void printVncDisplayString(char * vncString)
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
 #endif
 
+    // ------------ system.ini changes _before_ starting the plc runtime (this is hmi_only !) ------------
+
+    // 1) on TPAC models TPAC1007_04_A{A,C,}: setting internal rtu baudrate
+    //    NB: directly reading the model file, because the plc isn't started yet
+
     if (system("grep -qe TPAC1007_04_A[ACD] /rootfs_version") == 0) { // NB: no TPAC1007_04_A[BE]
         QSettings system_ini("/local/etc/sysconfig/system.ini", QSettings::IniFormat);
 
@@ -125,13 +130,16 @@ void printVncDisplayString(char * vncString)
         }
     }
 
-    {
-        QFile file("/local/retentive");
+    // 2) on control types 6 and 16: adjusting serial port 0 parameters
+    //    NB: directly reading the retentives file, because the plc isn't started yet
 
-        if (file.open(QIODevice::ReadOnly) and file.seek((ID_PLC_control_type - 1) * 4)) {
-            QByteArray bytes = file.read(4);
+    QFile file("/local/retentive");
+    if (file.open(QIODevice::ReadOnly) and file.seek((ID_PLC_control_type - 1) * 4)) {
+        QByteArray bytes = file.read(4);
 
-            if ((bytes.size() >= 4) and (bytes[0] == (char)ControlType_6)) {
+        if (bytes.size() >= 4) {
+
+            if (bytes[0] == (char)ControlType_6) {
                 QSettings system_ini("/local/etc/sysconfig/system.ini", QSettings::IniFormat);
 
                 if (system_ini.value("SERIAL_PORT_0/silence_ms").toInt() != 20) {
@@ -139,10 +147,20 @@ void printVncDisplayString(char * vncString)
                     system_ini.sync();
                 }
             }
+            else if (bytes[0] == (char)ControlType_16) {
+                QSettings system_ini("/local/etc/sysconfig/system.ini", QSettings::IniFormat);
+
+                if (system_ini.value("SERIAL_PORT_0/baudrate").toInt() != 9600) {
+                    system_ini.setValue("SERIAL_PORT_0/baudrate", "9600");
+                    system_ini.sync();
+                }
+            }
         }
     }
 
-    userPageList 
+    // -------------------------------------------------------------------------------------------------
+
+    userPageList
             << "page005"
             << "page010"
             << "page020"

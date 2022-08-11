@@ -1,5 +1,0 @@
-L
-1;PLC_T1_temperature             ;00007F;-20.00;140.00;
-1;PLC_T1_temperature_bis         ;7F0000;-20.00;140.00;
-1;PLC_T1_temperature_setpoint    ;AA00AA;-20.00;140.00;
-1;PLC_T1_heating                 ;FF0000;0.00;8.00;

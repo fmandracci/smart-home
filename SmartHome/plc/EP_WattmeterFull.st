@@ -41,8 +41,38 @@ VAR_IN_OUT
 	e_kWh : DINT;  (* kWh *)
 END_VAR
 
-    if PLC_control_type <> ControlType_6 then
+    if PLC_control_type = ControlType_6 then
+        case n of
+        1:
+            EP_Wattmeter(n, W, _var, VA, kWh);
+            pf    := REAL_TO_INT  (SysPowerFactor_0     * 1000.0);
+            Hz    := REAL_TO_INT  (Frequency_0          *  100.0);
+            V     := REAL_TO_INT  (SystemVoltage_0      *  100.0);
+            A     := REAL_TO_INT  (SystemCurrent_0      * 1000.0);
+            e_kWh := REAL_TO_DINT(SysExpActiveEnergy_0 /  100.0) + PLC_EP_wattmeter_M_e_kWh_offset; (* wxyz Wh --> w.x kWh *)
+        2:
+            EP_Wattmeter(n, W, _var, VA, kWh);
+            pf    := REAL_TO_INT  (SysPowerFactor_1     * 1000.0);
+         (* Hz    := REAL_TO_INT  (Frequency_1          *  100.0); *)
+         (* V     := REAL_TO_INT  (SystemVoltage_1      *  100.0); *)
+         (* A     := REAL_TO_INT  (SystemCurrent_1      * 1000.0); *)
+            e_kWh := REAL_TO_DINT (SysExpActiveEnergy_1 /  100.0) + PLC_EP_wattmeter_F_e_kWh_offset; (* wxyz Wh --> w.x kWh *)
+        else ;
+        end_case;
 
+    elsif PLC_control_type = ControlType_16 then
+        case n of
+        1:
+            EP_Wattmeter(n, W, _var, VA, kWh);
+            pf    := QcPm_PowerFactor_0      ;
+            Hz    := QcPm_Frequency_0   *  10;
+            V     := QcPm_Voltage_0     *  10;
+            A     := QcPm_Current_0     *  10;
+            e_kWh :=                        0; 
+        else ;
+        end_case;
+
+    else
         case n of
         1:
             EP_Wattmeter(n, W, _var, VA, kWh);
@@ -64,26 +94,6 @@ END_VAR
             A3    := REAL_TO_INT  (RTU_EP_wattmeter_F_I3 * 1000.0);
             A     := REAL_TO_INT  (RTU_EP_wattmeter_F_I  * 1000.0);
             e_kWh := REAL_TO_DINT (RTU_EP_wattmeter_F_Eout /  100.0) + PLC_EP_wattmeter_F_e_kWh_offset; (* wxyz Wh --> w.x kWh *)
-        else ;
-        end_case;
-
-    elsif PLC_control_type = ControlType_6 then
-
-        case n of
-        1:
-            EP_Wattmeter(n, W, _var, VA, kWh);
-            pf    := REAL_TO_INT  (SysPowerFactor_0     * 1000.0);
-            Hz    := REAL_TO_INT  (Frequency_0          *  100.0);
-            V     := REAL_TO_INT  (SystemVoltage_0      *  100.0);
-            A     := REAL_TO_INT  (SystemCurrent_0      * 1000.0);
-            e_kWh := REAL_TO_DINT(SysExpActiveEnergy_0 /  100.0) + PLC_EP_wattmeter_M_e_kWh_offset; (* wxyz Wh --> w.x kWh *)
-        2:
-            EP_Wattmeter(n, W, _var, VA, kWh);
-            pf    := REAL_TO_INT  (SysPowerFactor_1     * 1000.0);
-         (* Hz    := REAL_TO_INT  (Frequency_1          *  100.0); *)
-         (* V     := REAL_TO_INT  (SystemVoltage_1      *  100.0); *)
-         (* A     := REAL_TO_INT  (SystemCurrent_1      * 1000.0); *)
-            e_kWh := REAL_TO_DINT (SysExpActiveEnergy_1 /  100.0) + PLC_EP_wattmeter_F_e_kWh_offset; (* wxyz Wh --> w.x kWh *)
         else ;
         end_case;
 

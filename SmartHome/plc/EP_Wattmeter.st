@@ -33,73 +33,7 @@ VAR_IN_OUT
 	kWh  : DINT;  (* kWh *)
 END_VAR
 
-	if PLC_control_type <> ControlType_6 then
-
-		case n of
-		 1:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter_M_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter_M_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter_M_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter_M_Ein  /  100.0) + PLC_EP_wattmeter_M_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 2: 
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter_F_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter_F_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter_F_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter_F_Ein  /  100.0) + PLC_EP_wattmeter_F_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 3:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter01_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter01_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter01_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter01_Ein  /  100.0) + PLC_EP_wattmeter01_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 4:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter02_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter02_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter02_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter02_Ein  /  100.0) + PLC_EP_wattmeter02_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 5:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter03_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter03_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter03_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter03_Ein  /  100.0) + PLC_EP_wattmeter03_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 6:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter04_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter04_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter04_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter04_Ein  /  100.0) + PLC_EP_wattmeter04_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 7:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter05_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter05_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter05_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter05_Ein  /  100.0) + PLC_EP_wattmeter05_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 8:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter06_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter06_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter06_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter06_Ein  /  100.0) + PLC_EP_wattmeter06_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		 9:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter07_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter07_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter07_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter07_Ein  /  100.0) + PLC_EP_wattmeter07_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		10:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter08_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter08_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter08_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter08_Ein  /  100.0) + PLC_EP_wattmeter08_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		11:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter09_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter09_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter09_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter09_Ein  /  100.0) + PLC_EP_wattmeter09_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		12:
-		 	W   := REAL_TO_INT  (RTU_EP_wattmeter10_P             );
-			_var:= REAL_TO_INT  (RTU_EP_wattmeter10_Q             );
-			VA  := REAL_TO_INT  (RTU_EP_wattmeter10_S             );
-			kWh := REAL_TO_DINT (RTU_EP_wattmeter10_Ein  /  100.0) + PLC_EP_wattmeter10_kWh_offset; (* wxyz Wh --> w.x kWh *)
-		else ;
-		end_case;
-
-    elsif PLC_control_type = ControlType_6 then
+	if PLC_control_type = ControlType_6 then
 
 		case n of
 		 1:
@@ -165,6 +99,83 @@ END_VAR
 		else ;
 		end_case;
 
-	end_if;
+	elsif PLC_control_type = ControlType_16 then
+
+		case n of
+		 1:
+		 	W   := QcPm_ActivePower_0;
+			_var:= QcPm_ReactivePower_0;
+			VA  := QcPm_ApparentPower_0;
+			kWh := UDINT_TO_DINT(QcPm_ActiveEnergy_0 / 100) + PLC_EP_wattmeter_M_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		else ;
+		end_case;
+
+	else
+
+		case n of
+		 1:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter_M_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter_M_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter_M_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter_M_Ein  /  100.0) + PLC_EP_wattmeter_M_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 2: 
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter_F_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter_F_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter_F_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter_F_Ein  /  100.0) + PLC_EP_wattmeter_F_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 3:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter01_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter01_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter01_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter01_Ein  /  100.0) + PLC_EP_wattmeter01_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 4:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter02_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter02_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter02_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter02_Ein  /  100.0) + PLC_EP_wattmeter02_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 5:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter03_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter03_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter03_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter03_Ein  /  100.0) + PLC_EP_wattmeter03_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 6:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter04_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter04_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter04_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter04_Ein  /  100.0) + PLC_EP_wattmeter04_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 7:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter05_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter05_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter05_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter05_Ein  /  100.0) + PLC_EP_wattmeter05_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 8:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter06_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter06_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter06_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter06_Ein  /  100.0) + PLC_EP_wattmeter06_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		 9:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter07_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter07_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter07_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter07_Ein  /  100.0) + PLC_EP_wattmeter07_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		10:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter08_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter08_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter08_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter08_Ein  /  100.0) + PLC_EP_wattmeter08_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		11:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter09_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter09_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter09_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter09_Ein  /  100.0) + PLC_EP_wattmeter09_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		12:
+		 	W   := REAL_TO_INT  (RTU_EP_wattmeter10_P             );
+			_var:= REAL_TO_INT  (RTU_EP_wattmeter10_Q             );
+			VA  := REAL_TO_INT  (RTU_EP_wattmeter10_S             );
+			kWh := REAL_TO_DINT (RTU_EP_wattmeter10_Ein  /  100.0) + PLC_EP_wattmeter10_kWh_offset; (* wxyz Wh --> w.x kWh *)
+		else ;
+		end_case;
+
+    end_if;
 
 END_FUNCTION

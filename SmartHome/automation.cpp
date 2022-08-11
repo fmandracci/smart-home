@@ -57,7 +57,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(1202);
+    doWrite_PLC_HMI_Version(1203);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'
@@ -181,8 +181,8 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
     const QString CYAN_OVER_BLACK("color: rgb(0, 255, 255); background-color: rgb(0, 0, 0);");
 
     const QString YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK + "border: 1px solid rgb(255, 255, 0);";
-    const QString GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK + "border: 1px solid rgb(0, 255, 0);";
-    const QString CYAN_BORDER("border: 1px solid rgb(0, 255, 255);");
+    //const QString GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK + "border: 1px solid rgb(0, 255, 0);";
+    const QString CYAN_OVER_BLACK_BORDER = CYAN_OVER_BLACK + "border: 1px solid rgb(0, 255, 255);";
 
     const QPixmap Error_png(":/systemicons/Error.png");
     const QPixmap Danger_png(":/systemicons/Danger.png");
@@ -199,7 +199,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
             if (not PLC_EP_isOK) {
                 label_EP->setPixmap(Error_png);
             } else if (PLC_Iam_EP) {
-                label_EP->setStyleSheet(CYAN_OVER_BLACK + CYAN_BORDER);
+                label_EP->setStyleSheet(CYAN_OVER_BLACK_BORDER);
             } else  {
                 label_EP->setStyleSheet(GREEN_OVER_BLACK);
             }
@@ -217,7 +217,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
             if (not PLC_BA_isOK) {
                 label_BA->setPixmap(Error_png);
             } else if (PLC_Iam_BA) {
-                label_BA->setStyleSheet(CYAN_OVER_BLACK + CYAN_BORDER);
+                label_BA->setStyleSheet(CYAN_OVER_BLACK_BORDER);
             } else {
                 label_BA->setStyleSheet(GREEN_OVER_BLACK);
             }
@@ -278,7 +278,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T1_isOK) {
             label_T1->setPixmap(Error_png);
         } else if (PLC_Iam_T1) {
-            label_T1->setStyleSheet(PLC_T1_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T1->setStyleSheet(PLC_T1_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T1->setStyleSheet(PLC_T1_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }
@@ -290,7 +290,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T2_isOK) {
             label_T2->setPixmap(Error_png);
         } else if (PLC_Iam_T2) {
-            label_T2->setStyleSheet(PLC_T2_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T2->setStyleSheet(PLC_T2_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T2->setStyleSheet(PLC_T2_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }
@@ -302,7 +302,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T3_isOK) {
             label_T3->setPixmap(Error_png);
         } else if (PLC_Iam_T3) {
-            label_T3->setStyleSheet(PLC_T3_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T3->setStyleSheet(PLC_T3_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T3->setStyleSheet(PLC_T3_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }
@@ -314,7 +314,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T4_isOK) {
             label_T4->setPixmap(Error_png);
         } else if (PLC_Iam_T4) {
-            label_T4->setStyleSheet(PLC_T4_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T4->setStyleSheet(PLC_T4_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T4->setStyleSheet(PLC_T4_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }
@@ -326,7 +326,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T5_isOK) {
             label_T5->setPixmap(Error_png);
         } else if (PLC_Iam_T5) {
-            label_T5->setStyleSheet(PLC_T5_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T5->setStyleSheet(PLC_T5_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T5->setStyleSheet(PLC_T5_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }
@@ -338,7 +338,7 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
         if (not PLC_T6_isOK) {
             label_T6->setPixmap(Error_png);
         } else if (PLC_Iam_T6) {
-            label_T6->setStyleSheet(PLC_T6_heating ? YELLOW_OVER_BLACK_BORDER : GREEN_OVER_BLACK_BORDER);
+            label_T6->setStyleSheet(PLC_T6_heating ? YELLOW_OVER_BLACK_BORDER : CYAN_OVER_BLACK_BORDER);
         } else {
             label_T6->setStyleSheet(PLC_T6_heating ? YELLOW_OVER_BLACK : GREEN_OVER_BLACK);
         }

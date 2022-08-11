@@ -120,7 +120,6 @@ VAR_GLOBAL
 	PLC_T6_temperature_offset AT %QW0.492:INT;	(* optional temperature offset *)
 	PLC_T6_temperature_bis_offset AT %QW0.496:INT;	(* optional temperature offset *)
 	PLC_T6_temperature_ext_offset AT %QW0.500:INT;	(* optional temperature offset *)
-	Tsoglia_Massetto AT %QW0.744:INT;	(* massima temperatura massetto (20 .. 30 C) *)
 	TimerValue_1 AT %QD0.760:DINT;
 	TimerValue_2 AT %QD0.764:DINT;
 	PLC_RELOAD_CONF AT %QX0.772.0:BOOL;
@@ -1053,769 +1052,777 @@ VAR_GLOBAL
 	PLC_T6_lamp_feedback_4 AT %QX0.13476.0:BOOL;
 	PLC_T6_lamp_feedback_5 AT %QX0.13480.0:BOOL;
 	PLC_T6_control_type AT %QW0.13484:UINT;
-	PLC_BA_led_green AT %QX0.14800.0:BOOL;	(* ARMED(blinking), ENABLED, RINGING, MUTED *)
-	PLC_BA_led_red AT %QX0.14804.0:BOOL;	(* ARMED(if NG), RINGING(blinking), MUTED *)
-	PLC_BA_led_yellow1 AT %QX0.14808.0:BOOL;	(* NIGHTIME, EVERYTHING *)
-	PLC_BA_led_yellow2 AT %QX0.14812.0:BOOL;	(* DAYTIME, EVERYTHING *)
-	PLC_BA_siren AT %QX0.14816.0:BOOL;	(* HPA *)
-	PLC_BA_relay_A AT %QX0.14820.0:BOOL;
-	PLC_BA_relay_B AT %QX0.14824.0:BOOL;
-	PLC_BA_relay_C AT %QX0.14828.0:BOOL;
-	PLC_BA_input_9 AT %QX0.14832.0:BOOL;
-	PLC_BA_input_10 AT %QX0.14836.0:BOOL;
-	PLC_BA_input_11 AT %QX0.14840.0:BOOL;
-	PLC_BA_input_12 AT %QX0.14844.0:BOOL;
-	PLC_BA_command AT %QD0.14848:UDINT;	(* NONE, ARM, NOTHING, DAYTIME, NIGHTIME, EVERYTHING, ENABLE, DISABLE, ACK, TEST *)
-	PLC_BA_config_mask AT %QD0.14856:UDINT;
-	PLC_BA_DigOut_1 AT %QX0.14876.0:BOOL;
-	PLC_BA_DigOut_2 AT %QX0.14880.0:BOOL;
-	PLC_BA_DigOut_3 AT %QX0.14884.0:BOOL;
-	PLC_BA_DigOut_4 AT %QX0.14888.0:BOOL;
-	PLC_BA_DigOut_5 AT %QX0.14892.0:BOOL;
-	PLC_BA_DigOut_6 AT %QX0.14896.0:BOOL;
-	PLC_BA_DigOut_7 AT %QX0.14900.0:BOOL;
-	PLC_BA_DigOut_8 AT %QX0.14904.0:BOOL;
-	PLC_BA_DigOut_9 AT %QX0.14908.0:BOOL;
-	PLC_BA_DigOut_10 AT %QX0.14912.0:BOOL;
-	PLC_BA_DigOut_11 AT %QX0.14916.0:BOOL;
-	PLC_BA_DigOut_12 AT %QX0.14920.0:BOOL;
-	PLC_BA_DigOut_13 AT %QX0.14924.0:BOOL;
-	PLC_BA_DigOut_14 AT %QX0.14928.0:BOOL;
-	PLC_BA_DigOut_15 AT %QX0.14932.0:BOOL;
-	PLC_BA_DigOut_16 AT %QX0.14936.0:BOOL;
-	PLC_BA_DigOut_17 AT %QX0.14940.0:BOOL;
-	PLC_BA_DigOut_18 AT %QX0.14944.0:BOOL;
-	PLC_BA_DigOut_19 AT %QX0.14948.0:BOOL;
-	PLC_BA_DigOut_20 AT %QX0.14952.0:BOOL;
-	PLC_BA_DigOut_21 AT %QX0.14956.0:BOOL;
-	PLC_BA_DigOut_22 AT %QX0.14960.0:BOOL;
-	PLC_BA_DigOut_23 AT %QX0.14964.0:BOOL;
-	PLC_BA_DigOut_24 AT %QX0.14968.0:BOOL;
-	PLC_BA_DigOut_25 AT %QX0.14972.0:BOOL;
-	PLC_BA_DigOut_26 AT %QX0.14976.0:BOOL;
-	PLC_BA_DigOut_27 AT %QX0.14980.0:BOOL;
-	PLC_BA_DigOut_28 AT %QX0.14984.0:BOOL;
-	PLC_BA_DigOut_29 AT %QX0.14988.0:BOOL;
-	PLC_BA_DigOut_30 AT %QX0.14992.0:BOOL;
-	PLC_BA_DigOut_31 AT %QX0.14996.0:BOOL;
-	PLC_BA_DigOut_32 AT %QX0.15000.0:BOOL;
-	PLC_BA_DigIn_1 AT %QX0.15004.0:BOOL;
-	PLC_BA_DigIn_2 AT %QX0.15008.0:BOOL;
-	PLC_BA_DigIn_3 AT %QX0.15012.0:BOOL;
-	PLC_BA_DigIn_4 AT %QX0.15016.0:BOOL;
-	PLC_BA_DigIn_5 AT %QX0.15020.0:BOOL;
-	PLC_BA_DigIn_6 AT %QX0.15024.0:BOOL;
-	PLC_BA_DigIn_7 AT %QX0.15028.0:BOOL;
-	PLC_BA_DigIn_8 AT %QX0.15032.0:BOOL;
-	PLC_BA_DigIn_9 AT %QX0.15036.0:BOOL;
-	PLC_BA_DigIn_10 AT %QX0.15040.0:BOOL;
-	PLC_BA_DigIn_11 AT %QX0.15044.0:BOOL;
-	PLC_BA_DigIn_12 AT %QX0.15048.0:BOOL;
-	PLC_BA_DigIn_13 AT %QX0.15052.0:BOOL;
-	PLC_BA_DigIn_14 AT %QX0.15056.0:BOOL;
-	PLC_BA_DigIn_15 AT %QX0.15060.0:BOOL;
-	PLC_BA_DigIn_16 AT %QX0.15064.0:BOOL;
-	PLC_BA_DigIn_17 AT %QX0.15068.0:BOOL;
-	PLC_BA_DigIn_18 AT %QX0.15072.0:BOOL;
-	PLC_BA_DigIn_19 AT %QX0.15076.0:BOOL;
-	PLC_BA_DigIn_20 AT %QX0.15080.0:BOOL;
-	PLC_BA_DigIn_21 AT %QX0.15084.0:BOOL;
-	PLC_BA_DigIn_22 AT %QX0.15088.0:BOOL;
-	PLC_BA_DigIn_23 AT %QX0.15092.0:BOOL;
-	PLC_BA_DigIn_24 AT %QX0.15096.0:BOOL;
-	PLC_BA_DigIn_25 AT %QX0.15100.0:BOOL;
-	PLC_BA_DigIn_26 AT %QX0.15104.0:BOOL;
-	PLC_BA_DigIn_27 AT %QX0.15108.0:BOOL;
-	PLC_BA_DigIn_28 AT %QX0.15112.0:BOOL;
-	PLC_BA_DigIn_29 AT %QX0.15116.0:BOOL;
-	PLC_BA_DigIn_30 AT %QX0.15120.0:BOOL;
-	PLC_BA_DigIn_31 AT %QX0.15124.0:BOOL;
-	PLC_BA_DigIn_32 AT %QX0.15128.0:BOOL;
-	PLC_BA_OK_1 AT %QW0.15132:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_2 AT %QW0.15136:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_3 AT %QW0.15140:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_4 AT %QW0.15144:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_5 AT %QW0.15148:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_6 AT %QW0.15152:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_7 AT %QW0.15156:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_8 AT %QW0.15160:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_9 AT %QW0.15164:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_10 AT %QW0.15168:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_11 AT %QW0.15172:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_12 AT %QW0.15176:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_13 AT %QW0.15180:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_14 AT %QW0.15184:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_15 AT %QW0.15188:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_16 AT %QW0.15192:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_17 AT %QW0.15196:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_18 AT %QW0.15200:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_19 AT %QW0.15204:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_20 AT %QW0.15208:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_21 AT %QW0.15212:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_22 AT %QW0.15216:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_23 AT %QW0.15220:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_24 AT %QW0.15224:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_25 AT %QW0.15228:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_26 AT %QW0.15232:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_27 AT %QW0.15236:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_28 AT %QW0.15240:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_29 AT %QW0.15244:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_30 AT %QW0.15248:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_31 AT %QW0.15252:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_OK_32 AT %QW0.15256:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
-	PLC_BA_control_type AT %QW0.15264:UINT;
-	ARQ_FW AT %IW0.16000:UINT;	(* RTU0_STATUS NODE_10_STATUS *)
-	ARQ_UPTIME_LED_h AT %ID0.16004:UDINT;
-	ARQ_LIFETIME_RELE_h AT %ID0.16008:UDINT;
-	ARQ_TCJ AT %IW0.16012:INT;
-	ARQ_ERROR_ANOUT AT %IX0.16016.0:BOOL;
-	ARQ_ERROR_STOUT AT %IX0.16020.0:BOOL;
-	ARQ_ERROR_STOUT_A AT %IX0.16024.0:BOOL;
-	ARQ_ERROR_WATCHDOG AT %IX0.16028.0:BOOL;
-	ARQ_ERROR_SELFTEST_ON AT %IX0.16032.0:BOOL;
-	ARQ_ERROR_PARAMETER AT %IX0.16036.0:BOOL;
-	ARQ_ERROR_SELFTEST_DO1 AT %IX0.16040.0:BOOL;
-	AQR_ERROR_SELFTEST_ANOUT AT %IX0.16044.0:BOOL;
-	ARQ_AnOut AT %QW0.16048:INT;
-	AQR_StOut AT %QW0.16052:UINT;
-	ARQ_Rele AT %QX0.16056.0:BOOL;
-	ARQ_reserved_1 AT %IW0.16060:UINT;
-	ARQ_StOut_current AT %QW0.16064:INT;
-	ARQ_Watchdog AT %QW0.16068:UINT;
-	ARQ_Parity AT %QW0.16072:UINT;	(* 0=N 1=E 2=O *)
-	ARQ_StopBits AT %QW0.16076:UINT;	(* 0=1bit 1=2bit *)
-	ARQ_Baudrate AT %QW0.16080:UINT;	(* 0=9600 1=19200 2=38400 3=57600 *)
-	ARQ_Address AT %QW0.16084:UINT;
-	ARQ_PartNumber AT %QW0.16088:UINT;
-	ARQ_reserved_2 AT %IW0.16092:UINT;
-	ARQ_reserved_3 AT %IW0.16096:UINT;
-	ARQ_reserved_4 AT %IW0.16100:UINT;
-	ARQ_reserved_5 AT %IW0.16104:UINT;
-	ARQ_SerialNumber AT %QW0.16108:UINT;
-	ARQ_Setup AT %QW0.16112:UINT;	(* 0x5555 = save registers *)
-	MPNE_A_FwRev AT %IW0.16116:UINT;	(* MPNE  firmware revision *)
-	MPNE_A_ExpID AT %IW0.16120:UINT;	(* MPNE ID expansions *)
-	MPNE_A_ExpType AT %IW0.16124:UINT;	(* MPNE  expansions type *)
-	MPNE_A_SN AT %ID0.16128:UDINT;	(* MPNE serial number *)
-	MPNE_A_LifeTime AT %ID0.16132:UDINT;	(* MPNE lifetime 1s *)
-	MPNE_A_Status AT %IW0.16136:UINT;	(* MPNE status register *)
-	MPNE_A_DigIn_1 AT %IX0.16140.0:BOOL;	(* Digital input 1 value *)
-	MPNE_A_DigIn_2 AT %IX0.16144.0:BOOL;	(* Digital input 2 value *)
-	MPNE_A_DigIn_3 AT %IX0.16148.0:BOOL;	(* Digital input 3 value *)
-	MPNE_A_DigIn_4 AT %IX0.16152.0:BOOL;	(* Digital input 4 value *)
-	MPNE_A_DigIn_5 AT %IX0.16156.0:BOOL;	(* Digital input 5 value *)
-	MPNE_A_DigIn_6 AT %IX0.16160.0:BOOL;	(* Digital input 6 value *)
-	MPNE_A_DigIn_7 AT %IX0.16164.0:BOOL;	(* Digital input 7 value *)
-	MPNE_A_DigIn_8 AT %IX0.16168.0:BOOL;	(* Digital input 8 value *)
-	MPNE_A_DigIn_9 AT %IX0.16172.0:BOOL;	(* Digital input 9 value *)
-	MPNE_A_DigIn_10 AT %IX0.16176.0:BOOL;	(* Digital input 10 value *)
-	MPNE_A_DigIn_11 AT %IX0.16180.0:BOOL;	(* Digital input 11 value *)
-	MPNE_A_DigIn_12 AT %IX0.16184.0:BOOL;	(* Digital input 12 value *)
-	MPNE_A_DigIn_13 AT %IX0.16188.0:BOOL;	(* Digital input 13 value *)
-	MPNE_A_DigIn_14 AT %IX0.16192.0:BOOL;	(* Digital input 14 value *)
-	MPNE_A_DigIn_15 AT %IX0.16196.0:BOOL;	(* Digital input 15 value *)
-	MPNE_A_DigIn_16 AT %IX0.16200.0:BOOL;	(* Digital input 16 value *)
-	MPNE_A_StatusWord AT %QW0.16304:UINT;	(* Fast Input Output Status Word *)
-	MPNE_A_Watchdog AT %QW0.16308:UINT;	(* Watchdog *)
-	MPNE_A_DigDir_1 AT %QX0.16312.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_2 AT %QX0.16316.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_3 AT %QX0.16320.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_4 AT %QX0.16324.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_5 AT %QX0.16328.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_6 AT %QX0.16332.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_7 AT %QX0.16336.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
-	MPNE_A_DigDir_8 AT %QX0.16340.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
-	MPNE_A_DigOut_1 AT %QX0.16344.0:BOOL;	(* Digital output 1 value *)
-	MPNE_A_DigOut_2 AT %QX0.16348.0:BOOL;	(* Digital output 2 value *)
-	MPNE_A_DigOut_3 AT %QX0.16352.0:BOOL;	(* Digital output 3 value *)
-	MPNE_A_DigOut_4 AT %QX0.16356.0:BOOL;	(* Digital output 4 value *)
-	MPNE_A_DigOut_5 AT %QX0.16360.0:BOOL;	(* Digital output 5 value *)
-	MPNE_A_DigOut_6 AT %QX0.16364.0:BOOL;	(* Digital output 6 value *)
-	MPNE_A_DigOut_7 AT %QX0.16368.0:BOOL;	(* Digital output 7 value *)
-	MPNE_A_DigOut_8 AT %QX0.16372.0:BOOL;	(* Digital output 8 value *)
-	MPNE_A_DigOut_17 AT %QX0.16376.0:BOOL;	(* Digital output 17 value *)
-	MPNE_A_DigOut_18 AT %QX0.16380.0:BOOL;	(* Digital output 18 value *)
-	MPNE_A_DigOut_19 AT %QX0.16384.0:BOOL;	(* Digital output 19 value *)
-	MPNE_A_DigOut_20 AT %QX0.16388.0:BOOL;	(* Digital output 20 value *)
-	MPNE_A_DigOut_21 AT %QX0.16392.0:BOOL;	(* Digital output 21 value *)
-	MPNE_A_DigOut_22 AT %QX0.16396.0:BOOL;	(* Digital output 22 value *)
-	MPNE_A_DigOut_23 AT %QX0.16400.0:BOOL;	(* Digital output 23 value *)
-	MPNE_A_DigOut_24 AT %QX0.16404.0:BOOL;	(* Digital output 24 value *)
-	MPNE_A_DigOut_25 AT %QX0.16408.0:BOOL;	(* Digital output 25 value *)
-	MPNE_A_DigOut_26 AT %QX0.16412.0:BOOL;	(* Digital output 26 value *)
-	MPNE_A_DigOut_27 AT %QX0.16416.0:BOOL;	(* Digital output 27 value *)
-	MPNE_A_DigOut_28 AT %QX0.16420.0:BOOL;	(* Digital output 28 value *)
-	MPNE_A_DigOut_29 AT %QX0.16424.0:BOOL;	(* Digital output 29 value *)
-	MPNE_A_DigOut_30 AT %QX0.16428.0:BOOL;	(* Digital output 30 value *)
-	MPNE_A_DigOut_31 AT %QX0.16432.0:BOOL;	(* Digital output 31 value *)
-	MPNE_A_DigOut_32 AT %QX0.16436.0:BOOL;	(* Digital output 32 value *)
-	MPNE_A_ControlWord_A AT %QW0.16440:UINT;	(* Fast Input Output Control Word  Line A *)
-	MPNE_A_FastInDelay_A AT %QW0.16444:UINT;	(* Fast input delay time x 10us Line A *)
-	MPNE_A_FastOutDelay_A AT %QW0.16448:UINT;	(* Fast output delay time x 10us Line A *)
-	MPNE_A_FastOutDuration_A AT %QW0.16452:UINT;	(* Fast output duration time x 10us  Line A *)
-	MPNE_A_EncCounter_A AT %QD0.16456:DINT;	(* Encoder Counter  Line A *)
-	MPNE_A_MatchRegister_A AT %QD0.16460:DINT;	(* Match  Encoder  register  Line A *)
-	MPNE_A_PTOTargetFreq_A AT %QW0.16464:UINT;	(* PTO Frequency Line A *)
-	MPNE_A_PTOSteps_A AT %QD0.16468:UDINT;	(* PTO steps  Line A *)
-	MPNE_B_FwRev AT %IW0.16648:UINT;	(* MPNE  firmware revision *)
-	MPNE_B_ExpID AT %IW0.16652:UINT;	(* MPNE ID expansions *)
-	MPNE_B_ExpType AT %IW0.16656:UINT;	(* MPNE  expansions type *)
-	MPNE_B_SN AT %ID0.16660:UDINT;	(* MPNE serial number *)
-	MPNE_B_LifeTime AT %ID0.16664:UDINT;	(* MPNE lifetime 1s *)
-	MPNE_B_Status AT %IW0.16668:UINT;	(* MPNE status register *)
-	MPNE_B_DigIn_1 AT %IX0.16672.0:BOOL;	(* Digital input 1 value *)
-	MPNE_B_DigIn_2 AT %IX0.16676.0:BOOL;	(* Digital input 2 value *)
-	MPNE_B_DigIn_3 AT %IX0.16680.0:BOOL;	(* Digital input 3 value *)
-	MPNE_B_DigIn_4 AT %IX0.16684.0:BOOL;	(* Digital input 4 value *)
-	MPNE_B_DigIn_5 AT %IX0.16688.0:BOOL;	(* Digital input 5 value *)
-	MPNE_B_DigIn_6 AT %IX0.16692.0:BOOL;	(* Digital input 6 value *)
-	MPNE_B_DigIn_7 AT %IX0.16696.0:BOOL;	(* Digital input 7 value *)
-	MPNE_B_DigIn_8 AT %IX0.16700.0:BOOL;	(* Digital input 8 value *)
-	MPNE_B_DigIn_9 AT %IX0.16704.0:BOOL;	(* Digital input 9 value *)
-	MPNE_B_DigIn_10 AT %IX0.16708.0:BOOL;	(* Digital input 10 value *)
-	MPNE_B_DigIn_11 AT %IX0.16712.0:BOOL;	(* Digital input 11 value *)
-	MPNE_B_DigIn_12 AT %IX0.16716.0:BOOL;	(* Digital input 12 value *)
-	MPNE_B_DigIn_13 AT %IX0.16720.0:BOOL;	(* Digital input 13 value *)
-	MPNE_B_DigIn_14 AT %IX0.16724.0:BOOL;	(* Digital input 14 value *)
-	MPNE_B_DigIn_15 AT %IX0.16728.0:BOOL;	(* Digital input 15 value *)
-	MPNE_B_DigIn_16 AT %IX0.16732.0:BOOL;	(* Digital input 16 value *)
-	MPNE_B_StatusWord AT %QW0.16836:UINT;	(* Fast Input Output Status Word *)
-	MPNE_B_Watchdog AT %QW0.16840:UINT;	(* Watchdog *)
-	MPNE_B_DigDir_1 AT %QX0.16844.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_2 AT %QX0.16848.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_3 AT %QX0.16852.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_4 AT %QX0.16856.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_5 AT %QX0.16860.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_6 AT %QX0.16864.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_7 AT %QX0.16868.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
-	MPNE_B_DigDir_8 AT %QX0.16872.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
-	MPNE_B_DigOut_1 AT %QX0.16876.0:BOOL;	(* Digital output 1 value *)
-	MPNE_B_DigOut_2 AT %QX0.16880.0:BOOL;	(* Digital output 2 value *)
-	MPNE_B_DigOut_3 AT %QX0.16884.0:BOOL;	(* Digital output 3 value *)
-	MPNE_B_DigOut_4 AT %QX0.16888.0:BOOL;	(* Digital output 4 value *)
-	MPNE_B_DigOut_5 AT %QX0.16892.0:BOOL;	(* Digital output 5 value *)
-	MPNE_B_DigOut_6 AT %QX0.16896.0:BOOL;	(* Digital output 6 value *)
-	MPNE_B_DigOut_7 AT %QX0.16900.0:BOOL;	(* Digital output 7 value *)
-	MPNE_B_DigOut_8 AT %QX0.16904.0:BOOL;	(* Digital output 8 value *)
-	MPNE_B_DigOut_17 AT %QX0.16908.0:BOOL;	(* Digital output 17 value *)
-	MPNE_B_DigOut_18 AT %QX0.16912.0:BOOL;	(* Digital output 18 value *)
-	MPNE_B_DigOut_19 AT %QX0.16916.0:BOOL;	(* Digital output 19 value *)
-	MPNE_B_DigOut_20 AT %QX0.16920.0:BOOL;	(* Digital output 20 value *)
-	MPNE_B_DigOut_21 AT %QX0.16924.0:BOOL;	(* Digital output 21 value *)
-	MPNE_B_DigOut_22 AT %QX0.16928.0:BOOL;	(* Digital output 22 value *)
-	MPNE_B_DigOut_23 AT %QX0.16932.0:BOOL;	(* Digital output 23 value *)
-	MPNE_B_DigOut_24 AT %QX0.16936.0:BOOL;	(* Digital output 24 value *)
-	MPNE_B_DigOut_25 AT %QX0.16940.0:BOOL;	(* Digital output 25 value *)
-	MPNE_B_DigOut_26 AT %QX0.16944.0:BOOL;	(* Digital output 26 value *)
-	MPNE_B_DigOut_27 AT %QX0.16948.0:BOOL;	(* Digital output 27 value *)
-	MPNE_B_DigOut_28 AT %QX0.16952.0:BOOL;	(* Digital output 28 value *)
-	MPNE_B_DigOut_29 AT %QX0.16956.0:BOOL;	(* Digital output 29 value *)
-	MPNE_B_DigOut_30 AT %QX0.16960.0:BOOL;	(* Digital output 30 value *)
-	MPNE_B_DigOut_31 AT %QX0.16964.0:BOOL;	(* Digital output 31 value *)
-	MPNE_B_DigOut_32 AT %QX0.16968.0:BOOL;	(* Digital output 32 value *)
-	MPNE_B_ControlWord_A AT %QW0.16972:UINT;	(* Fast Input Output Control Word  Line A *)
-	MPNE_B_FastInDelay_A AT %QW0.16976:UINT;	(* Fast input delay time x 10us Line A *)
-	MPNE_B_FastOutDelay_A AT %QW0.16980:UINT;	(* Fast output delay time x 10us Line A *)
-	MPNE_B_FastOutDuration_A AT %QW0.16984:UINT;	(* Fast output duration time x 10us  Line A *)
-	MPNE_B_EncCounter_A AT %QD0.16988:DINT;	(* Encoder Counter  Line A *)
-	MPNE_B_MatchRegister_A AT %QD0.16992:DINT;	(* Match  Encoder  register  Line A *)
-	MPNE_B_PTOTargetFreq_A AT %QW0.16996:UINT;	(* PTO Frequency Line A *)
-	MPNE_B_PTOSteps_A AT %QD0.17000:UDINT;	(* PTO steps  Line A *)
-	MPNE_C_FwRev AT %IW0.17180:UINT;	(* MPNE  firmware revision *)
-	MPNE_C_ExpID AT %IW0.17184:UINT;	(* MPNE ID expansions *)
-	MPNE_C_ExpType AT %IW0.17188:UINT;	(* MPNE  expansions type *)
-	MPNE_C_SN AT %ID0.17192:UDINT;	(* MPNE serial number *)
-	MPNE_C_LifeTime AT %ID0.17196:UDINT;	(* MPNE lifetime 1s *)
-	MPNE_C_Status AT %IW0.17200:UINT;	(* MPNE status register *)
-	MPNE_C_DigIn_1 AT %IX0.17204.0:BOOL;	(* Digital input 1 value *)
-	MPNE_C_DigIn_2 AT %IX0.17208.0:BOOL;	(* Digital input 2 value *)
-	MPNE_C_DigIn_3 AT %IX0.17212.0:BOOL;	(* Digital input 3 value *)
-	MPNE_C_DigIn_4 AT %IX0.17216.0:BOOL;	(* Digital input 4 value *)
-	MPNE_C_DigIn_5 AT %IX0.17220.0:BOOL;	(* Digital input 5 value *)
-	MPNE_C_DigIn_6 AT %IX0.17224.0:BOOL;	(* Digital input 6 value *)
-	MPNE_C_DigIn_7 AT %IX0.17228.0:BOOL;	(* Digital input 7 value *)
-	MPNE_C_DigIn_8 AT %IX0.17232.0:BOOL;	(* Digital input 8 value *)
-	MPNE_C_DigIn_9 AT %IX0.17236.0:BOOL;	(* Digital input 9 value *)
-	MPNE_C_DigIn_10 AT %IX0.17240.0:BOOL;	(* Digital input 10 value *)
-	MPNE_C_DigIn_11 AT %IX0.17244.0:BOOL;	(* Digital input 11 value *)
-	MPNE_C_DigIn_12 AT %IX0.17248.0:BOOL;	(* Digital input 12 value *)
-	MPNE_C_DigIn_13 AT %IX0.17252.0:BOOL;	(* Digital input 13 value *)
-	MPNE_C_DigIn_14 AT %IX0.17256.0:BOOL;	(* Digital input 14 value *)
-	MPNE_C_DigIn_15 AT %IX0.17260.0:BOOL;	(* Digital input 15 value *)
-	MPNE_C_DigIn_16 AT %IX0.17264.0:BOOL;	(* Digital input 16 value *)
-	MPNE_C_AnIn_1 AT %IW0.17332:INT;	(* Analog input 1 value *)
-	MPNE_C_AnIn_2 AT %IW0.17336:INT;	(* Analog input 2 value *)
-	MPNE_C_AnIn_3 AT %IW0.17340:INT;	(* Analog input 3 value *)
-	MPNE_C_AnIn_4 AT %IW0.17344:INT;	(* Analog input 4 value *)
-	MPNE_C_AnInStatus AT %IW0.17348:INT;	(* Analog Inputs status register *)
-	MPNE_C_StatusWord AT %QW0.17368:UINT;	(* Fast Input Output Status Word *)
-	MPNE_C_Watchdog AT %QW0.17372:UINT;	(* Watchdog *)
-	MPNE_C_DigDir_1 AT %QX0.17376.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_2 AT %QX0.17380.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_3 AT %QX0.17384.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_4 AT %QX0.17388.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_5 AT %QX0.17392.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_6 AT %QX0.17396.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_7 AT %QX0.17400.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
-	MPNE_C_DigDir_8 AT %QX0.17404.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
-	MPNE_C_DigOut_1 AT %QX0.17408.0:BOOL;	(* Digital output 1 value *)
-	MPNE_C_DigOut_2 AT %QX0.17412.0:BOOL;	(* Digital output 2 value *)
-	MPNE_C_DigOut_3 AT %QX0.17416.0:BOOL;	(* Digital output 3 value *)
-	MPNE_C_DigOut_4 AT %QX0.17420.0:BOOL;	(* Digital output 4 value *)
-	MPNE_C_DigOut_5 AT %QX0.17424.0:BOOL;	(* Digital output 5 value *)
-	MPNE_C_DigOut_6 AT %QX0.17428.0:BOOL;	(* Digital output 6 value *)
-	MPNE_C_DigOut_7 AT %QX0.17432.0:BOOL;	(* Digital output 7 value *)
-	MPNE_C_DigOut_8 AT %QX0.17436.0:BOOL;	(* Digital output 8 value *)
-	MPNE_C_ControlWord_A AT %QW0.17504:UINT;	(* Fast Input Output Control Word  Line A *)
-	MPNE_C_FastInDelay_A AT %QW0.17508:UINT;	(* Fast input delay time x 10us Line A *)
-	MPNE_C_FastOutDelay_A AT %QW0.17512:UINT;	(* Fast output delay time x 10us Line A *)
-	MPNE_C_FastOutDuration_A AT %QW0.17516:UINT;	(* Fast output duration time x 10us  Line A *)
-	MPNE_C_EncCounter_A AT %QD0.17520:DINT;	(* Encoder Counter  Line A *)
-	MPNE_C_MatchRegister_A AT %QD0.17524:DINT;	(* Match  Encoder  register  Line A *)
-	MPNE_C_PTOTargetFreq_A AT %QW0.17528:UINT;	(* PTO Frequency Line A *)
-	MPNE_C_PTOSteps_A AT %QD0.17532:UDINT;	(* PTO steps  Line A *)
-	MPNE_C_AnIn1Conf AT %QW0.17664:UINT;	(* Analog input 1 configuration *)
-	MPNE_C_AnIn2Conf AT %QW0.17668:UINT;	(* Analog input 2 configuration *)
-	MPNE_C_AnIn3Conf AT %QW0.17672:UINT;	(* Analog input 3 configuration *)
-	MPNE_C_AnIn4Conf AT %QW0.17676:UINT;	(* Analog input 4 configuration *)
-	MPNE_C_AnOut1Conf AT %QW0.17680:UINT;	(* Analog output 1 configuration *)
-	MPNE_C_AnOut2Conf AT %QW0.17684:UINT;	(* Analog output 2 configuration *)
-	MPNE_C_AnOut1 AT %QW0.17688:UINT;	(* Analog output 1 value *)
-	MPNE_C_AnOut2 AT %QW0.17692:UINT;	(* Analog output 2 value *)
-	MPNE_C_AnIn1Filter AT %QW0.17696:UINT;	(* Analog input 1 filter *)
-	MPNE_C_AnIn2Filter AT %QW0.17700:UINT;	(* Analog input 2 filter *)
-	MPNE_C_AnIn3Filter AT %QW0.17704:UINT;	(* Analog input 3 filter *)
-	MPNE_C_AnIn4Filter AT %QW0.17708:UINT;	(* Analog input 4 filter *)
-	MPNE_D_FwRev AT %IW0.17712:UINT;	(* MPNE  firmware revision *)
-	MPNE_D_ExpID AT %IW0.17716:UINT;	(* MPNE ID expansions *)
-	MPNE_D_ExpType AT %IW0.17720:UINT;	(* MPNE  expansions type *)
-	MPNE_D_SN AT %ID0.17724:UDINT;	(* MPNE serial number *)
-	MPNE_D_LifeTime AT %ID0.17728:UDINT;	(* MPNE lifetime 1s *)
-	MPNE_D_Status AT %IW0.17732:UINT;	(* MPNE status register *)
-	MPNE_D_DigIn_1 AT %IX0.17736.0:BOOL;	(* Digital input 1 value *)
-	MPNE_D_DigIn_2 AT %IX0.17740.0:BOOL;	(* Digital input 2 value *)
-	MPNE_D_DigIn_3 AT %IX0.17744.0:BOOL;	(* Digital input 3 value *)
-	MPNE_D_DigIn_4 AT %IX0.17748.0:BOOL;	(* Digital input 4 value *)
-	MPNE_D_DigIn_5 AT %IX0.17752.0:BOOL;	(* Digital input 5 value *)
-	MPNE_D_DigIn_6 AT %IX0.17756.0:BOOL;	(* Digital input 6 value *)
-	MPNE_D_DigIn_7 AT %IX0.17760.0:BOOL;	(* Digital input 7 value *)
-	MPNE_D_DigIn_8 AT %IX0.17764.0:BOOL;	(* Digital input 8 value *)
-	MPNE_D_DigIn_9 AT %IX0.17768.0:BOOL;	(* Digital input 9 value *)
-	MPNE_D_DigIn_10 AT %IX0.17772.0:BOOL;	(* Digital input 10 value *)
-	MPNE_D_DigIn_11 AT %IX0.17776.0:BOOL;	(* Digital input 11 value *)
-	MPNE_D_DigIn_12 AT %IX0.17780.0:BOOL;	(* Digital input 12 value *)
-	MPNE_D_DigIn_13 AT %IX0.17784.0:BOOL;	(* Digital input 13 value *)
-	MPNE_D_DigIn_14 AT %IX0.17788.0:BOOL;	(* Digital input 14 value *)
-	MPNE_D_DigIn_15 AT %IX0.17792.0:BOOL;	(* Digital input 15 value *)
-	MPNE_D_DigIn_16 AT %IX0.17796.0:BOOL;	(* Digital input 16 value *)
-	MPNE_D_AnIn_1 AT %IW0.17864:INT;	(* Analog input 1 value *)
-	MPNE_D_AnIn_2 AT %IW0.17868:INT;	(* Analog input 2 value *)
-	MPNE_D_AnIn_3 AT %IW0.17872:INT;	(* Analog input 3 value *)
-	MPNE_D_AnIn_4 AT %IW0.17876:INT;	(* Analog input 4 value *)
-	MPNE_D_AnInStatus AT %IW0.17880:INT;	(* Analog Inputs status register *)
-	MPNE_D_StatusWord AT %QW0.17900:UINT;	(* Fast Input Output Status Word *)
-	MPNE_D_Watchdog AT %QW0.17904:UINT;	(* Watchdog *)
-	MPNE_D_DigDir_1 AT %QX0.17908.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_2 AT %QX0.17912.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_3 AT %QX0.17916.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_4 AT %QX0.17920.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_5 AT %QX0.17924.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_6 AT %QX0.17928.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_7 AT %QX0.17932.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
-	MPNE_D_DigDir_8 AT %QX0.17936.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
-	MPNE_D_DigOut_1 AT %QX0.17940.0:BOOL;	(* Digital output 1 value *)
-	MPNE_D_DigOut_2 AT %QX0.17944.0:BOOL;	(* Digital output 2 value *)
-	MPNE_D_DigOut_3 AT %QX0.17948.0:BOOL;	(* Digital output 3 value *)
-	MPNE_D_DigOut_4 AT %QX0.17952.0:BOOL;	(* Digital output 4 value *)
-	MPNE_D_DigOut_5 AT %QX0.17956.0:BOOL;	(* Digital output 5 value *)
-	MPNE_D_DigOut_6 AT %QX0.17960.0:BOOL;	(* Digital output 6 value *)
-	MPNE_D_DigOut_7 AT %QX0.17964.0:BOOL;	(* Digital output 7 value *)
-	MPNE_D_DigOut_8 AT %QX0.17968.0:BOOL;	(* Digital output 8 value *)
-	MPNE_D_ControlWord_A AT %QW0.18036:UINT;	(* Fast Input Output Control Word  Line A *)
-	MPNE_D_FastInDelay_A AT %QW0.18040:UINT;	(* Fast input delay time x 10us Line A *)
-	MPNE_D_FastOutDelay_A AT %QW0.18044:UINT;	(* Fast output delay time x 10us Line A *)
-	MPNE_D_FastOutDuration_A AT %QW0.18048:UINT;	(* Fast output duration time x 10us  Line A *)
-	MPNE_D_EncCounter_A AT %QD0.18052:DINT;	(* Encoder Counter  Line A *)
-	MPNE_D_MatchRegister_A AT %QD0.18056:DINT;	(* Match  Encoder  register  Line A *)
-	MPNE_D_PTOTargetFreq_A AT %QW0.18060:UINT;	(* PTO Frequency Line A *)
-	MPNE_D_PTOSteps_A AT %QD0.18064:UDINT;	(* PTO steps  Line A *)
-	MPNE_D_AnIn1Conf AT %QW0.18196:UINT;	(* Analog input 1 configuration *)
-	MPNE_D_AnIn2Conf AT %QW0.18200:UINT;	(* Analog input 2 configuration *)
-	MPNE_D_AnIn3Conf AT %QW0.18204:UINT;	(* Analog input 3 configuration *)
-	MPNE_D_AnIn4Conf AT %QW0.18208:UINT;	(* Analog input 4 configuration *)
-	MPNE_D_AnOut1Conf AT %QW0.18212:UINT;	(* Analog output 1 configuration *)
-	MPNE_D_AnOut2Conf AT %QW0.18216:UINT;	(* Analog output 2 configuration *)
-	MPNE_D_AnOut1 AT %QW0.18220:UINT;	(* Analog output 1 value *)
-	MPNE_D_AnOut2 AT %QW0.18224:UINT;	(* Analog output 2 value *)
-	MPNE_D_AnIn1Filter AT %QW0.18228:UINT;	(* Analog input 1 filter *)
-	MPNE_D_AnIn2Filter AT %QW0.18232:UINT;	(* Analog input 2 filter *)
-	MPNE_D_AnIn3Filter AT %QW0.18236:UINT;	(* Analog input 3 filter *)
-	MPNE_D_AnIn4Filter AT %QW0.18240:UINT;	(* Analog input 4 filter *)
-	RTU_EP_wattmeter_M_P AT %ID0.18244:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter_M_Q AT %ID0.18248:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter_M_S AT %ID0.18252:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter_M_C AT %ID0.18256:REAL;	(* power factor +/- x.xxx *)
-	RTU_EP_wattmeter_M_F AT %ID0.18260:REAL;	(* frequency xx.xxx Hz *)
-	RTU_EP_wattmeter_M_U AT %ID0.18264:REAL;	(* voltage xxx.xx V *)
-	RTU_EP_wattmeter_M_I1 AT %ID0.18268:REAL;	(* current xx.xxx A (1) *)
-	RTU_EP_wattmeter_M_I2 AT %ID0.18272:REAL;	(* current xx.xxx A (2) *)
-	RTU_EP_wattmeter_M_I3 AT %ID0.18276:REAL;	(* current xx.xxx A (3) *)
-	RTU_EP_wattmeter_M_I AT %ID0.18280:REAL;	(* current xx.xxx A *)
-	RTU_EP_wattmeter_M_Ein AT %ID0.18284:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter_M_Eout AT %ID0.18288:REAL;	(* exported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter_F_P AT %ID0.18292:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter_F_Q AT %ID0.18296:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter_F_S AT %ID0.18300:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter_F_C AT %ID0.18304:REAL;	(* power factor +/- x.xxx *)
-	RTU_EP_wattmeter_F_F AT %ID0.18308:REAL;	(* frequency xx.xxx Hz *)
-	RTU_EP_wattmeter_F_U AT %ID0.18312:REAL;	(* voltage xxx.xx V *)
-	RTU_EP_wattmeter_F_I1 AT %ID0.18316:REAL;	(* current xx.xxx A (1) *)
-	RTU_EP_wattmeter_F_I2 AT %ID0.18320:REAL;	(* current xx.xxx A (2) *)
-	RTU_EP_wattmeter_F_I3 AT %ID0.18324:REAL;	(* current xx.xxx A (3) *)
-	RTU_EP_wattmeter_F_I AT %ID0.18328:REAL;	(* current xx.xxx A *)
-	RTU_EP_wattmeter_F_Ein AT %ID0.18332:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter_F_Eout AT %ID0.18336:REAL;	(* exported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter01_P AT %ID0.18340:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter01_Q AT %ID0.18344:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter01_S AT %ID0.18348:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter01_Ein AT %ID0.18352:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter02_P AT %ID0.18356:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter02_Q AT %ID0.18360:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter02_S AT %ID0.18364:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter02_Ein AT %ID0.18368:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter03_P AT %ID0.18372:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter03_Q AT %ID0.18376:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter03_S AT %ID0.18380:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter03_Ein AT %ID0.18384:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter04_P AT %ID0.18388:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter04_Q AT %ID0.18392:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter04_S AT %ID0.18396:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter04_Ein AT %ID0.18400:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter05_P AT %ID0.18404:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter05_Q AT %ID0.18408:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter05_S AT %ID0.18412:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter05_Ein AT %ID0.18416:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter06_P AT %ID0.18420:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter06_Q AT %ID0.18424:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter06_S AT %ID0.18428:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter06_Ein AT %ID0.18432:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter07_P AT %ID0.18436:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter07_Q AT %ID0.18440:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter07_S AT %ID0.18444:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter07_Ein AT %ID0.18448:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter08_P AT %ID0.18452:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter08_Q AT %ID0.18456:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter08_S AT %ID0.18460:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter08_Ein AT %ID0.18464:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter09_P AT %ID0.18468:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter09_Q AT %ID0.18472:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter09_S AT %ID0.18476:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter09_Ein AT %ID0.18480:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	RTU_EP_wattmeter10_P AT %ID0.18484:REAL;	(* active power +/- xxxx.xxx W *)
-	RTU_EP_wattmeter10_Q AT %ID0.18488:REAL;	(* reactive power +/- xxxx.xxx var *)
-	RTU_EP_wattmeter10_S AT %ID0.18492:REAL;	(* apparent power +/- xxxx.xxx VA *)
-	RTU_EP_wattmeter10_Ein AT %ID0.18496:REAL;	(* imported energy xxxxxxxxx.x Wh *)
-	MPNC_Baudrate AT %IW0.18500:UINT;	(* Baudrate MPNC006 device *)
-	MPNC_NodeID AT %IW0.18504:UINT;	(* Address MPNC006 device *)
-	MPNC_HeartBeat AT %ID0.18508:UDINT;	(* Life time MPNC006 device *)
-	MPNC_AnInConf_A AT %QW0.18512:UINT;	(* Analog inputs configuration MPNC030 module A *)
-	MPNC_AnInConf_B AT %QW0.18516:UINT;	(* Analog inputs configuration MPNC030 module B *)
-	MPNC_AnInConf_C AT %QW0.18520:UINT;	(* Analog inputs configuration MPNC030 module C *)
-	MPNC_AnInConf_D AT %QW0.18524:UINT;	(* Analog inputs configuration MPNC030 module D *)
-	MPNC_AnIn_A_1 AT %IW0.18528:INT;	(* Analog input 1 value MPNC030 module A *)
-	MPNC_AnIn_A_2 AT %IW0.18532:INT;	(* Analog input 2 value MPNC030 module A *)
-	MPNC_AnIn_A_3 AT %IW0.18536:INT;	(* Analog input 3 value MPNC030 module A *)
-	MPNC_AnIn_A_4 AT %IW0.18540:INT;	(* Analog input 4 value MPNC030 module A *)
-	MPNC_AnIn_B_1 AT %IW0.18544:INT;	(* Analog input 1 value MPNC030 module B *)
-	MPNC_AnIn_B_2 AT %IW0.18548:INT;	(* Analog input 2 value MPNC030 module B *)
-	MPNC_AnIn_B_3 AT %IW0.18552:INT;	(* Analog input 3 value MPNC030 module B *)
-	MPNC_AnIn_B_4 AT %IW0.18556:INT;	(* Analog input 4 value MPNC030 module B *)
-	MPNC_AnIn_C_1 AT %IW0.18560:INT;	(* Analog input 1 value MPNC030 module C *)
-	MPNC_AnIn_C_2 AT %IW0.18564:INT;	(* Analog input 2 value MPNC030 module C *)
-	MPNC_AnIn_C_3 AT %IW0.18568:INT;	(* Analog input 3 value MPNC030 module C *)
-	MPNC_AnIn_C_4 AT %IW0.18572:INT;	(* Analog input 4 value MPNC030 module C *)
-	MPNC_AnIn_D_1 AT %IW0.18576:INT;	(* Analog input 1 value MPNC030 module D *)
-	MPNC_AnIn_D_2 AT %IW0.18580:INT;	(* Analog input 2 value MPNC030 module D *)
-	MPNC_AnIn_D_3 AT %IW0.18584:INT;	(* Analog input 3 value MPNC030 module D *)
-	MPNC_AnIn_D_4 AT %IW0.18588:INT;	(* Analog input 4 value MPNC030 module D *)
-	MPNC_DigOut_A_1 AT %QX0.18592.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module A *)
-	MPNC_DigOut_A_2 AT %QX0.18596.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module A *)
-	MPNC_DigOut_A_3 AT %QX0.18600.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module A *)
-	MPNC_DigOut_A_4 AT %QX0.18604.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module A *)
-	MPNC_DigOut_A_5 AT %QX0.18608.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module A *)
-	MPNC_DigOut_A_6 AT %QX0.18612.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module A *)
-	MPNC_DigOut_A_7 AT %QX0.18616.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module A *)
-	MPNC_DigOut_A_8 AT %QX0.18620.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module A *)
-	MPNC_DigOut_A_9 AT %QX0.18624.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module A *)
-	MPNC_DigOut_A_10 AT %QX0.18628.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module A *)
-	MPNC_DigOut_A_11 AT %QX0.18632.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module A *)
-	MPNC_DigOut_A_12 AT %QX0.18636.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module A *)
-	MPNC_DigOut_A_13 AT %QX0.18640.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module A *)
-	MPNC_DigOut_A_14 AT %QX0.18644.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module A *)
-	MPNC_DigOut_A_15 AT %QX0.18648.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module A *)
-	MPNC_DigOut_A_16 AT %QX0.18652.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module A *)
-	MPNC_DigOut_B_1 AT %QX0.18656.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module B *)
-	MPNC_DigOut_B_2 AT %QX0.18660.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module B *)
-	MPNC_DigOut_B_3 AT %QX0.18664.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module B *)
-	MPNC_DigOut_B_4 AT %QX0.18668.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module B *)
-	MPNC_DigOut_B_5 AT %QX0.18672.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module B *)
-	MPNC_DigOut_B_6 AT %QX0.18676.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module B *)
-	MPNC_DigOut_B_7 AT %QX0.18680.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module B *)
-	MPNC_DigOut_B_8 AT %QX0.18684.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module B *)
-	MPNC_DigOut_B_9 AT %QX0.18688.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module B *)
-	MPNC_DigOut_B_10 AT %QX0.18692.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module B *)
-	MPNC_DigOut_B_11 AT %QX0.18696.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module B *)
-	MPNC_DigOut_B_12 AT %QX0.18700.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module B *)
-	MPNC_DigOut_B_13 AT %QX0.18704.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module B *)
-	MPNC_DigOut_B_14 AT %QX0.18708.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module B *)
-	MPNC_DigOut_B_15 AT %QX0.18712.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module B *)
-	MPNC_DigOut_B_16 AT %QX0.18716.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module B *)
-	MPNC_DigOut_C_1 AT %QX0.18720.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module C *)
-	MPNC_DigOut_C_2 AT %QX0.18724.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module C *)
-	MPNC_DigOut_C_3 AT %QX0.18728.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module C *)
-	MPNC_DigOut_C_4 AT %QX0.18732.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module C *)
-	MPNC_DigOut_C_5 AT %QX0.18736.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module C *)
-	MPNC_DigOut_C_6 AT %QX0.18740.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module C *)
-	MPNC_DigOut_C_7 AT %QX0.18744.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module C *)
-	MPNC_DigOut_C_8 AT %QX0.18748.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module C *)
-	MPNC_DigOut_C_9 AT %QX0.18752.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module C *)
-	MPNC_DigOut_C_10 AT %QX0.18756.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module C *)
-	MPNC_DigOut_C_11 AT %QX0.18760.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module C *)
-	MPNC_DigOut_C_12 AT %QX0.18764.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module C *)
-	MPNC_DigOut_C_13 AT %QX0.18768.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module C *)
-	MPNC_DigOut_C_14 AT %QX0.18772.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module C *)
-	MPNC_DigOut_C_15 AT %QX0.18776.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module C *)
-	MPNC_DigOut_C_16 AT %QX0.18780.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module C *)
-	MPNC_DigIn_A_1 AT %IX0.18848.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module A *)
-	MPNC_DigIn_A_2 AT %IX0.18852.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module A *)
-	MPNC_DigIn_A_3 AT %IX0.18856.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module A *)
-	MPNC_DigIn_A_4 AT %IX0.18860.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module A *)
-	MPNC_DigIn_A_5 AT %IX0.18864.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module A *)
-	MPNC_DigIn_A_6 AT %IX0.18868.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module A *)
-	MPNC_DigIn_A_7 AT %IX0.18872.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module A *)
-	MPNC_DigIn_A_8 AT %IX0.18876.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module A *)
-	MPNC_DigIn_A_9 AT %IX0.18880.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module A *)
-	MPNC_DigIn_A_10 AT %IX0.18884.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module A *)
-	MPNC_DigIn_A_11 AT %IX0.18888.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module A *)
-	MPNC_DigIn_A_12 AT %IX0.18892.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module A *)
-	MPNC_DigIn_A_13 AT %IX0.18896.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module A *)
-	MPNC_DigIn_A_14 AT %IX0.18900.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module A *)
-	MPNC_DigIn_A_15 AT %IX0.18904.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module A *)
-	MPNC_DigIn_A_16 AT %IX0.18908.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module A *)
-	MPNC_DigIn_B_1 AT %IX0.18912.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module B *)
-	MPNC_DigIn_B_2 AT %IX0.18916.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module B *)
-	MPNC_DigIn_B_3 AT %IX0.18920.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module B *)
-	MPNC_DigIn_B_4 AT %IX0.18924.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module B *)
-	MPNC_DigIn_B_5 AT %IX0.18928.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module B *)
-	MPNC_DigIn_B_6 AT %IX0.18932.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module B *)
-	MPNC_DigIn_B_7 AT %IX0.18936.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module B *)
-	MPNC_DigIn_B_8 AT %IX0.18940.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module B *)
-	MPNC_DigIn_B_9 AT %IX0.18944.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module B *)
-	MPNC_DigIn_B_10 AT %IX0.18948.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module B *)
-	MPNC_DigIn_B_11 AT %IX0.18952.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module B *)
-	MPNC_DigIn_B_12 AT %IX0.18956.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module B *)
-	MPNC_DigIn_B_13 AT %IX0.18960.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module B *)
-	MPNC_DigIn_B_14 AT %IX0.18964.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module B *)
-	MPNC_DigIn_B_15 AT %IX0.18968.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module B *)
-	MPNC_DigIn_B_16 AT %IX0.18972.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module B *)
-	MPNC_Reserved_1 AT %IW0.19104:UINT;
-	MPNC_Reserved_2 AT %IW0.19108:UINT;
-	MPNC_ColdJunctionT AT %IW0.19112:INT;	(* Cold junction temperature value *)
-	MPNC_Reserved_3 AT %IW0.19116:UINT;
-	MPNC_Reserved_4 AT %IW0.19120:UINT;
-	MPNC_Reboot AT %QW0.19124:INT;	(* MPNC006 chain reboot *)
-	MPNC_ModulesNumber AT %IW0.19128:UINT;	(* Number of modules *)
-	MPNC_AnInConf_1 AT %QW0.19132:UINT;	(* Analog input 1 configuration MPNC006 *)
-	MPNC_AnInConf_2 AT %QW0.19136:UINT;	(* Analog input 2 configuration MPNC006 *)
-	MPNC_AnIn_1 AT %IW0.19140:INT;	(* Analog input 1 value MPNC006 *)
-	MPNC_AnIn_2 AT %IW0.19144:INT;	(* Analog input 2 value MPNC006 *)
-	MPNC_DigDir_1 AT %QX0.19148.0:BOOL;	(* Digital IO 1 configuration MPNC006 *)
-	MPNC_DigDir_2 AT %QX0.19152.0:BOOL;	(* Digital IO 2 configuration MPNC006 *)
-	MPNC_DigDir_3 AT %QX0.19156.0:BOOL;	(* Digital IO 3 configuration MPNC006 *)
-	MPNC_DigDir_4 AT %QX0.19160.0:BOOL;	(* Digital IO 4 configuration MPNC006 *)
-	MPNC_DigDir_5 AT %QX0.19164.0:BOOL;	(* Digital IO 5 configuration MPNC006 *)
-	MPNC_DigDir_6 AT %QX0.19168.0:BOOL;	(* Digital IO 6 configuration MPNC006 *)
-	MPNC_DigDir_7 AT %QX0.19172.0:BOOL;	(* Digital IO 7 configuration MPNC006 *)
-	MPNC_DigDir_8 AT %QX0.19176.0:BOOL;	(* Digital IO 8 configuration MPNC006 *)
-	MPNC_DigIn_1 AT %IX0.19180.0:BOOL;	(* Digital input 1 value MPNC006 *)
-	MPNC_DigIn_2 AT %IX0.19184.0:BOOL;	(* Digital input 2 value MPNC006 *)
-	MPNC_DigIn_3 AT %IX0.19188.0:BOOL;	(* Digital input 3 value MPNC006 *)
-	MPNC_DigIn_4 AT %IX0.19192.0:BOOL;	(* Digital input 4 value MPNC006 *)
-	MPNC_DigIn_5 AT %IX0.19196.0:BOOL;	(* Digital input 5 value MPNC006 *)
-	MPNC_DigIn_6 AT %IX0.19200.0:BOOL;	(* Digital input 6 value MPNC006 *)
-	MPNC_DigIn_7 AT %IX0.19204.0:BOOL;	(* Digital input 7 value MPNC006 *)
-	MPNC_DigIn_8 AT %IX0.19208.0:BOOL;	(* Digital input 8 value MPNC006 *)
-	MPNC_DigOut_1 AT %QX0.19212.0:BOOL;	(* Digital output 1 value MPNC006 *)
-	MPNC_DigOut_2 AT %QX0.19216.0:BOOL;	(* Digital output 2 value MPNC006 *)
-	MPNC_DigOut_3 AT %QX0.19220.0:BOOL;	(* Digital output 3 value MPNC006 *)
-	MPNC_DigOut_4 AT %QX0.19224.0:BOOL;	(* Digital output 4 value MPNC006 *)
-	MPNC_DigOut_5 AT %QX0.19228.0:BOOL;	(* Digital output 5 value MPNC006 *)
-	MPNC_DigOut_6 AT %QX0.19232.0:BOOL;	(* Digital output 6 value MPNC006 *)
-	MPNC_DigOut_7 AT %QX0.19236.0:BOOL;	(* Digital output 7 value MPNC006 *)
-	MPNC_DigOut_8 AT %QX0.19240.0:BOOL;	(* Digital output 8 value MPNC006 *)
-	MPNC_AnInFltr_1 AT %QW0.19244:UINT;	(* Analog input filter 1 MPNC006 *)
-	MPNC_AnInFltr_2 AT %QW0.19248:UINT;	(* Analog input filter 2 MPNC006 *)
-	MPNC_WatchDog AT %QW0.19252:UINT;	(* WatchDog Timer in Seconds *)
-	MPNC_Reserved_6 AT %IW0.19272:UINT;
-	MPNC_FirmwareVer AT %IW0.19340:UINT;	(* Firmware release MPNC006 *)
-	MPNC_StatusWord AT %IW0.19344:UINT;	(* Status word MPNC006 *)
-	RTU_StatusWord_1 AT %IW0.19348:UINT;
-	RTU_BitMask_1 AT %ID0.19352:UDINT;
-	RTU_HeartBeat_1 AT %ID0.19356:UDINT;
-	RTU_temperature AT %IW0.19360:INT;
-	RTU_humidity AT %IW0.19364:INT;
-	RTU_CO2 AT %IW0.19368:INT;
-	RTU_O3 AT %IW0.19372:INT;
-	RTU_VOC AT %IW0.19376:INT;
-	RTU_PM_1_0_C AT %IW0.19380:INT;
-	RTU_PM_2_5_C AT %IW0.19384:INT;
-	RTU_PM_4_0_C AT %IW0.19388:INT;
-	RTU_PM_10_C AT %IW0.19392:INT;
-	RTU_PM_1_0_N AT %IW0.19396:INT;
-	RTU_PM_2_5_N AT %IW0.19400:INT;
-	RTU_PM_4_0_N AT %IW0.19404:INT;
-	RTU_PM_10_N AT %IW0.19408:INT;
-	RTU_MPD AT %IW0.19412:INT;
-	RTU_P AT %IW0.19416:INT;
-	RTU_r16 AT %IW0.19420:INT;
-	RTU_r17 AT %IW0.19424:INT;
-	RTU_r18 AT %IW0.19428:INT;
-	RTU_r19 AT %IW0.19432:INT;
-	RTU_r20 AT %IW0.19436:INT;
-	RTU_r21 AT %IW0.19440:INT;
-	RTU_r22 AT %IW0.19444:INT;
-	RTU_r23 AT %IW0.19448:INT;
-	RTU_r24 AT %IW0.19452:INT;
-	RTU_r25 AT %IW0.19456:INT;
-	RTU_r26 AT %IW0.19460:INT;
-	RTU_r27 AT %IW0.19464:INT;
-	RTU_r28 AT %IW0.19468:INT;
-	RTU_r29 AT %IW0.19472:INT;
-	RTU_r30 AT %IW0.19476:INT;
-	RTU_r31 AT %IW0.19480:INT;
-	RTU_r32 AT %IW0.19484:INT;
-	RTU_StatusWord_2 AT %IW0.19488:UINT;
-	RTU_BitMask_2 AT %ID0.19492:UDINT;
-	RTU_HeartBeat_2 AT %ID0.19496:UDINT;
-	RTU_temperature_bis AT %IW0.19500:INT;
-	RTU_humidity_bis AT %IW0.19504:INT;
-	RTU_StatusWord_3 AT %IW0.19508:UINT;
-	RTU_BitMask_3 AT %ID0.19512:UDINT;
-	RTU_HeartBeat_3 AT %ID0.19516:UDINT;
-	RTU_temperature_ext AT %IW0.19520:INT;
-	RTU_humidity_ext AT %IW0.19524:INT;
-	PLC_FWrevision AT %IW0.19528:UINT;	(* Firmware version *)
-	PLC_HWconfig AT %IW0.19532:UINT;	(* Hardware configuration *)
-	PLC_DigDir_1 AT %QX0.19536.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
-	PLC_DigDir_2 AT %QX0.19540.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
-	PLC_DigDir_3 AT %QX0.19544.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
-	PLC_DigDir_4 AT %QX0.19548.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
-	PLC_DigDir_5 AT %QX0.19552.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
-	PLC_DigDir_6 AT %QX0.19556.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
-	PLC_DigDir_7 AT %QX0.19560.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
-	PLC_DigDir_8 AT %QX0.19564.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
-	PLC_AnInConf_1 AT %QW0.19568:UINT;	(* Analog input 1 configuration *)
-	PLC_AnInConf_2 AT %QW0.19572:UINT;	(* Analog input 2 configuration *)
-	PLC_AnOutConf_1 AT %QW0.19576:UINT;	(* Analog output 1 configuration *)
-	PLC_AnOutConf_2 AT %QW0.19580:UINT;	(* Analog output 2 configuration *)
-	PLC_AnInConf_3 AT %QW0.19584:UINT;	(* Analog input 3 configuration *)
-	PLC_Reserved_1 AT %QW0.19588:UINT;	(* Reserved *)
-	PLC_DigIn_1 AT %IX0.19592.0:BOOL;	(* Digital input 1 value *)
-	PLC_DigIn_2 AT %IX0.19596.0:BOOL;	(* Digital input 2 value *)
-	PLC_DigIn_3 AT %IX0.19600.0:BOOL;	(* Digital input 3 value *)
-	PLC_DigIn_4 AT %IX0.19604.0:BOOL;	(* Digital input 4 value *)
-	PLC_DigIn_5 AT %IX0.19608.0:BOOL;	(* Digital input 5 value *)
-	PLC_DigIn_6 AT %IX0.19612.0:BOOL;	(* Digital input 6 value *)
-	PLC_DigIn_7 AT %IX0.19616.0:BOOL;	(* Digital input 7 value *)
-	PLC_DigIn_8 AT %IX0.19620.0:BOOL;	(* Digital input 8 value *)
-	PLC_DigIn_9 AT %IX0.19624.0:BOOL;	(* Digital input 9 value *)
-	PLC_DigIn_10 AT %IX0.19628.0:BOOL;	(* Digital input 10 value *)
-	PLC_DigIn_11 AT %IX0.19632.0:BOOL;	(* Digital input 11 value *)
-	PLC_DigIn_12 AT %IX0.19636.0:BOOL;	(* Digital input 12 value *)
-	PLC_AnIn_1 AT %IW0.19640:INT;	(* Analog input 1 value *)
-	PLC_AnIn_2 AT %IW0.19644:INT;	(* Analog input 2 value *)
-	PLC_AnIn_3 AT %IW0.19648:INT;	(* Analog input 3 value *)
-	PLC_Reserved_2 AT %IW0.19652:INT;	(* Reserved *)
-	PLC_Reserved_3 AT %IW0.19656:INT;	(* Reserved *)
-	PLC_Tamb AT %IW0.19660:INT;	(* Cold junction compensation value *)
-	PLC_Encoder AT %ID0.19664:DINT;	(* Encoder reading value *)
-	PLC_Capture AT %ID0.19668:UDINT;	(* Time between 2 input edges *)
-	PLC_DigOut_1 AT %QX0.19672.0:BOOL;	(* Digital output 1 value *)
-	PLC_DigOut_2 AT %QX0.19676.0:BOOL;	(* Digital output 2 value *)
-	PLC_DigOut_3 AT %QX0.19680.0:BOOL;	(* Digital output 3 value *)
-	PLC_DigOut_4 AT %QX0.19684.0:BOOL;	(* Digital output 4 value *)
-	PLC_DigOut_5 AT %QX0.19688.0:BOOL;	(* Digital output 5 value *)
-	PLC_DigOut_6 AT %QX0.19692.0:BOOL;	(* Digital output 6 value *)
-	PLC_DigOut_7 AT %QX0.19696.0:BOOL;	(* Digital output 7 value *)
-	PLC_DigOut_8 AT %QX0.19700.0:BOOL;	(* Digital output 8 value *)
-	PLC_AnOut_1 AT %QW0.19704:INT;	(* Analog output 1 value *)
-	PLC_AnOut_2 AT %QW0.19708:INT;	(* Analog output 2 value *)
-	PLC_Reserved_4 AT %QW0.19712:INT;	(* Reserved *)
-	PLC_Reserved_5 AT %QW0.19716:INT;	(* Reserved *)
-	PLC_EncoderStart AT %QW0.19720:UINT;	(* Encoder - counter enable *)
-	PLC_EncoderReset AT %QW0.19724:UINT;	(* Encoder reset *)
-	PLC_Heartbeat AT %IW0.19728:UINT;	(* In - Out board function check *)
-	PLC_StatusReg AT %IW0.19732:UINT;	(* In - Out board status *)
-	PLC_AnIn1Filter AT %QW0.19736:UINT;	(* Analog input 1 filter *)
-	PLC_AnIn2Filter AT %QW0.19740:UINT;	(* Analog input 2 filter *)
-	PLC_AnIn3Filter AT %QW0.19744:UINT;	(* Analog input 3 filter *)
-	PLC_Reserved_6 AT %QW0.19748:UINT;	(* Reserved *)
-	PLC_Reserved_7 AT %QW0.19752:UINT;	(* Reserved *)
-	SysActivePower_0 AT %ID0.19756:REAL;	(* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) *)
-	SysActivePower_1 AT %ID0.19760:REAL;	(* 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) *)
-	SysActivePower_2 AT %ID0.19764:REAL;	(* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) *)
-	SysActivePower_3 AT %ID0.19768:REAL;	(* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) *)
-	SysActivePower_4 AT %ID0.19772:REAL;	(* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) *)
-	SysActivePower_5 AT %ID0.19776:REAL;	(* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) *)
-	SysActivePower_6 AT %ID0.19780:REAL;	(* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) *)
-	SysActivePower_7 AT %ID0.19784:REAL;	(* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) *)
-	SysActivePower_8 AT %ID0.19788:REAL;	(* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) *)
-	SysActivePower_9 AT %ID0.19792:REAL;	(* 0x13 0x1026 Potenza Attiva 0 in W (UPS) *)
-	SysActivePower_10 AT %ID0.19796:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) *)
-	SysActivePower_11 AT %QD0.19800:REAL;	(* 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) *)
-	SysApparentPower_0 AT %ID0.19804:REAL;	(* 0x0A 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_1 AT %ID0.19808:REAL;	(* 0x0B 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_2 AT %ID0.19812:REAL;	(* 0x0C 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_3 AT %ID0.19816:REAL;	(* 0x0D 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_4 AT %ID0.19820:REAL;	(* 0x0E 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_5 AT %ID0.19824:REAL;	(* 0x0F 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_6 AT %ID0.19828:REAL;	(* 0x10 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_7 AT %ID0.19832:REAL;	(* 0x11 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_8 AT %ID0.19836:REAL;	(* 0x12 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_9 AT %ID0.19840:REAL;	(* 0x13 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_10 AT %ID0.19844:REAL;	(* 0x14 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysApparentPower_11 AT %ID0.19848:REAL;	(* 0x15 0x102E Potenza Apparente 0 in VA (UPS) *)
-	SysExpActiveEnergy_0 AT %ID0.19852:REAL;	(* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) *)
-	SysExpActiveEnergy_1 AT %ID0.19856:REAL;	(* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) *)
-	SysImpActiveEnergy_0 AT %ID0.19860:REAL;	(* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) *)
-	SysImpActiveEnergy_1 AT %ID0.19864:REAL;	(* 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) *)
-	SysImpActiveEnergy_2 AT %ID0.19868:REAL;	(* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_3 AT %ID0.19872:REAL;	(* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_4 AT %ID0.19876:REAL;	(* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_5 AT %ID0.19880:REAL;	(* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_6 AT %ID0.19884:REAL;	(* 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_7 AT %ID0.19888:REAL;	(* 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_8 AT %ID0.19892:REAL;	(* 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_9 AT %ID0.19896:REAL;	(* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_10 AT %ID0.19900:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysImpActiveEnergy_11 AT %ID0.19904:REAL;	(* 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
-	SysPowerFactor_0 AT %ID0.19908:REAL;	(* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) *)
-	SysPowerFactor_1 AT %ID0.19912:REAL;	(* 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) *)
-	SysReactivePower_0 AT %ID0.19916:REAL;	(* 0x0A 0x1036 Potenza Reattiva 0 in var *)
-	Frequency_0 AT %ID0.19920:REAL;	(* 0x0A 0x1038 Frequenza in Hz *)
-	SysReactivePower_1 AT %ID0.19924:REAL;	(* 0x0B 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_2 AT %ID0.19932:REAL;	(* 0x0C 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_3 AT %ID0.19936:REAL;	(* 0x0D 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_4 AT %ID0.19940:REAL;	(* 0x0E 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_5 AT %ID0.19944:REAL;	(* 0x0F 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_6 AT %ID0.19948:REAL;	(* 0x10 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_7 AT %ID0.19952:REAL;	(* 0x11 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_8 AT %ID0.19956:REAL;	(* 0x12 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_9 AT %ID0.19960:REAL;	(* 0x13 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_10 AT %ID0.19964:REAL;	(* 0x14 0x1036 Potenza Reattiva 0 in var *)
-	SysReactivePower_11 AT %ID0.19968:REAL;	(* 0x15 0x1036 Potenza Reattiva 0 in var *)
-	SystemCurrent_0 AT %ID0.19972:REAL;	(* 0x0A 0x1016 Corrente in A *)
-	SystemVoltage_0 AT %ID0.19980:REAL;	(* 0x0A 0x100C Tensione in V (PRINCIPALE) *)
+	PLC_BA_led_green AT %QX0.13600.0:BOOL;	(* ARMED(blinking), ENABLED, RINGING, MUTED *)
+	PLC_BA_led_red AT %QX0.13604.0:BOOL;	(* ARMED(if NG), RINGING(blinking), MUTED *)
+	PLC_BA_led_yellow1 AT %QX0.13608.0:BOOL;	(* NIGHTIME, EVERYTHING *)
+	PLC_BA_led_yellow2 AT %QX0.13612.0:BOOL;	(* DAYTIME, EVERYTHING *)
+	PLC_BA_siren AT %QX0.13616.0:BOOL;	(* HPA *)
+	PLC_BA_relay_A AT %QX0.13620.0:BOOL;
+	PLC_BA_relay_B AT %QX0.13624.0:BOOL;
+	PLC_BA_relay_C AT %QX0.13628.0:BOOL;
+	PLC_BA_input_9 AT %QX0.13632.0:BOOL;
+	PLC_BA_input_10 AT %QX0.13636.0:BOOL;
+	PLC_BA_input_11 AT %QX0.13640.0:BOOL;
+	PLC_BA_input_12 AT %QX0.13644.0:BOOL;
+	PLC_BA_command AT %QD0.13648:UDINT;	(* NONE, ARM, NOTHING, DAYTIME, NIGHTIME, EVERYTHING, ENABLE, DISABLE, ACK, TEST *)
+	PLC_BA_config_mask AT %QD0.13656:UDINT;
+	PLC_BA_DigOut_1 AT %QX0.13676.0:BOOL;
+	PLC_BA_DigOut_2 AT %QX0.13680.0:BOOL;
+	PLC_BA_DigOut_3 AT %QX0.13684.0:BOOL;
+	PLC_BA_DigOut_4 AT %QX0.13688.0:BOOL;
+	PLC_BA_DigOut_5 AT %QX0.13692.0:BOOL;
+	PLC_BA_DigOut_6 AT %QX0.13696.0:BOOL;
+	PLC_BA_DigOut_7 AT %QX0.13700.0:BOOL;
+	PLC_BA_DigOut_8 AT %QX0.13704.0:BOOL;
+	PLC_BA_DigOut_9 AT %QX0.13708.0:BOOL;
+	PLC_BA_DigOut_10 AT %QX0.13712.0:BOOL;
+	PLC_BA_DigOut_11 AT %QX0.13716.0:BOOL;
+	PLC_BA_DigOut_12 AT %QX0.13720.0:BOOL;
+	PLC_BA_DigOut_13 AT %QX0.13724.0:BOOL;
+	PLC_BA_DigOut_14 AT %QX0.13728.0:BOOL;
+	PLC_BA_DigOut_15 AT %QX0.13732.0:BOOL;
+	PLC_BA_DigOut_16 AT %QX0.13736.0:BOOL;
+	PLC_BA_DigOut_17 AT %QX0.13740.0:BOOL;
+	PLC_BA_DigOut_18 AT %QX0.13744.0:BOOL;
+	PLC_BA_DigOut_19 AT %QX0.13748.0:BOOL;
+	PLC_BA_DigOut_20 AT %QX0.13752.0:BOOL;
+	PLC_BA_DigOut_21 AT %QX0.13756.0:BOOL;
+	PLC_BA_DigOut_22 AT %QX0.13760.0:BOOL;
+	PLC_BA_DigOut_23 AT %QX0.13764.0:BOOL;
+	PLC_BA_DigOut_24 AT %QX0.13768.0:BOOL;
+	PLC_BA_DigOut_25 AT %QX0.13772.0:BOOL;
+	PLC_BA_DigOut_26 AT %QX0.13776.0:BOOL;
+	PLC_BA_DigOut_27 AT %QX0.13780.0:BOOL;
+	PLC_BA_DigOut_28 AT %QX0.13784.0:BOOL;
+	PLC_BA_DigOut_29 AT %QX0.13788.0:BOOL;
+	PLC_BA_DigOut_30 AT %QX0.13792.0:BOOL;
+	PLC_BA_DigOut_31 AT %QX0.13796.0:BOOL;
+	PLC_BA_DigOut_32 AT %QX0.13800.0:BOOL;
+	PLC_BA_DigIn_1 AT %QX0.13804.0:BOOL;
+	PLC_BA_DigIn_2 AT %QX0.13808.0:BOOL;
+	PLC_BA_DigIn_3 AT %QX0.13812.0:BOOL;
+	PLC_BA_DigIn_4 AT %QX0.13816.0:BOOL;
+	PLC_BA_DigIn_5 AT %QX0.13820.0:BOOL;
+	PLC_BA_DigIn_6 AT %QX0.13824.0:BOOL;
+	PLC_BA_DigIn_7 AT %QX0.13828.0:BOOL;
+	PLC_BA_DigIn_8 AT %QX0.13832.0:BOOL;
+	PLC_BA_DigIn_9 AT %QX0.13836.0:BOOL;
+	PLC_BA_DigIn_10 AT %QX0.13840.0:BOOL;
+	PLC_BA_DigIn_11 AT %QX0.13844.0:BOOL;
+	PLC_BA_DigIn_12 AT %QX0.13848.0:BOOL;
+	PLC_BA_DigIn_13 AT %QX0.13852.0:BOOL;
+	PLC_BA_DigIn_14 AT %QX0.13856.0:BOOL;
+	PLC_BA_DigIn_15 AT %QX0.13860.0:BOOL;
+	PLC_BA_DigIn_16 AT %QX0.13864.0:BOOL;
+	PLC_BA_DigIn_17 AT %QX0.13868.0:BOOL;
+	PLC_BA_DigIn_18 AT %QX0.13872.0:BOOL;
+	PLC_BA_DigIn_19 AT %QX0.13876.0:BOOL;
+	PLC_BA_DigIn_20 AT %QX0.13880.0:BOOL;
+	PLC_BA_DigIn_21 AT %QX0.13884.0:BOOL;
+	PLC_BA_DigIn_22 AT %QX0.13888.0:BOOL;
+	PLC_BA_DigIn_23 AT %QX0.13892.0:BOOL;
+	PLC_BA_DigIn_24 AT %QX0.13896.0:BOOL;
+	PLC_BA_DigIn_25 AT %QX0.13900.0:BOOL;
+	PLC_BA_DigIn_26 AT %QX0.13904.0:BOOL;
+	PLC_BA_DigIn_27 AT %QX0.13908.0:BOOL;
+	PLC_BA_DigIn_28 AT %QX0.13912.0:BOOL;
+	PLC_BA_DigIn_29 AT %QX0.13916.0:BOOL;
+	PLC_BA_DigIn_30 AT %QX0.13920.0:BOOL;
+	PLC_BA_DigIn_31 AT %QX0.13924.0:BOOL;
+	PLC_BA_DigIn_32 AT %QX0.13928.0:BOOL;
+	PLC_BA_OK_1 AT %QW0.13932:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_2 AT %QW0.13936:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_3 AT %QW0.13940:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_4 AT %QW0.13944:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_5 AT %QW0.13948:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_6 AT %QW0.13952:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_7 AT %QW0.13956:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_8 AT %QW0.13960:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_9 AT %QW0.13964:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_10 AT %QW0.13968:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_11 AT %QW0.13972:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_12 AT %QW0.13976:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_13 AT %QW0.13980:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_14 AT %QW0.13984:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_15 AT %QW0.13988:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_16 AT %QW0.13992:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_17 AT %QW0.13996:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_18 AT %QW0.14000:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_19 AT %QW0.14004:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_20 AT %QW0.14008:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_21 AT %QW0.14012:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_22 AT %QW0.14016:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_23 AT %QW0.14020:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_24 AT %QW0.14024:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_25 AT %QW0.14028:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_26 AT %QW0.14032:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_27 AT %QW0.14036:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_28 AT %QW0.14040:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_29 AT %QW0.14044:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_30 AT %QW0.14048:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_31 AT %QW0.14052:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_OK_32 AT %QW0.14056:UINT;	(* 0=not visible 1=grey 2=yellow 3=green 4=red *)
+	PLC_BA_control_type AT %QW0.14064:UINT;
+	ARQ_FW AT %IW0.14400:UINT;	(* RTU0_STATUS NODE_10_STATUS *)
+	ARQ_UPTIME_LED_h AT %ID0.14404:UDINT;
+	ARQ_LIFETIME_RELE_h AT %ID0.14408:UDINT;
+	ARQ_TCJ AT %IW0.14412:INT;
+	ARQ_ERROR_ANOUT AT %IX0.14416.0:BOOL;
+	ARQ_ERROR_STOUT AT %IX0.14420.0:BOOL;
+	ARQ_ERROR_STOUT_A AT %IX0.14424.0:BOOL;
+	ARQ_ERROR_WATCHDOG AT %IX0.14428.0:BOOL;
+	ARQ_ERROR_SELFTEST_ON AT %IX0.14432.0:BOOL;
+	ARQ_ERROR_PARAMETER AT %IX0.14436.0:BOOL;
+	ARQ_ERROR_SELFTEST_DO1 AT %IX0.14440.0:BOOL;
+	AQR_ERROR_SELFTEST_ANOUT AT %IX0.14444.0:BOOL;
+	ARQ_AnOut AT %QW0.14448:INT;
+	AQR_StOut AT %QW0.14452:UINT;
+	ARQ_Rele AT %QX0.14456.0:BOOL;
+	ARQ_reserved_1 AT %IW0.14460:UINT;
+	ARQ_StOut_current AT %QW0.14464:INT;
+	ARQ_Watchdog AT %QW0.14468:UINT;
+	ARQ_Parity AT %QW0.14472:UINT;	(* 0=N 1=E 2=O *)
+	ARQ_StopBits AT %QW0.14476:UINT;	(* 0=1bit 1=2bit *)
+	ARQ_Baudrate AT %QW0.14480:UINT;	(* 0=9600 1=19200 2=38400 3=57600 *)
+	ARQ_Address AT %QW0.14484:UINT;
+	ARQ_PartNumber AT %QW0.14488:UINT;
+	ARQ_reserved_2 AT %IW0.14492:UINT;
+	ARQ_reserved_3 AT %IW0.14496:UINT;
+	ARQ_reserved_4 AT %IW0.14500:UINT;
+	ARQ_reserved_5 AT %IW0.14504:UINT;
+	ARQ_SerialNumber AT %QW0.14508:UINT;
+	ARQ_Setup AT %QW0.14512:UINT;	(* 0x5555 = save registers *)
+	MPNE_A_FwRev AT %IW0.14516:UINT;	(* MPNE  firmware revision *)
+	MPNE_A_ExpID AT %IW0.14520:UINT;	(* MPNE ID expansions *)
+	MPNE_A_ExpType AT %IW0.14524:UINT;	(* MPNE  expansions type *)
+	MPNE_A_SN AT %ID0.14528:UDINT;	(* MPNE serial number *)
+	MPNE_A_LifeTime AT %ID0.14532:UDINT;	(* MPNE lifetime 1s *)
+	MPNE_A_Status AT %IW0.14536:UINT;	(* MPNE status register *)
+	MPNE_A_DigIn_1 AT %IX0.14540.0:BOOL;	(* Digital input 1 value *)
+	MPNE_A_DigIn_2 AT %IX0.14544.0:BOOL;	(* Digital input 2 value *)
+	MPNE_A_DigIn_3 AT %IX0.14548.0:BOOL;	(* Digital input 3 value *)
+	MPNE_A_DigIn_4 AT %IX0.14552.0:BOOL;	(* Digital input 4 value *)
+	MPNE_A_DigIn_5 AT %IX0.14556.0:BOOL;	(* Digital input 5 value *)
+	MPNE_A_DigIn_6 AT %IX0.14560.0:BOOL;	(* Digital input 6 value *)
+	MPNE_A_DigIn_7 AT %IX0.14564.0:BOOL;	(* Digital input 7 value *)
+	MPNE_A_DigIn_8 AT %IX0.14568.0:BOOL;	(* Digital input 8 value *)
+	MPNE_A_DigIn_9 AT %IX0.14572.0:BOOL;	(* Digital input 9 value *)
+	MPNE_A_DigIn_10 AT %IX0.14576.0:BOOL;	(* Digital input 10 value *)
+	MPNE_A_DigIn_11 AT %IX0.14580.0:BOOL;	(* Digital input 11 value *)
+	MPNE_A_DigIn_12 AT %IX0.14584.0:BOOL;	(* Digital input 12 value *)
+	MPNE_A_DigIn_13 AT %IX0.14588.0:BOOL;	(* Digital input 13 value *)
+	MPNE_A_DigIn_14 AT %IX0.14592.0:BOOL;	(* Digital input 14 value *)
+	MPNE_A_DigIn_15 AT %IX0.14596.0:BOOL;	(* Digital input 15 value *)
+	MPNE_A_DigIn_16 AT %IX0.14600.0:BOOL;	(* Digital input 16 value *)
+	MPNE_A_StatusWord AT %QW0.14704:UINT;	(* Fast Input Output Status Word *)
+	MPNE_A_Watchdog AT %QW0.14708:UINT;	(* Watchdog *)
+	MPNE_A_DigDir_1 AT %QX0.14712.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_2 AT %QX0.14716.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_3 AT %QX0.14720.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_4 AT %QX0.14724.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_5 AT %QX0.14728.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_6 AT %QX0.14732.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_7 AT %QX0.14736.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
+	MPNE_A_DigDir_8 AT %QX0.14740.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
+	MPNE_A_DigOut_1 AT %QX0.14744.0:BOOL;	(* Digital output 1 value *)
+	MPNE_A_DigOut_2 AT %QX0.14748.0:BOOL;	(* Digital output 2 value *)
+	MPNE_A_DigOut_3 AT %QX0.14752.0:BOOL;	(* Digital output 3 value *)
+	MPNE_A_DigOut_4 AT %QX0.14756.0:BOOL;	(* Digital output 4 value *)
+	MPNE_A_DigOut_5 AT %QX0.14760.0:BOOL;	(* Digital output 5 value *)
+	MPNE_A_DigOut_6 AT %QX0.14764.0:BOOL;	(* Digital output 6 value *)
+	MPNE_A_DigOut_7 AT %QX0.14768.0:BOOL;	(* Digital output 7 value *)
+	MPNE_A_DigOut_8 AT %QX0.14772.0:BOOL;	(* Digital output 8 value *)
+	MPNE_A_DigOut_17 AT %QX0.14776.0:BOOL;	(* Digital output 17 value *)
+	MPNE_A_DigOut_18 AT %QX0.14780.0:BOOL;	(* Digital output 18 value *)
+	MPNE_A_DigOut_19 AT %QX0.14784.0:BOOL;	(* Digital output 19 value *)
+	MPNE_A_DigOut_20 AT %QX0.14788.0:BOOL;	(* Digital output 20 value *)
+	MPNE_A_DigOut_21 AT %QX0.14792.0:BOOL;	(* Digital output 21 value *)
+	MPNE_A_DigOut_22 AT %QX0.14796.0:BOOL;	(* Digital output 22 value *)
+	MPNE_A_DigOut_23 AT %QX0.14800.0:BOOL;	(* Digital output 23 value *)
+	MPNE_A_DigOut_24 AT %QX0.14804.0:BOOL;	(* Digital output 24 value *)
+	MPNE_A_DigOut_25 AT %QX0.14808.0:BOOL;	(* Digital output 25 value *)
+	MPNE_A_DigOut_26 AT %QX0.14812.0:BOOL;	(* Digital output 26 value *)
+	MPNE_A_DigOut_27 AT %QX0.14816.0:BOOL;	(* Digital output 27 value *)
+	MPNE_A_DigOut_28 AT %QX0.14820.0:BOOL;	(* Digital output 28 value *)
+	MPNE_A_DigOut_29 AT %QX0.14824.0:BOOL;	(* Digital output 29 value *)
+	MPNE_A_DigOut_30 AT %QX0.14828.0:BOOL;	(* Digital output 30 value *)
+	MPNE_A_DigOut_31 AT %QX0.14832.0:BOOL;	(* Digital output 31 value *)
+	MPNE_A_DigOut_32 AT %QX0.14836.0:BOOL;	(* Digital output 32 value *)
+	MPNE_A_ControlWord_A AT %QW0.14840:UINT;	(* Fast Input Output Control Word  Line A *)
+	MPNE_A_FastInDelay_A AT %QW0.14844:UINT;	(* Fast input delay time x 10us Line A *)
+	MPNE_A_FastOutDelay_A AT %QW0.14848:UINT;	(* Fast output delay time x 10us Line A *)
+	MPNE_A_FastOutDuration_A AT %QW0.14852:UINT;	(* Fast output duration time x 10us  Line A *)
+	MPNE_A_EncCounter_A AT %QD0.14856:DINT;	(* Encoder Counter  Line A *)
+	MPNE_A_MatchRegister_A AT %QD0.14860:DINT;	(* Match  Encoder  register  Line A *)
+	MPNE_A_PTOTargetFreq_A AT %QW0.14864:UINT;	(* PTO Frequency Line A *)
+	MPNE_A_PTOSteps_A AT %QD0.14868:UDINT;	(* PTO steps  Line A *)
+	MPNE_B_FwRev AT %IW0.15048:UINT;	(* MPNE  firmware revision *)
+	MPNE_B_ExpID AT %IW0.15052:UINT;	(* MPNE ID expansions *)
+	MPNE_B_ExpType AT %IW0.15056:UINT;	(* MPNE  expansions type *)
+	MPNE_B_SN AT %ID0.15060:UDINT;	(* MPNE serial number *)
+	MPNE_B_LifeTime AT %ID0.15064:UDINT;	(* MPNE lifetime 1s *)
+	MPNE_B_Status AT %IW0.15068:UINT;	(* MPNE status register *)
+	MPNE_B_DigIn_1 AT %IX0.15072.0:BOOL;	(* Digital input 1 value *)
+	MPNE_B_DigIn_2 AT %IX0.15076.0:BOOL;	(* Digital input 2 value *)
+	MPNE_B_DigIn_3 AT %IX0.15080.0:BOOL;	(* Digital input 3 value *)
+	MPNE_B_DigIn_4 AT %IX0.15084.0:BOOL;	(* Digital input 4 value *)
+	MPNE_B_DigIn_5 AT %IX0.15088.0:BOOL;	(* Digital input 5 value *)
+	MPNE_B_DigIn_6 AT %IX0.15092.0:BOOL;	(* Digital input 6 value *)
+	MPNE_B_DigIn_7 AT %IX0.15096.0:BOOL;	(* Digital input 7 value *)
+	MPNE_B_DigIn_8 AT %IX0.15100.0:BOOL;	(* Digital input 8 value *)
+	MPNE_B_DigIn_9 AT %IX0.15104.0:BOOL;	(* Digital input 9 value *)
+	MPNE_B_DigIn_10 AT %IX0.15108.0:BOOL;	(* Digital input 10 value *)
+	MPNE_B_DigIn_11 AT %IX0.15112.0:BOOL;	(* Digital input 11 value *)
+	MPNE_B_DigIn_12 AT %IX0.15116.0:BOOL;	(* Digital input 12 value *)
+	MPNE_B_DigIn_13 AT %IX0.15120.0:BOOL;	(* Digital input 13 value *)
+	MPNE_B_DigIn_14 AT %IX0.15124.0:BOOL;	(* Digital input 14 value *)
+	MPNE_B_DigIn_15 AT %IX0.15128.0:BOOL;	(* Digital input 15 value *)
+	MPNE_B_DigIn_16 AT %IX0.15132.0:BOOL;	(* Digital input 16 value *)
+	MPNE_B_StatusWord AT %QW0.15236:UINT;	(* Fast Input Output Status Word *)
+	MPNE_B_Watchdog AT %QW0.15240:UINT;	(* Watchdog *)
+	MPNE_B_DigDir_1 AT %QX0.15244.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_2 AT %QX0.15248.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_3 AT %QX0.15252.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_4 AT %QX0.15256.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_5 AT %QX0.15260.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_6 AT %QX0.15264.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_7 AT %QX0.15268.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
+	MPNE_B_DigDir_8 AT %QX0.15272.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
+	MPNE_B_DigOut_1 AT %QX0.15276.0:BOOL;	(* Digital output 1 value *)
+	MPNE_B_DigOut_2 AT %QX0.15280.0:BOOL;	(* Digital output 2 value *)
+	MPNE_B_DigOut_3 AT %QX0.15284.0:BOOL;	(* Digital output 3 value *)
+	MPNE_B_DigOut_4 AT %QX0.15288.0:BOOL;	(* Digital output 4 value *)
+	MPNE_B_DigOut_5 AT %QX0.15292.0:BOOL;	(* Digital output 5 value *)
+	MPNE_B_DigOut_6 AT %QX0.15296.0:BOOL;	(* Digital output 6 value *)
+	MPNE_B_DigOut_7 AT %QX0.15300.0:BOOL;	(* Digital output 7 value *)
+	MPNE_B_DigOut_8 AT %QX0.15304.0:BOOL;	(* Digital output 8 value *)
+	MPNE_B_DigOut_17 AT %QX0.15308.0:BOOL;	(* Digital output 17 value *)
+	MPNE_B_DigOut_18 AT %QX0.15312.0:BOOL;	(* Digital output 18 value *)
+	MPNE_B_DigOut_19 AT %QX0.15316.0:BOOL;	(* Digital output 19 value *)
+	MPNE_B_DigOut_20 AT %QX0.15320.0:BOOL;	(* Digital output 20 value *)
+	MPNE_B_DigOut_21 AT %QX0.15324.0:BOOL;	(* Digital output 21 value *)
+	MPNE_B_DigOut_22 AT %QX0.15328.0:BOOL;	(* Digital output 22 value *)
+	MPNE_B_DigOut_23 AT %QX0.15332.0:BOOL;	(* Digital output 23 value *)
+	MPNE_B_DigOut_24 AT %QX0.15336.0:BOOL;	(* Digital output 24 value *)
+	MPNE_B_DigOut_25 AT %QX0.15340.0:BOOL;	(* Digital output 25 value *)
+	MPNE_B_DigOut_26 AT %QX0.15344.0:BOOL;	(* Digital output 26 value *)
+	MPNE_B_DigOut_27 AT %QX0.15348.0:BOOL;	(* Digital output 27 value *)
+	MPNE_B_DigOut_28 AT %QX0.15352.0:BOOL;	(* Digital output 28 value *)
+	MPNE_B_DigOut_29 AT %QX0.15356.0:BOOL;	(* Digital output 29 value *)
+	MPNE_B_DigOut_30 AT %QX0.15360.0:BOOL;	(* Digital output 30 value *)
+	MPNE_B_DigOut_31 AT %QX0.15364.0:BOOL;	(* Digital output 31 value *)
+	MPNE_B_DigOut_32 AT %QX0.15368.0:BOOL;	(* Digital output 32 value *)
+	MPNE_B_ControlWord_A AT %QW0.15372:UINT;	(* Fast Input Output Control Word  Line A *)
+	MPNE_B_FastInDelay_A AT %QW0.15376:UINT;	(* Fast input delay time x 10us Line A *)
+	MPNE_B_FastOutDelay_A AT %QW0.15380:UINT;	(* Fast output delay time x 10us Line A *)
+	MPNE_B_FastOutDuration_A AT %QW0.15384:UINT;	(* Fast output duration time x 10us  Line A *)
+	MPNE_B_EncCounter_A AT %QD0.15388:DINT;	(* Encoder Counter  Line A *)
+	MPNE_B_MatchRegister_A AT %QD0.15392:DINT;	(* Match  Encoder  register  Line A *)
+	MPNE_B_PTOTargetFreq_A AT %QW0.15396:UINT;	(* PTO Frequency Line A *)
+	MPNE_B_PTOSteps_A AT %QD0.15400:UDINT;	(* PTO steps  Line A *)
+	MPNE_C_FwRev AT %IW0.15580:UINT;	(* MPNE  firmware revision *)
+	MPNE_C_ExpID AT %IW0.15584:UINT;	(* MPNE ID expansions *)
+	MPNE_C_ExpType AT %IW0.15588:UINT;	(* MPNE  expansions type *)
+	MPNE_C_SN AT %ID0.15592:UDINT;	(* MPNE serial number *)
+	MPNE_C_LifeTime AT %ID0.15596:UDINT;	(* MPNE lifetime 1s *)
+	MPNE_C_Status AT %IW0.15600:UINT;	(* MPNE status register *)
+	MPNE_C_DigIn_1 AT %IX0.15604.0:BOOL;	(* Digital input 1 value *)
+	MPNE_C_DigIn_2 AT %IX0.15608.0:BOOL;	(* Digital input 2 value *)
+	MPNE_C_DigIn_3 AT %IX0.15612.0:BOOL;	(* Digital input 3 value *)
+	MPNE_C_DigIn_4 AT %IX0.15616.0:BOOL;	(* Digital input 4 value *)
+	MPNE_C_DigIn_5 AT %IX0.15620.0:BOOL;	(* Digital input 5 value *)
+	MPNE_C_DigIn_6 AT %IX0.15624.0:BOOL;	(* Digital input 6 value *)
+	MPNE_C_DigIn_7 AT %IX0.15628.0:BOOL;	(* Digital input 7 value *)
+	MPNE_C_DigIn_8 AT %IX0.15632.0:BOOL;	(* Digital input 8 value *)
+	MPNE_C_DigIn_9 AT %IX0.15636.0:BOOL;	(* Digital input 9 value *)
+	MPNE_C_DigIn_10 AT %IX0.15640.0:BOOL;	(* Digital input 10 value *)
+	MPNE_C_DigIn_11 AT %IX0.15644.0:BOOL;	(* Digital input 11 value *)
+	MPNE_C_DigIn_12 AT %IX0.15648.0:BOOL;	(* Digital input 12 value *)
+	MPNE_C_DigIn_13 AT %IX0.15652.0:BOOL;	(* Digital input 13 value *)
+	MPNE_C_DigIn_14 AT %IX0.15656.0:BOOL;	(* Digital input 14 value *)
+	MPNE_C_DigIn_15 AT %IX0.15660.0:BOOL;	(* Digital input 15 value *)
+	MPNE_C_DigIn_16 AT %IX0.15664.0:BOOL;	(* Digital input 16 value *)
+	MPNE_C_AnIn_1 AT %IW0.15732:INT;	(* Analog input 1 value *)
+	MPNE_C_AnIn_2 AT %IW0.15736:INT;	(* Analog input 2 value *)
+	MPNE_C_AnIn_3 AT %IW0.15740:INT;	(* Analog input 3 value *)
+	MPNE_C_AnIn_4 AT %IW0.15744:INT;	(* Analog input 4 value *)
+	MPNE_C_AnInStatus AT %IW0.15748:INT;	(* Analog Inputs status register *)
+	MPNE_C_StatusWord AT %QW0.15768:UINT;	(* Fast Input Output Status Word *)
+	MPNE_C_Watchdog AT %QW0.15772:UINT;	(* Watchdog *)
+	MPNE_C_DigDir_1 AT %QX0.15776.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_2 AT %QX0.15780.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_3 AT %QX0.15784.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_4 AT %QX0.15788.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_5 AT %QX0.15792.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_6 AT %QX0.15796.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_7 AT %QX0.15800.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
+	MPNE_C_DigDir_8 AT %QX0.15804.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
+	MPNE_C_DigOut_1 AT %QX0.15808.0:BOOL;	(* Digital output 1 value *)
+	MPNE_C_DigOut_2 AT %QX0.15812.0:BOOL;	(* Digital output 2 value *)
+	MPNE_C_DigOut_3 AT %QX0.15816.0:BOOL;	(* Digital output 3 value *)
+	MPNE_C_DigOut_4 AT %QX0.15820.0:BOOL;	(* Digital output 4 value *)
+	MPNE_C_DigOut_5 AT %QX0.15824.0:BOOL;	(* Digital output 5 value *)
+	MPNE_C_DigOut_6 AT %QX0.15828.0:BOOL;	(* Digital output 6 value *)
+	MPNE_C_DigOut_7 AT %QX0.15832.0:BOOL;	(* Digital output 7 value *)
+	MPNE_C_DigOut_8 AT %QX0.15836.0:BOOL;	(* Digital output 8 value *)
+	MPNE_C_ControlWord_A AT %QW0.15904:UINT;	(* Fast Input Output Control Word  Line A *)
+	MPNE_C_FastInDelay_A AT %QW0.15908:UINT;	(* Fast input delay time x 10us Line A *)
+	MPNE_C_FastOutDelay_A AT %QW0.15912:UINT;	(* Fast output delay time x 10us Line A *)
+	MPNE_C_FastOutDuration_A AT %QW0.15916:UINT;	(* Fast output duration time x 10us  Line A *)
+	MPNE_C_EncCounter_A AT %QD0.15920:DINT;	(* Encoder Counter  Line A *)
+	MPNE_C_MatchRegister_A AT %QD0.15924:DINT;	(* Match  Encoder  register  Line A *)
+	MPNE_C_PTOTargetFreq_A AT %QW0.15928:UINT;	(* PTO Frequency Line A *)
+	MPNE_C_PTOSteps_A AT %QD0.15932:UDINT;	(* PTO steps  Line A *)
+	MPNE_C_AnIn1Conf AT %QW0.16064:UINT;	(* Analog input 1 configuration *)
+	MPNE_C_AnIn2Conf AT %QW0.16068:UINT;	(* Analog input 2 configuration *)
+	MPNE_C_AnIn3Conf AT %QW0.16072:UINT;	(* Analog input 3 configuration *)
+	MPNE_C_AnIn4Conf AT %QW0.16076:UINT;	(* Analog input 4 configuration *)
+	MPNE_C_AnOut1Conf AT %QW0.16080:UINT;	(* Analog output 1 configuration *)
+	MPNE_C_AnOut2Conf AT %QW0.16084:UINT;	(* Analog output 2 configuration *)
+	MPNE_C_AnOut1 AT %QW0.16088:UINT;	(* Analog output 1 value *)
+	MPNE_C_AnOut2 AT %QW0.16092:UINT;	(* Analog output 2 value *)
+	MPNE_C_AnIn1Filter AT %QW0.16096:UINT;	(* Analog input 1 filter *)
+	MPNE_C_AnIn2Filter AT %QW0.16100:UINT;	(* Analog input 2 filter *)
+	MPNE_C_AnIn3Filter AT %QW0.16104:UINT;	(* Analog input 3 filter *)
+	MPNE_C_AnIn4Filter AT %QW0.16108:UINT;	(* Analog input 4 filter *)
+	MPNE_D_FwRev AT %IW0.16112:UINT;	(* MPNE  firmware revision *)
+	MPNE_D_ExpID AT %IW0.16116:UINT;	(* MPNE ID expansions *)
+	MPNE_D_ExpType AT %IW0.16120:UINT;	(* MPNE  expansions type *)
+	MPNE_D_SN AT %ID0.16124:UDINT;	(* MPNE serial number *)
+	MPNE_D_LifeTime AT %ID0.16128:UDINT;	(* MPNE lifetime 1s *)
+	MPNE_D_Status AT %IW0.16132:UINT;	(* MPNE status register *)
+	MPNE_D_DigIn_1 AT %IX0.16136.0:BOOL;	(* Digital input 1 value *)
+	MPNE_D_DigIn_2 AT %IX0.16140.0:BOOL;	(* Digital input 2 value *)
+	MPNE_D_DigIn_3 AT %IX0.16144.0:BOOL;	(* Digital input 3 value *)
+	MPNE_D_DigIn_4 AT %IX0.16148.0:BOOL;	(* Digital input 4 value *)
+	MPNE_D_DigIn_5 AT %IX0.16152.0:BOOL;	(* Digital input 5 value *)
+	MPNE_D_DigIn_6 AT %IX0.16156.0:BOOL;	(* Digital input 6 value *)
+	MPNE_D_DigIn_7 AT %IX0.16160.0:BOOL;	(* Digital input 7 value *)
+	MPNE_D_DigIn_8 AT %IX0.16164.0:BOOL;	(* Digital input 8 value *)
+	MPNE_D_DigIn_9 AT %IX0.16168.0:BOOL;	(* Digital input 9 value *)
+	MPNE_D_DigIn_10 AT %IX0.16172.0:BOOL;	(* Digital input 10 value *)
+	MPNE_D_DigIn_11 AT %IX0.16176.0:BOOL;	(* Digital input 11 value *)
+	MPNE_D_DigIn_12 AT %IX0.16180.0:BOOL;	(* Digital input 12 value *)
+	MPNE_D_DigIn_13 AT %IX0.16184.0:BOOL;	(* Digital input 13 value *)
+	MPNE_D_DigIn_14 AT %IX0.16188.0:BOOL;	(* Digital input 14 value *)
+	MPNE_D_DigIn_15 AT %IX0.16192.0:BOOL;	(* Digital input 15 value *)
+	MPNE_D_DigIn_16 AT %IX0.16196.0:BOOL;	(* Digital input 16 value *)
+	MPNE_D_AnIn_1 AT %IW0.16264:INT;	(* Analog input 1 value *)
+	MPNE_D_AnIn_2 AT %IW0.16268:INT;	(* Analog input 2 value *)
+	MPNE_D_AnIn_3 AT %IW0.16272:INT;	(* Analog input 3 value *)
+	MPNE_D_AnIn_4 AT %IW0.16276:INT;	(* Analog input 4 value *)
+	MPNE_D_AnInStatus AT %IW0.16280:INT;	(* Analog Inputs status register *)
+	MPNE_D_StatusWord AT %QW0.16300:UINT;	(* Fast Input Output Status Word *)
+	MPNE_D_Watchdog AT %QW0.16304:UINT;	(* Watchdog *)
+	MPNE_D_DigDir_1 AT %QX0.16308.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_2 AT %QX0.16312.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_3 AT %QX0.16316.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_4 AT %QX0.16320.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_5 AT %QX0.16324.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_6 AT %QX0.16328.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_7 AT %QX0.16332.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
+	MPNE_D_DigDir_8 AT %QX0.16336.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
+	MPNE_D_DigOut_1 AT %QX0.16340.0:BOOL;	(* Digital output 1 value *)
+	MPNE_D_DigOut_2 AT %QX0.16344.0:BOOL;	(* Digital output 2 value *)
+	MPNE_D_DigOut_3 AT %QX0.16348.0:BOOL;	(* Digital output 3 value *)
+	MPNE_D_DigOut_4 AT %QX0.16352.0:BOOL;	(* Digital output 4 value *)
+	MPNE_D_DigOut_5 AT %QX0.16356.0:BOOL;	(* Digital output 5 value *)
+	MPNE_D_DigOut_6 AT %QX0.16360.0:BOOL;	(* Digital output 6 value *)
+	MPNE_D_DigOut_7 AT %QX0.16364.0:BOOL;	(* Digital output 7 value *)
+	MPNE_D_DigOut_8 AT %QX0.16368.0:BOOL;	(* Digital output 8 value *)
+	MPNE_D_ControlWord_A AT %QW0.16436:UINT;	(* Fast Input Output Control Word  Line A *)
+	MPNE_D_FastInDelay_A AT %QW0.16440:UINT;	(* Fast input delay time x 10us Line A *)
+	MPNE_D_FastOutDelay_A AT %QW0.16444:UINT;	(* Fast output delay time x 10us Line A *)
+	MPNE_D_FastOutDuration_A AT %QW0.16448:UINT;	(* Fast output duration time x 10us  Line A *)
+	MPNE_D_EncCounter_A AT %QD0.16452:DINT;	(* Encoder Counter  Line A *)
+	MPNE_D_MatchRegister_A AT %QD0.16456:DINT;	(* Match  Encoder  register  Line A *)
+	MPNE_D_PTOTargetFreq_A AT %QW0.16460:UINT;	(* PTO Frequency Line A *)
+	MPNE_D_PTOSteps_A AT %QD0.16464:UDINT;	(* PTO steps  Line A *)
+	MPNE_D_AnIn1Conf AT %QW0.16596:UINT;	(* Analog input 1 configuration *)
+	MPNE_D_AnIn2Conf AT %QW0.16600:UINT;	(* Analog input 2 configuration *)
+	MPNE_D_AnIn3Conf AT %QW0.16604:UINT;	(* Analog input 3 configuration *)
+	MPNE_D_AnIn4Conf AT %QW0.16608:UINT;	(* Analog input 4 configuration *)
+	MPNE_D_AnOut1Conf AT %QW0.16612:UINT;	(* Analog output 1 configuration *)
+	MPNE_D_AnOut2Conf AT %QW0.16616:UINT;	(* Analog output 2 configuration *)
+	MPNE_D_AnOut1 AT %QW0.16620:UINT;	(* Analog output 1 value *)
+	MPNE_D_AnOut2 AT %QW0.16624:UINT;	(* Analog output 2 value *)
+	MPNE_D_AnIn1Filter AT %QW0.16628:UINT;	(* Analog input 1 filter *)
+	MPNE_D_AnIn2Filter AT %QW0.16632:UINT;	(* Analog input 2 filter *)
+	MPNE_D_AnIn3Filter AT %QW0.16636:UINT;	(* Analog input 3 filter *)
+	MPNE_D_AnIn4Filter AT %QW0.16640:UINT;	(* Analog input 4 filter *)
+	RTU_EP_wattmeter_M_P AT %ID0.16644:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter_M_Q AT %ID0.16648:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter_M_S AT %ID0.16652:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter_M_C AT %ID0.16656:REAL;	(* power factor +/- x.xxx *)
+	RTU_EP_wattmeter_M_F AT %ID0.16660:REAL;	(* frequency xx.xxx Hz *)
+	RTU_EP_wattmeter_M_U AT %ID0.16664:REAL;	(* voltage xxx.xx V *)
+	RTU_EP_wattmeter_M_I1 AT %ID0.16668:REAL;	(* current xx.xxx A (1) *)
+	RTU_EP_wattmeter_M_I2 AT %ID0.16672:REAL;	(* current xx.xxx A (2) *)
+	RTU_EP_wattmeter_M_I3 AT %ID0.16676:REAL;	(* current xx.xxx A (3) *)
+	RTU_EP_wattmeter_M_I AT %ID0.16680:REAL;	(* current xx.xxx A *)
+	RTU_EP_wattmeter_M_Ein AT %ID0.16684:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter_M_Eout AT %ID0.16688:REAL;	(* exported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter_F_P AT %ID0.16692:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter_F_Q AT %ID0.16696:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter_F_S AT %ID0.16700:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter_F_C AT %ID0.16704:REAL;	(* power factor +/- x.xxx *)
+	RTU_EP_wattmeter_F_F AT %ID0.16708:REAL;	(* frequency xx.xxx Hz *)
+	RTU_EP_wattmeter_F_U AT %ID0.16712:REAL;	(* voltage xxx.xx V *)
+	RTU_EP_wattmeter_F_I1 AT %ID0.16716:REAL;	(* current xx.xxx A (1) *)
+	RTU_EP_wattmeter_F_I2 AT %ID0.16720:REAL;	(* current xx.xxx A (2) *)
+	RTU_EP_wattmeter_F_I3 AT %ID0.16724:REAL;	(* current xx.xxx A (3) *)
+	RTU_EP_wattmeter_F_I AT %ID0.16728:REAL;	(* current xx.xxx A *)
+	RTU_EP_wattmeter_F_Ein AT %ID0.16732:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter_F_Eout AT %ID0.16736:REAL;	(* exported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter01_P AT %ID0.16740:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter01_Q AT %ID0.16744:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter01_S AT %ID0.16748:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter01_Ein AT %ID0.16752:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter02_P AT %ID0.16756:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter02_Q AT %ID0.16760:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter02_S AT %ID0.16764:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter02_Ein AT %ID0.16768:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter03_P AT %ID0.16772:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter03_Q AT %ID0.16776:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter03_S AT %ID0.16780:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter03_Ein AT %ID0.16784:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter04_P AT %ID0.16788:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter04_Q AT %ID0.16792:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter04_S AT %ID0.16796:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter04_Ein AT %ID0.16800:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter05_P AT %ID0.16804:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter05_Q AT %ID0.16808:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter05_S AT %ID0.16812:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter05_Ein AT %ID0.16816:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter06_P AT %ID0.16820:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter06_Q AT %ID0.16824:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter06_S AT %ID0.16828:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter06_Ein AT %ID0.16832:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter07_P AT %ID0.16836:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter07_Q AT %ID0.16840:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter07_S AT %ID0.16844:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter07_Ein AT %ID0.16848:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter08_P AT %ID0.16852:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter08_Q AT %ID0.16856:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter08_S AT %ID0.16860:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter08_Ein AT %ID0.16864:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter09_P AT %ID0.16868:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter09_Q AT %ID0.16872:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter09_S AT %ID0.16876:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter09_Ein AT %ID0.16880:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	RTU_EP_wattmeter10_P AT %ID0.16884:REAL;	(* active power +/- xxxx.xxx W *)
+	RTU_EP_wattmeter10_Q AT %ID0.16888:REAL;	(* reactive power +/- xxxx.xxx var *)
+	RTU_EP_wattmeter10_S AT %ID0.16892:REAL;	(* apparent power +/- xxxx.xxx VA *)
+	RTU_EP_wattmeter10_Ein AT %ID0.16896:REAL;	(* imported energy xxxxxxxxx.x Wh *)
+	MPNC_Baudrate AT %IW0.16900:UINT;	(* Baudrate MPNC006 device *)
+	MPNC_NodeID AT %IW0.16904:UINT;	(* Address MPNC006 device *)
+	MPNC_HeartBeat AT %ID0.16908:UDINT;	(* Life time MPNC006 device *)
+	MPNC_AnInConf_A AT %QW0.16912:UINT;	(* Analog inputs configuration MPNC030 module A *)
+	MPNC_AnInConf_B AT %QW0.16916:UINT;	(* Analog inputs configuration MPNC030 module B *)
+	MPNC_AnInConf_C AT %QW0.16920:UINT;	(* Analog inputs configuration MPNC030 module C *)
+	MPNC_AnInConf_D AT %QW0.16924:UINT;	(* Analog inputs configuration MPNC030 module D *)
+	MPNC_AnIn_A_1 AT %IW0.16928:INT;	(* Analog input 1 value MPNC030 module A *)
+	MPNC_AnIn_A_2 AT %IW0.16932:INT;	(* Analog input 2 value MPNC030 module A *)
+	MPNC_AnIn_A_3 AT %IW0.16936:INT;	(* Analog input 3 value MPNC030 module A *)
+	MPNC_AnIn_A_4 AT %IW0.16940:INT;	(* Analog input 4 value MPNC030 module A *)
+	MPNC_AnIn_B_1 AT %IW0.16944:INT;	(* Analog input 1 value MPNC030 module B *)
+	MPNC_AnIn_B_2 AT %IW0.16948:INT;	(* Analog input 2 value MPNC030 module B *)
+	MPNC_AnIn_B_3 AT %IW0.16952:INT;	(* Analog input 3 value MPNC030 module B *)
+	MPNC_AnIn_B_4 AT %IW0.16956:INT;	(* Analog input 4 value MPNC030 module B *)
+	MPNC_AnIn_C_1 AT %IW0.16960:INT;	(* Analog input 1 value MPNC030 module C *)
+	MPNC_AnIn_C_2 AT %IW0.16964:INT;	(* Analog input 2 value MPNC030 module C *)
+	MPNC_AnIn_C_3 AT %IW0.16968:INT;	(* Analog input 3 value MPNC030 module C *)
+	MPNC_AnIn_C_4 AT %IW0.16972:INT;	(* Analog input 4 value MPNC030 module C *)
+	MPNC_AnIn_D_1 AT %IW0.16976:INT;	(* Analog input 1 value MPNC030 module D *)
+	MPNC_AnIn_D_2 AT %IW0.16980:INT;	(* Analog input 2 value MPNC030 module D *)
+	MPNC_AnIn_D_3 AT %IW0.16984:INT;	(* Analog input 3 value MPNC030 module D *)
+	MPNC_AnIn_D_4 AT %IW0.16988:INT;	(* Analog input 4 value MPNC030 module D *)
+	MPNC_DigOut_A_1 AT %QX0.16992.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module A *)
+	MPNC_DigOut_A_2 AT %QX0.16996.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module A *)
+	MPNC_DigOut_A_3 AT %QX0.17000.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module A *)
+	MPNC_DigOut_A_4 AT %QX0.17004.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module A *)
+	MPNC_DigOut_A_5 AT %QX0.17008.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module A *)
+	MPNC_DigOut_A_6 AT %QX0.17012.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module A *)
+	MPNC_DigOut_A_7 AT %QX0.17016.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module A *)
+	MPNC_DigOut_A_8 AT %QX0.17020.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module A *)
+	MPNC_DigOut_A_9 AT %QX0.17024.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module A *)
+	MPNC_DigOut_A_10 AT %QX0.17028.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module A *)
+	MPNC_DigOut_A_11 AT %QX0.17032.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module A *)
+	MPNC_DigOut_A_12 AT %QX0.17036.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module A *)
+	MPNC_DigOut_A_13 AT %QX0.17040.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module A *)
+	MPNC_DigOut_A_14 AT %QX0.17044.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module A *)
+	MPNC_DigOut_A_15 AT %QX0.17048.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module A *)
+	MPNC_DigOut_A_16 AT %QX0.17052.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module A *)
+	MPNC_DigOut_B_1 AT %QX0.17056.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module B *)
+	MPNC_DigOut_B_2 AT %QX0.17060.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module B *)
+	MPNC_DigOut_B_3 AT %QX0.17064.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module B *)
+	MPNC_DigOut_B_4 AT %QX0.17068.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module B *)
+	MPNC_DigOut_B_5 AT %QX0.17072.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module B *)
+	MPNC_DigOut_B_6 AT %QX0.17076.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module B *)
+	MPNC_DigOut_B_7 AT %QX0.17080.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module B *)
+	MPNC_DigOut_B_8 AT %QX0.17084.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module B *)
+	MPNC_DigOut_B_9 AT %QX0.17088.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module B *)
+	MPNC_DigOut_B_10 AT %QX0.17092.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module B *)
+	MPNC_DigOut_B_11 AT %QX0.17096.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module B *)
+	MPNC_DigOut_B_12 AT %QX0.17100.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module B *)
+	MPNC_DigOut_B_13 AT %QX0.17104.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module B *)
+	MPNC_DigOut_B_14 AT %QX0.17108.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module B *)
+	MPNC_DigOut_B_15 AT %QX0.17112.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module B *)
+	MPNC_DigOut_B_16 AT %QX0.17116.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module B *)
+	MPNC_DigOut_C_1 AT %QX0.17120.0:BOOL;	(* Digital output value bit 1 MPNC020 02 module C *)
+	MPNC_DigOut_C_2 AT %QX0.17124.0:BOOL;	(* Digital output value bit 2 MPNC020 02 module C *)
+	MPNC_DigOut_C_3 AT %QX0.17128.0:BOOL;	(* Digital output value bit 3 MPNC020 02 module C *)
+	MPNC_DigOut_C_4 AT %QX0.17132.0:BOOL;	(* Digital output value bit 4 MPNC020 02 module C *)
+	MPNC_DigOut_C_5 AT %QX0.17136.0:BOOL;	(* Digital output value bit 5 MPNC020 02 module C *)
+	MPNC_DigOut_C_6 AT %QX0.17140.0:BOOL;	(* Digital output value bit 6 MPNC020 02 module C *)
+	MPNC_DigOut_C_7 AT %QX0.17144.0:BOOL;	(* Digital output value bit 7 MPNC020 02 module C *)
+	MPNC_DigOut_C_8 AT %QX0.17148.0:BOOL;	(* Digital output value bit 8 MPNC020 02 module C *)
+	MPNC_DigOut_C_9 AT %QX0.17152.0:BOOL;	(* Digital output value bit 9 MPNC020 02 module C *)
+	MPNC_DigOut_C_10 AT %QX0.17156.0:BOOL;	(* Digital output value bit 10 MPNC020 02 module C *)
+	MPNC_DigOut_C_11 AT %QX0.17160.0:BOOL;	(* Digital output value bit 11 MPNC020 02 module C *)
+	MPNC_DigOut_C_12 AT %QX0.17164.0:BOOL;	(* Digital output value bit 12 MPNC020 02 module C *)
+	MPNC_DigOut_C_13 AT %QX0.17168.0:BOOL;	(* Digital output value bit 13 MPNC020 02 module C *)
+	MPNC_DigOut_C_14 AT %QX0.17172.0:BOOL;	(* Digital output value bit 14 MPNC020 02 module C *)
+	MPNC_DigOut_C_15 AT %QX0.17176.0:BOOL;	(* Digital output value bit 15 MPNC020 02 module C *)
+	MPNC_DigOut_C_16 AT %QX0.17180.0:BOOL;	(* Digital output value bit 16 MPNC020 02 module C *)
+	MPNC_DigIn_A_1 AT %IX0.17248.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module A *)
+	MPNC_DigIn_A_2 AT %IX0.17252.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module A *)
+	MPNC_DigIn_A_3 AT %IX0.17256.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module A *)
+	MPNC_DigIn_A_4 AT %IX0.17260.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module A *)
+	MPNC_DigIn_A_5 AT %IX0.17264.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module A *)
+	MPNC_DigIn_A_6 AT %IX0.17268.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module A *)
+	MPNC_DigIn_A_7 AT %IX0.17272.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module A *)
+	MPNC_DigIn_A_8 AT %IX0.17276.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module A *)
+	MPNC_DigIn_A_9 AT %IX0.17280.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module A *)
+	MPNC_DigIn_A_10 AT %IX0.17284.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module A *)
+	MPNC_DigIn_A_11 AT %IX0.17288.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module A *)
+	MPNC_DigIn_A_12 AT %IX0.17292.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module A *)
+	MPNC_DigIn_A_13 AT %IX0.17296.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module A *)
+	MPNC_DigIn_A_14 AT %IX0.17300.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module A *)
+	MPNC_DigIn_A_15 AT %IX0.17304.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module A *)
+	MPNC_DigIn_A_16 AT %IX0.17308.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module A *)
+	MPNC_DigIn_B_1 AT %IX0.17312.0:BOOL;	(* Digital input value bit 1 MPNC020 01 module B *)
+	MPNC_DigIn_B_2 AT %IX0.17316.0:BOOL;	(* Digital input value bit 2 MPNC020 01 module B *)
+	MPNC_DigIn_B_3 AT %IX0.17320.0:BOOL;	(* Digital input value bit 3 MPNC020 01 module B *)
+	MPNC_DigIn_B_4 AT %IX0.17324.0:BOOL;	(* Digital input value bit 4 MPNC020 01 module B *)
+	MPNC_DigIn_B_5 AT %IX0.17328.0:BOOL;	(* Digital input value bit 5 MPNC020 01 module B *)
+	MPNC_DigIn_B_6 AT %IX0.17332.0:BOOL;	(* Digital input value bit 6 MPNC020 01 module B *)
+	MPNC_DigIn_B_7 AT %IX0.17336.0:BOOL;	(* Digital input value bit 7 MPNC020 01 module B *)
+	MPNC_DigIn_B_8 AT %IX0.17340.0:BOOL;	(* Digital input value bit 8 MPNC020 01 module B *)
+	MPNC_DigIn_B_9 AT %IX0.17344.0:BOOL;	(* Digital input value bit 9 MPNC020 01 module B *)
+	MPNC_DigIn_B_10 AT %IX0.17348.0:BOOL;	(* Digital input value bit 10 MPNC020 01 module B *)
+	MPNC_DigIn_B_11 AT %IX0.17352.0:BOOL;	(* Digital input value bit 11 MPNC020 01 module B *)
+	MPNC_DigIn_B_12 AT %IX0.17356.0:BOOL;	(* Digital input value bit 12 MPNC020 01 module B *)
+	MPNC_DigIn_B_13 AT %IX0.17360.0:BOOL;	(* Digital input value bit 13 MPNC020 01 module B *)
+	MPNC_DigIn_B_14 AT %IX0.17364.0:BOOL;	(* Digital input value bit 14 MPNC020 01 module B *)
+	MPNC_DigIn_B_15 AT %IX0.17368.0:BOOL;	(* Digital input value bit 15 MPNC020 01 module B *)
+	MPNC_DigIn_B_16 AT %IX0.17372.0:BOOL;	(* Digital input value bit 16 MPNC020 01 module B *)
+	MPNC_Reserved_1 AT %IW0.17504:UINT;
+	MPNC_Reserved_2 AT %IW0.17508:UINT;
+	MPNC_ColdJunctionT AT %IW0.17512:INT;	(* Cold junction temperature value *)
+	MPNC_Reserved_3 AT %IW0.17516:UINT;
+	MPNC_Reserved_4 AT %IW0.17520:UINT;
+	MPNC_Reboot AT %QW0.17524:INT;	(* MPNC006 chain reboot *)
+	MPNC_ModulesNumber AT %IW0.17528:UINT;	(* Number of modules *)
+	MPNC_AnInConf_1 AT %QW0.17532:UINT;	(* Analog input 1 configuration MPNC006 *)
+	MPNC_AnInConf_2 AT %QW0.17536:UINT;	(* Analog input 2 configuration MPNC006 *)
+	MPNC_AnIn_1 AT %IW0.17540:INT;	(* Analog input 1 value MPNC006 *)
+	MPNC_AnIn_2 AT %IW0.17544:INT;	(* Analog input 2 value MPNC006 *)
+	MPNC_DigDir_1 AT %QX0.17548.0:BOOL;	(* Digital IO 1 configuration MPNC006 *)
+	MPNC_DigDir_2 AT %QX0.17552.0:BOOL;	(* Digital IO 2 configuration MPNC006 *)
+	MPNC_DigDir_3 AT %QX0.17556.0:BOOL;	(* Digital IO 3 configuration MPNC006 *)
+	MPNC_DigDir_4 AT %QX0.17560.0:BOOL;	(* Digital IO 4 configuration MPNC006 *)
+	MPNC_DigDir_5 AT %QX0.17564.0:BOOL;	(* Digital IO 5 configuration MPNC006 *)
+	MPNC_DigDir_6 AT %QX0.17568.0:BOOL;	(* Digital IO 6 configuration MPNC006 *)
+	MPNC_DigDir_7 AT %QX0.17572.0:BOOL;	(* Digital IO 7 configuration MPNC006 *)
+	MPNC_DigDir_8 AT %QX0.17576.0:BOOL;	(* Digital IO 8 configuration MPNC006 *)
+	MPNC_DigIn_1 AT %IX0.17580.0:BOOL;	(* Digital input 1 value MPNC006 *)
+	MPNC_DigIn_2 AT %IX0.17584.0:BOOL;	(* Digital input 2 value MPNC006 *)
+	MPNC_DigIn_3 AT %IX0.17588.0:BOOL;	(* Digital input 3 value MPNC006 *)
+	MPNC_DigIn_4 AT %IX0.17592.0:BOOL;	(* Digital input 4 value MPNC006 *)
+	MPNC_DigIn_5 AT %IX0.17596.0:BOOL;	(* Digital input 5 value MPNC006 *)
+	MPNC_DigIn_6 AT %IX0.17600.0:BOOL;	(* Digital input 6 value MPNC006 *)
+	MPNC_DigIn_7 AT %IX0.17604.0:BOOL;	(* Digital input 7 value MPNC006 *)
+	MPNC_DigIn_8 AT %IX0.17608.0:BOOL;	(* Digital input 8 value MPNC006 *)
+	MPNC_DigOut_1 AT %QX0.17612.0:BOOL;	(* Digital output 1 value MPNC006 *)
+	MPNC_DigOut_2 AT %QX0.17616.0:BOOL;	(* Digital output 2 value MPNC006 *)
+	MPNC_DigOut_3 AT %QX0.17620.0:BOOL;	(* Digital output 3 value MPNC006 *)
+	MPNC_DigOut_4 AT %QX0.17624.0:BOOL;	(* Digital output 4 value MPNC006 *)
+	MPNC_DigOut_5 AT %QX0.17628.0:BOOL;	(* Digital output 5 value MPNC006 *)
+	MPNC_DigOut_6 AT %QX0.17632.0:BOOL;	(* Digital output 6 value MPNC006 *)
+	MPNC_DigOut_7 AT %QX0.17636.0:BOOL;	(* Digital output 7 value MPNC006 *)
+	MPNC_DigOut_8 AT %QX0.17640.0:BOOL;	(* Digital output 8 value MPNC006 *)
+	MPNC_AnInFltr_1 AT %QW0.17644:UINT;	(* Analog input filter 1 MPNC006 *)
+	MPNC_AnInFltr_2 AT %QW0.17648:UINT;	(* Analog input filter 2 MPNC006 *)
+	MPNC_WatchDog AT %QW0.17652:UINT;	(* WatchDog Timer in Seconds *)
+	MPNC_Reserved_6 AT %IW0.17672:UINT;
+	MPNC_FirmwareVer AT %IW0.17740:UINT;	(* Firmware release MPNC006 *)
+	MPNC_StatusWord AT %IW0.17744:UINT;	(* Status word MPNC006 *)
+	RTU_StatusWord_1 AT %IW0.17748:UINT;
+	RTU_BitMask_1 AT %ID0.17752:UDINT;
+	RTU_HeartBeat_1 AT %ID0.17756:UDINT;
+	RTU_temperature AT %IW0.17760:INT;
+	RTU_humidity AT %IW0.17764:INT;
+	RTU_CO2 AT %IW0.17768:INT;
+	RTU_O3 AT %IW0.17772:INT;
+	RTU_VOC AT %IW0.17776:INT;
+	RTU_PM_1_0_C AT %IW0.17780:INT;
+	RTU_PM_2_5_C AT %IW0.17784:INT;
+	RTU_PM_4_0_C AT %IW0.17788:INT;
+	RTU_PM_10_C AT %IW0.17792:INT;
+	RTU_PM_1_0_N AT %IW0.17796:INT;
+	RTU_PM_2_5_N AT %IW0.17800:INT;
+	RTU_PM_4_0_N AT %IW0.17804:INT;
+	RTU_PM_10_N AT %IW0.17808:INT;
+	RTU_MPD AT %IW0.17812:INT;
+	RTU_P AT %IW0.17816:INT;
+	RTU_r16 AT %IW0.17820:INT;
+	RTU_r17 AT %IW0.17824:INT;
+	RTU_r18 AT %IW0.17828:INT;
+	RTU_r19 AT %IW0.17832:INT;
+	RTU_r20 AT %IW0.17836:INT;
+	RTU_r21 AT %IW0.17840:INT;
+	RTU_r22 AT %IW0.17844:INT;
+	RTU_r23 AT %IW0.17848:INT;
+	RTU_r24 AT %IW0.17852:INT;
+	RTU_r25 AT %IW0.17856:INT;
+	RTU_r26 AT %IW0.17860:INT;
+	RTU_r27 AT %IW0.17864:INT;
+	RTU_r28 AT %IW0.17868:INT;
+	RTU_r29 AT %IW0.17872:INT;
+	RTU_r30 AT %IW0.17876:INT;
+	RTU_r31 AT %IW0.17880:INT;
+	RTU_r32 AT %IW0.17884:INT;
+	RTU_StatusWord_2 AT %IW0.17888:UINT;
+	RTU_BitMask_2 AT %ID0.17892:UDINT;
+	RTU_HeartBeat_2 AT %ID0.17896:UDINT;
+	RTU_temperature_bis AT %IW0.17900:INT;
+	RTU_humidity_bis AT %IW0.17904:INT;
+	RTU_StatusWord_3 AT %IW0.17908:UINT;
+	RTU_BitMask_3 AT %ID0.17912:UDINT;
+	RTU_HeartBeat_3 AT %ID0.17916:UDINT;
+	RTU_temperature_ext AT %IW0.17920:INT;
+	RTU_humidity_ext AT %IW0.17924:INT;
+	PLC_FWrevision AT %IW0.17928:UINT;	(* Firmware version *)
+	PLC_HWconfig AT %IW0.17932:UINT;	(* Hardware configuration *)
+	PLC_DigDir_1 AT %QX0.17936.0:BOOL;	(* Digital 1 direction (input = 0 output = 1) *)
+	PLC_DigDir_2 AT %QX0.17940.0:BOOL;	(* Digital 2 direction (input = 0 output = 1) *)
+	PLC_DigDir_3 AT %QX0.17944.0:BOOL;	(* Digital 3 direction (input = 0 output = 1) *)
+	PLC_DigDir_4 AT %QX0.17948.0:BOOL;	(* Digital 4 direction (input = 0 output = 1) *)
+	PLC_DigDir_5 AT %QX0.17952.0:BOOL;	(* Digital 5 direction (input = 0 output = 1) *)
+	PLC_DigDir_6 AT %QX0.17956.0:BOOL;	(* Digital 6 direction (input = 0 output = 1) *)
+	PLC_DigDir_7 AT %QX0.17960.0:BOOL;	(* Digital 7 direction (input = 0 output = 1) *)
+	PLC_DigDir_8 AT %QX0.17964.0:BOOL;	(* Digital 8 direction (input = 0 output = 1) *)
+	PLC_AnInConf_1 AT %QW0.17968:UINT;	(* Analog input 1 configuration *)
+	PLC_AnInConf_2 AT %QW0.17972:UINT;	(* Analog input 2 configuration *)
+	PLC_AnOutConf_1 AT %QW0.17976:UINT;	(* Analog output 1 configuration *)
+	PLC_AnOutConf_2 AT %QW0.17980:UINT;	(* Analog output 2 configuration *)
+	PLC_AnInConf_3 AT %QW0.17984:UINT;	(* Analog input 3 configuration *)
+	PLC_Reserved_1 AT %QW0.17988:UINT;	(* Reserved *)
+	PLC_DigIn_1 AT %IX0.17992.0:BOOL;	(* Digital input 1 value *)
+	PLC_DigIn_2 AT %IX0.17996.0:BOOL;	(* Digital input 2 value *)
+	PLC_DigIn_3 AT %IX0.18000.0:BOOL;	(* Digital input 3 value *)
+	PLC_DigIn_4 AT %IX0.18004.0:BOOL;	(* Digital input 4 value *)
+	PLC_DigIn_5 AT %IX0.18008.0:BOOL;	(* Digital input 5 value *)
+	PLC_DigIn_6 AT %IX0.18012.0:BOOL;	(* Digital input 6 value *)
+	PLC_DigIn_7 AT %IX0.18016.0:BOOL;	(* Digital input 7 value *)
+	PLC_DigIn_8 AT %IX0.18020.0:BOOL;	(* Digital input 8 value *)
+	PLC_DigIn_9 AT %IX0.18024.0:BOOL;	(* Digital input 9 value *)
+	PLC_DigIn_10 AT %IX0.18028.0:BOOL;	(* Digital input 10 value *)
+	PLC_DigIn_11 AT %IX0.18032.0:BOOL;	(* Digital input 11 value *)
+	PLC_DigIn_12 AT %IX0.18036.0:BOOL;	(* Digital input 12 value *)
+	PLC_AnIn_1 AT %IW0.18040:INT;	(* Analog input 1 value *)
+	PLC_AnIn_2 AT %IW0.18044:INT;	(* Analog input 2 value *)
+	PLC_AnIn_3 AT %IW0.18048:INT;	(* Analog input 3 value *)
+	PLC_Reserved_2 AT %IW0.18052:INT;	(* Reserved *)
+	PLC_Reserved_3 AT %IW0.18056:INT;	(* Reserved *)
+	PLC_Tamb AT %IW0.18060:INT;	(* Cold junction compensation value *)
+	PLC_Encoder AT %ID0.18064:DINT;	(* Encoder reading value *)
+	PLC_Capture AT %ID0.18068:UDINT;	(* Time between 2 input edges *)
+	PLC_DigOut_1 AT %QX0.18072.0:BOOL;	(* Digital output 1 value *)
+	PLC_DigOut_2 AT %QX0.18076.0:BOOL;	(* Digital output 2 value *)
+	PLC_DigOut_3 AT %QX0.18080.0:BOOL;	(* Digital output 3 value *)
+	PLC_DigOut_4 AT %QX0.18084.0:BOOL;	(* Digital output 4 value *)
+	PLC_DigOut_5 AT %QX0.18088.0:BOOL;	(* Digital output 5 value *)
+	PLC_DigOut_6 AT %QX0.18092.0:BOOL;	(* Digital output 6 value *)
+	PLC_DigOut_7 AT %QX0.18096.0:BOOL;	(* Digital output 7 value *)
+	PLC_DigOut_8 AT %QX0.18100.0:BOOL;	(* Digital output 8 value *)
+	PLC_AnOut_1 AT %QW0.18104:INT;	(* Analog output 1 value *)
+	PLC_AnOut_2 AT %QW0.18108:INT;	(* Analog output 2 value *)
+	PLC_Reserved_4 AT %QW0.18112:INT;	(* Reserved *)
+	PLC_Reserved_5 AT %QW0.18116:INT;	(* Reserved *)
+	PLC_EncoderStart AT %QW0.18120:UINT;	(* Encoder - counter enable *)
+	PLC_EncoderReset AT %QW0.18124:UINT;	(* Encoder reset *)
+	PLC_Heartbeat AT %IW0.18128:UINT;	(* In - Out board function check *)
+	PLC_StatusReg AT %IW0.18132:UINT;	(* In - Out board status *)
+	PLC_AnIn1Filter AT %QW0.18136:UINT;	(* Analog input 1 filter *)
+	PLC_AnIn2Filter AT %QW0.18140:UINT;	(* Analog input 2 filter *)
+	PLC_AnIn3Filter AT %QW0.18144:UINT;	(* Analog input 3 filter *)
+	PLC_Reserved_6 AT %QW0.18148:UINT;	(* Reserved *)
+	PLC_Reserved_7 AT %QW0.18152:UINT;	(* Reserved *)
+	SysActivePower_0 AT %ID0.18156:REAL;	(* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) *)
+	SysActivePower_1 AT %ID0.18160:REAL;	(* 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) *)
+	SysActivePower_2 AT %ID0.18164:REAL;	(* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) *)
+	SysActivePower_3 AT %ID0.18168:REAL;	(* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) *)
+	SysActivePower_4 AT %ID0.18172:REAL;	(* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) *)
+	SysActivePower_5 AT %ID0.18176:REAL;	(* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) *)
+	SysActivePower_6 AT %ID0.18180:REAL;	(* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) *)
+	SysActivePower_7 AT %ID0.18184:REAL;	(* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) *)
+	SysActivePower_8 AT %ID0.18188:REAL;	(* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) *)
+	SysActivePower_9 AT %ID0.18192:REAL;	(* 0x13 0x1026 Potenza Attiva 0 in W (UPS) *)
+	SysActivePower_10 AT %ID0.18196:REAL;	(* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) *)
+	SysActivePower_11 AT %QD0.18200:REAL;	(* 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) *)
+	SysApparentPower_0 AT %ID0.18204:REAL;	(* 0x0A 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_1 AT %ID0.18208:REAL;	(* 0x0B 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_2 AT %ID0.18212:REAL;	(* 0x0C 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_3 AT %ID0.18216:REAL;	(* 0x0D 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_4 AT %ID0.18220:REAL;	(* 0x0E 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_5 AT %ID0.18224:REAL;	(* 0x0F 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_6 AT %ID0.18228:REAL;	(* 0x10 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_7 AT %ID0.18232:REAL;	(* 0x11 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_8 AT %ID0.18236:REAL;	(* 0x12 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_9 AT %ID0.18240:REAL;	(* 0x13 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_10 AT %ID0.18244:REAL;	(* 0x14 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysApparentPower_11 AT %ID0.18248:REAL;	(* 0x15 0x102E Potenza Apparente 0 in VA (UPS) *)
+	SysExpActiveEnergy_0 AT %ID0.18252:REAL;	(* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) *)
+	SysExpActiveEnergy_1 AT %ID0.18256:REAL;	(* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) *)
+	SysImpActiveEnergy_0 AT %ID0.18260:REAL;	(* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) *)
+	SysImpActiveEnergy_1 AT %ID0.18264:REAL;	(* 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) *)
+	SysImpActiveEnergy_2 AT %ID0.18268:REAL;	(* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_3 AT %ID0.18272:REAL;	(* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_4 AT %ID0.18276:REAL;	(* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_5 AT %ID0.18280:REAL;	(* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_6 AT %ID0.18284:REAL;	(* 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_7 AT %ID0.18288:REAL;	(* 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_8 AT %ID0.18292:REAL;	(* 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_9 AT %ID0.18296:REAL;	(* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_10 AT %ID0.18300:REAL;	(* 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysImpActiveEnergy_11 AT %ID0.18304:REAL;	(* 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) *)
+	SysPowerFactor_0 AT %ID0.18308:REAL;	(* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) *)
+	SysPowerFactor_1 AT %ID0.18312:REAL;	(* 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) *)
+	SysReactivePower_0 AT %ID0.18316:REAL;	(* 0x0A 0x1036 Potenza Reattiva 0 in var *)
+	Frequency_0 AT %ID0.18320:REAL;	(* 0x0A 0x1038 Frequenza in Hz *)
+	SysReactivePower_1 AT %ID0.18324:REAL;	(* 0x0B 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_2 AT %ID0.18332:REAL;	(* 0x0C 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_3 AT %ID0.18336:REAL;	(* 0x0D 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_4 AT %ID0.18340:REAL;	(* 0x0E 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_5 AT %ID0.18344:REAL;	(* 0x0F 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_6 AT %ID0.18348:REAL;	(* 0x10 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_7 AT %ID0.18352:REAL;	(* 0x11 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_8 AT %ID0.18356:REAL;	(* 0x12 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_9 AT %ID0.18360:REAL;	(* 0x13 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_10 AT %ID0.18364:REAL;	(* 0x14 0x1036 Potenza Reattiva 0 in var *)
+	SysReactivePower_11 AT %ID0.18368:REAL;	(* 0x15 0x1036 Potenza Reattiva 0 in var *)
+	SystemCurrent_0 AT %ID0.18372:REAL;	(* 0x0A 0x1016 Corrente in A *)
+	SystemVoltage_0 AT %ID0.18380:REAL;	(* 0x0A 0x100C Tensione in V (PRINCIPALE) *)
+	QcPm_Voltage_0 AT %IW0.18800:INT;	(* QC-PM485 xxx.x V *)
+	QcPm_Current_0 AT %IW0.18804:INT;	(* QC-PM485  xx.x A *)
+	QcPm_Frequency_0 AT %IW0.18808:INT;	(* QC-PM485 xx.x Hz *)
+	QcPm_ActivePower_0 AT %IW0.18812:INT;	(* QC-PM485 xxxx W *)
+	QcPm_ReactivePower_0 AT %IW0.18816:INT;	(* QC-PM485 xxxx var *)
+	QcPm_ApparentPower_0 AT %IW0.18820:INT;	(* QC-PM485 xxxx VA *)
+	QcPm_PowerFactor_0 AT %IW0.18824:INT;	(* QC-PM485 x.xxx *)
+	QcPm_ActiveEnergy_0 AT %ID0.18828:UDINT;	(* QC-PM485 xxxxxxxx.xx kWh *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
@@ -2014,8 +2021,6 @@ VAR_GLOBAL
 	NODE_43_STATUS AT %QD0.21028:UDINT;
 	NODE_44_DEV_NODE AT %QD0.21032:UDINT;
 	NODE_44_STATUS AT %QD0.21036:UDINT;
-	NODE_45_DEV_NODE AT %QD0.21040:UDINT;
-	NODE_45_STATUS AT %QD0.21044:UDINT;
 	PLC_time AT %ID0.21560:REAL;	(* Seconds since boot (reset each 24h) *)
 	PLC_timeMin AT %ID0.21564:REAL;	(* 10 seconds window start *)
 	PLC_timeMax AT %ID0.21568:REAL;	(* 10 seconds window stop *)

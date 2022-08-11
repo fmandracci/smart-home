@@ -211,12 +211,12 @@ void page101a::on_pushButton_plot_clicked()
 void page101a::on_pushButton_trend_clicked()
 {
     switch (currentThermostat) {
-    case  1: if (PLC_T1_control_type == 9) goto_trend_page("trend_T1stufa.csv") else goto_trend_page("trend_T1.csv") break;
-    case  2: if (PLC_T2_control_type == 9) goto_trend_page("trend_T2stufa.csv") else goto_trend_page("trend_T2.csv") break;
-    case  3: if (PLC_T3_control_type == 9) goto_trend_page("trend_T3stufa.csv") else goto_trend_page("trend_T3.csv") break;
-    case  4: if (PLC_T4_control_type == 9) goto_trend_page("trend_T4stufa.csv") else { if (PLC_T4_control_type == 6) goto_trend_page("trend_T4puffer.csv") else goto_trend_page("trend_T4.csv") } break;
-    case  5: if (PLC_T5_control_type == 9) goto_trend_page("trend_T5stufa.csv") else goto_trend_page("trend_T5.csv") break;
-    case  6: if (PLC_T6_control_type == 9) goto_trend_page("trend_T6stufa.csv") else goto_trend_page("trend_T6.csv") break;
+    case  1: goto_trend_page("trend_T1.csv") break;
+    case  2: goto_trend_page("trend_T2.csv") break;
+    case  3: goto_trend_page("trend_T3.csv") break;
+    case  4: if (PLC_T4_control_type == ControlType_6) goto_trend_page("trend_T4puffer.csv") else goto_trend_page("trend_T4.csv") break;
+    case  5: goto_trend_page("trend_T5.csv") break;
+    case  6: goto_trend_page("trend_T6.csv") break;
     default: ;
     }
 }

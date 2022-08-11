@@ -113,6 +113,24 @@ END_VAR
 			else BA_ReadSensor := false;
 			end_if;
 
+		elsif PLC_control_type = ControlType_16 then
+			(* TPAC1007_04_AD Local I/O on RTU3 *)
+			if NODE_31_STATUS = NODE_NODE_OK then
+				case n of
+	             1: BA_ReadSensor := PLC_DigIn_1 ;
+	             2: BA_ReadSensor := PLC_DigIn_2 ;
+	             3: BA_ReadSensor := PLC_DigIn_3 ;
+	             4: BA_ReadSensor := PLC_DigIn_4 ;
+
+	             5: BA_ReadSensor := PLC_DigIn_3 ;
+	             6: BA_ReadSensor := PLC_DigIn_3 ;
+	             7: BA_ReadSensor := PLC_DigIn_3 ;
+	             8: BA_ReadSensor := PLC_DigIn_3 ;
+				else BA_ReadSensor := false;
+				end_case;
+			else BA_ReadSensor := false;
+			end_if;
+
 		elsif PLC_control_type = ControlType_14 or PLC_control_type = ControlType_6 then
 			(* MPNC DI16 "A,B" + DO16 "A,B" on RTU0 *)
 			if NODE_27_STATUS = NODE_NODE_OK then

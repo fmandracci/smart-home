@@ -875,13 +875,6 @@ int16_t PLC_T6_temperature_ext_offset = 0;
 
 
 /*
- * Variable Tsoglia_Massetto	[ massima temperatura massetto (20 .. 30 C) ]
- */
-
-int16_t Tsoglia_Massetto = 0;
-
-
-/*
  * Variable TimerValue_1
  */
 
@@ -12747,6 +12740,62 @@ float SystemVoltage_0 = 0;
 
 
 /*
+ * Variable QcPm_Voltage_0	[ QC-PM485 xxx.x V ]
+ */
+
+int16_t QcPm_Voltage_0 = 0;
+
+
+/*
+ * Variable QcPm_Current_0	[ QC-PM485  xx.x A ]
+ */
+
+int16_t QcPm_Current_0 = 0;
+
+
+/*
+ * Variable QcPm_Frequency_0	[ QC-PM485 xx.x Hz ]
+ */
+
+int16_t QcPm_Frequency_0 = 0;
+
+
+/*
+ * Variable QcPm_ActivePower_0	[ QC-PM485 xxxx W ]
+ */
+
+int16_t QcPm_ActivePower_0 = 0;
+
+
+/*
+ * Variable QcPm_ReactivePower_0	[ QC-PM485 xxxx var ]
+ */
+
+int16_t QcPm_ReactivePower_0 = 0;
+
+
+/*
+ * Variable QcPm_ApparentPower_0	[ QC-PM485 xxxx VA ]
+ */
+
+int16_t QcPm_ApparentPower_0 = 0;
+
+
+/*
+ * Variable QcPm_PowerFactor_0	[ QC-PM485 x.xxx ]
+ */
+
+int16_t QcPm_PowerFactor_0 = 0;
+
+
+/*
+ * Variable QcPm_ActiveEnergy_0	[ QC-PM485 xxxxxxxx.xx kWh ]
+ */
+
+u_int32_t QcPm_ActiveEnergy_0 = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -14130,20 +14179,6 @@ u_int32_t NODE_44_DEV_NODE = 0;
  */
 
 u_int32_t NODE_44_STATUS = 0;
-
-
-/*
- * Variable NODE_45_DEV_NODE
- */
-
-u_int32_t NODE_45_DEV_NODE = 0;
-
-
-/*
- * Variable NODE_45_STATUS
- */
-
-u_int32_t NODE_45_STATUS = 0;
 
 
 /*
@@ -16580,24 +16615,6 @@ int
 getStatus_PLC_T6_temperature_ext_offset(void)
 {
 	return getStatus(ID_PLC_T6_temperature_ext_offset);
-}
-
-int
-doWrite_Tsoglia_Massetto(int16_t value)
-{
-	return doWrite(ID_Tsoglia_Massetto, &value);
-}
-
-int
-addWrite_Tsoglia_Massetto(int16_t value)
-{
-	return addWrite(ID_Tsoglia_Massetto, &value);
-}
-
-int
-getStatus_Tsoglia_Massetto(void)
-{
-	return getStatus(ID_Tsoglia_Massetto);
 }
 
 int
@@ -47111,6 +47128,150 @@ getStatus_SystemVoltage_0(void)
 }
 
 int
+doWrite_QcPm_Voltage_0(int16_t value)
+{
+	return doWrite(ID_QcPm_Voltage_0, &value);
+}
+
+int
+addWrite_QcPm_Voltage_0(int16_t value)
+{
+	return addWrite(ID_QcPm_Voltage_0, &value);
+}
+
+int
+getStatus_QcPm_Voltage_0(void)
+{
+	return getStatus(ID_QcPm_Voltage_0);
+}
+
+int
+doWrite_QcPm_Current_0(int16_t value)
+{
+	return doWrite(ID_QcPm_Current_0, &value);
+}
+
+int
+addWrite_QcPm_Current_0(int16_t value)
+{
+	return addWrite(ID_QcPm_Current_0, &value);
+}
+
+int
+getStatus_QcPm_Current_0(void)
+{
+	return getStatus(ID_QcPm_Current_0);
+}
+
+int
+doWrite_QcPm_Frequency_0(int16_t value)
+{
+	return doWrite(ID_QcPm_Frequency_0, &value);
+}
+
+int
+addWrite_QcPm_Frequency_0(int16_t value)
+{
+	return addWrite(ID_QcPm_Frequency_0, &value);
+}
+
+int
+getStatus_QcPm_Frequency_0(void)
+{
+	return getStatus(ID_QcPm_Frequency_0);
+}
+
+int
+doWrite_QcPm_ActivePower_0(int16_t value)
+{
+	return doWrite(ID_QcPm_ActivePower_0, &value);
+}
+
+int
+addWrite_QcPm_ActivePower_0(int16_t value)
+{
+	return addWrite(ID_QcPm_ActivePower_0, &value);
+}
+
+int
+getStatus_QcPm_ActivePower_0(void)
+{
+	return getStatus(ID_QcPm_ActivePower_0);
+}
+
+int
+doWrite_QcPm_ReactivePower_0(int16_t value)
+{
+	return doWrite(ID_QcPm_ReactivePower_0, &value);
+}
+
+int
+addWrite_QcPm_ReactivePower_0(int16_t value)
+{
+	return addWrite(ID_QcPm_ReactivePower_0, &value);
+}
+
+int
+getStatus_QcPm_ReactivePower_0(void)
+{
+	return getStatus(ID_QcPm_ReactivePower_0);
+}
+
+int
+doWrite_QcPm_ApparentPower_0(int16_t value)
+{
+	return doWrite(ID_QcPm_ApparentPower_0, &value);
+}
+
+int
+addWrite_QcPm_ApparentPower_0(int16_t value)
+{
+	return addWrite(ID_QcPm_ApparentPower_0, &value);
+}
+
+int
+getStatus_QcPm_ApparentPower_0(void)
+{
+	return getStatus(ID_QcPm_ApparentPower_0);
+}
+
+int
+doWrite_QcPm_PowerFactor_0(int16_t value)
+{
+	return doWrite(ID_QcPm_PowerFactor_0, &value);
+}
+
+int
+addWrite_QcPm_PowerFactor_0(int16_t value)
+{
+	return addWrite(ID_QcPm_PowerFactor_0, &value);
+}
+
+int
+getStatus_QcPm_PowerFactor_0(void)
+{
+	return getStatus(ID_QcPm_PowerFactor_0);
+}
+
+int
+doWrite_QcPm_ActiveEnergy_0(u_int32_t value)
+{
+	return doWrite(ID_QcPm_ActiveEnergy_0, &value);
+}
+
+int
+addWrite_QcPm_ActiveEnergy_0(u_int32_t value)
+{
+	return addWrite(ID_QcPm_ActiveEnergy_0, &value);
+}
+
+int
+getStatus_QcPm_ActiveEnergy_0(void)
+{
+	return getStatus(ID_QcPm_ActiveEnergy_0);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -50675,42 +50836,6 @@ getStatus_NODE_44_STATUS(void)
 }
 
 int
-doWrite_NODE_45_DEV_NODE(u_int32_t value)
-{
-	return doWrite(ID_NODE_45_DEV_NODE, &value);
-}
-
-int
-addWrite_NODE_45_DEV_NODE(u_int32_t value)
-{
-	return addWrite(ID_NODE_45_DEV_NODE, &value);
-}
-
-int
-getStatus_NODE_45_DEV_NODE(void)
-{
-	return getStatus(ID_NODE_45_DEV_NODE);
-}
-
-int
-doWrite_NODE_45_STATUS(u_int32_t value)
-{
-	return doWrite(ID_NODE_45_STATUS, &value);
-}
-
-int
-addWrite_NODE_45_STATUS(u_int32_t value)
-{
-	return addWrite(ID_NODE_45_STATUS, &value);
-}
-
-int
-getStatus_NODE_45_STATUS(void)
-{
-	return getStatus(ID_NODE_45_STATUS);
-}
-
-int
 doWrite_PLC_time(float value)
 {
 	return doWrite(ID_PLC_time, &value);
@@ -51503,7 +51628,6 @@ update_all(void)
 	retval += readFromDb(ID_PLC_T6_temperature_offset, &PLC_T6_temperature_offset);
 	retval += readFromDb(ID_PLC_T6_temperature_bis_offset, &PLC_T6_temperature_bis_offset);
 	retval += readFromDb(ID_PLC_T6_temperature_ext_offset, &PLC_T6_temperature_ext_offset);
-	retval += readFromDb(ID_Tsoglia_Massetto, &Tsoglia_Massetto);
 	retval += readFromDb(ID_TimerValue_1, &TimerValue_1);
 	retval += readFromDb(ID_TimerValue_2, &TimerValue_2);
 	retval += readFromDb(ID_PLC_RELOAD_CONF, &PLC_RELOAD_CONF);
@@ -53199,6 +53323,14 @@ update_all(void)
 	retval += readFromDb(ID_SysReactivePower_11, &SysReactivePower_11);
 	retval += readFromDb(ID_SystemCurrent_0, &SystemCurrent_0);
 	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
+	retval += readFromDb(ID_QcPm_Voltage_0, &QcPm_Voltage_0);
+	retval += readFromDb(ID_QcPm_Current_0, &QcPm_Current_0);
+	retval += readFromDb(ID_QcPm_Frequency_0, &QcPm_Frequency_0);
+	retval += readFromDb(ID_QcPm_ActivePower_0, &QcPm_ActivePower_0);
+	retval += readFromDb(ID_QcPm_ReactivePower_0, &QcPm_ReactivePower_0);
+	retval += readFromDb(ID_QcPm_ApparentPower_0, &QcPm_ApparentPower_0);
+	retval += readFromDb(ID_QcPm_PowerFactor_0, &QcPm_PowerFactor_0);
+	retval += readFromDb(ID_QcPm_ActiveEnergy_0, &QcPm_ActiveEnergy_0);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
@@ -53397,8 +53529,6 @@ update_all(void)
 	retval += readFromDb(ID_NODE_43_STATUS, &NODE_43_STATUS);
 	retval += readFromDb(ID_NODE_44_DEV_NODE, &NODE_44_DEV_NODE);
 	retval += readFromDb(ID_NODE_44_STATUS, &NODE_44_STATUS);
-	retval += readFromDb(ID_NODE_45_DEV_NODE, &NODE_45_DEV_NODE);
-	retval += readFromDb(ID_NODE_45_STATUS, &NODE_45_STATUS);
 	retval += readFromDb(ID_PLC_time, &PLC_time);
 	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);

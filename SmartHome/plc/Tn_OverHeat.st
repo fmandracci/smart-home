@@ -41,14 +41,6 @@ END_VAR
 		(* n=1..4: MPNE_C DigOut 1..4 *)
     	Tn_OverHeat := false;
 
-	elsif PLC_control_type = ControlType_10 then
-		(* MPNE_C DigOut 1 *)
-    	Tn_OverHeat := temperature_bis >= min(Tsoglia_Massetto, 300);
-
-	elsif PLC_control_type = ControlType_11 then
-		(* i=1..4: MPNE_C/_D DigOut 1.2 *)
-    	Tn_OverHeat := temperature_bis >= min(Tsoglia_Massetto, 300);
-
 	elsif PLC_control_type = ControlType_12 then
 		(* FastI/O FO 8 *)
     	Tn_OverHeat := false;
@@ -65,7 +57,7 @@ END_VAR
 		(* n=1..4: MPNC base DigOut_1..4 *)
     	Tn_OverHeat := false;
 
-	elsif PLC_control_type = ControlType_15 then
+	elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
 		(* TPAC1007_04_AD DigOut_8 *)
     	Tn_OverHeat := false;
 
