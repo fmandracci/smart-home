@@ -148,6 +148,9 @@ END_VAR
 		else ;
 		end_case;
 
+	elsif PLC_control_type = ControlType_13 then
+		(* TPAC1007_04_AD Local I/O on RTU3 *)
+		; 
 	end_if;
 
 END_FUNCTION

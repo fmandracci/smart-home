@@ -126,6 +126,9 @@ END_VAR;
             if MPNC_DigOut_B_15 <> values[31] then MPNC_DigOut_B_15 := values[31]; end_if;
             if MPNC_DigOut_B_16 <> values[32] then MPNC_DigOut_B_16 := values[32]; end_if;
 
+        elsif PLC_control_type = ControlType_16 then
+            (* TPAC1007_04_AD Local I/O on RTU3 *)
+			;
         end_if;
 
 END_FUNCTION

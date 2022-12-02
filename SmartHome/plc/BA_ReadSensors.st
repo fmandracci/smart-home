@@ -118,6 +118,14 @@ FUNCTION BA_ReadSensors
 			PLC_BA_input_12 := false;
 			PLC_BA_blackout_digin := false; (* --> PLC_BA_BlackoutDetected Alarm *)
 
+		elsif PLC_control_type = ControlType_16 then
+			(* TPAC1007_04_AD Local I/O on RTU3 *)
+			PLC_BA_input_9  := false ;
+		    PLC_BA_input_10 := false;
+		    PLC_BA_input_11 := false;
+			PLC_BA_input_12 := false;
+			PLC_BA_blackout_digin := PLC_DigIn_8; (* --> PLC_BA_BlackoutDetected Alarm *)
+
 		end_if;
 	
 END_FUNCTION

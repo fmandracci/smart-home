@@ -102,6 +102,10 @@ CONST
 	ALARM_MASK_NIGHTTIME_DEFAULT_3  : UDINT := 16#00000003;
 	ALARM_MASK_EVERYTHING_DEFAULT_3 : UDINT := 16#00000007;
 
+	ALARM_MASK_DAYTIME_DEFAULT_16    : UDINT := 16#00000007;
+	ALARM_MASK_NIGHTTIME_DEFAULT_16  : UDINT := 16#000000E7;
+	ALARM_MASK_EVERYTHING_DEFAULT_16 : UDINT := 16#000000FF;
+
 	                                            (* BBBBAAAA *)
 	                                            (* F..0F..0 *)
 	ALARM_MASK_DAYTIME_DEFAULT_6    : UDINT := 16#6bbfebfe; (* no i.r. sensors p0, p1, p-1 *)

@@ -129,6 +129,16 @@ END_VAR
         if MPNC_DigOut_7 <> enable_B then MPNC_DigOut_7 := enable_B; end_if;
         if MPNC_DigOut_8 <> enable_C then MPNC_DigOut_8 := enable_C; end_if;
 
+	elsif PLC_control_type = ControlType_16 then
+		(* TPAC1007_04_AD Local I/O on RTU3 *)
+    	if PLC_DigDir_5 <> DigDir_OUT then PLC_DigDir_5 := DigDir_OUT; end_if;
+    	if PLC_DigDir_6 <> DigDir_OUT then PLC_DigDir_6 := DigDir_OUT; end_if;
+    	if PLC_DigDir_7 <> DigDir_OUT then PLC_DigDir_7 := DigDir_OUT; end_if;
+
+        if PLC_DigOut_5 <> siren                  then PLC_DigOut_5 := siren;                  end_if;
+        if PLC_DigOut_6 <> (enable_A or enable_B) then PLC_DigOut_6 := (enable_A or enable_B); end_if;
+        if PLC_DigOut_7 <> (enable_C)             then PLC_DigOut_7 := (enable_C);             end_if;
+
 	end_if;
 
 END_FUNCTION

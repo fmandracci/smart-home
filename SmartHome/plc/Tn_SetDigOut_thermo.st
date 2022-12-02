@@ -249,7 +249,7 @@ END_VAR
 		    end_if;
 	    end_if;
 
-	elsif PLC_control_type = ControlType_15 or PLC_control_type = ControlType_16 then
+	elsif PLC_control_type = ControlType_15 then
 		(* TPAC1007_04_AD DigOut_8 *)
 		if NODE_31_STATUS = NODE_NODE_OK then
 	    	if PLC_DigDir_8 <> DigDir_OUT then PLC_DigDir_8 := DigDir_OUT; end_if;
@@ -259,6 +259,10 @@ END_VAR
 		        if PLC_DigOut_8 <> HEATING then PLC_DigOut_8 := HEATING; end_if;
 			end_if;
 	    end_if;
+
+	elsif PLC_control_type = ControlType_15 then
+		(* TPAC1007_04_AD AnOut_1 ? *)
+		;
 
 	end_if;
 

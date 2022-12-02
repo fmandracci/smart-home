@@ -51,6 +51,10 @@ FUNCTION BA_Watchdog
 		if MPNC_WatchDog <> WatchDogTimeout_s and NODE_27_STATUS = NODE_NODE_OK then
 			MPNC_WatchDog := WatchDogTimeout_s;
 		end_if;
+
+	elsif PLC_control_type = ControlType_16 then
+		; (* TPAC1007_04_AD Local I/O on RTU3 *)
+
 	end_if;
 
 END_FUNCTION

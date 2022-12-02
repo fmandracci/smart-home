@@ -24,7 +24,7 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 1203;
+	PLC_PLC_Version := 1204;
 
 	(* Fast I/O on TPX1043_03_C only *)
 	if PLC_PRODUCT_ID = 16#1043030C then
@@ -111,6 +111,9 @@ PROGRAM Init
 			elsif PLC_control_type = ControlType_14 then
 				(* MPNC DO16 "C" on RTU0 *)
 				NODE_27_STATUS := 1;
+			elsif PLC_control_type = ControlType_16 then
+				(* no relays *)
+				;
 			end_if;
 		end_if;
 
@@ -464,6 +467,10 @@ PROGRAM Init
 				PLC_BA_daytime_bitmask := ALARM_MASK_DAYTIME_DEFAULT_3;
 				PLC_BA_nighttime_bitmask := ALARM_MASK_NIGHTTIME_DEFAULT_3;
 				PLC_BA_everything_bitmask := ALARM_MASK_EVERYTHING_DEFAULT_3;
+			elsif PLC_control_type = ControlType_16 then
+				PLC_BA_daytime_bitmask := ALARM_MASK_DAYTIME_DEFAULT_16;
+				PLC_BA_nighttime_bitmask := ALARM_MASK_NIGHTTIME_DEFAULT_16;
+				PLC_BA_everything_bitmask := ALARM_MASK_EVERYTHING_DEFAULT_16;
 			else
 				PLC_BA_daytime_bitmask := ALARM_MASK_DAYTIME_DEFAULT;
 				PLC_BA_nighttime_bitmask := ALARM_MASK_NIGHTTIME_DEFAULT;
@@ -499,6 +506,9 @@ PROGRAM Init
 			(* MPNC DI16 "A,B" + DO16 "A,B" on RTU0 *)
 			(* leds and commands on MPNC DO16 "C" *)
 			NODE_27_STATUS := 1;
+		elsif PLC_control_type = ControlType_16 then
+			(* TPAC1007_04_AD Local I/O on RTU3 *)
+			NODE_31_STATUS := 1;
 		end_if;
 
 	end_if;

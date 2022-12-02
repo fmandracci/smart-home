@@ -122,10 +122,10 @@ END_VAR
 	             3: BA_ReadSensor := PLC_DigIn_3 ;
 	             4: BA_ReadSensor := PLC_DigIn_4 ;
 
-	             5: BA_ReadSensor := PLC_DigIn_3 ;
-	             6: BA_ReadSensor := PLC_DigIn_3 ;
-	             7: BA_ReadSensor := PLC_DigIn_3 ;
-	             8: BA_ReadSensor := PLC_DigIn_3 ;
+	             5: BA_ReadSensor := PLC_DigIn_9 ;
+	             6: BA_ReadSensor := PLC_DigIn_10;
+	             7: BA_ReadSensor := PLC_DigIn_11;
+	             8: BA_ReadSensor := PLC_DigIn_12;
 				else BA_ReadSensor := false;
 				end_case;
 			else BA_ReadSensor := false;

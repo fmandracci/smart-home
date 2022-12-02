@@ -61,6 +61,10 @@ END_VAR
 		(* TPAC1007_04_AD DigOut_8 *)
     	Tn_OverHeat := false;
 
+	elsif PLC_control_type = ControlType_16 then
+		(* n=1..4: MPNC base DigOut_1..4 *)
+    	Tn_OverHeat := false;
+
 	end_if;
 
 END_FUNCTION
