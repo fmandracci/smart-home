@@ -107,14 +107,14 @@ void printVncDisplayString(char * vncString)
     }
     sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:qvfb:size=%dx%d:0", rot, mmWidth, mmHeight, width, height);
 #else
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:qvfb:size=%dx%d:0", rot, width, height);
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:size=%dx%d:0", rot, width, height); // NB: "qvfb: driver cannot connect"
 #endif
     //sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:qvfb:size=%dx%d:0", rot, width, height);
     //sprintf(vncString, "multi: transformed:rot%d:0 vnc:size=%dx%d:0", rot, width, height);
-    fprintf(stderr, "vncString='%s'\n", vncString);
 #else
     sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
 #endif
+    fprintf(stderr, "vncString='%s'\n", vncString);
 
     // ------------ system.ini changes _before_ starting the plc runtime (this is hmi_only !) ------------
 

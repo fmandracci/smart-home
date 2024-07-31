@@ -45,11 +45,15 @@ page400::page400(QWidget *parent) :
 
 void page400::reload()
 {
+#ifdef Q_WS_QWS
     if (QScreen::instance()->width() >= 800) {
         pointSize = 14;
     } else {
         pointSize = 9;
     }
+#else
+    pointSize = 14;
+#endif
     changeWidgets();
     updateWidgets();
 }

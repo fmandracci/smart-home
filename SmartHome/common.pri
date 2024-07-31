@@ -1,69 +1,69 @@
+##
+# @file
+#
+# @section LICENSE
+# Copyright Mect s.r.l. 2013
+#
+# @brief Qmake project file
 #
 
-contains(QMAKE_HOST.os,Windows){
-        QT_ROOTFS = C:/Qt485/imx28/rootfs
-        QT_LUPDATE_PATH = C:/Qt485/desktop/bin
-        QT_LRELEASE_PATH = C:/Qt485/imx28/qt-everywhere-opensource-src-4.8.5/bin
-        ATCM_TEMPLATE_BASE_DIR = C:/Qt485/desktop/share/qtcreator/templates/wizards
-}
-!contains(QMAKE_HOST.os,Windows){
-        QT_ROOTFS=$$(MECT_RFSDIR)
-        QT_LUPDATE_PATH = 
-        QT_LRELEASE_PATH = $$(MECT_QT_INSTALL_DIR)/bin
-        ATCM_TEMPLATE_BASE_DIR = 
-}
+#contains(QMAKE_HOST.os,Windows){
+#        QT_ROOTFS = C:/Qt487/imx28/rootfs
+#        QT_LUPDATE_PATH = C:/Qt487/desktop/bin
+#        QT_LRELEASE_PATH = C:/Qt487/imx28/qt-everywhere-opensource-src-4.8.7/bin
+#        ATCM_TEMPLATE_BASE_DIR = C:/Qt487/desktop/QtCreator/share/qtcreator/templates/wizards
+#}
+#!contains(QMAKE_HOST.os,Windows){
+#        QT_ROOTFS        = /opt/Qt4.8.7/host
+#        QT_LUPDATE_PATH  = /opt/Qt4.8.7/host/bin
+#        QT_LRELEASE_PATH = /opt/Qt4.8.7/host/bin
+#        ATCM_TEMPLATE_BASE_DIR = /opt/Qt4.8.7/desktop/QtCreator/share/qtcreator/templates/wizards
+#}
+#
+#isEmpty(QT_ROOTFS) {
+#        error(QT_ROOTFS is empty)
+#}
+#isEmpty(QT_LUPDATE_PATH) {
+#        warning(QT_LUPDATE_PATH is empty)
+#}
+#isEmpty(QT_LRELEASE_PATH) {
+#        warning(QT_LRELEASE_PATH is empty)
+#}
+#isEmpty(ATCM_TEMPLATE_BASE_DIR) {
+#        warning(ATCM_TEMPLATE_BASE_DIR is empty)
+#}
 
-isEmpty(QT_ROOTFS) {
-        error(QT_ROOTFS is empty)
-}
-isEmpty(QT_LUPDATE_PATH) {
-        warning(QT_LUPDATE_PATH is empty)
-}
-isEmpty(QT_LRELEASE_PATH) {
-        warning(QT_LRELEASE_PATH is empty)
-}
-isEmpty(ATCM_TEMPLATE_BASE_DIR) {
-        warning(ATCM_TEMPLATE_BASE_DIR is empty)
-}
+#ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
+#ATCM_ARM_PLUGINS_LIBPATH = $$QT_ROOTFS/usr/lib
+#ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
+#ATCM_ARM_PLUGINS_INCPATH = $$QT_ROOTFS/usr/include
 
-ATCM_ARM_LIBRARY_LIBPATH = $$QT_ROOTFS/usr/lib
-ATCM_ARM_PLUGINS_LIBPATH = $$QT_ROOTFS/usr/lib
-ATCM_ARM_LIBRARY_INCPATH = $$QT_ROOTFS/usr/include
-ATCM_ARM_PLUGINS_INCPATH = $$QT_ROOTFS/usr/include
-
-QMAKE_CXXFLAGS_RELEASE -= -O2
-QMAKE_CXXFLAGS_RELEASE += -O3
-QMAKE_CXXFLAGS_RELEASE += -Wno-psabi
-QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
+#QMAKE_CXXFLAGS_RELEASE -= -O2
+#QMAKE_CXXFLAGS_RELEASE += -O3
+#QMAKE_CXXFLAGS_RELEASE += -Wno-psabi
+#QMAKE_CXXFLAGS_DEBUG   += -Wno-psabi
 
 TARGET = hmi
 TEMPLATE = app
 
 target.path = /local/root
-DEFINES+=ENABLE_STORE
-DEFINES+=ENABLE_ALARMS
-DEFINES+=ENABLE_TREND
-DEFINES+=ENABLE_RECIPE
 
-DEFINES += TRANSLATION
-
-INCLUDEPATH += .\
-	./config
+INCLUDEPATH += . ./config
 
 LIBS += \
--lts \
--lqwt \
 -lATCMcommon \
 -lATCMutility \
 -lATCMcommunication \
--lATCMplugin \
--lATCMinputdialog \
 -lATCMlogger \
 -lATCMstore \
 -lATCMalarms \
 -lATCMrecipe \
 -lATCMtrend \
--lATCMsystem
+-lATCMsystem \
+-lATCMplugin \
+-lATCMinputdialog \
+-lts \
+-lqwt 
 
 # Input
 HEADERS += \
@@ -77,21 +77,29 @@ SOURCES += \
 
 !isEmpty(ATCM_TEMPLATE_BASE_DIR) {
 	# pre-elaboration
-    check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
-    check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl \"$$_PRO_FILE_PWD_\"
-    check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
-    check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
-    check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
-# crosstable_compiler invocation moved in defaultfont.pl (for mect_suite_2.0 projects)
-#    crosstable_compiler.commands = $${QT_LUPDATE_PATH}/ctc -c config/Crosstable.csv -g plc/Crosstable.gvl -i config/Crosstable.h -s config/Crosstable.cpp
+	check_missing_file.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/cleanmissingpage.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
+	check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl \"$$_PRO_FILE_PWD_\"
+	check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
+	check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
+	check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
+	# crosstable_compiler invocation removed from defaultfont.pl and from QMAKE_EXTRA_TARGETS and PRE_TARGETDEPS
+	# crosstable_compiler invocation added to "save" command in CTE
+	# crosstable_compiler.commands = $${MECT_PREFIX}/desktop/QtCreator/bin/ctc -c config/Crosstable.csv -g plc/Crosstable.gvl -i config/Crosstable.h -s config/Crosstable.cpp
 
-        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
-        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
+        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font  # crosstable_compiler
+        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font  # crosstable_compiler
 }
 
 # system icons
-RESOURCES += \
-    systemicons.qrc
+contains(QMAKE_HOST.os,"Windows") {
+	message(host operating system is Windows)
+	RESOURCES += systemicons_win32.qrc
+} else : contains(QMAKE_HOST.os,"Linux") {
+	message(host operating system is GNU/Linux)
+	RESOURCES += systemicons_linux.qrc
+} else {
+        error(unknown host operating system $${QMAKE_HOST.os});
+}
 
 # language
 !isEmpty(QT_LUPDATE_PATH) {
@@ -111,4 +119,3 @@ RESOURCES += \
     languages.qrc
 
 include(./languages.pri)
-

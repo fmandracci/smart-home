@@ -1,10 +1,10 @@
-##
+#
 # @file
 #
 # @section LICENSE
 # Copyright Mect s.r.l. 2013
 #
-# @brief Qmake project file for TPAC1007_04_AD
+# @brief Qmake project file for TPX1043_03_C
 #
 
 INSTALLS += target
@@ -28,7 +28,6 @@ OTHER_FILES += \
 
 include(./common.pri)
 
-# TYPE = "TPAC1007_04_AD"
 TYPE = "TPX1043_03_C"
 
 # display size
