@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.8.1, 2024-07-31T19:31:24. -->
+<!-- Written by QtCreator 2.8.1, 2024-10-11T18:25:43. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="int">0</value>
+  <value type="int">1</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -113,8 +113,8 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build_SmartHome_imx28_Debug</value>
+    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
@@ -172,8 +172,8 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome</value>
-    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">false</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build_SmartHome_imx28_Release</value>
+    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
@@ -224,8 +224,8 @@
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/hmi.qss</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_T1.csv</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_T2.csv</value>
-       <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_W-F.csv</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_T3.csv</value>
+       <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_W-F.csv</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_T4.csv</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/hmi</value>
        <value type="QString">/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/config/trend_W-M.csv</value>
@@ -368,8 +368,8 @@
        <value type="QDateTime">2024-07-31T19:28:10</value>
        <value type="QDateTime">2024-07-31T19:28:09</value>
        <value type="QDateTime">2024-07-31T19:28:09</value>
-       <value type="QDateTime">2024-07-31T19:28:08</value>
        <value type="QDateTime">2024-07-31T19:28:09</value>
+       <value type="QDateTime">2024-07-31T19:28:08</value>
        <value type="QDateTime">2024-07-31T19:28:09</value>
        <value type="QDateTime">2024-07-31T19:28:14</value>
        <value type="QDateTime">2024-07-31T19:28:08</value>
@@ -438,7 +438,428 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">SmartHome (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/home/tairyu/mect_suite_3.5/smart-home_new/SmartHome/SmartHome.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome/SmartHome.pro</value>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome.pro</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
+    <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
+    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">false</value>
+    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.1</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MectSuite 3.5.1 rpi4</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MectSuite 3.5.1 rpi4</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">linux-mectsuite-rpi4</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
+       <value type="QString">-w</value>
+       <value type="QString">-r</value>
+      </valuelist>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
+       <value type="QString">-w</value>
+       <value type="QString">-r</value>
+      </valuelist>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Debug</value>
+    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
+      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
+       <value type="QString">-w</value>
+       <value type="QString">-r</value>
+      </valuelist>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.AutomaticallyAddedMakeArguments">
+       <value type="QString">-w</value>
+       <value type="QString">-r</value>
+      </valuelist>
+      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
+    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Release</value>
+    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Check for free disk space</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.CheckForFreeDiskSpaceStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <value type="QString" key="RemoteLinux.CheckForFreeDiskSpaceStep.PathToCheck">/local</value>
+      <value type="qulonglong" key="RemoteLinux.CheckForFreeDiskSpaceStep.RequiredSpace">5242880</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run custom remote command</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.GenericRemoteLinuxCustomCommandDeploymentStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <value type="QString" key="RemoteLinuxCustomCommandDeploymentStep.CommandLine">stop.sh</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Upload files via SFTP</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W04.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/splash.png</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W05.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W06.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W07.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W08.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W09.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H2.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Wall.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H3.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H4.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T2.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H5.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T3.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W-M.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H6.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T5.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T6.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_only</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_bis.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/build_rpi4_Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4puffer.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Tall.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/Crosstable.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/system.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_ter.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi.qss</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W-F.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W10.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W01.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W02.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W03.csv</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+       <value type="QString">cm4-bis</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T12:26:49</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-11T18:23:09</value>
+      </valuelist>
+      <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy to Remote Linux Host</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">DeployToGenericLinux</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings"/>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="bool" key="Analyzer.Project.UseGlobal">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <value type="int" key="PE.EnvironmentAspect.Base">1</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">SmartHome (on Remote Device)</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome/SmartHome.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
@@ -456,7 +877,7 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
-  <value type="int">1</value>
+  <value type="int">2</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.EnvironmentId</variable>
@@ -469,8 +890,10 @@
  <data>
   <variable>ProjectExplorer.Project.UserStickyKeys</variable>
   <valuelist type="QVariantList">
+   <value type="QString">ProjectExplorer.Project.TargetCount</value>
    <value type="QString">ProjectExplorer.ProjectConfiguration.DefaultDisplayName</value>
    <value type="QString">ProjectExplorer.ProjectConfiguration.Id</value>
+   <value type="QString">ProjectExplorer.Project.ActiveTarget</value>
    <value type="QString">ProjectExplorer.BuildStepList.StepsCount</value>
   </valuelist>
  </data>

@@ -99,7 +99,7 @@ void page021::updateTimers()
             status_1 = RINGING;
             doWrite_PLC_buzzer_timer_1(true);
         }
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         ui->pushButton_timer_1->setText(time.addMSecs(value_1_ms).toString("HH:mm:ss"));
@@ -131,7 +131,7 @@ void page021::updateTimers()
             status_2 = RINGING;
             doWrite_PLC_buzzer_timer_2(true);
         }
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         ui->pushButton_timer_2->setText(time.addMSecs(value_2_ms).toString("HH:mm:ss"));

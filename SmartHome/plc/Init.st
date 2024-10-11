@@ -24,7 +24,7 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 1204;
+	PLC_PLC_Version := 1205;
 
 	(* Fast I/O on TPX1043_03_C only *)
 	if PLC_PRODUCT_ID = 16#1043030C then

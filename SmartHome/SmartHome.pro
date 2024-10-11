@@ -121,9 +121,10 @@ OTHER_FILES += \
     hmi.ini \
     hmi_bis.ini \
     hmi_only \
-    hmi.qss
+    hmi.qss \
+    hmi_ter.ini
 
-other.files =  hmi_only hmi.qss
+other.files =  hmi_only hmi.qss hmi_bis.ini hmi_ter.ini
 other.path = /local/root
 
 INSTALLS += other

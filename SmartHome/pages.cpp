@@ -107,7 +107,7 @@ void printVncDisplayString(char * vncString)
     }
     sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:qvfb:size=%dx%d:0", rot, mmWidth, mmHeight, width, height);
 #else
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:size=%dx%d:0", rot, width, height); // NB: "qvfb: driver cannot connect"
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 VNC:qvfb:size=%dx%d:0", rot, width, height); // NB: "qvfb: driver cannot connect"
 #endif
     //sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:qvfb:size=%dx%d:0", rot, width, height);
     //sprintf(vncString, "multi: transformed:rot%d:0 vnc:size=%dx%d:0", rot, width, height);

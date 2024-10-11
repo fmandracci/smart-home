@@ -92,10 +92,10 @@ SOURCES += \
 
 # system icons
 contains(QMAKE_HOST.os,"Windows") {
-	message(host operating system is Windows)
+        message(host operating system is Windows $$escape_expand(\\n))
 	RESOURCES += systemicons_win32.qrc
 } else : contains(QMAKE_HOST.os,"Linux") {
-	message(host operating system is GNU/Linux)
+        message(host operating system is GNU/Linux $$escape_expand(\\n))
 	RESOURCES += systemicons_linux.qrc
 } else {
         error(unknown host operating system $${QMAKE_HOST.os});

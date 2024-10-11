@@ -57,7 +57,7 @@ void page022::updateTimer()
     switch (status) {
     case RUNNING:
         value_ms += timer.restart();
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         hhmmss = time.addMSecs(value_ms).toString("HH:mm:ss");
