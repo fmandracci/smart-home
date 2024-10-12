@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.8.1, 2024-10-11T18:25:43. -->
+<!-- Written by QtCreator 2.8.1, 2024-10-12T17:33:26. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -434,19 +434,18 @@
      <value type="int">13</value>
      <value type="int">14</value>
     </valuelist>
-    <value type="int" key="PE.EnvironmentAspect.Base">1</value>
+    <value type="int" key="PE.EnvironmentAspect.Base">-1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">SmartHome (on Remote Device)</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments"></value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable"></value>
+    <value type="bool" key="ProjectExplorer.CustomExecutableRunConfiguration.UseTerminal">false</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.WorkingDirectory">%{buildDir}</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Custom Executable</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome/SmartHome.pro</value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome.pro</value>
-    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
-    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
-    <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
@@ -460,7 +459,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MectSuite 3.5.1 rpi4</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MectSuite 3.5.1 rpi4</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">linux-mectsuite-rpi4</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -615,45 +614,47 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W10.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H2.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Debug/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H3.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Tall.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H4.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H5.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_ter.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H6.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4puffer.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_only</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/Crosstable.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W01.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W02.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W03.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W04.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/splash.png</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W05.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W06.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W07.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W08.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H1.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W09.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H2.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Wall.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H3.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T1.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H4.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T2.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H5.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T3.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W-M.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/system.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/splash.png</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/build_rpi4_Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_bis.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T2.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Wall.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T3.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H6.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T5.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T6.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_only</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_bis.ini</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/build_rpi4_Release/hmi</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/build_SmartHome_rpi4_Release/hmi</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4puffer.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Tall.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend1.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/Crosstable.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/system.ini</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_ter.ini</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi.qss</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W-F.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W10.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W01.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W02.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W03.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi.qss</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">cm4-bis</value>
        <value type="QString">cm4-bis</value>
        <value type="QString">cm4-bis</value>
        <value type="QString">cm4-bis</value>
@@ -694,17 +695,33 @@
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
@@ -715,21 +732,6 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/data/customtrend</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
@@ -769,45 +771,47 @@
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
+       <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:52</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
        <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
        <value type="QDateTime">2024-10-11T12:26:49</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:10</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
-       <value type="QDateTime">2024-10-11T18:23:09</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:50</value>
+       <value type="QDateTime">2024-10-12T17:13:51</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -862,8 +866,8 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome/SmartHome.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome.pro</value>
-    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
-    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable">autoexec.sh</value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">true</value>
     <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>

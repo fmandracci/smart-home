@@ -119,3 +119,6 @@ RESOURCES += \
     languages.qrc
 
 include(./languages.pri)
+
+#Current Mect Suite Version:
+DEFINES += "MECT_SUITE_VERSION=\"\\\"3.5.1\\\"\""

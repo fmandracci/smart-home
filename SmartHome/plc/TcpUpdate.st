@@ -33,7 +33,7 @@ END_VAR
         heartbeat := heartbeat + 1;
     end_if;
 
-(*
+(* extra copy for the Android App
 	SRV_heartbeat        := heartbeat           ;
 	SRV_Iam_EP           := PLC_Iam_EP          ;
 	SRV_Iam_T1           := PLC_Iam_T1          ;
@@ -292,7 +292,7 @@ END_VAR
 
         PLC_EP_control_type       := TCP_EP_control_type      ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_EP_heartbeat          := TCP_EP_heartbeat         ;
         SRV_EP_enabled_wattmeters := TCP_EP_enabled_wattmeters;
         SRV_EP_wattmeters_ok      := TCP_EP_wattmeters_ok     ;
@@ -406,6 +406,7 @@ END_VAR
         SRV_EP_assigned_W         := TCP_EP_assigned_W        ;
 
         SRV_EP_control_type       := TCP_EP_control_type      ;
+		*)
     end_if;
 
     if PLC_Iam_T1 then
@@ -492,7 +493,7 @@ END_VAR
 		PLC_T1_daily_heating_s      := TCP_T1_daily_heating_s     ;
 		PLC_T1_monthly_heating_s    := TCP_T1_monthly_heating_s   ;
 
-		(* extra copy for the Android App *)
+		(* extra copy for the Android App
         SRV_T1_heartbeat            := TCP_T1_heartbeat           ;
 
         SRV_T1_enabled_sensors      := TCP_T1_enabled_sensors     ;
@@ -533,6 +534,7 @@ END_VAR
 
 		SRV_T1_daily_heating_s      := TCP_T1_daily_heating_s     ;
 		SRV_T1_monthly_heating_s    := TCP_T1_monthly_heating_s   ;
+		*)
 		end_if;
 
     if PLC_Iam_T2 then
@@ -619,7 +621,7 @@ END_VAR
 		PLC_T2_daily_heating_s      := TCP_T2_daily_heating_s     ;
 		PLC_T2_monthly_heating_s    := TCP_T2_monthly_heating_s   ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_T2_heartbeat            := TCP_T2_heartbeat           ;
 
         SRV_T2_enabled_sensors      := TCP_T2_enabled_sensors     ;
@@ -659,7 +661,8 @@ END_VAR
 		SRV_T2_control_type         := TCP_T2_control_type        ;
 
 		SRV_T2_daily_heating_s      := TCP_T2_daily_heating_s     ;
-		SRV_T1_monthly_heating_s    := TCP_T2_monthly_heating_s   ;
+		SRV_T2_monthly_heating_s    := TCP_T2_monthly_heating_s   ;
+		*)
     end_if;
 
     if PLC_Iam_T3 then
@@ -746,7 +749,7 @@ END_VAR
 		PLC_T3_daily_heating_s      := TCP_T3_daily_heating_s     ;
 		PLC_T3_monthly_heating_s    := TCP_T3_monthly_heating_s   ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_T3_heartbeat            := TCP_T3_heartbeat           ;
 
         SRV_T3_enabled_sensors      := TCP_T3_enabled_sensors     ;
@@ -787,6 +790,7 @@ END_VAR
 
 		SRV_T3_daily_heating_s      := TCP_T3_daily_heating_s     ;
 		SRV_T3_monthly_heating_s    := TCP_T3_monthly_heating_s   ;
+		*)
     end_if;
 
     if PLC_Iam_T4 then
@@ -873,7 +877,7 @@ END_VAR
 		PLC_T4_daily_heating_s      := TCP_T4_daily_heating_s     ;
 		PLC_T4_monthly_heating_s    := TCP_T4_monthly_heating_s   ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_T4_heartbeat            := TCP_T4_heartbeat           ;
 
         SRV_T4_enabled_sensors      := TCP_T4_enabled_sensors     ;
@@ -914,6 +918,7 @@ END_VAR
 
 		SRV_T4_daily_heating_s      := TCP_T4_daily_heating_s     ;
 		SRV_T4_monthly_heating_s    := TCP_T4_monthly_heating_s   ;
+		*)
     end_if;
 
     if PLC_Iam_T5 then
@@ -1000,7 +1005,7 @@ END_VAR
 		PLC_T5_daily_heating_s      := TCP_T5_daily_heating_s     ;
 		PLC_T5_monthly_heating_s    := TCP_T5_monthly_heating_s   ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_T5_heartbeat            := TCP_T5_heartbeat           ;
 
         SRV_T5_enabled_sensors      := TCP_T5_enabled_sensors     ;
@@ -1041,6 +1046,7 @@ END_VAR
 
 		SRV_T5_daily_heating_s      := TCP_T5_daily_heating_s     ;
 		SRV_T5_monthly_heating_s    := TCP_T5_monthly_heating_s   ;
+		*)
     end_if;
 
     if PLC_Iam_T6 then
@@ -1127,7 +1133,7 @@ END_VAR
 		PLC_T6_daily_heating_s      := TCP_T6_daily_heating_s     ;
 		PLC_T6_monthly_heating_s    := TCP_T6_monthly_heating_s   ;
 
-        (* extra copy for the Android App *)
+       (* extra copy for the Android App
         SRV_T6_heartbeat            := TCP_T6_heartbeat           ;
 
         SRV_T6_enabled_sensors      := TCP_T6_enabled_sensors     ;
@@ -1168,6 +1174,7 @@ END_VAR
 
 		SRV_T6_daily_heating_s      := TCP_T6_daily_heating_s     ;
 		SRV_T6_monthly_heating_s    := TCP_T6_monthly_heating_s   ;
+	    *)
     end_if;
 
     if PLC_Iam_BA then
@@ -1302,7 +1309,7 @@ END_VAR
 
 		PLC_BA_control_type     := TCP_BA_control_type    ;
 
-        (* extra copy for the Android App *)
+        (* extra copy for the Android App
         SRV_BA_heartbeat        := TCP_BA_heartbeat       ;
 
         SRV_BA_enabled_sensors  := TCP_BA_enabled_sensors ;
@@ -1360,6 +1367,7 @@ END_VAR
         SRV_BA_OK_32            := TCP_BA_OK_32           ;
 
 		SRV_BA_control_type     := TCP_BA_control_type    ;
+	    *)
     end_if;
 
 END_PROGRAM
