@@ -24,8 +24,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
-    <height>800</height>
+    <width>1280</width>
+    <height>1280</height>
    </size>
   </property>
   <property name="font">
@@ -1338,7 +1338,7 @@ border: 1px solid rgb(255, 255, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
+        <iconset resource="systemicons_linux.qrc">
          <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
        </property>
        <property name="iconSize">
@@ -1746,8 +1746,8 @@ ss</string>
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="systemicons_linux.qrc"/>
   <include location="resources.qrc"/>
-  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>
