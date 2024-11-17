@@ -98,6 +98,8 @@ void printVncDisplayString(char * vncString)
     int mmWidth, mmHeight;
     if ((width == 1280 && height == 800) or (width == 800 && height == 1280)) {
         mmWidth = 152; mmHeight = 91;
+    } else if ((width == 1280 && height == 720) or (width == 720 && height == 1280)) {
+        mmWidth = 110; mmHeight = 62;
     } else if ((width == 800 && height == 480) or (width == 480 && height == 800)) {
         mmWidth = 152; mmHeight = 91;
     } else if ((width == 480 && height == 272) or (width == 272 && height == 480))  {

@@ -29,7 +29,7 @@
 #include "global_functions.h"
 
 #define VERSATILE_APPLICATION
-#undef  QT_KNOWS_THE_DPI_VALUE
+#define QT_KNOWS_THE_DPI_VALUE
 
 // vedi plc/Resource1.cst
 
