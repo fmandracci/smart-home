@@ -35,7 +35,7 @@ page102::page102(QWidget *parent) :
     ui(new Ui::page102)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
 }

@@ -44,7 +44,7 @@ page500::page500(QWidget *parent) :
     MAGENTA_OVER_BLACK("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);")
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
 

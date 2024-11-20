@@ -31,27 +31,37 @@
 
 #include "automation.h"
 
-#ifdef VERSATILE_APPLICATION
 #include <QFile>
 #include <QString>
 #include <QSettings>
-#else
-#endif
 
 void printVncDisplayString(char * vncString)
 {
-#ifdef VERSATILE_APPLICATION
-    // what the wizard wrote in template.pri?
-    int phys_width = WIDTH, phys_height = HEIGHT, rot = ROTATION;
+#ifdef Q_WS_QWS
+    // vncString is the '-display' argument
+#ifndef VERSATILE_APPLICATION
+    // fixed display size application
+    myScreenWidth = WIDTH;
+    myScreenHeight = HEIGHT;
+    sprintf(vncString, "multi: transformed:linuxfb:size=%dx%d:rot%d:0 VNC:size=%dx%d:0", WIDTH, HEIGHT, ROTATION, WIDTH, HEIGHT);
+#else
+    // variable display size application
 
+    int width, height, rot; // QApplication arguments
+    int phys_width, phys_height; // physical display size in pixels
+
+    // what the wizard wrote in template.pri?
+    rot = ROTATION;
     if (rot == 270 || rot == 90) {
         phys_width = HEIGHT;
         phys_height = WIDTH;
+    } else {
+        phys_width = WIDTH;
+        phys_height = HEIGHT;
     }
 
     // what the kernel knows? ---> maybe a different display size
     QFile virtual_size("/sys/class/graphics/fb0/virtual_size");
-
     if (virtual_size.open(QIODevice::ReadOnly)) {
         char buf[42];
 
@@ -65,9 +75,8 @@ void printVncDisplayString(char * vncString)
         }
     }
 
-    // what the user set? --> maybe a different orientation
-    QSettings *options = new QSettings("/local/root/hmi.ini", QSettings::IniFormat);
-
+    // what the user set in hmi.ini? --> maybe a different orientation
+    QSettings *options = new QSettings(HMI_INI_FILE, QSettings::IniFormat);
     if (options) {
         bool ok;
         int r = options->value("rotation", rot).toInt(&ok);
@@ -77,9 +86,7 @@ void printVncDisplayString(char * vncString)
         }
     }
 
-    // QApplication arguments
-    int width, height;
-
+    // set QApplication arguments
     switch (rot) {
     case 0:
     case 180:
@@ -94,27 +101,41 @@ void printVncDisplayString(char * vncString)
         width = phys_width; height = phys_height;
     }
 
-#ifdef QT_KNOWS_THE_DPI_VALUE
-    int mmWidth, mmHeight;
+#ifdef USE_PHYSICALDISPLAYSIZE
+    int mmWidth, mmHeight; // physical display size in millimeters
+
     if ((width == 1280 && height == 800) or (width == 800 && height == 1280)) {
+        //
         mmWidth = 152; mmHeight = 91;
+    } else if ((width == 1280 && height == 768) or (width == 768 && height == 1280)) {
+        // 10.0 "
+        mmWidth = 215; mmHeight = 135;
     } else if ((width == 1280 && height == 720) or (width == 720 && height == 1280)) {
-        mmWidth = 110; mmHeight = 62;
+        // reterminal
+        mmWidth = 110; mmHeight = 62;        
     } else if ((width == 800 && height == 480) or (width == 480 && height == 800)) {
-        mmWidth = 152; mmHeight = 91;
+        // TPAC 7.0"
+        mmWidth = 152; mmHeight = 91;        
     } else if ((width == 480 && height == 272) or (width == 272 && height == 480))  {
-        mmWidth =  95; mmHeight = 52;
+        // TPAC 4.3"
+        mmWidth =  95; mmHeight = 52;        
     } else {
         mmWidth =  95; mmHeight = 52;
     }
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:qvfb:size=%dx%d:0", rot, mmWidth, mmHeight, width, height);
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:size=%dx%d:0", rot, mmWidth, mmHeight, width, height);
 #else
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 VNC:qvfb:size=%dx%d:0", rot, width, height); // NB: "qvfb: driver cannot connect"
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0                        VNC:size=%dx%d:0", rot, width, height);
 #endif
-    //sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:qvfb:size=%dx%d:0", rot, width, height);
-    //sprintf(vncString, "multi: transformed:rot%d:0 vnc:size=%dx%d:0", rot, width, height);
-#else
-    sprintf(vncString, "Multi: VNC:0:size=%dx%d Transformed:rot%d", WIDTH, HEIGHT, ROTATION);
+    // screen size for the library pages
+    myScreenWidth = width;
+    myScreenHeight = height;
+#endif
+#else // Q_WS_X11
+    // vncString is the '-geometry' argument
+    myScreenWidth = WIDTH;
+    myScreenHeight = HEIGHT;
+    sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 100, 100);
+    // sprintf(vncString, "%dx%d", WIDTH, HEIGHT);
 #endif
     fprintf(stderr, "vncString='%s'\n", vncString);
 
@@ -163,6 +184,7 @@ void printVncDisplayString(char * vncString)
     // -------------------------------------------------------------------------------------------------
 
     userPageList
+            << "system_ini"
             << "page005"
             << "page010"
             << "page020"
@@ -292,6 +314,10 @@ int create_page_nb(page ** p, int pageNb)
         *p = NULL;
         return 1;
     }
+#ifdef Q_WS_QWS
+#else
+    (*p)->setGeometry(0, 0, WIDTH, HEIGHT);
+#endif
     return 0;
 }
 

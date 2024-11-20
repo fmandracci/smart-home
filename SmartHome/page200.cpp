@@ -39,7 +39,7 @@ page200::page200(QWidget *parent) :
     LampWarningIcon(QPixmap(":/systemicons/Error.png"))
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
 }

@@ -113,7 +113,6 @@ SOURCES += \
     page049.cpp \
     page4b0.cpp
 
-
 RESOURCES += \
     resources.qrc
 
@@ -122,10 +121,30 @@ OTHER_FILES += \
     hmi_bis.ini \
     hmi_only \
     hmi.qss \
-    hmi_ter.ini
+    hmi_ter.ini \
+    local_deploy.sh \
+    local_deploy.sh
 
 other.files =  hmi_only hmi.qss hmi_bis.ini hmi_ter.ini
 other.path = /local/root
 
 INSTALLS += other
 
+contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/imx28/rootfs/include") {
+    message(building for 'imx28' $$escape_expand(\\n))
+    DEFINES += VERSATILE_APPLICATION
+    DEFINES += USE_PHYSICALDISPLAYSIZE
+
+} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/rpi4/rootfs/include") {
+    message(building for 'rpi4' $$escape_expand(\\n))
+    DEFINES += VERSATILE_APPLICATION
+    DEFINES += USE_PHYSICALDISPLAYSIZE
+
+} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/host/include") {
+    message(building for 'host' $$escape_expand(\\n))
+    # use sizes defined in template.pri
+
+} else {
+    message(building for '???' QT_INSTALL_PREFIX is $$[QT_INSTALL_PREFIX] $$escape_expand(\\n))
+
+}

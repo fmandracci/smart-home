@@ -38,7 +38,7 @@ page101b::page101b(QWidget *parent) :
     deltaH(100) // 10.0 %
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
 }

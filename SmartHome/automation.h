@@ -28,8 +28,7 @@
 #include "hmi_logger.h"
 #include "global_functions.h"
 
-#define VERSATILE_APPLICATION
-#define QT_KNOWS_THE_DPI_VALUE
+#undef  USE_TRANSLATEFONTSIZE
 
 // vedi plc/Resource1.cst
 
@@ -178,7 +177,7 @@ extern int currentWattmeter;
 #define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")
 
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
-#ifdef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
 #define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize)
 #define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize)
 #define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize)

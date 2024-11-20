@@ -41,7 +41,7 @@ page4b0::page4b0(QWidget *parent) :
     tic_6(QString::fromUtf8("⚊"))
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
+#ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
 }
