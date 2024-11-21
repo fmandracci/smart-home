@@ -132,12 +132,12 @@ INSTALLS += other
 
 #contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/imx28/rootfs/include") {
 #    message(building for 'imx28' $$escape_expand(\\n))
-#    DEFINES += VERSATILE_APPLICATION
+#    DEFINES += RESIZABLE_APPLICATION
 #    DEFINES += USE_PHYSICALDISPLAYSIZE
 
 #} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/rpi4/rootfs/include") {
 #    message(building for 'rpi4' $$escape_expand(\\n))
-#    DEFINES += VERSATILE_APPLICATION
+#    DEFINES += RESIZABLE_APPLICATION
 #    DEFINES += USE_PHYSICALDISPLAYSIZE
 
 #} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/host/include") {

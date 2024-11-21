@@ -54,17 +54,21 @@ void printVncDisplayString(char * vncString)
     // variable display size application
 
     int width, height, rot; // QApplication arguments
-    int phys_width, phys_height; // physical display size in pixels
+    int width_px, height_px; // physical display size in pixels
+    int width_mm, height_mm; // physical display size in millimeters
+
 
     // what the wizard wrote in template.pri?
     rot = ROTATION;
     if (rot == 270 || rot == 90) {
-        phys_width = HEIGHT;
-        phys_height = WIDTH;
+        width_px = HEIGHT;
+        height_px = WIDTH;
     } else {
-        phys_width = WIDTH;
-        phys_height = HEIGHT;
+        width_px = WIDTH;
+        height_px = HEIGHT;
     }
+    width_mm = WIDTH_mm;
+    height_mm = HEIGHT_mm;
 
     // what the kernel knows? ---> maybe a different display size
     QFile virtual_size("/sys/class/graphics/fb0/virtual_size");
@@ -72,11 +76,11 @@ void printVncDisplayString(char * vncString)
         char buf[42];
 
         if (virtual_size.readLine(buf, 42) > 0) {
-            int w = phys_width, h = phys_height;
+            int w = width_px, h = height_px;
 
             if (sscanf(buf, "%d,%d", &w, &h) == 2) {
-                phys_width = w;
-                phys_height = h;
+                width_px = w;
+                height_px = h;
             }
         }
     }
@@ -85,56 +89,60 @@ void printVncDisplayString(char * vncString)
     QSettings *options = new QSettings(HMI_INI_FILE, QSettings::IniFormat);
     if (options) {
         bool ok;
-        int r = options->value("rotation", rot).toInt(&ok);
+        int value;
 
-        if (ok && r != rot) {
-            rot = r;
-        }
+        value = options->value("rotation", rot).toInt(&ok);
+        if (ok)
+            rot = value;
+
+        value = options->value("width_mm", rot).toInt(&ok);
+        if (ok && value > 0)
+            width_mm = value;
+
+        value = options->value("height_mm", rot).toInt(&ok);
+        if (ok && value > 0)
+            height_mm = value;
     }
 
     // set QApplication arguments
     switch (rot) {
     case 0:
     case 180:
-        width = phys_width; height = phys_height;
+        width = width_px; height = height_px;
         break;
     case 90:
     case 270:
-        width = phys_height; height = phys_width;
+        width = height_px; height = width_px;
         break;
     default:
         rot = 0;
-        width = phys_width; height = phys_height;
+        width = width_px; height = height_px;
     }
 
-#ifdef USE_PHYSICALDISPLAYSIZE
-    int mmWidth, mmHeight; // physical display size in millimeters
-
+#if 0
     if ((width == 1280 && height == 800) or (width == 800 && height == 1280)) {
         //
-        mmWidth = 152; mmHeight = 91;
+        width_mm = 152; height_mm = 91;
     } else if ((width == 1280 && height == 768) or (width == 768 && height == 1280)) {
         // 10.0 "
-        mmWidth = 215; mmHeight = 135;
+        width_mm = 215; height_mm = 135;
     } else if ((width == 1280 && height == 720) or (width == 720 && height == 1280)) {
         // reterminal
-        mmWidth = 110; mmHeight = 62;        
+        width_mm = 110; height_mm = 62;
     } else if ((width == 800 && height == 480) or (width == 480 && height == 800)) {
         // TPAC 7.0"
-        mmWidth = 152; mmHeight = 91;        
+        width_mm = 152; height_mm = 91;
     } else if ((width == 480 && height == 272) or (width == 272 && height == 480))  {
         // TPAC 4.3"
-        mmWidth =  95; mmHeight = 52;        
+        width_mm =  95; height_mm = 52;
     } else {
-        mmWidth =  95; mmHeight = 52;
+        width_mm =  95; height_mm = 52;
     }
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:size=%dx%d:0", rot, mmWidth, mmHeight, width, height);
-#else
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0                        VNC:size=%dx%d:0", rot, width, height);
 #endif
-    // screen size for the library pages
+
     myScreenWidth = width;
     myScreenHeight = height;
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:size=%dx%d:0", rot, width_mm, height_mm, width, height);
 #endif
 #endif
     fprintf(stderr, "vncString='%s'\n", vncString);

@@ -34,33 +34,66 @@ TYPE = "TPX1043_03_C"
 # MODEL = "<width>480</width><height>272</height>"
 MODEL = "<width>800</width><height>480</height>"
 
-equals(MODEL, "<width>320</width><height>240</height>") {
-    DEFINES+=WIDTH=320
-    DEFINES+=HEIGHT=240
-    DEFINES+=ROTATION=0
-}
-equals(MODEL, "<width>240</width><height>320</height>") {
-    DEFINES+=WIDTH=240
-    DEFINES+=HEIGHT=320
-    DEFINES+=ROTATION=270
-}
+# TPAC 4.3"
 equals(MODEL, "<width>480</width><height>272</height>") {
     DEFINES+=WIDTH=480
     DEFINES+=HEIGHT=272
     DEFINES+=ROTATION=0
+    DEFINES+=WIDTH_mm=95
+    DEFINES+=HEIGHT_mm=52
 }
 equals(MODEL, "<width>272</width><height>480</height>") {
     DEFINES+=WIDTH=272
     DEFINES+=HEIGHT=480
     DEFINES+=ROTATION=90
+    DEFINES+=WIDTH_mm=95
+    DEFINES+=HEIGHT_mm=52
 }
+
+# TPAC 7.0"
 equals(MODEL, "<width>800</width><height>480</height>") {
     DEFINES+=WIDTH=800
     DEFINES+=HEIGHT=480
     DEFINES+=ROTATION=0
+    DEFINES+=WIDTH_mm=152
+    DEFINES+=HEIGHT_mm=91
 }
 equals(MODEL, "<width>480</width><height>800</height>") {
     DEFINES+=WIDTH=480
     DEFINES+=HEIGHT=800
     DEFINES+=ROTATION=270
+    DEFINES+=WIDTH_mm=152
+    DEFINES+=HEIGHT_mm=91
+}
+
+# TPAC 10.0" ufficiale
+equals(MODEL, "<width>1280</width><height>800</height>") {
+    DEFINES+=WIDTH=1280
+    DEFINES+=HEIGHT=800
+    DEFINES+=ROTATION=0
+    DEFINES+=WIDTH_mm=216
+    DEFINES+=HEIGHT_mm=134
+}
+equals(MODEL, "<width>800</width><height>1280</height>") {
+    DEFINES+=WIDTH=800
+    DEFINES+=HEIGHT=1280
+    DEFINES+=ROTATION=270
+    DEFINES+=WIDTH_mm=216
+    DEFINES+=HEIGHT_mm=134
+}
+
+# TPAC 10.0" laboratorio
+equals(MODEL, "<width>1280</width><height>768</height>") {
+    DEFINES+=WIDTH=1280
+    DEFINES+=HEIGHT=768
+    DEFINES+=ROTATION=0
+    DEFINES+=WIDTH_mm=215
+    DEFINES+=HEIGHT_mm=135
+}
+equals(MODEL, "<width>768</width><height>1280</height>") {
+    DEFINES+=WIDTH=768
+    DEFINES+=HEIGHT=1280
+    DEFINES+=ROTATION=270
+    DEFINES+=WIDTH_mm=215
+    DEFINES+=HEIGHT_mm=135
 }
