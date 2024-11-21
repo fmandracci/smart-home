@@ -37,7 +37,12 @@
 
 void printVncDisplayString(char * vncString)
 {
-#ifdef Q_WS_QWS
+#ifndef Q_WS_QWS
+    // vncString is the '-geometry' argument
+    myScreenWidth = WIDTH;
+    myScreenHeight = HEIGHT;
+    sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 0, 0);
+#else // Q_WS_QWS
     // vncString is the '-display' argument
 #ifndef VERSATILE_APPLICATION
     // fixed display size application
@@ -130,12 +135,6 @@ void printVncDisplayString(char * vncString)
     myScreenWidth = width;
     myScreenHeight = height;
 #endif
-#else // Q_WS_X11
-    // vncString is the '-geometry' argument
-    myScreenWidth = WIDTH;
-    myScreenHeight = HEIGHT;
-    sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 100, 100);
-    // sprintf(vncString, "%dx%d", WIDTH, HEIGHT);
 #endif
     fprintf(stderr, "vncString='%s'\n", vncString);
 
