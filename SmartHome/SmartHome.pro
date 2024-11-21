@@ -130,21 +130,21 @@ other.path = /local/root
 
 INSTALLS += other
 
-contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/imx28/rootfs/include") {
-    message(building for 'imx28' $$escape_expand(\\n))
-    DEFINES += VERSATILE_APPLICATION
-    DEFINES += USE_PHYSICALDISPLAYSIZE
+#contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/imx28/rootfs/include") {
+#    message(building for 'imx28' $$escape_expand(\\n))
+#    DEFINES += VERSATILE_APPLICATION
+#    DEFINES += USE_PHYSICALDISPLAYSIZE
 
-} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/rpi4/rootfs/include") {
-    message(building for 'rpi4' $$escape_expand(\\n))
-    DEFINES += VERSATILE_APPLICATION
-    DEFINES += USE_PHYSICALDISPLAYSIZE
+#} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/rpi4/rootfs/include") {
+#    message(building for 'rpi4' $$escape_expand(\\n))
+#    DEFINES += VERSATILE_APPLICATION
+#    DEFINES += USE_PHYSICALDISPLAYSIZE
 
-} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/host/include") {
-    message(building for 'host' $$escape_expand(\\n))
-    # use sizes defined in template.pri
+#} else : contains(QMAKE_INCDIR_QT,"/opt/Qt4.8.7/host/include") {
+#    message(building for 'host' $$escape_expand(\\n))
+#    # use sizes defined in template.pri
 
-} else {
-    message(building for '???' QT_INSTALL_PREFIX is $$[QT_INSTALL_PREFIX] $$escape_expand(\\n))
+#} else {
+#    message(building for '???' QT_INSTALL_PREFIX is $$[QT_INSTALL_PREFIX] $$escape_expand(\\n))
 
-}
+#}

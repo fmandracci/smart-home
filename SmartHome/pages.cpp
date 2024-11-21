@@ -44,11 +44,12 @@ void printVncDisplayString(char * vncString)
     sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 0, 0);
 #else // Q_WS_QWS
     // vncString is the '-display' argument
-#ifndef VERSATILE_APPLICATION
+#define RESIZABLE_APPLICATION
+#ifndef RESIZABLE_APPLICATION
     // fixed display size application
     myScreenWidth = WIDTH;
     myScreenHeight = HEIGHT;
-    sprintf(vncString, "multi: transformed:linuxfb:size=%dx%d:rot%d:0 VNC:size=%dx%d:0", WIDTH, HEIGHT, ROTATION, WIDTH, HEIGHT);
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 VNC:size=%dx%d:0", ROTATION, WIDTH, HEIGHT);
 #else
     // variable display size application
 
@@ -313,10 +314,6 @@ int create_page_nb(page ** p, int pageNb)
         *p = NULL;
         return 1;
     }
-#ifdef Q_WS_QWS
-#else
-    (*p)->setGeometry(0, 0, WIDTH, HEIGHT);
-#endif
     return 0;
 }
 
