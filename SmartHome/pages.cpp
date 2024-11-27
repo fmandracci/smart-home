@@ -37,18 +37,25 @@
 
 void printVncDisplayString(char * vncString)
 {
-#ifndef Q_WS_QWS
+// // Fix for i.mx28 projects
+// #ifdef KIT_IMX28
+// #define FONT_CORRECTOR 1.666666667      // Previous 5/3
+// #endif
+
+#ifdef KIT_HOST
     // vncString is the '-geometry' argument
-    myScreenWidth = WIDTH;
-    myScreenHeight = HEIGHT;
+    mectScreenWidth = WIDTH;
+    mectScreenHeight = HEIGHT;
+    mectFontCorrector = FONT_CORRECTOR;
     sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 0, 0);
 #else // Q_WS_QWS
     // vncString is the '-display' argument
 #define RESIZABLE_APPLICATION
 #ifndef RESIZABLE_APPLICATION
     // fixed display size application
-    myScreenWidth = WIDTH;
-    myScreenHeight = HEIGHT;
+    mectScreenWidth = WIDTH;
+    mectScreenHeight = HEIGHT;
+    mectFontCorrector = FONT_CORRECTOR;
     sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 VNC:size=%dx%d:0", ROTATION, WIDTH, HEIGHT);
 #else
     // variable display size application
@@ -56,7 +63,7 @@ void printVncDisplayString(char * vncString)
     int width, height, rot; // QApplication arguments
     int width_px, height_px; // physical display size in pixels
     int width_mm, height_mm; // physical display size in millimeters
-
+    float fontCorrector = FONT_CORRECTOR;
 
     // what the wizard wrote in template.pri?
     rot = ROTATION;
@@ -90,18 +97,23 @@ void printVncDisplayString(char * vncString)
     if (options) {
         bool ok;
         int value;
+        float fValue;
 
         value = options->value("rotation", rot).toInt(&ok);
         if (ok)
             rot = value;
 
-        value = options->value("width_mm", rot).toInt(&ok);
+        value = options->value("width_mm", width_mm).toInt(&ok);
         if (ok && value > 0)
             width_mm = value;
 
-        value = options->value("height_mm", rot).toInt(&ok);
+        value = options->value("height_mm", height_mm).toInt(&ok);
         if (ok && value > 0)
             height_mm = value;
+
+        fValue = options->value("font_corrector", fontCorrector).toFloat(&ok);
+        if (ok && fValue != 0)
+            fontCorrector = fValue;
     }
 
     // set QApplication arguments
@@ -119,33 +131,15 @@ void printVncDisplayString(char * vncString)
         width = width_px; height = height_px;
     }
 
-#if 0
-    if ((width == 1280 && height == 800) or (width == 800 && height == 1280)) {
-        //
-        width_mm = 152; height_mm = 91;
-    } else if ((width == 1280 && height == 768) or (width == 768 && height == 1280)) {
-        // 10.0 "
-        width_mm = 215; height_mm = 135;
-    } else if ((width == 1280 && height == 720) or (width == 720 && height == 1280)) {
-        // reterminal
-        width_mm = 110; height_mm = 62;
-    } else if ((width == 800 && height == 480) or (width == 480 && height == 800)) {
-        // TPAC 7.0"
-        width_mm = 152; height_mm = 91;
-    } else if ((width == 480 && height == 272) or (width == 272 && height == 480))  {
-        // TPAC 4.3"
-        width_mm =  95; height_mm = 52;
-    } else {
-        width_mm =  95; height_mm = 52;
-    }
-#endif
+    mectScreenWidth = width;
+    mectScreenHeight = height;
+    mectFontCorrector = fontCorrector;
 
-    myScreenWidth = width;
-    myScreenHeight = height;
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:size=%dx%d:0", rot, width_mm, height_mm, width, height);
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:tty=/dev/tty8:0 vnc:size=%dx%d:0", rot, width_mm, height_mm, width, height);
+
 #endif
 #endif
-    fprintf(stderr, "vncString='%s'\n", vncString);
+    fprintf(stderr, "vncString='%s' font corrector=%f\n", vncString, mectFontCorrector);
 
     // ------------ system.ini changes _before_ starting the plc runtime (this is hmi_only !) ------------
 

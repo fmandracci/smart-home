@@ -28,7 +28,7 @@
 #include "hmi_logger.h"
 #include "global_functions.h"
 
-#undef  USE_TRANSLATEFONTSIZE
+#define USE_TRANSLATEFONTSIZE
 
 // vedi plc/Resource1.cst
 
@@ -177,6 +177,7 @@ extern int currentWattmeter;
 #define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")
 
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
+
 #ifdef USE_TRANSLATEFONTSIZE
 #define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize)
 #define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize)
@@ -188,6 +189,7 @@ extern int currentWattmeter;
 #define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
 #define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
 #endif
+
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
 #define ALARM_STATUS_ZERO     0x0000 // not configured yet

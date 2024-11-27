@@ -14350,6 +14350,20 @@ u_int32_t PLC_MS_VERSION = 0;
 
 
 /*
+ * Variable PLC_nBACKLIGHT	[ Backlight dimming value (0 ON 100 OFF) ]
+ */
+
+u_int8_t PLC_nBACKLIGHT = 0;
+
+
+/*
+ * Variable PLC_CPU_TEMP	[ CPU temperature in degrees Celsius ]
+ */
+
+int16_t PLC_CPU_TEMP = 0;
+
+
+/*
  * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
  */
 
@@ -51275,6 +51289,42 @@ getStatus_PLC_MS_VERSION(void)
 }
 
 int
+doWrite_PLC_nBACKLIGHT(u_int8_t value)
+{
+	return doWrite(ID_PLC_nBACKLIGHT, &value);
+}
+
+int
+addWrite_PLC_nBACKLIGHT(u_int8_t value)
+{
+	return addWrite(ID_PLC_nBACKLIGHT, &value);
+}
+
+int
+getStatus_PLC_nBACKLIGHT(void)
+{
+	return getStatus(ID_PLC_nBACKLIGHT);
+}
+
+int
+doWrite_PLC_CPU_TEMP(int16_t value)
+{
+	return doWrite(ID_PLC_CPU_TEMP, &value);
+}
+
+int
+addWrite_PLC_CPU_TEMP(int16_t value)
+{
+	return addWrite(ID_PLC_CPU_TEMP, &value);
+}
+
+int
+getStatus_PLC_CPU_TEMP(void)
+{
+	return getStatus(ID_PLC_CPU_TEMP);
+}
+
+int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
 	return doWrite(ID_PLC_BEEP_VOLUME, &value);
@@ -53578,6 +53628,8 @@ update_all(void)
 	retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
 	retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
 	retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
+	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
+	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);

@@ -12310,6 +12310,18 @@ int doWrite_PLC_MS_VERSION(u_int32_t value);
 int addWrite_PLC_MS_VERSION(u_int32_t value);
 int getStatus_PLC_MS_VERSION(void);
 
+#define ID_PLC_nBACKLIGHT 5424
+extern u_int8_t PLC_nBACKLIGHT;	/* Backlight dimming value (0 ON 100 OFF) */
+int doWrite_PLC_nBACKLIGHT(u_int8_t value);
+int addWrite_PLC_nBACKLIGHT(u_int8_t value);
+int getStatus_PLC_nBACKLIGHT(void);
+
+#define ID_PLC_CPU_TEMP 5425
+extern int16_t PLC_CPU_TEMP;	/* CPU temperature in degrees Celsius */
+int doWrite_PLC_CPU_TEMP(int16_t value);
+int addWrite_PLC_CPU_TEMP(int16_t value);
+int getStatus_PLC_CPU_TEMP(void);
+
 #define ID_PLC_BEEP_VOLUME 5435
 extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */
 int doWrite_PLC_BEEP_VOLUME(u_int8_t value);
