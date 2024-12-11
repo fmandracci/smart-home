@@ -155,6 +155,9 @@ extern int currentWattmeter;
 #define COLOR_WHITE QColor(255,255,255)
 #define COLOR_GREY  QColor(128,128,128)
 
+#define COLOR_HEADER  QColor(255, 85,  0)
+#define COLOR_CLOCK   QColor(255,  0,  0)
+
 #define COLOR_00 QColor(255,170,255) // QColor(255,170,255)
 
 #define COLOR_01 QColor(255,  0,  0) // QColor(255,  0,  0)
@@ -179,15 +182,15 @@ extern int currentWattmeter;
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
 #ifdef USE_TRANSLATEFONTSIZE
-#define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize)
-#define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize)
-#define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
+#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
+#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
+#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize)
 #define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
 #else
-#define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
+#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * mectFontCorrector, 0, 'f', 0)
 #endif
 
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
@@ -274,6 +277,8 @@ int hhmmss2ms(int hhmmss);
     goto_page("trend"); \
 }
 
+#include <QWidget>
+void changeHeader(QWidget *time_button, QWidget *home_button);
 #include <QLabel>
 void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T5, QLabel *label_T6, QLabel *label_red,

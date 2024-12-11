@@ -44,6 +44,23 @@ page020::page020(QWidget *parent) :
 
 void page020::reload()
 {
+    // no changeHeader(ui->label_giorno, ui->atcmButton_home);
+    int pointSize_t;
+    int pointSize_d;
+
+    if (mectScreenWidth >= 800) {
+        pointSize_t  = 80;
+        pointSize_d  = 24;
+    } else {
+        pointSize_t  = 70;
+        pointSize_d  = 20;
+    }
+    ui->label_time->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_t));
+    ui->atcmButton_Back->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
+    ui->label_giorno->setStyleSheet   (COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
+    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
+    ui->atcmDate->setStyleSheet       (COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
+
     if (firstTime) {
         firstTime = false;
 

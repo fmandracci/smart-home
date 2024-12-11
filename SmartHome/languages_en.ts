@@ -1211,7 +1211,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="767"/>
+        <location filename="page010.ui" line="771"/>
         <source>XXXXxxXX
 x.xxx
 x.xxx
@@ -1219,19 +1219,19 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="1494"/>
+        <location filename="page010.ui" line="1498"/>
         <source>PLC_BA_password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page010.ui" line="587"/>
-        <location filename="page010.ui" line="846"/>
-        <location filename="page010.ui" line="945"/>
-        <location filename="page010.ui" line="1044"/>
-        <location filename="page010.ui" line="1191"/>
-        <location filename="page010.ui" line="1290"/>
-        <location filename="page010.ui" line="1389"/>
-        <location filename="page010.ui" line="1488"/>
+        <location filename="page010.ui" line="850"/>
+        <location filename="page010.ui" line="949"/>
+        <location filename="page010.ui" line="1048"/>
+        <location filename="page010.ui" line="1195"/>
+        <location filename="page010.ui" line="1294"/>
+        <location filename="page010.ui" line="1393"/>
+        <location filename="page010.ui" line="1492"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>

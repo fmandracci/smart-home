@@ -133,6 +133,7 @@ void page401::reload()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     switch (currentWattmeter) {
     case  1: changeWidgets( 1, LABEL__M, QString::fromUtf8(hmi_ini.value("EP/meter__M").toByteArray()), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;
     case  2: changeWidgets( 2, LABEL__F, QString::fromUtf8(hmi_ini.value("EP/meter__F").toByteArray()), COLOR_02, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_F_var", "PLC_EP_wattmeter_F_VA", "PLC_EP_wattmeter_F_kWh"); break;

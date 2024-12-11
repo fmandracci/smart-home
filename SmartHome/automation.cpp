@@ -168,21 +168,40 @@ void loop(void)
 //    }
 }
 
+void changeHeader(QWidget *time_button, QWidget *home_button)
+{
+    int pointSize_t;
+    int pointSize_h;
+
+    if (mectScreenWidth >= 800) {
+        pointSize_t  = 32;
+        pointSize_h  = 28;
+    } else {
+        pointSize_t  = 28;
+        pointSize_h  = 24;
+    }
+
+    if (time_button)
+        time_button->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_t));
+    if (home_button)
+        home_button->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_h));
+}
+
 void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
                      QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,
                      QLabel *label_T1, QLabel *label_T2, QLabel *label_yellow_2)
 {
-    const QString RED_OVER_BLACK("color: rgb(255, 0, 0); background-color: rgb(0, 0, 0);");
-    const QString GREEN_OVER_BLACK("color: rgb(0, 255, 0); background-color: rgb(0, 0, 0);");
-    const QString YELLOW_OVER_BLACK("color: rgb(255, 255, 0); background-color: rgb(0, 0, 0);");
-    const QString GREY_OVER_BLACK("color: rgb(64, 64, 64); background-color: rgb(0, 0, 0);");
-    const QString MAGENTA_OVER_BLACK("color: rgb(255, 0, 255); background-color: rgb(0, 0, 0);");
-    const QString CYAN_OVER_BLACK("color: rgb(0, 255, 255); background-color: rgb(0, 0, 0);");
+    const QString     RED_OVER_BLACK("color: rgb(255,   0,   0); background-color: rgb(0, 0, 0);");
+    const QString   GREEN_OVER_BLACK("color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0);");
+    const QString  YELLOW_OVER_BLACK("color: rgb(255, 255,   0); background-color: rgb(0, 0, 0);");
+    const QString    GREY_OVER_BLACK("color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);");
+    const QString MAGENTA_OVER_BLACK("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);");
+    const QString    CYAN_OVER_BLACK("color: rgb(  0, 255, 255); background-color: rgb(0, 0, 0);");
 
-    const QString YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK + "border: 1px solid rgb(255, 255, 0);";
-    //const QString GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK + "border: 1px solid rgb(0, 255, 0);";
-    const QString CYAN_OVER_BLACK_BORDER = CYAN_OVER_BLACK + "border: 1px solid rgb(0, 255, 255);";
+    const QString YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK + "border: 1px solid rgb(255, 255,   0);";
+  //const QString  GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK  + "border: 1px solid rgb(  0, 255,   0);";
+    const QString   CYAN_OVER_BLACK_BORDER = CYAN_OVER_BLACK   + "border: 1px solid rgb(  0, 255, 255);";
 
     const QPixmap Error_png(":/systemicons/Error.png");
     const QPixmap Danger_png(":/systemicons/Danger.png");

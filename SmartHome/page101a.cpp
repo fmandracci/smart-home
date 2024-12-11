@@ -122,6 +122,7 @@ void page101a::reload()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     if (PLC_Tn_count >= 2) {
         ui->atcmButton_up->setPageName("page100");
     } else {

@@ -43,7 +43,7 @@ int page4e0::pointSize()
 {
     int retval;
 
-    if (this->width() >= 800) {
+    if (mectScreenWidth >= 800) {
         retval = 14;
     } else {
         retval = 9;
@@ -53,6 +53,7 @@ int page4e0::pointSize()
 
 void page4e0::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     updateWidgets();
 }
 

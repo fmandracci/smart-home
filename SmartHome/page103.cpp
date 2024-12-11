@@ -97,6 +97,7 @@ void page103::changeWidgets(const QString t, const QString T, const QString Tbis
 
 void page103::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     ui->atcmGraph->RunStop();
     resetPLC_timeOffset();
     ui->atcmGraph->RunStop();

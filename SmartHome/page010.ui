@@ -756,12 +756,16 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="font">
         <font>
-         <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <family>DejaVu Sans Mono</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 170, 0);</string>
+        <string notr="true">color: rgb(255, 170, 0);
+font: 7pt &quot;DejaVu Sans Mono&quot;;</string>
        </property>
        <property name="text">
         <string>XXXXxxXX

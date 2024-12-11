@@ -42,6 +42,7 @@ page104::page104(QWidget *parent) :
 
 void page104::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     switch (currentThermostat) {
     case  1: updateWidgets(LABEL_01, COLOR_01); break;
     case  2: updateWidgets(LABEL_02, COLOR_02); break;

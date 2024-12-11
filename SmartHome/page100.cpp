@@ -47,6 +47,8 @@ void page100::reload()
 
 void page100::changeWidgets()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+
     changeTemperature(ui->label_1, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, COLOR_01);
     changeTemperature(ui->label_2, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, COLOR_02);
     changeTemperature(ui->label_3, ui->pushButton_SP_3, ui->pushButton_status_3, ui->pushButton_3, ui->label_ext_3, 3, COLOR_03);
@@ -68,7 +70,7 @@ void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoin
         int pointSize_t ; // xx.x°C xx.x°C
         int pointSize_e ; // xx.x°C
 
-        if (this->width() >= 800) {
+        if (mectScreenWidth >= 800) {
             pointSize_n  = 36;  // ①
             pointSize_sp = 11;  // Set Point
             pointSize_s  = 17;  // status

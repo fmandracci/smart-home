@@ -37,10 +37,10 @@
 
 void printVncDisplayString(char * vncString)
 {
-// // Fix for i.mx28 projects
-// #ifdef KIT_IMX28
-// #define FONT_CORRECTOR 1.666666667      // Previous 5/3
-// #endif
+// Fix for i.mx28 projects
+#ifdef KIT_IMX28
+#define FONT_CORRECTOR 1.666666667      // Previous 5/3
+#endif
 
 #ifdef KIT_HOST
     // vncString is the '-geometry' argument

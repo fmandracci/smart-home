@@ -46,7 +46,7 @@ page400::page400(QWidget *parent) :
 void page400::reload()
 {
 #ifdef Q_WS_QWS
-    if (QScreen::instance()->width() >= 800) {
+    if (mectScreenWidth >= 800) {
         pointSize = 14;
     } else {
         pointSize = 9;
@@ -72,6 +72,7 @@ void page400::changeWidgets()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
 
     changeWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz);
     changeWattmeterFull(QString::fromUtf8(hmi_ini.value("EP/meter__M").toByteArray()),  1, COLOR_01, ui->pushButton_M_W,

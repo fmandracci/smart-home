@@ -45,6 +45,7 @@ page022::page022(QWidget *parent) :
 
 void page022::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     updateTimer();
     updateWidgets();
 }

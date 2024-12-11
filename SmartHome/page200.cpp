@@ -64,6 +64,8 @@ void page200::changeWidgets()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+
     changeLamps(1, COLOR_01, hmi_ini.value("T1/name").toString(),
                 ui->label_Tn_1, PLC_T1_enabled_lamps,
                 ui->pushButton_T1_lamp_1, ui->pushButton_T1_lamp_2, ui->pushButton_T1_lamp_3, ui->pushButton_T1_lamp_4, ui->pushButton_T1_lamp_5,

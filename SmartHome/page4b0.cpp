@@ -56,6 +56,7 @@ void page4b0::changeWidgets()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     changeThermostat(1, COLOR_01, ui->label_1, QString::fromUtf8(hmi_ini.value("T1/name").toByteArray()));
     changeThermostat(2, COLOR_02, ui->label_2, QString::fromUtf8(hmi_ini.value("T2/name").toByteArray()));
     changeThermostat(3, COLOR_03, ui->label_3, QString::fromUtf8(hmi_ini.value("T3/name").toByteArray()));
@@ -68,7 +69,7 @@ void page4b0::changeThermostat(int n, const QColor color, QLabel *label_n, const
 {
     int ps;
 
-    if (this->width() >= 800) {
+    if (mectScreenWidth >= 800) {
         ps = 18;
     } else {
         ps = 12;
@@ -89,7 +90,7 @@ void page4b0::updateValues(int n, const QColor color,
 {
     int ps;
 
-    if (this->width() >= 800) {
+    if (mectScreenWidth >= 800) {
         ps = 18;
     } else {
         ps = 12;

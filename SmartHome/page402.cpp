@@ -65,6 +65,7 @@ void page402::changeWidgets(const QString t, const QString W, const QString M_W,
 
 void page402::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     ui->atcmGraph->RunStop();
     resetPLC_timeOffset();
     ui->atcmGraph->RunStop();

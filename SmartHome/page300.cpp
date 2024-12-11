@@ -50,6 +50,8 @@ void page300::reload()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+
     if (PLC_EP_enabled_relays > 0) {
         ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation").arg(PLC_EP_enabled_relays));
     } else if (PLC_EP_enabled_relays < 0) {

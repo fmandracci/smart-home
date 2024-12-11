@@ -82,6 +82,7 @@ void page021::resetTimer_2(int value)
 
 void page021::reload()
 {
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
     updateTimers();
     updateWidgets();
 }

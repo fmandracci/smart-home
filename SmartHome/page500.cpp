@@ -75,6 +75,8 @@ void page500::reload()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
+    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+
     ui->label_sensor_01->setText(hmi_ini.value("BA/sensor_01").toString());
     ui->label_sensor_02->setText(hmi_ini.value("BA/sensor_02").toString());
     ui->label_sensor_03->setText(hmi_ini.value("BA/sensor_03").toString());
