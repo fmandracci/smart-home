@@ -74,7 +74,7 @@ background-color: rgb(0, 0, 0);
        <item row="4" column="2">
         <widget class="QLabel" name="label_yellow_2">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -94,7 +94,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>10</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -111,7 +111,7 @@ background-color: rgb(0, 0, 0);
        <item row="1" column="2">
         <widget class="QLabel" name="label_red">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -131,7 +131,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>10</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -148,7 +148,7 @@ background-color: rgb(0, 0, 0);
        <item row="2" column="2">
         <widget class="QLabel" name="label_yellow_1">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -168,7 +168,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>10</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -185,7 +185,7 @@ background-color: rgb(0, 0, 0);
        <item row="4" column="0">
         <widget class="QLabel" name="label_T1">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -205,7 +205,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -225,7 +225,7 @@ background-color: rgb(0, 0, 0);
        <item row="0" column="2">
         <widget class="QLabel" name="label_green">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -245,7 +245,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>10</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -262,7 +262,7 @@ background-color: rgb(0, 0, 0);
        <item row="0" column="0">
         <widget class="QLabel" name="label_EP">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -282,7 +282,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -302,7 +302,7 @@ background-color: rgb(0, 0, 0);
        <item row="0" column="1">
         <widget class="QLabel" name="label_BA">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -322,7 +322,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -342,7 +342,7 @@ background-color: rgb(0, 0, 0);
        <item row="1" column="1">
         <widget class="QLabel" name="label_T6">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -362,7 +362,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -382,7 +382,7 @@ background-color: rgb(0, 0, 0);
        <item row="4" column="1">
         <widget class="QLabel" name="label_T4">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -402,7 +402,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -422,7 +422,7 @@ background-color: rgb(0, 0, 0);
        <item row="1" column="0">
         <widget class="QLabel" name="label_T3">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -442,7 +442,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -462,7 +462,7 @@ background-color: rgb(0, 0, 0);
        <item row="2" column="0">
         <widget class="QLabel" name="label_T2">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -482,7 +482,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -502,7 +502,7 @@ background-color: rgb(0, 0, 0);
        <item row="2" column="1">
         <widget class="QLabel" name="label_T5">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -522,7 +522,7 @@ background-color: rgb(0, 0, 0);
          <property name="font">
           <font>
            <family>DejaVu Sans</family>
-           <pointsize>11</pointsize>
+           <pointsize>15</pointsize>
           </font>
          </property>
          <property name="styleSheet">

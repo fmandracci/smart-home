@@ -48,9 +48,13 @@ void page300::setupRelay(QPushButton *button, QLabel *label, int n)
 
 void page300::reload()
 {
-    QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+    changeHeader(ui->pushButton_time, ui->atcmButton_home,
+                 ui->label_EP, ui->label_BA, ui->label_green,
+                 ui->label_T5, ui->label_T6, ui->label_red,
+                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
+                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
 
     if (PLC_EP_enabled_relays > 0) {
         ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation").arg(PLC_EP_enabled_relays));
@@ -60,15 +64,15 @@ void page300::reload()
         ui->label->setText("no enabled relays");
     }
 
-    ui->label_EP_relay_A->setText(hmi_ini.value("EP/relay_A").toString());
-    ui->label_EP_relay_B->setText(hmi_ini.value("EP/relay_B").toString());
-    ui->label_EP_relay_C->setText(hmi_ini.value("EP/relay_C").toString());
-    ui->label_EP_relay_D->setText(hmi_ini.value("EP/relay_D").toString());
+    ui->label_EP_relay_A->setText(home_ini.value("EP/relay_A").toString());
+    ui->label_EP_relay_B->setText(home_ini.value("EP/relay_B").toString());
+    ui->label_EP_relay_C->setText(home_ini.value("EP/relay_C").toString());
+    ui->label_EP_relay_D->setText(home_ini.value("EP/relay_D").toString());
 
-    ui->label_EP_relay_E->setText(hmi_ini.value("EP/relay_E").toString());
-    ui->label_EP_relay_F->setText(hmi_ini.value("EP/relay_F").toString());
-    ui->label_EP_relay_G->setText(hmi_ini.value("EP/relay_G").toString());
-    ui->label_EP_relay_H->setText(hmi_ini.value("EP/relay_H").toString());
+    ui->label_EP_relay_E->setText(home_ini.value("EP/relay_E").toString());
+    ui->label_EP_relay_F->setText(home_ini.value("EP/relay_F").toString());
+    ui->label_EP_relay_G->setText(home_ini.value("EP/relay_G").toString());
+    ui->label_EP_relay_H->setText(home_ini.value("EP/relay_H").toString());
 
     setupRelay(ui->pushButton_EP_relay_A, ui->label_EP_relay_A, 1);
     setupRelay(ui->pushButton_EP_relay_B, ui->label_EP_relay_B, 2);

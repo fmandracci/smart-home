@@ -14364,6 +14364,13 @@ int16_t PLC_CPU_TEMP = 0;
 
 
 /*
+ * Variable PLC_LPC_ERRORS	[ LPC communication errors counter ]
+ */
+
+u_int32_t PLC_LPC_ERRORS = 0;
+
+
+/*
  * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
  */
 
@@ -14392,70 +14399,70 @@ u_int32_t PLC_BUZZER = 0;
 
 
 /*
- * Variable PLC_FastIO_Ena	[ Not available ]
+ * Variable PLC_FastIO_Ena	[ Fast IO Enable ]
  */
 
 u_int32_t PLC_FastIO_Ena = 0;
 
 
 /*
- * Variable PLC_FastIO_Dir	[ Not available ]
+ * Variable PLC_FastIO_Dir	[ Fast IO Configuration ]
  */
 
 u_int32_t PLC_FastIO_Dir = 0;
 
 
 /*
- * Variable PLC_FastIO_1	[ Not available ]
+ * Variable PLC_FastIO_1	[ Fast Input 1 ]
  */
 
 int PLC_FastIO_1 = 0;
 
 
 /*
- * Variable PLC_FastIO_2	[ Not available ]
+ * Variable PLC_FastIO_2	[ Fast Input 2 ]
  */
 
 int PLC_FastIO_2 = 0;
 
 
 /*
- * Variable PLC_FastIO_3	[ Not available ]
+ * Variable PLC_FastIO_3	[ Fast Input 3 ]
  */
 
 int PLC_FastIO_3 = 0;
 
 
 /*
- * Variable PLC_FastIO_4	[ Not available ]
+ * Variable PLC_FastIO_4	[ Fast Input 4 ]
  */
 
 int PLC_FastIO_4 = 0;
 
 
 /*
- * Variable PLC_FastIO_5	[ Not available ]
+ * Variable PLC_FastIO_5	[ Fast Output 1 ]
  */
 
 int PLC_FastIO_5 = 0;
 
 
 /*
- * Variable PLC_FastIO_6	[ Not available ]
+ * Variable PLC_FastIO_6	[ Fast Output 2 ]
  */
 
 int PLC_FastIO_6 = 0;
 
 
 /*
- * Variable PLC_FastIO_7	[ Not available ]
+ * Variable PLC_FastIO_7	[ Fast Output 3 ]
  */
 
 int PLC_FastIO_7 = 0;
 
 
 /*
- * Variable PLC_FastIO_8	[ Not available ]
+ * Variable PLC_FastIO_8	[ Fast Output 4 ]
  */
 
 int PLC_FastIO_8 = 0;
@@ -51325,6 +51332,24 @@ getStatus_PLC_CPU_TEMP(void)
 }
 
 int
+doWrite_PLC_LPC_ERRORS(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_ERRORS, &value);
+}
+
+int
+addWrite_PLC_LPC_ERRORS(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_ERRORS, &value);
+}
+
+int
+getStatus_PLC_LPC_ERRORS(void)
+{
+	return getStatus(ID_PLC_LPC_ERRORS);
+}
+
+int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
 	return doWrite(ID_PLC_BEEP_VOLUME, &value);
@@ -53630,6 +53655,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
 	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
 	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
+	retval += readFromDb(ID_PLC_LPC_ERRORS, &PLC_LPC_ERRORS);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);

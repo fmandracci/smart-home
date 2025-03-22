@@ -29,6 +29,7 @@
 #include "global_functions.h"
 
 #define USE_TRANSLATEFONTSIZE
+#define HOME_INI_FILE "/local/root/home.ini"
 
 // vedi plc/Resource1.cst
 
@@ -278,8 +279,12 @@ int hhmmss2ms(int hhmmss);
 }
 
 #include <QWidget>
-void changeHeader(QWidget *time_button, QWidget *home_button);
 #include <QLabel>
+void changeHeader(QWidget *time_button, QWidget *home_button,
+                  QLabel *label_EP = NULL, QLabel *label_BA = NULL, QLabel *label_green = NULL,
+                  QLabel *label_T5 = NULL, QLabel *label_T6 = NULL, QLabel *label_red = NULL,
+                  QLabel *label_T3 = NULL, QLabel *label_T4 = NULL, QLabel *label_yellow_1 = NULL,
+                  QLabel *label_T1 = NULL, QLabel *label_T2 = NULL, QLabel *label_yellow_2 = NULL);
 void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
                      QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,

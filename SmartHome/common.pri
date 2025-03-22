@@ -2,7 +2,7 @@
 # @file
 #
 # @section LICENSE
-# Copyright Mect s.r.l. 2013
+# Copyright Mect s.r.l. 2025
 #
 # @brief Qmake project file
 #
@@ -121,4 +121,4 @@ RESOURCES += \
 include(./languages.pri)
 
 #Current Mect Suite Version:
-DEFINES += "MECT_SUITE_VERSION=\"\\\"3.5.1\\\"\""
+DEFINES += "MECT_SUITE_VERSION=\"\\\"3.5.2\\\"\""

@@ -34,6 +34,210 @@ extern "C" {
 #include "cross_table_utility.h"
 
 
+#define ID_TCP_T3_heartbeat 1200
+extern u_int16_t TCP_T3_heartbeat;	/* TCP3_STATUS NODE_04_STATUS */
+int doWrite_TCP_T3_heartbeat(u_int16_t value);
+int addWrite_TCP_T3_heartbeat(u_int16_t value);
+int getStatus_TCP_T3_heartbeat(void);
+
+#define ID_TCP_T3_enabled_sensors 1201
+extern int16_t TCP_T3_enabled_sensors;
+int doWrite_TCP_T3_enabled_sensors(int16_t value);
+int addWrite_TCP_T3_enabled_sensors(int16_t value);
+int getStatus_TCP_T3_enabled_sensors(void);
+
+#define ID_TCP_T3_temperature 1202
+extern int16_t TCP_T3_temperature;
+int doWrite_TCP_T3_temperature(int16_t value);
+int addWrite_TCP_T3_temperature(int16_t value);
+int getStatus_TCP_T3_temperature(void);
+
+#define ID_TCP_T3_temperature_bis 1203
+extern int16_t TCP_T3_temperature_bis;
+int doWrite_TCP_T3_temperature_bis(int16_t value);
+int addWrite_TCP_T3_temperature_bis(int16_t value);
+int getStatus_TCP_T3_temperature_bis(void);
+
+#define ID_TCP_T3_temperature_ext 1204
+extern int16_t TCP_T3_temperature_ext;
+int doWrite_TCP_T3_temperature_ext(int16_t value);
+int addWrite_TCP_T3_temperature_ext(int16_t value);
+int getStatus_TCP_T3_temperature_ext(void);
+
+#define ID_TCP_T3_humidity 1205
+extern int16_t TCP_T3_humidity;
+int doWrite_TCP_T3_humidity(int16_t value);
+int addWrite_TCP_T3_humidity(int16_t value);
+int getStatus_TCP_T3_humidity(void);
+
+#define ID_TCP_T3_humidity_bis 1206
+extern int16_t TCP_T3_humidity_bis;
+int doWrite_TCP_T3_humidity_bis(int16_t value);
+int addWrite_TCP_T3_humidity_bis(int16_t value);
+int getStatus_TCP_T3_humidity_bis(void);
+
+#define ID_TCP_T3_humidity_ext 1207
+extern int16_t TCP_T3_humidity_ext;
+int doWrite_TCP_T3_humidity_ext(int16_t value);
+int addWrite_TCP_T3_humidity_ext(int16_t value);
+int getStatus_TCP_T3_humidity_ext(void);
+
+#define ID_TCP_T3_temperature_setpoint 1208
+extern int16_t TCP_T3_temperature_setpoint;
+int doWrite_TCP_T3_temperature_setpoint(int16_t value);
+int addWrite_TCP_T3_temperature_setpoint(int16_t value);
+int getStatus_TCP_T3_temperature_setpoint(void);
+
+#define ID_TCP_T3_humidity_setpoint 1209
+extern int16_t TCP_T3_humidity_setpoint;
+int doWrite_TCP_T3_humidity_setpoint(int16_t value);
+int addWrite_TCP_T3_humidity_setpoint(int16_t value);
+int getStatus_TCP_T3_humidity_setpoint(void);
+
+#define ID_TCP_T3_enabled_lamps 1210
+extern u_int16_t TCP_T3_enabled_lamps;
+int doWrite_TCP_T3_enabled_lamps(u_int16_t value);
+int addWrite_TCP_T3_enabled_lamps(u_int16_t value);
+int getStatus_TCP_T3_enabled_lamps(void);
+
+#define ID_TCP_T3_lamp_1 1211
+extern int TCP_T3_lamp_1;
+int doWrite_TCP_T3_lamp_1(int value);
+int addWrite_TCP_T3_lamp_1(int value);
+int getStatus_TCP_T3_lamp_1(void);
+
+#define ID_TCP_T3_lamp_2 1212
+extern int TCP_T3_lamp_2;
+int doWrite_TCP_T3_lamp_2(int value);
+int addWrite_TCP_T3_lamp_2(int value);
+int getStatus_TCP_T3_lamp_2(void);
+
+#define ID_TCP_T3_lamp_3 1213
+extern int TCP_T3_lamp_3;
+int doWrite_TCP_T3_lamp_3(int value);
+int addWrite_TCP_T3_lamp_3(int value);
+int getStatus_TCP_T3_lamp_3(void);
+
+#define ID_TCP_T3_lamp_4 1214
+extern int TCP_T3_lamp_4;
+int doWrite_TCP_T3_lamp_4(int value);
+int addWrite_TCP_T3_lamp_4(int value);
+int getStatus_TCP_T3_lamp_4(void);
+
+#define ID_TCP_T3_lamp_5 1215
+extern int TCP_T3_lamp_5;
+int doWrite_TCP_T3_lamp_5(int value);
+int addWrite_TCP_T3_lamp_5(int value);
+int getStatus_TCP_T3_lamp_5(void);
+
+#define ID_TCP_T3_max_request_W 1216
+extern u_int16_t TCP_T3_max_request_W;
+int doWrite_TCP_T3_max_request_W(u_int16_t value);
+int addWrite_TCP_T3_max_request_W(u_int16_t value);
+int getStatus_TCP_T3_max_request_W(void);
+
+#define ID_TCP_T3_heating 1217
+extern int TCP_T3_heating;
+int doWrite_TCP_T3_heating(int value);
+int addWrite_TCP_T3_heating(int value);
+int getStatus_TCP_T3_heating(void);
+
+#define ID_TCP_T3_nighttime 1218
+extern int TCP_T3_nighttime;
+int doWrite_TCP_T3_nighttime(int value);
+int addWrite_TCP_T3_nighttime(int value);
+int getStatus_TCP_T3_nighttime(void);
+
+#define ID_TCP_T3_heating_status 1219
+extern int16_t TCP_T3_heating_status;
+int doWrite_TCP_T3_heating_status(int16_t value);
+int addWrite_TCP_T3_heating_status(int16_t value);
+int getStatus_TCP_T3_heating_status(void);
+
+#define ID_TCP_T3_heating_timer 1220
+extern int16_t TCP_T3_heating_timer;	/* seconds (max 9 h) */
+int doWrite_TCP_T3_heating_timer(int16_t value);
+int addWrite_TCP_T3_heating_timer(int16_t value);
+int getStatus_TCP_T3_heating_timer(void);
+
+#define ID_TCP_T3_sunrise 1221
+extern u_int16_t TCP_T3_sunrise;	/* hh * 100 + mm */
+int doWrite_TCP_T3_sunrise(u_int16_t value);
+int addWrite_TCP_T3_sunrise(u_int16_t value);
+int getStatus_TCP_T3_sunrise(void);
+
+#define ID_TCP_T3_sunset 1222
+extern u_int16_t TCP_T3_sunset;	/* hh * 100 + mm */
+int doWrite_TCP_T3_sunset(u_int16_t value);
+int addWrite_TCP_T3_sunset(u_int16_t value);
+int getStatus_TCP_T3_sunset(void);
+
+#define ID_TCP_T3_temperature_setpoint_nt 1223
+extern int16_t TCP_T3_temperature_setpoint_nt;
+int doWrite_TCP_T3_temperature_setpoint_nt(int16_t value);
+int addWrite_TCP_T3_temperature_setpoint_nt(int16_t value);
+int getStatus_TCP_T3_temperature_setpoint_nt(void);
+
+#define ID_TCP_T3_humidity_setpoint_nt 1224
+extern int16_t TCP_T3_humidity_setpoint_nt;
+int doWrite_TCP_T3_humidity_setpoint_nt(int16_t value);
+int addWrite_TCP_T3_humidity_setpoint_nt(int16_t value);
+int getStatus_TCP_T3_humidity_setpoint_nt(void);
+
+#define ID_TCP_T3_lamp_feedback_1 1225
+extern int TCP_T3_lamp_feedback_1;
+int doWrite_TCP_T3_lamp_feedback_1(int value);
+int addWrite_TCP_T3_lamp_feedback_1(int value);
+int getStatus_TCP_T3_lamp_feedback_1(void);
+
+#define ID_TCP_T3_lamp_feedback_2 1226
+extern int TCP_T3_lamp_feedback_2;
+int doWrite_TCP_T3_lamp_feedback_2(int value);
+int addWrite_TCP_T3_lamp_feedback_2(int value);
+int getStatus_TCP_T3_lamp_feedback_2(void);
+
+#define ID_TCP_T3_lamp_feedback_3 1227
+extern int TCP_T3_lamp_feedback_3;
+int doWrite_TCP_T3_lamp_feedback_3(int value);
+int addWrite_TCP_T3_lamp_feedback_3(int value);
+int getStatus_TCP_T3_lamp_feedback_3(void);
+
+#define ID_TCP_T3_lamp_feedback_4 1228
+extern int TCP_T3_lamp_feedback_4;
+int doWrite_TCP_T3_lamp_feedback_4(int value);
+int addWrite_TCP_T3_lamp_feedback_4(int value);
+int getStatus_TCP_T3_lamp_feedback_4(void);
+
+#define ID_TCP_T3_lamp_feedback_5 1229
+extern int TCP_T3_lamp_feedback_5;
+int doWrite_TCP_T3_lamp_feedback_5(int value);
+int addWrite_TCP_T3_lamp_feedback_5(int value);
+int getStatus_TCP_T3_lamp_feedback_5(void);
+
+#define ID_TCP_T3_requested_W 1230
+extern u_int16_t TCP_T3_requested_W;
+int doWrite_TCP_T3_requested_W(u_int16_t value);
+int addWrite_TCP_T3_requested_W(u_int16_t value);
+int getStatus_TCP_T3_requested_W(void);
+
+#define ID_TCP_T3_control_type 1231
+extern u_int16_t TCP_T3_control_type;
+int doWrite_TCP_T3_control_type(u_int16_t value);
+int addWrite_TCP_T3_control_type(u_int16_t value);
+int getStatus_TCP_T3_control_type(void);
+
+#define ID_TCP_T3_daily_heating_s 1232
+extern u_int32_t TCP_T3_daily_heating_s;
+int doWrite_TCP_T3_daily_heating_s(u_int32_t value);
+int addWrite_TCP_T3_daily_heating_s(u_int32_t value);
+int getStatus_TCP_T3_daily_heating_s(void);
+
+#define ID_TCP_T3_monthly_heating_s 1233
+extern u_int32_t TCP_T3_monthly_heating_s;
+int doWrite_TCP_T3_monthly_heating_s(u_int32_t value);
+int addWrite_TCP_T3_monthly_heating_s(u_int32_t value);
+int getStatus_TCP_T3_monthly_heating_s(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);
@@ -1436,4 +1640,3 @@ int getStatus_PLC_FastIO_8(void);
 }
 #endif
 #endif
-

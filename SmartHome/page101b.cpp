@@ -100,9 +100,13 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
 
 void page101b::reload()
 {
-    QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+    changeHeader(ui->pushButton_time, ui->atcmButton_home,
+                 ui->label_EP, ui->label_BA, ui->label_green,
+                 ui->label_T5, ui->label_T6, ui->label_red,
+                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
+                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
     if (PLC_Tn_count >= 2) {
         ui->atcmButton_up->setPageName("page100");
     } else {
@@ -110,12 +114,12 @@ void page101b::reload()
         ui->atcmButton_up->setPageName("HOME");
     }
     switch (currentThermostat) {
-    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, PLC_T1_control_type, LABEL_01, hmi_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
-    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, PLC_T2_control_type, LABEL_02, hmi_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
-    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, PLC_T3_control_type, LABEL_03, hmi_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
-    case  4: changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, hmi_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
-    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, PLC_T5_control_type, LABEL_05, hmi_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
-    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, PLC_T6_control_type, LABEL_06, hmi_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
+    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, PLC_T1_control_type, LABEL_01, home_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
+    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, PLC_T2_control_type, LABEL_02, home_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
+    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, PLC_T3_control_type, LABEL_03, home_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
+    case  4: changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
+    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, PLC_T5_control_type, LABEL_05, home_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
+    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, PLC_T6_control_type, LABEL_06, home_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
     default: changeWidgets(0             , 0            , 0                 , "??"    , ""                                  , ""                           , ""                              , ""                        , ""                           , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
     }
 }

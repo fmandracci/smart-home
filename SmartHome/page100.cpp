@@ -47,7 +47,11 @@ void page100::reload()
 
 void page100::changeWidgets()
 {
-    changeHeader(ui->pushButton_time, ui->atcmButton_home);
+    changeHeader(ui->pushButton_time, ui->atcmButton_home,
+                 ui->label_EP, ui->label_BA, ui->label_green,
+                 ui->label_T5, ui->label_T6, ui->label_red,
+                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
+                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
 
     changeTemperature(ui->label_1, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, COLOR_01);
     changeTemperature(ui->label_2, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, COLOR_02);

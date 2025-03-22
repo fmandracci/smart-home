@@ -54,15 +54,19 @@ void page4b0::reload()
 
 void page4b0::changeWidgets()
 {
-    QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home);
-    changeThermostat(1, COLOR_01, ui->label_1, QString::fromUtf8(hmi_ini.value("T1/name").toByteArray()));
-    changeThermostat(2, COLOR_02, ui->label_2, QString::fromUtf8(hmi_ini.value("T2/name").toByteArray()));
-    changeThermostat(3, COLOR_03, ui->label_3, QString::fromUtf8(hmi_ini.value("T3/name").toByteArray()));
-    changeThermostat(4, COLOR_04, ui->label_4, QString::fromUtf8(hmi_ini.value("T4/name").toByteArray()));
-    changeThermostat(5, COLOR_05, ui->label_5, QString::fromUtf8(hmi_ini.value("T5/name").toByteArray()));
-    changeThermostat(6, COLOR_06, ui->label_6, QString::fromUtf8(hmi_ini.value("T6/name").toByteArray()));
+    changeHeader(ui->pushButton_time, ui->atcmButton_home,
+                 ui->label_EP, ui->label_BA, ui->label_green,
+                 ui->label_T5, ui->label_T6, ui->label_red,
+                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
+                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    changeThermostat(1, COLOR_01, ui->label_1, QString::fromUtf8(home_ini.value("T1/name").toByteArray()));
+    changeThermostat(2, COLOR_02, ui->label_2, QString::fromUtf8(home_ini.value("T2/name").toByteArray()));
+    changeThermostat(3, COLOR_03, ui->label_3, QString::fromUtf8(home_ini.value("T3/name").toByteArray()));
+    changeThermostat(4, COLOR_04, ui->label_4, QString::fromUtf8(home_ini.value("T4/name").toByteArray()));
+    changeThermostat(5, COLOR_05, ui->label_5, QString::fromUtf8(home_ini.value("T5/name").toByteArray()));
+    changeThermostat(6, COLOR_06, ui->label_6, QString::fromUtf8(home_ini.value("T6/name").toByteArray()));
 }
 
 void page4b0::changeThermostat(int n, const QColor color, QLabel *label_n, const QString label)

@@ -1118,7 +1118,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>11</pointsize>
+       <pointsize>15</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>

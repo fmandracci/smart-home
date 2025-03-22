@@ -48,11 +48,14 @@ void printVncDisplayString(char * vncString)
     mectScreenHeight = HEIGHT;
     mectFontCorrector = FONT_CORRECTOR;
     sprintf(vncString, "%dx%d+%d+%d", WIDTH, HEIGHT, 0, 0);
+
 #else // Q_WS_QWS
     // vncString is the '-display' argument
+
 #define RESIZABLE_APPLICATION
 #ifndef RESIZABLE_APPLICATION
     // fixed display size application
+
     mectScreenWidth = WIDTH;
     mectScreenHeight = HEIGHT;
     mectFontCorrector = FONT_CORRECTOR;
@@ -135,8 +138,8 @@ void printVncDisplayString(char * vncString)
     mectScreenHeight = height;
     mectFontCorrector = fontCorrector;
 
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:tty=/dev/tty8:0 vnc:size=%dx%d:0", rot, width_mm, height_mm, width, height);
-
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:tty=/dev/tty8:0 vnc:size=%dx%d:0",
+            rot, width_mm, height_mm, width, height);
 #endif
 #endif
     fprintf(stderr, "vncString='%s' font corrector=%f\n", vncString, mectFontCorrector);
@@ -318,4 +321,3 @@ int create_page_nb(page ** p, int pageNb)
     }
     return 0;
 }
-

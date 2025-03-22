@@ -28,6 +28,244 @@
 #include "global_var.h"
 
 /*
+ * Variable TCP_T3_heartbeat	[ TCP3_STATUS NODE_04_STATUS ]
+ */
+
+u_int16_t TCP_T3_heartbeat = 0;
+
+
+/*
+ * Variable TCP_T3_enabled_sensors
+ */
+
+int16_t TCP_T3_enabled_sensors = 0;
+
+
+/*
+ * Variable TCP_T3_temperature
+ */
+
+int16_t TCP_T3_temperature = 0;
+
+
+/*
+ * Variable TCP_T3_temperature_bis
+ */
+
+int16_t TCP_T3_temperature_bis = 0;
+
+
+/*
+ * Variable TCP_T3_temperature_ext
+ */
+
+int16_t TCP_T3_temperature_ext = 0;
+
+
+/*
+ * Variable TCP_T3_humidity
+ */
+
+int16_t TCP_T3_humidity = 0;
+
+
+/*
+ * Variable TCP_T3_humidity_bis
+ */
+
+int16_t TCP_T3_humidity_bis = 0;
+
+
+/*
+ * Variable TCP_T3_humidity_ext
+ */
+
+int16_t TCP_T3_humidity_ext = 0;
+
+
+/*
+ * Variable TCP_T3_temperature_setpoint
+ */
+
+int16_t TCP_T3_temperature_setpoint = 0;
+
+
+/*
+ * Variable TCP_T3_humidity_setpoint
+ */
+
+int16_t TCP_T3_humidity_setpoint = 0;
+
+
+/*
+ * Variable TCP_T3_enabled_lamps
+ */
+
+u_int16_t TCP_T3_enabled_lamps = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_1
+ */
+
+int TCP_T3_lamp_1 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_2
+ */
+
+int TCP_T3_lamp_2 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_3
+ */
+
+int TCP_T3_lamp_3 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_4
+ */
+
+int TCP_T3_lamp_4 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_5
+ */
+
+int TCP_T3_lamp_5 = 0;
+
+
+/*
+ * Variable TCP_T3_max_request_W
+ */
+
+u_int16_t TCP_T3_max_request_W = 0;
+
+
+/*
+ * Variable TCP_T3_heating
+ */
+
+int TCP_T3_heating = 0;
+
+
+/*
+ * Variable TCP_T3_nighttime
+ */
+
+int TCP_T3_nighttime = 0;
+
+
+/*
+ * Variable TCP_T3_heating_status
+ */
+
+int16_t TCP_T3_heating_status = 0;
+
+
+/*
+ * Variable TCP_T3_heating_timer	[ seconds (max 9 h) ]
+ */
+
+int16_t TCP_T3_heating_timer = 0;
+
+
+/*
+ * Variable TCP_T3_sunrise	[ hh * 100 + mm ]
+ */
+
+u_int16_t TCP_T3_sunrise = 0;
+
+
+/*
+ * Variable TCP_T3_sunset	[ hh * 100 + mm ]
+ */
+
+u_int16_t TCP_T3_sunset = 0;
+
+
+/*
+ * Variable TCP_T3_temperature_setpoint_nt
+ */
+
+int16_t TCP_T3_temperature_setpoint_nt = 0;
+
+
+/*
+ * Variable TCP_T3_humidity_setpoint_nt
+ */
+
+int16_t TCP_T3_humidity_setpoint_nt = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_feedback_1
+ */
+
+int TCP_T3_lamp_feedback_1 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_feedback_2
+ */
+
+int TCP_T3_lamp_feedback_2 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_feedback_3
+ */
+
+int TCP_T3_lamp_feedback_3 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_feedback_4
+ */
+
+int TCP_T3_lamp_feedback_4 = 0;
+
+
+/*
+ * Variable TCP_T3_lamp_feedback_5
+ */
+
+int TCP_T3_lamp_feedback_5 = 0;
+
+
+/*
+ * Variable TCP_T3_requested_W
+ */
+
+u_int16_t TCP_T3_requested_W = 0;
+
+
+/*
+ * Variable TCP_T3_control_type
+ */
+
+u_int16_t TCP_T3_control_type = 0;
+
+
+/*
+ * Variable TCP_T3_daily_heating_s
+ */
+
+u_int32_t TCP_T3_daily_heating_s = 0;
+
+
+/*
+ * Variable TCP_T3_monthly_heating_s
+ */
+
+u_int32_t TCP_T3_monthly_heating_s = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -1658,4439 +1896,5084 @@ int PLC_FastIO_7 = 0;
 int PLC_FastIO_8 = 0;
 
 int
+doWrite_TCP_T3_heartbeat(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_heartbeat, &value);
+}
+
+int
+addWrite_TCP_T3_heartbeat(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_heartbeat, &value);
+}
+
+int
+getStatus_TCP_T3_heartbeat(void)
+{
+	return getStatus(ID_TCP_T3_heartbeat);
+}
+
+int
+doWrite_TCP_T3_enabled_sensors(int16_t value)
+{
+	return doWrite(ID_TCP_T3_enabled_sensors, &value);
+}
+
+int
+addWrite_TCP_T3_enabled_sensors(int16_t value)
+{
+	return addWrite(ID_TCP_T3_enabled_sensors, &value);
+}
+
+int
+getStatus_TCP_T3_enabled_sensors(void)
+{
+	return getStatus(ID_TCP_T3_enabled_sensors);
+}
+
+int
+doWrite_TCP_T3_temperature(int16_t value)
+{
+	return doWrite(ID_TCP_T3_temperature, &value);
+}
+
+int
+addWrite_TCP_T3_temperature(int16_t value)
+{
+	return addWrite(ID_TCP_T3_temperature, &value);
+}
+
+int
+getStatus_TCP_T3_temperature(void)
+{
+	return getStatus(ID_TCP_T3_temperature);
+}
+
+int
+doWrite_TCP_T3_temperature_bis(int16_t value)
+{
+	return doWrite(ID_TCP_T3_temperature_bis, &value);
+}
+
+int
+addWrite_TCP_T3_temperature_bis(int16_t value)
+{
+	return addWrite(ID_TCP_T3_temperature_bis, &value);
+}
+
+int
+getStatus_TCP_T3_temperature_bis(void)
+{
+	return getStatus(ID_TCP_T3_temperature_bis);
+}
+
+int
+doWrite_TCP_T3_temperature_ext(int16_t value)
+{
+	return doWrite(ID_TCP_T3_temperature_ext, &value);
+}
+
+int
+addWrite_TCP_T3_temperature_ext(int16_t value)
+{
+	return addWrite(ID_TCP_T3_temperature_ext, &value);
+}
+
+int
+getStatus_TCP_T3_temperature_ext(void)
+{
+	return getStatus(ID_TCP_T3_temperature_ext);
+}
+
+int
+doWrite_TCP_T3_humidity(int16_t value)
+{
+	return doWrite(ID_TCP_T3_humidity, &value);
+}
+
+int
+addWrite_TCP_T3_humidity(int16_t value)
+{
+	return addWrite(ID_TCP_T3_humidity, &value);
+}
+
+int
+getStatus_TCP_T3_humidity(void)
+{
+	return getStatus(ID_TCP_T3_humidity);
+}
+
+int
+doWrite_TCP_T3_humidity_bis(int16_t value)
+{
+	return doWrite(ID_TCP_T3_humidity_bis, &value);
+}
+
+int
+addWrite_TCP_T3_humidity_bis(int16_t value)
+{
+	return addWrite(ID_TCP_T3_humidity_bis, &value);
+}
+
+int
+getStatus_TCP_T3_humidity_bis(void)
+{
+	return getStatus(ID_TCP_T3_humidity_bis);
+}
+
+int
+doWrite_TCP_T3_humidity_ext(int16_t value)
+{
+	return doWrite(ID_TCP_T3_humidity_ext, &value);
+}
+
+int
+addWrite_TCP_T3_humidity_ext(int16_t value)
+{
+	return addWrite(ID_TCP_T3_humidity_ext, &value);
+}
+
+int
+getStatus_TCP_T3_humidity_ext(void)
+{
+	return getStatus(ID_TCP_T3_humidity_ext);
+}
+
+int
+doWrite_TCP_T3_temperature_setpoint(int16_t value)
+{
+	return doWrite(ID_TCP_T3_temperature_setpoint, &value);
+}
+
+int
+addWrite_TCP_T3_temperature_setpoint(int16_t value)
+{
+	return addWrite(ID_TCP_T3_temperature_setpoint, &value);
+}
+
+int
+getStatus_TCP_T3_temperature_setpoint(void)
+{
+	return getStatus(ID_TCP_T3_temperature_setpoint);
+}
+
+int
+doWrite_TCP_T3_humidity_setpoint(int16_t value)
+{
+	return doWrite(ID_TCP_T3_humidity_setpoint, &value);
+}
+
+int
+addWrite_TCP_T3_humidity_setpoint(int16_t value)
+{
+	return addWrite(ID_TCP_T3_humidity_setpoint, &value);
+}
+
+int
+getStatus_TCP_T3_humidity_setpoint(void)
+{
+	return getStatus(ID_TCP_T3_humidity_setpoint);
+}
+
+int
+doWrite_TCP_T3_enabled_lamps(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_enabled_lamps, &value);
+}
+
+int
+addWrite_TCP_T3_enabled_lamps(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_enabled_lamps, &value);
+}
+
+int
+getStatus_TCP_T3_enabled_lamps(void)
+{
+	return getStatus(ID_TCP_T3_enabled_lamps);
+}
+
+int
+doWrite_TCP_T3_lamp_1(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_1, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_1(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_1, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_1(void)
+{
+	return getStatus(ID_TCP_T3_lamp_1);
+}
+
+int
+doWrite_TCP_T3_lamp_2(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_2, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_2(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_2, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_2(void)
+{
+	return getStatus(ID_TCP_T3_lamp_2);
+}
+
+int
+doWrite_TCP_T3_lamp_3(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_3, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_3(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_3, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_3(void)
+{
+	return getStatus(ID_TCP_T3_lamp_3);
+}
+
+int
+doWrite_TCP_T3_lamp_4(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_4, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_4(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_4, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_4(void)
+{
+	return getStatus(ID_TCP_T3_lamp_4);
+}
+
+int
+doWrite_TCP_T3_lamp_5(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_5, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_5(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_5, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_5(void)
+{
+	return getStatus(ID_TCP_T3_lamp_5);
+}
+
+int
+doWrite_TCP_T3_max_request_W(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_max_request_W, &value);
+}
+
+int
+addWrite_TCP_T3_max_request_W(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_max_request_W, &value);
+}
+
+int
+getStatus_TCP_T3_max_request_W(void)
+{
+	return getStatus(ID_TCP_T3_max_request_W);
+}
+
+int
+doWrite_TCP_T3_heating(int value)
+{
+	return doWrite(ID_TCP_T3_heating, &value);
+}
+
+int
+addWrite_TCP_T3_heating(int value)
+{
+	return addWrite(ID_TCP_T3_heating, &value);
+}
+
+int
+getStatus_TCP_T3_heating(void)
+{
+	return getStatus(ID_TCP_T3_heating);
+}
+
+int
+doWrite_TCP_T3_nighttime(int value)
+{
+	return doWrite(ID_TCP_T3_nighttime, &value);
+}
+
+int
+addWrite_TCP_T3_nighttime(int value)
+{
+	return addWrite(ID_TCP_T3_nighttime, &value);
+}
+
+int
+getStatus_TCP_T3_nighttime(void)
+{
+	return getStatus(ID_TCP_T3_nighttime);
+}
+
+int
+doWrite_TCP_T3_heating_status(int16_t value)
+{
+	return doWrite(ID_TCP_T3_heating_status, &value);
+}
+
+int
+addWrite_TCP_T3_heating_status(int16_t value)
+{
+	return addWrite(ID_TCP_T3_heating_status, &value);
+}
+
+int
+getStatus_TCP_T3_heating_status(void)
+{
+	return getStatus(ID_TCP_T3_heating_status);
+}
+
+int
+doWrite_TCP_T3_heating_timer(int16_t value)
+{
+	return doWrite(ID_TCP_T3_heating_timer, &value);
+}
+
+int
+addWrite_TCP_T3_heating_timer(int16_t value)
+{
+	return addWrite(ID_TCP_T3_heating_timer, &value);
+}
+
+int
+getStatus_TCP_T3_heating_timer(void)
+{
+	return getStatus(ID_TCP_T3_heating_timer);
+}
+
+int
+doWrite_TCP_T3_sunrise(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_sunrise, &value);
+}
+
+int
+addWrite_TCP_T3_sunrise(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_sunrise, &value);
+}
+
+int
+getStatus_TCP_T3_sunrise(void)
+{
+	return getStatus(ID_TCP_T3_sunrise);
+}
+
+int
+doWrite_TCP_T3_sunset(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_sunset, &value);
+}
+
+int
+addWrite_TCP_T3_sunset(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_sunset, &value);
+}
+
+int
+getStatus_TCP_T3_sunset(void)
+{
+	return getStatus(ID_TCP_T3_sunset);
+}
+
+int
+doWrite_TCP_T3_temperature_setpoint_nt(int16_t value)
+{
+	return doWrite(ID_TCP_T3_temperature_setpoint_nt, &value);
+}
+
+int
+addWrite_TCP_T3_temperature_setpoint_nt(int16_t value)
+{
+	return addWrite(ID_TCP_T3_temperature_setpoint_nt, &value);
+}
+
+int
+getStatus_TCP_T3_temperature_setpoint_nt(void)
+{
+	return getStatus(ID_TCP_T3_temperature_setpoint_nt);
+}
+
+int
+doWrite_TCP_T3_humidity_setpoint_nt(int16_t value)
+{
+	return doWrite(ID_TCP_T3_humidity_setpoint_nt, &value);
+}
+
+int
+addWrite_TCP_T3_humidity_setpoint_nt(int16_t value)
+{
+	return addWrite(ID_TCP_T3_humidity_setpoint_nt, &value);
+}
+
+int
+getStatus_TCP_T3_humidity_setpoint_nt(void)
+{
+	return getStatus(ID_TCP_T3_humidity_setpoint_nt);
+}
+
+int
+doWrite_TCP_T3_lamp_feedback_1(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_feedback_1, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_feedback_1(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_feedback_1, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_feedback_1(void)
+{
+	return getStatus(ID_TCP_T3_lamp_feedback_1);
+}
+
+int
+doWrite_TCP_T3_lamp_feedback_2(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_feedback_2, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_feedback_2(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_feedback_2, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_feedback_2(void)
+{
+	return getStatus(ID_TCP_T3_lamp_feedback_2);
+}
+
+int
+doWrite_TCP_T3_lamp_feedback_3(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_feedback_3, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_feedback_3(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_feedback_3, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_feedback_3(void)
+{
+	return getStatus(ID_TCP_T3_lamp_feedback_3);
+}
+
+int
+doWrite_TCP_T3_lamp_feedback_4(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_feedback_4, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_feedback_4(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_feedback_4, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_feedback_4(void)
+{
+	return getStatus(ID_TCP_T3_lamp_feedback_4);
+}
+
+int
+doWrite_TCP_T3_lamp_feedback_5(int value)
+{
+	return doWrite(ID_TCP_T3_lamp_feedback_5, &value);
+}
+
+int
+addWrite_TCP_T3_lamp_feedback_5(int value)
+{
+	return addWrite(ID_TCP_T3_lamp_feedback_5, &value);
+}
+
+int
+getStatus_TCP_T3_lamp_feedback_5(void)
+{
+	return getStatus(ID_TCP_T3_lamp_feedback_5);
+}
+
+int
+doWrite_TCP_T3_requested_W(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_requested_W, &value);
+}
+
+int
+addWrite_TCP_T3_requested_W(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_requested_W, &value);
+}
+
+int
+getStatus_TCP_T3_requested_W(void)
+{
+	return getStatus(ID_TCP_T3_requested_W);
+}
+
+int
+doWrite_TCP_T3_control_type(u_int16_t value)
+{
+	return doWrite(ID_TCP_T3_control_type, &value);
+}
+
+int
+addWrite_TCP_T3_control_type(u_int16_t value)
+{
+	return addWrite(ID_TCP_T3_control_type, &value);
+}
+
+int
+getStatus_TCP_T3_control_type(void)
+{
+	return getStatus(ID_TCP_T3_control_type);
+}
+
+int
+doWrite_TCP_T3_daily_heating_s(u_int32_t value)
+{
+	return doWrite(ID_TCP_T3_daily_heating_s, &value);
+}
+
+int
+addWrite_TCP_T3_daily_heating_s(u_int32_t value)
+{
+	return addWrite(ID_TCP_T3_daily_heating_s, &value);
+}
+
+int
+getStatus_TCP_T3_daily_heating_s(void)
+{
+	return getStatus(ID_TCP_T3_daily_heating_s);
+}
+
+int
+doWrite_TCP_T3_monthly_heating_s(u_int32_t value)
+{
+	return doWrite(ID_TCP_T3_monthly_heating_s, &value);
+}
+
+int
+addWrite_TCP_T3_monthly_heating_s(u_int32_t value)
+{
+	return addWrite(ID_TCP_T3_monthly_heating_s, &value);
+}
+
+int
+getStatus_TCP_T3_monthly_heating_s(void)
+{
+	return getStatus(ID_TCP_T3_monthly_heating_s);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_RTU0_TYPE_PORT, &value);
+	return doWrite(ID_RTU0_TYPE_PORT, &value);
 }
 
 int
 addWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_RTU0_TYPE_PORT, &value);
+	return addWrite(ID_RTU0_TYPE_PORT, &value);
 }
 
 int
 getStatus_RTU0_TYPE_PORT(void)
 {
-    return getStatus(ID_RTU0_TYPE_PORT);
+	return getStatus(ID_RTU0_TYPE_PORT);
 }
 
 int
 doWrite_RTU0_BAUDRATE(u_int32_t value)
 {
-    return doWrite(ID_RTU0_BAUDRATE, &value);
+	return doWrite(ID_RTU0_BAUDRATE, &value);
 }
 
 int
 addWrite_RTU0_BAUDRATE(u_int32_t value)
 {
-    return addWrite(ID_RTU0_BAUDRATE, &value);
+	return addWrite(ID_RTU0_BAUDRATE, &value);
 }
 
 int
 getStatus_RTU0_BAUDRATE(void)
 {
-    return getStatus(ID_RTU0_BAUDRATE);
+	return getStatus(ID_RTU0_BAUDRATE);
 }
 
 int
 doWrite_RTU0_STATUS(u_int32_t value)
 {
-    return doWrite(ID_RTU0_STATUS, &value);
+	return doWrite(ID_RTU0_STATUS, &value);
 }
 
 int
 addWrite_RTU0_STATUS(u_int32_t value)
 {
-    return addWrite(ID_RTU0_STATUS, &value);
+	return addWrite(ID_RTU0_STATUS, &value);
 }
 
 int
 getStatus_RTU0_STATUS(void)
 {
-    return getStatus(ID_RTU0_STATUS);
+	return getStatus(ID_RTU0_STATUS);
 }
 
 int
 doWrite_RTU0_READS(u_int32_t value)
 {
-    return doWrite(ID_RTU0_READS, &value);
+	return doWrite(ID_RTU0_READS, &value);
 }
 
 int
 addWrite_RTU0_READS(u_int32_t value)
 {
-    return addWrite(ID_RTU0_READS, &value);
+	return addWrite(ID_RTU0_READS, &value);
 }
 
 int
 getStatus_RTU0_READS(void)
 {
-    return getStatus(ID_RTU0_READS);
+	return getStatus(ID_RTU0_READS);
 }
 
 int
 doWrite_RTU0_WRITES(u_int32_t value)
 {
-    return doWrite(ID_RTU0_WRITES, &value);
+	return doWrite(ID_RTU0_WRITES, &value);
 }
 
 int
 addWrite_RTU0_WRITES(u_int32_t value)
 {
-    return addWrite(ID_RTU0_WRITES, &value);
+	return addWrite(ID_RTU0_WRITES, &value);
 }
 
 int
 getStatus_RTU0_WRITES(void)
 {
-    return getStatus(ID_RTU0_WRITES);
+	return getStatus(ID_RTU0_WRITES);
 }
 
 int
 doWrite_RTU0_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_RTU0_TIMEOUTS, &value);
+	return doWrite(ID_RTU0_TIMEOUTS, &value);
 }
 
 int
 addWrite_RTU0_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_RTU0_TIMEOUTS, &value);
+	return addWrite(ID_RTU0_TIMEOUTS, &value);
 }
 
 int
 getStatus_RTU0_TIMEOUTS(void)
 {
-    return getStatus(ID_RTU0_TIMEOUTS);
+	return getStatus(ID_RTU0_TIMEOUTS);
 }
 
 int
 doWrite_RTU0_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_RTU0_COMM_ERRORS, &value);
+	return doWrite(ID_RTU0_COMM_ERRORS, &value);
 }
 
 int
 addWrite_RTU0_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_RTU0_COMM_ERRORS, &value);
+	return addWrite(ID_RTU0_COMM_ERRORS, &value);
 }
 
 int
 getStatus_RTU0_COMM_ERRORS(void)
 {
-    return getStatus(ID_RTU0_COMM_ERRORS);
+	return getStatus(ID_RTU0_COMM_ERRORS);
 }
 
 int
 doWrite_RTU0_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_RTU0_LAST_ERROR, &value);
+	return doWrite(ID_RTU0_LAST_ERROR, &value);
 }
 
 int
 addWrite_RTU0_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_RTU0_LAST_ERROR, &value);
+	return addWrite(ID_RTU0_LAST_ERROR, &value);
 }
 
 int
 getStatus_RTU0_LAST_ERROR(void)
 {
-    return getStatus(ID_RTU0_LAST_ERROR);
+	return getStatus(ID_RTU0_LAST_ERROR);
 }
 
 int
 doWrite_RTU0_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_RTU0_WRITE_QUEUE, &value);
+	return doWrite(ID_RTU0_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_RTU0_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_RTU0_WRITE_QUEUE, &value);
+	return addWrite(ID_RTU0_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_RTU0_WRITE_QUEUE(void)
 {
-    return getStatus(ID_RTU0_WRITE_QUEUE);
+	return getStatus(ID_RTU0_WRITE_QUEUE);
 }
 
 int
 doWrite_RTU0_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_RTU0_BUS_LOAD, &value);
+	return doWrite(ID_RTU0_BUS_LOAD, &value);
 }
 
 int
 addWrite_RTU0_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_RTU0_BUS_LOAD, &value);
+	return addWrite(ID_RTU0_BUS_LOAD, &value);
 }
 
 int
 getStatus_RTU0_BUS_LOAD(void)
 {
-    return getStatus(ID_RTU0_BUS_LOAD);
+	return getStatus(ID_RTU0_BUS_LOAD);
 }
 
 int
 doWrite_RTU2_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_RTU2_TYPE_PORT, &value);
+	return doWrite(ID_RTU2_TYPE_PORT, &value);
 }
 
 int
 addWrite_RTU2_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_RTU2_TYPE_PORT, &value);
+	return addWrite(ID_RTU2_TYPE_PORT, &value);
 }
 
 int
 getStatus_RTU2_TYPE_PORT(void)
 {
-    return getStatus(ID_RTU2_TYPE_PORT);
+	return getStatus(ID_RTU2_TYPE_PORT);
 }
 
 int
 doWrite_RTU2_BAUDRATE(u_int32_t value)
 {
-    return doWrite(ID_RTU2_BAUDRATE, &value);
+	return doWrite(ID_RTU2_BAUDRATE, &value);
 }
 
 int
 addWrite_RTU2_BAUDRATE(u_int32_t value)
 {
-    return addWrite(ID_RTU2_BAUDRATE, &value);
+	return addWrite(ID_RTU2_BAUDRATE, &value);
 }
 
 int
 getStatus_RTU2_BAUDRATE(void)
 {
-    return getStatus(ID_RTU2_BAUDRATE);
+	return getStatus(ID_RTU2_BAUDRATE);
 }
 
 int
 doWrite_RTU2_STATUS(u_int32_t value)
 {
-    return doWrite(ID_RTU2_STATUS, &value);
+	return doWrite(ID_RTU2_STATUS, &value);
 }
 
 int
 addWrite_RTU2_STATUS(u_int32_t value)
 {
-    return addWrite(ID_RTU2_STATUS, &value);
+	return addWrite(ID_RTU2_STATUS, &value);
 }
 
 int
 getStatus_RTU2_STATUS(void)
 {
-    return getStatus(ID_RTU2_STATUS);
+	return getStatus(ID_RTU2_STATUS);
 }
 
 int
 doWrite_RTU2_READS(u_int32_t value)
 {
-    return doWrite(ID_RTU2_READS, &value);
+	return doWrite(ID_RTU2_READS, &value);
 }
 
 int
 addWrite_RTU2_READS(u_int32_t value)
 {
-    return addWrite(ID_RTU2_READS, &value);
+	return addWrite(ID_RTU2_READS, &value);
 }
 
 int
 getStatus_RTU2_READS(void)
 {
-    return getStatus(ID_RTU2_READS);
+	return getStatus(ID_RTU2_READS);
 }
 
 int
 doWrite_RTU2_WRITES(u_int32_t value)
 {
-    return doWrite(ID_RTU2_WRITES, &value);
+	return doWrite(ID_RTU2_WRITES, &value);
 }
 
 int
 addWrite_RTU2_WRITES(u_int32_t value)
 {
-    return addWrite(ID_RTU2_WRITES, &value);
+	return addWrite(ID_RTU2_WRITES, &value);
 }
 
 int
 getStatus_RTU2_WRITES(void)
 {
-    return getStatus(ID_RTU2_WRITES);
+	return getStatus(ID_RTU2_WRITES);
 }
 
 int
 doWrite_RTU2_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_RTU2_TIMEOUTS, &value);
+	return doWrite(ID_RTU2_TIMEOUTS, &value);
 }
 
 int
 addWrite_RTU2_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_RTU2_TIMEOUTS, &value);
+	return addWrite(ID_RTU2_TIMEOUTS, &value);
 }
 
 int
 getStatus_RTU2_TIMEOUTS(void)
 {
-    return getStatus(ID_RTU2_TIMEOUTS);
+	return getStatus(ID_RTU2_TIMEOUTS);
 }
 
 int
 doWrite_RTU2_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_RTU2_COMM_ERRORS, &value);
+	return doWrite(ID_RTU2_COMM_ERRORS, &value);
 }
 
 int
 addWrite_RTU2_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_RTU2_COMM_ERRORS, &value);
+	return addWrite(ID_RTU2_COMM_ERRORS, &value);
 }
 
 int
 getStatus_RTU2_COMM_ERRORS(void)
 {
-    return getStatus(ID_RTU2_COMM_ERRORS);
+	return getStatus(ID_RTU2_COMM_ERRORS);
 }
 
 int
 doWrite_RTU2_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_RTU2_LAST_ERROR, &value);
+	return doWrite(ID_RTU2_LAST_ERROR, &value);
 }
 
 int
 addWrite_RTU2_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_RTU2_LAST_ERROR, &value);
+	return addWrite(ID_RTU2_LAST_ERROR, &value);
 }
 
 int
 getStatus_RTU2_LAST_ERROR(void)
 {
-    return getStatus(ID_RTU2_LAST_ERROR);
+	return getStatus(ID_RTU2_LAST_ERROR);
 }
 
 int
 doWrite_RTU2_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_RTU2_WRITE_QUEUE, &value);
+	return doWrite(ID_RTU2_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_RTU2_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_RTU2_WRITE_QUEUE, &value);
+	return addWrite(ID_RTU2_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_RTU2_WRITE_QUEUE(void)
 {
-    return getStatus(ID_RTU2_WRITE_QUEUE);
+	return getStatus(ID_RTU2_WRITE_QUEUE);
 }
 
 int
 doWrite_RTU2_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_RTU2_BUS_LOAD, &value);
+	return doWrite(ID_RTU2_BUS_LOAD, &value);
 }
 
 int
 addWrite_RTU2_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_RTU2_BUS_LOAD, &value);
+	return addWrite(ID_RTU2_BUS_LOAD, &value);
 }
 
 int
 getStatus_RTU2_BUS_LOAD(void)
 {
-    return getStatus(ID_RTU2_BUS_LOAD);
+	return getStatus(ID_RTU2_BUS_LOAD);
 }
 
 int
 doWrite_RTU3_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_RTU3_TYPE_PORT, &value);
+	return doWrite(ID_RTU3_TYPE_PORT, &value);
 }
 
 int
 addWrite_RTU3_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_RTU3_TYPE_PORT, &value);
+	return addWrite(ID_RTU3_TYPE_PORT, &value);
 }
 
 int
 getStatus_RTU3_TYPE_PORT(void)
 {
-    return getStatus(ID_RTU3_TYPE_PORT);
+	return getStatus(ID_RTU3_TYPE_PORT);
 }
 
 int
 doWrite_RTU3_BAUDRATE(u_int32_t value)
 {
-    return doWrite(ID_RTU3_BAUDRATE, &value);
+	return doWrite(ID_RTU3_BAUDRATE, &value);
 }
 
 int
 addWrite_RTU3_BAUDRATE(u_int32_t value)
 {
-    return addWrite(ID_RTU3_BAUDRATE, &value);
+	return addWrite(ID_RTU3_BAUDRATE, &value);
 }
 
 int
 getStatus_RTU3_BAUDRATE(void)
 {
-    return getStatus(ID_RTU3_BAUDRATE);
+	return getStatus(ID_RTU3_BAUDRATE);
 }
 
 int
 doWrite_RTU3_STATUS(u_int32_t value)
 {
-    return doWrite(ID_RTU3_STATUS, &value);
+	return doWrite(ID_RTU3_STATUS, &value);
 }
 
 int
 addWrite_RTU3_STATUS(u_int32_t value)
 {
-    return addWrite(ID_RTU3_STATUS, &value);
+	return addWrite(ID_RTU3_STATUS, &value);
 }
 
 int
 getStatus_RTU3_STATUS(void)
 {
-    return getStatus(ID_RTU3_STATUS);
+	return getStatus(ID_RTU3_STATUS);
 }
 
 int
 doWrite_RTU3_READS(u_int32_t value)
 {
-    return doWrite(ID_RTU3_READS, &value);
+	return doWrite(ID_RTU3_READS, &value);
 }
 
 int
 addWrite_RTU3_READS(u_int32_t value)
 {
-    return addWrite(ID_RTU3_READS, &value);
+	return addWrite(ID_RTU3_READS, &value);
 }
 
 int
 getStatus_RTU3_READS(void)
 {
-    return getStatus(ID_RTU3_READS);
+	return getStatus(ID_RTU3_READS);
 }
 
 int
 doWrite_RTU3_WRITES(u_int32_t value)
 {
-    return doWrite(ID_RTU3_WRITES, &value);
+	return doWrite(ID_RTU3_WRITES, &value);
 }
 
 int
 addWrite_RTU3_WRITES(u_int32_t value)
 {
-    return addWrite(ID_RTU3_WRITES, &value);
+	return addWrite(ID_RTU3_WRITES, &value);
 }
 
 int
 getStatus_RTU3_WRITES(void)
 {
-    return getStatus(ID_RTU3_WRITES);
+	return getStatus(ID_RTU3_WRITES);
 }
 
 int
 doWrite_RTU3_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_RTU3_TIMEOUTS, &value);
+	return doWrite(ID_RTU3_TIMEOUTS, &value);
 }
 
 int
 addWrite_RTU3_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_RTU3_TIMEOUTS, &value);
+	return addWrite(ID_RTU3_TIMEOUTS, &value);
 }
 
 int
 getStatus_RTU3_TIMEOUTS(void)
 {
-    return getStatus(ID_RTU3_TIMEOUTS);
+	return getStatus(ID_RTU3_TIMEOUTS);
 }
 
 int
 doWrite_RTU3_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_RTU3_COMM_ERRORS, &value);
+	return doWrite(ID_RTU3_COMM_ERRORS, &value);
 }
 
 int
 addWrite_RTU3_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_RTU3_COMM_ERRORS, &value);
+	return addWrite(ID_RTU3_COMM_ERRORS, &value);
 }
 
 int
 getStatus_RTU3_COMM_ERRORS(void)
 {
-    return getStatus(ID_RTU3_COMM_ERRORS);
+	return getStatus(ID_RTU3_COMM_ERRORS);
 }
 
 int
 doWrite_RTU3_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_RTU3_LAST_ERROR, &value);
+	return doWrite(ID_RTU3_LAST_ERROR, &value);
 }
 
 int
 addWrite_RTU3_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_RTU3_LAST_ERROR, &value);
+	return addWrite(ID_RTU3_LAST_ERROR, &value);
 }
 
 int
 getStatus_RTU3_LAST_ERROR(void)
 {
-    return getStatus(ID_RTU3_LAST_ERROR);
+	return getStatus(ID_RTU3_LAST_ERROR);
 }
 
 int
 doWrite_RTU3_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_RTU3_WRITE_QUEUE, &value);
+	return doWrite(ID_RTU3_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_RTU3_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_RTU3_WRITE_QUEUE, &value);
+	return addWrite(ID_RTU3_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_RTU3_WRITE_QUEUE(void)
 {
-    return getStatus(ID_RTU3_WRITE_QUEUE);
+	return getStatus(ID_RTU3_WRITE_QUEUE);
 }
 
 int
 doWrite_RTU3_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_RTU3_BUS_LOAD, &value);
+	return doWrite(ID_RTU3_BUS_LOAD, &value);
 }
 
 int
 addWrite_RTU3_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_RTU3_BUS_LOAD, &value);
+	return addWrite(ID_RTU3_BUS_LOAD, &value);
 }
 
 int
 getStatus_RTU3_BUS_LOAD(void)
 {
-    return getStatus(ID_RTU3_BUS_LOAD);
+	return getStatus(ID_RTU3_BUS_LOAD);
 }
 
 int
 doWrite_CAN0_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_CAN0_TYPE_PORT, &value);
+	return doWrite(ID_CAN0_TYPE_PORT, &value);
 }
 
 int
 addWrite_CAN0_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_CAN0_TYPE_PORT, &value);
+	return addWrite(ID_CAN0_TYPE_PORT, &value);
 }
 
 int
 getStatus_CAN0_TYPE_PORT(void)
 {
-    return getStatus(ID_CAN0_TYPE_PORT);
+	return getStatus(ID_CAN0_TYPE_PORT);
 }
 
 int
 doWrite_CAN0_BAUDRATE(u_int32_t value)
 {
-    return doWrite(ID_CAN0_BAUDRATE, &value);
+	return doWrite(ID_CAN0_BAUDRATE, &value);
 }
 
 int
 addWrite_CAN0_BAUDRATE(u_int32_t value)
 {
-    return addWrite(ID_CAN0_BAUDRATE, &value);
+	return addWrite(ID_CAN0_BAUDRATE, &value);
 }
 
 int
 getStatus_CAN0_BAUDRATE(void)
 {
-    return getStatus(ID_CAN0_BAUDRATE);
+	return getStatus(ID_CAN0_BAUDRATE);
 }
 
 int
 doWrite_CAN0_STATUS(u_int32_t value)
 {
-    return doWrite(ID_CAN0_STATUS, &value);
+	return doWrite(ID_CAN0_STATUS, &value);
 }
 
 int
 addWrite_CAN0_STATUS(u_int32_t value)
 {
-    return addWrite(ID_CAN0_STATUS, &value);
+	return addWrite(ID_CAN0_STATUS, &value);
 }
 
 int
 getStatus_CAN0_STATUS(void)
 {
-    return getStatus(ID_CAN0_STATUS);
+	return getStatus(ID_CAN0_STATUS);
 }
 
 int
 doWrite_CAN0_READS(u_int32_t value)
 {
-    return doWrite(ID_CAN0_READS, &value);
+	return doWrite(ID_CAN0_READS, &value);
 }
 
 int
 addWrite_CAN0_READS(u_int32_t value)
 {
-    return addWrite(ID_CAN0_READS, &value);
+	return addWrite(ID_CAN0_READS, &value);
 }
 
 int
 getStatus_CAN0_READS(void)
 {
-    return getStatus(ID_CAN0_READS);
+	return getStatus(ID_CAN0_READS);
 }
 
 int
 doWrite_CAN0_WRITES(u_int32_t value)
 {
-    return doWrite(ID_CAN0_WRITES, &value);
+	return doWrite(ID_CAN0_WRITES, &value);
 }
 
 int
 addWrite_CAN0_WRITES(u_int32_t value)
 {
-    return addWrite(ID_CAN0_WRITES, &value);
+	return addWrite(ID_CAN0_WRITES, &value);
 }
 
 int
 getStatus_CAN0_WRITES(void)
 {
-    return getStatus(ID_CAN0_WRITES);
+	return getStatus(ID_CAN0_WRITES);
 }
 
 int
 doWrite_CAN0_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_CAN0_TIMEOUTS, &value);
+	return doWrite(ID_CAN0_TIMEOUTS, &value);
 }
 
 int
 addWrite_CAN0_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_CAN0_TIMEOUTS, &value);
+	return addWrite(ID_CAN0_TIMEOUTS, &value);
 }
 
 int
 getStatus_CAN0_TIMEOUTS(void)
 {
-    return getStatus(ID_CAN0_TIMEOUTS);
+	return getStatus(ID_CAN0_TIMEOUTS);
 }
 
 int
 doWrite_CAN0_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_CAN0_COMM_ERRORS, &value);
+	return doWrite(ID_CAN0_COMM_ERRORS, &value);
 }
 
 int
 addWrite_CAN0_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_CAN0_COMM_ERRORS, &value);
+	return addWrite(ID_CAN0_COMM_ERRORS, &value);
 }
 
 int
 getStatus_CAN0_COMM_ERRORS(void)
 {
-    return getStatus(ID_CAN0_COMM_ERRORS);
+	return getStatus(ID_CAN0_COMM_ERRORS);
 }
 
 int
 doWrite_CAN0_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_CAN0_LAST_ERROR, &value);
+	return doWrite(ID_CAN0_LAST_ERROR, &value);
 }
 
 int
 addWrite_CAN0_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_CAN0_LAST_ERROR, &value);
+	return addWrite(ID_CAN0_LAST_ERROR, &value);
 }
 
 int
 getStatus_CAN0_LAST_ERROR(void)
 {
-    return getStatus(ID_CAN0_LAST_ERROR);
+	return getStatus(ID_CAN0_LAST_ERROR);
 }
 
 int
 doWrite_CAN0_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_CAN0_WRITE_QUEUE, &value);
+	return doWrite(ID_CAN0_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_CAN0_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_CAN0_WRITE_QUEUE, &value);
+	return addWrite(ID_CAN0_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_CAN0_WRITE_QUEUE(void)
 {
-    return getStatus(ID_CAN0_WRITE_QUEUE);
+	return getStatus(ID_CAN0_WRITE_QUEUE);
 }
 
 int
 doWrite_CAN0_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_CAN0_BUS_LOAD, &value);
+	return doWrite(ID_CAN0_BUS_LOAD, &value);
 }
 
 int
 addWrite_CAN0_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_CAN0_BUS_LOAD, &value);
+	return addWrite(ID_CAN0_BUS_LOAD, &value);
 }
 
 int
 getStatus_CAN0_BUS_LOAD(void)
 {
-    return getStatus(ID_CAN0_BUS_LOAD);
+	return getStatus(ID_CAN0_BUS_LOAD);
 }
 
 int
 doWrite_CAN1_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_CAN1_TYPE_PORT, &value);
+	return doWrite(ID_CAN1_TYPE_PORT, &value);
 }
 
 int
 addWrite_CAN1_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_CAN1_TYPE_PORT, &value);
+	return addWrite(ID_CAN1_TYPE_PORT, &value);
 }
 
 int
 getStatus_CAN1_TYPE_PORT(void)
 {
-    return getStatus(ID_CAN1_TYPE_PORT);
+	return getStatus(ID_CAN1_TYPE_PORT);
 }
 
 int
 doWrite_CAN1_BAUDRATE(u_int32_t value)
 {
-    return doWrite(ID_CAN1_BAUDRATE, &value);
+	return doWrite(ID_CAN1_BAUDRATE, &value);
 }
 
 int
 addWrite_CAN1_BAUDRATE(u_int32_t value)
 {
-    return addWrite(ID_CAN1_BAUDRATE, &value);
+	return addWrite(ID_CAN1_BAUDRATE, &value);
 }
 
 int
 getStatus_CAN1_BAUDRATE(void)
 {
-    return getStatus(ID_CAN1_BAUDRATE);
+	return getStatus(ID_CAN1_BAUDRATE);
 }
 
 int
 doWrite_CAN1_STATUS(u_int32_t value)
 {
-    return doWrite(ID_CAN1_STATUS, &value);
+	return doWrite(ID_CAN1_STATUS, &value);
 }
 
 int
 addWrite_CAN1_STATUS(u_int32_t value)
 {
-    return addWrite(ID_CAN1_STATUS, &value);
+	return addWrite(ID_CAN1_STATUS, &value);
 }
 
 int
 getStatus_CAN1_STATUS(void)
 {
-    return getStatus(ID_CAN1_STATUS);
+	return getStatus(ID_CAN1_STATUS);
 }
 
 int
 doWrite_CAN1_READS(u_int32_t value)
 {
-    return doWrite(ID_CAN1_READS, &value);
+	return doWrite(ID_CAN1_READS, &value);
 }
 
 int
 addWrite_CAN1_READS(u_int32_t value)
 {
-    return addWrite(ID_CAN1_READS, &value);
+	return addWrite(ID_CAN1_READS, &value);
 }
 
 int
 getStatus_CAN1_READS(void)
 {
-    return getStatus(ID_CAN1_READS);
+	return getStatus(ID_CAN1_READS);
 }
 
 int
 doWrite_CAN1_WRITES(u_int32_t value)
 {
-    return doWrite(ID_CAN1_WRITES, &value);
+	return doWrite(ID_CAN1_WRITES, &value);
 }
 
 int
 addWrite_CAN1_WRITES(u_int32_t value)
 {
-    return addWrite(ID_CAN1_WRITES, &value);
+	return addWrite(ID_CAN1_WRITES, &value);
 }
 
 int
 getStatus_CAN1_WRITES(void)
 {
-    return getStatus(ID_CAN1_WRITES);
+	return getStatus(ID_CAN1_WRITES);
 }
 
 int
 doWrite_CAN1_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_CAN1_TIMEOUTS, &value);
+	return doWrite(ID_CAN1_TIMEOUTS, &value);
 }
 
 int
 addWrite_CAN1_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_CAN1_TIMEOUTS, &value);
+	return addWrite(ID_CAN1_TIMEOUTS, &value);
 }
 
 int
 getStatus_CAN1_TIMEOUTS(void)
 {
-    return getStatus(ID_CAN1_TIMEOUTS);
+	return getStatus(ID_CAN1_TIMEOUTS);
 }
 
 int
 doWrite_CAN1_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_CAN1_COMM_ERRORS, &value);
+	return doWrite(ID_CAN1_COMM_ERRORS, &value);
 }
 
 int
 addWrite_CAN1_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_CAN1_COMM_ERRORS, &value);
+	return addWrite(ID_CAN1_COMM_ERRORS, &value);
 }
 
 int
 getStatus_CAN1_COMM_ERRORS(void)
 {
-    return getStatus(ID_CAN1_COMM_ERRORS);
+	return getStatus(ID_CAN1_COMM_ERRORS);
 }
 
 int
 doWrite_CAN1_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_CAN1_LAST_ERROR, &value);
+	return doWrite(ID_CAN1_LAST_ERROR, &value);
 }
 
 int
 addWrite_CAN1_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_CAN1_LAST_ERROR, &value);
+	return addWrite(ID_CAN1_LAST_ERROR, &value);
 }
 
 int
 getStatus_CAN1_LAST_ERROR(void)
 {
-    return getStatus(ID_CAN1_LAST_ERROR);
+	return getStatus(ID_CAN1_LAST_ERROR);
 }
 
 int
 doWrite_CAN1_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_CAN1_WRITE_QUEUE, &value);
+	return doWrite(ID_CAN1_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_CAN1_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_CAN1_WRITE_QUEUE, &value);
+	return addWrite(ID_CAN1_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_CAN1_WRITE_QUEUE(void)
 {
-    return getStatus(ID_CAN1_WRITE_QUEUE);
+	return getStatus(ID_CAN1_WRITE_QUEUE);
 }
 
 int
 doWrite_CAN1_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_CAN1_BUS_LOAD, &value);
+	return doWrite(ID_CAN1_BUS_LOAD, &value);
 }
 
 int
 addWrite_CAN1_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_CAN1_BUS_LOAD, &value);
+	return addWrite(ID_CAN1_BUS_LOAD, &value);
 }
 
 int
 getStatus_CAN1_BUS_LOAD(void)
 {
-    return getStatus(ID_CAN1_BUS_LOAD);
+	return getStatus(ID_CAN1_BUS_LOAD);
 }
 
 int
 doWrite_TCPS_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCPS_TYPE_PORT, &value);
+	return doWrite(ID_TCPS_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCPS_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCPS_TYPE_PORT, &value);
+	return addWrite(ID_TCPS_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCPS_TYPE_PORT(void)
 {
-    return getStatus(ID_TCPS_TYPE_PORT);
+	return getStatus(ID_TCPS_TYPE_PORT);
 }
 
 int
 doWrite_TCPS_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCPS_IP_ADDRESS, &value);
+	return doWrite(ID_TCPS_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCPS_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCPS_IP_ADDRESS, &value);
+	return addWrite(ID_TCPS_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCPS_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCPS_IP_ADDRESS);
+	return getStatus(ID_TCPS_IP_ADDRESS);
 }
 
 int
 doWrite_TCPS_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCPS_STATUS, &value);
+	return doWrite(ID_TCPS_STATUS, &value);
 }
 
 int
 addWrite_TCPS_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCPS_STATUS, &value);
+	return addWrite(ID_TCPS_STATUS, &value);
 }
 
 int
 getStatus_TCPS_STATUS(void)
 {
-    return getStatus(ID_TCPS_STATUS);
+	return getStatus(ID_TCPS_STATUS);
 }
 
 int
 doWrite_TCPS_READS(u_int32_t value)
 {
-    return doWrite(ID_TCPS_READS, &value);
+	return doWrite(ID_TCPS_READS, &value);
 }
 
 int
 addWrite_TCPS_READS(u_int32_t value)
 {
-    return addWrite(ID_TCPS_READS, &value);
+	return addWrite(ID_TCPS_READS, &value);
 }
 
 int
 getStatus_TCPS_READS(void)
 {
-    return getStatus(ID_TCPS_READS);
+	return getStatus(ID_TCPS_READS);
 }
 
 int
 doWrite_TCPS_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCPS_WRITES, &value);
+	return doWrite(ID_TCPS_WRITES, &value);
 }
 
 int
 addWrite_TCPS_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCPS_WRITES, &value);
+	return addWrite(ID_TCPS_WRITES, &value);
 }
 
 int
 getStatus_TCPS_WRITES(void)
 {
-    return getStatus(ID_TCPS_WRITES);
+	return getStatus(ID_TCPS_WRITES);
 }
 
 int
 doWrite_TCPS_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCPS_TIMEOUTS, &value);
+	return doWrite(ID_TCPS_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCPS_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCPS_TIMEOUTS, &value);
+	return addWrite(ID_TCPS_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCPS_TIMEOUTS(void)
 {
-    return getStatus(ID_TCPS_TIMEOUTS);
+	return getStatus(ID_TCPS_TIMEOUTS);
 }
 
 int
 doWrite_TCPS_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCPS_COMM_ERRORS, &value);
+	return doWrite(ID_TCPS_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCPS_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCPS_COMM_ERRORS, &value);
+	return addWrite(ID_TCPS_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCPS_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCPS_COMM_ERRORS);
+	return getStatus(ID_TCPS_COMM_ERRORS);
 }
 
 int
 doWrite_TCPS_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCPS_LAST_ERROR, &value);
+	return doWrite(ID_TCPS_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCPS_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCPS_LAST_ERROR, &value);
+	return addWrite(ID_TCPS_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCPS_LAST_ERROR(void)
 {
-    return getStatus(ID_TCPS_LAST_ERROR);
+	return getStatus(ID_TCPS_LAST_ERROR);
 }
 
 int
 doWrite_TCPS_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCPS_WRITE_QUEUE, &value);
+	return doWrite(ID_TCPS_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCPS_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCPS_WRITE_QUEUE, &value);
+	return addWrite(ID_TCPS_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCPS_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCPS_WRITE_QUEUE);
+	return getStatus(ID_TCPS_WRITE_QUEUE);
 }
 
 int
 doWrite_TCPS_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCPS_BUS_LOAD, &value);
+	return doWrite(ID_TCPS_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCPS_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCPS_BUS_LOAD, &value);
+	return addWrite(ID_TCPS_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCPS_BUS_LOAD(void)
 {
-    return getStatus(ID_TCPS_BUS_LOAD);
+	return getStatus(ID_TCPS_BUS_LOAD);
 }
 
 int
 doWrite_TCP0_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP0_TYPE_PORT, &value);
+	return doWrite(ID_TCP0_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP0_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP0_TYPE_PORT, &value);
+	return addWrite(ID_TCP0_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP0_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP0_TYPE_PORT);
+	return getStatus(ID_TCP0_TYPE_PORT);
 }
 
 int
 doWrite_TCP0_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP0_IP_ADDRESS, &value);
+	return doWrite(ID_TCP0_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP0_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP0_IP_ADDRESS, &value);
+	return addWrite(ID_TCP0_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP0_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP0_IP_ADDRESS);
+	return getStatus(ID_TCP0_IP_ADDRESS);
 }
 
 int
 doWrite_TCP0_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP0_STATUS, &value);
+	return doWrite(ID_TCP0_STATUS, &value);
 }
 
 int
 addWrite_TCP0_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP0_STATUS, &value);
+	return addWrite(ID_TCP0_STATUS, &value);
 }
 
 int
 getStatus_TCP0_STATUS(void)
 {
-    return getStatus(ID_TCP0_STATUS);
+	return getStatus(ID_TCP0_STATUS);
 }
 
 int
 doWrite_TCP0_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP0_READS, &value);
+	return doWrite(ID_TCP0_READS, &value);
 }
 
 int
 addWrite_TCP0_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP0_READS, &value);
+	return addWrite(ID_TCP0_READS, &value);
 }
 
 int
 getStatus_TCP0_READS(void)
 {
-    return getStatus(ID_TCP0_READS);
+	return getStatus(ID_TCP0_READS);
 }
 
 int
 doWrite_TCP0_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP0_WRITES, &value);
+	return doWrite(ID_TCP0_WRITES, &value);
 }
 
 int
 addWrite_TCP0_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP0_WRITES, &value);
+	return addWrite(ID_TCP0_WRITES, &value);
 }
 
 int
 getStatus_TCP0_WRITES(void)
 {
-    return getStatus(ID_TCP0_WRITES);
+	return getStatus(ID_TCP0_WRITES);
 }
 
 int
 doWrite_TCP0_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP0_TIMEOUTS, &value);
+	return doWrite(ID_TCP0_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP0_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP0_TIMEOUTS, &value);
+	return addWrite(ID_TCP0_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP0_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP0_TIMEOUTS);
+	return getStatus(ID_TCP0_TIMEOUTS);
 }
 
 int
 doWrite_TCP0_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP0_COMM_ERRORS, &value);
+	return doWrite(ID_TCP0_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP0_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP0_COMM_ERRORS, &value);
+	return addWrite(ID_TCP0_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP0_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP0_COMM_ERRORS);
+	return getStatus(ID_TCP0_COMM_ERRORS);
 }
 
 int
 doWrite_TCP0_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP0_LAST_ERROR, &value);
+	return doWrite(ID_TCP0_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP0_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP0_LAST_ERROR, &value);
+	return addWrite(ID_TCP0_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP0_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP0_LAST_ERROR);
+	return getStatus(ID_TCP0_LAST_ERROR);
 }
 
 int
 doWrite_TCP0_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP0_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP0_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP0_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP0_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP0_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP0_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP0_WRITE_QUEUE);
+	return getStatus(ID_TCP0_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP0_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP0_BUS_LOAD, &value);
+	return doWrite(ID_TCP0_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP0_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP0_BUS_LOAD, &value);
+	return addWrite(ID_TCP0_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP0_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP0_BUS_LOAD);
+	return getStatus(ID_TCP0_BUS_LOAD);
 }
 
 int
 doWrite_TCP1_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP1_TYPE_PORT, &value);
+	return doWrite(ID_TCP1_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP1_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP1_TYPE_PORT, &value);
+	return addWrite(ID_TCP1_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP1_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP1_TYPE_PORT);
+	return getStatus(ID_TCP1_TYPE_PORT);
 }
 
 int
 doWrite_TCP1_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP1_IP_ADDRESS, &value);
+	return doWrite(ID_TCP1_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP1_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP1_IP_ADDRESS, &value);
+	return addWrite(ID_TCP1_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP1_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP1_IP_ADDRESS);
+	return getStatus(ID_TCP1_IP_ADDRESS);
 }
 
 int
 doWrite_TCP1_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP1_STATUS, &value);
+	return doWrite(ID_TCP1_STATUS, &value);
 }
 
 int
 addWrite_TCP1_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP1_STATUS, &value);
+	return addWrite(ID_TCP1_STATUS, &value);
 }
 
 int
 getStatus_TCP1_STATUS(void)
 {
-    return getStatus(ID_TCP1_STATUS);
+	return getStatus(ID_TCP1_STATUS);
 }
 
 int
 doWrite_TCP1_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP1_READS, &value);
+	return doWrite(ID_TCP1_READS, &value);
 }
 
 int
 addWrite_TCP1_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP1_READS, &value);
+	return addWrite(ID_TCP1_READS, &value);
 }
 
 int
 getStatus_TCP1_READS(void)
 {
-    return getStatus(ID_TCP1_READS);
+	return getStatus(ID_TCP1_READS);
 }
 
 int
 doWrite_TCP1_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP1_WRITES, &value);
+	return doWrite(ID_TCP1_WRITES, &value);
 }
 
 int
 addWrite_TCP1_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP1_WRITES, &value);
+	return addWrite(ID_TCP1_WRITES, &value);
 }
 
 int
 getStatus_TCP1_WRITES(void)
 {
-    return getStatus(ID_TCP1_WRITES);
+	return getStatus(ID_TCP1_WRITES);
 }
 
 int
 doWrite_TCP1_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP1_TIMEOUTS, &value);
+	return doWrite(ID_TCP1_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP1_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP1_TIMEOUTS, &value);
+	return addWrite(ID_TCP1_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP1_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP1_TIMEOUTS);
+	return getStatus(ID_TCP1_TIMEOUTS);
 }
 
 int
 doWrite_TCP1_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP1_COMM_ERRORS, &value);
+	return doWrite(ID_TCP1_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP1_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP1_COMM_ERRORS, &value);
+	return addWrite(ID_TCP1_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP1_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP1_COMM_ERRORS);
+	return getStatus(ID_TCP1_COMM_ERRORS);
 }
 
 int
 doWrite_TCP1_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP1_LAST_ERROR, &value);
+	return doWrite(ID_TCP1_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP1_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP1_LAST_ERROR, &value);
+	return addWrite(ID_TCP1_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP1_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP1_LAST_ERROR);
+	return getStatus(ID_TCP1_LAST_ERROR);
 }
 
 int
 doWrite_TCP1_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP1_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP1_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP1_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP1_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP1_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP1_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP1_WRITE_QUEUE);
+	return getStatus(ID_TCP1_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP1_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP1_BUS_LOAD, &value);
+	return doWrite(ID_TCP1_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP1_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP1_BUS_LOAD, &value);
+	return addWrite(ID_TCP1_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP1_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP1_BUS_LOAD);
+	return getStatus(ID_TCP1_BUS_LOAD);
 }
 
 int
 doWrite_TCP2_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP2_TYPE_PORT, &value);
+	return doWrite(ID_TCP2_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP2_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP2_TYPE_PORT, &value);
+	return addWrite(ID_TCP2_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP2_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP2_TYPE_PORT);
+	return getStatus(ID_TCP2_TYPE_PORT);
 }
 
 int
 doWrite_TCP2_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP2_IP_ADDRESS, &value);
+	return doWrite(ID_TCP2_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP2_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP2_IP_ADDRESS, &value);
+	return addWrite(ID_TCP2_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP2_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP2_IP_ADDRESS);
+	return getStatus(ID_TCP2_IP_ADDRESS);
 }
 
 int
 doWrite_TCP2_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP2_STATUS, &value);
+	return doWrite(ID_TCP2_STATUS, &value);
 }
 
 int
 addWrite_TCP2_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP2_STATUS, &value);
+	return addWrite(ID_TCP2_STATUS, &value);
 }
 
 int
 getStatus_TCP2_STATUS(void)
 {
-    return getStatus(ID_TCP2_STATUS);
+	return getStatus(ID_TCP2_STATUS);
 }
 
 int
 doWrite_TCP2_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP2_READS, &value);
+	return doWrite(ID_TCP2_READS, &value);
 }
 
 int
 addWrite_TCP2_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP2_READS, &value);
+	return addWrite(ID_TCP2_READS, &value);
 }
 
 int
 getStatus_TCP2_READS(void)
 {
-    return getStatus(ID_TCP2_READS);
+	return getStatus(ID_TCP2_READS);
 }
 
 int
 doWrite_TCP2_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP2_WRITES, &value);
+	return doWrite(ID_TCP2_WRITES, &value);
 }
 
 int
 addWrite_TCP2_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP2_WRITES, &value);
+	return addWrite(ID_TCP2_WRITES, &value);
 }
 
 int
 getStatus_TCP2_WRITES(void)
 {
-    return getStatus(ID_TCP2_WRITES);
+	return getStatus(ID_TCP2_WRITES);
 }
 
 int
 doWrite_TCP2_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP2_TIMEOUTS, &value);
+	return doWrite(ID_TCP2_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP2_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP2_TIMEOUTS, &value);
+	return addWrite(ID_TCP2_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP2_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP2_TIMEOUTS);
+	return getStatus(ID_TCP2_TIMEOUTS);
 }
 
 int
 doWrite_TCP2_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP2_COMM_ERRORS, &value);
+	return doWrite(ID_TCP2_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP2_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP2_COMM_ERRORS, &value);
+	return addWrite(ID_TCP2_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP2_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP2_COMM_ERRORS);
+	return getStatus(ID_TCP2_COMM_ERRORS);
 }
 
 int
 doWrite_TCP2_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP2_LAST_ERROR, &value);
+	return doWrite(ID_TCP2_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP2_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP2_LAST_ERROR, &value);
+	return addWrite(ID_TCP2_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP2_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP2_LAST_ERROR);
+	return getStatus(ID_TCP2_LAST_ERROR);
 }
 
 int
 doWrite_TCP2_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP2_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP2_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP2_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP2_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP2_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP2_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP2_WRITE_QUEUE);
+	return getStatus(ID_TCP2_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP2_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP2_BUS_LOAD, &value);
+	return doWrite(ID_TCP2_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP2_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP2_BUS_LOAD, &value);
+	return addWrite(ID_TCP2_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP2_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP2_BUS_LOAD);
+	return getStatus(ID_TCP2_BUS_LOAD);
 }
 
 int
 doWrite_TCP3_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP3_TYPE_PORT, &value);
+	return doWrite(ID_TCP3_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP3_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP3_TYPE_PORT, &value);
+	return addWrite(ID_TCP3_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP3_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP3_TYPE_PORT);
+	return getStatus(ID_TCP3_TYPE_PORT);
 }
 
 int
 doWrite_TCP3_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP3_IP_ADDRESS, &value);
+	return doWrite(ID_TCP3_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP3_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP3_IP_ADDRESS, &value);
+	return addWrite(ID_TCP3_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP3_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP3_IP_ADDRESS);
+	return getStatus(ID_TCP3_IP_ADDRESS);
 }
 
 int
 doWrite_TCP3_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP3_STATUS, &value);
+	return doWrite(ID_TCP3_STATUS, &value);
 }
 
 int
 addWrite_TCP3_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP3_STATUS, &value);
+	return addWrite(ID_TCP3_STATUS, &value);
 }
 
 int
 getStatus_TCP3_STATUS(void)
 {
-    return getStatus(ID_TCP3_STATUS);
+	return getStatus(ID_TCP3_STATUS);
 }
 
 int
 doWrite_TCP3_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP3_READS, &value);
+	return doWrite(ID_TCP3_READS, &value);
 }
 
 int
 addWrite_TCP3_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP3_READS, &value);
+	return addWrite(ID_TCP3_READS, &value);
 }
 
 int
 getStatus_TCP3_READS(void)
 {
-    return getStatus(ID_TCP3_READS);
+	return getStatus(ID_TCP3_READS);
 }
 
 int
 doWrite_TCP3_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP3_WRITES, &value);
+	return doWrite(ID_TCP3_WRITES, &value);
 }
 
 int
 addWrite_TCP3_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP3_WRITES, &value);
+	return addWrite(ID_TCP3_WRITES, &value);
 }
 
 int
 getStatus_TCP3_WRITES(void)
 {
-    return getStatus(ID_TCP3_WRITES);
+	return getStatus(ID_TCP3_WRITES);
 }
 
 int
 doWrite_TCP3_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP3_TIMEOUTS, &value);
+	return doWrite(ID_TCP3_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP3_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP3_TIMEOUTS, &value);
+	return addWrite(ID_TCP3_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP3_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP3_TIMEOUTS);
+	return getStatus(ID_TCP3_TIMEOUTS);
 }
 
 int
 doWrite_TCP3_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP3_COMM_ERRORS, &value);
+	return doWrite(ID_TCP3_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP3_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP3_COMM_ERRORS, &value);
+	return addWrite(ID_TCP3_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP3_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP3_COMM_ERRORS);
+	return getStatus(ID_TCP3_COMM_ERRORS);
 }
 
 int
 doWrite_TCP3_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP3_LAST_ERROR, &value);
+	return doWrite(ID_TCP3_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP3_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP3_LAST_ERROR, &value);
+	return addWrite(ID_TCP3_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP3_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP3_LAST_ERROR);
+	return getStatus(ID_TCP3_LAST_ERROR);
 }
 
 int
 doWrite_TCP3_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP3_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP3_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP3_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP3_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP3_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP3_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP3_WRITE_QUEUE);
+	return getStatus(ID_TCP3_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP3_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP3_BUS_LOAD, &value);
+	return doWrite(ID_TCP3_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP3_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP3_BUS_LOAD, &value);
+	return addWrite(ID_TCP3_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP3_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP3_BUS_LOAD);
+	return getStatus(ID_TCP3_BUS_LOAD);
 }
 
 int
 doWrite_TCP4_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP4_TYPE_PORT, &value);
+	return doWrite(ID_TCP4_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP4_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP4_TYPE_PORT, &value);
+	return addWrite(ID_TCP4_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP4_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP4_TYPE_PORT);
+	return getStatus(ID_TCP4_TYPE_PORT);
 }
 
 int
 doWrite_TCP4_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP4_IP_ADDRESS, &value);
+	return doWrite(ID_TCP4_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP4_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP4_IP_ADDRESS, &value);
+	return addWrite(ID_TCP4_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP4_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP4_IP_ADDRESS);
+	return getStatus(ID_TCP4_IP_ADDRESS);
 }
 
 int
 doWrite_TCP4_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP4_STATUS, &value);
+	return doWrite(ID_TCP4_STATUS, &value);
 }
 
 int
 addWrite_TCP4_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP4_STATUS, &value);
+	return addWrite(ID_TCP4_STATUS, &value);
 }
 
 int
 getStatus_TCP4_STATUS(void)
 {
-    return getStatus(ID_TCP4_STATUS);
+	return getStatus(ID_TCP4_STATUS);
 }
 
 int
 doWrite_TCP4_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP4_READS, &value);
+	return doWrite(ID_TCP4_READS, &value);
 }
 
 int
 addWrite_TCP4_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP4_READS, &value);
+	return addWrite(ID_TCP4_READS, &value);
 }
 
 int
 getStatus_TCP4_READS(void)
 {
-    return getStatus(ID_TCP4_READS);
+	return getStatus(ID_TCP4_READS);
 }
 
 int
 doWrite_TCP4_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP4_WRITES, &value);
+	return doWrite(ID_TCP4_WRITES, &value);
 }
 
 int
 addWrite_TCP4_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP4_WRITES, &value);
+	return addWrite(ID_TCP4_WRITES, &value);
 }
 
 int
 getStatus_TCP4_WRITES(void)
 {
-    return getStatus(ID_TCP4_WRITES);
+	return getStatus(ID_TCP4_WRITES);
 }
 
 int
 doWrite_TCP4_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP4_TIMEOUTS, &value);
+	return doWrite(ID_TCP4_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP4_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP4_TIMEOUTS, &value);
+	return addWrite(ID_TCP4_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP4_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP4_TIMEOUTS);
+	return getStatus(ID_TCP4_TIMEOUTS);
 }
 
 int
 doWrite_TCP4_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP4_COMM_ERRORS, &value);
+	return doWrite(ID_TCP4_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP4_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP4_COMM_ERRORS, &value);
+	return addWrite(ID_TCP4_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP4_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP4_COMM_ERRORS);
+	return getStatus(ID_TCP4_COMM_ERRORS);
 }
 
 int
 doWrite_TCP4_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP4_LAST_ERROR, &value);
+	return doWrite(ID_TCP4_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP4_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP4_LAST_ERROR, &value);
+	return addWrite(ID_TCP4_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP4_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP4_LAST_ERROR);
+	return getStatus(ID_TCP4_LAST_ERROR);
 }
 
 int
 doWrite_TCP4_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP4_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP4_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP4_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP4_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP4_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP4_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP4_WRITE_QUEUE);
+	return getStatus(ID_TCP4_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP4_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP4_BUS_LOAD, &value);
+	return doWrite(ID_TCP4_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP4_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP4_BUS_LOAD, &value);
+	return addWrite(ID_TCP4_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP4_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP4_BUS_LOAD);
+	return getStatus(ID_TCP4_BUS_LOAD);
 }
 
 int
 doWrite_TCP5_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP5_TYPE_PORT, &value);
+	return doWrite(ID_TCP5_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP5_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP5_TYPE_PORT, &value);
+	return addWrite(ID_TCP5_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP5_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP5_TYPE_PORT);
+	return getStatus(ID_TCP5_TYPE_PORT);
 }
 
 int
 doWrite_TCP5_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP5_IP_ADDRESS, &value);
+	return doWrite(ID_TCP5_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP5_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP5_IP_ADDRESS, &value);
+	return addWrite(ID_TCP5_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP5_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP5_IP_ADDRESS);
+	return getStatus(ID_TCP5_IP_ADDRESS);
 }
 
 int
 doWrite_TCP5_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP5_STATUS, &value);
+	return doWrite(ID_TCP5_STATUS, &value);
 }
 
 int
 addWrite_TCP5_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP5_STATUS, &value);
+	return addWrite(ID_TCP5_STATUS, &value);
 }
 
 int
 getStatus_TCP5_STATUS(void)
 {
-    return getStatus(ID_TCP5_STATUS);
+	return getStatus(ID_TCP5_STATUS);
 }
 
 int
 doWrite_TCP5_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP5_READS, &value);
+	return doWrite(ID_TCP5_READS, &value);
 }
 
 int
 addWrite_TCP5_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP5_READS, &value);
+	return addWrite(ID_TCP5_READS, &value);
 }
 
 int
 getStatus_TCP5_READS(void)
 {
-    return getStatus(ID_TCP5_READS);
+	return getStatus(ID_TCP5_READS);
 }
 
 int
 doWrite_TCP5_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP5_WRITES, &value);
+	return doWrite(ID_TCP5_WRITES, &value);
 }
 
 int
 addWrite_TCP5_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP5_WRITES, &value);
+	return addWrite(ID_TCP5_WRITES, &value);
 }
 
 int
 getStatus_TCP5_WRITES(void)
 {
-    return getStatus(ID_TCP5_WRITES);
+	return getStatus(ID_TCP5_WRITES);
 }
 
 int
 doWrite_TCP5_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP5_TIMEOUTS, &value);
+	return doWrite(ID_TCP5_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP5_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP5_TIMEOUTS, &value);
+	return addWrite(ID_TCP5_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP5_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP5_TIMEOUTS);
+	return getStatus(ID_TCP5_TIMEOUTS);
 }
 
 int
 doWrite_TCP5_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP5_COMM_ERRORS, &value);
+	return doWrite(ID_TCP5_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP5_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP5_COMM_ERRORS, &value);
+	return addWrite(ID_TCP5_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP5_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP5_COMM_ERRORS);
+	return getStatus(ID_TCP5_COMM_ERRORS);
 }
 
 int
 doWrite_TCP5_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP5_LAST_ERROR, &value);
+	return doWrite(ID_TCP5_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP5_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP5_LAST_ERROR, &value);
+	return addWrite(ID_TCP5_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP5_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP5_LAST_ERROR);
+	return getStatus(ID_TCP5_LAST_ERROR);
 }
 
 int
 doWrite_TCP5_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP5_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP5_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP5_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP5_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP5_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP5_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP5_WRITE_QUEUE);
+	return getStatus(ID_TCP5_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP5_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP5_BUS_LOAD, &value);
+	return doWrite(ID_TCP5_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP5_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP5_BUS_LOAD, &value);
+	return addWrite(ID_TCP5_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP5_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP5_BUS_LOAD);
+	return getStatus(ID_TCP5_BUS_LOAD);
 }
 
 int
 doWrite_TCP6_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP6_TYPE_PORT, &value);
+	return doWrite(ID_TCP6_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP6_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP6_TYPE_PORT, &value);
+	return addWrite(ID_TCP6_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP6_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP6_TYPE_PORT);
+	return getStatus(ID_TCP6_TYPE_PORT);
 }
 
 int
 doWrite_TCP6_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP6_IP_ADDRESS, &value);
+	return doWrite(ID_TCP6_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP6_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP6_IP_ADDRESS, &value);
+	return addWrite(ID_TCP6_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP6_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP6_IP_ADDRESS);
+	return getStatus(ID_TCP6_IP_ADDRESS);
 }
 
 int
 doWrite_TCP6_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP6_STATUS, &value);
+	return doWrite(ID_TCP6_STATUS, &value);
 }
 
 int
 addWrite_TCP6_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP6_STATUS, &value);
+	return addWrite(ID_TCP6_STATUS, &value);
 }
 
 int
 getStatus_TCP6_STATUS(void)
 {
-    return getStatus(ID_TCP6_STATUS);
+	return getStatus(ID_TCP6_STATUS);
 }
 
 int
 doWrite_TCP6_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP6_READS, &value);
+	return doWrite(ID_TCP6_READS, &value);
 }
 
 int
 addWrite_TCP6_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP6_READS, &value);
+	return addWrite(ID_TCP6_READS, &value);
 }
 
 int
 getStatus_TCP6_READS(void)
 {
-    return getStatus(ID_TCP6_READS);
+	return getStatus(ID_TCP6_READS);
 }
 
 int
 doWrite_TCP6_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP6_WRITES, &value);
+	return doWrite(ID_TCP6_WRITES, &value);
 }
 
 int
 addWrite_TCP6_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP6_WRITES, &value);
+	return addWrite(ID_TCP6_WRITES, &value);
 }
 
 int
 getStatus_TCP6_WRITES(void)
 {
-    return getStatus(ID_TCP6_WRITES);
+	return getStatus(ID_TCP6_WRITES);
 }
 
 int
 doWrite_TCP6_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP6_TIMEOUTS, &value);
+	return doWrite(ID_TCP6_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP6_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP6_TIMEOUTS, &value);
+	return addWrite(ID_TCP6_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP6_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP6_TIMEOUTS);
+	return getStatus(ID_TCP6_TIMEOUTS);
 }
 
 int
 doWrite_TCP6_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP6_COMM_ERRORS, &value);
+	return doWrite(ID_TCP6_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP6_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP6_COMM_ERRORS, &value);
+	return addWrite(ID_TCP6_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP6_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP6_COMM_ERRORS);
+	return getStatus(ID_TCP6_COMM_ERRORS);
 }
 
 int
 doWrite_TCP6_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP6_LAST_ERROR, &value);
+	return doWrite(ID_TCP6_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP6_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP6_LAST_ERROR, &value);
+	return addWrite(ID_TCP6_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP6_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP6_LAST_ERROR);
+	return getStatus(ID_TCP6_LAST_ERROR);
 }
 
 int
 doWrite_TCP6_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP6_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP6_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP6_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP6_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP6_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP6_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP6_WRITE_QUEUE);
+	return getStatus(ID_TCP6_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP6_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP6_BUS_LOAD, &value);
+	return doWrite(ID_TCP6_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP6_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP6_BUS_LOAD, &value);
+	return addWrite(ID_TCP6_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP6_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP6_BUS_LOAD);
+	return getStatus(ID_TCP6_BUS_LOAD);
 }
 
 int
 doWrite_TCP7_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP7_TYPE_PORT, &value);
+	return doWrite(ID_TCP7_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP7_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP7_TYPE_PORT, &value);
+	return addWrite(ID_TCP7_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP7_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP7_TYPE_PORT);
+	return getStatus(ID_TCP7_TYPE_PORT);
 }
 
 int
 doWrite_TCP7_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP7_IP_ADDRESS, &value);
+	return doWrite(ID_TCP7_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP7_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP7_IP_ADDRESS, &value);
+	return addWrite(ID_TCP7_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP7_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP7_IP_ADDRESS);
+	return getStatus(ID_TCP7_IP_ADDRESS);
 }
 
 int
 doWrite_TCP7_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP7_STATUS, &value);
+	return doWrite(ID_TCP7_STATUS, &value);
 }
 
 int
 addWrite_TCP7_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP7_STATUS, &value);
+	return addWrite(ID_TCP7_STATUS, &value);
 }
 
 int
 getStatus_TCP7_STATUS(void)
 {
-    return getStatus(ID_TCP7_STATUS);
+	return getStatus(ID_TCP7_STATUS);
 }
 
 int
 doWrite_TCP7_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP7_READS, &value);
+	return doWrite(ID_TCP7_READS, &value);
 }
 
 int
 addWrite_TCP7_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP7_READS, &value);
+	return addWrite(ID_TCP7_READS, &value);
 }
 
 int
 getStatus_TCP7_READS(void)
 {
-    return getStatus(ID_TCP7_READS);
+	return getStatus(ID_TCP7_READS);
 }
 
 int
 doWrite_TCP7_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP7_WRITES, &value);
+	return doWrite(ID_TCP7_WRITES, &value);
 }
 
 int
 addWrite_TCP7_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP7_WRITES, &value);
+	return addWrite(ID_TCP7_WRITES, &value);
 }
 
 int
 getStatus_TCP7_WRITES(void)
 {
-    return getStatus(ID_TCP7_WRITES);
+	return getStatus(ID_TCP7_WRITES);
 }
 
 int
 doWrite_TCP7_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP7_TIMEOUTS, &value);
+	return doWrite(ID_TCP7_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP7_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP7_TIMEOUTS, &value);
+	return addWrite(ID_TCP7_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP7_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP7_TIMEOUTS);
+	return getStatus(ID_TCP7_TIMEOUTS);
 }
 
 int
 doWrite_TCP7_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP7_COMM_ERRORS, &value);
+	return doWrite(ID_TCP7_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP7_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP7_COMM_ERRORS, &value);
+	return addWrite(ID_TCP7_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP7_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP7_COMM_ERRORS);
+	return getStatus(ID_TCP7_COMM_ERRORS);
 }
 
 int
 doWrite_TCP7_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP7_LAST_ERROR, &value);
+	return doWrite(ID_TCP7_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP7_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP7_LAST_ERROR, &value);
+	return addWrite(ID_TCP7_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP7_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP7_LAST_ERROR);
+	return getStatus(ID_TCP7_LAST_ERROR);
 }
 
 int
 doWrite_TCP7_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP7_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP7_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP7_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP7_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP7_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP7_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP7_WRITE_QUEUE);
+	return getStatus(ID_TCP7_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP7_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP7_BUS_LOAD, &value);
+	return doWrite(ID_TCP7_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP7_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP7_BUS_LOAD, &value);
+	return addWrite(ID_TCP7_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP7_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP7_BUS_LOAD);
+	return getStatus(ID_TCP7_BUS_LOAD);
 }
 
 int
 doWrite_TCP8_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP8_TYPE_PORT, &value);
+	return doWrite(ID_TCP8_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP8_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP8_TYPE_PORT, &value);
+	return addWrite(ID_TCP8_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP8_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP8_TYPE_PORT);
+	return getStatus(ID_TCP8_TYPE_PORT);
 }
 
 int
 doWrite_TCP8_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP8_IP_ADDRESS, &value);
+	return doWrite(ID_TCP8_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP8_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP8_IP_ADDRESS, &value);
+	return addWrite(ID_TCP8_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP8_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP8_IP_ADDRESS);
+	return getStatus(ID_TCP8_IP_ADDRESS);
 }
 
 int
 doWrite_TCP8_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP8_STATUS, &value);
+	return doWrite(ID_TCP8_STATUS, &value);
 }
 
 int
 addWrite_TCP8_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP8_STATUS, &value);
+	return addWrite(ID_TCP8_STATUS, &value);
 }
 
 int
 getStatus_TCP8_STATUS(void)
 {
-    return getStatus(ID_TCP8_STATUS);
+	return getStatus(ID_TCP8_STATUS);
 }
 
 int
 doWrite_TCP8_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP8_READS, &value);
+	return doWrite(ID_TCP8_READS, &value);
 }
 
 int
 addWrite_TCP8_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP8_READS, &value);
+	return addWrite(ID_TCP8_READS, &value);
 }
 
 int
 getStatus_TCP8_READS(void)
 {
-    return getStatus(ID_TCP8_READS);
+	return getStatus(ID_TCP8_READS);
 }
 
 int
 doWrite_TCP8_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP8_WRITES, &value);
+	return doWrite(ID_TCP8_WRITES, &value);
 }
 
 int
 addWrite_TCP8_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP8_WRITES, &value);
+	return addWrite(ID_TCP8_WRITES, &value);
 }
 
 int
 getStatus_TCP8_WRITES(void)
 {
-    return getStatus(ID_TCP8_WRITES);
+	return getStatus(ID_TCP8_WRITES);
 }
 
 int
 doWrite_TCP8_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP8_TIMEOUTS, &value);
+	return doWrite(ID_TCP8_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP8_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP8_TIMEOUTS, &value);
+	return addWrite(ID_TCP8_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP8_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP8_TIMEOUTS);
+	return getStatus(ID_TCP8_TIMEOUTS);
 }
 
 int
 doWrite_TCP8_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP8_COMM_ERRORS, &value);
+	return doWrite(ID_TCP8_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP8_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP8_COMM_ERRORS, &value);
+	return addWrite(ID_TCP8_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP8_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP8_COMM_ERRORS);
+	return getStatus(ID_TCP8_COMM_ERRORS);
 }
 
 int
 doWrite_TCP8_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP8_LAST_ERROR, &value);
+	return doWrite(ID_TCP8_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP8_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP8_LAST_ERROR, &value);
+	return addWrite(ID_TCP8_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP8_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP8_LAST_ERROR);
+	return getStatus(ID_TCP8_LAST_ERROR);
 }
 
 int
 doWrite_TCP8_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP8_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP8_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP8_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP8_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP8_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP8_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP8_WRITE_QUEUE);
+	return getStatus(ID_TCP8_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP8_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP8_BUS_LOAD, &value);
+	return doWrite(ID_TCP8_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP8_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP8_BUS_LOAD, &value);
+	return addWrite(ID_TCP8_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP8_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP8_BUS_LOAD);
+	return getStatus(ID_TCP8_BUS_LOAD);
 }
 
 int
 doWrite_TCP9_TYPE_PORT(u_int32_t value)
 {
-    return doWrite(ID_TCP9_TYPE_PORT, &value);
+	return doWrite(ID_TCP9_TYPE_PORT, &value);
 }
 
 int
 addWrite_TCP9_TYPE_PORT(u_int32_t value)
 {
-    return addWrite(ID_TCP9_TYPE_PORT, &value);
+	return addWrite(ID_TCP9_TYPE_PORT, &value);
 }
 
 int
 getStatus_TCP9_TYPE_PORT(void)
 {
-    return getStatus(ID_TCP9_TYPE_PORT);
+	return getStatus(ID_TCP9_TYPE_PORT);
 }
 
 int
 doWrite_TCP9_IP_ADDRESS(u_int32_t value)
 {
-    return doWrite(ID_TCP9_IP_ADDRESS, &value);
+	return doWrite(ID_TCP9_IP_ADDRESS, &value);
 }
 
 int
 addWrite_TCP9_IP_ADDRESS(u_int32_t value)
 {
-    return addWrite(ID_TCP9_IP_ADDRESS, &value);
+	return addWrite(ID_TCP9_IP_ADDRESS, &value);
 }
 
 int
 getStatus_TCP9_IP_ADDRESS(void)
 {
-    return getStatus(ID_TCP9_IP_ADDRESS);
+	return getStatus(ID_TCP9_IP_ADDRESS);
 }
 
 int
 doWrite_TCP9_STATUS(u_int32_t value)
 {
-    return doWrite(ID_TCP9_STATUS, &value);
+	return doWrite(ID_TCP9_STATUS, &value);
 }
 
 int
 addWrite_TCP9_STATUS(u_int32_t value)
 {
-    return addWrite(ID_TCP9_STATUS, &value);
+	return addWrite(ID_TCP9_STATUS, &value);
 }
 
 int
 getStatus_TCP9_STATUS(void)
 {
-    return getStatus(ID_TCP9_STATUS);
+	return getStatus(ID_TCP9_STATUS);
 }
 
 int
 doWrite_TCP9_READS(u_int32_t value)
 {
-    return doWrite(ID_TCP9_READS, &value);
+	return doWrite(ID_TCP9_READS, &value);
 }
 
 int
 addWrite_TCP9_READS(u_int32_t value)
 {
-    return addWrite(ID_TCP9_READS, &value);
+	return addWrite(ID_TCP9_READS, &value);
 }
 
 int
 getStatus_TCP9_READS(void)
 {
-    return getStatus(ID_TCP9_READS);
+	return getStatus(ID_TCP9_READS);
 }
 
 int
 doWrite_TCP9_WRITES(u_int32_t value)
 {
-    return doWrite(ID_TCP9_WRITES, &value);
+	return doWrite(ID_TCP9_WRITES, &value);
 }
 
 int
 addWrite_TCP9_WRITES(u_int32_t value)
 {
-    return addWrite(ID_TCP9_WRITES, &value);
+	return addWrite(ID_TCP9_WRITES, &value);
 }
 
 int
 getStatus_TCP9_WRITES(void)
 {
-    return getStatus(ID_TCP9_WRITES);
+	return getStatus(ID_TCP9_WRITES);
 }
 
 int
 doWrite_TCP9_TIMEOUTS(u_int32_t value)
 {
-    return doWrite(ID_TCP9_TIMEOUTS, &value);
+	return doWrite(ID_TCP9_TIMEOUTS, &value);
 }
 
 int
 addWrite_TCP9_TIMEOUTS(u_int32_t value)
 {
-    return addWrite(ID_TCP9_TIMEOUTS, &value);
+	return addWrite(ID_TCP9_TIMEOUTS, &value);
 }
 
 int
 getStatus_TCP9_TIMEOUTS(void)
 {
-    return getStatus(ID_TCP9_TIMEOUTS);
+	return getStatus(ID_TCP9_TIMEOUTS);
 }
 
 int
 doWrite_TCP9_COMM_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_TCP9_COMM_ERRORS, &value);
+	return doWrite(ID_TCP9_COMM_ERRORS, &value);
 }
 
 int
 addWrite_TCP9_COMM_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_TCP9_COMM_ERRORS, &value);
+	return addWrite(ID_TCP9_COMM_ERRORS, &value);
 }
 
 int
 getStatus_TCP9_COMM_ERRORS(void)
 {
-    return getStatus(ID_TCP9_COMM_ERRORS);
+	return getStatus(ID_TCP9_COMM_ERRORS);
 }
 
 int
 doWrite_TCP9_LAST_ERROR(u_int32_t value)
 {
-    return doWrite(ID_TCP9_LAST_ERROR, &value);
+	return doWrite(ID_TCP9_LAST_ERROR, &value);
 }
 
 int
 addWrite_TCP9_LAST_ERROR(u_int32_t value)
 {
-    return addWrite(ID_TCP9_LAST_ERROR, &value);
+	return addWrite(ID_TCP9_LAST_ERROR, &value);
 }
 
 int
 getStatus_TCP9_LAST_ERROR(void)
 {
-    return getStatus(ID_TCP9_LAST_ERROR);
+	return getStatus(ID_TCP9_LAST_ERROR);
 }
 
 int
 doWrite_TCP9_WRITE_QUEUE(u_int32_t value)
 {
-    return doWrite(ID_TCP9_WRITE_QUEUE, &value);
+	return doWrite(ID_TCP9_WRITE_QUEUE, &value);
 }
 
 int
 addWrite_TCP9_WRITE_QUEUE(u_int32_t value)
 {
-    return addWrite(ID_TCP9_WRITE_QUEUE, &value);
+	return addWrite(ID_TCP9_WRITE_QUEUE, &value);
 }
 
 int
 getStatus_TCP9_WRITE_QUEUE(void)
 {
-    return getStatus(ID_TCP9_WRITE_QUEUE);
+	return getStatus(ID_TCP9_WRITE_QUEUE);
 }
 
 int
 doWrite_TCP9_BUS_LOAD(u_int32_t value)
 {
-    return doWrite(ID_TCP9_BUS_LOAD, &value);
+	return doWrite(ID_TCP9_BUS_LOAD, &value);
 }
 
 int
 addWrite_TCP9_BUS_LOAD(u_int32_t value)
 {
-    return addWrite(ID_TCP9_BUS_LOAD, &value);
+	return addWrite(ID_TCP9_BUS_LOAD, &value);
 }
 
 int
 getStatus_TCP9_BUS_LOAD(void)
 {
-    return getStatus(ID_TCP9_BUS_LOAD);
+	return getStatus(ID_TCP9_BUS_LOAD);
 }
 
 int
 doWrite_NODE_01_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_01_DEV_NODE, &value);
+	return doWrite(ID_NODE_01_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_01_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_01_DEV_NODE, &value);
+	return addWrite(ID_NODE_01_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_01_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_01_DEV_NODE);
+	return getStatus(ID_NODE_01_DEV_NODE);
 }
 
 int
 doWrite_NODE_01_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_01_STATUS, &value);
+	return doWrite(ID_NODE_01_STATUS, &value);
 }
 
 int
 addWrite_NODE_01_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_01_STATUS, &value);
+	return addWrite(ID_NODE_01_STATUS, &value);
 }
 
 int
 getStatus_NODE_01_STATUS(void)
 {
-    return getStatus(ID_NODE_01_STATUS);
+	return getStatus(ID_NODE_01_STATUS);
 }
 
 int
 doWrite_NODE_02_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_02_DEV_NODE, &value);
+	return doWrite(ID_NODE_02_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_02_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_02_DEV_NODE, &value);
+	return addWrite(ID_NODE_02_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_02_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_02_DEV_NODE);
+	return getStatus(ID_NODE_02_DEV_NODE);
 }
 
 int
 doWrite_NODE_02_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_02_STATUS, &value);
+	return doWrite(ID_NODE_02_STATUS, &value);
 }
 
 int
 addWrite_NODE_02_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_02_STATUS, &value);
+	return addWrite(ID_NODE_02_STATUS, &value);
 }
 
 int
 getStatus_NODE_02_STATUS(void)
 {
-    return getStatus(ID_NODE_02_STATUS);
+	return getStatus(ID_NODE_02_STATUS);
 }
 
 int
 doWrite_NODE_03_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_03_DEV_NODE, &value);
+	return doWrite(ID_NODE_03_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_03_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_03_DEV_NODE, &value);
+	return addWrite(ID_NODE_03_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_03_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_03_DEV_NODE);
+	return getStatus(ID_NODE_03_DEV_NODE);
 }
 
 int
 doWrite_NODE_03_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_03_STATUS, &value);
+	return doWrite(ID_NODE_03_STATUS, &value);
 }
 
 int
 addWrite_NODE_03_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_03_STATUS, &value);
+	return addWrite(ID_NODE_03_STATUS, &value);
 }
 
 int
 getStatus_NODE_03_STATUS(void)
 {
-    return getStatus(ID_NODE_03_STATUS);
+	return getStatus(ID_NODE_03_STATUS);
 }
 
 int
 doWrite_NODE_04_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_04_DEV_NODE, &value);
+	return doWrite(ID_NODE_04_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_04_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_04_DEV_NODE, &value);
+	return addWrite(ID_NODE_04_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_04_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_04_DEV_NODE);
+	return getStatus(ID_NODE_04_DEV_NODE);
 }
 
 int
 doWrite_NODE_04_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_04_STATUS, &value);
+	return doWrite(ID_NODE_04_STATUS, &value);
 }
 
 int
 addWrite_NODE_04_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_04_STATUS, &value);
+	return addWrite(ID_NODE_04_STATUS, &value);
 }
 
 int
 getStatus_NODE_04_STATUS(void)
 {
-    return getStatus(ID_NODE_04_STATUS);
+	return getStatus(ID_NODE_04_STATUS);
 }
 
 int
 doWrite_NODE_05_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_05_DEV_NODE, &value);
+	return doWrite(ID_NODE_05_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_05_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_05_DEV_NODE, &value);
+	return addWrite(ID_NODE_05_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_05_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_05_DEV_NODE);
+	return getStatus(ID_NODE_05_DEV_NODE);
 }
 
 int
 doWrite_NODE_05_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_05_STATUS, &value);
+	return doWrite(ID_NODE_05_STATUS, &value);
 }
 
 int
 addWrite_NODE_05_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_05_STATUS, &value);
+	return addWrite(ID_NODE_05_STATUS, &value);
 }
 
 int
 getStatus_NODE_05_STATUS(void)
 {
-    return getStatus(ID_NODE_05_STATUS);
+	return getStatus(ID_NODE_05_STATUS);
 }
 
 int
 doWrite_NODE_06_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_06_DEV_NODE, &value);
+	return doWrite(ID_NODE_06_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_06_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_06_DEV_NODE, &value);
+	return addWrite(ID_NODE_06_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_06_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_06_DEV_NODE);
+	return getStatus(ID_NODE_06_DEV_NODE);
 }
 
 int
 doWrite_NODE_06_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_06_STATUS, &value);
+	return doWrite(ID_NODE_06_STATUS, &value);
 }
 
 int
 addWrite_NODE_06_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_06_STATUS, &value);
+	return addWrite(ID_NODE_06_STATUS, &value);
 }
 
 int
 getStatus_NODE_06_STATUS(void)
 {
-    return getStatus(ID_NODE_06_STATUS);
+	return getStatus(ID_NODE_06_STATUS);
 }
 
 int
 doWrite_NODE_07_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_07_DEV_NODE, &value);
+	return doWrite(ID_NODE_07_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_07_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_07_DEV_NODE, &value);
+	return addWrite(ID_NODE_07_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_07_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_07_DEV_NODE);
+	return getStatus(ID_NODE_07_DEV_NODE);
 }
 
 int
 doWrite_NODE_07_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_07_STATUS, &value);
+	return doWrite(ID_NODE_07_STATUS, &value);
 }
 
 int
 addWrite_NODE_07_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_07_STATUS, &value);
+	return addWrite(ID_NODE_07_STATUS, &value);
 }
 
 int
 getStatus_NODE_07_STATUS(void)
 {
-    return getStatus(ID_NODE_07_STATUS);
+	return getStatus(ID_NODE_07_STATUS);
 }
 
 int
 doWrite_NODE_08_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_08_DEV_NODE, &value);
+	return doWrite(ID_NODE_08_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_08_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_08_DEV_NODE, &value);
+	return addWrite(ID_NODE_08_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_08_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_08_DEV_NODE);
+	return getStatus(ID_NODE_08_DEV_NODE);
 }
 
 int
 doWrite_NODE_08_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_08_STATUS, &value);
+	return doWrite(ID_NODE_08_STATUS, &value);
 }
 
 int
 addWrite_NODE_08_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_08_STATUS, &value);
+	return addWrite(ID_NODE_08_STATUS, &value);
 }
 
 int
 getStatus_NODE_08_STATUS(void)
 {
-    return getStatus(ID_NODE_08_STATUS);
+	return getStatus(ID_NODE_08_STATUS);
 }
 
 int
 doWrite_NODE_09_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_09_DEV_NODE, &value);
+	return doWrite(ID_NODE_09_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_09_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_09_DEV_NODE, &value);
+	return addWrite(ID_NODE_09_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_09_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_09_DEV_NODE);
+	return getStatus(ID_NODE_09_DEV_NODE);
 }
 
 int
 doWrite_NODE_09_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_09_STATUS, &value);
+	return doWrite(ID_NODE_09_STATUS, &value);
 }
 
 int
 addWrite_NODE_09_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_09_STATUS, &value);
+	return addWrite(ID_NODE_09_STATUS, &value);
 }
 
 int
 getStatus_NODE_09_STATUS(void)
 {
-    return getStatus(ID_NODE_09_STATUS);
+	return getStatus(ID_NODE_09_STATUS);
 }
 
 int
 doWrite_NODE_10_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_10_DEV_NODE, &value);
+	return doWrite(ID_NODE_10_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_10_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_10_DEV_NODE, &value);
+	return addWrite(ID_NODE_10_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_10_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_10_DEV_NODE);
+	return getStatus(ID_NODE_10_DEV_NODE);
 }
 
 int
 doWrite_NODE_10_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_10_STATUS, &value);
+	return doWrite(ID_NODE_10_STATUS, &value);
 }
 
 int
 addWrite_NODE_10_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_10_STATUS, &value);
+	return addWrite(ID_NODE_10_STATUS, &value);
 }
 
 int
 getStatus_NODE_10_STATUS(void)
 {
-    return getStatus(ID_NODE_10_STATUS);
+	return getStatus(ID_NODE_10_STATUS);
 }
 
 int
 doWrite_NODE_11_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_11_DEV_NODE, &value);
+	return doWrite(ID_NODE_11_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_11_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_11_DEV_NODE, &value);
+	return addWrite(ID_NODE_11_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_11_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_11_DEV_NODE);
+	return getStatus(ID_NODE_11_DEV_NODE);
 }
 
 int
 doWrite_NODE_11_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_11_STATUS, &value);
+	return doWrite(ID_NODE_11_STATUS, &value);
 }
 
 int
 addWrite_NODE_11_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_11_STATUS, &value);
+	return addWrite(ID_NODE_11_STATUS, &value);
 }
 
 int
 getStatus_NODE_11_STATUS(void)
 {
-    return getStatus(ID_NODE_11_STATUS);
+	return getStatus(ID_NODE_11_STATUS);
 }
 
 int
 doWrite_NODE_12_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_12_DEV_NODE, &value);
+	return doWrite(ID_NODE_12_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_12_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_12_DEV_NODE, &value);
+	return addWrite(ID_NODE_12_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_12_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_12_DEV_NODE);
+	return getStatus(ID_NODE_12_DEV_NODE);
 }
 
 int
 doWrite_NODE_12_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_12_STATUS, &value);
+	return doWrite(ID_NODE_12_STATUS, &value);
 }
 
 int
 addWrite_NODE_12_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_12_STATUS, &value);
+	return addWrite(ID_NODE_12_STATUS, &value);
 }
 
 int
 getStatus_NODE_12_STATUS(void)
 {
-    return getStatus(ID_NODE_12_STATUS);
+	return getStatus(ID_NODE_12_STATUS);
 }
 
 int
 doWrite_NODE_13_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_13_DEV_NODE, &value);
+	return doWrite(ID_NODE_13_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_13_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_13_DEV_NODE, &value);
+	return addWrite(ID_NODE_13_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_13_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_13_DEV_NODE);
+	return getStatus(ID_NODE_13_DEV_NODE);
 }
 
 int
 doWrite_NODE_13_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_13_STATUS, &value);
+	return doWrite(ID_NODE_13_STATUS, &value);
 }
 
 int
 addWrite_NODE_13_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_13_STATUS, &value);
+	return addWrite(ID_NODE_13_STATUS, &value);
 }
 
 int
 getStatus_NODE_13_STATUS(void)
 {
-    return getStatus(ID_NODE_13_STATUS);
+	return getStatus(ID_NODE_13_STATUS);
 }
 
 int
 doWrite_NODE_14_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_14_DEV_NODE, &value);
+	return doWrite(ID_NODE_14_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_14_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_14_DEV_NODE, &value);
+	return addWrite(ID_NODE_14_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_14_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_14_DEV_NODE);
+	return getStatus(ID_NODE_14_DEV_NODE);
 }
 
 int
 doWrite_NODE_14_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_14_STATUS, &value);
+	return doWrite(ID_NODE_14_STATUS, &value);
 }
 
 int
 addWrite_NODE_14_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_14_STATUS, &value);
+	return addWrite(ID_NODE_14_STATUS, &value);
 }
 
 int
 getStatus_NODE_14_STATUS(void)
 {
-    return getStatus(ID_NODE_14_STATUS);
+	return getStatus(ID_NODE_14_STATUS);
 }
 
 int
 doWrite_NODE_15_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_15_DEV_NODE, &value);
+	return doWrite(ID_NODE_15_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_15_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_15_DEV_NODE, &value);
+	return addWrite(ID_NODE_15_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_15_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_15_DEV_NODE);
+	return getStatus(ID_NODE_15_DEV_NODE);
 }
 
 int
 doWrite_NODE_15_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_15_STATUS, &value);
+	return doWrite(ID_NODE_15_STATUS, &value);
 }
 
 int
 addWrite_NODE_15_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_15_STATUS, &value);
+	return addWrite(ID_NODE_15_STATUS, &value);
 }
 
 int
 getStatus_NODE_15_STATUS(void)
 {
-    return getStatus(ID_NODE_15_STATUS);
+	return getStatus(ID_NODE_15_STATUS);
 }
 
 int
 doWrite_NODE_16_DEV_NODE(u_int32_t value)
 {
-    return doWrite(ID_NODE_16_DEV_NODE, &value);
+	return doWrite(ID_NODE_16_DEV_NODE, &value);
 }
 
 int
 addWrite_NODE_16_DEV_NODE(u_int32_t value)
 {
-    return addWrite(ID_NODE_16_DEV_NODE, &value);
+	return addWrite(ID_NODE_16_DEV_NODE, &value);
 }
 
 int
 getStatus_NODE_16_DEV_NODE(void)
 {
-    return getStatus(ID_NODE_16_DEV_NODE);
+	return getStatus(ID_NODE_16_DEV_NODE);
 }
 
 int
 doWrite_NODE_16_STATUS(u_int32_t value)
 {
-    return doWrite(ID_NODE_16_STATUS, &value);
+	return doWrite(ID_NODE_16_STATUS, &value);
 }
 
 int
 addWrite_NODE_16_STATUS(u_int32_t value)
 {
-    return addWrite(ID_NODE_16_STATUS, &value);
+	return addWrite(ID_NODE_16_STATUS, &value);
 }
 
 int
 getStatus_NODE_16_STATUS(void)
 {
-    return getStatus(ID_NODE_16_STATUS);
+	return getStatus(ID_NODE_16_STATUS);
 }
 
 int
 doWrite_PLC_time(float value)
 {
-    return doWrite(ID_PLC_time, &value);
+	return doWrite(ID_PLC_time, &value);
 }
 
 int
 addWrite_PLC_time(float value)
 {
-    return addWrite(ID_PLC_time, &value);
+	return addWrite(ID_PLC_time, &value);
 }
 
 int
 getStatus_PLC_time(void)
 {
-    return getStatus(ID_PLC_time);
+	return getStatus(ID_PLC_time);
 }
 
 int
 doWrite_PLC_timeMin(float value)
 {
-    return doWrite(ID_PLC_timeMin, &value);
+	return doWrite(ID_PLC_timeMin, &value);
 }
 
 int
 addWrite_PLC_timeMin(float value)
 {
-    return addWrite(ID_PLC_timeMin, &value);
+	return addWrite(ID_PLC_timeMin, &value);
 }
 
 int
 getStatus_PLC_timeMin(void)
 {
-    return getStatus(ID_PLC_timeMin);
+	return getStatus(ID_PLC_timeMin);
 }
 
 int
 doWrite_PLC_timeMax(float value)
 {
-    return doWrite(ID_PLC_timeMax, &value);
+	return doWrite(ID_PLC_timeMax, &value);
 }
 
 int
 addWrite_PLC_timeMax(float value)
 {
-    return addWrite(ID_PLC_timeMax, &value);
+	return addWrite(ID_PLC_timeMax, &value);
 }
 
 int
 getStatus_PLC_timeMax(void)
 {
-    return getStatus(ID_PLC_timeMax);
+	return getStatus(ID_PLC_timeMax);
 }
 
 int
 doWrite_PLC_timeWin(float value)
 {
-    return doWrite(ID_PLC_timeWin, &value);
+	return doWrite(ID_PLC_timeWin, &value);
 }
 
 int
 addWrite_PLC_timeWin(float value)
 {
-    return addWrite(ID_PLC_timeWin, &value);
+	return addWrite(ID_PLC_timeWin, &value);
 }
 
 int
 getStatus_PLC_timeWin(void)
 {
-    return getStatus(ID_PLC_timeWin);
+	return getStatus(ID_PLC_timeWin);
 }
 
 int
 doWrite_PLC_Version(u_int16_t value)
 {
-    return doWrite(ID_PLC_Version, &value);
+	return doWrite(ID_PLC_Version, &value);
 }
 
 int
 addWrite_PLC_Version(u_int16_t value)
 {
-    return addWrite(ID_PLC_Version, &value);
+	return addWrite(ID_PLC_Version, &value);
 }
 
 int
 getStatus_PLC_Version(void)
 {
-    return getStatus(ID_PLC_Version);
+	return getStatus(ID_PLC_Version);
 }
 
 int
 doWrite_PLC_EngineStatus(u_int16_t value)
 {
-    return doWrite(ID_PLC_EngineStatus, &value);
+	return doWrite(ID_PLC_EngineStatus, &value);
 }
 
 int
 addWrite_PLC_EngineStatus(u_int16_t value)
 {
-    return addWrite(ID_PLC_EngineStatus, &value);
+	return addWrite(ID_PLC_EngineStatus, &value);
 }
 
 int
 getStatus_PLC_EngineStatus(void)
 {
-    return getStatus(ID_PLC_EngineStatus);
+	return getStatus(ID_PLC_EngineStatus);
 }
 
 int
 doWrite_PLC_ResetValues(int value)
 {
-    return doWrite(ID_PLC_ResetValues, &value);
+	return doWrite(ID_PLC_ResetValues, &value);
 }
 
 int
 addWrite_PLC_ResetValues(int value)
 {
-    return addWrite(ID_PLC_ResetValues, &value);
+	return addWrite(ID_PLC_ResetValues, &value);
 }
 
 int
 getStatus_PLC_ResetValues(void)
 {
-    return getStatus(ID_PLC_ResetValues);
+	return getStatus(ID_PLC_ResetValues);
 }
 
 int
 doWrite_PLC_buzzerOn(int value)
 {
-    return doWrite(ID_PLC_buzzerOn, &value);
+	return doWrite(ID_PLC_buzzerOn, &value);
 }
 
 int
 addWrite_PLC_buzzerOn(int value)
 {
-    return addWrite(ID_PLC_buzzerOn, &value);
+	return addWrite(ID_PLC_buzzerOn, &value);
 }
 
 int
 getStatus_PLC_buzzerOn(void)
 {
-    return getStatus(ID_PLC_buzzerOn);
+	return getStatus(ID_PLC_buzzerOn);
 }
 
 int
 doWrite_PLC_PLC_Version(u_int16_t value)
 {
-    return doWrite(ID_PLC_PLC_Version, &value);
+	return doWrite(ID_PLC_PLC_Version, &value);
 }
 
 int
 addWrite_PLC_PLC_Version(u_int16_t value)
 {
-    return addWrite(ID_PLC_PLC_Version, &value);
+	return addWrite(ID_PLC_PLC_Version, &value);
 }
 
 int
 getStatus_PLC_PLC_Version(void)
 {
-    return getStatus(ID_PLC_PLC_Version);
+	return getStatus(ID_PLC_PLC_Version);
 }
 
 int
 doWrite_PLC_HMI_Version(u_int16_t value)
 {
-    return doWrite(ID_PLC_HMI_Version, &value);
+	return doWrite(ID_PLC_HMI_Version, &value);
 }
 
 int
 addWrite_PLC_HMI_Version(u_int16_t value)
 {
-    return addWrite(ID_PLC_HMI_Version, &value);
+	return addWrite(ID_PLC_HMI_Version, &value);
 }
 
 int
 getStatus_PLC_HMI_Version(void)
 {
-    return getStatus(ID_PLC_HMI_Version);
+	return getStatus(ID_PLC_HMI_Version);
 }
 
 int
 doWrite_PLC_Year(u_int16_t value)
 {
-    return doWrite(ID_PLC_Year, &value);
+	return doWrite(ID_PLC_Year, &value);
 }
 
 int
 addWrite_PLC_Year(u_int16_t value)
 {
-    return addWrite(ID_PLC_Year, &value);
+	return addWrite(ID_PLC_Year, &value);
 }
 
 int
 getStatus_PLC_Year(void)
 {
-    return getStatus(ID_PLC_Year);
+	return getStatus(ID_PLC_Year);
 }
 
 int
 doWrite_PLC_Month(u_int16_t value)
 {
-    return doWrite(ID_PLC_Month, &value);
+	return doWrite(ID_PLC_Month, &value);
 }
 
 int
 addWrite_PLC_Month(u_int16_t value)
 {
-    return addWrite(ID_PLC_Month, &value);
+	return addWrite(ID_PLC_Month, &value);
 }
 
 int
 getStatus_PLC_Month(void)
 {
-    return getStatus(ID_PLC_Month);
+	return getStatus(ID_PLC_Month);
 }
 
 int
 doWrite_PLC_Day(u_int16_t value)
 {
-    return doWrite(ID_PLC_Day, &value);
+	return doWrite(ID_PLC_Day, &value);
 }
 
 int
 addWrite_PLC_Day(u_int16_t value)
 {
-    return addWrite(ID_PLC_Day, &value);
+	return addWrite(ID_PLC_Day, &value);
 }
 
 int
 getStatus_PLC_Day(void)
 {
-    return getStatus(ID_PLC_Day);
+	return getStatus(ID_PLC_Day);
 }
 
 int
 doWrite_PLC_Hours(u_int16_t value)
 {
-    return doWrite(ID_PLC_Hours, &value);
+	return doWrite(ID_PLC_Hours, &value);
 }
 
 int
 addWrite_PLC_Hours(u_int16_t value)
 {
-    return addWrite(ID_PLC_Hours, &value);
+	return addWrite(ID_PLC_Hours, &value);
 }
 
 int
 getStatus_PLC_Hours(void)
 {
-    return getStatus(ID_PLC_Hours);
+	return getStatus(ID_PLC_Hours);
 }
 
 int
 doWrite_PLC_Minutes(u_int16_t value)
 {
-    return doWrite(ID_PLC_Minutes, &value);
+	return doWrite(ID_PLC_Minutes, &value);
 }
 
 int
 addWrite_PLC_Minutes(u_int16_t value)
 {
-    return addWrite(ID_PLC_Minutes, &value);
+	return addWrite(ID_PLC_Minutes, &value);
 }
 
 int
 getStatus_PLC_Minutes(void)
 {
-    return getStatus(ID_PLC_Minutes);
+	return getStatus(ID_PLC_Minutes);
 }
 
 int
 doWrite_PLC_Seconds(u_int16_t value)
 {
-    return doWrite(ID_PLC_Seconds, &value);
+	return doWrite(ID_PLC_Seconds, &value);
 }
 
 int
 addWrite_PLC_Seconds(u_int16_t value)
 {
-    return addWrite(ID_PLC_Seconds, &value);
+	return addWrite(ID_PLC_Seconds, &value);
 }
 
 int
 getStatus_PLC_Seconds(void)
 {
-    return getStatus(ID_PLC_Seconds);
+	return getStatus(ID_PLC_Seconds);
 }
 
 int
 doWrite_PLC_UPTIME_s(u_int32_t value)
 {
-    return doWrite(ID_PLC_UPTIME_s, &value);
+	return doWrite(ID_PLC_UPTIME_s, &value);
 }
 
 int
 addWrite_PLC_UPTIME_s(u_int32_t value)
 {
-    return addWrite(ID_PLC_UPTIME_s, &value);
+	return addWrite(ID_PLC_UPTIME_s, &value);
 }
 
 int
 getStatus_PLC_UPTIME_s(void)
 {
-    return getStatus(ID_PLC_UPTIME_s);
+	return getStatus(ID_PLC_UPTIME_s);
 }
 
 int
 doWrite_PLC_UPTIME_cs(u_int32_t value)
 {
-    return doWrite(ID_PLC_UPTIME_cs, &value);
+	return doWrite(ID_PLC_UPTIME_cs, &value);
 }
 
 int
 addWrite_PLC_UPTIME_cs(u_int32_t value)
 {
-    return addWrite(ID_PLC_UPTIME_cs, &value);
+	return addWrite(ID_PLC_UPTIME_cs, &value);
 }
 
 int
 getStatus_PLC_UPTIME_cs(void)
 {
-    return getStatus(ID_PLC_UPTIME_cs);
+	return getStatus(ID_PLC_UPTIME_cs);
 }
 
 int
 doWrite_PLC_WATCHDOGEN(int value)
 {
-    return doWrite(ID_PLC_WATCHDOGEN, &value);
+	return doWrite(ID_PLC_WATCHDOGEN, &value);
 }
 
 int
 addWrite_PLC_WATCHDOGEN(int value)
 {
-    return addWrite(ID_PLC_WATCHDOGEN, &value);
+	return addWrite(ID_PLC_WATCHDOGEN, &value);
 }
 
 int
 getStatus_PLC_WATCHDOGEN(void)
 {
-    return getStatus(ID_PLC_WATCHDOGEN);
+	return getStatus(ID_PLC_WATCHDOGEN);
 }
 
 int
 doWrite_PLC_WATCHDOG_ms(u_int32_t value)
 {
-    return doWrite(ID_PLC_WATCHDOG_ms, &value);
+	return doWrite(ID_PLC_WATCHDOG_ms, &value);
 }
 
 int
 addWrite_PLC_WATCHDOG_ms(u_int32_t value)
 {
-    return addWrite(ID_PLC_WATCHDOG_ms, &value);
+	return addWrite(ID_PLC_WATCHDOG_ms, &value);
 }
 
 int
 getStatus_PLC_WATCHDOG_ms(void)
 {
-    return getStatus(ID_PLC_WATCHDOG_ms);
+	return getStatus(ID_PLC_WATCHDOG_ms);
 }
 
 int
 doWrite_PLC_PRODUCT_ID(u_int32_t value)
 {
-    return doWrite(ID_PLC_PRODUCT_ID, &value);
+	return doWrite(ID_PLC_PRODUCT_ID, &value);
 }
 
 int
 addWrite_PLC_PRODUCT_ID(u_int32_t value)
 {
-    return addWrite(ID_PLC_PRODUCT_ID, &value);
+	return addWrite(ID_PLC_PRODUCT_ID, &value);
 }
 
 int
 getStatus_PLC_PRODUCT_ID(void)
 {
-    return getStatus(ID_PLC_PRODUCT_ID);
+	return getStatus(ID_PLC_PRODUCT_ID);
 }
 
 int
 doWrite_PLC_SERIAL_NUMBER(u_int32_t value)
 {
-    return doWrite(ID_PLC_SERIAL_NUMBER, &value);
+	return doWrite(ID_PLC_SERIAL_NUMBER, &value);
 }
 
 int
 addWrite_PLC_SERIAL_NUMBER(u_int32_t value)
 {
-    return addWrite(ID_PLC_SERIAL_NUMBER, &value);
+	return addWrite(ID_PLC_SERIAL_NUMBER, &value);
 }
 
 int
 getStatus_PLC_SERIAL_NUMBER(void)
 {
-    return getStatus(ID_PLC_SERIAL_NUMBER);
+	return getStatus(ID_PLC_SERIAL_NUMBER);
 }
 
 int
 doWrite_PLC_HMI_PAGE(int32_t value)
 {
-    return doWrite(ID_PLC_HMI_PAGE, &value);
+	return doWrite(ID_PLC_HMI_PAGE, &value);
 }
 
 int
 addWrite_PLC_HMI_PAGE(int32_t value)
 {
-    return addWrite(ID_PLC_HMI_PAGE, &value);
+	return addWrite(ID_PLC_HMI_PAGE, &value);
 }
 
 int
 getStatus_PLC_HMI_PAGE(void)
 {
-    return getStatus(ID_PLC_HMI_PAGE);
+	return getStatus(ID_PLC_HMI_PAGE);
 }
 
 int
 doWrite_PLC_MS_VERSION(u_int32_t value)
 {
-    return doWrite(ID_PLC_MS_VERSION, &value);
+	return doWrite(ID_PLC_MS_VERSION, &value);
 }
 
 int
 addWrite_PLC_MS_VERSION(u_int32_t value)
 {
-    return addWrite(ID_PLC_MS_VERSION, &value);
+	return addWrite(ID_PLC_MS_VERSION, &value);
 }
 
 int
 getStatus_PLC_MS_VERSION(void)
 {
-    return getStatus(ID_PLC_MS_VERSION);
+	return getStatus(ID_PLC_MS_VERSION);
 }
 
 int
 doWrite_PLC_nBACKLIGHT(u_int8_t value)
 {
-    return doWrite(ID_PLC_nBACKLIGHT, &value);
+	return doWrite(ID_PLC_nBACKLIGHT, &value);
 }
 
 int
 addWrite_PLC_nBACKLIGHT(u_int8_t value)
 {
-    return addWrite(ID_PLC_nBACKLIGHT, &value);
+	return addWrite(ID_PLC_nBACKLIGHT, &value);
 }
 
 int
 getStatus_PLC_nBACKLIGHT(void)
 {
-    return getStatus(ID_PLC_nBACKLIGHT);
+	return getStatus(ID_PLC_nBACKLIGHT);
 }
 
 int
 doWrite_PLC_CPU_TEMP(int16_t value)
 {
-    return doWrite(ID_PLC_CPU_TEMP, &value);
+	return doWrite(ID_PLC_CPU_TEMP, &value);
 }
 
 int
 addWrite_PLC_CPU_TEMP(int16_t value)
 {
-    return addWrite(ID_PLC_CPU_TEMP, &value);
+	return addWrite(ID_PLC_CPU_TEMP, &value);
 }
 
 int
 getStatus_PLC_CPU_TEMP(void)
 {
-    return getStatus(ID_PLC_CPU_TEMP);
+	return getStatus(ID_PLC_CPU_TEMP);
 }
 
 int
 doWrite_PLC_LPC_ERRORS(u_int32_t value)
 {
-    return doWrite(ID_PLC_LPC_ERRORS, &value);
+	return doWrite(ID_PLC_LPC_ERRORS, &value);
 }
 
 int
 addWrite_PLC_LPC_ERRORS(u_int32_t value)
 {
-    return addWrite(ID_PLC_LPC_ERRORS, &value);
+	return addWrite(ID_PLC_LPC_ERRORS, &value);
 }
 
 int
 getStatus_PLC_LPC_ERRORS(void)
 {
-    return getStatus(ID_PLC_LPC_ERRORS);
+	return getStatus(ID_PLC_LPC_ERRORS);
 }
 
 int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
-    return doWrite(ID_PLC_BEEP_VOLUME, &value);
+	return doWrite(ID_PLC_BEEP_VOLUME, &value);
 }
 
 int
 addWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
-    return addWrite(ID_PLC_BEEP_VOLUME, &value);
+	return addWrite(ID_PLC_BEEP_VOLUME, &value);
 }
 
 int
 getStatus_PLC_BEEP_VOLUME(void)
 {
-    return getStatus(ID_PLC_BEEP_VOLUME);
+	return getStatus(ID_PLC_BEEP_VOLUME);
 }
 
 int
 doWrite_PLC_TOUCH_VOLUME(u_int8_t value)
 {
-    return doWrite(ID_PLC_TOUCH_VOLUME, &value);
+	return doWrite(ID_PLC_TOUCH_VOLUME, &value);
 }
 
 int
 addWrite_PLC_TOUCH_VOLUME(u_int8_t value)
 {
-    return addWrite(ID_PLC_TOUCH_VOLUME, &value);
+	return addWrite(ID_PLC_TOUCH_VOLUME, &value);
 }
 
 int
 getStatus_PLC_TOUCH_VOLUME(void)
 {
-    return getStatus(ID_PLC_TOUCH_VOLUME);
+	return getStatus(ID_PLC_TOUCH_VOLUME);
 }
 
 int
 doWrite_PLC_ALARM_VOLUME(u_int8_t value)
 {
-    return doWrite(ID_PLC_ALARM_VOLUME, &value);
+	return doWrite(ID_PLC_ALARM_VOLUME, &value);
 }
 
 int
 addWrite_PLC_ALARM_VOLUME(u_int8_t value)
 {
-    return addWrite(ID_PLC_ALARM_VOLUME, &value);
+	return addWrite(ID_PLC_ALARM_VOLUME, &value);
 }
 
 int
 getStatus_PLC_ALARM_VOLUME(void)
 {
-    return getStatus(ID_PLC_ALARM_VOLUME);
+	return getStatus(ID_PLC_ALARM_VOLUME);
 }
 
 int
 doWrite_PLC_BUZZER(u_int32_t value)
 {
-    return doWrite(ID_PLC_BUZZER, &value);
+	return doWrite(ID_PLC_BUZZER, &value);
 }
 
 int
 addWrite_PLC_BUZZER(u_int32_t value)
 {
-    return addWrite(ID_PLC_BUZZER, &value);
+	return addWrite(ID_PLC_BUZZER, &value);
 }
 
 int
 getStatus_PLC_BUZZER(void)
 {
-    return getStatus(ID_PLC_BUZZER);
+	return getStatus(ID_PLC_BUZZER);
 }
 
 int
 doWrite_PLC_FastIO_Ena(u_int32_t value)
 {
-    return doWrite(ID_PLC_FastIO_Ena, &value);
+	return doWrite(ID_PLC_FastIO_Ena, &value);
 }
 
 int
 addWrite_PLC_FastIO_Ena(u_int32_t value)
 {
-    return addWrite(ID_PLC_FastIO_Ena, &value);
+	return addWrite(ID_PLC_FastIO_Ena, &value);
 }
 
 int
 getStatus_PLC_FastIO_Ena(void)
 {
-    return getStatus(ID_PLC_FastIO_Ena);
+	return getStatus(ID_PLC_FastIO_Ena);
 }
 
 int
 doWrite_PLC_FastIO_Dir(u_int32_t value)
 {
-    return doWrite(ID_PLC_FastIO_Dir, &value);
+	return doWrite(ID_PLC_FastIO_Dir, &value);
 }
 
 int
 addWrite_PLC_FastIO_Dir(u_int32_t value)
 {
-    return addWrite(ID_PLC_FastIO_Dir, &value);
+	return addWrite(ID_PLC_FastIO_Dir, &value);
 }
 
 int
 getStatus_PLC_FastIO_Dir(void)
 {
-    return getStatus(ID_PLC_FastIO_Dir);
+	return getStatus(ID_PLC_FastIO_Dir);
 }
 
 int
 doWrite_PLC_FastIO_1(int value)
 {
-    return doWrite(ID_PLC_FastIO_1, &value);
+	return doWrite(ID_PLC_FastIO_1, &value);
 }
 
 int
 addWrite_PLC_FastIO_1(int value)
 {
-    return addWrite(ID_PLC_FastIO_1, &value);
+	return addWrite(ID_PLC_FastIO_1, &value);
 }
 
 int
 getStatus_PLC_FastIO_1(void)
 {
-    return getStatus(ID_PLC_FastIO_1);
+	return getStatus(ID_PLC_FastIO_1);
 }
 
 int
 doWrite_PLC_FastIO_2(int value)
 {
-    return doWrite(ID_PLC_FastIO_2, &value);
+	return doWrite(ID_PLC_FastIO_2, &value);
 }
 
 int
 addWrite_PLC_FastIO_2(int value)
 {
-    return addWrite(ID_PLC_FastIO_2, &value);
+	return addWrite(ID_PLC_FastIO_2, &value);
 }
 
 int
 getStatus_PLC_FastIO_2(void)
 {
-    return getStatus(ID_PLC_FastIO_2);
+	return getStatus(ID_PLC_FastIO_2);
 }
 
 int
 doWrite_PLC_FastIO_3(int value)
 {
-    return doWrite(ID_PLC_FastIO_3, &value);
+	return doWrite(ID_PLC_FastIO_3, &value);
 }
 
 int
 addWrite_PLC_FastIO_3(int value)
 {
-    return addWrite(ID_PLC_FastIO_3, &value);
+	return addWrite(ID_PLC_FastIO_3, &value);
 }
 
 int
 getStatus_PLC_FastIO_3(void)
 {
-    return getStatus(ID_PLC_FastIO_3);
+	return getStatus(ID_PLC_FastIO_3);
 }
 
 int
 doWrite_PLC_FastIO_4(int value)
 {
-    return doWrite(ID_PLC_FastIO_4, &value);
+	return doWrite(ID_PLC_FastIO_4, &value);
 }
 
 int
 addWrite_PLC_FastIO_4(int value)
 {
-    return addWrite(ID_PLC_FastIO_4, &value);
+	return addWrite(ID_PLC_FastIO_4, &value);
 }
 
 int
 getStatus_PLC_FastIO_4(void)
 {
-    return getStatus(ID_PLC_FastIO_4);
+	return getStatus(ID_PLC_FastIO_4);
 }
 
 int
 doWrite_PLC_FastIO_5(int value)
 {
-    return doWrite(ID_PLC_FastIO_5, &value);
+	return doWrite(ID_PLC_FastIO_5, &value);
 }
 
 int
 addWrite_PLC_FastIO_5(int value)
 {
-    return addWrite(ID_PLC_FastIO_5, &value);
+	return addWrite(ID_PLC_FastIO_5, &value);
 }
 
 int
 getStatus_PLC_FastIO_5(void)
 {
-    return getStatus(ID_PLC_FastIO_5);
+	return getStatus(ID_PLC_FastIO_5);
 }
 
 int
 doWrite_PLC_FastIO_6(int value)
 {
-    return doWrite(ID_PLC_FastIO_6, &value);
+	return doWrite(ID_PLC_FastIO_6, &value);
 }
 
 int
 addWrite_PLC_FastIO_6(int value)
 {
-    return addWrite(ID_PLC_FastIO_6, &value);
+	return addWrite(ID_PLC_FastIO_6, &value);
 }
 
 int
 getStatus_PLC_FastIO_6(void)
 {
-    return getStatus(ID_PLC_FastIO_6);
+	return getStatus(ID_PLC_FastIO_6);
 }
 
 int
 doWrite_PLC_FastIO_7(int value)
 {
-    return doWrite(ID_PLC_FastIO_7, &value);
+	return doWrite(ID_PLC_FastIO_7, &value);
 }
 
 int
 addWrite_PLC_FastIO_7(int value)
 {
-    return addWrite(ID_PLC_FastIO_7, &value);
+	return addWrite(ID_PLC_FastIO_7, &value);
 }
 
 int
 getStatus_PLC_FastIO_7(void)
 {
-    return getStatus(ID_PLC_FastIO_7);
+	return getStatus(ID_PLC_FastIO_7);
 }
 
 int
 doWrite_PLC_FastIO_8(int value)
 {
-    return doWrite(ID_PLC_FastIO_8, &value);
+	return doWrite(ID_PLC_FastIO_8, &value);
 }
 
 int
 addWrite_PLC_FastIO_8(int value)
 {
-    return addWrite(ID_PLC_FastIO_8, &value);
+	return addWrite(ID_PLC_FastIO_8, &value);
 }
 
 int
 getStatus_PLC_FastIO_8(void)
 {
-    return getStatus(ID_PLC_FastIO_8);
+	return getStatus(ID_PLC_FastIO_8);
 }
 
 
 int
 update_all(void)
 {
-    int retval = 0;
+	int retval = 0;
 
-    retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
-    retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
-    retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
-    retval += readFromDb(ID_RTU0_READS, &RTU0_READS);
-    retval += readFromDb(ID_RTU0_WRITES, &RTU0_WRITES);
-    retval += readFromDb(ID_RTU0_TIMEOUTS, &RTU0_TIMEOUTS);
-    retval += readFromDb(ID_RTU0_COMM_ERRORS, &RTU0_COMM_ERRORS);
-    retval += readFromDb(ID_RTU0_LAST_ERROR, &RTU0_LAST_ERROR);
-    retval += readFromDb(ID_RTU0_WRITE_QUEUE, &RTU0_WRITE_QUEUE);
-    retval += readFromDb(ID_RTU0_BUS_LOAD, &RTU0_BUS_LOAD);
-    retval += readFromDb(ID_RTU2_TYPE_PORT, &RTU2_TYPE_PORT);
-    retval += readFromDb(ID_RTU2_BAUDRATE, &RTU2_BAUDRATE);
-    retval += readFromDb(ID_RTU2_STATUS, &RTU2_STATUS);
-    retval += readFromDb(ID_RTU2_READS, &RTU2_READS);
-    retval += readFromDb(ID_RTU2_WRITES, &RTU2_WRITES);
-    retval += readFromDb(ID_RTU2_TIMEOUTS, &RTU2_TIMEOUTS);
-    retval += readFromDb(ID_RTU2_COMM_ERRORS, &RTU2_COMM_ERRORS);
-    retval += readFromDb(ID_RTU2_LAST_ERROR, &RTU2_LAST_ERROR);
-    retval += readFromDb(ID_RTU2_WRITE_QUEUE, &RTU2_WRITE_QUEUE);
-    retval += readFromDb(ID_RTU2_BUS_LOAD, &RTU2_BUS_LOAD);
-    retval += readFromDb(ID_RTU3_TYPE_PORT, &RTU3_TYPE_PORT);
-    retval += readFromDb(ID_RTU3_BAUDRATE, &RTU3_BAUDRATE);
-    retval += readFromDb(ID_RTU3_STATUS, &RTU3_STATUS);
-    retval += readFromDb(ID_RTU3_READS, &RTU3_READS);
-    retval += readFromDb(ID_RTU3_WRITES, &RTU3_WRITES);
-    retval += readFromDb(ID_RTU3_TIMEOUTS, &RTU3_TIMEOUTS);
-    retval += readFromDb(ID_RTU3_COMM_ERRORS, &RTU3_COMM_ERRORS);
-    retval += readFromDb(ID_RTU3_LAST_ERROR, &RTU3_LAST_ERROR);
-    retval += readFromDb(ID_RTU3_WRITE_QUEUE, &RTU3_WRITE_QUEUE);
-    retval += readFromDb(ID_RTU3_BUS_LOAD, &RTU3_BUS_LOAD);
-    retval += readFromDb(ID_CAN0_TYPE_PORT, &CAN0_TYPE_PORT);
-    retval += readFromDb(ID_CAN0_BAUDRATE, &CAN0_BAUDRATE);
-    retval += readFromDb(ID_CAN0_STATUS, &CAN0_STATUS);
-    retval += readFromDb(ID_CAN0_READS, &CAN0_READS);
-    retval += readFromDb(ID_CAN0_WRITES, &CAN0_WRITES);
-    retval += readFromDb(ID_CAN0_TIMEOUTS, &CAN0_TIMEOUTS);
-    retval += readFromDb(ID_CAN0_COMM_ERRORS, &CAN0_COMM_ERRORS);
-    retval += readFromDb(ID_CAN0_LAST_ERROR, &CAN0_LAST_ERROR);
-    retval += readFromDb(ID_CAN0_WRITE_QUEUE, &CAN0_WRITE_QUEUE);
-    retval += readFromDb(ID_CAN0_BUS_LOAD, &CAN0_BUS_LOAD);
-    retval += readFromDb(ID_CAN1_TYPE_PORT, &CAN1_TYPE_PORT);
-    retval += readFromDb(ID_CAN1_BAUDRATE, &CAN1_BAUDRATE);
-    retval += readFromDb(ID_CAN1_STATUS, &CAN1_STATUS);
-    retval += readFromDb(ID_CAN1_READS, &CAN1_READS);
-    retval += readFromDb(ID_CAN1_WRITES, &CAN1_WRITES);
-    retval += readFromDb(ID_CAN1_TIMEOUTS, &CAN1_TIMEOUTS);
-    retval += readFromDb(ID_CAN1_COMM_ERRORS, &CAN1_COMM_ERRORS);
-    retval += readFromDb(ID_CAN1_LAST_ERROR, &CAN1_LAST_ERROR);
-    retval += readFromDb(ID_CAN1_WRITE_QUEUE, &CAN1_WRITE_QUEUE);
-    retval += readFromDb(ID_CAN1_BUS_LOAD, &CAN1_BUS_LOAD);
-    retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
-    retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
-    retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);
-    retval += readFromDb(ID_TCPS_READS, &TCPS_READS);
-    retval += readFromDb(ID_TCPS_WRITES, &TCPS_WRITES);
-    retval += readFromDb(ID_TCPS_TIMEOUTS, &TCPS_TIMEOUTS);
-    retval += readFromDb(ID_TCPS_COMM_ERRORS, &TCPS_COMM_ERRORS);
-    retval += readFromDb(ID_TCPS_LAST_ERROR, &TCPS_LAST_ERROR);
-    retval += readFromDb(ID_TCPS_WRITE_QUEUE, &TCPS_WRITE_QUEUE);
-    retval += readFromDb(ID_TCPS_BUS_LOAD, &TCPS_BUS_LOAD);
-    retval += readFromDb(ID_TCP0_TYPE_PORT, &TCP0_TYPE_PORT);
-    retval += readFromDb(ID_TCP0_IP_ADDRESS, &TCP0_IP_ADDRESS);
-    retval += readFromDb(ID_TCP0_STATUS, &TCP0_STATUS);
-    retval += readFromDb(ID_TCP0_READS, &TCP0_READS);
-    retval += readFromDb(ID_TCP0_WRITES, &TCP0_WRITES);
-    retval += readFromDb(ID_TCP0_TIMEOUTS, &TCP0_TIMEOUTS);
-    retval += readFromDb(ID_TCP0_COMM_ERRORS, &TCP0_COMM_ERRORS);
-    retval += readFromDb(ID_TCP0_LAST_ERROR, &TCP0_LAST_ERROR);
-    retval += readFromDb(ID_TCP0_WRITE_QUEUE, &TCP0_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP0_BUS_LOAD, &TCP0_BUS_LOAD);
-    retval += readFromDb(ID_TCP1_TYPE_PORT, &TCP1_TYPE_PORT);
-    retval += readFromDb(ID_TCP1_IP_ADDRESS, &TCP1_IP_ADDRESS);
-    retval += readFromDb(ID_TCP1_STATUS, &TCP1_STATUS);
-    retval += readFromDb(ID_TCP1_READS, &TCP1_READS);
-    retval += readFromDb(ID_TCP1_WRITES, &TCP1_WRITES);
-    retval += readFromDb(ID_TCP1_TIMEOUTS, &TCP1_TIMEOUTS);
-    retval += readFromDb(ID_TCP1_COMM_ERRORS, &TCP1_COMM_ERRORS);
-    retval += readFromDb(ID_TCP1_LAST_ERROR, &TCP1_LAST_ERROR);
-    retval += readFromDb(ID_TCP1_WRITE_QUEUE, &TCP1_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP1_BUS_LOAD, &TCP1_BUS_LOAD);
-    retval += readFromDb(ID_TCP2_TYPE_PORT, &TCP2_TYPE_PORT);
-    retval += readFromDb(ID_TCP2_IP_ADDRESS, &TCP2_IP_ADDRESS);
-    retval += readFromDb(ID_TCP2_STATUS, &TCP2_STATUS);
-    retval += readFromDb(ID_TCP2_READS, &TCP2_READS);
-    retval += readFromDb(ID_TCP2_WRITES, &TCP2_WRITES);
-    retval += readFromDb(ID_TCP2_TIMEOUTS, &TCP2_TIMEOUTS);
-    retval += readFromDb(ID_TCP2_COMM_ERRORS, &TCP2_COMM_ERRORS);
-    retval += readFromDb(ID_TCP2_LAST_ERROR, &TCP2_LAST_ERROR);
-    retval += readFromDb(ID_TCP2_WRITE_QUEUE, &TCP2_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP2_BUS_LOAD, &TCP2_BUS_LOAD);
-    retval += readFromDb(ID_TCP3_TYPE_PORT, &TCP3_TYPE_PORT);
-    retval += readFromDb(ID_TCP3_IP_ADDRESS, &TCP3_IP_ADDRESS);
-    retval += readFromDb(ID_TCP3_STATUS, &TCP3_STATUS);
-    retval += readFromDb(ID_TCP3_READS, &TCP3_READS);
-    retval += readFromDb(ID_TCP3_WRITES, &TCP3_WRITES);
-    retval += readFromDb(ID_TCP3_TIMEOUTS, &TCP3_TIMEOUTS);
-    retval += readFromDb(ID_TCP3_COMM_ERRORS, &TCP3_COMM_ERRORS);
-    retval += readFromDb(ID_TCP3_LAST_ERROR, &TCP3_LAST_ERROR);
-    retval += readFromDb(ID_TCP3_WRITE_QUEUE, &TCP3_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP3_BUS_LOAD, &TCP3_BUS_LOAD);
-    retval += readFromDb(ID_TCP4_TYPE_PORT, &TCP4_TYPE_PORT);
-    retval += readFromDb(ID_TCP4_IP_ADDRESS, &TCP4_IP_ADDRESS);
-    retval += readFromDb(ID_TCP4_STATUS, &TCP4_STATUS);
-    retval += readFromDb(ID_TCP4_READS, &TCP4_READS);
-    retval += readFromDb(ID_TCP4_WRITES, &TCP4_WRITES);
-    retval += readFromDb(ID_TCP4_TIMEOUTS, &TCP4_TIMEOUTS);
-    retval += readFromDb(ID_TCP4_COMM_ERRORS, &TCP4_COMM_ERRORS);
-    retval += readFromDb(ID_TCP4_LAST_ERROR, &TCP4_LAST_ERROR);
-    retval += readFromDb(ID_TCP4_WRITE_QUEUE, &TCP4_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP4_BUS_LOAD, &TCP4_BUS_LOAD);
-    retval += readFromDb(ID_TCP5_TYPE_PORT, &TCP5_TYPE_PORT);
-    retval += readFromDb(ID_TCP5_IP_ADDRESS, &TCP5_IP_ADDRESS);
-    retval += readFromDb(ID_TCP5_STATUS, &TCP5_STATUS);
-    retval += readFromDb(ID_TCP5_READS, &TCP5_READS);
-    retval += readFromDb(ID_TCP5_WRITES, &TCP5_WRITES);
-    retval += readFromDb(ID_TCP5_TIMEOUTS, &TCP5_TIMEOUTS);
-    retval += readFromDb(ID_TCP5_COMM_ERRORS, &TCP5_COMM_ERRORS);
-    retval += readFromDb(ID_TCP5_LAST_ERROR, &TCP5_LAST_ERROR);
-    retval += readFromDb(ID_TCP5_WRITE_QUEUE, &TCP5_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP5_BUS_LOAD, &TCP5_BUS_LOAD);
-    retval += readFromDb(ID_TCP6_TYPE_PORT, &TCP6_TYPE_PORT);
-    retval += readFromDb(ID_TCP6_IP_ADDRESS, &TCP6_IP_ADDRESS);
-    retval += readFromDb(ID_TCP6_STATUS, &TCP6_STATUS);
-    retval += readFromDb(ID_TCP6_READS, &TCP6_READS);
-    retval += readFromDb(ID_TCP6_WRITES, &TCP6_WRITES);
-    retval += readFromDb(ID_TCP6_TIMEOUTS, &TCP6_TIMEOUTS);
-    retval += readFromDb(ID_TCP6_COMM_ERRORS, &TCP6_COMM_ERRORS);
-    retval += readFromDb(ID_TCP6_LAST_ERROR, &TCP6_LAST_ERROR);
-    retval += readFromDb(ID_TCP6_WRITE_QUEUE, &TCP6_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP6_BUS_LOAD, &TCP6_BUS_LOAD);
-    retval += readFromDb(ID_TCP7_TYPE_PORT, &TCP7_TYPE_PORT);
-    retval += readFromDb(ID_TCP7_IP_ADDRESS, &TCP7_IP_ADDRESS);
-    retval += readFromDb(ID_TCP7_STATUS, &TCP7_STATUS);
-    retval += readFromDb(ID_TCP7_READS, &TCP7_READS);
-    retval += readFromDb(ID_TCP7_WRITES, &TCP7_WRITES);
-    retval += readFromDb(ID_TCP7_TIMEOUTS, &TCP7_TIMEOUTS);
-    retval += readFromDb(ID_TCP7_COMM_ERRORS, &TCP7_COMM_ERRORS);
-    retval += readFromDb(ID_TCP7_LAST_ERROR, &TCP7_LAST_ERROR);
-    retval += readFromDb(ID_TCP7_WRITE_QUEUE, &TCP7_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP7_BUS_LOAD, &TCP7_BUS_LOAD);
-    retval += readFromDb(ID_TCP8_TYPE_PORT, &TCP8_TYPE_PORT);
-    retval += readFromDb(ID_TCP8_IP_ADDRESS, &TCP8_IP_ADDRESS);
-    retval += readFromDb(ID_TCP8_STATUS, &TCP8_STATUS);
-    retval += readFromDb(ID_TCP8_READS, &TCP8_READS);
-    retval += readFromDb(ID_TCP8_WRITES, &TCP8_WRITES);
-    retval += readFromDb(ID_TCP8_TIMEOUTS, &TCP8_TIMEOUTS);
-    retval += readFromDb(ID_TCP8_COMM_ERRORS, &TCP8_COMM_ERRORS);
-    retval += readFromDb(ID_TCP8_LAST_ERROR, &TCP8_LAST_ERROR);
-    retval += readFromDb(ID_TCP8_WRITE_QUEUE, &TCP8_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP8_BUS_LOAD, &TCP8_BUS_LOAD);
-    retval += readFromDb(ID_TCP9_TYPE_PORT, &TCP9_TYPE_PORT);
-    retval += readFromDb(ID_TCP9_IP_ADDRESS, &TCP9_IP_ADDRESS);
-    retval += readFromDb(ID_TCP9_STATUS, &TCP9_STATUS);
-    retval += readFromDb(ID_TCP9_READS, &TCP9_READS);
-    retval += readFromDb(ID_TCP9_WRITES, &TCP9_WRITES);
-    retval += readFromDb(ID_TCP9_TIMEOUTS, &TCP9_TIMEOUTS);
-    retval += readFromDb(ID_TCP9_COMM_ERRORS, &TCP9_COMM_ERRORS);
-    retval += readFromDb(ID_TCP9_LAST_ERROR, &TCP9_LAST_ERROR);
-    retval += readFromDb(ID_TCP9_WRITE_QUEUE, &TCP9_WRITE_QUEUE);
-    retval += readFromDb(ID_TCP9_BUS_LOAD, &TCP9_BUS_LOAD);
-    retval += readFromDb(ID_NODE_01_DEV_NODE, &NODE_01_DEV_NODE);
-    retval += readFromDb(ID_NODE_01_STATUS, &NODE_01_STATUS);
-    retval += readFromDb(ID_NODE_02_DEV_NODE, &NODE_02_DEV_NODE);
-    retval += readFromDb(ID_NODE_02_STATUS, &NODE_02_STATUS);
-    retval += readFromDb(ID_NODE_03_DEV_NODE, &NODE_03_DEV_NODE);
-    retval += readFromDb(ID_NODE_03_STATUS, &NODE_03_STATUS);
-    retval += readFromDb(ID_NODE_04_DEV_NODE, &NODE_04_DEV_NODE);
-    retval += readFromDb(ID_NODE_04_STATUS, &NODE_04_STATUS);
-    retval += readFromDb(ID_NODE_05_DEV_NODE, &NODE_05_DEV_NODE);
-    retval += readFromDb(ID_NODE_05_STATUS, &NODE_05_STATUS);
-    retval += readFromDb(ID_NODE_06_DEV_NODE, &NODE_06_DEV_NODE);
-    retval += readFromDb(ID_NODE_06_STATUS, &NODE_06_STATUS);
-    retval += readFromDb(ID_NODE_07_DEV_NODE, &NODE_07_DEV_NODE);
-    retval += readFromDb(ID_NODE_07_STATUS, &NODE_07_STATUS);
-    retval += readFromDb(ID_NODE_08_DEV_NODE, &NODE_08_DEV_NODE);
-    retval += readFromDb(ID_NODE_08_STATUS, &NODE_08_STATUS);
-    retval += readFromDb(ID_NODE_09_DEV_NODE, &NODE_09_DEV_NODE);
-    retval += readFromDb(ID_NODE_09_STATUS, &NODE_09_STATUS);
-    retval += readFromDb(ID_NODE_10_DEV_NODE, &NODE_10_DEV_NODE);
-    retval += readFromDb(ID_NODE_10_STATUS, &NODE_10_STATUS);
-    retval += readFromDb(ID_NODE_11_DEV_NODE, &NODE_11_DEV_NODE);
-    retval += readFromDb(ID_NODE_11_STATUS, &NODE_11_STATUS);
-    retval += readFromDb(ID_NODE_12_DEV_NODE, &NODE_12_DEV_NODE);
-    retval += readFromDb(ID_NODE_12_STATUS, &NODE_12_STATUS);
-    retval += readFromDb(ID_NODE_13_DEV_NODE, &NODE_13_DEV_NODE);
-    retval += readFromDb(ID_NODE_13_STATUS, &NODE_13_STATUS);
-    retval += readFromDb(ID_NODE_14_DEV_NODE, &NODE_14_DEV_NODE);
-    retval += readFromDb(ID_NODE_14_STATUS, &NODE_14_STATUS);
-    retval += readFromDb(ID_NODE_15_DEV_NODE, &NODE_15_DEV_NODE);
-    retval += readFromDb(ID_NODE_15_STATUS, &NODE_15_STATUS);
-    retval += readFromDb(ID_NODE_16_DEV_NODE, &NODE_16_DEV_NODE);
-    retval += readFromDb(ID_NODE_16_STATUS, &NODE_16_STATUS);
-    retval += readFromDb(ID_PLC_time, &PLC_time);
-    retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
-    retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
-    retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
-    retval += readFromDb(ID_PLC_Version, &PLC_Version);
-    retval += readFromDb(ID_PLC_EngineStatus, &PLC_EngineStatus);
-    retval += readFromDb(ID_PLC_ResetValues, &PLC_ResetValues);
-    retval += readFromDb(ID_PLC_buzzerOn, &PLC_buzzerOn);
-    retval += readFromDb(ID_PLC_PLC_Version, &PLC_PLC_Version);
-    retval += readFromDb(ID_PLC_HMI_Version, &PLC_HMI_Version);
-    retval += readFromDb(ID_PLC_Year, &PLC_Year);
-    retval += readFromDb(ID_PLC_Month, &PLC_Month);
-    retval += readFromDb(ID_PLC_Day, &PLC_Day);
-    retval += readFromDb(ID_PLC_Hours, &PLC_Hours);
-    retval += readFromDb(ID_PLC_Minutes, &PLC_Minutes);
-    retval += readFromDb(ID_PLC_Seconds, &PLC_Seconds);
-    retval += readFromDb(ID_PLC_UPTIME_s, &PLC_UPTIME_s);
-    retval += readFromDb(ID_PLC_UPTIME_cs, &PLC_UPTIME_cs);
-    retval += readFromDb(ID_PLC_WATCHDOGEN, &PLC_WATCHDOGEN);
-    retval += readFromDb(ID_PLC_WATCHDOG_ms, &PLC_WATCHDOG_ms);
-    retval += readFromDb(ID_PLC_PRODUCT_ID, &PLC_PRODUCT_ID);
-    retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
-    retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
-    retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
-    retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
-    retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
-    retval += readFromDb(ID_PLC_LPC_ERRORS, &PLC_LPC_ERRORS);
-    retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
-    retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
-    retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);
-    retval += readFromDb(ID_PLC_BUZZER, &PLC_BUZZER);
-    retval += readFromDb(ID_PLC_FastIO_Ena, &PLC_FastIO_Ena);
-    retval += readFromDb(ID_PLC_FastIO_Dir, &PLC_FastIO_Dir);
-    retval += readFromDb(ID_PLC_FastIO_1, &PLC_FastIO_1);
-    retval += readFromDb(ID_PLC_FastIO_2, &PLC_FastIO_2);
-    retval += readFromDb(ID_PLC_FastIO_3, &PLC_FastIO_3);
-    retval += readFromDb(ID_PLC_FastIO_4, &PLC_FastIO_4);
-    retval += readFromDb(ID_PLC_FastIO_5, &PLC_FastIO_5);
-    retval += readFromDb(ID_PLC_FastIO_6, &PLC_FastIO_6);
-    retval += readFromDb(ID_PLC_FastIO_7, &PLC_FastIO_7);
-    retval += readFromDb(ID_PLC_FastIO_8, &PLC_FastIO_8);
+	retval += readFromDb(ID_TCP_T3_heartbeat, &TCP_T3_heartbeat);
+	retval += readFromDb(ID_TCP_T3_enabled_sensors, &TCP_T3_enabled_sensors);
+	retval += readFromDb(ID_TCP_T3_temperature, &TCP_T3_temperature);
+	retval += readFromDb(ID_TCP_T3_temperature_bis, &TCP_T3_temperature_bis);
+	retval += readFromDb(ID_TCP_T3_temperature_ext, &TCP_T3_temperature_ext);
+	retval += readFromDb(ID_TCP_T3_humidity, &TCP_T3_humidity);
+	retval += readFromDb(ID_TCP_T3_humidity_bis, &TCP_T3_humidity_bis);
+	retval += readFromDb(ID_TCP_T3_humidity_ext, &TCP_T3_humidity_ext);
+	retval += readFromDb(ID_TCP_T3_temperature_setpoint, &TCP_T3_temperature_setpoint);
+	retval += readFromDb(ID_TCP_T3_humidity_setpoint, &TCP_T3_humidity_setpoint);
+	retval += readFromDb(ID_TCP_T3_enabled_lamps, &TCP_T3_enabled_lamps);
+	retval += readFromDb(ID_TCP_T3_lamp_1, &TCP_T3_lamp_1);
+	retval += readFromDb(ID_TCP_T3_lamp_2, &TCP_T3_lamp_2);
+	retval += readFromDb(ID_TCP_T3_lamp_3, &TCP_T3_lamp_3);
+	retval += readFromDb(ID_TCP_T3_lamp_4, &TCP_T3_lamp_4);
+	retval += readFromDb(ID_TCP_T3_lamp_5, &TCP_T3_lamp_5);
+	retval += readFromDb(ID_TCP_T3_max_request_W, &TCP_T3_max_request_W);
+	retval += readFromDb(ID_TCP_T3_heating, &TCP_T3_heating);
+	retval += readFromDb(ID_TCP_T3_nighttime, &TCP_T3_nighttime);
+	retval += readFromDb(ID_TCP_T3_heating_status, &TCP_T3_heating_status);
+	retval += readFromDb(ID_TCP_T3_heating_timer, &TCP_T3_heating_timer);
+	retval += readFromDb(ID_TCP_T3_sunrise, &TCP_T3_sunrise);
+	retval += readFromDb(ID_TCP_T3_sunset, &TCP_T3_sunset);
+	retval += readFromDb(ID_TCP_T3_temperature_setpoint_nt, &TCP_T3_temperature_setpoint_nt);
+	retval += readFromDb(ID_TCP_T3_humidity_setpoint_nt, &TCP_T3_humidity_setpoint_nt);
+	retval += readFromDb(ID_TCP_T3_lamp_feedback_1, &TCP_T3_lamp_feedback_1);
+	retval += readFromDb(ID_TCP_T3_lamp_feedback_2, &TCP_T3_lamp_feedback_2);
+	retval += readFromDb(ID_TCP_T3_lamp_feedback_3, &TCP_T3_lamp_feedback_3);
+	retval += readFromDb(ID_TCP_T3_lamp_feedback_4, &TCP_T3_lamp_feedback_4);
+	retval += readFromDb(ID_TCP_T3_lamp_feedback_5, &TCP_T3_lamp_feedback_5);
+	retval += readFromDb(ID_TCP_T3_requested_W, &TCP_T3_requested_W);
+	retval += readFromDb(ID_TCP_T3_control_type, &TCP_T3_control_type);
+	retval += readFromDb(ID_TCP_T3_daily_heating_s, &TCP_T3_daily_heating_s);
+	retval += readFromDb(ID_TCP_T3_monthly_heating_s, &TCP_T3_monthly_heating_s);
+	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
+	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
+	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
+	retval += readFromDb(ID_RTU0_READS, &RTU0_READS);
+	retval += readFromDb(ID_RTU0_WRITES, &RTU0_WRITES);
+	retval += readFromDb(ID_RTU0_TIMEOUTS, &RTU0_TIMEOUTS);
+	retval += readFromDb(ID_RTU0_COMM_ERRORS, &RTU0_COMM_ERRORS);
+	retval += readFromDb(ID_RTU0_LAST_ERROR, &RTU0_LAST_ERROR);
+	retval += readFromDb(ID_RTU0_WRITE_QUEUE, &RTU0_WRITE_QUEUE);
+	retval += readFromDb(ID_RTU0_BUS_LOAD, &RTU0_BUS_LOAD);
+	retval += readFromDb(ID_RTU2_TYPE_PORT, &RTU2_TYPE_PORT);
+	retval += readFromDb(ID_RTU2_BAUDRATE, &RTU2_BAUDRATE);
+	retval += readFromDb(ID_RTU2_STATUS, &RTU2_STATUS);
+	retval += readFromDb(ID_RTU2_READS, &RTU2_READS);
+	retval += readFromDb(ID_RTU2_WRITES, &RTU2_WRITES);
+	retval += readFromDb(ID_RTU2_TIMEOUTS, &RTU2_TIMEOUTS);
+	retval += readFromDb(ID_RTU2_COMM_ERRORS, &RTU2_COMM_ERRORS);
+	retval += readFromDb(ID_RTU2_LAST_ERROR, &RTU2_LAST_ERROR);
+	retval += readFromDb(ID_RTU2_WRITE_QUEUE, &RTU2_WRITE_QUEUE);
+	retval += readFromDb(ID_RTU2_BUS_LOAD, &RTU2_BUS_LOAD);
+	retval += readFromDb(ID_RTU3_TYPE_PORT, &RTU3_TYPE_PORT);
+	retval += readFromDb(ID_RTU3_BAUDRATE, &RTU3_BAUDRATE);
+	retval += readFromDb(ID_RTU3_STATUS, &RTU3_STATUS);
+	retval += readFromDb(ID_RTU3_READS, &RTU3_READS);
+	retval += readFromDb(ID_RTU3_WRITES, &RTU3_WRITES);
+	retval += readFromDb(ID_RTU3_TIMEOUTS, &RTU3_TIMEOUTS);
+	retval += readFromDb(ID_RTU3_COMM_ERRORS, &RTU3_COMM_ERRORS);
+	retval += readFromDb(ID_RTU3_LAST_ERROR, &RTU3_LAST_ERROR);
+	retval += readFromDb(ID_RTU3_WRITE_QUEUE, &RTU3_WRITE_QUEUE);
+	retval += readFromDb(ID_RTU3_BUS_LOAD, &RTU3_BUS_LOAD);
+	retval += readFromDb(ID_CAN0_TYPE_PORT, &CAN0_TYPE_PORT);
+	retval += readFromDb(ID_CAN0_BAUDRATE, &CAN0_BAUDRATE);
+	retval += readFromDb(ID_CAN0_STATUS, &CAN0_STATUS);
+	retval += readFromDb(ID_CAN0_READS, &CAN0_READS);
+	retval += readFromDb(ID_CAN0_WRITES, &CAN0_WRITES);
+	retval += readFromDb(ID_CAN0_TIMEOUTS, &CAN0_TIMEOUTS);
+	retval += readFromDb(ID_CAN0_COMM_ERRORS, &CAN0_COMM_ERRORS);
+	retval += readFromDb(ID_CAN0_LAST_ERROR, &CAN0_LAST_ERROR);
+	retval += readFromDb(ID_CAN0_WRITE_QUEUE, &CAN0_WRITE_QUEUE);
+	retval += readFromDb(ID_CAN0_BUS_LOAD, &CAN0_BUS_LOAD);
+	retval += readFromDb(ID_CAN1_TYPE_PORT, &CAN1_TYPE_PORT);
+	retval += readFromDb(ID_CAN1_BAUDRATE, &CAN1_BAUDRATE);
+	retval += readFromDb(ID_CAN1_STATUS, &CAN1_STATUS);
+	retval += readFromDb(ID_CAN1_READS, &CAN1_READS);
+	retval += readFromDb(ID_CAN1_WRITES, &CAN1_WRITES);
+	retval += readFromDb(ID_CAN1_TIMEOUTS, &CAN1_TIMEOUTS);
+	retval += readFromDb(ID_CAN1_COMM_ERRORS, &CAN1_COMM_ERRORS);
+	retval += readFromDb(ID_CAN1_LAST_ERROR, &CAN1_LAST_ERROR);
+	retval += readFromDb(ID_CAN1_WRITE_QUEUE, &CAN1_WRITE_QUEUE);
+	retval += readFromDb(ID_CAN1_BUS_LOAD, &CAN1_BUS_LOAD);
+	retval += readFromDb(ID_TCPS_TYPE_PORT, &TCPS_TYPE_PORT);
+	retval += readFromDb(ID_TCPS_IP_ADDRESS, &TCPS_IP_ADDRESS);
+	retval += readFromDb(ID_TCPS_STATUS, &TCPS_STATUS);
+	retval += readFromDb(ID_TCPS_READS, &TCPS_READS);
+	retval += readFromDb(ID_TCPS_WRITES, &TCPS_WRITES);
+	retval += readFromDb(ID_TCPS_TIMEOUTS, &TCPS_TIMEOUTS);
+	retval += readFromDb(ID_TCPS_COMM_ERRORS, &TCPS_COMM_ERRORS);
+	retval += readFromDb(ID_TCPS_LAST_ERROR, &TCPS_LAST_ERROR);
+	retval += readFromDb(ID_TCPS_WRITE_QUEUE, &TCPS_WRITE_QUEUE);
+	retval += readFromDb(ID_TCPS_BUS_LOAD, &TCPS_BUS_LOAD);
+	retval += readFromDb(ID_TCP0_TYPE_PORT, &TCP0_TYPE_PORT);
+	retval += readFromDb(ID_TCP0_IP_ADDRESS, &TCP0_IP_ADDRESS);
+	retval += readFromDb(ID_TCP0_STATUS, &TCP0_STATUS);
+	retval += readFromDb(ID_TCP0_READS, &TCP0_READS);
+	retval += readFromDb(ID_TCP0_WRITES, &TCP0_WRITES);
+	retval += readFromDb(ID_TCP0_TIMEOUTS, &TCP0_TIMEOUTS);
+	retval += readFromDb(ID_TCP0_COMM_ERRORS, &TCP0_COMM_ERRORS);
+	retval += readFromDb(ID_TCP0_LAST_ERROR, &TCP0_LAST_ERROR);
+	retval += readFromDb(ID_TCP0_WRITE_QUEUE, &TCP0_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP0_BUS_LOAD, &TCP0_BUS_LOAD);
+	retval += readFromDb(ID_TCP1_TYPE_PORT, &TCP1_TYPE_PORT);
+	retval += readFromDb(ID_TCP1_IP_ADDRESS, &TCP1_IP_ADDRESS);
+	retval += readFromDb(ID_TCP1_STATUS, &TCP1_STATUS);
+	retval += readFromDb(ID_TCP1_READS, &TCP1_READS);
+	retval += readFromDb(ID_TCP1_WRITES, &TCP1_WRITES);
+	retval += readFromDb(ID_TCP1_TIMEOUTS, &TCP1_TIMEOUTS);
+	retval += readFromDb(ID_TCP1_COMM_ERRORS, &TCP1_COMM_ERRORS);
+	retval += readFromDb(ID_TCP1_LAST_ERROR, &TCP1_LAST_ERROR);
+	retval += readFromDb(ID_TCP1_WRITE_QUEUE, &TCP1_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP1_BUS_LOAD, &TCP1_BUS_LOAD);
+	retval += readFromDb(ID_TCP2_TYPE_PORT, &TCP2_TYPE_PORT);
+	retval += readFromDb(ID_TCP2_IP_ADDRESS, &TCP2_IP_ADDRESS);
+	retval += readFromDb(ID_TCP2_STATUS, &TCP2_STATUS);
+	retval += readFromDb(ID_TCP2_READS, &TCP2_READS);
+	retval += readFromDb(ID_TCP2_WRITES, &TCP2_WRITES);
+	retval += readFromDb(ID_TCP2_TIMEOUTS, &TCP2_TIMEOUTS);
+	retval += readFromDb(ID_TCP2_COMM_ERRORS, &TCP2_COMM_ERRORS);
+	retval += readFromDb(ID_TCP2_LAST_ERROR, &TCP2_LAST_ERROR);
+	retval += readFromDb(ID_TCP2_WRITE_QUEUE, &TCP2_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP2_BUS_LOAD, &TCP2_BUS_LOAD);
+	retval += readFromDb(ID_TCP3_TYPE_PORT, &TCP3_TYPE_PORT);
+	retval += readFromDb(ID_TCP3_IP_ADDRESS, &TCP3_IP_ADDRESS);
+	retval += readFromDb(ID_TCP3_STATUS, &TCP3_STATUS);
+	retval += readFromDb(ID_TCP3_READS, &TCP3_READS);
+	retval += readFromDb(ID_TCP3_WRITES, &TCP3_WRITES);
+	retval += readFromDb(ID_TCP3_TIMEOUTS, &TCP3_TIMEOUTS);
+	retval += readFromDb(ID_TCP3_COMM_ERRORS, &TCP3_COMM_ERRORS);
+	retval += readFromDb(ID_TCP3_LAST_ERROR, &TCP3_LAST_ERROR);
+	retval += readFromDb(ID_TCP3_WRITE_QUEUE, &TCP3_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP3_BUS_LOAD, &TCP3_BUS_LOAD);
+	retval += readFromDb(ID_TCP4_TYPE_PORT, &TCP4_TYPE_PORT);
+	retval += readFromDb(ID_TCP4_IP_ADDRESS, &TCP4_IP_ADDRESS);
+	retval += readFromDb(ID_TCP4_STATUS, &TCP4_STATUS);
+	retval += readFromDb(ID_TCP4_READS, &TCP4_READS);
+	retval += readFromDb(ID_TCP4_WRITES, &TCP4_WRITES);
+	retval += readFromDb(ID_TCP4_TIMEOUTS, &TCP4_TIMEOUTS);
+	retval += readFromDb(ID_TCP4_COMM_ERRORS, &TCP4_COMM_ERRORS);
+	retval += readFromDb(ID_TCP4_LAST_ERROR, &TCP4_LAST_ERROR);
+	retval += readFromDb(ID_TCP4_WRITE_QUEUE, &TCP4_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP4_BUS_LOAD, &TCP4_BUS_LOAD);
+	retval += readFromDb(ID_TCP5_TYPE_PORT, &TCP5_TYPE_PORT);
+	retval += readFromDb(ID_TCP5_IP_ADDRESS, &TCP5_IP_ADDRESS);
+	retval += readFromDb(ID_TCP5_STATUS, &TCP5_STATUS);
+	retval += readFromDb(ID_TCP5_READS, &TCP5_READS);
+	retval += readFromDb(ID_TCP5_WRITES, &TCP5_WRITES);
+	retval += readFromDb(ID_TCP5_TIMEOUTS, &TCP5_TIMEOUTS);
+	retval += readFromDb(ID_TCP5_COMM_ERRORS, &TCP5_COMM_ERRORS);
+	retval += readFromDb(ID_TCP5_LAST_ERROR, &TCP5_LAST_ERROR);
+	retval += readFromDb(ID_TCP5_WRITE_QUEUE, &TCP5_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP5_BUS_LOAD, &TCP5_BUS_LOAD);
+	retval += readFromDb(ID_TCP6_TYPE_PORT, &TCP6_TYPE_PORT);
+	retval += readFromDb(ID_TCP6_IP_ADDRESS, &TCP6_IP_ADDRESS);
+	retval += readFromDb(ID_TCP6_STATUS, &TCP6_STATUS);
+	retval += readFromDb(ID_TCP6_READS, &TCP6_READS);
+	retval += readFromDb(ID_TCP6_WRITES, &TCP6_WRITES);
+	retval += readFromDb(ID_TCP6_TIMEOUTS, &TCP6_TIMEOUTS);
+	retval += readFromDb(ID_TCP6_COMM_ERRORS, &TCP6_COMM_ERRORS);
+	retval += readFromDb(ID_TCP6_LAST_ERROR, &TCP6_LAST_ERROR);
+	retval += readFromDb(ID_TCP6_WRITE_QUEUE, &TCP6_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP6_BUS_LOAD, &TCP6_BUS_LOAD);
+	retval += readFromDb(ID_TCP7_TYPE_PORT, &TCP7_TYPE_PORT);
+	retval += readFromDb(ID_TCP7_IP_ADDRESS, &TCP7_IP_ADDRESS);
+	retval += readFromDb(ID_TCP7_STATUS, &TCP7_STATUS);
+	retval += readFromDb(ID_TCP7_READS, &TCP7_READS);
+	retval += readFromDb(ID_TCP7_WRITES, &TCP7_WRITES);
+	retval += readFromDb(ID_TCP7_TIMEOUTS, &TCP7_TIMEOUTS);
+	retval += readFromDb(ID_TCP7_COMM_ERRORS, &TCP7_COMM_ERRORS);
+	retval += readFromDb(ID_TCP7_LAST_ERROR, &TCP7_LAST_ERROR);
+	retval += readFromDb(ID_TCP7_WRITE_QUEUE, &TCP7_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP7_BUS_LOAD, &TCP7_BUS_LOAD);
+	retval += readFromDb(ID_TCP8_TYPE_PORT, &TCP8_TYPE_PORT);
+	retval += readFromDb(ID_TCP8_IP_ADDRESS, &TCP8_IP_ADDRESS);
+	retval += readFromDb(ID_TCP8_STATUS, &TCP8_STATUS);
+	retval += readFromDb(ID_TCP8_READS, &TCP8_READS);
+	retval += readFromDb(ID_TCP8_WRITES, &TCP8_WRITES);
+	retval += readFromDb(ID_TCP8_TIMEOUTS, &TCP8_TIMEOUTS);
+	retval += readFromDb(ID_TCP8_COMM_ERRORS, &TCP8_COMM_ERRORS);
+	retval += readFromDb(ID_TCP8_LAST_ERROR, &TCP8_LAST_ERROR);
+	retval += readFromDb(ID_TCP8_WRITE_QUEUE, &TCP8_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP8_BUS_LOAD, &TCP8_BUS_LOAD);
+	retval += readFromDb(ID_TCP9_TYPE_PORT, &TCP9_TYPE_PORT);
+	retval += readFromDb(ID_TCP9_IP_ADDRESS, &TCP9_IP_ADDRESS);
+	retval += readFromDb(ID_TCP9_STATUS, &TCP9_STATUS);
+	retval += readFromDb(ID_TCP9_READS, &TCP9_READS);
+	retval += readFromDb(ID_TCP9_WRITES, &TCP9_WRITES);
+	retval += readFromDb(ID_TCP9_TIMEOUTS, &TCP9_TIMEOUTS);
+	retval += readFromDb(ID_TCP9_COMM_ERRORS, &TCP9_COMM_ERRORS);
+	retval += readFromDb(ID_TCP9_LAST_ERROR, &TCP9_LAST_ERROR);
+	retval += readFromDb(ID_TCP9_WRITE_QUEUE, &TCP9_WRITE_QUEUE);
+	retval += readFromDb(ID_TCP9_BUS_LOAD, &TCP9_BUS_LOAD);
+	retval += readFromDb(ID_NODE_01_DEV_NODE, &NODE_01_DEV_NODE);
+	retval += readFromDb(ID_NODE_01_STATUS, &NODE_01_STATUS);
+	retval += readFromDb(ID_NODE_02_DEV_NODE, &NODE_02_DEV_NODE);
+	retval += readFromDb(ID_NODE_02_STATUS, &NODE_02_STATUS);
+	retval += readFromDb(ID_NODE_03_DEV_NODE, &NODE_03_DEV_NODE);
+	retval += readFromDb(ID_NODE_03_STATUS, &NODE_03_STATUS);
+	retval += readFromDb(ID_NODE_04_DEV_NODE, &NODE_04_DEV_NODE);
+	retval += readFromDb(ID_NODE_04_STATUS, &NODE_04_STATUS);
+	retval += readFromDb(ID_NODE_05_DEV_NODE, &NODE_05_DEV_NODE);
+	retval += readFromDb(ID_NODE_05_STATUS, &NODE_05_STATUS);
+	retval += readFromDb(ID_NODE_06_DEV_NODE, &NODE_06_DEV_NODE);
+	retval += readFromDb(ID_NODE_06_STATUS, &NODE_06_STATUS);
+	retval += readFromDb(ID_NODE_07_DEV_NODE, &NODE_07_DEV_NODE);
+	retval += readFromDb(ID_NODE_07_STATUS, &NODE_07_STATUS);
+	retval += readFromDb(ID_NODE_08_DEV_NODE, &NODE_08_DEV_NODE);
+	retval += readFromDb(ID_NODE_08_STATUS, &NODE_08_STATUS);
+	retval += readFromDb(ID_NODE_09_DEV_NODE, &NODE_09_DEV_NODE);
+	retval += readFromDb(ID_NODE_09_STATUS, &NODE_09_STATUS);
+	retval += readFromDb(ID_NODE_10_DEV_NODE, &NODE_10_DEV_NODE);
+	retval += readFromDb(ID_NODE_10_STATUS, &NODE_10_STATUS);
+	retval += readFromDb(ID_NODE_11_DEV_NODE, &NODE_11_DEV_NODE);
+	retval += readFromDb(ID_NODE_11_STATUS, &NODE_11_STATUS);
+	retval += readFromDb(ID_NODE_12_DEV_NODE, &NODE_12_DEV_NODE);
+	retval += readFromDb(ID_NODE_12_STATUS, &NODE_12_STATUS);
+	retval += readFromDb(ID_NODE_13_DEV_NODE, &NODE_13_DEV_NODE);
+	retval += readFromDb(ID_NODE_13_STATUS, &NODE_13_STATUS);
+	retval += readFromDb(ID_NODE_14_DEV_NODE, &NODE_14_DEV_NODE);
+	retval += readFromDb(ID_NODE_14_STATUS, &NODE_14_STATUS);
+	retval += readFromDb(ID_NODE_15_DEV_NODE, &NODE_15_DEV_NODE);
+	retval += readFromDb(ID_NODE_15_STATUS, &NODE_15_STATUS);
+	retval += readFromDb(ID_NODE_16_DEV_NODE, &NODE_16_DEV_NODE);
+	retval += readFromDb(ID_NODE_16_STATUS, &NODE_16_STATUS);
+	retval += readFromDb(ID_PLC_time, &PLC_time);
+	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
+	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
+	retval += readFromDb(ID_PLC_timeWin, &PLC_timeWin);
+	retval += readFromDb(ID_PLC_Version, &PLC_Version);
+	retval += readFromDb(ID_PLC_EngineStatus, &PLC_EngineStatus);
+	retval += readFromDb(ID_PLC_ResetValues, &PLC_ResetValues);
+	retval += readFromDb(ID_PLC_buzzerOn, &PLC_buzzerOn);
+	retval += readFromDb(ID_PLC_PLC_Version, &PLC_PLC_Version);
+	retval += readFromDb(ID_PLC_HMI_Version, &PLC_HMI_Version);
+	retval += readFromDb(ID_PLC_Year, &PLC_Year);
+	retval += readFromDb(ID_PLC_Month, &PLC_Month);
+	retval += readFromDb(ID_PLC_Day, &PLC_Day);
+	retval += readFromDb(ID_PLC_Hours, &PLC_Hours);
+	retval += readFromDb(ID_PLC_Minutes, &PLC_Minutes);
+	retval += readFromDb(ID_PLC_Seconds, &PLC_Seconds);
+	retval += readFromDb(ID_PLC_UPTIME_s, &PLC_UPTIME_s);
+	retval += readFromDb(ID_PLC_UPTIME_cs, &PLC_UPTIME_cs);
+	retval += readFromDb(ID_PLC_WATCHDOGEN, &PLC_WATCHDOGEN);
+	retval += readFromDb(ID_PLC_WATCHDOG_ms, &PLC_WATCHDOG_ms);
+	retval += readFromDb(ID_PLC_PRODUCT_ID, &PLC_PRODUCT_ID);
+	retval += readFromDb(ID_PLC_SERIAL_NUMBER, &PLC_SERIAL_NUMBER);
+	retval += readFromDb(ID_PLC_HMI_PAGE, &PLC_HMI_PAGE);
+	retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
+	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
+	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
+	retval += readFromDb(ID_PLC_LPC_ERRORS, &PLC_LPC_ERRORS);
+	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
+	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
+	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);
+	retval += readFromDb(ID_PLC_BUZZER, &PLC_BUZZER);
+	retval += readFromDb(ID_PLC_FastIO_Ena, &PLC_FastIO_Ena);
+	retval += readFromDb(ID_PLC_FastIO_Dir, &PLC_FastIO_Dir);
+	retval += readFromDb(ID_PLC_FastIO_1, &PLC_FastIO_1);
+	retval += readFromDb(ID_PLC_FastIO_2, &PLC_FastIO_2);
+	retval += readFromDb(ID_PLC_FastIO_3, &PLC_FastIO_3);
+	retval += readFromDb(ID_PLC_FastIO_4, &PLC_FastIO_4);
+	retval += readFromDb(ID_PLC_FastIO_5, &PLC_FastIO_5);
+	retval += readFromDb(ID_PLC_FastIO_6, &PLC_FastIO_6);
+	retval += readFromDb(ID_PLC_FastIO_7, &PLC_FastIO_7);
+	retval += readFromDb(ID_PLC_FastIO_8, &PLC_FastIO_8);
 
-    return retval;
+	return retval;
 }
-

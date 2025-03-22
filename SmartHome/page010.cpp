@@ -43,7 +43,11 @@ page010::page010(QWidget *parent) :
 
 void page010::changeWidgets()
 {
-    changeHeader(ui->pushButton_time, NULL);
+    changeHeader(ui->pushButton_time, NULL,
+                 ui->label_EP, ui->label_BA, ui->label_green,
+                 ui->label_T5, ui->label_T6, ui->label_red,
+                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
+                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
 
     if (PLC_ConfigPassword) {
         ui->atcmButton_configurazione->setPasswordVar("PLC_ConfigPassword");

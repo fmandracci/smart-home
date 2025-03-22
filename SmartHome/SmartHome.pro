@@ -117,15 +117,19 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    hmi.ini \
-    hmi_bis.ini \
+    hmi_tp1043.ini \
+    hmi_tpac1007.ini \
+    hmi_tpx4100.ini \
+    hmi_tpx4120.ini \
     hmi_only \
     hmi.qss \
-    hmi_ter.ini \
-    local_deploy.sh \
+    home_C.ini \
+    home_L.ini \
+    home_P.ini \
+    home_X.ini \
     local_deploy.sh
 
-other.files =  hmi_only hmi.qss hmi_bis.ini hmi_ter.ini
+other.files = $$replace(OTHER_FILES, local_deploy.sh, )
 other.path = /local/root
 
 INSTALLS += other

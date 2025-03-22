@@ -1200,18 +1200,18 @@
 <context>
     <name>page010</name>
     <message utf8="true">
-        <location filename="page010.ui" line="686"/>
+        <location filename="page010.ui" line="674"/>
         <source>☼HH:mm</source>
         <oldsource>HH:mm</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="593"/>
+        <location filename="page010.ui" line="581"/>
         <source>PLC_ConfigPassword</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="771"/>
+        <location filename="page010.ui" line="759"/>
         <source>XXXXxxXX
 x.xxx
 x.xxx
@@ -1219,19 +1219,19 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="1498"/>
+        <location filename="page010.ui" line="1486"/>
         <source>PLC_BA_password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="587"/>
-        <location filename="page010.ui" line="850"/>
-        <location filename="page010.ui" line="949"/>
-        <location filename="page010.ui" line="1048"/>
-        <location filename="page010.ui" line="1195"/>
-        <location filename="page010.ui" line="1294"/>
-        <location filename="page010.ui" line="1393"/>
-        <location filename="page010.ui" line="1492"/>
+        <location filename="page010.ui" line="575"/>
+        <location filename="page010.ui" line="838"/>
+        <location filename="page010.ui" line="937"/>
+        <location filename="page010.ui" line="1036"/>
+        <location filename="page010.ui" line="1183"/>
+        <location filename="page010.ui" line="1282"/>
+        <location filename="page010.ui" line="1381"/>
+        <location filename="page010.ui" line="1480"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1283,12 +1283,12 @@ xx</source>
     <message>
         <location filename="page021.ui" line="575"/>
         <location filename="page021.ui" line="730"/>
-        <location filename="page021.ui" line="907"/>
-        <location filename="page021.ui" line="1034"/>
-        <location filename="page021.ui" line="1135"/>
-        <location filename="page021.ui" line="1369"/>
-        <location filename="page021.ui" line="1530"/>
-        <location filename="page021.ui" line="1650"/>
+        <location filename="page021.ui" line="910"/>
+        <location filename="page021.ui" line="1043"/>
+        <location filename="page021.ui" line="1150"/>
+        <location filename="page021.ui" line="1390"/>
+        <location filename="page021.ui" line="1557"/>
+        <location filename="page021.ui" line="1677"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1299,20 +1299,20 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page021.ui" line="967"/>
         <location filename="page021.ui" line="970"/>
+        <location filename="page021.ui" line="973"/>
         <source>&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page021.ui" line="1256"/>
-        <location filename="page021.ui" line="1491"/>
+        <location filename="page021.ui" line="1271"/>
+        <location filename="page021.ui" line="1512"/>
         <source>hh:mm:ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page021.ui" line="864"/>
-        <location filename="page021.ui" line="1314"/>
+        <location filename="page021.ui" line="867"/>
+        <location filename="page021.ui" line="1329"/>
         <source>%p%</source>
         <translation type="unfinished"></translation>
     </message>
