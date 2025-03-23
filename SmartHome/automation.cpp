@@ -185,7 +185,7 @@ void changeHeader(QWidget *time_button, QWidget *home_button,
     } else if (mectScreenWidth >= 800) {
         pointSize_t = 32;
         pointSize_h = 28;
-        pixelSize_xy = 15;
+        pixelSize_xy = 20;
     } else {
         pointSize_t = 28;
         pointSize_h = 24;

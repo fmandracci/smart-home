@@ -118,7 +118,7 @@ RESOURCES += \
 
 OTHER_FILES += \
     hmi_tp1043.ini \
-    hmi_tpac1007.ini \
+    hmi_tp1070.ini \
     hmi_tpx4100.ini \
     hmi_tpx4120.ini \
     hmi_only \
