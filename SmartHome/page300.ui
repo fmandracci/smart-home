@@ -900,7 +900,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1059,7 +1059,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1098,7 +1098,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1257,7 +1257,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1296,7 +1296,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1335,7 +1335,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1387,7 +1387,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1466,7 +1466,7 @@ color: rgb(255, 255, 255);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>
          <normalon>:/systemicons/LedYellow.png</normalon>:/systemicons/LedGrey.png</iconset>
        </property>
@@ -1512,7 +1512,7 @@ color: rgb(255, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

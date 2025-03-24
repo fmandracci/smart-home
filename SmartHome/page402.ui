@@ -721,7 +721,7 @@ color: rgb(170, 170, 127);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Stock_graph.png</normaloff>:/systemicons/Stock_graph.png</iconset>
        </property>
        <property name="iconSize">
@@ -1425,7 +1425,7 @@ Y2=PLC_EP_wattmeter_M_W</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

@@ -1482,7 +1482,7 @@ ss</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/3d_bar_chart.png</normaloff>:/systemicons/3d_bar_chart.png</iconset>
        </property>
        <property name="iconSize">
@@ -1783,7 +1783,7 @@ ss</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Stock_graph.png</normaloff>:/systemicons/Stock_graph.png</iconset>
        </property>
        <property name="iconSize">
@@ -2280,7 +2280,7 @@ ss</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

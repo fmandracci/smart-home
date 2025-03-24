@@ -546,13 +546,13 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="minimumSize">
         <size>
-         <width>50</width>
+         <width>80</width>
          <height>50</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>50</width>
+         <width>80</width>
          <height>50</height>
         </size>
        </property>
@@ -708,7 +708,7 @@ color: rgb(255, 85, 0);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Home.png</normaloff>:/systemicons/Home.png</iconset>
        </property>
        <property name="iconSize">
@@ -1581,7 +1581,7 @@ xx</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

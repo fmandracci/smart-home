@@ -723,7 +723,7 @@ color: rgb(170, 170, 127);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Stock_graph.png</normaloff>:/systemicons/Stock_graph.png</iconset>
        </property>
        <property name="iconSize">
@@ -1751,7 +1751,7 @@ color: rgb(255, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

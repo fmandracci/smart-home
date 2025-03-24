@@ -176,6 +176,7 @@ extern int currentWattmeter;
 #define COLOR_11 QColor(127,192,255) // QColor(170,255,255)
 #define COLOR_12 QColor(255,192,255) // QColor(255,255,255)
 
+#define TEMP_FMT           QString("%1.%2%3").arg(PLC_CPU_TEMP / 10).arg(PLC_CPU_TEMP % 10).arg(LABEL_CELSIUS)
 #define TIME_FMT           QTime::currentTime().toString("HH:mm")
 #define TIME_FMT_DAYTIME   QTime::currentTime().toString(LABEL_DAYTIME + "HH:mm")
 #define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")

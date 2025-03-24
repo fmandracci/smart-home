@@ -1794,11 +1794,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -1849,11 +1849,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -1885,11 +1885,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -1976,11 +1976,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2012,11 +2012,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2048,11 +2048,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2120,11 +2120,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2228,11 +2228,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2300,11 +2300,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2336,11 +2336,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2408,11 +2408,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2516,11 +2516,11 @@ background-color: rgb(0, 0, 0);
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2994,7 +2994,7 @@ background-color: rgb(0, 0, 0);
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

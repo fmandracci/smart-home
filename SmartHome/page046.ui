@@ -575,11 +575,11 @@ background-color: rgb(255, 170, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="borderWidth">
@@ -687,11 +687,11 @@ background-color: rgb(255, 170, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="borderWidth">
@@ -799,7 +799,7 @@ background-color: rgb(255, 170, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
@@ -911,11 +911,11 @@ background-color: rgb(255, 170, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedOn.png</normaloff>:/systemicons/LedOn.png</iconset>
        </property>
        <property name="borderWidth">
@@ -994,11 +994,11 @@ red</string>
         <string/>
        </property>
        <property name="onIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="offIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
       </widget>
@@ -1196,11 +1196,11 @@ night</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="borderWidth">
@@ -1308,11 +1308,11 @@ night</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
        </property>
        <property name="borderWidth">
@@ -1460,11 +1460,11 @@ detect.</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="borderWidth">
@@ -1592,11 +1592,11 @@ everyt.</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
        </property>
        <property name="pressIcon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
        </property>
        <property name="borderWidth">
@@ -1779,11 +1779,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -1821,11 +1821,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2177,11 +2177,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2219,11 +2219,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2261,11 +2261,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2381,11 +2381,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2423,11 +2423,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2465,11 +2465,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2713,11 +2713,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2873,11 +2873,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -2974,11 +2974,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3134,11 +3134,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3176,11 +3176,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3218,11 +3218,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3260,11 +3260,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3359,11 +3359,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3411,11 +3411,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3453,11 +3453,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3495,11 +3495,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3537,11 +3537,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3638,11 +3638,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3680,11 +3680,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3840,11 +3840,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -3960,11 +3960,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4286,11 +4286,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4328,11 +4328,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4370,11 +4370,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4412,11 +4412,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4473,11 +4473,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4515,11 +4515,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4557,11 +4557,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -4599,11 +4599,11 @@ everyt.</string>
           <string/>
          </property>
          <property name="onIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedOff.png</normaloff>:/systemicons/LedOff.png</iconset>
          </property>
          <property name="offIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
         </widget>
@@ -5165,7 +5165,7 @@ everyt.</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

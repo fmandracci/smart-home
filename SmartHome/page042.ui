@@ -118,7 +118,7 @@ background-color: rgb(255, 140, 255)
     <string notr="true"/>
    </property>
    <property name="icon">
-    <iconset resource="systemicons_linux.qrc">
+    <iconset resource="systemicons.qrc">
      <normaloff>:/systemicons/Home.png</normaloff>:/systemicons/Home.png</iconset>
    </property>
    <property name="borderWidth">
@@ -444,7 +444,7 @@ background-color: rgb(255, 140, 255)
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
  </resources>
  <connections>
   <connection>

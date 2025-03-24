@@ -45,6 +45,17 @@ page005::page005(QWidget *parent) :
 
 void page005::reload()
 {
+    int pointSize;
+
+    if (mectScreenWidth >= 1280) {
+        pointSize = 12;
+    } else if (mectScreenWidth >= 800) {
+        pointSize = 10;
+    } else {
+        pointSize =  9;
+    }
+
+    ui->label_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize));
 }
 
 void page005::updateData()
@@ -54,7 +65,7 @@ void page005::updateData()
     }
     page::updateData();
 
-    ui->label_time->setText(TIME_FMT);
+    ui->label_time->setText(TIME_FMT + "\n" + TEMP_FMT);
 }
 
 void page005::changeEvent(QEvent * event)

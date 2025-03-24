@@ -211,7 +211,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Refresh.png</normaloff>:/systemicons/Refresh.png</iconset>
        </property>
        <property name="borderWidth">
@@ -245,7 +245,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>10</pointsize>
+         <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -254,7 +254,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string notr="true">color: rgb(255, 85, 0);</string>
        </property>
        <property name="text">
-        <string>43:21</string>
+        <string>43:21
+32.1°C</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -310,7 +311,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         </size>
        </property>
        <property name="toolTip">
-        <string>page: page042  status: </string>
+        <string/>
        </property>
        <property name="whatsThis">
         <string>ATCMbutton widget</string>
@@ -376,7 +377,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Script.png</normaloff>:/systemicons/Script.png</iconset>
        </property>
        <property name="borderWidth">
@@ -841,7 +842,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Tune.png</normaloff>:/systemicons/Tune.png</iconset>
        </property>
        <property name="borderWidth">
@@ -954,7 +955,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Hard_disk.png</normaloff>:/systemicons/Hard_disk.png</iconset>
        </property>
        <property name="borderWidth">
@@ -1231,7 +1232,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>15</pointsize>
+       <pointsize>16</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1394,11 +1395,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
             <string>EP: </string>
            </property>
            <property name="icon">
-            <iconset resource="systemicons_linux.qrc">
+            <iconset resource="systemicons.qrc">
              <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
            </property>
            <property name="pressIcon">
-            <iconset resource="systemicons_linux.qrc">
+            <iconset resource="systemicons.qrc">
              <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
            </property>
            <property name="borderWidth">
@@ -1635,11 +1636,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
             <string>BA:</string>
            </property>
            <property name="icon">
-            <iconset resource="systemicons_linux.qrc">
+            <iconset resource="systemicons.qrc">
              <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
            </property>
            <property name="pressIcon">
-            <iconset resource="systemicons_linux.qrc">
+            <iconset resource="systemicons.qrc">
              <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
            </property>
            <property name="borderWidth">
@@ -1704,7 +1705,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>PLC_PRODUCT_ID</string>
          </property>
          <property name="prefix">
-          <string>ID </string>
+          <string>PN </string>
          </property>
          <property name="suffix">
           <string/>
@@ -2344,11 +2345,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am EP</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -4198,11 +4199,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T1</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -5077,11 +5078,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T2</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -6095,11 +6096,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T3</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -6823,11 +6824,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T4</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -7699,11 +7700,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T5</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -8575,11 +8576,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am T6</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -9369,11 +9370,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
           <string>I am BA</string>
          </property>
          <property name="icon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
          </property>
          <property name="pressIcon">
-          <iconset resource="systemicons_linux.qrc">
+          <iconset resource="systemicons.qrc">
            <normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
          </property>
          <property name="borderWidth">
@@ -10059,7 +10060,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Eye.png</normaloff>:/systemicons/Eye.png</iconset>
        </property>
        <property name="borderWidth">
@@ -10192,8 +10193,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
-  <include location="systemicons_linux.qrc"/>
  </resources>
  <connections>
   <connection>

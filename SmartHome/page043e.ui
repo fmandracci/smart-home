@@ -382,7 +382,7 @@ background-color: rgb(0, 0, 0);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons_linux.qrc">
+        <iconset resource="systemicons.qrc">
          <normaloff>:/systemicons/Hard_disk.png</normaloff>:/systemicons/Hard_disk.png</iconset>
        </property>
        <property name="borderWidth">
@@ -3330,7 +3330,7 @@ background-color: rgb(0, 0, 0);
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>
