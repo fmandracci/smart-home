@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.8.1, 2025-03-19T17:17:50. -->
+<!-- Written by QtCreator 2.8.1, 2025-03-24T19:57:47. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -113,7 +113,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/home/tairyu/Sources/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Debug</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Debug</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
@@ -172,7 +172,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/home/tairyu/Sources/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Release</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildDirectory">/mnt/c/Projects/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Release</value>
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
@@ -196,13 +196,13 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/hmi.qss</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/config/splash.png</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/config/system.ini</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/config/trend1.csv</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/hmi.ini</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/SmartHome2/config/Crosstable.csv</value>
-       <value type="QString">/home/tairyu/Sources/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/config/trend1.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/config/splash.png</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/build-SmartHome2-MectSuite_3_5_2_rpi4-Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/hmi.qss</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/hmi.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/config/system.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome2/config/Crosstable.csv</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">tpx4100-01-a</value>
@@ -214,13 +214,13 @@
        <value type="QString">tpx4100-01-a</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/etc/sysconfig/img</value>
-       <value type="QString">/local/etc/sysconfig</value>
        <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/etc/sysconfig/img</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/root</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/etc/sysconfig</value>
-       <value type="QString">/local/root</value>
+       <value type="QString">/local/etc/sysconfig</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedSysroots">
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
@@ -290,7 +290,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">SmartHome2 (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/home/tairyu/Sources/smart-home_new/SmartHome2/SmartHome2.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome2/SmartHome2.pro</value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
     <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome2.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable">autoexec.sh</value>
