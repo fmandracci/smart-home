@@ -254,8 +254,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string notr="true">color: rgb(255, 85, 0);</string>
        </property>
        <property name="text">
-        <string>43:21
-32.1°C</string>
+        <string>hh:mm
+xx.x°C</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

@@ -387,13 +387,6 @@
         <source>PLC_EP_exists</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page005.ui" line="257"/>
-        <source>43:21
-32.1°C</source>
-        <oldsource>43:21</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="page005.ui" line="2384"/>
         <location filename="page005.ui" line="2390"/>
@@ -674,6 +667,12 @@
         <location filename="page005.ui" line="3622"/>
         <location filename="page005.ui" line="3711"/>
         <source> kWh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page005.ui" line="257"/>
+        <source>hh:mm
+xx.x°C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
