@@ -48,7 +48,8 @@ HEADERS += \
     page047.h \
     page048.h \
     page049.h \
-    page4b0.h
+    page4b0.h \
+    page042.h
 
 
 FORMS += \
@@ -79,7 +80,8 @@ FORMS += \
     page047.ui \
     page048.ui \
     page049.ui \
-    page4b0.ui
+    page4b0.ui \
+    page042.ui
 
 
 SOURCES += \
@@ -111,7 +113,8 @@ SOURCES += \
     page047.cpp \
     page048.cpp \
     page049.cpp \
-    page4b0.cpp
+    page4b0.cpp \
+    page042.cpp
 
 RESOURCES += \
     resources.qrc

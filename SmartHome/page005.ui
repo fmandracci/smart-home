@@ -275,6 +275,119 @@ font: 24pt &quot;DejaVu Sans&quot;;
       </spacer>
      </item>
      <item>
+      <widget class="ATCMbutton" name="atcmButton_page42">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>page: page042  status: </string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string notr="true">page042</string>
+       </property>
+       <property name="statusvar">
+        <string notr="true"/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string notr="true"/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="bgPressColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderPressColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontPressColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pressText">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons_linux.qrc">
+         <normaloff>:/systemicons/Script.png</normaloff>:/systemicons/Script.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="ATCMbutton" name="atcmButton_page43">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -10079,8 +10192,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons_linux.qrc"/>
   <include location="resources.qrc"/>
+  <include location="systemicons_linux.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -10181,6 +10294,22 @@ font: 24pt &quot;DejaVu Sans&quot;;
   </connection>
   <connection>
    <sender>atcmButton_page48</sender>
+   <signal>newPage(const char*,bool)</signal>
+   <receiver>page005</receiver>
+   <slot>goto_page(const char*,bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atcmButton_page42</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page005</receiver>
    <slot>goto_page(const char*,bool)</slot>

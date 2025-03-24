@@ -195,6 +195,8 @@ void printVncDisplayString(char * vncString)
             << "page020"
             << "page021"
             << "page022"
+
+//            << "page042"
 //            << "page043"
 //            << "page043e"
 //            << "page044"
@@ -203,6 +205,7 @@ void printVncDisplayString(char * vncString)
 //            << "page047"
 //            << "page048"
 //            << "page049"
+
             << "page100"
             << "page101a"
             << "page101b"
@@ -313,6 +316,9 @@ int create_page_nb(page ** p, int pageNb)
         *p = (page *)(new page500);
         break;
 
+    case 0x042:
+        *p = (page *)(new page042);
+        break;
         /* add here the case labeled with the HEX id of the new pages */
     default:
         //printf ("Fatal error: cannot find page %d\n", pageNb);
