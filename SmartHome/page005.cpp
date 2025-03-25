@@ -56,6 +56,7 @@ void page005::reload()
     }
 
     ui->label_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize));
+    ui->headerLeds->changeHeader();
 }
 
 void page005::updateData()
@@ -66,6 +67,7 @@ void page005::updateData()
     page::updateData();
 
     ui->label_time->setText(TIME_FMT + "\n" + TEMP_FMT);
+    ui->headerLeds->updateWidget();
 }
 
 void page005::changeEvent(QEvent * event)

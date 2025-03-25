@@ -37,11 +37,6 @@
 
 void printVncDisplayString(char * vncString)
 {
-// Fix for i.mx28 projects
-#ifdef KIT_IMX28
-#define FONT_CORRECTOR 1.666666667      // Previous 5/3
-#endif
-
 #ifdef KIT_HOST
     // vncString is the '-geometry' argument
     mectScreenWidth = WIDTH;
@@ -192,6 +187,7 @@ void printVncDisplayString(char * vncString)
             << "system_ini"
             << "page005"
             << "page010"
+            << "page011"
             << "page020"
             << "page021"
             << "page022"
@@ -237,6 +233,9 @@ int create_page_nb(page ** p, int pageNb)
     case 0x010:
         *p = (page *)(new page010);
         break;
+    case 0x011:
+        *p = (page *)(new page011);
+        break;
     case 0x020:
         *p = (page *)(new page020);
         break;
@@ -245,6 +244,9 @@ int create_page_nb(page ** p, int pageNb)
         break;
     case 0x022:
         *p = (page *)(new page022);
+        break;
+    case 0x042:
+        *p = (page *)(new page042);
         break;
     case 0x043:
         *p = (page *)(new page043);
@@ -316,9 +318,6 @@ int create_page_nb(page ** p, int pageNb)
         *p = (page *)(new page500);
         break;
 
-    case 0x042:
-        *p = (page *)(new page042);
-        break;
         /* add here the case labeled with the HEX id of the new pages */
     default:
         //printf ("Fatal error: cannot find page %d\n", pageNb);

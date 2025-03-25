@@ -1,5 +1,5 @@
 L
-1;PLC_CPU_TEMP                   ;AA0000;00.00;80.00;
+1;PLC_CPU_TEMP                   ;AA0000;0.00;80.00;
+1;TCP_T3_temperature             ;007F7F;0.00;80.00;
 1;TCP_T3_temperature_bis         ;00007F;0.00;80.00;
 1;TCP_T3_temperature_ext         ;000000;0.00;80.00;
-0;                               ;000000;0.00;1.00;

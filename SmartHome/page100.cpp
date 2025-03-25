@@ -20,7 +20,6 @@
 **
 ****************************************************************************/
 
-
 #include "app_logprint.h"
 #include "atcmplugin.h"
 #include "main.h"
@@ -43,6 +42,7 @@ page100::page100(QWidget *parent) :
 void page100::reload()
 {
     changeWidgets();
+    updateWidgets();
 }
 
 void page100::changeWidgets()
