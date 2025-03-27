@@ -1253,94 +1253,102 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="877"/>
+        <location filename="page011.ui" line="930"/>
+        <source>set tp*</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1009"/>
+        <source>set home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1335"/>
         <source>TPAC1007</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1115"/>
-        <location filename="page011.ui" line="1271"/>
-        <location filename="page011.ui" line="1798"/>
+        <location filename="page011.ui" line="1600"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1639"/>
+        <location filename="page011.ui" line="1745"/>
         <source>7E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="930"/>
+        <location filename="page011.ui" line="1388"/>
         <source>Fonts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1576"/>
+        <location filename="page011.ui" line="971"/>
         <source>NetConf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1692"/>
+        <location filename="page011.ui" line="1798"/>
         <source>MPNE AB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1165"/>
+        <location filename="page011.ui" line="824"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1218"/>
+        <location filename="page011.ui" line="1547"/>
         <source>MPNE CD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1074"/>
+        <location filename="page011.ui" line="1494"/>
         <source>7M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1745"/>
+        <location filename="page011.ui" line="1229"/>
         <source>S.Saver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1312"/>
+        <location filename="page011.ui" line="1047"/>
         <source>D.S.T.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="824"/>
+        <location filename="page011.ui" line="1282"/>
         <source>MPNC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1535"/>
+        <location filename="page011.ui" line="877"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1391"/>
+        <location filename="page011.ui" line="1138"/>
         <source>Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1024"/>
+        <location filename="page011.ui" line="1088"/>
         <source>Config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1482"/>
+        <location filename="page011.ui" line="1679"/>
         <source>ARQ01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="983"/>
+        <location filename="page011.ui" line="1441"/>
         <source>BA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1432"/>
+        <location filename="page011.ui" line="1179"/>
         <source>Date Time</source>
         <translation type="unfinished"></translation>
     </message>

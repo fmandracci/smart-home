@@ -77,28 +77,28 @@ void page011::changeWidgets()
     QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
     QString sb("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
 
-    ui->pushButton_11_Config->setStyleSheet(sn);
-    ui->pushButton_12_Menu->setStyleSheet(sn);
+    ui->pushButton_11_set_home->setStyleSheet(sn);
+    ui->pushButton_12_set_tp->setStyleSheet(sn);
     ui->pushButton_13_7M->setStyleSheet(sn);
     ui->pushButton_14_7E->setStyleSheet(sn);
 
-    ui->pushButton_21_DST->setStyleSheet(sb);
-    ui->pushButton_22_SS->setStyleSheet(sb);
+    ui->pushButton_21_Config->setStyleSheet(sn);
+    ui->pushButton_22_Menu->setStyleSheet(sn);
     ui->pushButton_23_ARQ01->setStyleSheet(sn);
     ui->pushButton_24_MPNC->setStyleSheet(sn);
 
-    ui->pushButton_31_DateTime->setStyleSheet(sn);
-    ui->pushButton_32_Display->setStyleSheet(sn);
+    ui->pushButton_31_DST->setStyleSheet(sb);
+    ui->pushButton_32_SS->setStyleSheet(sb);
     ui->pushButton_33_BA->setStyleSheet(sn);
     ui->pushButton_34_MPNE_AB->setStyleSheet(sn);
 
-    ui->pushButton_41_NetConf->setStyleSheet(sn);
-    ui->pushButton_42_Info->setStyleSheet(sn);
+    ui->pushButton_41_DateTime->setStyleSheet(sn);
+    ui->pushButton_42_Display->setStyleSheet(sn);
     ui->pushButton_43_Fonts->setStyleSheet(sn);
     ui->pushButton_44_MPNE_CD->setStyleSheet(sn);
 
-    ui->pushButton_51->setStyleSheet(sn);
-    ui->pushButton_52->setStyleSheet(sn);
+    ui->pushButton_51_NetConf->setStyleSheet(sn);
+    ui->pushButton_52_Info->setStyleSheet(sn);
     ui->pushButton_53->setStyleSheet(sn);
     ui->pushButton_54_TPAC1007->setStyleSheet(sn);
 }

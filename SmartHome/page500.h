@@ -59,16 +59,17 @@ private slots:
 
 private:
     Ui::page500 *ui;
-    const QString   ACTIVE_StyleSheet;
-    const QString Possible_StyleSheet;
-    const QString inactive_StyleSheet;
-    const QString    GREY_OVER_BLACK;
-    const QString   GREEN_OVER_BLACK;
-    const QString     RED_OVER_BLACK;
-    const QString  ORANGE_OVER_BLACK;
-    const QString MAGENTA_OVER_BLACK;
-    QString buttonFont;
-    QString sensorFont;
+
+    QString   ACTIVE_StyleSheet;
+    QString Possible_StyleSheet;
+    QString inactive_StyleSheet;
+
+    QString   WHITE_OVER_BLACK;
+    QString    GREY_OVER_BLACK;
+    QString   GREEN_OVER_BLACK;
+    QString     RED_OVER_BLACK;
+    QString  ORANGE_OVER_BLACK;
+    QString MAGENTA_OVER_BLACK;
 
     void enableDisableCommands();
     void sendCommand(uint32_t command);

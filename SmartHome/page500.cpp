@@ -33,17 +33,7 @@
 
 page500::page500(QWidget *parent) :
     page(parent),
-    ui(new Ui::page500),
-     ACTIVE_StyleSheet("background-color: rgb(255,  85,   0); color: rgb(  0,   0,   0); border: none; font: bold;"),
-   Possible_StyleSheet("background-color: rgb( 85,   0,   0); color: rgb(255, 255, 255); border: none;            "),
-   inactive_StyleSheet("background-color: rgb(  0,   0,   0); color: rgb( 64,  64,  64); border: none;            "),
-       GREY_OVER_BLACK("color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);"),
-      GREEN_OVER_BLACK("color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0);"),
-        RED_OVER_BLACK("color: rgb(255,   0,   0); background-color: rgb(0, 0, 0);"),
-     ORANGE_OVER_BLACK("color: rgb(255, 128,   0); background-color: rgb(0, 0, 0);"),
-    MAGENTA_OVER_BLACK("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);"),
-    buttonFont(""),
-    sensorFont()
+    ui(new Ui::page500)
 {
     ui->setupUi(this);
 #ifdef USE_TRANSLATEFONTSIZE
@@ -101,84 +91,92 @@ void page500::changeWidgets()
         pixelSize_xy = 15;
     }
 
-    buttonFont = FONT_SS_N(pointSize_b); // vedi updateWidgets()
-    sensorFont = FONT_SS_N(pointSize_s); // vedi updateSensor()
+    QString bf = FONT_SS_N(pointSize_b); // vedi updateWidgets()
+    ACTIVE_StyleSheet  = bf + "background-color: rgb(255,  85,   0); color: rgb(  0,   0,   0); border: none; font: bold;";
+    Possible_StyleSheet= bf + "background-color: rgb( 85,   0,   0); color: rgb(255, 255, 255); border: none;            ";
+    inactive_StyleSheet= bf + "background-color: rgb(  0,   0,   0); color: rgb( 64,  64,  64); border: none;            ";
 
-    QString s = FONT_SS_N(pointSize_s) + "color: rgb(255, 255, 255);";
+    QString sf = FONT_SS_N(pointSize_s); // vedi updateSensor()
+    WHITE_OVER_BLACK   = sf + "color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);";
+    GREY_OVER_BLACK    = sf + "color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);";
+    GREEN_OVER_BLACK   = sf + "color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0);";
+    RED_OVER_BLACK     = sf + "color: rgb(255,   0,   0); background-color: rgb(0, 0, 0);";
+    ORANGE_OVER_BLACK  = sf + "color: rgb(255, 128,   0); background-color: rgb(0, 0, 0);";
+    MAGENTA_OVER_BLACK = sf + "color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);";
 
-    ui->label_sensor_01->setStyleSheet(s);
-    ui->label_sensor_02->setStyleSheet(s);
-    ui->label_sensor_03->setStyleSheet(s);
-    ui->label_sensor_04->setStyleSheet(s);
-    ui->label_sensor_05->setStyleSheet(s);
-    ui->label_sensor_06->setStyleSheet(s);
-    ui->label_sensor_07->setStyleSheet(s);
-    ui->label_sensor_08->setStyleSheet(s);
+    ui->label_sensor_01->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_02->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_03->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_04->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_05->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_06->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_07->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_08->setStyleSheet(WHITE_OVER_BLACK);
 
-    ui->label_sensor_09->setStyleSheet(s);
-    ui->label_sensor_10->setStyleSheet(s);
-    ui->label_sensor_11->setStyleSheet(s);
-    ui->label_sensor_12->setStyleSheet(s);
-    ui->label_sensor_13->setStyleSheet(s);
-    ui->label_sensor_14->setStyleSheet(s);
-    ui->label_sensor_15->setStyleSheet(s);
-    ui->label_sensor_16->setStyleSheet(s);
+    ui->label_sensor_09->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_10->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_11->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_12->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_13->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_14->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_15->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_16->setStyleSheet(WHITE_OVER_BLACK);
 
-    ui->label_sensor_17->setStyleSheet(s);
-    ui->label_sensor_18->setStyleSheet(s);
-    ui->label_sensor_19->setStyleSheet(s);
-    ui->label_sensor_20->setStyleSheet(s);
-    ui->label_sensor_21->setStyleSheet(s);
-    ui->label_sensor_22->setStyleSheet(s);
-    ui->label_sensor_23->setStyleSheet(s);
-    ui->label_sensor_24->setStyleSheet(s);
+    ui->label_sensor_17->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_18->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_19->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_20->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_21->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_22->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_23->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_24->setStyleSheet(WHITE_OVER_BLACK);
 
-    ui->label_sensor_25->setStyleSheet(s);
-    ui->label_sensor_26->setStyleSheet(s);
-    ui->label_sensor_27->setStyleSheet(s);
-    ui->label_sensor_28->setStyleSheet(s);
-    ui->label_sensor_29->setStyleSheet(s);
-    ui->label_sensor_30->setStyleSheet(s);
-    ui->label_sensor_31->setStyleSheet(s);
-    ui->label_sensor_32->setStyleSheet(s);
+    ui->label_sensor_25->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_26->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_27->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_28->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_29->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_30->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_31->setStyleSheet(WHITE_OVER_BLACK);
+    ui->label_sensor_32->setStyleSheet(WHITE_OVER_BLACK);
 
     QSize labelSize(pixelSize_xy, pixelSize_xy);
 
-    ui->label_BA_OK_01->setStyleSheet(s); ui->label_BA_OK_01->setMaximumSize(labelSize);
-    ui->label_BA_OK_02->setStyleSheet(s); ui->label_BA_OK_02->setMaximumSize(labelSize);
-    ui->label_BA_OK_03->setStyleSheet(s); ui->label_BA_OK_03->setMaximumSize(labelSize);
-    ui->label_BA_OK_04->setStyleSheet(s); ui->label_BA_OK_04->setMaximumSize(labelSize);
-    ui->label_BA_OK_05->setStyleSheet(s); ui->label_BA_OK_05->setMaximumSize(labelSize);
-    ui->label_BA_OK_06->setStyleSheet(s); ui->label_BA_OK_06->setMaximumSize(labelSize);
-    ui->label_BA_OK_07->setStyleSheet(s); ui->label_BA_OK_07->setMaximumSize(labelSize);
-    ui->label_BA_OK_08->setStyleSheet(s); ui->label_BA_OK_08->setMaximumSize(labelSize);
+    ui->label_BA_OK_01->setStyleSheet(sf); ui->label_BA_OK_01->setMaximumSize(labelSize);
+    ui->label_BA_OK_02->setStyleSheet(sf); ui->label_BA_OK_02->setMaximumSize(labelSize);
+    ui->label_BA_OK_03->setStyleSheet(sf); ui->label_BA_OK_03->setMaximumSize(labelSize);
+    ui->label_BA_OK_04->setStyleSheet(sf); ui->label_BA_OK_04->setMaximumSize(labelSize);
+    ui->label_BA_OK_05->setStyleSheet(sf); ui->label_BA_OK_05->setMaximumSize(labelSize);
+    ui->label_BA_OK_06->setStyleSheet(sf); ui->label_BA_OK_06->setMaximumSize(labelSize);
+    ui->label_BA_OK_07->setStyleSheet(sf); ui->label_BA_OK_07->setMaximumSize(labelSize);
+    ui->label_BA_OK_08->setStyleSheet(sf); ui->label_BA_OK_08->setMaximumSize(labelSize);
 
-    ui->label_BA_OK_09->setStyleSheet(s); ui->label_BA_OK_09->setMaximumSize(labelSize);
-    ui->label_BA_OK_10->setStyleSheet(s); ui->label_BA_OK_10->setMaximumSize(labelSize);
-    ui->label_BA_OK_11->setStyleSheet(s); ui->label_BA_OK_11->setMaximumSize(labelSize);
-    ui->label_BA_OK_12->setStyleSheet(s); ui->label_BA_OK_12->setMaximumSize(labelSize);
-    ui->label_BA_OK_13->setStyleSheet(s); ui->label_BA_OK_13->setMaximumSize(labelSize);
-    ui->label_BA_OK_14->setStyleSheet(s); ui->label_BA_OK_14->setMaximumSize(labelSize);
-    ui->label_BA_OK_15->setStyleSheet(s); ui->label_BA_OK_15->setMaximumSize(labelSize);
-    ui->label_BA_OK_16->setStyleSheet(s); ui->label_BA_OK_16->setMaximumSize(labelSize);
+    ui->label_BA_OK_09->setStyleSheet(sf); ui->label_BA_OK_09->setMaximumSize(labelSize);
+    ui->label_BA_OK_10->setStyleSheet(sf); ui->label_BA_OK_10->setMaximumSize(labelSize);
+    ui->label_BA_OK_11->setStyleSheet(sf); ui->label_BA_OK_11->setMaximumSize(labelSize);
+    ui->label_BA_OK_12->setStyleSheet(sf); ui->label_BA_OK_12->setMaximumSize(labelSize);
+    ui->label_BA_OK_13->setStyleSheet(sf); ui->label_BA_OK_13->setMaximumSize(labelSize);
+    ui->label_BA_OK_14->setStyleSheet(sf); ui->label_BA_OK_14->setMaximumSize(labelSize);
+    ui->label_BA_OK_15->setStyleSheet(sf); ui->label_BA_OK_15->setMaximumSize(labelSize);
+    ui->label_BA_OK_16->setStyleSheet(sf); ui->label_BA_OK_16->setMaximumSize(labelSize);
 
-    ui->label_BA_OK_17->setStyleSheet(s); ui->label_BA_OK_17->setMaximumSize(labelSize);
-    ui->label_BA_OK_18->setStyleSheet(s); ui->label_BA_OK_18->setMaximumSize(labelSize);
-    ui->label_BA_OK_19->setStyleSheet(s); ui->label_BA_OK_19->setMaximumSize(labelSize);
-    ui->label_BA_OK_20->setStyleSheet(s); ui->label_BA_OK_20->setMaximumSize(labelSize);
-    ui->label_BA_OK_21->setStyleSheet(s); ui->label_BA_OK_21->setMaximumSize(labelSize);
-    ui->label_BA_OK_22->setStyleSheet(s); ui->label_BA_OK_22->setMaximumSize(labelSize);
-    ui->label_BA_OK_23->setStyleSheet(s); ui->label_BA_OK_23->setMaximumSize(labelSize);
-    ui->label_BA_OK_24->setStyleSheet(s); ui->label_BA_OK_24->setMaximumSize(labelSize);
+    ui->label_BA_OK_17->setStyleSheet(sf); ui->label_BA_OK_17->setMaximumSize(labelSize);
+    ui->label_BA_OK_18->setStyleSheet(sf); ui->label_BA_OK_18->setMaximumSize(labelSize);
+    ui->label_BA_OK_19->setStyleSheet(sf); ui->label_BA_OK_19->setMaximumSize(labelSize);
+    ui->label_BA_OK_20->setStyleSheet(sf); ui->label_BA_OK_20->setMaximumSize(labelSize);
+    ui->label_BA_OK_21->setStyleSheet(sf); ui->label_BA_OK_21->setMaximumSize(labelSize);
+    ui->label_BA_OK_22->setStyleSheet(sf); ui->label_BA_OK_22->setMaximumSize(labelSize);
+    ui->label_BA_OK_23->setStyleSheet(sf); ui->label_BA_OK_23->setMaximumSize(labelSize);
+    ui->label_BA_OK_24->setStyleSheet(sf); ui->label_BA_OK_24->setMaximumSize(labelSize);
 
-    ui->label_BA_OK_25->setStyleSheet(s); ui->label_BA_OK_25->setMaximumSize(labelSize);
-    ui->label_BA_OK_26->setStyleSheet(s); ui->label_BA_OK_26->setMaximumSize(labelSize);
-    ui->label_BA_OK_27->setStyleSheet(s); ui->label_BA_OK_27->setMaximumSize(labelSize);
-    ui->label_BA_OK_28->setStyleSheet(s); ui->label_BA_OK_28->setMaximumSize(labelSize);
-    ui->label_BA_OK_29->setStyleSheet(s); ui->label_BA_OK_29->setMaximumSize(labelSize);
-    ui->label_BA_OK_30->setStyleSheet(s); ui->label_BA_OK_30->setMaximumSize(labelSize);
-    ui->label_BA_OK_31->setStyleSheet(s); ui->label_BA_OK_31->setMaximumSize(labelSize);
-    ui->label_BA_OK_32->setStyleSheet(s); ui->label_BA_OK_32->setMaximumSize(labelSize);
+    ui->label_BA_OK_25->setStyleSheet(sf); ui->label_BA_OK_25->setMaximumSize(labelSize);
+    ui->label_BA_OK_26->setStyleSheet(sf); ui->label_BA_OK_26->setMaximumSize(labelSize);
+    ui->label_BA_OK_27->setStyleSheet(sf); ui->label_BA_OK_27->setMaximumSize(labelSize);
+    ui->label_BA_OK_28->setStyleSheet(sf); ui->label_BA_OK_28->setMaximumSize(labelSize);
+    ui->label_BA_OK_29->setStyleSheet(sf); ui->label_BA_OK_29->setMaximumSize(labelSize);
+    ui->label_BA_OK_30->setStyleSheet(sf); ui->label_BA_OK_30->setMaximumSize(labelSize);
+    ui->label_BA_OK_31->setStyleSheet(sf); ui->label_BA_OK_31->setMaximumSize(labelSize);
+    ui->label_BA_OK_32->setStyleSheet(sf); ui->label_BA_OK_32->setMaximumSize(labelSize);
 
     ui->label_sensor_01->setText(home_ini.value("BA/sensor_01").toString());
     ui->label_sensor_02->setText(home_ini.value("BA/sensor_02").toString());
@@ -228,74 +226,74 @@ void page500::updateWidgets()
 {
     switch (PLC_BA_status) {
     case ALARM_STATUS_ZERO:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet);
         break;
     case ALARM_STATUS_OFF:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + ACTIVE_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(ACTIVE_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
         break;
     case ALARM_STATUS_ARMED:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + ((PLC_BA_config_index == ALARM_CONFIG_INDEX_DAYTIME)? ACTIVE_StyleSheet : Possible_StyleSheet));
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + ((PLC_BA_config_index == ALARM_CONFIG_INDEX_NIGHTTIME)? ACTIVE_StyleSheet : Possible_StyleSheet));
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + ((PLC_BA_config_index == ALARM_CONFIG_INDEX_EVERYTHING)? ACTIVE_StyleSheet : Possible_StyleSheet));
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet((PLC_BA_config_index == ALARM_CONFIG_INDEX_DAYTIME)? ACTIVE_StyleSheet : Possible_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet((PLC_BA_config_index == ALARM_CONFIG_INDEX_NIGHTTIME)? ACTIVE_StyleSheet : Possible_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet((PLC_BA_config_index == ALARM_CONFIG_INDEX_EVERYTHING)? ACTIVE_StyleSheet : Possible_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
         break;
     case ALARM_STATUS_ENABLED:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + ACTIVE_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(ACTIVE_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
         break;
     case ALARM_STATUS_RINGING:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + ACTIVE_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(ACTIVE_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
         break;
     case ALARM_STATUS_MUTED:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + ACTIVE_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(ACTIVE_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet); // (PLC_Iam_BA ? Possible_StyleSheet : inactive_StyleSheet);
         break;
     case ALARM_STATUS_TESTING:
-        ui->pushButton_OFF->setStyleSheet(buttonFont + Possible_StyleSheet);
-        ui->pushButton_DAYTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_NIGHTTIME->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_EVERYTHING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_ENABLED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_RINGING->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_MUTED->setStyleSheet(buttonFont + inactive_StyleSheet);
-        ui->pushButton_TESTING->setStyleSheet(buttonFont + ACTIVE_StyleSheet);
+        ui->pushButton_OFF->setStyleSheet(Possible_StyleSheet);
+        ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
+        ui->pushButton_TESTING->setStyleSheet(ACTIVE_StyleSheet);
         break;
     default:
         ;
@@ -348,11 +346,11 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
         if (PLC_BA_enabled_sensors >= i) {
             // if (status != old_sensor_status[i]) {
                 switch (status) {
-                case ALARM_SENSOR_IGNORED:  label_ok->setStyleSheet(sensorFont + GREY_OVER_BLACK); break;
-                case ALARM_SENSOR_STILL_NG: label_ok->setStyleSheet(sensorFont + RED_OVER_BLACK); break;
-                case ALARM_SENSOR_GOOD:     label_ok->setStyleSheet(sensorFont + GREEN_OVER_BLACK); break;
-                case ALARM_SENSOR_NOT_GOOD: label_ok->setStyleSheet(sensorFont + RED_OVER_BLACK); break;
-                case ALARM_SENSOR_WAS_NG:   label_ok->setStyleSheet(sensorFont + ORANGE_OVER_BLACK); break;
+                case ALARM_SENSOR_IGNORED:  label_ok->setStyleSheet(GREY_OVER_BLACK); break;
+                case ALARM_SENSOR_STILL_NG: label_ok->setStyleSheet(RED_OVER_BLACK); break;
+                case ALARM_SENSOR_GOOD:     label_ok->setStyleSheet(GREEN_OVER_BLACK); break;
+                case ALARM_SENSOR_NOT_GOOD: label_ok->setStyleSheet(RED_OVER_BLACK); break;
+                case ALARM_SENSOR_WAS_NG:   label_ok->setStyleSheet(ORANGE_OVER_BLACK); break;
                 default: ;
                 }
             // }
@@ -365,7 +363,7 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
     } else {
         label_ok->setVisible(true);
         label_sensor->setVisible(true);
-        label_ok->setStyleSheet(sensorFont + MAGENTA_OVER_BLACK);
+        label_ok->setStyleSheet(MAGENTA_OVER_BLACK);
     }
     // old_sensor_status[i] = status;
 }
