@@ -67,7 +67,7 @@ void page005::updateData()
     page::updateData();
 
     ui->label_time->setText(TIME_FMT + "\n" + TEMP_FMT);
-    ui->headerLeds->updateWidget();
+    ui->headerLeds->updateLedLabels();
 }
 
 void page005::changeEvent(QEvent * event)

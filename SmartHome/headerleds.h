@@ -16,7 +16,7 @@ public:
     ~HeaderLeds();
 
     void changeHeader();
-    void updateWidget();
+    void updateLedLabels();
 
 private:
     Ui::HeaderLeds *ui;
