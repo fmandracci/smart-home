@@ -12328,6 +12328,12 @@ int doWrite_PLC_LPC_ERRORS(u_int32_t value);
 int addWrite_PLC_LPC_ERRORS(u_int32_t value);
 int getStatus_PLC_LPC_ERRORS(void);
 
+#define ID_PLC_LPC_ERRORS_MASK 5427
+extern u_int32_t PLC_LPC_ERRORS_MASK;	/* LPC communication errors mask */
+int doWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
+int addWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
+int getStatus_PLC_LPC_ERRORS_MASK(void);
+
 #define ID_PLC_BEEP_VOLUME 5435
 extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */
 int doWrite_PLC_BEEP_VOLUME(u_int8_t value);

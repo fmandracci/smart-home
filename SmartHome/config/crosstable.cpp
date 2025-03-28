@@ -14371,6 +14371,13 @@ u_int32_t PLC_LPC_ERRORS = 0;
 
 
 /*
+ * Variable PLC_LPC_ERRORS_MASK	[ LPC communication errors mask ]
+ */
+
+u_int32_t PLC_LPC_ERRORS_MASK = 0;
+
+
+/*
  * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
  */
 
@@ -51350,6 +51357,24 @@ getStatus_PLC_LPC_ERRORS(void)
 }
 
 int
+doWrite_PLC_LPC_ERRORS_MASK(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_ERRORS_MASK, &value);
+}
+
+int
+addWrite_PLC_LPC_ERRORS_MASK(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_ERRORS_MASK, &value);
+}
+
+int
+getStatus_PLC_LPC_ERRORS_MASK(void)
+{
+	return getStatus(ID_PLC_LPC_ERRORS_MASK);
+}
+
+int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
 	return doWrite(ID_PLC_BEEP_VOLUME, &value);
@@ -53656,6 +53681,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
 	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
 	retval += readFromDb(ID_PLC_LPC_ERRORS, &PLC_LPC_ERRORS);
+	retval += readFromDb(ID_PLC_LPC_ERRORS_MASK, &PLC_LPC_ERRORS_MASK);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);

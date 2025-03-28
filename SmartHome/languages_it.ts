@@ -1253,102 +1253,148 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="930"/>
+        <location filename="page011.ui" line="1637"/>
         <source>set tp*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1009"/>
+        <location filename="page011.ui" line="1154"/>
         <source>set home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1335"/>
+        <location filename="page011.ui" line="1009"/>
         <source>TPAC1007</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1600"/>
+        <location filename="page011.ui" line="1086"/>
+        <location filename="page011.ui" line="1886"/>
+        <source>x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1089"/>
+        <location filename="page011.ui" line="1095"/>
+        <source>PLC_LPC_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1092"/>
+        <location filename="page011.ui" line="1892"/>
+        <location filename="page011.ui" line="1943"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1098"/>
+        <source>errors = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1361"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1745"/>
+        <location filename="page011.ui" line="1480"/>
         <source>7E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1388"/>
+        <location filename="page011.ui" line="1703"/>
         <source>Fonts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="971"/>
+        <location filename="page011.ui" line="1889"/>
+        <location filename="page011.ui" line="1895"/>
+        <source>PLC_EngineStatus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1898"/>
+        <source>status = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1937"/>
+        <source>0xxxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1940"/>
+        <location filename="page011.ui" line="1946"/>
+        <source>PLC_LPC_ERRORS_MASK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1192"/>
         <source>NetConf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1798"/>
+        <location filename="page011.ui" line="956"/>
         <source>MPNE AB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="824"/>
+        <location filename="page011.ui" line="1584"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1547"/>
+        <location filename="page011.ui" line="1308"/>
         <source>MPNE CD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1494"/>
+        <location filename="page011.ui" line="1414"/>
         <source>7M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1229"/>
+        <location filename="page011.ui" line="862"/>
         <source>S.Saver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1047"/>
+        <location filename="page011.ui" line="903"/>
         <source>D.S.T.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1282"/>
+        <location filename="page011.ui" line="1809"/>
         <source>MPNC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="877"/>
+        <location filename="page011.ui" line="1062"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1138"/>
+        <location filename="page011.ui" line="1756"/>
         <source>Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1088"/>
+        <location filename="page011.ui" line="1534"/>
         <source>Config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1679"/>
+        <location filename="page011.ui" line="1862"/>
         <source>ARQ01</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1441"/>
+        <location filename="page011.ui" line="1255"/>
         <source>BA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1179"/>
+        <location filename="page011.ui" line="812"/>
         <source>Date Time</source>
         <translation type="unfinished"></translation>
     </message>
