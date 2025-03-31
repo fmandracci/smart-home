@@ -5423,7 +5423,7 @@
 1;P;PLC_MS_VERSION                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Mect Suite Version installed on Target (0 if before 3.4.0)
 1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RW]Backlight dimming value (0 ON 100 OFF)
 1;F;PLC_CPU_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]CPU temperature in degrees Celsius
-1;P;PLC_LPC_ERRORS                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]LPC communication errors counter
+1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]LPC communication errors counter
 1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]LPC communication errors mask
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

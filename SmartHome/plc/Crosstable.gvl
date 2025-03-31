@@ -2047,7 +2047,7 @@ VAR_GLOBAL
 	PLC_MS_VERSION AT %ID0.21692:UDINT;	(* Mect Suite Version installed on Target (0 if before 3.4.0) *)
 	PLC_nBACKLIGHT AT %QB0.21696:BYTE;	(* Backlight dimming value (0 ON 100 OFF) *)
 	PLC_CPU_TEMP AT %IW0.21700:INT;	(* CPU temperature in degrees Celsius *)
-	PLC_LPC_ERRORS AT %ID0.21704:UDINT;	(* LPC communication errors counter *)
+	PLC_LPC_ERRORS_COUNT AT %ID0.21704:UDINT;	(* LPC communication errors counter *)
 	PLC_LPC_ERRORS_MASK AT %ID0.21708:UDINT;	(* LPC communication errors mask *)
 	PLC_BEEP_VOLUME AT %QB0.21740:BYTE;	(* Beep volume (when buzzerOn) *)
 	PLC_TOUCH_VOLUME AT %QB0.21744:BYTE;	(* Touch volume *)

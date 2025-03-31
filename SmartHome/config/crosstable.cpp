@@ -14364,10 +14364,10 @@ int16_t PLC_CPU_TEMP = 0;
 
 
 /*
- * Variable PLC_LPC_ERRORS	[ LPC communication errors counter ]
+ * Variable PLC_LPC_ERRORS_COUNT	[ LPC communication errors counter ]
  */
 
-u_int32_t PLC_LPC_ERRORS = 0;
+u_int32_t PLC_LPC_ERRORS_COUNT = 0;
 
 
 /*
@@ -51339,21 +51339,21 @@ getStatus_PLC_CPU_TEMP(void)
 }
 
 int
-doWrite_PLC_LPC_ERRORS(u_int32_t value)
+doWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value)
 {
-	return doWrite(ID_PLC_LPC_ERRORS, &value);
+	return doWrite(ID_PLC_LPC_ERRORS_COUNT, &value);
 }
 
 int
-addWrite_PLC_LPC_ERRORS(u_int32_t value)
+addWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value)
 {
-	return addWrite(ID_PLC_LPC_ERRORS, &value);
+	return addWrite(ID_PLC_LPC_ERRORS_COUNT, &value);
 }
 
 int
-getStatus_PLC_LPC_ERRORS(void)
+getStatus_PLC_LPC_ERRORS_COUNT(void)
 {
-	return getStatus(ID_PLC_LPC_ERRORS);
+	return getStatus(ID_PLC_LPC_ERRORS_COUNT);
 }
 
 int
@@ -53680,7 +53680,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_MS_VERSION, &PLC_MS_VERSION);
 	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
 	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
-	retval += readFromDb(ID_PLC_LPC_ERRORS, &PLC_LPC_ERRORS);
+	retval += readFromDb(ID_PLC_LPC_ERRORS_COUNT, &PLC_LPC_ERRORS_COUNT);
 	retval += readFromDb(ID_PLC_LPC_ERRORS_MASK, &PLC_LPC_ERRORS_MASK);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
