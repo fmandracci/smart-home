@@ -119,22 +119,9 @@ font: 24pt &quot;DejaVu Sans&quot;;
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="ATCMbutton" name="atcmButton_menu">
+      <widget class="ATCMbutton" name="atcmButton_back">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -154,7 +141,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>24</pointsize>
+         <pointsize>15</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -162,8 +149,8 @@ font: 24pt &quot;DejaVu Sans&quot;;
        </property>
        <property name="iconSize">
         <size>
-         <width>50</width>
-         <height>50</height>
+         <width>32</width>
+         <height>32</height>
         </size>
        </property>
        <property name="toolTip">
@@ -173,7 +160,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string>ATCMbutton widget</string>
        </property>
        <property name="pageName">
-        <string notr="true">BACK</string>
+        <string notr="true">page011</string>
        </property>
        <property name="statusvar">
         <string notr="true"/>
@@ -191,6 +178,20 @@ font: 24pt &quot;DejaVu Sans&quot;;
          <blue>0</blue>
         </color>
        </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="bgPressColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -198,11 +199,11 @@ font: 24pt &quot;DejaVu Sans&quot;;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Repair.png</normaloff>:/systemicons/Repair.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/System.png</normaloff>:/icons/icons/System.png</iconset>
        </property>
        <property name="borderWidth">
-        <number>1</number>
+        <number>0</number>
        </property>
        <property name="borderRadius">
         <number>0</number>
@@ -210,7 +211,7 @@ font: 24pt &quot;DejaVu Sans&quot;;
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer_4">
+      <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -261,19 +262,6 @@ xx.x°C</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <widget class="ATCMbutton" name="atcmButton_home">
@@ -9462,6 +9450,7 @@ xx.x°C</string>
  </customwidgets>
  <resources>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -9481,7 +9470,7 @@ xx.x°C</string>
    </hints>
   </connection>
   <connection>
-   <sender>atcmButton_menu</sender>
+   <sender>atcmButton_back</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page005</receiver>
    <slot>goto_page(const char*,bool)</slot>

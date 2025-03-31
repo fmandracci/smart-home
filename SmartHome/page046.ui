@@ -53,9 +53,9 @@ background-color: rgb(0, 0, 0);
       <enum>QLayout::SetMaximumSize</enum>
      </property>
      <item>
-      <widget class="QPushButton" name="pushButton_Test">
+      <widget class="ATCMbutton" name="atcmButton_back">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -75,39 +75,69 @@ background-color: rgb(0, 0, 0);
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>24</pointsize>
         </font>
        </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton
-{
-color: rgb(255, 255, 255);
-background-color:rgb(170, 0, 127);
-border: none;
-}
-
-QPushButton:checked
-{
-color: rgb(0, 0, 0);
-background-color: rgb(255, 170, 255);
-}</string>
+       <property name="toolTip">
+        <string/>
        </property>
-       <property name="text">
-        <string>TEST</string>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
        </property>
-       <property name="checkable">
-        <bool>true</bool>
+       <property name="pageName">
+        <string notr="true">page011</string>
        </property>
-       <property name="checked">
+       <property name="statusvar">
+        <string notr="true"/>
+       </property>
+       <property name="viewStatus">
         <bool>false</bool>
        </property>
-       <property name="flat">
-        <bool>true</bool>
+       <property name="visibilityVar">
+        <string notr="true"/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="bgPressColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pressText">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/System.png</normaloff>:/icons/icons/System.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>0</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
        </property>
       </widget>
      </item>
@@ -178,6 +208,65 @@ background-color: rgb(255, 170, 255);
        </property>
        <property name="mapping">
         <string>0;ZERO;1;OFF;2;ARMED;3;ENABLED;4;RINGING;5;MUTED;49568;TESTING</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Test">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+color: rgb(255, 255, 255);
+background-color:rgb(170, 0, 127);
+border: none;
+}
+
+QPushButton:checked
+{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 170, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -300,95 +389,6 @@ background-color: rgb(255, 170, 255);
        </property>
        <property name="borderWidth">
         <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="ATCMbutton" name="atcmButton_back">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>50</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>50</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>24</pointsize>
-        </font>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMbutton widget</string>
-       </property>
-       <property name="pageName">
-        <string notr="true">page005</string>
-       </property>
-       <property name="statusvar">
-        <string notr="true"/>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string notr="true"/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="bgPressColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pressText">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/icons/icons/System.png</normaloff>:/icons/icons/System.png</iconset>
-       </property>
-       <property name="borderWidth">
-        <number>0</number>
        </property>
        <property name="borderRadius">
         <number>0</number>

@@ -85,13 +85,13 @@ background-color: rgb(255, 140, 255)
     </size>
    </property>
    <property name="toolTip">
-    <string/>
+    <string>page: BACK  status: </string>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
    </property>
    <property name="pageName">
-    <string notr="true">HOME</string>
+    <string notr="true">BACK</string>
    </property>
    <property name="statusvar">
     <string notr="true"/>
@@ -124,7 +124,7 @@ background-color: rgb(255, 140, 255)
    </property>
    <property name="icon">
     <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Home.png</normaloff>:/systemicons/Home.png</iconset>
+     <normaloff>:/systemicons/Back.png</normaloff>:/systemicons/Back.png</iconset>
    </property>
    <property name="borderWidth">
     <number>1</number>

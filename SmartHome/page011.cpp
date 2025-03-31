@@ -51,16 +51,15 @@ void page011::changeWidgets()
     int pointSize_bt;
 
     if (mectScreenWidth >= 1280) {
-        pointSize_ct = 12;
+        pointSize_ct = 16;
         pointSize_bt = 24;
     } else if (mectScreenWidth >= 800) {
-        pointSize_ct = 10;
+        pointSize_ct = 14;
         pointSize_bt = 20;
     } else {
-        pointSize_ct =  9;
-        pointSize_bt = 18;
+        pointSize_ct = 10;
+        pointSize_bt = 12;
     }
-    ui->label_cputemp->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_ct));
 
     changeHeader(ui->pushButton_time, ui->atcmButton_home,
                  ui->label_EP, ui->label_BA, ui->label_green,
@@ -75,7 +74,7 @@ void page011::changeWidgets()
 //                 NULL, NULL, NULL);
 
     QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
-    QString sb("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
+    QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
 
     ui->pushButton_11_set_home->setStyleSheet(sn);
     ui->pushButton_12_set_tp->setStyleSheet(sn);
@@ -101,6 +100,12 @@ void page011::changeWidgets()
     ui->pushButton_52_Info->setStyleSheet(sn);
     ui->pushButton_53->setStyleSheet(sn);
     ui->pushButton_54_TPAC1007->setStyleSheet(sn);
+
+    QString cn("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0);" + FONT_SS_N(pointSize_ct));
+    ui->atcmLabel_cpu_temp->setStyleSheet(cn);
+    ui->atcmLabel_status->setStyleSheet(cn);
+    ui->atcmLabel_errors->setStyleSheet(cn);
+    ui->atcmLabel_mask->setStyleSheet(cn);
 }
 
 void page011::updateWidgets()
@@ -109,7 +114,6 @@ void page011::updateWidgets()
                     ui->label_T5, ui->label_T6, ui->label_red,
                     ui->label_T3, ui->label_T4, ui->label_yellow_1,
                     ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->label_cputemp->setText(TEMP_FMT);
     ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
 }
 
