@@ -7,7 +7,7 @@
 <x>0</x>
 <y>0</y>
 <width>480</width>
-<height>72</height>
+<height>73</height>
 </rect>
 </property>
 <property name="windowTitle">
@@ -209,13 +209,13 @@
 </font>
 </property>
 <property name="toolTip">
-<string>page: HOME  status: </string>
+<string/>
 </property>
 <property name="whatsThis">
 <string>ATCMbutton widget</string>
 </property>
 <property name="pageName">
-<string notr="true">HOME</string>
+<string>HOME</string>
 </property>
 <property name="statusvar">
 <string notr="true"/>
@@ -243,7 +243,7 @@
 <property name="bgPressColor">
 <color>
 <red>255</red>
-<green>85</green>
+<green>255</green>
 <blue>0</blue>
 </color>
 </property>

@@ -41,8 +41,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="212"/>
-        <source>page: HOME  status: </source>
+        <location filename="headerpanel.ui" line="218"/>
+        <source>HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">

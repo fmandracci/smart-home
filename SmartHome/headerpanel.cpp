@@ -6,9 +6,16 @@
 
 HeaderPanel::HeaderPanel(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::HeaderPanel)
+    ui(new Ui::HeaderPanel),
+    pparent((page *)parent)
 {
     ui->setupUi(this);
+}
+
+bool HeaderPanel::goto_page(const char *page, bool remember)
+{
+    emit newPage(page, remember);
+    return true;
 }
 
 void HeaderPanel::changeWidgets()

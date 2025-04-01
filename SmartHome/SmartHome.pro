@@ -21,109 +21,113 @@ include(./template.pri)
 
 HEADERS += \
     automation.h \
-    page100.h \
-    page010.h \
-    page043.h \
-    page045.h \
+    headerleds.h \
+    headerpanel.h \
     page005.h \
+    page010.h \
+    page011.h \
     page020.h \
     page021.h \
     page022.h \
-    page400.h \
-    page200.h \
-    page300.h \
-    page044.h \
-    page500.h \
-    page102.h \
-    page401.h \
-    page402.h \
-    page103.h \
-    page046.h \
-    page4e0.h \
-    page104.h \
-    page101a.h \
-    page101b.h \
-    page101c.h \
+    page041.h \
+    page042.h \
+    page043.h \
     page043e.h \
+    page044.h \
+    page045.h \
+    page046.h \
     page047.h \
     page048.h \
     page049.h \
+    page100.h \
+    page101a.h \
+    page101b.h \
+    page101c.h \
+    page102.h \
+    page103.h \
+    page104.h \
+    page200.h \
+    page300.h \
+    page400.h \
+    page401.h \
+    page402.h \
     page4b0.h \
-    page042.h \
-    page011.h \
-    headerleds.h \
-    headerpanel.h
+    page4e0.h \
+    page500.h \
 
 
 FORMS += \
-    page100.ui \
-    page010.ui \
-    page043.ui \
-    page045.ui \
+    headerleds.ui \
+    headerpanel.ui \
     page005.ui \
+    page010.ui \
+    page011.ui \
     page020.ui \
     page021.ui \
     page022.ui \
-    page400.ui \
-    page200.ui \
-    page300.ui \
-    page044.ui \
-    page500.ui \
-    page102.ui \
-    page401.ui \
-    page402.ui \
-    page103.ui \
-    page046.ui \
-    page4e0.ui \
-    page104.ui \
-    page101a.ui \
-    page101b.ui \
-    page101c.ui \
+    page041.ui \
+    page042.ui \
+    page043.ui \
     page043e.ui \
+    page044.ui \
+    page045.ui \
+    page046.ui \
     page047.ui \
     page048.ui \
     page049.ui \
+    page100.ui \
+    page101a.ui \
+    page101b.ui \
+    page101c.ui \
+    page102.ui \
+    page103.ui \
+    page104.ui \
+    page200.ui \
+    page300.ui \
+    page400.ui \
+    page401.ui \
+    page402.ui \
     page4b0.ui \
-    page042.ui \
-    page011.ui \
-    headerleds.ui \
-    headerpanel.ui
+    page4e0.ui \
+    page500.ui \
 
 
 SOURCES += \
     automation.cpp \
-    page100.cpp \
-    page010.cpp \
-    page043.cpp \
-    page045.cpp \
+    headerleds.cpp \
+    headerpanel.cpp \
     page005.cpp \
+    page010.cpp \
+    page011.cpp \
     page020.cpp \
     page021.cpp \
     page022.cpp \
-    page400.cpp \
-    page200.cpp \
-    page300.cpp \
-    page044.cpp \
-    page500.cpp \
-    page102.cpp \
-    page401.cpp \
-    page402.cpp \
-    page103.cpp \
-    page046.cpp \
-    page4e0.cpp \
-    page104.cpp \
-    page101a.cpp \
-    page101b.cpp \
-    page101c.cpp \
+    page041.cpp \
+    page042.cpp \
+    page043.cpp \
     page043e.cpp \
+    page044.cpp \
+    page045.cpp \
+    page046.cpp \
     page047.cpp \
     page048.cpp \
     page049.cpp \
+    page100.cpp \
+    page101a.cpp \
+    page101b.cpp \
+    page101c.cpp \
+    page102.cpp \
+    page103.cpp \
+    page104.cpp \
+    page200.cpp \
+    page300.cpp \
+    page400.cpp \
+    page401.cpp \
+    page402.cpp \
     page4b0.cpp \
-    page042.cpp \
-    page011.cpp \
-    headerleds.cpp \
-    headerpanel.cpp
+    page4e0.cpp \
+    page500.cpp \
+
 
 RESOURCES += \
     resources.qrc

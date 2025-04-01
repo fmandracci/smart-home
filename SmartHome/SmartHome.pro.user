@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.8.1, 2025-04-01T20:09:49. -->
+<!-- Written by QtCreator 2.8.1, 2025-04-02T00:03:05. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="int">1</value>
+  <value type="int">0</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -209,12 +209,12 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinux.DirectUploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T5.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/build-SmartHome-MectSuite_3_5_2_rpi4-Release/hmi</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T5.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T6.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W01.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W02.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/home_C.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W02.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_tp1070.ini</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W03.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W04.csv</value>
@@ -301,12 +301,12 @@
        <value type="QString">tpx4100-01-a</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
@@ -393,50 +393,50 @@
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:02:41</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:02:41</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:02:41</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:14</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
-       <value type="QDateTime">2025-04-01T20:01:13</value>
+       <value type="QDateTime">2025-04-02T00:02:03</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:01</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
+       <value type="QDateTime">2025-04-02T00:02:02</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
@@ -688,14 +688,14 @@
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T5.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H6.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H5.csv</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_only</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_tp1043.ini</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_Wall.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_only</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4puffer.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/hmi_tpx4100.ini</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_W10.csv</value>
-       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T2.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/home_C.ini</value>
+       <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T2.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T1.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_T4.csv</value>
        <value type="QString">/mnt/c/Projects/smart-home_new/SmartHome/config/trend_H2.csv</value>
@@ -781,13 +781,13 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
-       <value type="QString">/local/data/customtrend</value>
-       <value type="QString">/local/root</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
+       <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
@@ -872,14 +872,14 @@
        <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
+       <value type="QDateTime">2025-04-01T20:08:26</value>
        <value type="QDateTime">2025-04-01T20:08:25</value>
        <value type="QDateTime">2025-04-01T20:08:23</value>
-       <value type="QDateTime">2025-04-01T20:08:26</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:26</value>
        <value type="QDateTime">2025-04-01T20:08:23</value>
-       <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:26</value>
+       <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
        <value type="QDateTime">2025-04-01T20:08:24</value>
@@ -940,19 +940,18 @@
      <value type="int">13</value>
      <value type="int">14</value>
     </valuelist>
-    <value type="int" key="PE.EnvironmentAspect.Base">1</value>
+    <value type="int" key="PE.EnvironmentAspect.Base">-1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">SmartHome (on Remote Device)</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments"></value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable"></value>
+    <value type="bool" key="ProjectExplorer.CustomExecutableRunConfiguration.UseTerminal">false</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.WorkingDirectory">%{buildDir}</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Custom Executable</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">RemoteLinuxRunConfiguration:/mnt/c/Projects/smart-home_new/SmartHome/SmartHome.pro</value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"></value>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">SmartHome.pro</value>
-    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable">/etc/rc.d/init.d/autoexec start</value>
-    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">true</value>
-    <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">true</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
@@ -978,7 +977,6 @@
    <value type="QString">ProjectExplorer.Project.TargetCount</value>
    <value type="QString">ProjectExplorer.ProjectConfiguration.DefaultDisplayName</value>
    <value type="QString">ProjectExplorer.ProjectConfiguration.Id</value>
-   <value type="QString">ProjectExplorer.Project.ActiveTarget</value>
    <value type="QString">ProjectExplorer.BuildStepList.StepsCount</value>
   </valuelist>
  </data>
