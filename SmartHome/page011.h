@@ -67,6 +67,7 @@ private slots:
 
     void on_pushButton_51_NetConf_clicked() { goto_page("net_conf"); }
     void on_pushButton_52_Info_clicked()    { goto_page("info"    ); }
+    void on_pushButton_53_TPX_clicked()     { goto_page("page041" ); }
     void on_pushButton_54_TPAC1007_clicked(){ goto_page("page048" ); }
 
 private:

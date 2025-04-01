@@ -10,6 +10,49 @@
     </message>
 </context>
 <context>
+    <name>HeaderPanel</name>
+    <message>
+        <location filename="headerpanel.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="headerpanel.ui" line="69"/>
+        <location filename="headerpanel.ui" line="147"/>
+        <location filename="headerpanel.ui" line="215"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="headerpanel.ui" line="98"/>
+        <location filename="headerpanel.ui" line="101"/>
+        <source>X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="headerpanel.ui" line="125"/>
+        <source>☼HH:mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="headerpanel.ui" line="176"/>
+        <location filename="headerpanel.ui" line="179"/>
+        <source>Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="headerpanel.ui" line="212"/>
+        <source>page: HOME  status: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="headerpanel.ui" line="251"/>
+        <location filename="headerpanel.ui" line="254"/>
+        <source>☰</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>page005</name>
     <message>
         <location filename="page005.ui" line="160"/>
@@ -1289,11 +1332,6 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="938"/>
-        <source>-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="page011.ui" line="2078"/>
         <source>EP 7E</source>
         <oldsource>7E</oldsource>
@@ -1339,6 +1377,11 @@ xx</source>
     <message>
         <location filename="page011.ui" line="1178"/>
         <source>0xxxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="938"/>
+        <source>TPX*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

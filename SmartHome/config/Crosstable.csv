@@ -5407,30 +5407,30 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently year
-1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently month
-1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently day
-1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently hour
-1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently minutes
-1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Currently seconds
-1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Uptime in seconds (wraps in 136 years)
-1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
-1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RW]Enable Watchdog
-1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RW]Reset Watchdog timer
-1;P;PLC_PRODUCT_ID                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]TP/TPAC/TPLC Product ID (Hex)
-1;P;PLC_SERIAL_NUMBER              ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]TP/TPAC/TPLC Serial Number
-1;P;PLC_HMI_PAGE                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RW]HMI Page (page100=0x00000100)
-1;P;PLC_MS_VERSION                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]Mect Suite Version installed on Target (0 if before 3.4.0)
-1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RW]Backlight dimming value (0 ON 100 OFF)
-1;F;PLC_CPU_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]CPU temperature in degrees Celsius
-1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]LPC communication errors counter
-1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;18  ;[RO]LPC communication errors mask
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_Year                       ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently year
+1;P;PLC_Month                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently month
+1;P;PLC_Day                        ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently day
+1;P;PLC_Hours                      ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently hour
+1;P;PLC_Minutes                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently minutes
+1;P;PLC_Seconds                    ;UINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Currently seconds
+1;P;PLC_UPTIME_s                   ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Uptime in seconds (wraps in 136 years)
+1;P;PLC_UPTIME_cs                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Uptime in centiseconds = 10 ms (wraps in 497 days)
+1;P;PLC_WATCHDOGEN                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RW]Enable Watchdog
+1;P;PLC_WATCHDOG_ms                ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RW]Reset Watchdog timer
+1;P;PLC_PRODUCT_ID                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]TP/TPAC/TPLC Product ID (Hex)
+1;P;PLC_SERIAL_NUMBER              ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]TP/TPAC/TPLC Serial Number
+1;P;PLC_HMI_PAGE                   ;DINT     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RW]HMI Page (page100=0x00000100)
+1;P;PLC_MS_VERSION                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]Mect Suite Version installed on Target (0 if before 3.4.0)
+1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RW]Backlight dimming value (0 ON 100 OFF)
+1;F;PLC_CPU_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]CPU temperature in degrees Celsius
+1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]LPC communication errors counter
+1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]LPC communication errors mask
+1;P;PLC_LPC_RESERVED_3             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_4             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_5             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_6             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_7             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_8             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
 ;;;;;;;;;;;;
 1;P;PLC_BEEP_VOLUME                ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Beep volume (when buzzerOn)
 1;P;PLC_TOUCH_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Touch volume 

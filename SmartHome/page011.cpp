@@ -98,7 +98,7 @@ void page011::changeWidgets()
 
     ui->pushButton_51_NetConf->setStyleSheet(sn);
     ui->pushButton_52_Info->setStyleSheet(sn);
-    ui->pushButton_53->setStyleSheet(sn);
+    ui->pushButton_53_TPX->setStyleSheet(sn);
     ui->pushButton_54_TPAC1007->setStyleSheet(sn);
 
     QString cn("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0);" + FONT_SS_N(pointSize_ct));

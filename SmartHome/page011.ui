@@ -893,7 +893,7 @@ border: 1px solid rgb(255, 255, 255);</string>
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QPushButton" name="pushButton_53">
+      <widget class="QPushButton" name="pushButton_53_TPX">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -935,7 +935,7 @@ color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>-</string>
+        <string>TPX*</string>
        </property>
        <property name="default">
         <bool>false</bool>

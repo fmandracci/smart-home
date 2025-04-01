@@ -12334,6 +12334,42 @@ int doWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
 int addWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
 int getStatus_PLC_LPC_ERRORS_MASK(void);
 
+#define ID_PLC_LPC_RESERVED_3 5428
+extern u_int32_t PLC_LPC_RESERVED_3;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_3(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_3(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_3(void);
+
+#define ID_PLC_LPC_RESERVED_4 5429
+extern u_int32_t PLC_LPC_RESERVED_4;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_4(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_4(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_4(void);
+
+#define ID_PLC_LPC_RESERVED_5 5430
+extern u_int32_t PLC_LPC_RESERVED_5;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_5(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_5(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_5(void);
+
+#define ID_PLC_LPC_RESERVED_6 5431
+extern u_int32_t PLC_LPC_RESERVED_6;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_6(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_6(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_6(void);
+
+#define ID_PLC_LPC_RESERVED_7 5432
+extern u_int32_t PLC_LPC_RESERVED_7;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_7(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_7(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_7(void);
+
+#define ID_PLC_LPC_RESERVED_8 5433
+extern u_int32_t PLC_LPC_RESERVED_8;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_8(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_8(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_8(void);
+
 #define ID_PLC_BEEP_VOLUME 5435
 extern u_int8_t PLC_BEEP_VOLUME;	/* Beep volume (when buzzerOn) */
 int doWrite_PLC_BEEP_VOLUME(u_int8_t value);

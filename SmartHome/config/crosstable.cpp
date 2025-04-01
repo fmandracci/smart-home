@@ -14378,6 +14378,48 @@ u_int32_t PLC_LPC_ERRORS_MASK = 0;
 
 
 /*
+ * Variable PLC_LPC_RESERVED_3	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_3 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_4	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_4 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_5	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_5 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_6	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_6 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_7	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_7 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_8	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_8 = 0;
+
+
+/*
  * Variable PLC_BEEP_VOLUME	[ Beep volume (when buzzerOn) ]
  */
 
@@ -51375,6 +51417,114 @@ getStatus_PLC_LPC_ERRORS_MASK(void)
 }
 
 int
+doWrite_PLC_LPC_RESERVED_3(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_3, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_3(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_3, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_3(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_3);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_4(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_4, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_4(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_4, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_4(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_4);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_5(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_5, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_5(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_5, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_5(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_5);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_6(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_6, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_6(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_6, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_6(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_6);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_7(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_7, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_7(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_7, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_7(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_7);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_8(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_8, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_8(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_8, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_8(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_8);
+}
+
+int
 doWrite_PLC_BEEP_VOLUME(u_int8_t value)
 {
 	return doWrite(ID_PLC_BEEP_VOLUME, &value);
@@ -53682,6 +53832,12 @@ update_all(void)
 	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
 	retval += readFromDb(ID_PLC_LPC_ERRORS_COUNT, &PLC_LPC_ERRORS_COUNT);
 	retval += readFromDb(ID_PLC_LPC_ERRORS_MASK, &PLC_LPC_ERRORS_MASK);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_3, &PLC_LPC_RESERVED_3);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_4, &PLC_LPC_RESERVED_4);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_5, &PLC_LPC_RESERVED_5);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_6, &PLC_LPC_RESERVED_6);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_7, &PLC_LPC_RESERVED_7);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_8, &PLC_LPC_RESERVED_8);
 	retval += readFromDb(ID_PLC_BEEP_VOLUME, &PLC_BEEP_VOLUME);
 	retval += readFromDb(ID_PLC_TOUCH_VOLUME, &PLC_TOUCH_VOLUME);
 	retval += readFromDb(ID_PLC_ALARM_VOLUME, &PLC_ALARM_VOLUME);
