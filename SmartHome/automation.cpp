@@ -60,6 +60,10 @@ void setup(void)
     doWrite_PLC_HMI_Version(1205);
 
     // --------- system ---------------------------------------------
+    if (PLC_PRODUCT_ID == 0x4100010A || PLC_PRODUCT_ID == 0x4120010A) {
+        doWrite_PLC_FastIO_Ena(0x000000FF);
+        doWrite_PLC_FastIO_Dir(0x000000F0);
+    }
     doWrite_PLC_timeWin(300); // graph: 5'
     // NB: in system.ini "Trend Window [s]"
     // 108000 = 1d + 12h = 30h = { 4.3" = 5 colonne da 6 ore, 7.0" = 10 colonne da 3 ore }
