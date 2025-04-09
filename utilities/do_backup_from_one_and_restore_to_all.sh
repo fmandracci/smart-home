@@ -63,7 +63,6 @@ for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $B
 	echo "------------------ restore to $XX_ADDR ------------------"
 	rsync -Haxc --delete $FOLDER/local/control/ root@$XX_ADDR:/local/control/     || { echo "cannot restore the local/control/ files to $XX_ADDR"; exit; } 
 	rsync -Haxc --delete $FOLDER/local/data/    root@$XX_ADDR:/local/data/ \
-		--exclude alarms \
 		--exclude store \
 		--exclude alarms                                                      || { echo "cannot restore the local/data/ files to $XX_ADDR"; exit; } 
 	rsync -Haxc --delete $FOLDER/local/etc/     root@$XX_ADDR:/local/etc/ \
