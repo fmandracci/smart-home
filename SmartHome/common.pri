@@ -51,19 +51,19 @@ INCLUDEPATH += .\
 	./config
 
 LIBS += \
--lts \
--lqwt \
 -lATCMcommon \
 -lATCMutility \
 -lATCMcommunication \
--lATCMplugin \
--lATCMinputdialog \
 -lATCMlogger \
 -lATCMstore \
 -lATCMalarms \
 -lATCMrecipe \
 -lATCMtrend \
--lATCMsystem
+-lATCMsystem \
+-lATCMplugin \
+-lATCMinputdialog \
+-lts \
+-lqwt 
 
 # Input
 HEADERS += \

@@ -57,7 +57,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(1204);
+    doWrite_PLC_HMI_Version(1205);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'
@@ -173,16 +173,16 @@ void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,
                      QLabel *label_T1, QLabel *label_T2, QLabel *label_yellow_2)
 {
-    const QString RED_OVER_BLACK("color: rgb(255, 0, 0); background-color: rgb(0, 0, 0);");
-    const QString GREEN_OVER_BLACK("color: rgb(0, 255, 0); background-color: rgb(0, 0, 0);");
-    const QString YELLOW_OVER_BLACK("color: rgb(255, 255, 0); background-color: rgb(0, 0, 0);");
-    const QString GREY_OVER_BLACK("color: rgb(64, 64, 64); background-color: rgb(0, 0, 0);");
-    const QString MAGENTA_OVER_BLACK("color: rgb(255, 0, 255); background-color: rgb(0, 0, 0);");
-    const QString CYAN_OVER_BLACK("color: rgb(0, 255, 255); background-color: rgb(0, 0, 0);");
+    const QString     RED_OVER_BLACK("color: rgb(255,   0,   0); background-color: rgb(0, 0, 0);");
+    const QString   GREEN_OVER_BLACK("color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0);");
+    const QString  YELLOW_OVER_BLACK("color: rgb(255, 255,   0); background-color: rgb(0, 0, 0);");
+    const QString    GREY_OVER_BLACK("color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);");
+    const QString MAGENTA_OVER_BLACK("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);");
+    const QString    CYAN_OVER_BLACK("color: rgb(  0, 255, 255); background-color: rgb(0, 0, 0);");
 
-    const QString YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK + "border: 1px solid rgb(255, 255, 0);";
-    //const QString GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK + "border: 1px solid rgb(0, 255, 0);";
-    const QString CYAN_OVER_BLACK_BORDER = CYAN_OVER_BLACK + "border: 1px solid rgb(0, 255, 255);";
+    const QString YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK + "border: 1px solid rgb(255, 255,   0);";
+  //const QString  GREEN_OVER_BLACK_BORDER = GREEN_OVER_BLACK  + "border: 1px solid rgb(  0, 255,   0);";
+    const QString   CYAN_OVER_BLACK_BORDER = CYAN_OVER_BLACK   + "border: 1px solid rgb(  0, 255, 255);";
 
     const QPixmap Error_png(":/systemicons/Error.png");
     const QPixmap Danger_png(":/systemicons/Danger.png");
