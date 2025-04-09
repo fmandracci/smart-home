@@ -49,9 +49,9 @@ page500::page500(QWidget *parent) :
 #endif
 
 
-    for (int i = 0; i < ALARM_SENSORS_MAX; ++i) {
-        old_sensor_status[i] = ALARM_SENSOR_DISABLED;
-    }
+    // for (int i = 0; i < ALARM_SENSORS_MAX; ++i) {
+    //     old_sensor_status[i] = ALARM_SENSOR_DISABLED;
+    // }
     ui->pushButton_OFF->setEnabled(false);
     ui->pushButton_DAYTIME->setEnabled(false);
     ui->pushButton_NIGHTTIME->setEnabled(false);
@@ -71,7 +71,7 @@ page500::page500(QWidget *parent) :
     ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet);
 }
 
-void page500::reload()
+void page500::changeWidgets()
 {
     QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
 
@@ -110,7 +110,11 @@ void page500::reload()
     ui->label_sensor_30->setText(hmi_ini.value("BA/sensor_30").toString());
     ui->label_sensor_31->setText(hmi_ini.value("BA/sensor_31").toString());
     ui->label_sensor_32->setText(hmi_ini.value("BA/sensor_32").toString());
+}
 
+void page500::reload()
+{
+    changeWidgets();
     enableDisableCommands();
     updateWidgets();
 }
@@ -237,7 +241,7 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
 {
     if (PLC_BA_isOK) {
         if (PLC_BA_enabled_sensors >= i) {
-            if (status != old_sensor_status[i]) {
+            // if (status != old_sensor_status[i]) {
                 switch (status) {
                 case ALARM_SENSOR_IGNORED:  label_ok->setStyleSheet(GREY_OVER_BLACK); break;
                 case ALARM_SENSOR_STILL_NG: label_ok->setStyleSheet(RED_OVER_BLACK); break;
@@ -246,7 +250,7 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
                 case ALARM_SENSOR_WAS_NG:   label_ok->setStyleSheet(ORANGE_OVER_BLACK); break;
                 default: ;
                 }
-            }
+            // }
             label_ok->setVisible(true);
             label_sensor->setVisible(true);
         } else {
@@ -258,7 +262,7 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
         label_sensor->setVisible(true);
         label_ok->setStyleSheet(MAGENTA_OVER_BLACK);
     }
-    old_sensor_status[i] = status;
+    // old_sensor_status[i] = status;
 }
 
 void page500::updateData()
