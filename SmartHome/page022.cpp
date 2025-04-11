@@ -38,20 +38,32 @@ page022::page022(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
-
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
     value_ms = 0;
     status = IDLE;
 }
 
 void page022::reload()
 {
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    changeWidgets();
     updateTimer();
     updateWidgets();
+}
+
+void page022::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+
+    updateTimer();
+    updateWidgets();
+}
+
+void page022::changeWidgets()
+{
+    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Chronometer.png", NULL, "page022: chrono");
 }
 
 void page022::updateTimer()
@@ -75,11 +87,7 @@ void page022::updateTimer()
 
 void page022::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     switch (status) {
     case IDLE:
@@ -97,17 +105,6 @@ void page022::updateWidgets()
     default:
         ;
     }
-}
-
-void page022::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateTimer();
-    updateWidgets();
 }
 
 void page022::timerEvent(QTimerEvent *event)

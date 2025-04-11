@@ -41,10 +41,50 @@ page101b::page101b(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+}
+
+void page101b::reload()
+{
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+
+    switch (currentThermostat) {
+    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, PLC_T1_control_type, LABEL_01, "trend_T1.csv", home_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
+    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, PLC_T2_control_type, LABEL_02, "trend_T2.csv", home_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
+    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, PLC_T3_control_type, LABEL_03, "trend_T3.csv", home_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
+    case  4:
+        if (PLC_T4_control_type == ControlType_6)
+             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, "trend_T4puffer.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
+        else
+             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, "trend_T4.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
+        break;
+    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, PLC_T5_control_type, LABEL_05, "trend_T5.csv", home_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
+    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, PLC_T6_control_type, LABEL_06, "trend_T6.csv", home_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
+    default: changeWidgets(0             , 0            , 0                  , "??"    , NULL          , ""                                  , ""                           , ""                              , ""                        , ""                           , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
+    }
+    // updateWidgets() called by changeWidgets()
+}
+
+void page101b::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+
+    switch (currentThermostat) {
+    case  1: updateWidgets(PLC_T1_sunrise, PLC_T1_sunset, LABEL_01, PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
+    case  2: updateWidgets(PLC_T2_sunrise, PLC_T2_sunset, LABEL_02, PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
+    case  3: updateWidgets(PLC_T3_sunrise, PLC_T3_sunset, LABEL_03, PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
+    case  4: updateWidgets(PLC_T4_sunrise, PLC_T4_sunset, LABEL_04, PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
+    case  5: updateWidgets(PLC_T5_sunrise, PLC_T5_sunset, LABEL_05, PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
+    case  6: updateWidgets(PLC_T6_sunrise, PLC_T6_sunset, LABEL_06, PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
+    default: updateWidgets(0             , 0            , "??"    , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
+    }
 }
 
 void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
-                             const QString Tlabel, const QString name,
+                             const QString Tlabel, const char *trend, const QString title,
                              const QString Tsp, const QString Tsp_nt,
                              const QString Hsp, const QString Hsp_nt,
                              int Tn_temperature, int Tn_temperature_bis,
@@ -54,6 +94,12 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
     QString offBorderStyleSheet = COLOR_SS(color) + BORDER_SS(color);
 
     // header
+    if (PLC_Tn_count >= 2) {
+        ui->headerPanel->changeWidgets(trend, ":/icons/icons/HeatCool.png", "page100", QString("page101b: Tn " + title).toLatin1().data());
+    } else {
+        currentThermostat = 1;
+        ui->headerPanel->changeWidgets(trend, ":/icons/icons/HeatCool.png", NULL, QString("page101b: Tn " + title).toLatin1().data());
+    }
     ui->label_Tn->setText(Tlabel);
     ui->label_Tn->setStyleSheet(offStyleSheet);
     ui->label_Tn_temperature->setStyleSheet(offStyleSheet);
@@ -72,9 +118,6 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
     ui->atcmButton_down->setEnabled(enabled_sensors < 0 and Iam_Tn);
 
     // center grid
-    ui->label_name->setText(name);
-    ui->label_name->setStyleSheet(offStyleSheet);
-
     ui->pushButton_sunrise->setStyleSheet(offBorderStyleSheet);
     ui->pushButton_sunset->setStyleSheet(offBorderStyleSheet);
 
@@ -98,32 +141,6 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
                   enabled_sensors, Iam_Tn, Tn_isOK, Tn_heating_status, Tn_heating_timer, Tn_heating, color);
 }
 
-void page101b::reload()
-{
-    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
-
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    if (PLC_Tn_count >= 2) {
-        ui->atcmButton_up->setPageName("page100");
-    } else {
-        currentThermostat = 1;
-        ui->atcmButton_up->setPageName("HOME");
-    }
-    switch (currentThermostat) {
-    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, PLC_T1_control_type, LABEL_01, home_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
-    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, PLC_T2_control_type, LABEL_02, home_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
-    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, PLC_T3_control_type, LABEL_03, home_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
-    case  4: changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
-    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, PLC_T5_control_type, LABEL_05, home_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
-    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, PLC_T6_control_type, LABEL_06, home_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
-    default: changeWidgets(0             , 0            , 0                 , "??"    , ""                                  , ""                           , ""                              , ""                        , ""                           , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
-    }
-}
-
 void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int Tn_temperature, int Tn_temperature_bis,
                              int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color)
 {
@@ -131,12 +148,7 @@ void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int 
     QString onStylesheet = QString("background-color: rgb(%1, %2, %3); color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
     bool x;
 
-    // header
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     QString tStr = Tn_temperature > TemperatureError ? QString("%1").arg(Tn_temperature / 10.0, 3, 'f', 1) : LABEL_NULL_T;
     if (enabled_sensors >= 2) {
@@ -193,24 +205,6 @@ void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int 
     ui->pushButton_Hup_nt->setVisible(enabled_sensors <= -1);
     ui->pushButton_Hdown->setVisible(enabled_sensors <= -1);
     ui->pushButton_Hdown_nt->setVisible(enabled_sensors <= -1);
-}
-
-void page101b::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    switch (currentThermostat) {
-    case  1: updateWidgets(PLC_T1_sunrise, PLC_T1_sunset, LABEL_01, PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
-    case  2: updateWidgets(PLC_T2_sunrise, PLC_T2_sunset, LABEL_02, PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
-    case  3: updateWidgets(PLC_T3_sunrise, PLC_T3_sunset, LABEL_03, PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
-    case  4: updateWidgets(PLC_T4_sunrise, PLC_T4_sunset, LABEL_04, PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
-    case  5: updateWidgets(PLC_T5_sunrise, PLC_T5_sunset, LABEL_05, PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
-    case  6: updateWidgets(PLC_T6_sunrise, PLC_T6_sunset, LABEL_06, PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
-    default: updateWidgets(0             , 0            , "??"    , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
-    }
 }
 
 void page101b::on_pushButton_sunrise_clicked()

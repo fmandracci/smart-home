@@ -60,7 +60,6 @@ private slots:
     void on_pushButton08_W_clicked() { gotoWattmeterPage(10); }
     void on_pushButton09_W_clicked() { gotoWattmeterPage(11); }
     void on_pushButton10_W_clicked() { gotoWattmeterPage(12); }
-    void on_pushButton_trend_clicked();
 
 private:
     Ui::page400 *ui;

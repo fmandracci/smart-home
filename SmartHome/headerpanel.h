@@ -18,7 +18,7 @@ public:
     explicit HeaderPanel(QWidget *parent = 0);
     ~HeaderPanel();
     void changeWidgets(const char *trend = NULL, const char *icon = NULL, const char *back = NULL, const char *title = NULL);
-    void updateWidgets(const QString datetime = NULL);
+    void updateWidgets(const QString datetime = (const char *)NULL);
 
 protected slots:
     bool goto_page(const char *page, bool remember = true);

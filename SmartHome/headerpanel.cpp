@@ -28,16 +28,19 @@ void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char 
     int pointSize_bttn  = 36; // 24
     int pointSize_title =  6; //  6
 
-//    if (mectScreenWidth >= 1280) {
-//        pointSize_time = 42;
-//        pointSize_bttn = 32;
-//    } else if (mectScreenWidth >= 800) {
-//        pointSize_time = 32;
-//        pointSize_bttn = 28;
-//    } else {
-//        pointSize_time = 28;
-//        pointSize_bttn = 24;
-//    }
+    if (mectScreenWidth >= 1280) {
+        pointSize_time = 42;
+        pointSize_bttn = 32;
+        pointSize_title = 6;
+    } else if (mectScreenWidth >= 800) {
+        pointSize_time = 32;
+        pointSize_bttn = 28;
+        pointSize_title = 6;
+    } else {
+        pointSize_time = 28;
+        pointSize_bttn = 24;
+        pointSize_title = 6;
+    }
 
     ui->header_leds->changeHeader();
     ui->pushButton_trend->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_bttn));

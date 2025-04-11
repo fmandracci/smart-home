@@ -39,7 +39,7 @@ page400::page400(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
-
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
     pointSize = 9;
 }
 
@@ -64,7 +64,6 @@ void page400::updateData()
         return;
     }
     page::updateData();
-
     updateWidgets();
 }
 
@@ -72,11 +71,7 @@ void page400::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    ui->headerPanel->changeWidgets("trend_Wall.csv", ":/icons/icons/Wattmeter.png", NULL, "page400: EP");
 
     changeWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz);
     changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()),  1, COLOR_01, ui->pushButton_M_W,
@@ -157,11 +152,7 @@ void page400::updateWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     if (PLC_EP_BlackoutDetected or PLC_BA_BlackoutDetected) {
         ui->label_alarm->setText("BLACKOUT");
@@ -237,11 +228,6 @@ void page400::updateWattmeter(const QString label, int n,
             pushButton_W->setText(QString("%1\n%2%3 W").arg(label).arg(LABEL_WARNING).arg(LABEL_NULL_W));
         }
     }
-}
-
-void page400::on_pushButton_trend_clicked()
-{
-    goto_trend_page("trend_Wall");
 }
 
 void page400::changeEvent(QEvent * event)

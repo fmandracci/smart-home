@@ -50,7 +50,7 @@ private slots:
 
 private:
     Ui::page101a *ui;
-    void changeWidgets(const QString t, const QString name, const QString T, const QString Tbis, const QString Text,
+    void changeWidgets(const QString t, const char *trend, const QString title, const QString T, const QString Tbis, const QString Text,
                        const QString Thumidity, const QString Thumidity_bis, const QString Thumidity_ext,
                        int Tn_max_request_W, const QString Tn_requested_W, const QString EP_Tn_assigned_W,
                        int daily_heating_s, int monthly_heating_s,

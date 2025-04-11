@@ -38,12 +38,35 @@ page021::page021(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 
     resetTimer_1(TimerValue_1);
     resetTimer_2(TimerValue_2);
     updateTimers();
     doWrite_PLC_buzzer_timer_1(false);
     doWrite_PLC_buzzer_timer_2(false);
+}
+
+void page021::reload()
+{
+    changeWidgets();
+    updateWidgets();
+}
+
+void page021::changeWidgets()
+{
+    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Chronometer.png", NULL, "page021: timer");
+    updateTimers();
+}
+
+void page021::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateTimers();
+    updateWidgets();
 }
 
 void page021::resetTimer_1(int value)
@@ -78,17 +101,6 @@ void page021::resetTimer_2(int value)
     ui->atcmButtonStartStop_2->blockSignals(true);
     ui->atcmButtonStartStop_2->setChecked(false);
     ui->atcmButtonStartStop_2->blockSignals(false);
-}
-
-void page021::reload()
-{
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    updateTimers();
-    updateWidgets();
 }
 
 void page021::updateTimers()
@@ -162,11 +174,7 @@ void page021::updateTimers()
 
 void page021::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     // ----- 1 -----
     switch (status_1) {
@@ -221,17 +229,6 @@ void page021::updateWidgets()
     default:
         ;
     }
-}
-
-void page021::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-    
-    updateTimers();
-    updateWidgets();
 }
 
 void page021::changeEvent(QEvent * event)

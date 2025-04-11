@@ -1441,79 +1441,53 @@ xx</source>
 </context>
 <context>
     <name>page021</name>
-    <message utf8="true">
-        <location filename="page021.ui" line="674"/>
-        <source>☼HH:mm</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page021.ui" line="575"/>
-        <location filename="page021.ui" line="730"/>
-        <location filename="page021.ui" line="910"/>
-        <location filename="page021.ui" line="1043"/>
-        <location filename="page021.ui" line="1150"/>
-        <location filename="page021.ui" line="1390"/>
-        <location filename="page021.ui" line="1557"/>
-        <location filename="page021.ui" line="1677"/>
+        <location filename="page021.ui" line="191"/>
+        <location filename="page021.ui" line="324"/>
+        <location filename="page021.ui" line="431"/>
+        <location filename="page021.ui" line="671"/>
+        <location filename="page021.ui" line="838"/>
+        <location filename="page021.ui" line="958"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page021.ui" line="773"/>
-        <location filename="page021.ui" line="776"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page021.ui" line="970"/>
-        <location filename="page021.ui" line="973"/>
+        <location filename="page021.ui" line="251"/>
+        <location filename="page021.ui" line="254"/>
         <source>&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page021.ui" line="1271"/>
-        <location filename="page021.ui" line="1512"/>
+        <location filename="page021.ui" line="552"/>
+        <location filename="page021.ui" line="793"/>
         <source>hh:mm:ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page021.ui" line="867"/>
-        <location filename="page021.ui" line="1329"/>
+        <location filename="page021.ui" line="148"/>
+        <location filename="page021.ui" line="610"/>
         <source>%p%</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>page022</name>
-    <message utf8="true">
-        <location filename="page022.ui" line="677"/>
-        <source>☼HH:mm</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page022.ui" line="578"/>
-        <location filename="page022.ui" line="733"/>
-        <location filename="page022.ui" line="866"/>
-        <location filename="page022.ui" line="993"/>
-        <location filename="page022.ui" line="1126"/>
-        <location filename="page022.ui" line="1246"/>
+        <location filename="page022.ui" line="132"/>
+        <location filename="page022.ui" line="259"/>
+        <location filename="page022.ui" line="392"/>
+        <location filename="page022.ui" line="512"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page022.ui" line="769"/>
-        <location filename="page022.ui" line="772"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page022.ui" line="926"/>
-        <location filename="page022.ui" line="929"/>
+        <location filename="page022.ui" line="192"/>
+        <location filename="page022.ui" line="195"/>
         <source>&lt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page022.ui" line="1092"/>
+        <location filename="page022.ui" line="358"/>
         <source>hh:mm:ss</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6583,251 +6557,220 @@ xx.x℃</source>
 <context>
     <name>page101a</name>
     <message>
-        <location filename="page101a.ui" line="1337"/>
+        <location filename="page101a.ui" line="118"/>
         <source>hh:mm
 ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="584"/>
-        <location filename="page101a.ui" line="782"/>
-        <location filename="page101a.ui" line="1141"/>
-        <location filename="page101a.ui" line="1824"/>
-        <location filename="page101a.ui" line="2096"/>
+        <location filename="page101a.ui" line="602"/>
+        <location filename="page101a.ui" line="795"/>
+        <location filename="page101a.ui" line="1297"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101a.ui" line="697"/>
-        <source>☼HH:mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page101a.ui" line="742"/>
+        <location filename="page101a.ui" line="161"/>
         <source>▸ xx.x ℃
 ▸ xx.x ℃</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page101a.ui" line="818"/>
-        <location filename="page101a.ui" line="821"/>
-        <source>☰</source>
+    <message>
+        <location filename="page101a.ui" line="217"/>
+        <location filename="page101a.ui" line="711"/>
+        <location filename="page101a.ui" line="937"/>
+        <source>%</source>
+        <oldsource>☰</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="913"/>
-        <location filename="page101a.ui" line="1020"/>
-        <location filename="page101a.ui" line="1230"/>
-        <location filename="page101a.ui" line="1377"/>
-        <location filename="page101a.ui" line="1531"/>
-        <location filename="page101a.ui" line="1678"/>
+        <location filename="page101a.ui" line="202"/>
+        <location filename="page101a.ui" line="309"/>
+        <location filename="page101a.ui" line="503"/>
+        <location filename="page101a.ui" line="696"/>
+        <location filename="page101a.ui" line="922"/>
+        <location filename="page101a.ui" line="1029"/>
         <source>xx.x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="916"/>
-        <location filename="page101a.ui" line="922"/>
-        <location filename="page101a.ui" line="1233"/>
-        <location filename="page101a.ui" line="1239"/>
-        <location filename="page101a.ui" line="1534"/>
-        <location filename="page101a.ui" line="1540"/>
+        <location filename="page101a.ui" line="205"/>
+        <location filename="page101a.ui" line="211"/>
+        <location filename="page101a.ui" line="699"/>
+        <location filename="page101a.ui" line="705"/>
+        <location filename="page101a.ui" line="925"/>
+        <location filename="page101a.ui" line="931"/>
         <source>PLC_T1_humidity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="919"/>
-        <location filename="page101a.ui" line="1026"/>
-        <location filename="page101a.ui" line="1236"/>
-        <location filename="page101a.ui" line="1383"/>
-        <location filename="page101a.ui" line="1537"/>
-        <location filename="page101a.ui" line="1684"/>
-        <location filename="page101a.ui" line="1991"/>
-        <location filename="page101a.ui" line="2181"/>
+        <location filename="page101a.ui" line="208"/>
+        <location filename="page101a.ui" line="315"/>
+        <location filename="page101a.ui" line="509"/>
+        <location filename="page101a.ui" line="702"/>
+        <location filename="page101a.ui" line="928"/>
+        <location filename="page101a.ui" line="1035"/>
+        <location filename="page101a.ui" line="1192"/>
+        <location filename="page101a.ui" line="1382"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="928"/>
-        <location filename="page101a.ui" line="1245"/>
-        <location filename="page101a.ui" line="1546"/>
-        <source>%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page101a.ui" line="1380"/>
-        <location filename="page101a.ui" line="1386"/>
+        <location filename="page101a.ui" line="312"/>
+        <location filename="page101a.ui" line="318"/>
         <source>PLC_T1_temperature_bis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1870"/>
-        <location filename="page101a.ui" line="1873"/>
+        <location filename="page101a.ui" line="648"/>
+        <location filename="page101a.ui" line="651"/>
         <source>&lt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1904"/>
+        <location filename="page101a.ui" line="1105"/>
         <source>day hh:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1925"/>
+        <location filename="page101a.ui" line="1126"/>
         <source>month hh:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1985"/>
-        <location filename="page101a.ui" line="2175"/>
+        <location filename="page101a.ui" line="1186"/>
+        <location filename="page101a.ui" line="1376"/>
         <source>xxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1988"/>
-        <location filename="page101a.ui" line="1994"/>
+        <location filename="page101a.ui" line="1189"/>
+        <location filename="page101a.ui" line="1195"/>
         <source>PLC_T1_requested_W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1997"/>
+        <location filename="page101a.ui" line="1198"/>
         <source>requested: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="2187"/>
+        <location filename="page101a.ui" line="1388"/>
         <source>assigned: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="2000"/>
-        <location filename="page101a.ui" line="2190"/>
+        <location filename="page101a.ui" line="1201"/>
+        <location filename="page101a.ui" line="1391"/>
         <source> W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="2178"/>
-        <location filename="page101a.ui" line="2184"/>
+        <location filename="page101a.ui" line="1379"/>
+        <location filename="page101a.ui" line="1385"/>
         <source>PLC_EP_T1_assigned_W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1110"/>
+        <location filename="page101a.ui" line="463"/>
         <source>AUTO</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101a.ui" line="1032"/>
-        <location filename="page101a.ui" line="1392"/>
-        <location filename="page101a.ui" line="1693"/>
+        <location filename="page101a.ui" line="324"/>
+        <location filename="page101a.ui" line="518"/>
+        <location filename="page101a.ui" line="1041"/>
         <source>℃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="863"/>
-        <source>name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page101a.ui" line="1681"/>
-        <location filename="page101a.ui" line="1687"/>
+        <location filename="page101a.ui" line="506"/>
+        <location filename="page101a.ui" line="512"/>
         <source>PLC_T1_temperature_ext</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101a.ui" line="1023"/>
-        <location filename="page101a.ui" line="1029"/>
+        <location filename="page101a.ui" line="1032"/>
+        <location filename="page101a.ui" line="1038"/>
         <source>PLC_T1_temperature</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>page101b</name>
-    <message utf8="true">
-        <location filename="page101b.ui" line="697"/>
-        <source>☼HH:mm</source>
-        <oldsource>HH:mm☼</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page101b.ui" line="1216"/>
-        <location filename="page101b.ui" line="1627"/>
-        <location filename="page101b.ui" line="1884"/>
-        <location filename="page101b.ui" line="2126"/>
+        <location filename="page101b.ui" line="423"/>
+        <location filename="page101b.ui" line="750"/>
+        <location filename="page101b.ui" line="1007"/>
+        <location filename="page101b.ui" line="1249"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="958"/>
+        <location filename="page101b.ui" line="165"/>
         <source>AUTO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1373"/>
+        <location filename="page101b.ui" line="580"/>
         <source>hh:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="919"/>
+        <location filename="page101b.ui" line="126"/>
         <source> hh:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1784"/>
-        <location filename="page101b.ui" line="1834"/>
-        <location filename="page101b.ui" line="1934"/>
-        <location filename="page101b.ui" line="2076"/>
+        <location filename="page101b.ui" line="907"/>
+        <location filename="page101b.ui" line="957"/>
+        <location filename="page101b.ui" line="1057"/>
+        <location filename="page101b.ui" line="1199"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1498"/>
+        <location filename="page101b.ui" line="705"/>
         <source>hh:mm
 ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="584"/>
-        <location filename="page101b.ui" line="780"/>
-        <location filename="page101b.ui" line="1404"/>
-        <location filename="page101b.ui" line="1971"/>
-        <location filename="page101b.ui" line="2230"/>
+        <location filename="page101b.ui" line="611"/>
+        <location filename="page101b.ui" line="1094"/>
+        <location filename="page101b.ui" line="1480"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101b.ui" line="742"/>
+        <location filename="page101b.ui" line="1350"/>
         <source>xx.x ℃
 xx.x ℃</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page101b.ui" line="816"/>
-        <location filename="page101b.ui" line="819"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page101b.ui" line="997"/>
-        <location filename="page101b.ui" line="1104"/>
-        <location filename="page101b.ui" line="1261"/>
-        <location filename="page101b.ui" line="1672"/>
+        <location filename="page101b.ui" line="204"/>
+        <location filename="page101b.ui" line="311"/>
+        <location filename="page101b.ui" line="468"/>
+        <location filename="page101b.ui" line="795"/>
         <source>xx.x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1000"/>
-        <location filename="page101b.ui" line="1006"/>
+        <location filename="page101b.ui" line="207"/>
+        <location filename="page101b.ui" line="213"/>
         <source>PLC_T1_temperature_setpoint_nt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1675"/>
-        <location filename="page101b.ui" line="1681"/>
+        <location filename="page101b.ui" line="798"/>
+        <location filename="page101b.ui" line="804"/>
         <source>PLC_T1_temperature_setpoint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="2017"/>
-        <location filename="page101b.ui" line="2023"/>
+        <location filename="page101b.ui" line="1140"/>
+        <location filename="page101b.ui" line="1146"/>
         <source>set T
 every-
 where
@@ -6835,160 +6778,136 @@ where
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1003"/>
-        <location filename="page101b.ui" line="1110"/>
-        <location filename="page101b.ui" line="1267"/>
-        <location filename="page101b.ui" line="1678"/>
+        <location filename="page101b.ui" line="210"/>
+        <location filename="page101b.ui" line="317"/>
+        <location filename="page101b.ui" line="474"/>
+        <location filename="page101b.ui" line="801"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101b.ui" line="1009"/>
-        <location filename="page101b.ui" line="1684"/>
+        <location filename="page101b.ui" line="216"/>
+        <location filename="page101b.ui" line="807"/>
         <source>▸</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101b.ui" line="1012"/>
-        <location filename="page101b.ui" line="1687"/>
+        <location filename="page101b.ui" line="219"/>
+        <location filename="page101b.ui" line="810"/>
         <source>℃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="861"/>
-        <source>name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page101b.ui" line="1264"/>
-        <location filename="page101b.ui" line="1270"/>
+        <location filename="page101b.ui" line="471"/>
+        <location filename="page101b.ui" line="477"/>
         <source>PLC_T1_humidity</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101b.ui" line="1119"/>
-        <location filename="page101b.ui" line="1276"/>
+        <location filename="page101b.ui" line="326"/>
+        <location filename="page101b.ui" line="483"/>
         <source>%◂</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1107"/>
-        <location filename="page101b.ui" line="1113"/>
+        <location filename="page101b.ui" line="314"/>
+        <location filename="page101b.ui" line="320"/>
         <source>PLC_T1_humidity_setpoint_nt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1450"/>
-        <location filename="page101b.ui" line="1453"/>
+        <location filename="page101b.ui" line="657"/>
+        <location filename="page101b.ui" line="660"/>
         <source>&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>page101c</name>
-    <message utf8="true">
-        <location filename="page101c.ui" line="697"/>
-        <source>☼HH:mm</source>
-        <oldsource>HH:mm☼</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page101c.ui" line="1262"/>
-        <location filename="page101c.ui" line="1424"/>
+        <location filename="page101c.ui" line="466"/>
+        <location filename="page101c.ui" line="805"/>
         <source>AUTO</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101c.ui" line="1100"/>
+        <location filename="page101c.ui" line="271"/>
         <source>+2°C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1463"/>
+        <location filename="page101c.ui" line="759"/>
         <source>hh:mm
 ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="584"/>
-        <location filename="page101c.ui" line="780"/>
-        <location filename="page101c.ui" line="1501"/>
-        <location filename="page101c.ui" line="1593"/>
-        <location filename="page101c.ui" line="1693"/>
+        <location filename="page101c.ui" line="503"/>
+        <location filename="page101c.ui" line="595"/>
+        <location filename="page101c.ui" line="893"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101c.ui" line="742"/>
+        <location filename="page101c.ui" line="847"/>
         <source>xx.x ℃
 ▸ xx.x ℃</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101c.ui" line="816"/>
-        <location filename="page101c.ui" line="819"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page101c.ui" line="989"/>
+        <location filename="page101c.ui" line="193"/>
         <source>-2°C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1139"/>
+        <location filename="page101c.ui" line="310"/>
         <source>40 &apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1217"/>
+        <location filename="page101c.ui" line="388"/>
         <source>BOOST</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1301"/>
+        <location filename="page101c.ui" line="427"/>
         <source>20 &apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="950"/>
+        <location filename="page101c.ui" line="154"/>
         <source>5 h</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1639"/>
-        <location filename="page101c.ui" line="1642"/>
+        <location filename="page101c.ui" line="641"/>
+        <location filename="page101c.ui" line="644"/>
         <source>&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1178"/>
+        <location filename="page101c.ui" line="349"/>
         <source>60 &apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="864"/>
-        <source>name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page101c.ui" line="911"/>
+        <location filename="page101c.ui" line="115"/>
         <source>2 h</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1547"/>
-        <location filename="page101c.ui" line="1550"/>
+        <location filename="page101c.ui" line="549"/>
+        <location filename="page101c.ui" line="552"/>
         <source>&lt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1028"/>
+        <location filename="page101c.ui" line="232"/>
         <source>8 h</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101c.ui" line="1061"/>
+        <location filename="page101c.ui" line="683"/>
         <source>OFF</source>
         <oldsource>off</oldsource>
         <translation type="unfinished"></translation>
@@ -7633,264 +7552,230 @@ Y2=PLC_T1_temperature_bis</source>
 <context>
     <name>page200</name>
     <message>
-        <location filename="page200.ui" line="584"/>
-        <location filename="page200.ui" line="736"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page200.ui" line="772"/>
-        <location filename="page200.ui" line="775"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page200.ui" line="920"/>
+        <location filename="page200.ui" line="1623"/>
         <source>T2e</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1026"/>
+        <location filename="page200.ui" line="1589"/>
         <source>T2b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1057"/>
+        <location filename="page200.ui" line="2669"/>
         <source>T2d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="951"/>
+        <location filename="page200.ui" line="2267"/>
         <source>T2c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2346"/>
+        <location filename="page200.ui" line="333"/>
         <source>T1a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2377"/>
+        <location filename="page200.ui" line="2301"/>
         <source>T1d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2408"/>
+        <location filename="page200.ui" line="1233"/>
         <source>T1b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2817"/>
+        <location filename="page200.ui" line="2233"/>
         <source>T4a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2848"/>
+        <location filename="page200.ui" line="1131"/>
         <source>T4e</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2786"/>
+        <location filename="page200.ui" line="1199"/>
         <source>T4b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1384"/>
+        <location filename="page200.ui" line="988"/>
         <source>Thermo 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1421"/>
+        <location filename="page200.ui" line="454"/>
         <source>Thermo 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1766"/>
+        <location filename="page200.ui" line="1924"/>
         <source>Thermo 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2054"/>
+        <location filename="page200.ui" line="826"/>
         <source>Thermo 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2439"/>
+        <location filename="page200.ui" line="695"/>
         <source>T1c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2470"/>
+        <location filename="page200.ui" line="1301"/>
         <source>T1 e</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2501"/>
+        <location filename="page200.ui" line="857"/>
         <source>T2a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2696"/>
+        <location filename="page200.ui" line="2472"/>
         <source>Thermo 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2923"/>
+        <location filename="page200.ui" line="2077"/>
         <source>T4c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3104"/>
+        <location filename="page200.ui" line="1701"/>
         <source>T4d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="3144"/>
+        <location filename="page200.ui" line="2432"/>
         <source>Thermo 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2594"/>
+        <location filename="page200.ui" line="1837"/>
         <source>T3a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2625"/>
+        <location filename="page200.ui" line="2547"/>
         <source>T3b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2656"/>
+        <location filename="page200.ui" line="1097"/>
         <source>T3c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2724"/>
+        <location filename="page200.ui" line="1769"/>
         <source>T3d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2755"/>
+        <location filename="page200.ui" line="1063"/>
         <source>T3e</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1282"/>
+        <location filename="page200.ui" line="1267"/>
         <source>T5a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1313"/>
+        <location filename="page200.ui" line="1555"/>
         <source>T5b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2985"/>
+        <location filename="page200.ui" line="255"/>
         <source>T5c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1176"/>
+        <location filename="page200.ui" line="367"/>
         <source>T5d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2954"/>
+        <location filename="page200.ui" line="1735"/>
         <source>T5e</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1251"/>
+        <location filename="page200.ui" line="617"/>
         <source>T6a</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1344"/>
+        <location filename="page200.ui" line="1999"/>
         <source>T6b</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2563"/>
+        <location filename="page200.ui" line="1803"/>
         <source>T6c</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="1838"/>
+        <location filename="page200.ui" line="2155"/>
         <source>T6d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page200.ui" line="2532"/>
+        <location filename="page200.ui" line="1165"/>
         <source>T6e</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page200.ui" line="680"/>
-        <source>☼HH:mm</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>page300</name>
     <message>
-        <location filename="page300.ui" line="584"/>
-        <location filename="page300.ui" line="736"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page300.ui" line="772"/>
-        <location filename="page300.ui" line="775"/>
-        <source>☰</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page300.ui" line="814"/>
+        <location filename="page300.ui" line="99"/>
         <source>n n.c. relays, with overload cutoff and manual rearm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1146"/>
+        <location filename="page300.ui" line="431"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="948"/>
+        <location filename="page300.ui" line="233"/>
         <source>F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1186"/>
+        <location filename="page300.ui" line="471"/>
         <source>H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1226"/>
+        <location filename="page300.ui" line="511"/>
         <source>E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="1435"/>
+        <location filename="page300.ui" line="720"/>
         <source>G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="988"/>
+        <location filename="page300.ui" line="273"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
-    <message utf8="true">
-        <location filename="page300.ui" line="680"/>
-        <source>☼HH:mm</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
-        <location filename="page300.ui" line="1028"/>
+        <location filename="page300.ui" line="313"/>
         <source>D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="869"/>
+        <location filename="page300.ui" line="154"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7898,137 +7783,120 @@ Y2=PLC_T1_temperature_bis</source>
 <context>
     <name>page400</name>
     <message>
-        <location filename="page400.ui" line="580"/>
-        <location filename="page400.ui" line="776"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page400.ui" line="1525"/>
+        <location filename="page400.ui" line="769"/>
         <source>xxx.xx V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1112"/>
-        <location filename="page400.ui" line="1391"/>
+        <location filename="page400.ui" line="356"/>
+        <location filename="page400.ui" line="635"/>
         <source>p.f. x.xxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1575"/>
+        <location filename="page400.ui" line="819"/>
         <source>xxx.xx Hz</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1727"/>
+        <location filename="page400.ui" line="971"/>
         <source>&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1246"/>
-        <location filename="page400.ui" line="1458"/>
+        <location filename="page400.ui" line="490"/>
+        <location filename="page400.ui" line="702"/>
         <source>xxxx VA</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1496"/>
+        <location filename="page400.ui" line="740"/>
         <source>②
 xxxx W</source>
         <oldsource>② xxxx W</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="679"/>
-        <source>☼HH:mm</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page400.ui" line="974"/>
+        <location filename="page400.ui" line="218"/>
         <source>⑧
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1217"/>
+        <location filename="page400.ui" line="461"/>
         <source>⑨
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1175"/>
+        <location filename="page400.ui" line="419"/>
         <source>⑦
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1320"/>
+        <location filename="page400.ui" line="564"/>
         <source>④
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1362"/>
+        <location filename="page400.ui" line="606"/>
         <source>③
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1003"/>
-        <location filename="page400.ui" line="1137"/>
+        <location filename="page400.ui" line="247"/>
+        <location filename="page400.ui" line="381"/>
         <source>xxxx var</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1429"/>
+        <location filename="page400.ui" line="673"/>
         <source>⑥
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1083"/>
+        <location filename="page400.ui" line="327"/>
         <source>⑩
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="932"/>
+        <location filename="page400.ui" line="176"/>
         <source>①
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1041"/>
+        <location filename="page400.ui" line="285"/>
         <source>⑤
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1278"/>
+        <location filename="page400.ui" line="522"/>
         <source>PH.V.
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1550"/>
-        <location filename="page400.ui" line="1655"/>
+        <location filename="page400.ui" line="794"/>
+        <location filename="page400.ui" line="899"/>
         <source>≤ xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page400.ui" line="1626"/>
+        <location filename="page400.ui" line="870"/>
         <source>MAINS
 xxxx W</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page400.ui" line="1684"/>
+        <location filename="page400.ui" line="928"/>
         <source>•</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page400.ui" line="812"/>
-        <location filename="page400.ui" line="815"/>
-        <source>☰</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -42,6 +42,7 @@ page200::page200(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page200::reload()
@@ -64,11 +65,7 @@ void page200::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/LampIcon.png", NULL, "page200: Tn lamps");
 
     changeLamps(1, COLOR_01, home_ini.value("T1/name").toString(),
                 ui->label_Tn_1, PLC_T1_enabled_lamps,
@@ -163,11 +160,7 @@ void page200::updateLamp(int t, bool isOK, int enabled_lamps_t, int n, QPushButt
 
 void page200::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     updateLamp(1, PLC_T1_isOK, PLC_T1_enabled_lamps, 1, ui->pushButton_T1_lamp_1, PLC_T1_lamp_feedback_1);
     updateLamp(1, PLC_T1_isOK, PLC_T1_enabled_lamps, 2, ui->pushButton_T1_lamp_2, PLC_T1_lamp_feedback_2);

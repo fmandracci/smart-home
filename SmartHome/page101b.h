@@ -66,7 +66,7 @@ private slots:
 private:
     Ui::page101b *ui;
     void changeWidgets(int sunrise, int sunset, unsigned control_type,
-                       const QString Tlabel, const QString name,
+                       const QString Tlabel, const char *trend, const QString title,
                        const QString Tsp, const QString Tsp_nt,
                        const QString Hsp, const QString Hsp_nt,
                        int Tn_temperature, int Tn_temperature_bis,

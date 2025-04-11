@@ -38,23 +38,29 @@ page300::page300(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
-}
-
-void page300::setupRelay(QPushButton *button, QLabel *label, int n)
-{
-    button->setVisible(abs(PLC_EP_enabled_relays) >= n);
-    label->setVisible(abs(PLC_EP_enabled_relays) >= n);
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page300::reload()
 {
+    changeWidgets();
+    updateWidgets();
+}
+
+void page300::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateWidgets();
+}
+
+void page300::changeWidgets()
+{
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Flash.png", NULL, "page300: EP relay");
 
     if (PLC_EP_enabled_relays > 0) {
         ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation").arg(PLC_EP_enabled_relays));
@@ -85,6 +91,26 @@ void page300::reload()
     setupRelay(ui->pushButton_EP_relay_H, ui->label_EP_relay_H, 8);
 }
 
+void page300::updateWidgets()
+{
+    ui->headerPanel->updateWidgets();
+
+    updateRelay(ui->pushButton_EP_relay_A, 1, PLC_EP_relay_A);
+    updateRelay(ui->pushButton_EP_relay_B, 2, PLC_EP_relay_B);
+    updateRelay(ui->pushButton_EP_relay_C, 3, PLC_EP_relay_C);
+    updateRelay(ui->pushButton_EP_relay_D, 4, PLC_EP_relay_D);
+    updateRelay(ui->pushButton_EP_relay_E, 5, PLC_EP_relay_E);
+    updateRelay(ui->pushButton_EP_relay_F, 6, PLC_EP_relay_F);
+    updateRelay(ui->pushButton_EP_relay_G, 7, PLC_EP_relay_G);
+    updateRelay(ui->pushButton_EP_relay_H, 8, PLC_EP_relay_H);
+}
+
+void page300::setupRelay(QPushButton *button, QLabel *label, int n)
+{
+    button->setVisible(abs(PLC_EP_enabled_relays) >= n);
+    label->setVisible(abs(PLC_EP_enabled_relays) >= n);
+}
+
 void page300::updateRelay(QPushButton *button, int n, int value)
 {
     if (abs(PLC_EP_enabled_relays) >= n) {
@@ -101,29 +127,6 @@ void page300::updateRelay(QPushButton *button, int n, int value)
     }
 }
 
-void page300::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-
-    updateRelay(ui->pushButton_EP_relay_A, 1, PLC_EP_relay_A);
-    updateRelay(ui->pushButton_EP_relay_B, 2, PLC_EP_relay_B);
-    updateRelay(ui->pushButton_EP_relay_C, 3, PLC_EP_relay_C);
-    updateRelay(ui->pushButton_EP_relay_D, 4, PLC_EP_relay_D);
-    updateRelay(ui->pushButton_EP_relay_E, 5, PLC_EP_relay_E);
-    updateRelay(ui->pushButton_EP_relay_F, 6, PLC_EP_relay_F);
-    updateRelay(ui->pushButton_EP_relay_G, 7, PLC_EP_relay_G);
-    updateRelay(ui->pushButton_EP_relay_H, 8, PLC_EP_relay_H);
-}
-
 void page300::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
@@ -136,4 +139,3 @@ page300::~page300()
 {
     delete ui;
 }
-
