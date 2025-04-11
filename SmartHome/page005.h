@@ -45,6 +45,8 @@ private slots:
 
 private:
     Ui::page005 *ui;
+    void changeWidgets();
+    void updateWidgets();
 };
 
 #endif // PAGE005_H

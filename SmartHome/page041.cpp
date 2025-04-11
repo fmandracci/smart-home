@@ -58,7 +58,7 @@ void page041::updateData()
 
 void page041::changeWidgets()
 {
-    ui->headerPanel->changeWidgets();
+    ui->headerPanel->changeWidgets("trend1.csv", NULL, "BACK", "page041: TPX*");
 }
 
 void page041::updateWidgets()

@@ -39,11 +39,8 @@ page500::page500(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 
-
-    // for (int i = 0; i < ALARM_SENSORS_MAX; ++i) {
-    //     old_sensor_status[i] = ALARM_SENSOR_DISABLED;
-    // }
     ui->pushButton_OFF->setEnabled(false);
     ui->pushButton_DAYTIME->setEnabled(false);
     ui->pushButton_NIGHTTIME->setEnabled(false);
@@ -63,6 +60,23 @@ page500::page500(QWidget *parent) :
     ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet);
 }
 
+void page500::reload()
+{
+    changeWidgets();
+    enableDisableCommands();
+    updateWidgets();
+}
+
+void page500::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    enableDisableCommands();
+    updateWidgets();
+}
+
 void page500::changeWidgets()
 {
     int pointSize_b;
@@ -71,11 +85,7 @@ void page500::changeWidgets()
 
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Antifurto.png", NULL, "page500: BA");
 
     if (mectScreenWidth >= 1280) {
         pointSize_b = 22;
@@ -215,15 +225,9 @@ void page500::changeWidgets()
     ui->label_sensor_32->setText(home_ini.value("BA/sensor_32").toString());
 }
 
-void page500::reload()
-{
-    changeWidgets();
-    enableDisableCommands();
-    updateWidgets();
-}
-
 void page500::updateWidgets()
 {
+    ui->headerPanel->updateWidgets();
     switch (PLC_BA_status) {
     case ALARM_STATUS_ZERO:
         ui->pushButton_OFF->setStyleSheet(inactive_StyleSheet);
@@ -344,7 +348,6 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
 {
     if (PLC_BA_isOK) {
         if (PLC_BA_enabled_sensors >= i) {
-            // if (status != old_sensor_status[i]) {
                 switch (status) {
                 case ALARM_SENSOR_IGNORED:  label_ok->setStyleSheet(GREY_OVER_BLACK); break;
                 case ALARM_SENSOR_STILL_NG: label_ok->setStyleSheet(RED_OVER_BLACK); break;
@@ -353,7 +356,6 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
                 case ALARM_SENSOR_WAS_NG:   label_ok->setStyleSheet(ORANGE_OVER_BLACK); break;
                 default: ;
                 }
-            // }
             label_ok->setVisible(true);
             label_sensor->setVisible(true);
         } else {
@@ -365,24 +367,6 @@ void page500::updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *lab
         label_sensor->setVisible(true);
         label_ok->setStyleSheet(MAGENTA_OVER_BLACK);
     }
-    // old_sensor_status[i] = status;
-}
-
-void page500::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-
-    enableDisableCommands();
-    updateWidgets();
 }
 
 void page500::enableDisableCommands()
@@ -528,7 +512,6 @@ void page500::on_pushButton_ENABLED_clicked()
 
 void page500::on_pushButton_RINGING_clicked()
 {
-
 }
 
 void page500::on_pushButton_MUTED_clicked()

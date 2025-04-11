@@ -17,6 +17,8 @@ public:
 
     void changeHeader();
     void updateLedLabels();
+    static void translateFontSize( QWidget *ui );
+    static void scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor);
 
 private:
     Ui::HeaderLeds *ui;

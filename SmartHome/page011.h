@@ -43,8 +43,6 @@ public:
 private slots:
     void changeEvent(QEvent * event);
 
-    void on_pushButton_trend_clicked();
-
     void on_pushButton_11_set_home_clicked(){ beep(100); }
     void on_pushButton_12_set_tp_clicked()  { beep(100); }
     void on_pushButton_13_7M_clicked()      { goto_page("page043" ); }

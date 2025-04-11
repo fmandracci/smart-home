@@ -37,6 +37,7 @@ page011::page011(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page011::reload()
@@ -60,18 +61,7 @@ void page011::changeWidgets()
         pointSize_ct = 10;
         pointSize_bt = 12;
     }
-
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
-//    ui->headerLeds->changeHeader();
-//    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-//                 NULL, NULL, NULL,
-//                 NULL, NULL, NULL,
-//                 NULL, NULL, NULL,
-//                 NULL, NULL, NULL);
+    ui->headerPanel->changeWidgets("trend1.csv", NULL, NULL, "page011");
 
     QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
     QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
@@ -110,11 +100,7 @@ void page011::changeWidgets()
 
 void page011::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 }
 
 void page011::updateData()
@@ -138,9 +124,4 @@ void page011::changeEvent(QEvent * event)
 page011::~page011()
 {
     delete ui;
-}
-
-void page011::on_pushButton_trend_clicked()
-{
-    goto_trend_page("trend1.csv");
 }

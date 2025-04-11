@@ -40,30 +40,15 @@ page020::page020(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page020::reload()
 {
-    // no changeHeader(ui->label_giorno, ui->atcmButton_home);
-    int pointSize_t;
-    int pointSize_d;
-
-    if (mectScreenWidth >= 800) {
-        pointSize_t  = 80;
-        pointSize_d  = 24;
-    } else {
-        pointSize_t  = 70;
-        pointSize_d  = 20;
-    }
-    ui->label_time->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_t));
-    ui->atcmButton_Back->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
-    ui->label_giorno->setStyleSheet   (COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
-    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
-    ui->atcmDate->setStyleSheet       (COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
-
+    changeWidgets();
+    updateWidgets();
     if (firstTime) {
         firstTime = false;
-
         goto_start_page();
     }
 }
@@ -74,13 +59,28 @@ void page020::updateData()
         return;
     }
     page::updateData();
+    updateWidgets();
+}
 
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->label_time->setText(TIME_FMT);
+void page020::changeWidgets()
+{
+    int pointSize_t;
+    int pointSize_d;
 
+    if (mectScreenWidth >= 800) {
+        pointSize_t  = 80;
+        pointSize_d  = 24;
+    } else {
+        pointSize_t  = 70;
+        pointSize_d  = 20;
+    }
+    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page020");
+    ui->label_time->setStyleSheet(COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_t));
+    ui->atcmDate->setStyleSheet  (COLOR_SS(COLOR_CLOCK) + FONT_SS_B(pointSize_d));
+}
+
+void page020::updateWidgets()
+{
     QString giorno(PLC_nighttime ? LABEL_NIGHTTIME : LABEL_DAYTIME);
 
     switch (QDate::currentDate().dayOfWeek()) {
@@ -91,9 +91,11 @@ void page020::updateData()
     case 5: giorno += QString::fromUtf8("Venerdì"  ); break;
     case 6: giorno += QString::fromUtf8("Sabato"   ); break;
     case 7: giorno += QString::fromUtf8("Domenica" ); break;
-    default: ui->label_giorno->setText("---");
+    default: giorno = "---";
     }
-     ui->label_giorno->setText(giorno);
+    ui->headerPanel->updateWidgets(giorno);
+    ui->label_time->setText(TIME_FMT);
+    // ui->atcmDate
 }
 
 void page020::changeEvent(QEvent * event)

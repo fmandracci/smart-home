@@ -8,6 +8,34 @@ HeaderLeds::HeaderLeds(QWidget *parent) :
     ui(new Ui::HeaderLeds)
 {
     ui->setupUi(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    translateFontSize(this);
+#endif
+}
+
+void HeaderLeds::translateFontSize( QWidget *ui )
+{
+    QObject *w;
+
+    if (ui) {
+        scaleWidgetFontSize(ui, mectFontCorrector);
+        foreach (w, ui->children()) {
+            QWidget *ww = dynamic_cast<QWidget *>(w);
+            if (ww) {
+                scaleWidgetFontSize(ww, mectFontCorrector);
+            }
+        }
+    }
+}
+
+void HeaderLeds::scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor)
+{
+    if (uiWidget and newScaleFactor != 0) {
+        QFont wFont = QFont(uiWidget->font());
+
+        wFont.setPointSize( (wFont.pointSize() * newScaleFactor));
+        uiWidget->setFont(wFont);
+    }
 }
 
 HeaderLeds::~HeaderLeds()

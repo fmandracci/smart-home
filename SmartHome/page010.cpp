@@ -43,11 +43,12 @@ page010::page010(QWidget *parent) :
 
 void page010::changeWidgets()
 {
+    ui->header_leds->changeHeader();
     changeHeader(ui->pushButton_time, NULL,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
+                 NULL, NULL, NULL,
+                 NULL, NULL, NULL,
+                 NULL, NULL, NULL,
+                 NULL, NULL, NULL);
 
     if (PLC_ConfigPassword) {
         ui->atcmButton_configurazione->setPasswordVar("PLC_ConfigPassword");
@@ -105,10 +106,7 @@ void page010::changeWidgets()
 
 void page010::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
+    ui->header_leds->updateLedLabels();
     ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
 
     ui->label_versions->setText(QString("%1\n%2_%3\n%4_%5\n%6")

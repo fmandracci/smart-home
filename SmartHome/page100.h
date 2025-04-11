@@ -43,8 +43,6 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_pushButton_time_clicked() { goto_page("page020"); }
-    void on_pushButton_trend_clicked();
     void on_pushButton_status_1_clicked() { currentThermostat = 1; goto_page("page101c"); }
     void on_pushButton_status_2_clicked() { currentThermostat = 2; goto_page("page101c"); }
     void on_pushButton_status_3_clicked() { currentThermostat = 3; goto_page("page101c"); }
@@ -79,5 +77,3 @@ private:
 };
 
 #endif // PAGE100_H
-
-
