@@ -60,6 +60,12 @@ background-color: rgb(255, 140, 255)
      <height>44</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="minimumSize">
     <size>
      <width>44</width>
@@ -80,12 +86,12 @@ background-color: rgb(255, 140, 255)
    </property>
    <property name="iconSize">
     <size>
-     <width>40</width>
-     <height>40</height>
+     <width>44</width>
+     <height>44</height>
     </size>
    </property>
    <property name="toolTip">
-    <string>page: BACK  status: </string>
+    <string/>
    </property>
    <property name="whatsThis">
     <string>ATCMbutton widget</string>
@@ -104,9 +110,9 @@ background-color: rgb(255, 140, 255)
    </property>
    <property name="bgColor">
     <color>
-     <red>32</red>
-     <green>178</green>
-     <blue>170</blue>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
     </color>
    </property>
    <property name="fontColor">
@@ -124,13 +130,13 @@ background-color: rgb(255, 140, 255)
    </property>
    <property name="icon">
     <iconset resource="systemicons.qrc">
-     <normaloff>:/systemicons/Back.png</normaloff>:/systemicons/Back.png</iconset>
+     <normaloff>:/systemicons/Go_back.png</normaloff>:/systemicons/Go_back.png</iconset>
    </property>
    <property name="borderWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="borderRadius">
-    <number>16</number>
+    <number>0</number>
    </property>
   </widget>
   <widget class="Line" name="line_1">

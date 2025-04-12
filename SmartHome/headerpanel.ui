@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>636</width>
+    <width>542</width>
     <height>90</height>
    </rect>
   </property>
@@ -63,8 +63,8 @@
        </property>
        <property name="minimumSize">
         <size>
-         <width>72</width>
-         <height>72</height>
+         <width>50</width>
+         <height>50</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -103,11 +103,11 @@
         <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeType">
-        <enum>QSizePolicy::Maximum</enum>
+        <enum>QSizePolicy::Expanding</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>72</width>
+         <width>6</width>
          <height>20</height>
         </size>
        </property>
@@ -124,7 +124,7 @@
        <property name="minimumSize">
         <size>
          <width>216</width>
-         <height>72</height>
+         <height>50</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -155,22 +155,6 @@ color: rgb(255, 85, 0);</string>
         <bool>true</bool>
        </property>
       </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_M">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Maximum</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>36</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <widget class="QLabel" name="label_icon">
@@ -217,11 +201,11 @@ color: rgb(255, 85, 0);</string>
         <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeType">
-        <enum>QSizePolicy::Maximum</enum>
+        <enum>QSizePolicy::Expanding</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>36</width>
+         <width>6</width>
          <height>20</height>
         </size>
        </property>
@@ -237,8 +221,8 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>72</width>
-         <height>72</height>
+         <width>50</width>
+         <height>50</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -315,8 +299,8 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>72</width>
-         <height>72</height>
+         <width>50</width>
+         <height>50</height>
         </size>
        </property>
        <property name="maximumSize">

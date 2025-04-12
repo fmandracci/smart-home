@@ -38,10 +38,12 @@ page043::page043(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page043::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page043 EP 7M");
 }
 
 void page043::updateData()
@@ -50,7 +52,7 @@ void page043::updateData()
         return;
     }
     page::updateData();
-    
+    ui->headerPanel->updateWidgets();
 }
 
 void page043::changeEvent(QEvent * event)
@@ -64,11 +66,4 @@ void page043::changeEvent(QEvent * event)
 page043::~page043()
 {
     delete ui;
-}
-
-
-void page043::on_atcmButton_back_clicked()
-{
-    variableList.clear();
-    qDebug() << "variableList = " << variableList;
 }
