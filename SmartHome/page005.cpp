@@ -61,7 +61,7 @@ void page005::updateData()
 
 void page005::changeWidgets()
 {
-    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page005: Config");
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page005: Config");
 }
 
 void page005::updateWidgets()

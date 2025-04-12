@@ -63,7 +63,7 @@ void page022::updateData()
 
 void page022::changeWidgets()
 {
-    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Chronometer.png", NULL, "page022: chrono");
+    ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page022: chrono");
 }
 
 void page022::updateTimer()

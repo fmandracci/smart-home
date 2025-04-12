@@ -60,7 +60,7 @@ void page300::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Flash.png", NULL, "page300: EP relay");
+    ui->headerPanel->changeWidgets(NULL, RL_PIXMAP, NULL, "page300: EP relay");
 
     if (PLC_EP_enabled_relays > 0) {
         ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation").arg(PLC_EP_enabled_relays));

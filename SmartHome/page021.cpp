@@ -55,7 +55,7 @@ void page021::reload()
 
 void page021::changeWidgets()
 {
-    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Chronometer.png", NULL, "page021: timer");
+    ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page021: timer");
     updateTimers();
 }
 

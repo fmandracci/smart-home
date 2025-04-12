@@ -41,7 +41,7 @@ page045::page045(QWidget *parent) :
 
 void page045::reload()
 {
-    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page045 MPNE AB");
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page045 MPNE AB");
 }
 
 void page045::updateData()

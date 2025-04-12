@@ -43,7 +43,7 @@ page043::page043(QWidget *parent) :
 
 void page043::reload()
 {
-    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page043 EP 7M");
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page043 EP 7M");
 }
 
 void page043::updateData()

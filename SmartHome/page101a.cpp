@@ -92,10 +92,10 @@ void page101a::changeWidgets(const QString t, const char *trend, const QString t
 
     // header
     if (PLC_Tn_count >= 2) {
-        ui->headerPanel->changeWidgets(trend, ":/icons/icons/HeatCool.png", "page100", QString("page101a: Tn " + title).toLatin1().data());
+        ui->headerPanel->changeWidgets(trend, TH_PIXMAP, "page100", QString("page101a: Tn " + title).toLatin1().data());
     } else {
         currentThermostat = 1;
-        ui->headerPanel->changeWidgets(trend, ":/icons/icons/HeatCool.png", NULL, QString("page101a: Tn " + title).toLatin1().data());
+        ui->headerPanel->changeWidgets(trend, TH_PIXMAP, NULL, QString("page101a: Tn " + title).toLatin1().data());
     }
     ui->label_Tn->setText(t);
     ui->label_Tn->setStyleSheet(offStyleSheet);

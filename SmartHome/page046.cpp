@@ -43,7 +43,7 @@ page046::page046(QWidget *parent) :
 
 void page046::reload()
 {
-    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page046 BA test");
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
     if (PLC_Iam_BA) {
         ui->pushButton_Test->setText("TEST");
         ui->pushButton_Test->setEnabled(true);

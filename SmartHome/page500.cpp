@@ -85,7 +85,7 @@ void page500::changeWidgets()
 
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/Antifurto.png", NULL, "page500: BA");
+    ui->headerPanel->changeWidgets(NULL, BA_PIXMAP, NULL, "page500: BA");
 
     if (mectScreenWidth >= 1280) {
         pointSize_b = 22;

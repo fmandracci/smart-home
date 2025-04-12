@@ -31,6 +31,15 @@
 #define USE_TRANSLATEFONTSIZE
 #define HOME_INI_FILE "/local/root/home.ini"
 
+#define XX_PIXMAP ":/systemicons/Equipment.png"
+#define TM_PIXMAP ":/icons/icons/Chronometer.png"
+#define EP_PIXMAP ":/icons/icons/Wattmeter.png"
+#define RL_PIXMAP ":/icons/icons/Flash.png"
+#define TH_PIXMAP ":/icons/icons/HeatCool.png"
+#define LM_PIXMAP ":/icons/icons/LampIcon.png"
+#define BA_PIXMAP ":/icons/icons/Antifurto.png"
+
+
 // vedi plc/Resource1.cst
 
 #define ControlType_None   0

@@ -57,7 +57,7 @@ void page100::updateData()
 
 void page100::changeWidgets()
 {
-    ui->headerPanel->changeWidgets("trend_Tall.csv", ":/icons/icons/HeatCool.png", NULL, "page100: Tn");
+    ui->headerPanel->changeWidgets("trend_Tall.csv", TH_PIXMAP, NULL, "page100: Tn");
 
     changeTemperature(ui->label_1, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, COLOR_01);
     changeTemperature(ui->label_2, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, COLOR_02);

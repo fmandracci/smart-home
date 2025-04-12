@@ -65,7 +65,7 @@ void page200::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    ui->headerPanel->changeWidgets(NULL, ":/icons/icons/LampIcon.png", NULL, "page200: Tn lamps");
+    ui->headerPanel->changeWidgets(NULL, LM_PIXMAP, NULL, "page200: Tn lamps");
 
     changeLamps(1, COLOR_01, home_ini.value("T1/name").toString(),
                 ui->label_Tn_1, PLC_T1_enabled_lamps,

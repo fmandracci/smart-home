@@ -61,7 +61,7 @@ void page011::changeWidgets()
         pointSize_ct = 10;
         pointSize_bt = 12;
     }
-    ui->headerPanel->changeWidgets("trend1.csv", ":/systemicons/Equipment.png", NULL, "page011 settings");
+    ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
 
     QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
     QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));

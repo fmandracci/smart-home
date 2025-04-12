@@ -41,7 +41,7 @@ page044::page044(QWidget *parent) :
 
 void page044::reload()
 {
-    ui->headerPanel->changeWidgets(NULL, NULL, "BACK", "page044 Tn ARQ01");
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page044 Tn ARQ01");
     variableList.clear();
     variableList << "ARQ_Parity" << "ARQ_Setup";
 }

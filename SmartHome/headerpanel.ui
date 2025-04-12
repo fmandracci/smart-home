@@ -276,10 +276,14 @@ color: rgb(255, 85, 0);</string>
         </color>
        </property>
        <property name="text">
-        <string>↶</string>
+        <string/>
        </property>
        <property name="pressText">
-        <string>↶</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Go_back.png</normaloff>:/systemicons/Go_back.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
