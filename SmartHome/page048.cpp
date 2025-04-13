@@ -38,10 +38,12 @@ page048::page048(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page048::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page048 TPAC1007");
 }
 
 void page048::updateData()
@@ -50,7 +52,7 @@ void page048::updateData()
         return;
     }
     page::updateData();
-    
+    ui->headerPanel->updateWidgets();
 }
 
 void page048::changeEvent(QEvent * event)
@@ -64,11 +66,4 @@ void page048::changeEvent(QEvent * event)
 page048::~page048()
 {
     delete ui;
-}
-
-
-void page048::on_atcmButton_back_clicked()
-{
-    variableList.clear();
-    qDebug() << "variableList = " << variableList;
 }

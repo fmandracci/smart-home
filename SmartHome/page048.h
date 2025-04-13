@@ -42,12 +42,9 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    
-    void on_atcmButton_back_clicked();
 
 private:
     Ui::page048 *ui;
 };
 
 #endif // PAGE048_H
-

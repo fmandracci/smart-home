@@ -43,30 +43,30 @@ public:
 private slots:
     void changeEvent(QEvent * event);
 
-    void on_pushButton_11_set_home_clicked(){ beep(100); }
-    void on_pushButton_12_set_tp_clicked()  { beep(100); }
-    void on_pushButton_13_7M_clicked()      { goto_page("page043" ); }
-    void on_pushButton_14_7E_clicked()      { goto_page("page043e"); }
+    void on_pushButton_set_home_clicked()  { beep(100); }
+    void on_pushButton_set_tp_clicked()    { beep(100); }
+    void on_pushButton_TPX_clicked()       { goto_page("page041" ); }
+    void on_pushButton_TPAC1007_clicked()  { goto_page("page048" ); }
 
-    void on_pushButton_21_Config_clicked()  { goto_page("page005" ); }
-    void on_pushButton_22_Menu_clicked()    { goto_page("menu"    ); }
-    void on_pushButton_23_ARQ01_clicked()   { goto_page("page044" ); }
-    void on_pushButton_24_MPNC_clicked()    { goto_page("page047" ); }
+    void on_pushButton_Config_clicked()    { goto_page("page005" ); }
+    void on_pushButton_Menu_clicked()      { goto_page("menu"    ); }
+    void on_pushButton_EP_7M_clicked()     { goto_page("page043" ); }
+    void on_pushButton_EP_7E_clicked()     { goto_page("page043e"); }
 
-    void on_pushButton_31_DST_clicked()     { goto_page("time_set"); }
-    void on_pushButton_32_SS_clicked()      { goto_page("display_settings"); }
-    void on_pushButton_33_BA_clicked()      { goto_page("page046" ); }
-    void on_pushButton_34_MPNE_AB_clicked() { goto_page("page045" ); }
+    void on_pushButton_DateTime_clicked()  { goto_page("time_set"); }
+    void on_pushButton_Display_clicked()   { goto_page("display_settings"); }
+    void on_pushButton_Tn_ARQ01_clicked()  { goto_page("page044" ); }
+    void on_pushButton_XX_MPNC_clicked()   { goto_page("page047" ); }
 
-    void on_pushButton_41_DateTime_clicked(){ goto_page("time_set"); }
-    void on_pushButton_42_Display_clicked() { goto_page("display_settings"); }
-    void on_pushButton_43_Fonts_clicked()   { goto_page("page042" ); }
-    void on_pushButton_44_MPNE_CD_clicked() { goto_page("page049" ); }
+    void on_pushButton_NetConf_clicked()   { goto_page("net_conf"); }
+    void on_pushButton_Info_clicked()      { goto_page("info"    ); }
+    void on_pushButton_XX_MPNE_C_clicked() { goto_page("page049" ); }
+    void on_pushButton_XX_MPNE_D_clicked() { goto_page("page049" ); }
 
-    void on_pushButton_51_NetConf_clicked() { goto_page("net_conf"); }
-    void on_pushButton_52_Info_clicked()    { goto_page("info"    ); }
-    void on_pushButton_53_TPX_clicked()     { goto_page("page041" ); }
-    void on_pushButton_54_TPAC1007_clicked(){ goto_page("page048" ); }
+    void on_pushButton_Fonts_clicked()     { goto_page("page042" ); }
+    void on_pushButton_BA_test_clicked()   { goto_page("page046" ); }
+    void on_pushButton_BA_MPNE_A_clicked() { goto_page("page045" ); }
+    void on_pushButton_BA_MPNE_B_clicked() { goto_page("page045" ); }
 
 private:
     Ui::page011 *ui;

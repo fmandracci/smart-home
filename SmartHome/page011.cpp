@@ -59,37 +59,38 @@ void page011::changeWidgets()
         pointSize_bt = 20;
     } else {
         pointSize_ct = 10;
-        pointSize_bt = 12;
+        pointSize_bt = 10;
     }
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
 
     QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
-    QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
+    QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255,  85,   0);" + FONT_SS_B(pointSize_bt));
+    QString sx("background-color: rgb(0, 0, 0); color: rgb(127, 127, 127); border: 1px solid rgb(127, 127, 127);" + FONT_SS_B(pointSize_bt));
 
-    ui->pushButton_11_set_home->setStyleSheet(sn);
-    ui->pushButton_12_set_tp->setStyleSheet(sn);
-    ui->pushButton_13_7M->setStyleSheet(sn);
-    ui->pushButton_14_7E->setStyleSheet(sn);
+    ui->pushButton_set_home->setStyleSheet(sn);
+    ui->pushButton_set_tp->setStyleSheet(sn);
+    ui->pushButton_TPX->setStyleSheet(sx);
+    ui->pushButton_TPAC1007->setStyleSheet(sx);
 
-    ui->pushButton_21_Config->setStyleSheet(sn);
-    ui->pushButton_22_Menu->setStyleSheet(sn);
-    ui->pushButton_23_ARQ01->setStyleSheet(sn);
-    ui->pushButton_24_MPNC->setStyleSheet(sn);
+    ui->pushButton_Config->setStyleSheet(sn);
+    ui->pushButton_Menu->setStyleSheet(sn);
+    ui->pushButton_EP_7M->setStyleSheet(sx);
+    ui->pushButton_EP_7E->setStyleSheet(sx);
 
-    ui->pushButton_31_DST->setStyleSheet(sb);
-    ui->pushButton_32_SS->setStyleSheet(sb);
-    ui->pushButton_33_BA->setStyleSheet(sn);
-    ui->pushButton_34_MPNE_AB->setStyleSheet(sn);
+    ui->pushButton_DateTime->setStyleSheet(sb);
+    ui->pushButton_Display->setStyleSheet(sb);
+    ui->pushButton_Tn_ARQ01->setStyleSheet(sx);
+    ui->pushButton_XX_MPNC->setStyleSheet(sx);
 
-    ui->pushButton_41_DateTime->setStyleSheet(sn);
-    ui->pushButton_42_Display->setStyleSheet(sn);
-    ui->pushButton_43_Fonts->setStyleSheet(sn);
-    ui->pushButton_44_MPNE_CD->setStyleSheet(sn);
+    ui->pushButton_NetConf->setStyleSheet(sn);
+    ui->pushButton_Info->setStyleSheet(sn);
+    ui->pushButton_XX_MPNE_C->setStyleSheet(sx);
+    ui->pushButton_XX_MPNE_D->setStyleSheet(sx);
 
-    ui->pushButton_51_NetConf->setStyleSheet(sn);
-    ui->pushButton_52_Info->setStyleSheet(sn);
-    ui->pushButton_53_TPX->setStyleSheet(sn);
-    ui->pushButton_54_TPAC1007->setStyleSheet(sn);
+    ui->pushButton_Fonts->setStyleSheet(sx);
+    ui->pushButton_BA_test->setStyleSheet(sx);
+    ui->pushButton_BA_MPNE_A->setStyleSheet(sx);
+    ui->pushButton_BA_MPNE_B->setStyleSheet(sx);
 
     QString cn("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0);" + FONT_SS_N(pointSize_ct));
     ui->atcmLabel_cpu_temp->setStyleSheet(cn);

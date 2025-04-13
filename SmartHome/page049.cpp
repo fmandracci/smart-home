@@ -36,10 +36,12 @@ page049::page049(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page049::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page049 MPNE CD");
 }
 
 void page049::updateData()
@@ -48,7 +50,7 @@ void page049::updateData()
         return;
     }
     page::updateData();
-
+    ui->headerPanel->updateWidgets();
 }
 
 void page049::changeEvent(QEvent * event)
@@ -63,4 +65,3 @@ page049::~page049()
 {
     delete ui;
 }
-

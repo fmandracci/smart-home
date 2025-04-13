@@ -41,66 +41,92 @@ page010::page010(QWidget *parent) :
 #endif
 }
 
+void page010::reload()
+{
+    changeWidgets();
+    updateWidgets();
+}
+
+void page010::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateWidgets();
+}
+
 void page010::changeWidgets()
 {
+    int pointSize_time  = 32; // 28
+    int pointSize_title =  6; //  6
+
+    if (mectScreenWidth >= 1280) {
+        pointSize_time = 42;
+        pointSize_title = 6;
+    } else if (mectScreenWidth >= 800) {
+        pointSize_time = 32;
+        pointSize_title = 6;
+    } else {
+        pointSize_time = 28;
+        pointSize_title = 6;
+    }
+
     ui->header_leds->changeHeader();
-    changeHeader(ui->pushButton_time, NULL,
-                 NULL, NULL, NULL,
-                 NULL, NULL, NULL,
-                 NULL, NULL, NULL,
-                 NULL, NULL, NULL);
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_time));
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(pointSize_title));
 
     if (PLC_ConfigPassword) {
-        ui->atcmButton_configurazione->setPasswordVar("PLC_ConfigPassword");
+        ui->atcmButton_settings->setPasswordVar("PLC_ConfigPassword");
     } else {
-        ui->atcmButton_configurazione->setPasswordVar("");
+        ui->atcmButton_settings->setPasswordVar("");
     }
     if (PLC_BA_password) {
-        ui->atcmButton_antifurto->setPasswordVar("PLC_BA_password");
+        ui->atcmButton_BA->setPasswordVar("PLC_BA_password");
     } else {
-        ui->atcmButton_antifurto->setPasswordVar("");
+        ui->atcmButton_BA->setPasswordVar("");
     }
 
     if (PLC_EP_exists) {
-        ui->atcmButton_quadro->setEnabled(true);
-        ui->atcmButton_quadro->setBorderColor(QColor(255,  0,  0));
+        ui->atcmButton_EP_wattmeters->setEnabled(true);
+        ui->atcmButton_EP_wattmeters->setBorderColor(QColor(255,  0,  0));
     } else {
-        ui->atcmButton_quadro->setEnabled(false);
-        ui->atcmButton_quadro->setBorderColor(QColor( 64, 64, 64));
+        ui->atcmButton_EP_wattmeters->setEnabled(false);
+        ui->atcmButton_EP_wattmeters->setBorderColor(QColor( 64, 64, 64));
     }
     if (PLC_EP_exists and abs(PLC_EP_enabled_relays) >= 1) {
-        ui->atcmButton_relays->setEnabled(true);
-        ui->atcmButton_relays->setBorderColor(QColor(255,255,  0));
+        ui->atcmButton_EP_relays->setEnabled(true);
+        ui->atcmButton_EP_relays->setBorderColor(QColor(255,255,  0));
     } else {
-        ui->atcmButton_relays->setEnabled(false);
-        ui->atcmButton_relays->setBorderColor(QColor( 64, 64, 64));
+        ui->atcmButton_EP_relays->setEnabled(false);
+        ui->atcmButton_EP_relays->setBorderColor(QColor( 64, 64, 64));
     }
     if (PLC_Tn_count >= 1) {
-        ui->atcmButton_termostati->setEnabled(true);
-        ui->atcmButton_termostati->setBorderColor(QColor(255,128,  0));
+        ui->atcmButton_Tn_thermo->setEnabled(true);
+        ui->atcmButton_Tn_thermo->setBorderColor(QColor(255,128,  0));
         if (PLC_Tn_count >= 2) {
-            ui->atcmButton_termostati->setPageName("page100");
+            ui->atcmButton_Tn_thermo->setPageName("page100");
         } else {
             currentThermostat = 1;
-            ui->atcmButton_termostati->setPageName("page101a");
+            ui->atcmButton_Tn_thermo->setPageName("page101a");
         }
     } else {
-        ui->atcmButton_termostati->setEnabled(false);
-        ui->atcmButton_termostati->setBorderColor(QColor( 64, 64, 64));
+        ui->atcmButton_Tn_thermo->setEnabled(false);
+        ui->atcmButton_Tn_thermo->setBorderColor(QColor( 64, 64, 64));
     }
     if (PLC_Tn_count >= 1 and (PLC_T1_enabled_lamps + PLC_T2_enabled_lamps + PLC_T3_enabled_lamps + PLC_T4_enabled_lamps + PLC_T5_enabled_lamps + PLC_T6_enabled_lamps) >= 1) {
-        ui->atcmButton_lamps->setEnabled(true);
-        ui->atcmButton_lamps->setBorderColor(QColor(  0,255,  0));
+        ui->atcmButton_Tn_lamps->setEnabled(true);
+        ui->atcmButton_Tn_lamps->setBorderColor(QColor(  0,255,  0));
     } else {
-        ui->atcmButton_lamps->setEnabled(false);
-        ui->atcmButton_lamps->setBorderColor(QColor( 64, 64, 64));
+        ui->atcmButton_Tn_lamps->setEnabled(false);
+        ui->atcmButton_Tn_lamps->setBorderColor(QColor( 64, 64, 64));
     }
     if (PLC_BA_exists) {
-        ui->atcmButton_antifurto->setEnabled(true);
-        ui->atcmButton_antifurto->setBorderColor(QColor(128,  0,255));
+        ui->atcmButton_BA->setEnabled(true);
+        ui->atcmButton_BA->setBorderColor(QColor(128,  0,255));
     } else {
-        ui->atcmButton_antifurto->setEnabled(false);
-        ui->atcmButton_antifurto->setBorderColor(QColor( 64, 64, 64));
+        ui->atcmButton_BA->setEnabled(false);
+        ui->atcmButton_BA->setBorderColor(QColor( 64, 64, 64));
     }
 }
 
@@ -116,21 +142,6 @@ void page010::updateWidgets()
         .arg(PLC_control_type)
         .toUpper()
         );
-}
-
-void page010::reload()
-{
-    changeWidgets();
-    updateWidgets();
-}
-
-void page010::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-    updateWidgets();
 }
 
 void page010::on_pushButton_home_clicked()

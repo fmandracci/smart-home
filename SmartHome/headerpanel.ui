@@ -22,37 +22,37 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(0, 0, 0);</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="spacing">
-    <number>0</number>
-   </property>
+  <layout class="QGridLayout" name="gridLayout">
    <property name="margin">
     <number>0</number>
    </property>
-   <item>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" rowspan="2">
+    <widget class="HeaderLeds" name="header_leds" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>48</width>
+       <height>72</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 85, 0);</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <property name="spacing">
       <number>0</number>
      </property>
-     <item>
-      <widget class="HeaderLeds" name="header_leds" native="true">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>48</width>
-         <height>72</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 85, 0);</string>
-       </property>
-      </widget>
-     </item>
      <item>
       <widget class="QPushButton" name="pushButton_trend">
        <property name="sizePolicy">
@@ -107,7 +107,7 @@
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>6</width>
+         <width>13</width>
          <height>20</height>
         </size>
        </property>
@@ -205,7 +205,7 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>6</width>
+         <width>13</width>
          <height>20</height>
         </size>
        </property>
@@ -376,7 +376,7 @@ color: rgb(255, 85, 0);</string>
      </item>
     </layout>
    </item>
-   <item>
+   <item row="1" column="1">
     <widget class="QLabel" name="label_title">
      <property name="enabled">
       <bool>false</bool>
@@ -412,7 +412,7 @@ color: rgb(255, 85, 0);</string>
       <string>TITLE</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignHCenter|Qt::AlignTop</set>
      </property>
      <property name="margin">
       <number>2</number>

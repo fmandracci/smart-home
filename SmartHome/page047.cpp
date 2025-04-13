@@ -38,10 +38,12 @@ page047::page047(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page047::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page047 MPNC EP+Tn+BA");
 }
 
 void page047::updateData()
@@ -50,7 +52,7 @@ void page047::updateData()
         return;
     }
     page::updateData();
-    
+    ui->headerPanel->updateWidgets();
 }
 
 void page047::changeEvent(QEvent * event)
@@ -64,11 +66,4 @@ void page047::changeEvent(QEvent * event)
 page047::~page047()
 {
     delete ui;
-}
-
-
-void page047::on_atcmButton_back_clicked()
-{
-    variableList.clear();
-    qDebug() << "variableList = " << variableList;
 }

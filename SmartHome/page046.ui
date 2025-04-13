@@ -426,7 +426,7 @@ yellow2</string>
        </property>
        <property name="text">
         <string>blackout
-detect.</string>
+dig.in.</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
