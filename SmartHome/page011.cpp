@@ -56,7 +56,7 @@ void page011::changeWidgets()
         pointSize_bt = 24;
     } else if (mectScreenWidth >= 800) {
         pointSize_ct = 14;
-        pointSize_bt = 20;
+        pointSize_bt = 18;
     } else {
         pointSize_ct = 10;
         pointSize_bt = 10;
