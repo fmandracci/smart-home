@@ -43,15 +43,11 @@ HEADERS += \
     page101a.h \
     page101b.h \
     page101c.h \
-    page102.h \
-    page103.h \
-    page104.h \
     page200.h \
     page300.h \
     page400.h \
     page401.h \
     page402.h \
-    page4b0.h \
     page4e0.h \
     page500.h \
 
@@ -79,15 +75,11 @@ FORMS += \
     page101a.ui \
     page101b.ui \
     page101c.ui \
-    page102.ui \
-    page103.ui \
-    page104.ui \
     page200.ui \
     page300.ui \
     page400.ui \
     page401.ui \
     page402.ui \
-    page4b0.ui \
     page4e0.ui \
     page500.ui \
 
@@ -116,15 +108,11 @@ SOURCES += \
     page101a.cpp \
     page101b.cpp \
     page101c.cpp \
-    page102.cpp \
-    page103.cpp \
-    page104.cpp \
     page200.cpp \
     page300.cpp \
     page400.cpp \
     page401.cpp \
     page402.cpp \
-    page4b0.cpp \
     page4e0.cpp \
     page500.cpp \
 

@@ -496,6 +496,12 @@ border: 1px solid rgb(255, 255, 255);
          <pointsize>24</pointsize>
         </font>
        </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
        <property name="toolTip">
         <string/>
        </property>
@@ -546,10 +552,14 @@ border: 1px solid rgb(255, 255, 255);
         </color>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string/>
        </property>
        <property name="pressText">
-        <string>&lt;</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Previous.png</normaloff>:/systemicons/Previous.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -587,6 +597,12 @@ border: 1px solid rgb(255, 255, 255);
          <family>DejaVu Sans</family>
          <pointsize>24</pointsize>
         </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
        </property>
        <property name="toolTip">
         <string/>
@@ -638,10 +654,14 @@ border: 1px solid rgb(255, 255, 255);
         </color>
        </property>
        <property name="text">
-        <string>&gt;</string>
+        <string/>
        </property>
        <property name="pressText">
-        <string>&gt;</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Next.png</normaloff>:/systemicons/Next.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -893,7 +913,7 @@ border: 1px solid rgb(255, 255, 255);
       <string>ATCMbutton widget</string>
      </property>
      <property name="pageName">
-      <string notr="true">page104</string>
+      <string notr="true"/>
      </property>
      <property name="statusvar">
       <string notr="true"/>
@@ -952,6 +972,7 @@ border: 1px solid rgb(255, 255, 255);
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

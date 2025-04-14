@@ -44,14 +44,12 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_pushButton_time_clicked() { goto_page("page020"); }
-    void on_pushButton_plot_clicked();
-    void on_pushButton_trend_clicked();
+    void on_pushButton_plot_clicked() { goto_page("page402"); }
 
 private:
     Ui::page401 *ui;
     void changeWidgets(int n,
-                       const QString t, const QString name, const QColor color,
+                       const QString t, const char *trend, const QString name, const QColor color,
                        const QString W, const QString var, const QString VA,
                        const QString kWh);
 };

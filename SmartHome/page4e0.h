@@ -45,7 +45,7 @@ private slots:
     void changeEvent(QEvent * event);
     void on_pushButton_time_clicked() { goto_page("page020"); }
     void on_pushButton_prev_clicked() { currentWattmeter = 1; goto_page("page400"); }
-    void on_pushButton_next_clicked() { currentWattmeter = 1; goto_page("page4b0"); }
+    void on_pushButton_next_clicked() { }
     void on_pushButton_M_e_clicked() { gotoWattmeterPage( 1); }
     void on_pushButton_M_clicked()   { gotoWattmeterPage( 1); }
     void on_pushButton_F_e_clicked() { gotoWattmeterPage( 2); }
@@ -60,16 +60,16 @@ private slots:
     void on_pushButton_8_clicked()   { gotoWattmeterPage(10); }
     void on_pushButton_9_clicked()   { gotoWattmeterPage(11); }
     void on_pushButton_10_clicked()  { gotoWattmeterPage(12); }
-    void on_pushButton_trend_clicked();
 
 private:
     Ui::page4e0 *ui;
+    void changeWidgets();
+    void updateWidgets();
     int pointSize();
     void gotoWattmeterPage(int n) {
         currentWattmeter = n;
         goto_page("page401");
     }
-    void updateWidgets();
     void updateWattmeter(QPushButton *pushButton_kWh, const QString label, int n, int value_kWh, const QColor color);
 };
 

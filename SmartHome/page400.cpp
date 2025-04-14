@@ -71,7 +71,7 @@ void page400::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page400: EP");
+    ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page400: EP W");
 
     changeWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz);
     changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()),  1, COLOR_01, ui->pushButton_M_W,

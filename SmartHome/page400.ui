@@ -968,7 +968,11 @@ color: rgb(0, 0, 0);</string>
 color: rgb(255, 0, 0);</string>
          </property>
          <property name="text">
-          <string>&gt;</string>
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="systemicons.qrc">
+           <normaloff>:/systemicons/Next.png</normaloff>:/systemicons/Next.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -995,7 +999,9 @@ color: rgb(255, 0, 0);</string>
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="systemicons.qrc"/>
+ </resources>
  <connections/>
  <slots>
   <slot>goto_page(const char*,bool)</slot>

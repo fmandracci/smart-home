@@ -46,8 +46,6 @@ private slots:
     void changeEvent(QEvent * event);
     void on_pushButton_time_clicked() { goto_page("page020"); }
 
-    void on_pushButton_plot_clicked();
-
     void on_pushButton_sunrise_clicked();
     void on_pushButton_sunset_clicked();
 

@@ -205,11 +205,6 @@ void page101a::updateWidgets(int daily_heating_s, int monthly_heating_s, int Tn_
     ui->label_monthly->setText(QString("month: %1h%2'").arg(monthly_heating_s / 3600).arg((monthly_heating_s % 3600) / 60));
 }
 
-void page101a::on_pushButton_plot_clicked()
-{
-    goto_page("page102", true);
-}
-
 void page101a::on_pushButton_trend_clicked()
 {
     switch (currentThermostat) {

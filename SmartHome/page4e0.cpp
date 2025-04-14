@@ -37,6 +37,27 @@ page4e0::page4e0(QWidget *parent) :
 #ifdef USE_TRANSLATEFONTSIZE
     translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+}
+
+void page4e0::reload()
+{
+    changeWidgets();
+    updateWidgets();
+}
+
+void page4e0::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateWidgets();
+}
+
+void page4e0::changeWidgets()
+{
+    ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page4e0: EP kWh");
 }
 
 int page4e0::pointSize()
@@ -49,16 +70,6 @@ int page4e0::pointSize()
         retval = 9;
     }
     return retval;
-}
-
-void page4e0::reload()
-{
-    changeHeader(ui->pushButton_time, ui->atcmButton_home,
-                 ui->label_EP, ui->label_BA, ui->label_green,
-                 ui->label_T5, ui->label_T6, ui->label_red,
-                 ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                 ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    updateWidgets();
 }
 
 void page4e0::updateWattmeter(QPushButton *pushButton_kWh, const QString label, int n, int value_kWh, const QColor color)
@@ -84,6 +95,8 @@ void page4e0::updateWattmeter(QPushButton *pushButton_kWh, const QString label, 
 
 void page4e0::updateWidgets()
 {
+    ui->headerPanel->updateWidgets();
+
     updateWattmeter(ui->pushButton_M  , LABEL__M,  1, PLC_EP_wattmeter_M_kWh,   COLOR_01);
     updateWattmeter(ui->pushButton_M_e, LABEL__M,  1, PLC_EP_wattmeter_M_e_kWh, COLOR_01);
 
@@ -103,27 +116,6 @@ void page4e0::updateWidgets()
     updateWattmeter(ui->pushButton_8  , LABEL_08, 10, PLC_EP_wattmeter08_kWh,   COLOR_10);
     updateWattmeter(ui->pushButton_9  , LABEL_09, 11, PLC_EP_wattmeter09_kWh,   COLOR_11);
     updateWattmeter(ui->pushButton_10 , LABEL_10, 12, PLC_EP_wattmeter10_kWh,   COLOR_12);
-}
-
-void page4e0::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-
-    updateWidgets();
-}
-
-void page4e0::on_pushButton_trend_clicked()
-{
-    goto_trend_page("trend_Wall");
 }
 
 void page4e0::changeEvent(QEvent * event)

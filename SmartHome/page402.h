@@ -42,12 +42,10 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_pushButton_time_clicked() { goto_page("page020"); }
-    void on_pushButton_trend_clicked();
 
 private:
     Ui::page402 *ui;
-    void changeWidgets(const QString t, const QString W, const QString M_W, const QColor color);
+    void changeWidgets(const char*trend, const QString t, const QString W, const QString M_W, const QColor color);
 };
 
 #endif // PAGE402_H

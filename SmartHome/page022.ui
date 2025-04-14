@@ -115,8 +115,8 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="iconSize">
         <size>
-         <width>64</width>
-         <height>60</height>
+         <width>40</width>
+         <height>40</height>
         </size>
        </property>
        <property name="checkable">
@@ -189,10 +189,14 @@ background-color: rgb(0, 0, 0);
         </color>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string/>
        </property>
        <property name="pressText">
-        <string>&lt;</string>
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Previous.png</normaloff>:/systemicons/Previous.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -616,6 +620,7 @@ background-color: rgb(0, 0, 0);
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

@@ -553,11 +553,6 @@ void page101b::humidity_nt_valueChanged(int diff)
     endWrite();
 }
 
-void page101b::on_pushButton_plot_clicked()
-{
-    goto_page("page102", true);
-}
-
 void page101b::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)

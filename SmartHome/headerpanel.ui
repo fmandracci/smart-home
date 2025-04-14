@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>542</width>
+    <width>556</width>
     <height>90</height>
    </rect>
   </property>
@@ -283,7 +283,7 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="icon">
         <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Go_back.png</normaloff>:/systemicons/Go_back.png</iconset>
+         <normaloff>:/systemicons/Circle-up.png</normaloff>:/systemicons/Circle-up.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>

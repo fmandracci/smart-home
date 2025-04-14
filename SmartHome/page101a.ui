@@ -83,8 +83,11 @@ background-color: rgb(0, 0, 0);
      <property name="spacing">
       <number>0</number>
      </property>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_heating_timer">
+     <item row="2" column="3">
+      <widget class="ATCMlabel" name="atcmLabel_Tn_humidity_bis">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -93,33 +96,193 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="minimumSize">
         <size>
-         <width>50</width>
+         <width>100</width>
          <height>36</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>50</width>
-         <height>36</height>
+         <width>16777215</width>
+         <height>72</height>
         </size>
        </property>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>20</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+       <property name="text">
+        <string>xx.x</string>
+       </property>
+       <property name="toolTip">
+        <string>PLC_T1_humidity</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMlabel widget</string>
+       </property>
+       <property name="variable">
+        <string>PLC_T1_humidity</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="max">
+        <string notr="true">0</string>
+       </property>
+       <property name="min">
+        <string notr="true">0</string>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="bgSelectColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderSelectColor">
+        <color>
+         <red>255</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" rowspan="2">
+      <widget class="ATCMbutton" name="atcmButton_prev">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string notr="true">page101c</string>
+       </property>
+       <property name="remember">
+        <bool>false</bool>
+       </property>
+       <property name="statusvar">
+        <string notr="true"/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string notr="true"/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="bgPressColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontPressColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
        </property>
        <property name="text">
-        <string>hh:mm
-ss</string>
+        <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
+       <property name="pressText">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="systemicons.qrc">
+         <normaloff>:/systemicons/Previous.png</normaloff>:/systemicons/Previous.png</iconset>
+       </property>
+       <property name="borderWidth">
+        <number>0</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+       <property name="apparence">
+        <enum>QFrame::Plain</enum>
        </property>
       </widget>
      </item>
@@ -166,7 +329,114 @@ ss</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="3">
+     <item row="2" column="1">
+      <widget class="ATCMlabel" name="atcmLabel_Tn_temperature_bis">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>xx.x</string>
+       </property>
+       <property name="toolTip">
+        <string>PLC_T1_temperature_bis</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMlabel widget</string>
+       </property>
+       <property name="variable">
+        <string>PLC_T1_temperature_bis</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="suffix">
+        <string>℃</string>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="max">
+        <string notr="true">0</string>
+       </property>
+       <property name="min">
+        <string notr="true">0</string>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="bgSelectColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderSelectColor">
+        <color>
+         <red>255</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
       <widget class="ATCMlabel" name="atcmLabel_Tn_humidity_ext">
        <property name="enabled">
         <bool>false</bool>
@@ -274,115 +544,8 @@ ss</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="ATCMlabel" name="atcmLabel_Tn_temperature_bis">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>72</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>xx.x</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_T1_temperature_bis</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_T1_temperature_bis</string>
-       </property>
-       <property name="prefix">
-        <string/>
-       </property>
-       <property name="suffix">
-        <string>℃</string>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="bgSelectColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderSelectColor">
-        <color>
-         <red>255</red>
-         <green>170</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QPushButton" name="pushButton_plot">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_Tn">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -404,70 +567,23 @@ ss</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/View.png</normaloff>:/systemicons/View.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_heating_status">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>24</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>AUTO</string>
+        <string notr="true">①</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
+     <item row="3" column="1">
       <widget class="ATCMlabel" name="atcmLabel_Tn_temperature_ext">
        <property name="enabled">
         <bool>false</bool>
@@ -572,318 +688,6 @@ ss</string>
        </property>
        <property name="borderRadius">
         <number>25</number>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0" rowspan="4">
-      <widget class="ATCMbutton" name="atcmButton_prev">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>24</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMbutton widget</string>
-       </property>
-       <property name="pageName">
-        <string notr="true">page101c</string>
-       </property>
-       <property name="remember">
-        <bool>false</bool>
-       </property>
-       <property name="statusvar">
-        <string notr="true"/>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string notr="true"/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="bgPressColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontPressColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="text">
-        <string>&lt;</string>
-       </property>
-       <property name="pressText">
-        <string>&lt;</string>
-       </property>
-       <property name="borderWidth">
-        <number>0</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-       <property name="apparence">
-        <enum>QFrame::Plain</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="ATCMlabel" name="atcmLabel_Tn_humidity_bis">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>72</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>xx.x</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_T1_humidity</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_T1_humidity</string>
-       </property>
-       <property name="prefix">
-        <string/>
-       </property>
-       <property name="suffix">
-        <string>%</string>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="bgSelectColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderSelectColor">
-        <color>
-         <red>255</red>
-         <green>170</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4" rowspan="2">
-      <widget class="ATCMbutton" name="atcmButton_next">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>24</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMbutton widget</string>
-       </property>
-       <property name="pageName">
-        <string notr="true"/>
-       </property>
-       <property name="statusvar">
-        <string notr="true"/>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string notr="true"/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="bgPressColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontPressColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pressText">
-        <string/>
-       </property>
-       <property name="borderWidth">
-        <number>0</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_Tn">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>80</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>24</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string notr="true">①</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -994,6 +798,85 @@ ss</string>
        </property>
       </widget>
      </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_heating_status">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>AUTO</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_heating_timer">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>hh:mm
+ss</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="1" rowspan="2">
       <widget class="ATCMlabel" name="atcmLabel_Tn_temperature">
        <property name="enabled">
@@ -1078,6 +961,86 @@ ss</string>
        </property>
        <property name="borderWidth">
         <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4" rowspan="2">
+      <widget class="ATCMbutton" name="atcmButton_next">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMbutton widget</string>
+       </property>
+       <property name="pageName">
+        <string notr="true"/>
+       </property>
+       <property name="statusvar">
+        <string notr="true"/>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string notr="true"/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="bgPressColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontPressColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pressText">
+        <string/>
+       </property>
+       <property name="borderWidth">
+        <number>0</number>
        </property>
        <property name="borderRadius">
         <number>0</number>
@@ -1297,7 +1260,7 @@ ss</string>
         <string>ATCMbutton widget</string>
        </property>
        <property name="pageName">
-        <string notr="true">page104</string>
+        <string notr="true"/>
        </property>
        <property name="statusvar">
         <string notr="true"/>
