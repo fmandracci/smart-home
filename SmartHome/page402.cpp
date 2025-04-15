@@ -35,14 +35,52 @@ page402::page402(QWidget *parent) :
     ui(new Ui::page402)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
-void page402::changeWidgets(const QString t, const QString W, const QString M_W, const QColor color)
+void page402::reload()
+{
+    ui->atcmGraph->RunStop();
+    resetPLC_timeOffset();
+    ui->atcmGraph->RunStop();
+
+    ui->atcmLabel_M_W->setVariable("PLC_EP_wattmeter_M_W");
+    ui->atcmLabel_M_W->setPrefix(LABEL__M + " ");
+
+    switch (currentWattmeter) {
+    case  1: changeWidgets("trend_W-M.csv", LABEL__M, "PLC_EP_wattmeter_M_W", ""                    , COLOR_01); break;
+    case  2: changeWidgets("trend_W-F.csv", LABEL__F, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_M_W", COLOR_02); break;
+    case  3: changeWidgets("trend_W01.csv", LABEL_01, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter_M_W", COLOR_03); break;
+    case  4: changeWidgets("trend_W02.csv", LABEL_02, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter_M_W", COLOR_04); break;
+    case  5: changeWidgets("trend_W03.csv", LABEL_03, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter_M_W", COLOR_05); break;
+    case  6: changeWidgets("trend_W04.csv", LABEL_04, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter_M_W", COLOR_06); break;
+    case  7: changeWidgets("trend_W05.csv", LABEL_05, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter_M_W", COLOR_07); break;
+    case  8: changeWidgets("trend_W06.csv", LABEL_06, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter_M_W", COLOR_08); break;
+    case  9: changeWidgets("trend_W07.csv", LABEL_07, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter_M_W", COLOR_09); break;
+    case 10: changeWidgets("trend_W08.csv", LABEL_08, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter_M_W", COLOR_10); break;
+    case 11: changeWidgets("trend_W09.csv", LABEL_09, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter_M_W", COLOR_11); break;
+    case 12: changeWidgets("trend_W10.csv", LABEL_10, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter_M_W", COLOR_12); break;
+    default: changeWidgets(NULL           ,     "??", "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_W", COLOR_01);
+    }
+}
+
+void page402::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    ui->headerPanel->updateWidgets();
+}
+
+void page402::changeWidgets(const char *trend, const QString t, const QString W, const QString M_W, const QColor color)
 {
     QString colorStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
+
+    ui->headerPanel->changeWidgets(trend, EP_PIXMAP, "page401", QString("page402: EP W " + t).toLatin1().data());
 
     // left
     ui->label_wattmeterN->setText(t);
@@ -63,46 +101,6 @@ void page402::changeWidgets(const QString t, const QString W, const QString M_W,
     ui->atcmLabel_M_W->setVariable(M_W);
 }
 
-void page402::reload()
-{
-    ui->atcmGraph->RunStop();
-    resetPLC_timeOffset();
-    ui->atcmGraph->RunStop();
-
-    ui->atcmLabel_M_W->setVariable("PLC_EP_wattmeter_M_W");
-    ui->atcmLabel_M_W->setPrefix(LABEL__M + " ");
-
-    switch (currentWattmeter) {
-    case  1: changeWidgets(LABEL__M, "PLC_EP_wattmeter_M_W", ""                    , COLOR_01); break;
-    case  2: changeWidgets(LABEL__F, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_M_W", COLOR_02); break;
-    case  3: changeWidgets(LABEL_01, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter_M_W", COLOR_03); break;
-    case  4: changeWidgets(LABEL_02, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter_M_W", COLOR_04); break;
-    case  5: changeWidgets(LABEL_03, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter_M_W", COLOR_05); break;
-    case  6: changeWidgets(LABEL_04, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter_M_W", COLOR_06); break;
-    case  7: changeWidgets(LABEL_05, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter_M_W", COLOR_07); break;
-    case  8: changeWidgets(LABEL_06, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter_M_W", COLOR_08); break;
-    case  9: changeWidgets(LABEL_07, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter_M_W", COLOR_09); break;
-    case 10: changeWidgets(LABEL_08, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter_M_W", COLOR_10); break;
-    case 11: changeWidgets(LABEL_09, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter_M_W", COLOR_11); break;
-    case 12: changeWidgets(LABEL_10, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter_M_W", COLOR_12); break;
-    default: changeWidgets(    "??", "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_W", COLOR_01);
-    }
-}
-
-void page402::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-}
-
 void page402::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
@@ -114,23 +112,4 @@ void page402::changeEvent(QEvent * event)
 page402::~page402()
 {
     delete ui;
-}
-
-void page402::on_pushButton_trend_clicked()
-{
-    switch (currentWattmeter) {
-    case  1: goto_trend_page("trend_W-M.csv"); break;
-    case  2: goto_trend_page("trend_W-F.csv"); break;
-    case  3: goto_trend_page("trend_W01.csv"); break;
-    case  4: goto_trend_page("trend_W02.csv"); break;
-    case  5: goto_trend_page("trend_W03.csv"); break;
-    case  6: goto_trend_page("trend_W04.csv"); break;
-    case  7: goto_trend_page("trend_W05.csv"); break;
-    case  8: goto_trend_page("trend_W06.csv"); break;
-    case  9: goto_trend_page("trend_W07.csv"); break;
-    case 10: goto_trend_page("trend_W08.csv"); break;
-    case 11: goto_trend_page("trend_W09.csv"); break;
-    case 12: goto_trend_page("trend_W10.csv"); break;
-    default: ;
-    }
 }

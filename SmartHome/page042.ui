@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>page042</class>
+<widget class="QWidget" name="page042">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>1280</width>
+<height>800</height>
+</rect>
+</property>
+<property name="minimumSize">
+<size>
+<width>1280</width>
+<height>800</height>
+</size>
+</property>
+<property name="maximumSize">
+<size>
+<width>16777215</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="font">
+<font>
+<kerning>true</kerning>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+</font>
+</property>
+<property name="windowTitle">
+<string notr="true">page042</string>
+</property>
+<property name="styleSheet">
+<string notr="true">QWidget#page042
+{
+background-color: SlateGray;
+color: rgb(255, 255, 0);
+}
+
+QPushButton {
+border: 1px solid black;
+border-radius: 15px;
+color: yellow;
+background-color: rgb(32, 178, 170);
+min-width: 42px;
+min-height: 42px;
+}
+
+QPushButton:pressed {
+background-color: rgb(255, 140, 255)
+}
+</string>
+</property>
+<widget class="ATCMbutton" name="atcmButtonHome">
+<property name="geometry">
+<rect>
+<x>2</x>
+<y>2</y>
+<width>44</width>
+<height>44</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>44</width>
+<height>44</height>
+</size>
+</property>
+<property name="maximumSize">
+<size>
+<width>44</width>
+<height>44</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>12</pointsize>
+</font>
+</property>
+<property name="iconSize">
+<size>
+<width>44</width>
+<height>44</height>
+</size>
+</property>
+<property name="toolTip">
+<string/>
+</property>
+<property name="whatsThis">
+<string>ATCMbutton widget</string>
+</property>
+<property name="pageName">
+<string notr="true">BACK</string>
+</property>
+<property name="statusvar">
+<string notr="true"/>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string notr="true"/>
+</property>
+<property name="bgColor">
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="fontColor">
+<color>
+<red>255</red>
+<green>255</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="text">
+<string notr="true"/>
+</property>
+<property name="pressText">
+<string notr="true"/>
+</property>
+<property name="icon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/Go_back.png</normaloff>:/systemicons/Go_back.png</iconset>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+<widget class="Line" name="line_1">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>9</y>
+<width>854</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="Line" name="line_2">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>110</y>
+<width>854</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="QLabel" name="label100px">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>10</y>
+<width>854</width>
+<height>100</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>67</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">AAA 100 pixel pt67</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="Line" name="line_3">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>160</y>
+<width>392</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="QLabel" name="label50px">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>110</y>
+<width>392</width>
+<height>50</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>33</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">BBB 50 pixel pt33 </string>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="Line" name="line_4">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>185</y>
+<width>192</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="QLabel" name="label25px">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>160</y>
+<width>192</width>
+<height>25</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>16</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">CCC 25 pixel pt16</string>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="Line" name="line_6">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>335</y>
+<width>354</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="Line" name="line_7">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>360</y>
+<width>172</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="Line" name="line_5">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>285</y>
+<width>782</width>
+<height>1</height>
+</rect>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="orientation">
+<enum>Qt::Horizontal</enum>
+</property>
+</widget>
+<widget class="QLabel" name="label100px_2">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>185</y>
+<width>782</width>
+<height>100</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>Ubuntu</family>
+<pointsize>67</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">AAA 100 pixel pt67</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="QLabel" name="label50px_2">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>285</y>
+<width>354</width>
+<height>50</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>Ubuntu</family>
+<pointsize>33</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">BBB 50 pixel pt33 </string>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="QLabel" name="label25px_2">
+<property name="geometry">
+<rect>
+<x>50</x>
+<y>335</y>
+<width>172</width>
+<height>25</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>Ubuntu</family>
+<pointsize>16</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">CCC 25 pixel pt16</string>
+</property>
+<property name="indent">
+<number>0</number>
+</property>
+</widget>
+<widget class="QLabel" name="label_font_corrector">
+<property name="geometry">
+<rect>
+<x>258</x>
+<y>170</y>
+<width>441</width>
+<height>20</height>
+</rect>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>16</pointsize>
+<italic>false</italic>
+</font>
+</property>
+<property name="styleSheet">
+<string notr="true">border: 1px solid rgb(0, 255, 255);</string>
+</property>
+<property name="text">
+<string>x.xxxxxxxx (xxx mm x xxx mm)</string>
+</property>
+</widget>
+</widget>
+<customwidgets>
+<customwidget>
+<class>ATCMbutton</class>
+<extends>QPushButton</extends>
+<header>atcmplugin.h</header>
+</customwidget>
+</customwidgets>
+<resources>
+<include location="systemicons.qrc"/>
+</resources>
+<connections>
+<connection>
+<sender>atcmButtonHome</sender>
+<signal>newPage(const char*,bool)</signal>
+<receiver>page042</receiver>
+<slot>goto_page(const char*,bool)</slot>
+<hints>
+<hint type="sourcelabel">
+<x>20</x>
+<y>20</y>
+</hint>
+<hint type="destinationlabel">
+<x>20</x>
+<y>20</y>
+</hint>
+</hints>
+</connection>
+</connections>
+<slots>
+<slot>goto_page(const char*,bool)</slot>
+</slots>
+</ui>

@@ -168,6 +168,62 @@ void loop(void)
 //    }
 }
 
+void changeHeader(QWidget *time_button, QWidget *home_button,
+                  QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
+                  QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
+                  QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,
+                  QLabel *label_T1, QLabel *label_T2, QLabel *label_yellow_2)
+{
+    int pointSize_t;
+    int pointSize_h;
+    int pixelSize_xy;
+
+    if (mectScreenWidth >= 1280) {
+        pointSize_t = 42;
+        pointSize_h = 32;
+        pixelSize_xy = 20;
+    } else if (mectScreenWidth >= 800) {
+        pointSize_t = 32;
+        pointSize_h = 28;
+        pixelSize_xy = 20;
+    } else {
+        pointSize_t = 28;
+        pointSize_h = 24;
+        pixelSize_xy = 15;
+    }
+
+    if (time_button)
+        time_button->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_t));
+    if (home_button)
+        home_button->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_h));
+
+    QSize labelSize(pixelSize_xy, pixelSize_xy);
+    if (label_EP)
+        label_EP->setMaximumSize(labelSize);
+    if (label_BA)
+        label_BA->setMaximumSize(labelSize);
+    if (label_green)
+        label_green->setMaximumSize(labelSize);
+    if (label_T5)
+        label_T5->setMaximumSize(labelSize);
+    if (label_T6)
+        label_T6->setMaximumSize(labelSize);
+    if (label_red)
+        label_red->setMaximumSize(labelSize);
+    if (label_T3)
+        label_T3->setMaximumSize(labelSize);
+    if (label_T4)
+        label_T4->setMaximumSize(labelSize);
+    if (label_yellow_1)
+        label_yellow_1->setMaximumSize(labelSize);
+    if (label_T1)
+        label_T1->setMaximumSize(labelSize);
+    if (label_T2)
+        label_T2->setMaximumSize(labelSize);
+    if (label_yellow_2)
+        label_yellow_2->setMaximumSize(labelSize);
+}
+
 void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
                      QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,

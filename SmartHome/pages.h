@@ -26,9 +26,12 @@
 
 #include "page005.h"
 #include "page010.h"
+#include "page011.h"
 #include "page020.h"
 #include "page021.h"
 #include "page022.h"
+#include "page041.h"
+#include "page042.h"
 #include "page043.h"
 #include "page043e.h"
 #include "page044.h"
@@ -41,13 +44,9 @@
 #include "page101a.h"
 #include "page101b.h"
 #include "page101c.h"
-#include "page102.h"
-#include "page103.h"
-#include "page104.h"
 #include "page200.h"
 #include "page300.h"
 #include "page400.h"
-#include "page4b0.h"
 #include "page4e0.h"
 #include "page401.h"
 #include "page402.h"
@@ -56,6 +55,5 @@
 /* add here the header of the new page */
 
 #endif
-
 
 

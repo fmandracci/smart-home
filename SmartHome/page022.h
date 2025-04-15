@@ -53,11 +53,12 @@ protected:
 
 private:
     Ui::page022 *ui;
+    void changeWidgets();
+    void updateWidgets();
     enum {IDLE = 0, RUNNING, PAUSED} status;
     QElapsedTimer timer;
     qint64 value_ms;
     void updateTimer();
-    void updateWidgets();
 };
 
 #endif // PAGE022_H

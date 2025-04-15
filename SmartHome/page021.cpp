@@ -35,15 +35,38 @@ page021::page021(QWidget *parent) :
     ui(new Ui::page021)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 
     resetTimer_1(TimerValue_1);
     resetTimer_2(TimerValue_2);
     updateTimers();
     doWrite_PLC_buzzer_timer_1(false);
     doWrite_PLC_buzzer_timer_2(false);
+}
+
+void page021::reload()
+{
+    changeWidgets();
+    updateWidgets();
+}
+
+void page021::changeWidgets()
+{
+    ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page021: timer");
+    updateTimers();
+}
+
+void page021::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateTimers();
+    updateWidgets();
 }
 
 void page021::resetTimer_1(int value)
@@ -80,12 +103,6 @@ void page021::resetTimer_2(int value)
     ui->atcmButtonStartStop_2->blockSignals(false);
 }
 
-void page021::reload()
-{
-    updateTimers();
-    updateWidgets();
-}
-
 void page021::updateTimers()
 {
     QTime time(0, 0, 0);
@@ -99,7 +116,7 @@ void page021::updateTimers()
             status_1 = RINGING;
             doWrite_PLC_buzzer_timer_1(true);
         }
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         ui->pushButton_timer_1->setText(time.addMSecs(value_1_ms).toString("HH:mm:ss"));
@@ -131,7 +148,7 @@ void page021::updateTimers()
             status_2 = RINGING;
             doWrite_PLC_buzzer_timer_2(true);
         }
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         ui->pushButton_timer_2->setText(time.addMSecs(value_2_ms).toString("HH:mm:ss"));
@@ -157,11 +174,7 @@ void page021::updateTimers()
 
 void page021::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     // ----- 1 -----
     switch (status_1) {
@@ -216,17 +229,6 @@ void page021::updateWidgets()
     default:
         ;
     }
-}
-
-void page021::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-    
-    updateTimers();
-    updateWidgets();
 }
 
 void page021::changeEvent(QEvent * event)

@@ -20,7 +20,6 @@
 **
 ****************************************************************************/
 
-
 #include "app_logprint.h"
 #include "atcmplugin.h"
 #include "main.h"
@@ -35,26 +34,49 @@ page100::page100(QWidget *parent) :
     ui(new Ui::page100)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page100::reload()
 {
     changeWidgets();
+    updateWidgets();
+}
+
+void page100::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    updateWidgets();
 }
 
 void page100::changeWidgets()
 {
+    ui->headerPanel->changeWidgets("trend_Tall.csv", TH_PIXMAP, NULL, "page100: Tn");
+
     changeTemperature(ui->label_1, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, COLOR_01);
     changeTemperature(ui->label_2, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, COLOR_02);
     changeTemperature(ui->label_3, ui->pushButton_SP_3, ui->pushButton_status_3, ui->pushButton_3, ui->label_ext_3, 3, COLOR_03);
     changeTemperature(ui->label_4, ui->pushButton_SP_4, ui->pushButton_status_4, ui->pushButton_4, ui->label_ext_4, 4, COLOR_04);
     changeTemperature(ui->label_5, ui->pushButton_SP_5, ui->pushButton_status_5, ui->pushButton_5, ui->label_ext_5, 5, COLOR_05);
     changeTemperature(ui->label_6, ui->pushButton_SP_6, ui->pushButton_status_6, ui->pushButton_6, ui->label_ext_6, 6, COLOR_06);
+}
 
-    updateWidgets();
+void page100::updateWidgets()
+{
+    ui->headerPanel->updateWidgets();
+
+    updateTemperature(ui->label_1, LABEL_01_ON, LABEL_01, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, PLC_T1_enabled_sensors, PLC_T1_temperature_setpoint, PLC_T1_temperature_setpoint_nt, PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_temperature_ext, PLC_T1_humidity, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating);
+    updateTemperature(ui->label_2, LABEL_02_ON, LABEL_02, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, PLC_T2_enabled_sensors, PLC_T2_temperature_setpoint, PLC_T2_temperature_setpoint_nt, PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_temperature_ext, PLC_T2_humidity, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating);
+    updateTemperature(ui->label_3, LABEL_03_ON, LABEL_03, ui->pushButton_SP_3, ui->pushButton_status_3, ui->pushButton_3, ui->label_ext_3, 3, PLC_T3_enabled_sensors, PLC_T3_temperature_setpoint, PLC_T3_temperature_setpoint_nt, PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_temperature_ext, PLC_T3_humidity, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating);
+    updateTemperature(ui->label_4, LABEL_04_ON, LABEL_04, ui->pushButton_SP_4, ui->pushButton_status_4, ui->pushButton_4, ui->label_ext_4, 4, PLC_T4_enabled_sensors, PLC_T4_temperature_setpoint, PLC_T4_temperature_setpoint_nt, PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_temperature_ext, PLC_T4_humidity, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating);
+    updateTemperature(ui->label_5, LABEL_05_ON, LABEL_05, ui->pushButton_SP_5, ui->pushButton_status_5, ui->pushButton_5, ui->label_ext_5, 5, PLC_T5_enabled_sensors, PLC_T5_temperature_setpoint, PLC_T5_temperature_setpoint_nt, PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_temperature_ext, PLC_T5_humidity, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating);
+    updateTemperature(ui->label_6, LABEL_06_ON, LABEL_06, ui->pushButton_SP_6, ui->pushButton_status_6, ui->pushButton_6, ui->label_ext_6, 6, PLC_T6_enabled_sensors, PLC_T6_temperature_setpoint, PLC_T6_temperature_setpoint_nt, PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_temperature_ext, PLC_T6_humidity, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating);
 }
 
 void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoint,
@@ -68,7 +90,7 @@ void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoin
         int pointSize_t ; // xx.x°C xx.x°C
         int pointSize_e ; // xx.x°C
 
-        if (this->width() >= 800) {
+        if (mectScreenWidth >= 800) {
             pointSize_n  = 36;  // ①
             pointSize_sp = 11;  // Set Point
             pointSize_s  = 17;  // status
@@ -192,32 +214,6 @@ void page100::updateTemperature(QLabel *label_n, const QString label_on, const Q
     }
 }
 
-void page100::updateWidgets()
-{
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-
-    updateTemperature(ui->label_1, LABEL_01_ON, LABEL_01, ui->pushButton_SP_1, ui->pushButton_status_1, ui->pushButton_1, ui->label_ext_1, 1, PLC_T1_enabled_sensors, PLC_T1_temperature_setpoint, PLC_T1_temperature_setpoint_nt, PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_temperature_ext, PLC_T1_humidity, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating);
-    updateTemperature(ui->label_2, LABEL_02_ON, LABEL_02, ui->pushButton_SP_2, ui->pushButton_status_2, ui->pushButton_2, ui->label_ext_2, 2, PLC_T2_enabled_sensors, PLC_T2_temperature_setpoint, PLC_T2_temperature_setpoint_nt, PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_temperature_ext, PLC_T2_humidity, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating);
-    updateTemperature(ui->label_3, LABEL_03_ON, LABEL_03, ui->pushButton_SP_3, ui->pushButton_status_3, ui->pushButton_3, ui->label_ext_3, 3, PLC_T3_enabled_sensors, PLC_T3_temperature_setpoint, PLC_T3_temperature_setpoint_nt, PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_temperature_ext, PLC_T3_humidity, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating);
-    updateTemperature(ui->label_4, LABEL_04_ON, LABEL_04, ui->pushButton_SP_4, ui->pushButton_status_4, ui->pushButton_4, ui->label_ext_4, 4, PLC_T4_enabled_sensors, PLC_T4_temperature_setpoint, PLC_T4_temperature_setpoint_nt, PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_temperature_ext, PLC_T4_humidity, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating);
-    updateTemperature(ui->label_5, LABEL_05_ON, LABEL_05, ui->pushButton_SP_5, ui->pushButton_status_5, ui->pushButton_5, ui->label_ext_5, 5, PLC_T5_enabled_sensors, PLC_T5_temperature_setpoint, PLC_T5_temperature_setpoint_nt, PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_temperature_ext, PLC_T5_humidity, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating);
-    updateTemperature(ui->label_6, LABEL_06_ON, LABEL_06, ui->pushButton_SP_6, ui->pushButton_status_6, ui->pushButton_6, ui->label_ext_6, 6, PLC_T6_enabled_sensors, PLC_T6_temperature_setpoint, PLC_T6_temperature_setpoint_nt, PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_temperature_ext, PLC_T6_humidity, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating);
-}
-
-void page100::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateWidgets();
-}
-
 void page100::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange) {
@@ -228,9 +224,4 @@ void page100::changeEvent(QEvent * event)
 page100::~page100()
 {
     delete ui;
-}
-
-void page100::on_pushButton_trend_clicked()
-{
-    goto_trend_page("trend_Tall.csv");
 }

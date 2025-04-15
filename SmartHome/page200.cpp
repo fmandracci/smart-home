@@ -39,9 +39,10 @@ page200::page200(QWidget *parent) :
     LampWarningIcon(QPixmap(":/systemicons/Error.png"))
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page200::reload()
@@ -62,38 +63,40 @@ void page200::updateData()
 
 void page200::changeWidgets()
 {
-    QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
-    changeLamps(1, COLOR_01, hmi_ini.value("T1/name").toString(),
+    ui->headerPanel->changeWidgets(NULL, LM_PIXMAP, NULL, "page200: Tn lamps");
+
+    changeLamps(1, COLOR_01, home_ini.value("T1/name").toString(),
                 ui->label_Tn_1, PLC_T1_enabled_lamps,
                 ui->pushButton_T1_lamp_1, ui->pushButton_T1_lamp_2, ui->pushButton_T1_lamp_3, ui->pushButton_T1_lamp_4, ui->pushButton_T1_lamp_5,
                 ui->label_T1_1, ui->label_T1_2, ui->label_T1_3, ui->label_T1_4, ui->label_T1_5,
-                hmi_ini.value("T1/lamp_1").toString(), hmi_ini.value("T1/lamp_2").toString(), hmi_ini.value("T1/lamp_3").toString(), hmi_ini.value("T1/lamp_4").toString(), hmi_ini.value("T1/lamp_5").toString());
-    changeLamps(2, COLOR_02, hmi_ini.value("T2/name").toString(),
+                home_ini.value("T1/lamp_1").toString(), home_ini.value("T1/lamp_2").toString(), home_ini.value("T1/lamp_3").toString(), home_ini.value("T1/lamp_4").toString(), home_ini.value("T1/lamp_5").toString());
+    changeLamps(2, COLOR_02, home_ini.value("T2/name").toString(),
                 ui->label_Tn_2, PLC_T2_enabled_lamps,
                 ui->pushButton_T2_lamp_1, ui->pushButton_T2_lamp_2, ui->pushButton_T2_lamp_3, ui->pushButton_T2_lamp_4, ui->pushButton_T2_lamp_5,
                 ui->label_T2_1, ui->label_T2_2, ui->label_T2_3, ui->label_T2_4, ui->label_T2_5,
-                hmi_ini.value("T2/lamp_1").toString(), hmi_ini.value("T2/lamp_2").toString(), hmi_ini.value("T2/lamp_3").toString(), hmi_ini.value("T2/lamp_4").toString(), hmi_ini.value("T2/lamp_5").toString());
-    changeLamps(3, COLOR_03, hmi_ini.value("T3/name").toString(),
+                home_ini.value("T2/lamp_1").toString(), home_ini.value("T2/lamp_2").toString(), home_ini.value("T2/lamp_3").toString(), home_ini.value("T2/lamp_4").toString(), home_ini.value("T2/lamp_5").toString());
+    changeLamps(3, COLOR_03, home_ini.value("T3/name").toString(),
                 ui->label_Tn_3, PLC_T3_enabled_lamps,
                 ui->pushButton_T3_lamp_1, ui->pushButton_T3_lamp_2, ui->pushButton_T3_lamp_3, ui->pushButton_T3_lamp_4, ui->pushButton_T3_lamp_5,
                 ui->label_T3_1, ui->label_T3_2, ui->label_T3_3, ui->label_T3_4, ui->label_T3_5,
-                hmi_ini.value("T3/lamp_1").toString(), hmi_ini.value("T3/lamp_2").toString(), hmi_ini.value("T3/lamp_3").toString(), hmi_ini.value("T3/lamp_4").toString(), hmi_ini.value("T3/lamp_5").toString());
-    changeLamps(4, COLOR_04, hmi_ini.value("T4/name").toString(),
+                home_ini.value("T3/lamp_1").toString(), home_ini.value("T3/lamp_2").toString(), home_ini.value("T3/lamp_3").toString(), home_ini.value("T3/lamp_4").toString(), home_ini.value("T3/lamp_5").toString());
+    changeLamps(4, COLOR_04, home_ini.value("T4/name").toString(),
                 ui->label_Tn_4, PLC_T4_enabled_lamps,
                 ui->pushButton_T4_lamp_1, ui->pushButton_T4_lamp_2, ui->pushButton_T4_lamp_3, ui->pushButton_T4_lamp_4, ui->pushButton_T4_lamp_5,
                 ui->label_T4_1, ui->label_T4_2, ui->label_T4_3, ui->label_T4_4, ui->label_T4_5,
-                hmi_ini.value("T4/lamp_1").toString(), hmi_ini.value("T4/lamp_2").toString(), hmi_ini.value("T4/lamp_3").toString(), hmi_ini.value("T4/lamp_4").toString(), hmi_ini.value("T4/lamp_5").toString());
-    changeLamps(5, COLOR_05, hmi_ini.value("T5/name").toString(),
+                home_ini.value("T4/lamp_1").toString(), home_ini.value("T4/lamp_2").toString(), home_ini.value("T4/lamp_3").toString(), home_ini.value("T4/lamp_4").toString(), home_ini.value("T4/lamp_5").toString());
+    changeLamps(5, COLOR_05, home_ini.value("T5/name").toString(),
                 ui->label_Tn_5, PLC_T5_enabled_lamps,
                 ui->pushButton_T5_lamp_1, ui->pushButton_T5_lamp_2, ui->pushButton_T5_lamp_3, ui->pushButton_T5_lamp_4, ui->pushButton_T5_lamp_5,
                 ui->label_T5_1, ui->label_T5_2, ui->label_T5_3, ui->label_T5_4, ui->label_T5_5,
-                hmi_ini.value("T5/lamp_1").toString(), hmi_ini.value("T5/lamp_2").toString(), hmi_ini.value("T5/lamp_3").toString(), hmi_ini.value("T5/lamp_4").toString(), hmi_ini.value("T5/lamp_5").toString());
-    changeLamps(6, COLOR_06, hmi_ini.value("T6/name").toString(),
+                home_ini.value("T5/lamp_1").toString(), home_ini.value("T5/lamp_2").toString(), home_ini.value("T5/lamp_3").toString(), home_ini.value("T5/lamp_4").toString(), home_ini.value("T5/lamp_5").toString());
+    changeLamps(6, COLOR_06, home_ini.value("T6/name").toString(),
                 ui->label_Tn_6, PLC_T6_enabled_lamps,
                 ui->pushButton_T6_lamp_1, ui->pushButton_T6_lamp_2, ui->pushButton_T6_lamp_3, ui->pushButton_T6_lamp_4, ui->pushButton_T6_lamp_5,
                 ui->label_T6_1, ui->label_T6_2, ui->label_T6_3, ui->label_T6_4, ui->label_T6_5,
-                hmi_ini.value("T6/lamp_1").toString(), hmi_ini.value("T6/lamp_2").toString(), hmi_ini.value("T6/lamp_3").toString(), hmi_ini.value("T6/lamp_4").toString(), hmi_ini.value("T6/lamp_5").toString());
+                home_ini.value("T6/lamp_1").toString(), home_ini.value("T6/lamp_2").toString(), home_ini.value("T6/lamp_3").toString(), home_ini.value("T6/lamp_4").toString(), home_ini.value("T6/lamp_5").toString());
 
 }
 
@@ -157,11 +160,7 @@ void page200::updateLamp(int t, bool isOK, int enabled_lamps_t, int n, QPushButt
 
 void page200::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     updateLamp(1, PLC_T1_isOK, PLC_T1_enabled_lamps, 1, ui->pushButton_T1_lamp_1, PLC_T1_lamp_feedback_1);
     updateLamp(1, PLC_T1_isOK, PLC_T1_enabled_lamps, 2, ui->pushButton_T1_lamp_2, PLC_T1_lamp_feedback_2);

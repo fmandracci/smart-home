@@ -36,82 +36,9 @@ page010::page010(QWidget *parent) :
 {
     ui->setupUi(this);
 
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
-}
-
-void page010::changeWidgets()
-{
-    if (PLC_ConfigPassword) {
-        ui->atcmButton_configurazione->setPasswordVar("PLC_ConfigPassword");
-    } else {
-        ui->atcmButton_configurazione->setPasswordVar("");
-    }
-    if (PLC_BA_password) {
-        ui->atcmButton_antifurto->setPasswordVar("PLC_BA_password");
-    } else {
-        ui->atcmButton_antifurto->setPasswordVar("");
-    }
-
-    if (PLC_EP_exists) {
-        ui->atcmButton_quadro->setEnabled(true);
-        ui->atcmButton_quadro->setBorderColor(QColor(255,  0,  0));
-    } else {
-        ui->atcmButton_quadro->setEnabled(false);
-        ui->atcmButton_quadro->setBorderColor(QColor( 64, 64, 64));
-    }
-    if (PLC_EP_exists and abs(PLC_EP_enabled_relays) >= 1) {
-        ui->atcmButton_relays->setEnabled(true);
-        ui->atcmButton_relays->setBorderColor(QColor(255,255,  0));
-    } else {
-        ui->atcmButton_relays->setEnabled(false);
-        ui->atcmButton_relays->setBorderColor(QColor( 64, 64, 64));
-    }
-    if (PLC_Tn_count >= 1) {
-        ui->atcmButton_termostati->setEnabled(true);
-        ui->atcmButton_termostati->setBorderColor(QColor(255,128,  0));
-        if (PLC_Tn_count >= 2) {
-            ui->atcmButton_termostati->setPageName("page100");
-        } else {
-            currentThermostat = 1;
-            ui->atcmButton_termostati->setPageName("page101a");
-        }
-    } else {
-        ui->atcmButton_termostati->setEnabled(false);
-        ui->atcmButton_termostati->setBorderColor(QColor( 64, 64, 64));
-    }
-    if (PLC_Tn_count >= 1 and (PLC_T1_enabled_lamps + PLC_T2_enabled_lamps + PLC_T3_enabled_lamps + PLC_T4_enabled_lamps + PLC_T5_enabled_lamps + PLC_T6_enabled_lamps) >= 1) {
-        ui->atcmButton_lamps->setEnabled(true);
-        ui->atcmButton_lamps->setBorderColor(QColor(  0,255,  0));
-    } else {
-        ui->atcmButton_lamps->setEnabled(false);
-        ui->atcmButton_lamps->setBorderColor(QColor( 64, 64, 64));
-    }
-    if (PLC_BA_exists) {
-        ui->atcmButton_antifurto->setEnabled(true);
-        ui->atcmButton_antifurto->setBorderColor(QColor(128,  0,255));
-    } else {
-        ui->atcmButton_antifurto->setEnabled(false);
-        ui->atcmButton_antifurto->setBorderColor(QColor( 64, 64, 64));
-    }
-}
-
-void page010::updateWidgets()
-{
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-
-    ui->label_versions->setText(QString("%1\n%2_%3\n%4_%5\n%6")
-        .arg(PLC_PRODUCT_ID, 8, 16)
-        .arg((PLC_HMI_Version / 100) / 10.0, 1, 'f', 1).arg(PLC_HMI_Version % 100, 2, 10, QLatin1Char('0'))
-        .arg((PLC_PLC_Version / 100) / 10.0, 1, 'f', 1).arg(PLC_PLC_Version % 100, 2, 10, QLatin1Char('0'))
-        .arg(PLC_control_type)
-        .toUpper()
-        );
 }
 
 void page010::reload()
@@ -127,6 +54,94 @@ void page010::updateData()
     }
     page::updateData();
     updateWidgets();
+}
+
+void page010::changeWidgets()
+{
+    int pointSize_time  = 32; // 28
+    int pointSize_title =  6; //  6
+
+    if (mectScreenWidth >= 1280) {
+        pointSize_time = 42;
+        pointSize_title = 6;
+    } else if (mectScreenWidth >= 800) {
+        pointSize_time = 32;
+        pointSize_title = 6;
+    } else {
+        pointSize_time = 28;
+        pointSize_title = 6;
+    }
+
+    ui->header_leds->changeHeader();
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_time));
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(pointSize_title));
+
+    if (PLC_ConfigPassword) {
+        ui->atcmButton_settings->setPasswordVar("PLC_ConfigPassword");
+    } else {
+        ui->atcmButton_settings->setPasswordVar("");
+    }
+    if (PLC_BA_password) {
+        ui->atcmButton_BA->setPasswordVar("PLC_BA_password");
+    } else {
+        ui->atcmButton_BA->setPasswordVar("");
+    }
+
+    if (PLC_EP_exists) {
+        ui->atcmButton_EP_wattmeters->setEnabled(true);
+        ui->atcmButton_EP_wattmeters->setBorderColor(QColor(255,  0,  0));
+    } else {
+        ui->atcmButton_EP_wattmeters->setEnabled(false);
+        ui->atcmButton_EP_wattmeters->setBorderColor(QColor( 64, 64, 64));
+    }
+    if (PLC_EP_exists and abs(PLC_EP_enabled_relays) >= 1) {
+        ui->atcmButton_EP_relays->setEnabled(true);
+        ui->atcmButton_EP_relays->setBorderColor(QColor(255,255,  0));
+    } else {
+        ui->atcmButton_EP_relays->setEnabled(false);
+        ui->atcmButton_EP_relays->setBorderColor(QColor( 64, 64, 64));
+    }
+    if (PLC_Tn_count >= 1) {
+        ui->atcmButton_Tn_thermo->setEnabled(true);
+        ui->atcmButton_Tn_thermo->setBorderColor(QColor(255,128,  0));
+        if (PLC_Tn_count >= 2) {
+            ui->atcmButton_Tn_thermo->setPageName("page100");
+        } else {
+            currentThermostat = 1;
+            ui->atcmButton_Tn_thermo->setPageName("page101a");
+        }
+    } else {
+        ui->atcmButton_Tn_thermo->setEnabled(false);
+        ui->atcmButton_Tn_thermo->setBorderColor(QColor( 64, 64, 64));
+    }
+    if (PLC_Tn_count >= 1 and (PLC_T1_enabled_lamps + PLC_T2_enabled_lamps + PLC_T3_enabled_lamps + PLC_T4_enabled_lamps + PLC_T5_enabled_lamps + PLC_T6_enabled_lamps) >= 1) {
+        ui->atcmButton_Tn_lamps->setEnabled(true);
+        ui->atcmButton_Tn_lamps->setBorderColor(QColor(  0,255,  0));
+    } else {
+        ui->atcmButton_Tn_lamps->setEnabled(false);
+        ui->atcmButton_Tn_lamps->setBorderColor(QColor( 64, 64, 64));
+    }
+    if (PLC_BA_exists) {
+        ui->atcmButton_BA->setEnabled(true);
+        ui->atcmButton_BA->setBorderColor(QColor(128,  0,255));
+    } else {
+        ui->atcmButton_BA->setEnabled(false);
+        ui->atcmButton_BA->setBorderColor(QColor( 64, 64, 64));
+    }
+}
+
+void page010::updateWidgets()
+{
+    ui->header_leds->updateLedLabels();
+    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+
+    ui->label_versions->setText(QString("%1\n%2_%3\n%4_%5\n%6")
+        .arg(PLC_PRODUCT_ID, 8, 16)
+        .arg((PLC_HMI_Version / 100) / 10.0, 1, 'f', 1).arg(PLC_HMI_Version % 100, 2, 10, QLatin1Char('0'))
+        .arg((PLC_PLC_Version / 100) / 10.0, 1, 'f', 1).arg(PLC_PLC_Version % 100, 2, 10, QLatin1Char('0'))
+        .arg(PLC_control_type)
+        .toUpper()
+        );
 }
 
 void page010::on_pushButton_home_clicked()

@@ -35,20 +35,50 @@ page401::page401(QWidget *parent) :
     ui(new Ui::page401)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
-void page401::changeWidgets(int n, const QString t, const QString name, const QColor color,
+void page401::reload()
+{
+    QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+
+    switch (currentWattmeter) {
+    case  1: changeWidgets( 1, LABEL__M, "trend_W-M.csv", QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;
+    case  2: changeWidgets( 2, LABEL__F, "trend_W-F.csv", QString::fromUtf8(home_ini.value("EP/meter__F").toByteArray()), COLOR_02, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_F_var", "PLC_EP_wattmeter_F_VA", "PLC_EP_wattmeter_F_kWh"); break;
+    case  3: changeWidgets( 3, LABEL_01, "trend_W01.csv", QString::fromUtf8(home_ini.value("EP/meter_01").toByteArray()), COLOR_03, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter01_var", "PLC_EP_wattmeter01_VA", "PLC_EP_wattmeter01_kWh"); break;
+    case  4: changeWidgets( 4, LABEL_02, "trend_W02.csv", QString::fromUtf8(home_ini.value("EP/meter_02").toByteArray()), COLOR_04, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter02_var", "PLC_EP_wattmeter02_VA", "PLC_EP_wattmeter02_kWh"); break;
+    case  5: changeWidgets( 5, LABEL_03, "trend_W03.csv", QString::fromUtf8(home_ini.value("EP/meter_03").toByteArray()), COLOR_05, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter03_var", "PLC_EP_wattmeter03_VA", "PLC_EP_wattmeter03_kWh"); break;
+    case  6: changeWidgets( 6, LABEL_04, "trend_W04.csv", QString::fromUtf8(home_ini.value("EP/meter_04").toByteArray()), COLOR_06, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter04_var", "PLC_EP_wattmeter04_VA", "PLC_EP_wattmeter04_kWh"); break;
+    case  7: changeWidgets( 7, LABEL_05, "trend_W05.csv", QString::fromUtf8(home_ini.value("EP/meter_05").toByteArray()), COLOR_07, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter05_var", "PLC_EP_wattmeter05_VA", "PLC_EP_wattmeter05_kWh"); break;
+    case  8: changeWidgets( 8, LABEL_06, "trend_W06.csv", QString::fromUtf8(home_ini.value("EP/meter_06").toByteArray()), COLOR_08, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter06_var", "PLC_EP_wattmeter06_VA", "PLC_EP_wattmeter06_kWh"); break;
+    case  9: changeWidgets( 9, LABEL_07, "trend_W07.csv", QString::fromUtf8(home_ini.value("EP/meter_07").toByteArray()), COLOR_09, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter07_var", "PLC_EP_wattmeter07_VA", "PLC_EP_wattmeter07_kWh"); break;
+    case  0: changeWidgets(10, LABEL_08, "trend_W08.csv", QString::fromUtf8(home_ini.value("EP/meter_08").toByteArray()), COLOR_10, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter08_var", "PLC_EP_wattmeter08_VA", "PLC_EP_wattmeter08_kWh"); break;
+    case 11: changeWidgets(11, LABEL_09, "trend_W09.csv", QString::fromUtf8(home_ini.value("EP/meter_09").toByteArray()), COLOR_11, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter09_var", "PLC_EP_wattmeter09_VA", "PLC_EP_wattmeter09_kWh"); break;
+    case 12: changeWidgets(12, LABEL_10, "trend_W10.csv", QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), COLOR_12, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter10_var", "PLC_EP_wattmeter10_VA", "PLC_EP_wattmeter10_kWh"); break;
+    default: ;
+    }
+}
+
+void page401::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+    ui->headerPanel->updateWidgets();
+}
+
+void page401::changeWidgets(int n, const QString t, const char *trend, const QString name, const QColor color,
                             const QString W, const QString var, const QString VA,
                             const QString kWh)
 {
     QString colorStylesheet = QString("color: rgb(%1, %2, %3);").arg(color.red()).arg(color.green()).arg(color.blue());
 
     // name
-    ui->label_name->setText(name);
-    ui->label_name->setStyleSheet(colorStylesheet);
+    ui->headerPanel->changeWidgets(trend, EP_PIXMAP, "page400", QString("page401: EP W: " + name).toLatin1().data());
 
     // left
     ui->atcmButton_prev->setFontColor(color);
@@ -129,65 +159,6 @@ void page401::changeWidgets(int n, const QString t, const QString name, const QC
     }
 }
 
-void page401::reload()
-{
-    QSettings hmi_ini("/local/root/hmi.ini", QSettings::IniFormat);
-
-    switch (currentWattmeter) {
-    case  1: changeWidgets( 1, LABEL__M, QString::fromUtf8(hmi_ini.value("EP/meter__M").toByteArray()), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;
-    case  2: changeWidgets( 2, LABEL__F, QString::fromUtf8(hmi_ini.value("EP/meter__F").toByteArray()), COLOR_02, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_F_var", "PLC_EP_wattmeter_F_VA", "PLC_EP_wattmeter_F_kWh"); break;
-    case  3: changeWidgets( 3, LABEL_01, QString::fromUtf8(hmi_ini.value("EP/meter_01").toByteArray()), COLOR_03, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter01_var", "PLC_EP_wattmeter01_VA", "PLC_EP_wattmeter01_kWh"); break;
-    case  4: changeWidgets( 4, LABEL_02, QString::fromUtf8(hmi_ini.value("EP/meter_02").toByteArray()), COLOR_04, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter02_var", "PLC_EP_wattmeter02_VA", "PLC_EP_wattmeter02_kWh"); break;
-    case  5: changeWidgets( 5, LABEL_03, QString::fromUtf8(hmi_ini.value("EP/meter_03").toByteArray()), COLOR_05, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter03_var", "PLC_EP_wattmeter03_VA", "PLC_EP_wattmeter03_kWh"); break;
-    case  6: changeWidgets( 6, LABEL_04, QString::fromUtf8(hmi_ini.value("EP/meter_04").toByteArray()), COLOR_06, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter04_var", "PLC_EP_wattmeter04_VA", "PLC_EP_wattmeter04_kWh"); break;
-    case  7: changeWidgets( 7, LABEL_05, QString::fromUtf8(hmi_ini.value("EP/meter_05").toByteArray()), COLOR_07, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter05_var", "PLC_EP_wattmeter05_VA", "PLC_EP_wattmeter05_kWh"); break;
-    case  8: changeWidgets( 8, LABEL_06, QString::fromUtf8(hmi_ini.value("EP/meter_06").toByteArray()), COLOR_08, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter06_var", "PLC_EP_wattmeter06_VA", "PLC_EP_wattmeter06_kWh"); break;
-    case  9: changeWidgets( 9, LABEL_07, QString::fromUtf8(hmi_ini.value("EP/meter_07").toByteArray()), COLOR_09, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter07_var", "PLC_EP_wattmeter07_VA", "PLC_EP_wattmeter07_kWh"); break;
-    case  0: changeWidgets(10, LABEL_08, QString::fromUtf8(hmi_ini.value("EP/meter_08").toByteArray()), COLOR_10, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter08_var", "PLC_EP_wattmeter08_VA", "PLC_EP_wattmeter08_kWh"); break;
-    case 11: changeWidgets(11, LABEL_09, QString::fromUtf8(hmi_ini.value("EP/meter_09").toByteArray()), COLOR_11, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter09_var", "PLC_EP_wattmeter09_VA", "PLC_EP_wattmeter09_kWh"); break;
-    case 12: changeWidgets(12, LABEL_10, QString::fromUtf8(hmi_ini.value("EP/meter_10").toByteArray()), COLOR_12, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter10_var", "PLC_EP_wattmeter10_VA", "PLC_EP_wattmeter10_kWh"); break;
-    default: ;
-    }
-}
-
-void page401::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
-}
-
-void page401::on_pushButton_plot_clicked()
-{
-    goto_page("page402", true);
-}
-
-void page401::on_pushButton_trend_clicked()
-{
-    switch (currentWattmeter) {
-    case  1: goto_trend_page("trend_W-M.csv"); break;
-    case  2: goto_trend_page("trend_W-F.csv"); break;
-    case  3: goto_trend_page("trend_W01.csv"); break;
-    case  4: goto_trend_page("trend_W02.csv"); break;
-    case  5: goto_trend_page("trend_W03.csv"); break;
-    case  6: goto_trend_page("trend_W04.csv"); break;
-    case  7: goto_trend_page("trend_W05.csv"); break;
-    case  8: goto_trend_page("trend_W06.csv"); break;
-    case  9: goto_trend_page("trend_W07.csv"); break;
-    case 10: goto_trend_page("trend_W08.csv"); break;
-    case 11: goto_trend_page("trend_W09.csv"); break;
-    case 12: goto_trend_page("trend_W10.csv"); break;
-    default: ;
-    }
-}
-
 void page401::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
@@ -200,4 +171,3 @@ page401::~page401()
 {
     delete ui;
 }
-

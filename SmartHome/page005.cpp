@@ -38,13 +38,16 @@ page005::page005(QWidget *parent) :
     /* set here the protection level (pwd_admin_e, pwd_super_user_e, pwd_user_e, pwd_operator_e), default is pwd_operator_e
      * protection_level = pwd_operator_e;
      */
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page005::reload()
 {
+    changeWidgets();
+    updateWidgets();
 }
 
 void page005::updateData()
@@ -53,8 +56,17 @@ void page005::updateData()
         return;
     }
     page::updateData();
+    updateWidgets();
+}
 
-    ui->label_time->setText(TIME_FMT);
+void page005::changeWidgets()
+{
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page005: Config");
+}
+
+void page005::updateWidgets()
+{
+    ui->headerPanel->updateWidgets();
 }
 
 void page005::changeEvent(QEvent * event)

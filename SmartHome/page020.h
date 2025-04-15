@@ -46,6 +46,8 @@ private slots:
     
 private:
     Ui::page020 *ui;
+    void changeWidgets();
+    void updateWidgets();
     bool firstTime;
 };
 

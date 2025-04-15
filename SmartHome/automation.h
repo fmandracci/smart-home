@@ -28,8 +28,17 @@
 #include "hmi_logger.h"
 #include "global_functions.h"
 
-#define VERSATILE_APPLICATION
-#undef  QT_KNOWS_THE_DPI_VALUE
+#include "headerleds.h"
+#define USE_TRANSLATEFONTSIZE // HeaderLeds::translateFontSize()
+#define HOME_INI_FILE "/local/root/home.ini"
+
+#define XX_PIXMAP ":/systemicons/Equipment.png"
+#define TM_PIXMAP ":/icons/icons/Chronometer.png"
+#define EP_PIXMAP ":/icons/icons/Wattmeter.png"
+#define RL_PIXMAP ":/icons/icons/Flash.png"
+#define TH_PIXMAP ":/icons/icons/HeatCool.png"
+#define LM_PIXMAP ":/icons/icons/LampIcon.png"
+#define BA_PIXMAP ":/icons/icons/Antifurto.png"
 
 // vedi plc/Resource1.cst
 
@@ -56,6 +65,10 @@ const QString heating_name(int heating_status);
 
 extern int currentThermostat;
 extern int currentWattmeter;
+
+extern int mectScreenWidth;
+extern int mectScreenHeight;
+extern float mectFontCorrector; // 1.75
 
 // °☀ ①②③④ ⑤⑥⑦⑧ ⑨⑩
 
@@ -156,6 +169,9 @@ extern int currentWattmeter;
 #define COLOR_WHITE QColor(255,255,255)
 #define COLOR_GREY  QColor(128,128,128)
 
+#define COLOR_HEADER  QColor(255, 85,  0)
+#define COLOR_CLOCK   QColor(255,  0,  0)
+
 #define COLOR_00 QColor(255,170,255) // QColor(255,170,255)
 
 #define COLOR_01 QColor(255,  0,  0) // QColor(255,  0,  0)
@@ -173,22 +189,25 @@ extern int currentWattmeter;
 #define COLOR_11 QColor(127,192,255) // QColor(170,255,255)
 #define COLOR_12 QColor(255,192,255) // QColor(255,255,255)
 
+#define TEMP_FMT           QString("%1.%2%3").arg(PLC_CPU_TEMP / 10).arg(PLC_CPU_TEMP % 10).arg(LABEL_CELSIUS)
 #define TIME_FMT           QTime::currentTime().toString("HH:mm")
 #define TIME_FMT_DAYTIME   QTime::currentTime().toString(LABEL_DAYTIME + "HH:mm")
 #define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")
 
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
-#ifdef QT_KNOWS_THE_DPI_VALUE
-#define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize)
-#define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize)
-#define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
+
+#ifdef USE_TRANSLATEFONTSIZE
+#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
+#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
+#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize)
 #define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
 #else
-#define FONT_SS_N(pointSize) QString("font:      %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_B(pointSize) QString("font: bold %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_I(pointSize) QString("font: italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
-#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * 1.75, 0, 'f', 0)
+#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
+#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * mectFontCorrector, 0, 'f', 0)
 #endif
+
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
 #define ALARM_STATUS_ZERO     0x0000 // not configured yet
@@ -273,7 +292,13 @@ int hhmmss2ms(int hhmmss);
     goto_page("trend"); \
 }
 
+#include <QWidget>
 #include <QLabel>
+void changeHeader(QWidget *time_button, QWidget *home_button,
+                  QLabel *label_EP = NULL, QLabel *label_BA = NULL, QLabel *label_green = NULL,
+                  QLabel *label_T5 = NULL, QLabel *label_T6 = NULL, QLabel *label_red = NULL,
+                  QLabel *label_T3 = NULL, QLabel *label_T4 = NULL, QLabel *label_yellow_1 = NULL,
+                  QLabel *label_T1 = NULL, QLabel *label_T2 = NULL, QLabel *label_yellow_2 = NULL);
 void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
                      QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
                      QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,

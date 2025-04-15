@@ -47,8 +47,7 @@ DEFINES+=ENABLE_RECIPE
 
 DEFINES += TRANSLATION
 
-INCLUDEPATH += .\
-	./config
+INCLUDEPATH += . ./config
 
 LIBS += \
 -lATCMcommon \

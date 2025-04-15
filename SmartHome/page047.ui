@@ -24,8 +24,8 @@
 </property>
 <property name="maximumSize">
 <size>
-<width>800</width>
-<height>800</height>
+<width>1280</width>
+<height>1280</height>
 </size>
 </property>
 <property name="windowTitle">
@@ -45,868 +45,39 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <item>
-<layout class="QHBoxLayout" name="horizontalLayout">
-<property name="spacing">
-<number>0</number>
-</property>
-<property name="sizeConstraint">
-<enum>QLayout::SetMaximumSize</enum>
-</property>
-<item>
-<widget class="ATCMbutton" name="atcmButton_ResetValues">
+<widget class="HeaderPanel" name="headerPanel" native="true">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="maximumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-<weight>50</weight>
-<bold>false</bold>
-</font>
-</property>
-<property name="checkable">
-<bool>false</bool>
-</property>
-<property name="toolTip">
-<string>PLC_ResetValues</string>
-</property>
-<property name="whatsThis">
-<string>ATCMbutton widget</string>
-</property>
-<property name="pageName">
-<string/>
-</property>
-<property name="passwordVar">
-<string/>
-</property>
-<property name="statusvar">
-<string>PLC_ResetValues</string>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>255</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="bgPressColor">
-<color>
-<red>255</red>
-<green>170</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="text">
-<string>ZERO</string>
-</property>
-<property name="pressText">
-<string>ZERO</string>
-</property>
-<property name="borderWidth">
-<number>1</number>
-</property>
-<property name="borderRadius">
-<number>5</number>
-</property>
-<property name="apparence">
-<enum>QFrame::Raised</enum>
-</property>
-</widget>
-</item>
-<item>
-<widget class="ATCMlabel" name="atcmLabel_enabled_wattmeters">
-<property name="enabled">
-<bool>false</bool>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="maximumSize">
-<size>
-<width>16777215</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="text">
-<string notr="true">xx</string>
-</property>
-<property name="toolTip">
-<string>PLC_control_type</string>
-</property>
-<property name="whatsThis">
-<string>ATCMlabel widget</string>
-</property>
-<property name="variable">
-<string>PLC_control_type</string>
-</property>
-<property name="prefix">
-<string>CT = </string>
-</property>
-<property name="suffix">
-<string/>
-</property>
-<property name="refresh">
-<number>200</number>
-</property>
-<property name="max">
-<string notr="true">0</string>
-</property>
-<property name="min">
-<string notr="true">0</string>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="fontColor">
-<color>
-<red>255</red>
-<green>170</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="bgSelectColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
-<item>
-<widget class="ATCMbutton" name="atcmButton_TEST">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="maximumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-<weight>50</weight>
-<bold>false</bold>
-</font>
-</property>
-<property name="checkable">
-<bool>false</bool>
-</property>
-<property name="toolTip">
-<string/>
-</property>
-<property name="whatsThis">
-<string>ATCMbutton widget</string>
-</property>
-<property name="pageName">
-<string>page046</string>
-</property>
-<property name="passwordVar">
-<string/>
-</property>
-<property name="statusvar">
-<string/>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>255</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="bgPressColor">
-<color>
-<red>255</red>
-<green>170</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="text">
-<string>TEST</string>
-</property>
-<property name="pressText">
-<string>TEST</string>
-</property>
-<property name="borderWidth">
-<number>1</number>
-</property>
-<property name="borderRadius">
-<number>5</number>
-</property>
-<property name="apparence">
-<enum>QFrame::Raised</enum>
-</property>
-</widget>
-</item>
-<item>
-<widget class="ATCMbutton" name="atcmButton_W">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="maximumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-<weight>50</weight>
-<bold>false</bold>
-</font>
-</property>
-<property name="iconSize">
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="checkable">
-<bool>false</bool>
-</property>
-<property name="toolTip">
-<string>page: page043e  status: </string>
-</property>
-<property name="whatsThis">
-<string>ATCMbutton widget</string>
-</property>
-<property name="pageName">
-<string>page043e</string>
-</property>
-<property name="passwordVar">
-<string/>
-</property>
-<property name="statusvar">
-<string/>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="borderColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="bgPressColor">
-<color>
-<red>255</red>
-<green>170</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="text">
-<string/>
-</property>
-<property name="pressText">
-<string/>
-</property>
-<property name="icon">
-<iconset resource="resources.qrc">
-<normaloff>:/icons/icons/Wattmeter.png</normaloff>:/icons/icons/Wattmeter.png</iconset>
-</property>
-<property name="borderWidth">
-<number>1</number>
-</property>
-<property name="borderRadius">
-<number>5</number>
-</property>
-<property name="apparence">
-<enum>QFrame::Raised</enum>
-</property>
-</widget>
-</item>
-<item>
-<widget class="ATCMtime" name="atcmTime">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
 <horstretch>0</horstretch>
 <verstretch>0</verstretch>
 </sizepolicy>
 </property>
 <property name="minimumSize">
 <size>
-<width>0</width>
-<height>50</height>
+<width>480</width>
+<height>72</height>
 </size>
 </property>
 <property name="maximumSize">
 <size>
 <width>16777215</width>
-<height>50</height>
+<height>90</height>
 </size>
 </property>
 <property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>14</pointsize>
-<weight>75</weight>
-<bold>true</bold>
-</font>
-</property>
-<property name="whatsThis">
-<string>ATCMtime widget</string>
-</property>
-<property name="bgColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="fontColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>1</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
-</item>
-<item>
-<widget class="ATCMbutton" name="atcmButton_back">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>24</pointsize>
-</font>
-</property>
-<property name="iconSize">
-<size>
-<width>32</width>
-<height>32</height>
-</size>
-</property>
-<property name="toolTip">
-<string/>
-</property>
-<property name="whatsThis">
-<string>ATCMbutton widget</string>
-</property>
-<property name="pageName">
-<string notr="true">page005</string>
-</property>
-<property name="statusvar">
-<string notr="true"/>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string notr="true"/>
-</property>
-<property name="bgColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="fontColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="bgPressColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="text">
-<string/>
-</property>
-<property name="pressText">
-<string/>
-</property>
-<property name="icon">
-<iconset resource="resources.qrc">
-<normaloff>:/icons/icons/System.png</normaloff>:/icons/icons/System.png</iconset>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
-<item>
-<widget class="ATCMbutton" name="atcmButton_home">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>50</width>
-<height>50</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>24</pointsize>
-</font>
-</property>
-<property name="toolTip">
-<string/>
-</property>
-<property name="whatsThis">
-<string>ATCMbutton widget</string>
-</property>
-<property name="pageName">
-<string notr="true">HOME</string>
-</property>
-<property name="statusvar">
-<string notr="true"/>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string notr="true"/>
-</property>
-<property name="bgColor">
-<color>
-<red>0</red>
-<green>0</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="fontColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="bgPressColor">
-<color>
-<red>255</red>
-<green>85</green>
-<blue>0</blue>
-</color>
-</property>
-<property name="text">
-<string>☰</string>
-</property>
-<property name="pressText">
-<string>☰</string>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
-</layout>
 </item>
 <item>
 <layout class="QGridLayout" name="gridLayout_device">
 <property name="spacing">
 <number>1</number>
 </property>
-<item row="1" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
-<property name="enabled">
-<bool>false</bool>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>158</width>
-<height>0</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="text">
-<string>nnnnnnnnn</string>
-</property>
-<property name="toolTip">
-<string>RTU3_READS</string>
-</property>
-<property name="whatsThis">
-<string>ATCMlabel widget</string>
-</property>
-<property name="variable">
-<string>RTU3_READS</string>
-</property>
-<property name="prefix">
-<string>rd: </string>
-</property>
-<property name="refresh">
-<number>500</number>
-</property>
-<property name="max">
-<string>0</string>
-</property>
-<property name="min">
-<string>0</string>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>170</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
 <item row="1" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
-<property name="enabled">
-<bool>false</bool>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>158</width>
-<height>0</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="text">
-<string>nnnnnnnnn</string>
-</property>
-<property name="toolTip">
-<string>RTU3_TIMEOUTS</string>
-</property>
-<property name="whatsThis">
-<string>ATCMlabel widget</string>
-</property>
-<property name="variable">
-<string>RTU3_TIMEOUTS</string>
-</property>
-<property name="prefix">
-<string>to: </string>
-</property>
-<property name="refresh">
-<number>500</number>
-</property>
-<property name="max">
-<string>0</string>
-</property>
-<property name="min">
-<string>0</string>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>170</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QLabel" name="label_RTU">
-<property name="minimumSize">
-<size>
-<width>158</width>
-<height>0</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-<weight>75</weight>
-<bold>true</bold>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">background-color: rgb(170, 255, 127);</string>
-</property>
-<property name="text">
-<string>RTU3 MPNC</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
-<property name="enabled">
-<bool>false</bool>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>158</width>
-<height>0</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="text">
-<string>nnnnnnnnn</string>
-</property>
-<property name="toolTip">
-<string>RTU3_WRITES</string>
-</property>
-<property name="whatsThis">
-<string>ATCMlabel widget</string>
-</property>
-<property name="variable">
-<string>RTU3_WRITES</string>
-</property>
-<property name="prefix">
-<string>wr: </string>
-</property>
-<property name="refresh">
-<number>500</number>
-</property>
-<property name="max">
-<string>0</string>
-</property>
-<property name="min">
-<string>0</string>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>170</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-</widget>
-</item>
-<item row="0" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
-<property name="enabled">
-<bool>false</bool>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>158</width>
-<height>0</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="toolTip">
-<string>RTU3_STATUS</string>
-</property>
-<property name="whatsThis">
-<string>ATCMcombobox widget</string>
-</property>
-<property name="variable">
-<string>RTU3_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
-</property>
-<property name="viewStatus">
-<bool>false</bool>
-</property>
-<property name="writeAcknowledge">
-<bool>false</bool>
-</property>
-<property name="visibilityVar">
-<string/>
-</property>
-<property name="bgColor">
-<color>
-<red>170</red>
-<green>255</green>
-<blue>127</blue>
-</color>
-</property>
-<property name="borderWidth">
-<number>0</number>
-</property>
-<property name="borderRadius">
-<number>0</number>
-</property>
-<property name="mapping">
-<string>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</string>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
 <widget class="ATCMlabel" name="atcmLabel_rtu0_load">
 <property name="enabled">
 <bool>false</bool>
@@ -919,7 +90,7 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="minimumSize">
 <size>
-<width>158</width>
+<width>143</width>
 <height>0</height>
 </size>
 </property>
@@ -977,7 +148,437 @@ background-color: rgb(0, 0, 0);
 </property>
 </widget>
 </item>
-<item row="2" column="1">
+<item row="0" column="4">
+<widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>143</width>
+<height>0</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="toolTip">
+<string>RTU3_STATUS</string>
+</property>
+<property name="whatsThis">
+<string>ATCMcombobox widget</string>
+</property>
+<property name="variable">
+<string>RTU3_STATUS</string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="writeAcknowledge">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+<property name="mapping">
+<string>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</string>
+</property>
+</widget>
+</item>
+<item row="1" column="4">
+<widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>143</width>
+<height>0</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="text">
+<string>nnnnnnnnn</string>
+</property>
+<property name="toolTip">
+<string>RTU3_READS</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>RTU3_READS</string>
+</property>
+<property name="prefix">
+<string>rd: </string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+</item>
+<item row="2" column="0">
+<widget class="ATCMled" name="atcmLed_1">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_T1</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_T1</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="2" column="4">
+<widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>143</width>
+<height>0</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="text">
+<string>nnnnnnnnn</string>
+</property>
+<property name="toolTip">
+<string>RTU3_WRITES</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>RTU3_WRITES</string>
+</property>
+<property name="prefix">
+<string>wr: </string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+</item>
+<item row="2" column="5">
+<widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>143</width>
+<height>0</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="text">
+<string>nnnnnnnnn</string>
+</property>
+<property name="toolTip">
+<string>RTU3_COMM_ERRORS</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>RTU3_COMM_ERRORS</string>
+</property>
+<property name="prefix">
+<string>ce: </string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+</item>
+<item row="0" column="5">
+<widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="minimumSize">
+<size>
+<width>143</width>
+<height>0</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="text">
+<string>xxxxx</string>
+</property>
+<property name="toolTip">
+<string>RTU3_BAUDRATE</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>RTU3_BAUDRATE</string>
+</property>
+<property name="suffix">
+<string> baud</string>
+</property>
+<property name="refresh">
+<number>500</number>
+</property>
+<property name="max">
+<string>0</string>
+</property>
+<property name="min">
+<string>0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>170</red>
+<green>255</green>
+<blue>127</blue>
+</color>
+</property>
+<property name="borderWidth">
+<number>0</number>
+</property>
+<property name="borderRadius">
+<number>0</number>
+</property>
+</widget>
+</item>
+<item row="0" column="0">
+<widget class="ATCMled" name="atcmLed_3">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_T3</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_T3</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="2" column="3">
 <widget class="ATCMlabel" name="atcmLabel_rtu0_load_2">
 <property name="enabled">
 <bool>false</bool>
@@ -990,7 +591,7 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="minimumSize">
 <size>
-<width>158</width>
+<width>143</width>
 <height>0</height>
 </size>
 </property>
@@ -1048,8 +649,8 @@ background-color: rgb(0, 0, 0);
 </property>
 </widget>
 </item>
-<item row="2" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+<item row="1" column="5">
+<widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1061,7 +662,7 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="minimumSize">
 <size>
-<width>158</width>
+<width>143</width>
 <height>0</height>
 </size>
 </property>
@@ -1075,16 +676,16 @@ background-color: rgb(0, 0, 0);
 <string>nnnnnnnnn</string>
 </property>
 <property name="toolTip">
-<string>RTU3_COMM_ERRORS</string>
+<string>RTU3_TIMEOUTS</string>
 </property>
 <property name="whatsThis">
 <string>ATCMlabel widget</string>
 </property>
 <property name="variable">
-<string>RTU3_COMM_ERRORS</string>
+<string>RTU3_TIMEOUTS</string>
 </property>
 <property name="prefix">
-<string>ce: </string>
+<string>to: </string>
 </property>
 <property name="refresh">
 <number>500</number>
@@ -1116,20 +717,59 @@ background-color: rgb(0, 0, 0);
 </property>
 </widget>
 </item>
-<item row="0" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
-<property name="enabled">
-<bool>false</bool>
-</property>
+<item row="1" column="0">
+<widget class="ATCMled" name="atcmLed_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
 <verstretch>0</verstretch>
 </sizepolicy>
 </property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_T2</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_T2</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="0" column="3">
+<widget class="QLabel" name="label_RTU">
 <property name="minimumSize">
 <size>
-<width>158</width>
+<width>143</width>
 <height>0</height>
 </size>
 </property>
@@ -1137,31 +777,204 @@ background-color: rgb(0, 0, 0);
 <font>
 <family>DejaVu Sans</family>
 <pointsize>8</pointsize>
+<weight>75</weight>
+<bold>true</bold>
 </font>
 </property>
+<property name="styleSheet">
+<string notr="true">background-color: rgb(170, 255, 127);</string>
+</property>
 <property name="text">
-<string>xxxxx</string>
+<string>RTU3 MPNC</string>
+</property>
+<property name="alignment">
+<set>Qt::AlignCenter</set>
+</property>
+</widget>
+</item>
+<item row="2" column="1">
+<widget class="ATCMled" name="atcmLed_4">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
 </property>
 <property name="toolTip">
-<string>RTU3_BAUDRATE</string>
+<string>PLC_Iam_T4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>ATCMled widget</string>
 </property>
 <property name="variable">
-<string>RTU3_BAUDRATE</string>
-</property>
-<property name="suffix">
-<string> baud</string>
+<string>PLC_Iam_T4</string>
 </property>
 <property name="refresh">
-<number>500</number>
+<number>200</number>
 </property>
-<property name="max">
-<string>0</string>
+<property name="viewStatus">
+<bool>false</bool>
 </property>
-<property name="min">
-<string>0</string>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="1" column="1">
+<widget class="ATCMled" name="atcmLed_5">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_T5</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_T5</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="0" column="1">
+<widget class="ATCMled" name="atcmLed_6">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_T6</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_T6</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
+</property>
+</widget>
+</item>
+<item row="2" column="2">
+<widget class="ATCMbutton" name="atcmButton_ResetValues">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+<weight>50</weight>
+<bold>false</bold>
+</font>
+</property>
+<property name="checkable">
+<bool>false</bool>
+</property>
+<property name="toolTip">
+<string>PLC_ResetValues</string>
+</property>
+<property name="whatsThis">
+<string>ATCMbutton widget</string>
+</property>
+<property name="pageName">
+<string/>
+</property>
+<property name="passwordVar">
+<string/>
+</property>
+<property name="statusvar">
+<string>PLC_ResetValues</string>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1171,9 +984,110 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="bgColor">
 <color>
-<red>170</red>
+<red>255</red>
 <green>255</green>
 <blue>127</blue>
+</color>
+</property>
+<property name="bgPressColor">
+<color>
+<red>255</red>
+<green>170</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="text">
+<string>ZERO</string>
+</property>
+<property name="pressText">
+<string>ZERO</string>
+</property>
+<property name="borderWidth">
+<number>1</number>
+</property>
+<property name="borderRadius">
+<number>5</number>
+</property>
+<property name="apparence">
+<enum>QFrame::Raised</enum>
+</property>
+</widget>
+</item>
+<item row="1" column="2">
+<widget class="ATCMlabel" name="atcmLabel_enabled_wattmeters">
+<property name="enabled">
+<bool>false</bool>
+</property>
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="font">
+<font>
+<family>DejaVu Sans</family>
+<pointsize>8</pointsize>
+</font>
+</property>
+<property name="text">
+<string notr="true">xx</string>
+</property>
+<property name="toolTip">
+<string>PLC_control_type</string>
+</property>
+<property name="whatsThis">
+<string>ATCMlabel widget</string>
+</property>
+<property name="variable">
+<string>PLC_control_type</string>
+</property>
+<property name="prefix">
+<string>CT=</string>
+</property>
+<property name="suffix">
+<string/>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="max">
+<string notr="true">0</string>
+</property>
+<property name="min">
+<string notr="true">0</string>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="bgColor">
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="fontColor">
+<color>
+<red>255</red>
+<green>170</green>
+<blue>0</blue>
+</color>
+</property>
+<property name="bgSelectColor">
+<color>
+<red>0</red>
+<green>0</green>
+<blue>0</blue>
 </color>
 </property>
 <property name="borderWidth">
@@ -1181,6 +1095,54 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="borderRadius">
 <number>0</number>
+</property>
+</widget>
+</item>
+<item row="0" column="2">
+<widget class="ATCMled" name="atcmLed_BA">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
+<property name="maximumSize">
+<size>
+<width>50</width>
+<height>16777215</height>
+</size>
+</property>
+<property name="toolTip">
+<string>PLC_Iam_BA</string>
+</property>
+<property name="whatsThis">
+<string>ATCMled widget</string>
+</property>
+<property name="variable">
+<string>PLC_Iam_BA</string>
+</property>
+<property name="refresh">
+<number>200</number>
+</property>
+<property name="viewStatus">
+<bool>false</bool>
+</property>
+<property name="visibilityVar">
+<string/>
+</property>
+<property name="onIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedYellow.png</normaloff>:/systemicons/LedYellow.png</iconset>
+</property>
+<property name="offIcon">
+<iconset resource="systemicons.qrc">
+<normaloff>:/systemicons/LedGrey.png</normaloff>:/systemicons/LedGrey.png</iconset>
+</property>
+<property name="font">
+ <font>
+  <family>DejaVu Sans</family>
+  <pointsize>8</pointsize>
+ </font>
 </property>
 </widget>
 </item>
@@ -2374,6 +2336,12 @@ background-color: rgb(0, 0, 0);
 <layout class="QGridLayout" name="gridLayout">
 <item row="1" column="5">
 <widget class="ATCMled" name="atcmLed_DigIn_5">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_5</string>
 </property>
@@ -2410,6 +2378,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="6">
 <widget class="ATCMled" name="atcmLed_DigIn_6">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_6</string>
 </property>
@@ -2446,6 +2420,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="1">
 <widget class="ATCMled" name="atcmLed_DigDir_2">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_2</string>
 </property>
@@ -2482,6 +2462,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="7">
 <widget class="ATCMled" name="atcmLed_DigIn_7">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_7</string>
 </property>
@@ -2518,6 +2504,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="8">
 <widget class="ATCMled" name="atcmLed_DigIn_8">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_8</string>
 </property>
@@ -2554,6 +2546,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="0">
 <widget class="ATCMled" name="atcmLed_DigDir_1">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_1</string>
 </property>
@@ -2590,6 +2588,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="0">
 <widget class="ATCMled" name="atcmLed_DigIn_1">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_1</string>
 </property>
@@ -2626,6 +2630,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="6">
 <widget class="ATCMled" name="atcmLed_DigDir_6">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_6</string>
 </property>
@@ -2662,6 +2672,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="7">
 <widget class="ATCMled" name="atcmLed_DigDir_7">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_7</string>
 </property>
@@ -2698,6 +2714,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="3">
 <widget class="ATCMled" name="atcmLed_DigDir_4">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_4</string>
 </property>
@@ -2734,6 +2756,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="5">
 <widget class="ATCMled" name="atcmLed_DigDir_5">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_5</string>
 </property>
@@ -2770,6 +2798,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="2">
 <widget class="ATCMled" name="atcmLed_DigDir_3">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_3</string>
 </property>
@@ -2806,6 +2840,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="2">
 <widget class="ATCMled" name="atcmLed_DigIn_3">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_3</string>
 </property>
@@ -2842,6 +2882,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="1">
 <widget class="ATCMled" name="atcmLed_DigIn_2">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_2</string>
 </property>
@@ -2878,6 +2924,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="0" column="8">
 <widget class="ATCMled" name="atcmLed_DigDir_8">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigDir_8</string>
 </property>
@@ -2914,6 +2966,12 @@ background-color: rgb(0, 0, 0);
 </item>
 <item row="1" column="3">
 <widget class="ATCMled" name="atcmLed_DigIn_4">
+<property name="sizePolicy">
+<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+<horstretch>0</horstretch>
+<verstretch>0</verstretch>
+</sizepolicy>
+</property>
 <property name="toolTip">
 <string>MPNC_DigIn_4</string>
 </property>
@@ -3063,71 +3121,16 @@ background-color: rgb(0, 0, 0);
 <header>atcmplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMtime</class>
-<extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<class>HeaderPanel</class>
+<extends>QWidget</extends>
+<header>headerpanel.h</header>
+<container>1</container>
 </customwidget>
 </customwidgets>
 <resources>
-<include location="resources.qrc"/>
 <include location="systemicons.qrc"/>
 </resources>
-<connections>
-<connection>
-<sender>atcmButton_back</sender>
-<signal>newPage(const char*,bool)</signal>
-<receiver>page047</receiver>
-<slot>goto_page(const char*,bool)</slot>
-<hints>
-<hint type="sourcelabel">
-<x>20</x>
-<y>20</y>
-</hint>
-<hint type="destinationlabel">
-<x>20</x>
-<y>20</y>
-</hint>
-</hints>
-</connection>
-<connection>
-<sender>atcmButton_home</sender>
-<signal>newPage(const char*,bool)</signal>
-<receiver>page047</receiver>
-<slot>goto_page(const char*,bool)</slot>
-<hints>
-<hint type="sourcelabel">
-<x>20</x>
-<y>20</y>
-</hint>
-<hint type="destinationlabel">
-<x>20</x>
-<y>20</y>
-</hint>
-</hints>
-</connection>
-<connection>
-<sender>atcmButton_TEST</sender>
-<signal>newPage(const char*,bool)</signal>
-<receiver>page047</receiver>
-<slot>goto_page(const char*,bool)</slot>
-<hints>
-<hint type="sourcelabel">
-<x>20</x>
-<y>20</y>
-</hint>
-<hint type="destinationlabel">
-<x>20</x>
-<y>20</y>
-</hint>
-</hints>
-</connection>
-  <connection>
-   <sender>atcmButton_W</sender>
-   <signal>newPage(const char*,bool)</signal>
-   <receiver>page047</receiver>
-   <slot>goto_page(const char*,bool)</slot>
-  </connection>
- </connections>
+<connections/>
 <slots>
 <slot>goto_page(const char*,bool)</slot>
 </slots>

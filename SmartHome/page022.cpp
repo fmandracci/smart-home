@@ -35,18 +35,35 @@ page022::page022(QWidget *parent) :
     ui(new Ui::page022)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
-
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
     value_ms = 0;
     status = IDLE;
 }
 
 void page022::reload()
 {
+    changeWidgets();
     updateTimer();
     updateWidgets();
+}
+
+void page022::updateData()
+{
+    if (not this->isVisible()) {
+        return;
+    }
+    page::updateData();
+
+    updateTimer();
+    updateWidgets();
+}
+
+void page022::changeWidgets()
+{
+    ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page022: chrono");
 }
 
 void page022::updateTimer()
@@ -57,7 +74,7 @@ void page022::updateTimer()
     switch (status) {
     case RUNNING:
         value_ms += timer.restart();
-        // no break;
+        // fall through
     case IDLE:
     case PAUSED:
         hhmmss = time.addMSecs(value_ms).toString("HH:mm:ss");
@@ -70,11 +87,7 @@ void page022::updateTimer()
 
 void page022::updateWidgets()
 {
-    updateLedLabels(ui->label_EP, ui->label_BA, ui->label_green,
-                    ui->label_T5, ui->label_T6, ui->label_red,
-                    ui->label_T3, ui->label_T4, ui->label_yellow_1,
-                    ui->label_T1, ui->label_T2, ui->label_yellow_2);
-    ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+    ui->headerPanel->updateWidgets();
 
     switch (status) {
     case IDLE:
@@ -92,17 +105,6 @@ void page022::updateWidgets()
     default:
         ;
     }
-}
-
-void page022::updateData()
-{
-    if (not this->isVisible()) {
-        return;
-    }
-    page::updateData();
-
-    updateTimer();
-    updateWidgets();
 }
 
 void page022::timerEvent(QTimerEvent *event)

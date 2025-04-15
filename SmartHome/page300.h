@@ -58,6 +58,8 @@ private slots:
 
 private:
     Ui::page300 *ui;
+    void changeWidgets();
+    void updateWidgets();
     void setupRelay(QPushButton *button, QLabel *label, int n);
     void updateRelay(QPushButton *button, int n, int value);
 };

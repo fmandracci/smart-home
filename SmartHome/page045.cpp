@@ -33,13 +33,15 @@ page045::page045(QWidget *parent) :
     ui(new Ui::page045)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page045::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page045 MPNE AB");
 }
 
 void page045::updateData()
@@ -48,7 +50,7 @@ void page045::updateData()
         return;
     }
     page::updateData();
-
+    ui->headerPanel->updateWidgets();
 }
 
 void page045::changeEvent(QEvent * event)
@@ -63,4 +65,3 @@ page045::~page045()
 {
     delete ui;
 }
-

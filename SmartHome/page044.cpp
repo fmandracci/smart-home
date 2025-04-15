@@ -33,13 +33,15 @@ page044::page044(QWidget *parent) :
     ui(new Ui::page044)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page044::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page044 Tn ARQ01");
     variableList.clear();
     variableList << "ARQ_Parity" << "ARQ_Setup";
 }
@@ -50,7 +52,7 @@ void page044::updateData()
         return;
     }
     page::updateData();
-
+    ui->headerPanel->updateWidgets();
 }
 
 void page044::changeEvent(QEvent * event)
@@ -65,4 +67,3 @@ page044::~page044()
 {
     delete ui;
 }
-

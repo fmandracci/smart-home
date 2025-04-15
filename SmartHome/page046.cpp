@@ -35,13 +35,22 @@ page046::page046(QWidget *parent) :
     ui(new Ui::page046)
 {
     ui->setupUi(this);
-#ifndef QT_KNOWS_THE_DPI_VALUE
-    translateFontSize(this);
+#ifdef USE_TRANSLATEFONTSIZE
+    HeaderLeds::translateFontSize(this);
 #endif
+    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
 void page046::reload()
 {
+    ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
+    if (PLC_Iam_BA) {
+        ui->pushButton_Test->setText("TEST");
+        ui->pushButton_Test->setEnabled(true);
+    } else {
+        ui->pushButton_Test->setText("(test)");
+        ui->pushButton_Test->setEnabled(false);
+    }
 }
 
 void page046::updateData()
@@ -50,6 +59,7 @@ void page046::updateData()
         return;
     }
     page::updateData();
+    ui->headerPanel->updateWidgets();
 }
 
 void page046::changeEvent(QEvent * event)
@@ -80,5 +90,8 @@ void page046::on_pushButton_Test_toggled(bool checked)
             ui->pushButton_Test->setText("TEST");
         }
         endWrite();
+    } else {
+        if (checked)
+            ui->pushButton_Test->setChecked(false);
     }
 }
