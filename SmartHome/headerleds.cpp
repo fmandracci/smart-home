@@ -8,9 +8,7 @@ HeaderLeds::HeaderLeds(QWidget *parent) :
     ui(new Ui::HeaderLeds)
 {
     ui->setupUi(this);
-#ifdef USE_TRANSLATEFONTSIZE
-    translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
 }
 
 void HeaderLeds::translateFontSize( QWidget *ui )

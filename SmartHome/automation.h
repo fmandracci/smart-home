@@ -28,7 +28,8 @@
 #include "hmi_logger.h"
 #include "global_functions.h"
 
-#define USE_TRANSLATEFONTSIZE
+#include "headerleds.h"
+#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
 #define HOME_INI_FILE "/local/root/home.ini"
 
 #define XX_PIXMAP ":/systemicons/Equipment.png"
@@ -38,7 +39,6 @@
 #define TH_PIXMAP ":/icons/icons/HeatCool.png"
 #define LM_PIXMAP ":/icons/icons/LampIcon.png"
 #define BA_PIXMAP ":/icons/icons/Antifurto.png"
-
 
 // vedi plc/Resource1.cst
 
@@ -192,17 +192,10 @@ extern int currentWattmeter;
 
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
-#ifdef USE_TRANSLATEFONTSIZE
 #define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
 #define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
 #define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize)
 #define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
-#else
-#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
-#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
-#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize * mectFontCorrector, 0, 'f', 0)
-#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize * mectFontCorrector, 0, 'f', 0)
-#endif
 
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 

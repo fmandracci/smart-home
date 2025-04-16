@@ -11,9 +11,7 @@ HeaderPanel::HeaderPanel(QWidget *parent) :
     trend()
 {
     ui->setupUi(this);
-#ifdef USE_TRANSLATEFONTSIZE
-    HeaderLeds::translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
 }
 
 bool HeaderPanel::goto_page(const char *page, bool remember)

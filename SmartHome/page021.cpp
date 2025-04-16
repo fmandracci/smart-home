@@ -35,9 +35,7 @@ page021::page021(QWidget *parent) :
     ui(new Ui::page021)
 {
     ui->setupUi(this);
-#ifdef USE_TRANSLATEFONTSIZE
-    translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 
     resetTimer_1(TimerValue_1);
