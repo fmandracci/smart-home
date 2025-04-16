@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-<class>page500</class>
-<widget class="QWidget" name="page500">
-<property name="geometry">
-<rect>
-<x>0</x>
-<y>0</y>
-<width>480</width>
-<height>272</height>
-</rect>
-</property>
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>272</width>
-<height>272</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>1280</width>
-<height>1280</height>
-</size>
-</property>
-<property name="windowTitle">
-<string notr="true">page500</string>
-</property>
-<property name="styleSheet">
-<string notr="true">QWidget#page500
+ <class>page500</class>
+ <widget class="QWidget" name="page500">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>272</width>
+    <height>272</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>1280</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">page500</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#page500
 {
 background-color: rgb(0, 0, 0);
 }
@@ -48,2584 +48,2578 @@ QPushButton:pressed
 background-color: rgb(255, 255, 0);
 border: none;
 }</string>
-</property>
-<layout class="QVBoxLayout" name="verticalLayout">
-<property name="spacing">
-<number>0</number>
-</property>
-<property name="margin">
-<number>0</number>
-</property>
-<item>
-<widget class="HeaderPanel" name="headerPanel" native="true">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>480</width>
-<height>72</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>16777215</width>
-<height>90</height>
-</size>
-</property>
-<property name="font">
- <font>
-  <family>DejaVu Sans</family>
-  <pointsize>8</pointsize>
- </font>
-</property>
-</widget>
-</item>
-<item>
-<spacer name="verticalSpacer_top">
-<property name="orientation">
-<enum>Qt::Vertical</enum>
-</property>
-<property name="sizeType">
-<enum>QSizePolicy::MinimumExpanding</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>0</width>
-<height>0</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QGridLayout" name="gridLayout">
-<property name="topMargin">
-<number>0</number>
-</property>
-<property name="spacing">
-<number>1</number>
-</property>
-<item row="1" column="3">
-<widget class="QPushButton" name="pushButton_RINGING">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>RINGING</string>
-</property>
-</widget>
-</item>
-<item row="0" column="0">
-<widget class="QPushButton" name="pushButton_OFF">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>OFF</string>
-</property>
-</widget>
-</item>
-<item row="1" column="0">
-<widget class="QPushButton" name="pushButton_TESTING">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>TESTING</string>
-</property>
-</widget>
-</item>
-<item row="0" column="3">
-<widget class="QPushButton" name="pushButton_NIGHTTIME">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>NIGHTTIME</string>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QPushButton" name="pushButton_DAYTIME">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>DAYTIME</string>
-</property>
-</widget>
-</item>
-<item row="0" column="4">
-<widget class="QPushButton" name="pushButton_EVERYTHING">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>EVERYTHING</string>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
-<widget class="QPushButton" name="pushButton_ENABLED">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>ENABLED</string>
-</property>
-</widget>
-</item>
-<item row="1" column="4">
-<widget class="QPushButton" name="pushButton_MUTED">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>0</width>
-<height>36</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>320</width>
-<height>100</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="focusPolicy">
-<enum>Qt::NoFocus</enum>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>MUTED</string>
-</property>
-</widget>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="verticalSpacer_middle">
-<property name="orientation">
-<enum>Qt::Vertical</enum>
-</property>
-<property name="sizeType">
-<enum>QSizePolicy::MinimumExpanding</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>0</width>
-<height>0</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QHBoxLayout" name="horizontalLayout_4">
-<property name="leftMargin">
-<number>0</number>
-</property>
-<property name="rightMargin">
-<number>0</number>
-</property>
-<item>
-<spacer name="horizontalSpacer_2">
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>40</width>
-<height>20</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QGridLayout" name="gridLayout_1_8">
-<property name="margin">
-<number>3</number>
-</property>
-<property name="spacing">
-<number>3</number>
-</property>
-<item row="7" column="1">
-<widget class="QLabel" name="label_sensor_07">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
-<widget class="QLabel" name="label_sensor_02">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="1">
-<widget class="QLabel" name="label_sensor_06">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="1">
-<widget class="QLabel" name="label_sensor_05">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="1">
-<widget class="QLabel" name="label_sensor_04">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QLabel" name="label_sensor_01">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="1">
-<widget class="QLabel" name="label_sensor_03">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="1">
-<widget class="QLabel" name="label_sensor_08">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="4" column="1">
-<widget class="Line" name="line_4_5">
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="frameShadow">
-<enum>QFrame::Plain</enum>
-</property>
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-</widget>
-</item>
-<item row="0" column="0">
-<widget class="QLabel" name="label_BA_OK_01">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="0">
-<widget class="QLabel" name="label_BA_OK_02">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="0">
-<widget class="QLabel" name="label_BA_OK_03">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="0">
-<widget class="QLabel" name="label_BA_OK_04">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="0">
-<widget class="QLabel" name="label_BA_OK_05">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="0">
-<widget class="QLabel" name="label_BA_OK_06">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="0">
-<widget class="QLabel" name="label_BA_OK_07">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="0">
-<widget class="QLabel" name="label_BA_OK_08">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="horizontalSpacer_4">
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>40</width>
-<height>20</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QGridLayout" name="gridLayout_9_16">
-<property name="margin">
-<number>3</number>
-</property>
-<property name="spacing">
-<number>3</number>
-</property>
-<item row="5" column="1">
-<widget class="QLabel" name="label_sensor_13">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="1">
-<widget class="QLabel" name="label_sensor_11">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="1">
-<widget class="QLabel" name="label_sensor_12">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QLabel" name="label_sensor_09">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
-<widget class="QLabel" name="label_sensor_10">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="1">
-<widget class="QLabel" name="label_sensor_14">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="1">
-<widget class="QLabel" name="label_sensor_15">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="9" column="1">
-<widget class="QLabel" name="label_sensor_16">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="4" column="1">
-<widget class="Line" name="line_12_13">
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="frameShadow">
-<enum>QFrame::Plain</enum>
-</property>
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-</widget>
-</item>
-<item row="0" column="0">
-<widget class="QLabel" name="label_BA_OK_09">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="0">
-<widget class="QLabel" name="label_BA_OK_10">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="0">
-<widget class="QLabel" name="label_BA_OK_11">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="0">
-<widget class="QLabel" name="label_BA_OK_12">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="0">
-<widget class="QLabel" name="label_BA_OK_13">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="0">
-<widget class="QLabel" name="label_BA_OK_14">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="0">
-<widget class="QLabel" name="label_BA_OK_15">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="9" column="0">
-<widget class="QLabel" name="label_BA_OK_16">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="horizontalSpacer_3">
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>40</width>
-<height>20</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QGridLayout" name="gridLayout_17_24">
-<property name="margin">
-<number>3</number>
-</property>
-<property name="spacing">
-<number>3</number>
-</property>
-<item row="6" column="1">
-<widget class="QLabel" name="label_sensor_22">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="1">
-<widget class="QLabel" name="label_sensor_20">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="1">
-<widget class="QLabel" name="label_sensor_24">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="1">
-<widget class="QLabel" name="label_sensor_21">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="1">
-<widget class="QLabel" name="label_sensor_23">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QLabel" name="label_sensor_17">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
-<widget class="QLabel" name="label_sensor_18">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="1">
-<widget class="QLabel" name="label_sensor_19">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="4" column="1">
-<widget class="Line" name="line_20_21">
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="frameShadow">
-<enum>QFrame::Plain</enum>
-</property>
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-</widget>
-</item>
-<item row="0" column="0">
-<widget class="QLabel" name="label_BA_OK_17">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="0">
-<widget class="QLabel" name="label_BA_OK_18">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="0">
-<widget class="QLabel" name="label_BA_OK_19">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="0">
-<widget class="QLabel" name="label_BA_OK_20">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="0">
-<widget class="QLabel" name="label_BA_OK_21">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="0">
-<widget class="QLabel" name="label_BA_OK_22">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="0">
-<widget class="QLabel" name="label_BA_OK_23">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="0">
-<widget class="QLabel" name="label_BA_OK_24">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="horizontalSpacer_5">
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>40</width>
-<height>20</height>
-</size>
-</property>
-</spacer>
-</item>
-<item>
-<layout class="QGridLayout" name="gridLayout_25_32">
-<property name="margin">
-<number>3</number>
-</property>
-<property name="spacing">
-<number>3</number>
-</property>
-<item row="3" column="1">
-<widget class="QLabel" name="label_sensor_28">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="1">
-<widget class="QLabel" name="label_sensor_27">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="0" column="1">
-<widget class="QLabel" name="label_sensor_25">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="1">
-<widget class="QLabel" name="label_sensor_26">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="1">
-<widget class="QLabel" name="label_sensor_29">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="1">
-<widget class="QLabel" name="label_sensor_30">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="1">
-<widget class="QLabel" name="label_sensor_31">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="1">
-<widget class="QLabel" name="label_sensor_32">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>7</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string>nn = A/B mm </string>
-</property>
-<property name="alignment">
-<set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-</property>
-</widget>
-</item>
-<item row="4" column="1">
-<widget class="Line" name="line_28_29">
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>8</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="frameShadow">
-<enum>QFrame::Plain</enum>
-</property>
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-</widget>
-</item>
-<item row="0" column="0">
-<widget class="QLabel" name="label_BA_OK_25">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="1" column="0">
-<widget class="QLabel" name="label_BA_OK_26">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="2" column="0">
-<widget class="QLabel" name="label_BA_OK_27">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="3" column="0">
-<widget class="QLabel" name="label_BA_OK_28">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="5" column="0">
-<widget class="QLabel" name="label_BA_OK_29">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="6" column="0">
-<widget class="QLabel" name="label_BA_OK_30">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="7" column="0">
-<widget class="QLabel" name="label_BA_OK_31">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-<item row="8" column="0">
-<widget class="QLabel" name="label_BA_OK_32">
-<property name="sizePolicy">
-<sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-<horstretch>0</horstretch>
-<verstretch>0</verstretch>
-</sizepolicy>
-</property>
-<property name="minimumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="maximumSize">
-<size>
-<width>15</width>
-<height>15</height>
-</size>
-</property>
-<property name="font">
-<font>
-<family>DejaVu Sans</family>
-<pointsize>11</pointsize>
-</font>
-</property>
-<property name="styleSheet">
-<string notr="true">color: rgb(255, 255, 255);</string>
-</property>
-<property name="text">
-<string notr="true">●</string>
-</property>
-<property name="alignment">
-<set>Qt::AlignCenter</set>
-</property>
-</widget>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="horizontalSpacer">
-<property name="orientation">
-<enum>Qt::Horizontal</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>40</width>
-<height>20</height>
-</size>
-</property>
-</spacer>
-</item>
-</layout>
-</item>
-<item>
-<spacer name="verticalSpacer_bottom">
-<property name="orientation">
-<enum>Qt::Vertical</enum>
-</property>
-<property name="sizeType">
-<enum>QSizePolicy::MinimumExpanding</enum>
-</property>
-<property name="sizeHint" stdset="0">
-<size>
-<width>0</width>
-<height>0</height>
-</size>
-</property>
-</spacer>
-</item>
-</layout>
-</widget>
-<customwidgets>
-<customwidget>
-<class>HeaderPanel</class>
-<extends>QWidget</extends>
-<header>headerpanel.h</header>
-<container>1</container>
-</customwidget>
-</customwidgets>
-<resources/>
-<connections/>
-<slots>
-<slot>goto_page(const char*,bool)</slot>
-</slots>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="HeaderPanel" name="headerPanel" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>480</width>
+       <height>72</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>90</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_top">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton_RINGING">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>RINGING</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_OFF">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_TESTING">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>TESTING</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_NIGHTTIME">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>NIGHTTIME</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_DAYTIME">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>DAYTIME</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_EVERYTHING">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>EVERYTHING</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_ENABLED">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ENABLED</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="pushButton_MUTED">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>320</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>MUTED</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_middle">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_1_8">
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_sensor_07">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_sensor_02">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_sensor_06">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_sensor_05">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_sensor_04">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_sensor_01">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_sensor_03">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_sensor_08">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Line" name="line_4_5">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_BA_OK_01">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_BA_OK_02">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_BA_OK_03">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_BA_OK_04">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_BA_OK_05">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_BA_OK_06">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_BA_OK_07">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_BA_OK_08">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_9_16">
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_sensor_13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_sensor_11">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_sensor_12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_sensor_09">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_sensor_10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_sensor_14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_sensor_15">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_sensor_16">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Line" name="line_12_13">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_BA_OK_09">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_BA_OK_10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_BA_OK_11">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_BA_OK_12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_BA_OK_13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_BA_OK_14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_BA_OK_15">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_BA_OK_16">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_17_24">
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_sensor_22">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_sensor_20">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_sensor_24">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_sensor_21">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_sensor_23">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_sensor_17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_sensor_18">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_sensor_19">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Line" name="line_20_21">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_BA_OK_17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_BA_OK_18">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_BA_OK_19">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_BA_OK_20">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_BA_OK_21">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_BA_OK_22">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_BA_OK_23">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_BA_OK_24">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_25_32">
+       <property name="margin">
+        <number>3</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_sensor_28">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_sensor_27">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_sensor_25">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_sensor_26">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_sensor_29">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_sensor_30">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_sensor_31">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_sensor_32">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>nn = A/B mm </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Line" name="line_28_29">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_BA_OK_25">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_BA_OK_26">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_BA_OK_27">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_BA_OK_28">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_BA_OK_29">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_BA_OK_30">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_BA_OK_31">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_BA_OK_32">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">●</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_bottom">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HeaderPanel</class>
+   <extends>QWidget</extends>
+   <header>headerpanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>goto_page(const char*,bool)</slot>
+ </slots>
 </ui>

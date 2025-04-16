@@ -12796,6 +12796,76 @@ u_int32_t QcPm_ActiveEnergy_0 = 0;
 
 
 /*
+ * Variable PLC_nBACKLIGHT	[ Backlight dimming value (0 ON 100 OFF) ]
+ */
+
+u_int8_t PLC_nBACKLIGHT = 0;
+
+
+/*
+ * Variable PLC_CPU_TEMP	[ CPU temperature in degrees Celsius ]
+ */
+
+int16_t PLC_CPU_TEMP = 0;
+
+
+/*
+ * Variable PLC_LPC_ERRORS_COUNT	[ LPC communication errors counter ]
+ */
+
+u_int32_t PLC_LPC_ERRORS_COUNT = 0;
+
+
+/*
+ * Variable PLC_LPC_ERRORS_MASK	[ LPC communication errors mask ]
+ */
+
+u_int32_t PLC_LPC_ERRORS_MASK = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_3	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_3 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_4	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_4 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_5	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_5 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_6	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_6 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_7	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_7 = 0;
+
+
+/*
+ * Variable PLC_LPC_RESERVED_8	[ reserved ]
+ */
+
+u_int32_t PLC_LPC_RESERVED_8 = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -47279,6 +47349,186 @@ getStatus_QcPm_ActiveEnergy_0(void)
 }
 
 int
+doWrite_PLC_nBACKLIGHT(u_int8_t value)
+{
+	return doWrite(ID_PLC_nBACKLIGHT, &value);
+}
+
+int
+addWrite_PLC_nBACKLIGHT(u_int8_t value)
+{
+	return addWrite(ID_PLC_nBACKLIGHT, &value);
+}
+
+int
+getStatus_PLC_nBACKLIGHT(void)
+{
+	return getStatus(ID_PLC_nBACKLIGHT);
+}
+
+int
+doWrite_PLC_CPU_TEMP(int16_t value)
+{
+	return doWrite(ID_PLC_CPU_TEMP, &value);
+}
+
+int
+addWrite_PLC_CPU_TEMP(int16_t value)
+{
+	return addWrite(ID_PLC_CPU_TEMP, &value);
+}
+
+int
+getStatus_PLC_CPU_TEMP(void)
+{
+	return getStatus(ID_PLC_CPU_TEMP);
+}
+
+int
+doWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_ERRORS_COUNT, &value);
+}
+
+int
+addWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_ERRORS_COUNT, &value);
+}
+
+int
+getStatus_PLC_LPC_ERRORS_COUNT(void)
+{
+	return getStatus(ID_PLC_LPC_ERRORS_COUNT);
+}
+
+int
+doWrite_PLC_LPC_ERRORS_MASK(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_ERRORS_MASK, &value);
+}
+
+int
+addWrite_PLC_LPC_ERRORS_MASK(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_ERRORS_MASK, &value);
+}
+
+int
+getStatus_PLC_LPC_ERRORS_MASK(void)
+{
+	return getStatus(ID_PLC_LPC_ERRORS_MASK);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_3(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_3, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_3(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_3, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_3(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_3);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_4(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_4, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_4(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_4, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_4(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_4);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_5(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_5, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_5(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_5, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_5(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_5);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_6(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_6, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_6(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_6, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_6(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_6);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_7(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_7, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_7(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_7, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_7(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_7);
+}
+
+int
+doWrite_PLC_LPC_RESERVED_8(u_int32_t value)
+{
+	return doWrite(ID_PLC_LPC_RESERVED_8, &value);
+}
+
+int
+addWrite_PLC_LPC_RESERVED_8(u_int32_t value)
+{
+	return addWrite(ID_PLC_LPC_RESERVED_8, &value);
+}
+
+int
+getStatus_PLC_LPC_RESERVED_8(void)
+{
+	return getStatus(ID_PLC_LPC_RESERVED_8);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -53356,6 +53606,16 @@ update_all(void)
 	retval += readFromDb(ID_QcPm_ApparentPower_0, &QcPm_ApparentPower_0);
 	retval += readFromDb(ID_QcPm_PowerFactor_0, &QcPm_PowerFactor_0);
 	retval += readFromDb(ID_QcPm_ActiveEnergy_0, &QcPm_ActiveEnergy_0);
+	retval += readFromDb(ID_PLC_nBACKLIGHT, &PLC_nBACKLIGHT);
+	retval += readFromDb(ID_PLC_CPU_TEMP, &PLC_CPU_TEMP);
+	retval += readFromDb(ID_PLC_LPC_ERRORS_COUNT, &PLC_LPC_ERRORS_COUNT);
+	retval += readFromDb(ID_PLC_LPC_ERRORS_MASK, &PLC_LPC_ERRORS_MASK);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_3, &PLC_LPC_RESERVED_3);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_4, &PLC_LPC_RESERVED_4);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_5, &PLC_LPC_RESERVED_5);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_6, &PLC_LPC_RESERVED_6);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_7, &PLC_LPC_RESERVED_7);
+	retval += readFromDb(ID_PLC_LPC_RESERVED_8, &PLC_LPC_RESERVED_8);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);

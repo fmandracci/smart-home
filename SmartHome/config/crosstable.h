@@ -10978,6 +10978,66 @@ int doWrite_QcPm_ActiveEnergy_0(u_int32_t value);
 int addWrite_QcPm_ActiveEnergy_0(u_int32_t value);
 int getStatus_QcPm_ActiveEnergy_0(void);
 
+#define ID_PLC_nBACKLIGHT 4989
+extern u_int8_t PLC_nBACKLIGHT;	/* Backlight dimming value (0 ON 100 OFF) */
+int doWrite_PLC_nBACKLIGHT(u_int8_t value);
+int addWrite_PLC_nBACKLIGHT(u_int8_t value);
+int getStatus_PLC_nBACKLIGHT(void);
+
+#define ID_PLC_CPU_TEMP 4990
+extern int16_t PLC_CPU_TEMP;	/* CPU temperature in degrees Celsius */
+int doWrite_PLC_CPU_TEMP(int16_t value);
+int addWrite_PLC_CPU_TEMP(int16_t value);
+int getStatus_PLC_CPU_TEMP(void);
+
+#define ID_PLC_LPC_ERRORS_COUNT 4991
+extern u_int32_t PLC_LPC_ERRORS_COUNT;	/* LPC communication errors counter */
+int doWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value);
+int addWrite_PLC_LPC_ERRORS_COUNT(u_int32_t value);
+int getStatus_PLC_LPC_ERRORS_COUNT(void);
+
+#define ID_PLC_LPC_ERRORS_MASK 4992
+extern u_int32_t PLC_LPC_ERRORS_MASK;	/* LPC communication errors mask */
+int doWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
+int addWrite_PLC_LPC_ERRORS_MASK(u_int32_t value);
+int getStatus_PLC_LPC_ERRORS_MASK(void);
+
+#define ID_PLC_LPC_RESERVED_3 4993
+extern u_int32_t PLC_LPC_RESERVED_3;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_3(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_3(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_3(void);
+
+#define ID_PLC_LPC_RESERVED_4 4994
+extern u_int32_t PLC_LPC_RESERVED_4;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_4(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_4(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_4(void);
+
+#define ID_PLC_LPC_RESERVED_5 4995
+extern u_int32_t PLC_LPC_RESERVED_5;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_5(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_5(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_5(void);
+
+#define ID_PLC_LPC_RESERVED_6 4996
+extern u_int32_t PLC_LPC_RESERVED_6;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_6(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_6(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_6(void);
+
+#define ID_PLC_LPC_RESERVED_7 4997
+extern u_int32_t PLC_LPC_RESERVED_7;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_7(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_7(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_7(void);
+
+#define ID_PLC_LPC_RESERVED_8 4998
+extern u_int32_t PLC_LPC_RESERVED_8;	/* reserved */
+int doWrite_PLC_LPC_RESERVED_8(u_int32_t value);
+int addWrite_PLC_LPC_RESERVED_8(u_int32_t value);
+int getStatus_PLC_LPC_RESERVED_8(void);
+
 #define ID_RTU0_TYPE_PORT 5000
 extern u_int32_t RTU0_TYPE_PORT;
 int doWrite_RTU0_TYPE_PORT(u_int32_t value);

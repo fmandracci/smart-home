@@ -4986,16 +4986,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RW]Backlight dimming value (0 ON 100 OFF)
+1;P;PLC_CPU_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]CPU temperature in degrees Celsius
+1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors counter
+1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors mask
+1;P;PLC_LPC_RESERVED_3             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_4             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_5             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_6             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_7             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_8             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
 ;;;;;;;;;;;;
 1;P;RTU0_TYPE_PORT                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5000;10  ;[RO]
 1;P;RTU0_BAUDRATE                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5000;10  ;[RO]

@@ -1823,6 +1823,16 @@ VAR_GLOBAL
 	QcPm_ApparentPower_0 AT %IW0.18820:INT;	(* QC-PM485 xxxx VA *)
 	QcPm_PowerFactor_0 AT %IW0.18824:INT;	(* QC-PM485 x.xxx *)
 	QcPm_ActiveEnergy_0 AT %ID0.18828:UDINT;	(* QC-PM485 xxxxxxxx.xx kWh *)
+	PLC_nBACKLIGHT AT %QB0.19956:BYTE;	(* Backlight dimming value (0 ON 100 OFF) *)
+	PLC_CPU_TEMP AT %IW0.19960:INT;	(* CPU temperature in degrees Celsius *)
+	PLC_LPC_ERRORS_COUNT AT %ID0.19964:UDINT;	(* LPC communication errors counter *)
+	PLC_LPC_ERRORS_MASK AT %ID0.19968:UDINT;	(* LPC communication errors mask *)
+	PLC_LPC_RESERVED_3 AT %ID0.19972:UDINT;	(* reserved *)
+	PLC_LPC_RESERVED_4 AT %ID0.19976:UDINT;	(* reserved *)
+	PLC_LPC_RESERVED_5 AT %ID0.19980:UDINT;	(* reserved *)
+	PLC_LPC_RESERVED_6 AT %ID0.19984:UDINT;	(* reserved *)
+	PLC_LPC_RESERVED_7 AT %ID0.19988:UDINT;	(* reserved *)
+	PLC_LPC_RESERVED_8 AT %ID0.19992:UDINT;	(* reserved *)
 	RTU0_TYPE_PORT AT %ID0.20000:UDINT;
 	RTU0_BAUDRATE AT %ID0.20004:UDINT;
 	RTU0_STATUS AT %ID0.20008:UDINT;
