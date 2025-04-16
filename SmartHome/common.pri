@@ -81,13 +81,13 @@ SOURCES += \
 	check_undeclared_variable.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_cross_var.pl \"$$_PRO_FILE_PWD_\"
 	check_gotopage_bind.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
 	check_systemini.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
-	check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
+        # check_default_font.commands = @perl $${ATCM_TEMPLATE_BASE_DIR}/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
 	# crosstable_compiler invocation removed from defaultfont.pl and from QMAKE_EXTRA_TARGETS and PRE_TARGETDEPS
 	# crosstable_compiler invocation added to "save" command in CTE
 	# crosstable_compiler.commands = $${MECT_PREFIX}/desktop/QtCreator/bin/ctc -c config/Crosstable.csv -g plc/Crosstable.gvl -i config/Crosstable.h -s config/Crosstable.cpp
 
-        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font  # crosstable_compiler
-        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font  # crosstable_compiler
+        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini # check_default_font  # crosstable_compiler
+        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini # check_default_font  # crosstable_compiler
 }
 
 # system icons

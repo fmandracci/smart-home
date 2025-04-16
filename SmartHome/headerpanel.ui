@@ -283,7 +283,7 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="icon">
         <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Circle-up.png</normaloff>:/systemicons/Circle-up.png</iconset>
+         <normaloff>:/systemicons/Raise.png</normaloff>:/systemicons/Raise.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>

@@ -913,7 +913,7 @@ xx</string>
        </property>
        <property name="icon">
         <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Repair.png</normaloff>:/systemicons/Repair.png</iconset>
+         <normaloff>:/systemicons/Equipment.png</normaloff>:/systemicons/Equipment.png</iconset>
        </property>
        <property name="borderWidth">
         <number>5</number>
