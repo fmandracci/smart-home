@@ -38,9 +38,7 @@ page005::page005(QWidget *parent) :
     /* set here the protection level (pwd_admin_e, pwd_super_user_e, pwd_user_e, pwd_operator_e), default is pwd_operator_e
      * protection_level = pwd_operator_e;
      */
-#ifdef USE_TRANSLATEFONTSIZE
-    HeaderLeds::translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 

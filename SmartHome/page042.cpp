@@ -39,7 +39,7 @@ page042::page042(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // HeaderLeds::translateFontSize(this);
+    // TRANSLATE_FONT_SIZE(this);
 
     QSettings *options = new QSettings(HMI_INI_FILE, QSettings::IniFormat);
     int width_mm = WIDTH_mm;

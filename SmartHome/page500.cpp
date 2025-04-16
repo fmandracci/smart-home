@@ -36,9 +36,7 @@ page500::page500(QWidget *parent) :
     ui(new Ui::page500)
 {
     ui->setupUi(this);
-#ifdef USE_TRANSLATEFONTSIZE
-    HeaderLeds::translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 
     ui->pushButton_OFF->setEnabled(false);

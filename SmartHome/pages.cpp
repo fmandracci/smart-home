@@ -35,10 +35,6 @@
 #include <QString>
 #include <QSettings>
 
-int mectScreenWidth;
-int mectScreenHeight;
-float mectFontCorrector;
-
 void printVncDisplayString(char * vncString)
 {
 #ifdef KIT_HOST

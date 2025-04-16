@@ -26,6 +26,10 @@
 #include <QDebug>
 #include <QSettings>
 
+int mectScreenWidth;
+int mectScreenHeight;
+float mectFontCorrector;
+
 const char *status_names[HEATING_COUNT + 1] = {
     "OFF",
     "AUTO",

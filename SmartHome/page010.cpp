@@ -35,10 +35,7 @@ page010::page010(QWidget *parent) :
     ui(new Ui::page010)
 {
     ui->setupUi(this);
-
-#ifdef USE_TRANSLATEFONTSIZE
-    HeaderLeds::translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
 }
 
 void page010::reload()

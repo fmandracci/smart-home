@@ -38,9 +38,7 @@ page101b::page101b(QWidget *parent) :
     deltaH(100) // 10.0 %
 {
     ui->setupUi(this);
-#ifdef USE_TRANSLATEFONTSIZE
-    HeaderLeds::translateFontSize(this);
-#endif
+    TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
 }
 
