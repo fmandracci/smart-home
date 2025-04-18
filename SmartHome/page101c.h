@@ -47,8 +47,6 @@ private slots:
     void changeEvent(QEvent * event);
     void on_pushButton_time_clicked() { goto_page("page020"); }
 
-    void on_pushButton_plot_clicked();
-
     void on_pushButton_off_clicked() { changeStatus(HEATING_OFF); }
     void on_pushButton_ON_clicked() { changeStatus(HEATING_AUTO); }
     void on_pushButton_ECO_clicked() { changeStatus(HEATING_ECONOMY); }

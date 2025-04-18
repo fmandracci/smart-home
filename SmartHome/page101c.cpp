@@ -358,11 +358,6 @@ void page101c::on_pushButton_2h_clicked()  {  ui->pushButton_2h->setStyleSheet("
 void page101c::on_pushButton_5h_clicked()  {  ui->pushButton_5h->setStyleSheet("color: rgb(255,255,255); background-color: rgb(0,0,0);"); changeTimer(300 * 60); }
 void page101c::on_pushButton_8h_clicked()  {  ui->pushButton_8h->setStyleSheet("color: rgb(255,255,255); background-color: rgb(0,0,0);"); changeTimer(480 * 60); }
 
-void page101c::on_pushButton_plot_clicked()
-{
-    goto_page("page102", true);
-}
-
 void page101c::changeEvent(QEvent * event)
 {
     if (event->type() == QEvent::LanguageChange)
