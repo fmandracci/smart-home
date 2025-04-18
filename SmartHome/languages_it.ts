@@ -17,29 +17,29 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="250"/>
-        <location filename="headerpanel.ui" line="328"/>
+        <location filename="headerpanel.ui" line="290"/>
+        <location filename="headerpanel.ui" line="368"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="412"/>
+        <location filename="headerpanel.ui" line="452"/>
         <source>TITLE</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="headerpanel.ui" line="152"/>
+        <location filename="headerpanel.ui" line="192"/>
         <source>☼HH:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="331"/>
+        <location filename="headerpanel.ui" line="371"/>
         <source>HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="headerpanel.ui" line="364"/>
-        <location filename="headerpanel.ui" line="367"/>
+        <location filename="headerpanel.ui" line="404"/>
+        <location filename="headerpanel.ui" line="407"/>
         <source>☰</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1230,7 +1230,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="232"/>
+        <location filename="page010.ui" line="185"/>
         <source>XXXXxxXX
 x.xxx
 x.xxx
