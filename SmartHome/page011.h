@@ -44,7 +44,6 @@ private slots:
     void changeEvent(QEvent * event);
 
     void on_pushButton_set_home_clicked()  { beep(100); }
-    void on_pushButton_set_tp_clicked()    { beep(100); }
     void on_pushButton_TPX_clicked()       { goto_page("page041" ); }
     void on_pushButton_TPAC1007_clicked()  { goto_page("page048" ); }
 
@@ -60,13 +59,14 @@ private slots:
 
     void on_pushButton_NetConf_clicked()   { goto_page("net_conf"); }
     void on_pushButton_Info_clicked()      { goto_page("info"    ); }
-    void on_pushButton_XX_MPNE_C_clicked() { goto_page("page049" ); }
-    void on_pushButton_XX_MPNE_D_clicked() { goto_page("page049" ); }
+    void on_pushButton_XX_MPNE_C_clicked() { goto_page("page049c" ); }
+    void on_pushButton_XX_MPNE_D_clicked() { goto_page("page049d" ); }
 
     void on_pushButton_Fonts_clicked()     { goto_page("page042" ); }
     void on_pushButton_BA_test_clicked()   { goto_page("page046" ); }
-    void on_pushButton_BA_MPNE_A_clicked() { goto_page("page045" ); }
-    void on_pushButton_BA_MPNE_B_clicked() { goto_page("page045" ); }
+    void on_pushButton_BA_MPNE_A_clicked() { goto_page("page045a" ); }
+    void on_pushButton_BA_MPNE_B_clicked() { goto_page("page045b" ); }
+    void on_pushButton_BA_MPNE_E_clicked() { goto_page("page045e" ); }
 
 private:
     Ui::page011 *ui;

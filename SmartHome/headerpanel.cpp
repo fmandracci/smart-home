@@ -72,6 +72,18 @@ void HeaderPanel::updateWidgets(const QString datetime)
         ui->pushButton_time->setText(datetime);
     else
         ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
+
+    if (PLC_BA_BlackoutDetected || PLC_EP_BlackoutDetected) { // NB: no || PLC_EP_OverloadDetected
+        ui->pushButton_mute->setVisible(true);
+    } else {
+        ui->pushButton_mute->setVisible(false);
+        if (ui->pushButton_mute->isChecked()) {
+            ui->pushButton_mute->setChecked(false);
+        }
+        if (PLC_mute_BlackoutDetected) {
+            doWrite_PLC_mute_BlackoutDetected(0);
+        }
+    }
 }
 
 HeaderPanel::~HeaderPanel()

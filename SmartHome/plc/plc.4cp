@@ -41,12 +41,13 @@ file=Electric_Panel.ATHW119
 file=Thermostat_2.ATHW119
 file=Thermostat_3.ATHW119
 file=Burglar_Alarm.ATHW119
-file=Viewer.ATHW119
+file=Viewer_imx28.ATHW119
 file=Thermostat_4.ATHW119
-file=Xxxx.ATHW119
-file=All_in_One.ATHW119
+file=All_in_One_rpi4.ATHW119
+file=All_in_One_imx28.ATHW119
 file=Thermostat_5.ATHW119
 file=Thermostat_6.ATHW119
+file=Viewer_rpi4.ATHW119
 
 [Compiler.ATHW119]
 opt=bp2

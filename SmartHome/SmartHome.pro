@@ -34,11 +34,14 @@ HEADERS += \
     page043.h \
     page043e.h \
     page044.h \
-    page045.h \
+    page045a.h \
+    page045b.h \
+    page045e.h \
     page046.h \
     page047.h \
     page048.h \
-    page049.h \
+    page049c.h \
+    page049d.h \
     page100.h \
     page101a.h \
     page101b.h \
@@ -49,8 +52,7 @@ HEADERS += \
     page401.h \
     page402.h \
     page4e0.h \
-    page500.h \
-
+    page500.h
 
 FORMS += \
     headerleds.ui \
@@ -66,11 +68,14 @@ FORMS += \
     page043.ui \
     page043e.ui \
     page044.ui \
-    page045.ui \
+    page045a.ui \
+    page045b.ui \
+    page045e.ui \
     page046.ui \
     page047.ui \
     page048.ui \
-    page049.ui \
+    page049c.ui \
+    page049d.ui \
     page100.ui \
     page101a.ui \
     page101b.ui \
@@ -81,8 +86,7 @@ FORMS += \
     page401.ui \
     page402.ui \
     page4e0.ui \
-    page500.ui \
-
+    page500.ui
 
 SOURCES += \
     automation.cpp \
@@ -99,11 +103,14 @@ SOURCES += \
     page043.cpp \
     page043e.cpp \
     page044.cpp \
-    page045.cpp \
+    page045a.cpp \
+    page045b.cpp \
+    page045e.cpp \
     page046.cpp \
     page047.cpp \
     page048.cpp \
-    page049.cpp \
+    page049c.cpp \
+    page049d.cpp \
     page100.cpp \
     page101a.cpp \
     page101b.cpp \
@@ -114,20 +121,22 @@ SOURCES += \
     page401.cpp \
     page402.cpp \
     page4e0.cpp \
-    page500.cpp \
-
+    page500.cpp
 
 RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    hmi.ini \
-    hmi_bis.ini \
+    hmi_tp1043.ini \
+    hmi_tp1070.ini \
     hmi_only \
-    hmi.qss
+    hmi.qss \
+    home_C.ini \
+    home_L.ini \
+    home_P.ini \
+    home_X.ini
 
-other.files =  hmi_only hmi.qss
+other.files = $$OTHER_FILES
 other.path = /local/root
 
 INSTALLS += other
-

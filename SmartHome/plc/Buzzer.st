@@ -68,8 +68,14 @@ END_VAR;
         ;
 	end_case;
 
-	(* retrieving blackout status from both Electric Panel and Burglar Alarm *)
-	PLC_buzzer_blackout_or_overload := PLC_EP_BlackoutDetected or PLC_BA_BlackoutDetected or PLC_EP_OverloadDetected; (* vedi TcpUpdate.st *)
+	(* retrieving blackout status from both Electric Panel and Burglar Alarm, vedi TcpUpdate.st *)
+	if PLC_EP_OverloadDetected then
+		PLC_buzzer_blackout_or_overload := true;
+	elsif PLC_EP_BlackoutDetected or PLC_BA_BlackoutDetected then
+		PLC_buzzer_blackout_or_overload := not PLC_mute_BlackoutDetected;
+	else
+		PLC_buzzer_blackout_or_overload := false;
+	end_if;
 
 	(* timer values are always from the local hmi *)
 

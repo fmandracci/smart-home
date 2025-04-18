@@ -61,12 +61,22 @@ void page011::changeWidgets()
     }
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
 
-    QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_N(pointSize_bt));
+    if ((PLC_PRODUCT_ID & 0xF0000000) == 0x40000000) {
+        ui->atcmLabel_cpu_temp->setVisible(true);
+        ui->atcmLabel_status->setVisible(true);
+        ui->atcmLabel_errors->setVisible(true);
+        ui->atcmLabel_mask->setVisible(true);
+    } else {
+        ui->atcmLabel_cpu_temp->setVisible(false);
+        ui->atcmLabel_status->setVisible(false);
+        ui->atcmLabel_errors->setVisible(false);
+        ui->atcmLabel_mask->setVisible(false);
+    }
+    QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
     QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255,  85,   0);" + FONT_SS_B(pointSize_bt));
     QString sx("background-color: rgb(0, 0, 0); color: rgb(127, 127, 127); border: 1px solid rgb(127, 127, 127);" + FONT_SS_B(pointSize_bt));
 
     ui->pushButton_set_home->setStyleSheet(sn);
-    ui->pushButton_set_tp->setStyleSheet(sn);
     ui->pushButton_TPX->setStyleSheet(sx);
     ui->pushButton_TPAC1007->setStyleSheet(sx);
 
@@ -89,6 +99,7 @@ void page011::changeWidgets()
     ui->pushButton_BA_test->setStyleSheet(sx);
     ui->pushButton_BA_MPNE_A->setStyleSheet(sx);
     ui->pushButton_BA_MPNE_B->setStyleSheet(sx);
+    ui->pushButton_BA_MPNE_E->setStyleSheet(sx);
 
     QString cn("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0);" + FONT_SS_N(pointSize_ct));
     ui->atcmLabel_cpu_temp->setStyleSheet(cn);

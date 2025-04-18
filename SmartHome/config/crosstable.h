@@ -922,6 +922,12 @@ int doWrite_PLC_Tn_heating(int value);
 int addWrite_PLC_Tn_heating(int value);
 int getStatus_PLC_Tn_heating(void);
 
+#define ID_PLC_mute_BlackoutDetected 224
+extern int PLC_mute_BlackoutDetected;
+int doWrite_PLC_mute_BlackoutDetected(int value);
+int addWrite_PLC_mute_BlackoutDetected(int value);
+int getStatus_PLC_mute_BlackoutDetected(void);
+
 #define ID_PLC_time_bis 228
 extern float PLC_time_bis;	/* PLC_time + PLC_timeOffset */
 int doWrite_PLC_time_bis(float value);
@@ -10978,6 +10984,390 @@ int doWrite_QcPm_ActiveEnergy_0(u_int32_t value);
 int addWrite_QcPm_ActiveEnergy_0(u_int32_t value);
 int getStatus_QcPm_ActiveEnergy_0(void);
 
+#define ID_MPNE_E_FwRev 4800
+extern u_int16_t MPNE_E_FwRev;	/* MPNE firmware revision */
+int doWrite_MPNE_E_FwRev(u_int16_t value);
+int addWrite_MPNE_E_FwRev(u_int16_t value);
+int getStatus_MPNE_E_FwRev(void);
+
+#define ID_MPNE_E_ExpID 4801
+extern u_int16_t MPNE_E_ExpID;	/* MPNE ID expansions */
+int doWrite_MPNE_E_ExpID(u_int16_t value);
+int addWrite_MPNE_E_ExpID(u_int16_t value);
+int getStatus_MPNE_E_ExpID(void);
+
+#define ID_MPNE_E_ExpType 4802
+extern u_int16_t MPNE_E_ExpType;	/* MPNE expansions type */
+int doWrite_MPNE_E_ExpType(u_int16_t value);
+int addWrite_MPNE_E_ExpType(u_int16_t value);
+int getStatus_MPNE_E_ExpType(void);
+
+#define ID_MPNE_E_SN 4803
+extern u_int32_t MPNE_E_SN;	/* MPNE serial number */
+int doWrite_MPNE_E_SN(u_int32_t value);
+int addWrite_MPNE_E_SN(u_int32_t value);
+int getStatus_MPNE_E_SN(void);
+
+#define ID_MPNE_E_LifeTime 4804
+extern u_int32_t MPNE_E_LifeTime;	/* MPNE lifetime 1s */
+int doWrite_MPNE_E_LifeTime(u_int32_t value);
+int addWrite_MPNE_E_LifeTime(u_int32_t value);
+int getStatus_MPNE_E_LifeTime(void);
+
+#define ID_MPNE_E_Status 4805
+extern u_int16_t MPNE_E_Status;	/* MPNE status register */
+int doWrite_MPNE_E_Status(u_int16_t value);
+int addWrite_MPNE_E_Status(u_int16_t value);
+int getStatus_MPNE_E_Status(void);
+
+#define ID_MPNE_E_DigIn_1 4806
+extern int MPNE_E_DigIn_1;	/* Digital input 1 value */
+int doWrite_MPNE_E_DigIn_1(int value);
+int addWrite_MPNE_E_DigIn_1(int value);
+int getStatus_MPNE_E_DigIn_1(void);
+
+#define ID_MPNE_E_DigIn_2 4807
+extern int MPNE_E_DigIn_2;	/* Digital input 2 value */
+int doWrite_MPNE_E_DigIn_2(int value);
+int addWrite_MPNE_E_DigIn_2(int value);
+int getStatus_MPNE_E_DigIn_2(void);
+
+#define ID_MPNE_E_DigIn_3 4808
+extern int MPNE_E_DigIn_3;	/* Digital input 3 value */
+int doWrite_MPNE_E_DigIn_3(int value);
+int addWrite_MPNE_E_DigIn_3(int value);
+int getStatus_MPNE_E_DigIn_3(void);
+
+#define ID_MPNE_E_DigIn_4 4809
+extern int MPNE_E_DigIn_4;	/* Digital input 4 value */
+int doWrite_MPNE_E_DigIn_4(int value);
+int addWrite_MPNE_E_DigIn_4(int value);
+int getStatus_MPNE_E_DigIn_4(void);
+
+#define ID_MPNE_E_DigIn_5 4810
+extern int MPNE_E_DigIn_5;	/* Digital input 5 value */
+int doWrite_MPNE_E_DigIn_5(int value);
+int addWrite_MPNE_E_DigIn_5(int value);
+int getStatus_MPNE_E_DigIn_5(void);
+
+#define ID_MPNE_E_DigIn_6 4811
+extern int MPNE_E_DigIn_6;	/* Digital input 6 value */
+int doWrite_MPNE_E_DigIn_6(int value);
+int addWrite_MPNE_E_DigIn_6(int value);
+int getStatus_MPNE_E_DigIn_6(void);
+
+#define ID_MPNE_E_DigIn_7 4812
+extern int MPNE_E_DigIn_7;	/* Digital input 7 value */
+int doWrite_MPNE_E_DigIn_7(int value);
+int addWrite_MPNE_E_DigIn_7(int value);
+int getStatus_MPNE_E_DigIn_7(void);
+
+#define ID_MPNE_E_DigIn_8 4813
+extern int MPNE_E_DigIn_8;	/* Digital input 8 value */
+int doWrite_MPNE_E_DigIn_8(int value);
+int addWrite_MPNE_E_DigIn_8(int value);
+int getStatus_MPNE_E_DigIn_8(void);
+
+#define ID_MPNE_E_DigIn_9 4814
+extern int MPNE_E_DigIn_9;	/* Digital input 9 value */
+int doWrite_MPNE_E_DigIn_9(int value);
+int addWrite_MPNE_E_DigIn_9(int value);
+int getStatus_MPNE_E_DigIn_9(void);
+
+#define ID_MPNE_E_DigIn_10 4815
+extern int MPNE_E_DigIn_10;	/* Digital input 10 value */
+int doWrite_MPNE_E_DigIn_10(int value);
+int addWrite_MPNE_E_DigIn_10(int value);
+int getStatus_MPNE_E_DigIn_10(void);
+
+#define ID_MPNE_E_DigIn_11 4816
+extern int MPNE_E_DigIn_11;	/* Digital input 11 value */
+int doWrite_MPNE_E_DigIn_11(int value);
+int addWrite_MPNE_E_DigIn_11(int value);
+int getStatus_MPNE_E_DigIn_11(void);
+
+#define ID_MPNE_E_DigIn_12 4817
+extern int MPNE_E_DigIn_12;	/* Digital input 12 value */
+int doWrite_MPNE_E_DigIn_12(int value);
+int addWrite_MPNE_E_DigIn_12(int value);
+int getStatus_MPNE_E_DigIn_12(void);
+
+#define ID_MPNE_E_DigIn_13 4818
+extern int MPNE_E_DigIn_13;	/* Digital input 13 value */
+int doWrite_MPNE_E_DigIn_13(int value);
+int addWrite_MPNE_E_DigIn_13(int value);
+int getStatus_MPNE_E_DigIn_13(void);
+
+#define ID_MPNE_E_DigIn_14 4819
+extern int MPNE_E_DigIn_14;	/* Digital input 14 value */
+int doWrite_MPNE_E_DigIn_14(int value);
+int addWrite_MPNE_E_DigIn_14(int value);
+int getStatus_MPNE_E_DigIn_14(void);
+
+#define ID_MPNE_E_DigIn_15 4820
+extern int MPNE_E_DigIn_15;	/* Digital input 15 value */
+int doWrite_MPNE_E_DigIn_15(int value);
+int addWrite_MPNE_E_DigIn_15(int value);
+int getStatus_MPNE_E_DigIn_15(void);
+
+#define ID_MPNE_E_DigIn_16 4821
+extern int MPNE_E_DigIn_16;	/* Digital input 16 value */
+int doWrite_MPNE_E_DigIn_16(int value);
+int addWrite_MPNE_E_DigIn_16(int value);
+int getStatus_MPNE_E_DigIn_16(void);
+
+#define ID_MPNE_E_StatusWord 4847
+extern u_int16_t MPNE_E_StatusWord;	/* Fast Input Output Status Word */
+int doWrite_MPNE_E_StatusWord(u_int16_t value);
+int addWrite_MPNE_E_StatusWord(u_int16_t value);
+int getStatus_MPNE_E_StatusWord(void);
+
+#define ID_MPNE_E_Watchdog 4848
+extern u_int16_t MPNE_E_Watchdog;	/* Watchdog */
+int doWrite_MPNE_E_Watchdog(u_int16_t value);
+int addWrite_MPNE_E_Watchdog(u_int16_t value);
+int getStatus_MPNE_E_Watchdog(void);
+
+#define ID_MPNE_E_DigDir_1 4849
+extern int MPNE_E_DigDir_1;	/* Digital 1 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_1(int value);
+int addWrite_MPNE_E_DigDir_1(int value);
+int getStatus_MPNE_E_DigDir_1(void);
+
+#define ID_MPNE_E_DigDir_2 4850
+extern int MPNE_E_DigDir_2;	/* Digital 2 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_2(int value);
+int addWrite_MPNE_E_DigDir_2(int value);
+int getStatus_MPNE_E_DigDir_2(void);
+
+#define ID_MPNE_E_DigDir_3 4851
+extern int MPNE_E_DigDir_3;	/* Digital 3 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_3(int value);
+int addWrite_MPNE_E_DigDir_3(int value);
+int getStatus_MPNE_E_DigDir_3(void);
+
+#define ID_MPNE_E_DigDir_4 4852
+extern int MPNE_E_DigDir_4;	/* Digital 4 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_4(int value);
+int addWrite_MPNE_E_DigDir_4(int value);
+int getStatus_MPNE_E_DigDir_4(void);
+
+#define ID_MPNE_E_DigDir_5 4853
+extern int MPNE_E_DigDir_5;	/* Digital 5 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_5(int value);
+int addWrite_MPNE_E_DigDir_5(int value);
+int getStatus_MPNE_E_DigDir_5(void);
+
+#define ID_MPNE_E_DigDir_6 4854
+extern int MPNE_E_DigDir_6;	/* Digital 6 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_6(int value);
+int addWrite_MPNE_E_DigDir_6(int value);
+int getStatus_MPNE_E_DigDir_6(void);
+
+#define ID_MPNE_E_DigDir_7 4855
+extern int MPNE_E_DigDir_7;	/* Digital 7 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_7(int value);
+int addWrite_MPNE_E_DigDir_7(int value);
+int getStatus_MPNE_E_DigDir_7(void);
+
+#define ID_MPNE_E_DigDir_8 4856
+extern int MPNE_E_DigDir_8;	/* Digital 8 direction (input = 0 output = 1) */
+int doWrite_MPNE_E_DigDir_8(int value);
+int addWrite_MPNE_E_DigDir_8(int value);
+int getStatus_MPNE_E_DigDir_8(void);
+
+#define ID_MPNE_E_DigOut_1 4857
+extern int MPNE_E_DigOut_1;	/* Digital output 1 value */
+int doWrite_MPNE_E_DigOut_1(int value);
+int addWrite_MPNE_E_DigOut_1(int value);
+int getStatus_MPNE_E_DigOut_1(void);
+
+#define ID_MPNE_E_DigOut_2 4858
+extern int MPNE_E_DigOut_2;	/* Digital output 2 value */
+int doWrite_MPNE_E_DigOut_2(int value);
+int addWrite_MPNE_E_DigOut_2(int value);
+int getStatus_MPNE_E_DigOut_2(void);
+
+#define ID_MPNE_E_DigOut_3 4859
+extern int MPNE_E_DigOut_3;	/* Digital output 3 value */
+int doWrite_MPNE_E_DigOut_3(int value);
+int addWrite_MPNE_E_DigOut_3(int value);
+int getStatus_MPNE_E_DigOut_3(void);
+
+#define ID_MPNE_E_DigOut_4 4860
+extern int MPNE_E_DigOut_4;	/* Digital output 4 value */
+int doWrite_MPNE_E_DigOut_4(int value);
+int addWrite_MPNE_E_DigOut_4(int value);
+int getStatus_MPNE_E_DigOut_4(void);
+
+#define ID_MPNE_E_DigOut_5 4861
+extern int MPNE_E_DigOut_5;	/* Digital output 5 value */
+int doWrite_MPNE_E_DigOut_5(int value);
+int addWrite_MPNE_E_DigOut_5(int value);
+int getStatus_MPNE_E_DigOut_5(void);
+
+#define ID_MPNE_E_DigOut_6 4862
+extern int MPNE_E_DigOut_6;	/* Digital output 6 value */
+int doWrite_MPNE_E_DigOut_6(int value);
+int addWrite_MPNE_E_DigOut_6(int value);
+int getStatus_MPNE_E_DigOut_6(void);
+
+#define ID_MPNE_E_DigOut_7 4863
+extern int MPNE_E_DigOut_7;	/* Digital output 7 value */
+int doWrite_MPNE_E_DigOut_7(int value);
+int addWrite_MPNE_E_DigOut_7(int value);
+int getStatus_MPNE_E_DigOut_7(void);
+
+#define ID_MPNE_E_DigOut_8 4864
+extern int MPNE_E_DigOut_8;	/* Digital output 8 value */
+int doWrite_MPNE_E_DigOut_8(int value);
+int addWrite_MPNE_E_DigOut_8(int value);
+int getStatus_MPNE_E_DigOut_8(void);
+
+#define ID_MPNE_E_DigOut_17 4865
+extern int MPNE_E_DigOut_17;	/* Digital output 17 value */
+int doWrite_MPNE_E_DigOut_17(int value);
+int addWrite_MPNE_E_DigOut_17(int value);
+int getStatus_MPNE_E_DigOut_17(void);
+
+#define ID_MPNE_E_DigOut_18 4866
+extern int MPNE_E_DigOut_18;	/* Digital output 18 value */
+int doWrite_MPNE_E_DigOut_18(int value);
+int addWrite_MPNE_E_DigOut_18(int value);
+int getStatus_MPNE_E_DigOut_18(void);
+
+#define ID_MPNE_E_DigOut_19 4867
+extern int MPNE_E_DigOut_19;	/* Digital output 19 value */
+int doWrite_MPNE_E_DigOut_19(int value);
+int addWrite_MPNE_E_DigOut_19(int value);
+int getStatus_MPNE_E_DigOut_19(void);
+
+#define ID_MPNE_E_DigOut_20 4868
+extern int MPNE_E_DigOut_20;	/* Digital output 20 value */
+int doWrite_MPNE_E_DigOut_20(int value);
+int addWrite_MPNE_E_DigOut_20(int value);
+int getStatus_MPNE_E_DigOut_20(void);
+
+#define ID_MPNE_E_DigOut_21 4869
+extern int MPNE_E_DigOut_21;	/* Digital output 21 value */
+int doWrite_MPNE_E_DigOut_21(int value);
+int addWrite_MPNE_E_DigOut_21(int value);
+int getStatus_MPNE_E_DigOut_21(void);
+
+#define ID_MPNE_E_DigOut_22 4870
+extern int MPNE_E_DigOut_22;	/* Digital output 22 value */
+int doWrite_MPNE_E_DigOut_22(int value);
+int addWrite_MPNE_E_DigOut_22(int value);
+int getStatus_MPNE_E_DigOut_22(void);
+
+#define ID_MPNE_E_DigOut_23 4871
+extern int MPNE_E_DigOut_23;	/* Digital output 23 value */
+int doWrite_MPNE_E_DigOut_23(int value);
+int addWrite_MPNE_E_DigOut_23(int value);
+int getStatus_MPNE_E_DigOut_23(void);
+
+#define ID_MPNE_E_DigOut_24 4872
+extern int MPNE_E_DigOut_24;	/* Digital output 24 value */
+int doWrite_MPNE_E_DigOut_24(int value);
+int addWrite_MPNE_E_DigOut_24(int value);
+int getStatus_MPNE_E_DigOut_24(void);
+
+#define ID_MPNE_E_DigOut_25 4873
+extern int MPNE_E_DigOut_25;	/* Digital output 25 value */
+int doWrite_MPNE_E_DigOut_25(int value);
+int addWrite_MPNE_E_DigOut_25(int value);
+int getStatus_MPNE_E_DigOut_25(void);
+
+#define ID_MPNE_E_DigOut_26 4874
+extern int MPNE_E_DigOut_26;	/* Digital output 26 value */
+int doWrite_MPNE_E_DigOut_26(int value);
+int addWrite_MPNE_E_DigOut_26(int value);
+int getStatus_MPNE_E_DigOut_26(void);
+
+#define ID_MPNE_E_DigOut_27 4875
+extern int MPNE_E_DigOut_27;	/* Digital output 27 value */
+int doWrite_MPNE_E_DigOut_27(int value);
+int addWrite_MPNE_E_DigOut_27(int value);
+int getStatus_MPNE_E_DigOut_27(void);
+
+#define ID_MPNE_E_DigOut_28 4876
+extern int MPNE_E_DigOut_28;	/* Digital output 28 value */
+int doWrite_MPNE_E_DigOut_28(int value);
+int addWrite_MPNE_E_DigOut_28(int value);
+int getStatus_MPNE_E_DigOut_28(void);
+
+#define ID_MPNE_E_DigOut_29 4877
+extern int MPNE_E_DigOut_29;	/* Digital output 29 value */
+int doWrite_MPNE_E_DigOut_29(int value);
+int addWrite_MPNE_E_DigOut_29(int value);
+int getStatus_MPNE_E_DigOut_29(void);
+
+#define ID_MPNE_E_DigOut_30 4878
+extern int MPNE_E_DigOut_30;	/* Digital output 30 value */
+int doWrite_MPNE_E_DigOut_30(int value);
+int addWrite_MPNE_E_DigOut_30(int value);
+int getStatus_MPNE_E_DigOut_30(void);
+
+#define ID_MPNE_E_DigOut_31 4879
+extern int MPNE_E_DigOut_31;	/* Digital output 31 value */
+int doWrite_MPNE_E_DigOut_31(int value);
+int addWrite_MPNE_E_DigOut_31(int value);
+int getStatus_MPNE_E_DigOut_31(void);
+
+#define ID_MPNE_E_DigOut_32 4880
+extern int MPNE_E_DigOut_32;	/* Digital output 32 value */
+int doWrite_MPNE_E_DigOut_32(int value);
+int addWrite_MPNE_E_DigOut_32(int value);
+int getStatus_MPNE_E_DigOut_32(void);
+
+#define ID_MPNE_E_ControlWord_A 4881
+extern u_int16_t MPNE_E_ControlWord_A;	/* Fast Input Output Control Word Line A */
+int doWrite_MPNE_E_ControlWord_A(u_int16_t value);
+int addWrite_MPNE_E_ControlWord_A(u_int16_t value);
+int getStatus_MPNE_E_ControlWord_A(void);
+
+#define ID_MPNE_E_FastInDelay_A 4882
+extern u_int16_t MPNE_E_FastInDelay_A;	/* Fast input delay time x 10us Line A */
+int doWrite_MPNE_E_FastInDelay_A(u_int16_t value);
+int addWrite_MPNE_E_FastInDelay_A(u_int16_t value);
+int getStatus_MPNE_E_FastInDelay_A(void);
+
+#define ID_MPNE_E_FastOutDelay_A 4883
+extern u_int16_t MPNE_E_FastOutDelay_A;	/* Fast output delay time x 10us Line A */
+int doWrite_MPNE_E_FastOutDelay_A(u_int16_t value);
+int addWrite_MPNE_E_FastOutDelay_A(u_int16_t value);
+int getStatus_MPNE_E_FastOutDelay_A(void);
+
+#define ID_MPNE_E_FastOutDuration_A 4884
+extern u_int16_t MPNE_E_FastOutDuration_A;	/* Fast output duration time x 10us Line A */
+int doWrite_MPNE_E_FastOutDuration_A(u_int16_t value);
+int addWrite_MPNE_E_FastOutDuration_A(u_int16_t value);
+int getStatus_MPNE_E_FastOutDuration_A(void);
+
+#define ID_MPNE_E_EncCounter_A 4885
+extern int32_t MPNE_E_EncCounter_A;	/* Encoder Counter Line A */
+int doWrite_MPNE_E_EncCounter_A(int32_t value);
+int addWrite_MPNE_E_EncCounter_A(int32_t value);
+int getStatus_MPNE_E_EncCounter_A(void);
+
+#define ID_MPNE_E_MatchRegister_A 4886
+extern int32_t MPNE_E_MatchRegister_A;	/* Match Encoder register Line A */
+int doWrite_MPNE_E_MatchRegister_A(int32_t value);
+int addWrite_MPNE_E_MatchRegister_A(int32_t value);
+int getStatus_MPNE_E_MatchRegister_A(void);
+
+#define ID_MPNE_E_PTOTargetFreq_A 4887
+extern u_int16_t MPNE_E_PTOTargetFreq_A;	/* PTO Frequency Line A */
+int doWrite_MPNE_E_PTOTargetFreq_A(u_int16_t value);
+int addWrite_MPNE_E_PTOTargetFreq_A(u_int16_t value);
+int getStatus_MPNE_E_PTOTargetFreq_A(void);
+
+#define ID_MPNE_E_PTOSteps_A 4888
+extern u_int32_t MPNE_E_PTOSteps_A;	/* PTO steps Line A */
+int doWrite_MPNE_E_PTOSteps_A(u_int32_t value);
+int addWrite_MPNE_E_PTOSteps_A(u_int32_t value);
+int getStatus_MPNE_E_PTOSteps_A(void);
+
 #define ID_PLC_nBACKLIGHT 4989
 extern u_int8_t PLC_nBACKLIGHT;	/* Backlight dimming value (0 ON 100 OFF) */
 int doWrite_PLC_nBACKLIGHT(u_int8_t value);
@@ -12226,6 +12616,18 @@ int doWrite_NODE_44_STATUS(u_int32_t value);
 int addWrite_NODE_44_STATUS(u_int32_t value);
 int getStatus_NODE_44_STATUS(void);
 
+#define ID_NODE_45_DEV_NODE 5260
+extern u_int32_t NODE_45_DEV_NODE;
+int doWrite_NODE_45_DEV_NODE(u_int32_t value);
+int addWrite_NODE_45_DEV_NODE(u_int32_t value);
+int getStatus_NODE_45_DEV_NODE(void);
+
+#define ID_NODE_45_STATUS 5261
+extern u_int32_t NODE_45_STATUS;
+int doWrite_NODE_45_STATUS(u_int32_t value);
+int addWrite_NODE_45_STATUS(u_int32_t value);
+int getStatus_NODE_45_STATUS(void);
+
 #define ID_PLC_time 5390
 extern float PLC_time;	/* Seconds since boot (reset each 24h) */
 int doWrite_PLC_time(float value);
@@ -12395,61 +12797,61 @@ int addWrite_PLC_BUZZER(u_int32_t value);
 int getStatus_PLC_BUZZER(void);
 
 #define ID_PLC_FastIO_Ena 5439
-extern u_int32_t PLC_FastIO_Ena;	/* Not available */
+extern u_int32_t PLC_FastIO_Ena;	/* Fast IO Enable */
 int doWrite_PLC_FastIO_Ena(u_int32_t value);
 int addWrite_PLC_FastIO_Ena(u_int32_t value);
 int getStatus_PLC_FastIO_Ena(void);
 
 #define ID_PLC_FastIO_Dir 5440
-extern u_int32_t PLC_FastIO_Dir;	/* Not available */
+extern u_int32_t PLC_FastIO_Dir;	/* Fast IO Configuration */
 int doWrite_PLC_FastIO_Dir(u_int32_t value);
 int addWrite_PLC_FastIO_Dir(u_int32_t value);
 int getStatus_PLC_FastIO_Dir(void);
 
 #define ID_PLC_FastIO_1 5441
-extern int PLC_FastIO_1;	/* Not available */
+extern int PLC_FastIO_1;	/* Fast Input 1 */
 int doWrite_PLC_FastIO_1(int value);
 int addWrite_PLC_FastIO_1(int value);
 int getStatus_PLC_FastIO_1(void);
 
 #define ID_PLC_FastIO_2 5442
-extern int PLC_FastIO_2;	/* Not available */
+extern int PLC_FastIO_2;	/* Fast Input 2 */
 int doWrite_PLC_FastIO_2(int value);
 int addWrite_PLC_FastIO_2(int value);
 int getStatus_PLC_FastIO_2(void);
 
 #define ID_PLC_FastIO_3 5443
-extern int PLC_FastIO_3;	/* Not available */
+extern int PLC_FastIO_3;	/* Fast Input 3 */
 int doWrite_PLC_FastIO_3(int value);
 int addWrite_PLC_FastIO_3(int value);
 int getStatus_PLC_FastIO_3(void);
 
 #define ID_PLC_FastIO_4 5444
-extern int PLC_FastIO_4;	/* Not available */
+extern int PLC_FastIO_4;	/* Fast Input 4 */
 int doWrite_PLC_FastIO_4(int value);
 int addWrite_PLC_FastIO_4(int value);
 int getStatus_PLC_FastIO_4(void);
 
 #define ID_PLC_FastIO_5 5445
-extern int PLC_FastIO_5;	/* Not available */
+extern int PLC_FastIO_5;	/* Fast Output 1 */
 int doWrite_PLC_FastIO_5(int value);
 int addWrite_PLC_FastIO_5(int value);
 int getStatus_PLC_FastIO_5(void);
 
 #define ID_PLC_FastIO_6 5446
-extern int PLC_FastIO_6;	/* Not available */
+extern int PLC_FastIO_6;	/* Fast Output 2 */
 int doWrite_PLC_FastIO_6(int value);
 int addWrite_PLC_FastIO_6(int value);
 int getStatus_PLC_FastIO_6(void);
 
 #define ID_PLC_FastIO_7 5447
-extern int PLC_FastIO_7;	/* Not available */
+extern int PLC_FastIO_7;	/* Fast Output 3 */
 int doWrite_PLC_FastIO_7(int value);
 int addWrite_PLC_FastIO_7(int value);
 int getStatus_PLC_FastIO_7(void);
 
 #define ID_PLC_FastIO_8 5448
-extern int PLC_FastIO_8;	/* Not available */
+extern int PLC_FastIO_8;	/* Fast Output 4 */
 int doWrite_PLC_FastIO_8(int value);
 int addWrite_PLC_FastIO_8(int value);
 int getStatus_PLC_FastIO_8(void);

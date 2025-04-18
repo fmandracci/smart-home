@@ -51,7 +51,6 @@ const QString heating_name(int heating_status)
 int currentThermostat = -1;
 int currentWattmeter = -1;
 
-
 void setup(void)
 {
     qDebug() << HMIversion;
@@ -61,7 +60,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(1205);
+    doWrite_PLC_HMI_Version(2000);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'

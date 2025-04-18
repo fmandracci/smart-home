@@ -197,11 +197,14 @@ void printVncDisplayString(char * vncString)
 //            << "page043"
 //            << "page043e"
 //            << "page044"
-//            << "page045"
+//            << "page045a"
+//            << "page045b"
+//            << "page045e"
 //            << "page046"
 //            << "page047"
 //            << "page048"
-//            << "page049"
+//            << "page049c"
+//            << "page049d"
 
             << "page100"
             << "page101a"
@@ -257,8 +260,14 @@ int create_page_nb(page ** p, int pageNb)
     case 0x044:
         *p = (page *)(new page044);
         break;
-    case 0x045:
-        *p = (page *)(new page045);
+    case 0x045a:
+        *p = (page *)(new page045a);
+        break;
+    case 0x045b:
+        *p = (page *)(new page045b);
+        break;
+    case 0x045e:
+        *p = (page *)(new page045e);
         break;
     case 0x046:
         *p = (page *)(new page046);
@@ -269,8 +278,11 @@ int create_page_nb(page ** p, int pageNb)
     case 0x048:
         *p = (page *)(new page048);
         break;
-    case 0x049:
-        *p = (page *)(new page049);
+    case 0x049c:
+        *p = (page *)(new page049c);
+        break;
+    case 0x049d:
+        *p = (page *)(new page049d);
         break;
     case 0x100:
         *p = (page *)(new page100);

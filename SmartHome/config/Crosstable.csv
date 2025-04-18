@@ -214,14 +214,14 @@
 0;P;PLC_T10_isOK                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;214 ;1   ;[RW]
 0;P;PLC_T11_isOK                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;215 ;1   ;[RW]
 0;P;PLC_T12_isOK                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;216 ;1   ;[RW]
-1;F;PLC_BA_isOK                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[RW]
-1;F;PLC_BA_AlarmRinging            ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[AL PLC_BA_ringing_flag RISING]BA Alarm is ringing
-1;F;PLC_BA_BlackoutDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[AL PLC_BA_blackout_digin FALLING]BA Blackout detected
-1;F;PLC_EP_BlackoutDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[AL PLC_EP_blackout_flag RISING]EP Blackout detected
-1;F;PLC_EP_OverloadDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[AL PLC_EP_overload_flag RISING]EP Overload detected
-1;P;PLC_nighttime                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[RW]
-1;F;PLC_Tn_heating                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;7   ;[RW]al least one Tn is heating
-;;;;;;;;;;;;
+1;F;PLC_BA_isOK                    ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[RW]
+1;F;PLC_BA_AlarmRinging            ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[AL PLC_BA_ringing_flag RISING]BA Alarm is ringing
+1;F;PLC_BA_BlackoutDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[AL PLC_BA_blackout_digin FALLING]BA Blackout detected
+1;F;PLC_EP_BlackoutDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[AL PLC_EP_blackout_flag RISING]EP Blackout detected
+1;F;PLC_EP_OverloadDetected        ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[AL PLC_EP_overload_flag RISING]EP Overload detected
+1;P;PLC_nighttime                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[RW]
+1;F;PLC_Tn_heating                 ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[RW]al least one Tn is heating
+1;P;PLC_mute_BlackoutDetected      ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;217 ;8   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -4797,6 +4797,152 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
+2;P;MPNE_E_FwRev                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;0     ;4800;22  ;[RO]MPNE firmware revision
+2;P;MPNE_E_ExpID                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;1     ;4800;22  ;[RO]MPNE ID expansions
+2;P;MPNE_E_ExpType                 ;UINT     ;0   ;RTU       ;               ;3   ;2   ;2     ;4800;22  ;[RO]MPNE expansions type
+2;P;MPNE_E_SN                      ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;3     ;4800;22  ;[RO]MPNE serial number
+2;P;MPNE_E_LifeTime                ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;5     ;4800;22  ;[RO]MPNE lifetime 1s
+2;P;MPNE_E_Status                  ;UINT     ;0   ;RTU       ;               ;3   ;2   ;7     ;4800;22  ;[RO]MPNE status register
+2;P;MPNE_E_DigIn_1                 ;WORD_BIT ;1   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 1 value
+2;P;MPNE_E_DigIn_2                 ;WORD_BIT ;2   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 2 value
+2;P;MPNE_E_DigIn_3                 ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 3 value
+2;P;MPNE_E_DigIn_4                 ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 4 value
+2;P;MPNE_E_DigIn_5                 ;WORD_BIT ;5   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 5 value
+2;P;MPNE_E_DigIn_6                 ;WORD_BIT ;6   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 6 value
+2;P;MPNE_E_DigIn_7                 ;WORD_BIT ;7   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 7 value
+2;P;MPNE_E_DigIn_8                 ;WORD_BIT ;8   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 8 value
+2;P;MPNE_E_DigIn_9                 ;WORD_BIT ;9   ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 9 value
+2;P;MPNE_E_DigIn_10                ;WORD_BIT ;10  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 10 value
+2;P;MPNE_E_DigIn_11                ;WORD_BIT ;11  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 11 value
+2;P;MPNE_E_DigIn_12                ;WORD_BIT ;12  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 12 value
+2;P;MPNE_E_DigIn_13                ;WORD_BIT ;13  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 13 value
+2;P;MPNE_E_DigIn_14                ;WORD_BIT ;14  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 14 value
+2;P;MPNE_E_DigIn_15                ;WORD_BIT ;15  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 15 value
+2;P;MPNE_E_DigIn_16                ;WORD_BIT ;16  ;RTU       ;               ;3   ;2   ;8     ;4800;22  ;[RO]Digital input 16 value
+0;P;MPNE_E_DigIn_17                ;WORD_BIT ;1   ;RTU       ;               ;3   ;2   ;9     ;4822;1   ;[RO]Digital input 17 value
+0;P;MPNE_E_DigIn_18                ;WORD_BIT ;2   ;RTU       ;               ;3   ;2   ;9     ;4823;1   ;[RO]Digital input 18 value
+0;P;MPNE_E_DigIn_19                ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;9     ;4824;1   ;[RO]Digital input 19 value
+0;P;MPNE_E_DigIn_20                ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;9     ;4825;1   ;[RO]Digital input 20 value
+0;P;MPNE_E_DigIn_21                ;WORD_BIT ;5   ;RTU       ;               ;3   ;2   ;9     ;4826;1   ;[RO]Digital input 21 value
+0;P;MPNE_E_DigIn_22                ;WORD_BIT ;6   ;RTU       ;               ;3   ;2   ;9     ;4827;1   ;[RO]Digital input 22 value
+0;P;MPNE_E_DigIn_23                ;WORD_BIT ;7   ;RTU       ;               ;3   ;2   ;9     ;4828;1   ;[RO]Digital input 23 value
+0;P;MPNE_E_DigIn_24                ;WORD_BIT ;8   ;RTU       ;               ;3   ;2   ;9     ;4829;1   ;[RO]Digital input 24 value
+0;P;MPNE_E_DigIn_25                ;WORD_BIT ;9   ;RTU       ;               ;3   ;2   ;9     ;4830;1   ;[RO]Digital input 25 value
+0;P;MPNE_E_DigIn_26                ;WORD_BIT ;10  ;RTU       ;               ;3   ;2   ;9     ;4831;1   ;[RO]Digital input 26 value
+0;P;MPNE_E_DigIn_27                ;WORD_BIT ;11  ;RTU       ;               ;3   ;2   ;9     ;4832;1   ;[RO]Digital input 27 value
+0;P;MPNE_E_DigIn_28                ;WORD_BIT ;12  ;RTU       ;               ;3   ;2   ;9     ;4833;1   ;[RO]Digital input 28 value
+0;P;MPNE_E_DigIn_29                ;WORD_BIT ;13  ;RTU       ;               ;3   ;2   ;9     ;4834;1   ;[RO]Digital input 29 value
+0;P;MPNE_E_DigIn_30                ;WORD_BIT ;14  ;RTU       ;               ;3   ;2   ;9     ;4835;1   ;[RO]Digital input 30 value
+0;P;MPNE_E_DigIn_31                ;WORD_BIT ;15  ;RTU       ;               ;3   ;2   ;9     ;4836;1   ;[RO]Digital input 31 value
+0;P;MPNE_E_DigIn_32                ;WORD_BIT ;16  ;RTU       ;               ;3   ;2   ;9     ;4837;1   ;[RO]Digital input 32 value
+0;P;MPNE_E_AnIn_1                  ;INT      ;0   ;RTU       ;               ;3   ;2   ;10    ;4838;1   ;[RO]Analog input 1 value
+0;P;MPNE_E_AnIn_2                  ;INT      ;0   ;RTU       ;               ;3   ;2   ;11    ;4839;1   ;[RO]Analog input 2 value
+0;P;MPNE_E_AnIn_3                  ;INT      ;0   ;RTU       ;               ;3   ;2   ;12    ;4840;1   ;[RO]Analog input 3 value
+0;P;MPNE_E_AnIn_4                  ;INT      ;0   ;RTU       ;               ;3   ;2   ;13    ;4841;1   ;[RO]Analog input 4 value
+0;P;MPNE_E_AnInStatus              ;INT      ;0   ;RTU       ;               ;3   ;2   ;14    ;4842;1   ;[RO]Analog Inputs status register
+0;P;MPNE_E_Reg_1                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;15    ;4843;1   ;[RW]Pass through register 1
+0;P;MPNE_E_Reg_2                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;16    ;4844;1   ;[RW]Pass through register 2
+0;P;MPNE_E_Reg_3                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;17    ;4845;1   ;[RW]Pass through register 3
+0;P;MPNE_E_Reg_4                   ;UINT     ;0   ;RTU       ;               ;3   ;2   ;18    ;4846;1   ;[RW]Pass through register 4
+2;P;MPNE_E_StatusWord              ;UINT     ;0   ;RTU       ;               ;3   ;2   ;25    ;4847;42  ;[RW]Fast Input Output Status Word
+2;P;MPNE_E_Watchdog                ;UINT     ;0   ;RTU       ;               ;3   ;2   ;26    ;4847;42  ;[RW]Watchdog
+2;P;MPNE_E_DigDir_1                ;WORD_BIT ;1   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 1 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_2                ;WORD_BIT ;2   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 2 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_3                ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 3 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_4                ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 4 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_5                ;WORD_BIT ;5   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 5 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_6                ;WORD_BIT ;6   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 6 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_7                ;WORD_BIT ;7   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 7 direction (input = 0 output = 1)
+2;P;MPNE_E_DigDir_8                ;WORD_BIT ;8   ;RTU       ;               ;3   ;2   ;27    ;4847;42  ;[RW]Digital 8 direction (input = 0 output = 1)
+2;P;MPNE_E_DigOut_1                ;WORD_BIT ;1   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 1 value
+2;P;MPNE_E_DigOut_2                ;WORD_BIT ;2   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 2 value
+2;P;MPNE_E_DigOut_3                ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 3 value
+2;P;MPNE_E_DigOut_4                ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 4 value
+2;P;MPNE_E_DigOut_5                ;WORD_BIT ;5   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 5 value
+2;P;MPNE_E_DigOut_6                ;WORD_BIT ;6   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 6 value
+2;P;MPNE_E_DigOut_7                ;WORD_BIT ;7   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 7 value
+2;P;MPNE_E_DigOut_8                ;WORD_BIT ;8   ;RTU       ;               ;3   ;2   ;28    ;4847;42  ;[RW]Digital output 8 value
+2;P;MPNE_E_DigOut_17               ;WORD_BIT ;1   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 17 value
+2;P;MPNE_E_DigOut_18               ;WORD_BIT ;2   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 18 value
+2;P;MPNE_E_DigOut_19               ;WORD_BIT ;3   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 19 value
+2;P;MPNE_E_DigOut_20               ;WORD_BIT ;4   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 20 value
+2;P;MPNE_E_DigOut_21               ;WORD_BIT ;5   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 21 value
+2;P;MPNE_E_DigOut_22               ;WORD_BIT ;6   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 22 value
+2;P;MPNE_E_DigOut_23               ;WORD_BIT ;7   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 23 value
+2;P;MPNE_E_DigOut_24               ;WORD_BIT ;8   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 24 value
+2;P;MPNE_E_DigOut_25               ;WORD_BIT ;9   ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 25 value
+2;P;MPNE_E_DigOut_26               ;WORD_BIT ;10  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 26 value
+2;P;MPNE_E_DigOut_27               ;WORD_BIT ;11  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 27 value
+2;P;MPNE_E_DigOut_28               ;WORD_BIT ;12  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 28 value
+2;P;MPNE_E_DigOut_29               ;WORD_BIT ;13  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 29 value
+2;P;MPNE_E_DigOut_30               ;WORD_BIT ;14  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 30 value
+2;P;MPNE_E_DigOut_31               ;WORD_BIT ;15  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 31 value
+2;P;MPNE_E_DigOut_32               ;WORD_BIT ;16  ;RTU       ;               ;3   ;2   ;29    ;4847;42  ;[RW]Digital output 32 value
+2;P;MPNE_E_ControlWord_A           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;30    ;4847;42  ;[RW]Fast Input Output Control Word Line A
+2;P;MPNE_E_FastInDelay_A           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;31    ;4847;42  ;[RW]Fast input delay time x 10us Line A
+2;P;MPNE_E_FastOutDelay_A          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;32    ;4847;42  ;[RW]Fast output delay time x 10us Line A
+2;P;MPNE_E_FastOutDuration_A       ;UINT     ;0   ;RTU       ;               ;3   ;2   ;33    ;4847;42  ;[RW]Fast output duration time x 10us Line A
+2;P;MPNE_E_EncCounter_A            ;DINT     ;0   ;RTU       ;               ;3   ;2   ;34    ;4847;42  ;[RW]Encoder Counter Line A
+2;P;MPNE_E_MatchRegister_A         ;DINT     ;0   ;RTU       ;               ;3   ;2   ;36    ;4847;42  ;[RW]Match Encoder register Line A
+2;P;MPNE_E_PTOTargetFreq_A         ;UINT     ;0   ;RTU       ;               ;3   ;2   ;38    ;4847;42  ;[RW]PTO Frequency Line A
+2;P;MPNE_E_PTOSteps_A              ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;39    ;4847;42  ;[RW]PTO steps Line A
+0;P;MPNE_E_PTORampUp_A             ;UINT     ;0   ;RTU       ;               ;3   ;2   ;41    ;4889;1   ;[RW]PTO Aceleraration time s Line A
+0;P;MPNE_E_PTORampDown_A           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;42    ;4890;1   ;[RW]PTO Deceleraration time s Line A
+0;P;MPNE_E_ControlWord_B           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;43    ;4891;1   ;[RW]Fast Input Output Control Word Line B
+0;P;MPNE_E_FastInDelay_B           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;44    ;4892;1   ;[RW]Fast input delay time x 10us Line B
+0;P;MPNE_E_FastOutDelay_B          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;45    ;4893;1   ;[RW]Fast output delay time x 10us Line B
+0;P;MPNE_E_FastOutDuration_B       ;UINT     ;0   ;RTU       ;               ;3   ;2   ;46    ;4894;1   ;[RW]Fast output duration time x 10us Line B
+0;P;MPNE_E_EncCounter_B            ;DINT     ;0   ;RTU       ;               ;3   ;2   ;47    ;4895;1   ;[RO]Encoder configuration Line B
+0;P;MPNE_E_MatchRegister_B         ;DINT     ;0   ;RTU       ;               ;3   ;2   ;49    ;4896;1   ;[RW]Match Encoder register Line B
+0;P;MPNE_E_PTOTargetFreq_B         ;UINT     ;0   ;RTU       ;               ;3   ;2   ;51    ;4897;1   ;[RW]PTO Frequency Line B
+0;P;MPNE_E_PTOSteps_B              ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;52    ;4898;1   ;[RW]PTO steps Line B
+0;P;MPNE_E_ControlWord_B1          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;54    ;4899;1   ;[RW]Fast Input Output Control Word Line B
+0;P;MPNE_E_PTORampDown_B           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;55    ;4900;1   ;[RW]PTO Deceleraration time s Line B
+0;P;MPNE_E_ControlWord_C           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;56    ;4901;1   ;[RW]Fast Input Output Control Word Line C
+0;P;MPNE_E_FastInDelay_C           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;57    ;4902;1   ;[RW]Fast input delay time x 10us Line C
+0;P;MPNE_E_FastOutDelay_C          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;58    ;4903;1   ;[RW]Fast output delay time x 10us Line C
+0;P;MPNE_E_FastOutDuration_C       ;UINT     ;0   ;RTU       ;               ;3   ;2   ;59    ;4904;1   ;[RW]Fast output duration time x 10us Line C
+0;P;MPNE_E_EncCounter_C            ;DINT     ;0   ;RTU       ;               ;3   ;2   ;60    ;4905;1   ;[RO]Encoder Counter Line C
+0;P;MPNE_E_MatchRegister_C         ;DINT     ;0   ;RTU       ;               ;3   ;2   ;62    ;4906;1   ;[RW]Match Encoder register Line C
+0;P;MPNE_E_PTOTargetFreq_C         ;UINT     ;0   ;RTU       ;               ;3   ;2   ;64    ;4907;1   ;[RW]PTO Frequency Line C
+0;P;MPNE_E_PTOSteps_C              ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;65    ;4908;1   ;[RW]PTO steps Line C
+0;P;MPNE_E_ControlWord_C1          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;67    ;4909;1   ;[RW]Fast Input Output Control Word Line C
+0;P;MPNE_E_PTORampDown_C           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;68    ;4910;1   ;[RW]PTO Deceleraration time s Line C
+0;P;MPNE_E_ControlWord_D           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;69    ;4911;1   ;[RW]Fast Input Output Control Word Line D
+0;P;MPNE_E_FastInDelay_D           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;70    ;4912;1   ;[RW]Fast input delay time x 10us Line D
+0;P;MPNE_E_FastOutDelay_D          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;71    ;4913;1   ;[RW]Fast output delay time x 10us Line D
+0;P;MPNE_E_FastOutDuration_D       ;UINT     ;0   ;RTU       ;               ;3   ;2   ;72    ;4914;1   ;[RW]Fast output duration time x 10us Line D
+0;P;MPNE_E_EncCounter_D            ;DINT     ;0   ;RTU       ;               ;3   ;2   ;73    ;4915;1   ;[RO]Encoder Counter Line D
+0;P;MPNE_E_MatchRegister_D         ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;75    ;4916;1   ;[RW]Match Encoder register Line D
+0;P;MPNE_E_PTOTargetFreq_D         ;UINT     ;0   ;RTU       ;               ;3   ;2   ;77    ;4917;1   ;[RW]PTO Frequency Line D
+0;P;MPNE_E_PTOSteps_D              ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;78    ;4918;1   ;[RW]PTO steps Line D
+0;P;MPNE_E_ControlWord_D1          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;80    ;4919;1   ;[RW]Fast Input Output Control Word Line D
+0;P;MPNE_E_PTORampDown_D           ;UINT     ;0   ;RTU       ;               ;3   ;2   ;81    ;4920;1   ;[RW]PTO Deceleraration time s Line D
+0;P;MPNE_E_AnIn1Conf               ;UINT     ;0   ;RTU       ;               ;3   ;2   ;84    ;4921;1   ;[RW]Analog input 1 configuration
+0;P;MPNE_E_AnIn2Conf               ;UINT     ;0   ;RTU       ;               ;3   ;2   ;85    ;4922;1   ;[RW]Analog input 2 configuration
+0;P;MPNE_E_AnIn3Conf               ;UINT     ;0   ;RTU       ;               ;3   ;2   ;86    ;4923;1   ;[RW]Analog input 3 configuration
+0;P;MPNE_E_AnIn4Conf               ;UINT     ;0   ;RTU       ;               ;3   ;2   ;87    ;4924;1   ;[RW]Analog input 4 configuration
+0;P;MPNE_E_AnOut1Conf              ;UINT     ;0   ;RTU       ;               ;3   ;2   ;88    ;4925;1   ;[RW]Analog output 1 configuration
+0;P;MPNE_E_AnOut2Conf              ;UINT     ;0   ;RTU       ;               ;3   ;2   ;89    ;4926;1   ;[RW]Analog output 2 configuration
+0;P;MPNE_E_AnOut1                  ;UINT     ;0   ;RTU       ;               ;3   ;2   ;90    ;4927;1   ;[RW]Analog output 1 value
+0;P;MPNE_E_AnOut2                  ;UINT     ;0   ;RTU       ;               ;3   ;2   ;91    ;4928;1   ;[RW]Analog output 2 value
+0;P;MPNE_E_AnIn1Filter             ;UINT     ;0   ;RTU       ;               ;3   ;2   ;92    ;4929;1   ;[RW]Analog input 1 filter
+0;P;MPNE_E_AnIn2Filter             ;UINT     ;0   ;RTU       ;               ;3   ;2   ;93    ;4930;1   ;[RW]Analog input 2 filter
+0;P;MPNE_E_AnIn3Filter             ;UINT     ;0   ;RTU       ;               ;3   ;2   ;94    ;4931;1   ;[RW]Analog input 3 filter
+0;P;MPNE_E_AnIn4Filter             ;UINT     ;0   ;RTU       ;               ;3   ;2   ;95    ;4932;1   ;[RW]Analog input 4 filter
+0;P;MPNE_E_Mir_LifeTimems          ;UDINT    ;0   ;RTU       ;               ;3   ;2   ;400   ;4933;1   ;[RO]MPNE lifetime 1ms
+0;P;MPNE_E_Mir_Status              ;UINT     ;0   ;RTU       ;               ;3   ;2   ;402   ;4934;1   ;[RO]Mirror Reg.7 status register
+0;P;MPNE_E_Mir_DigitalIn1          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;403   ;4935;1   ;[RO]Mirror Reg.8 Digital input Word1 In 1-16
+0;P;MPNE_E_Mir_DigitalIn2          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;404   ;4936;1   ;[RO]Mirror Reg.9 Digital input Word2 In 17-32
+0;P;MPNE_E_Mir_StatusWord          ;UINT     ;0   ;RTU       ;               ;3   ;2   ;405   ;4937;1   ;[RO]Mirror Reg.25 Fast Input Output
+0;P;MPNE_E_Mir_EncCounter_A        ;DINT     ;0   ;RTU       ;               ;3   ;2   ;406   ;4938;1   ;[RO]Mirror Reg.34 Encoder Counter Line A
+0;P;MPNE_E_Mir_ShuntExp1           ;INT      ;0   ;RTU       ;               ;3   ;2   ;408   ;4939;1   ;[RO]Reserved
+0;P;MPNE_E_Mir_ShuntExp2           ;INT      ;0   ;RTU       ;               ;3   ;2   ;409   ;4940;1   ;[RO]Reserved
+0;P;MPNE_E_Mir_Anin1               ;INT      ;0   ;RTU       ;               ;3   ;2   ;410   ;4941;1   ;[RO]Mirror Reg.10 Analog input 1 value
+0;P;MPNE_E_Mir_Anin2               ;INT      ;0   ;RTU       ;               ;3   ;2   ;411   ;4942;1   ;[RO]Mirror Reg.11 Analog input 2 value
+0;P;MPNE_E_Mir_Anin3               ;INT      ;0   ;RTU       ;               ;3   ;2   ;412   ;4943;1   ;[RO]Mirror Reg.12 Analog input 3 value
+0;P;MPNE_E_Mir_Anin4               ;INT      ;0   ;RTU       ;               ;3   ;2   ;413   ;4944;1   ;[RO]Mirror Reg.13 Analog input 4 value
+0;P;MPNE_E_Mir_AnInStatus          ;INT      ;0   ;RTU       ;               ;3   ;2   ;414   ;4945;1   ;[RO]Mirror Reg.14 Analog Inputs status register
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -4840,162 +4986,16 @@
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RW]Backlight dimming value (0 ON 100 OFF)
+1;P;PLC_nBACKLIGHT                 ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RW]Backlight dimming value (0 ON 100 OFF)
 1;P;PLC_CPU_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]CPU temperature in degrees Celsius
-1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors counter
-1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors mask
-1;P;PLC_LPC_RESERVED_3             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
-1;P;PLC_LPC_RESERVED_4             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
-1;P;PLC_LPC_RESERVED_5             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
-1;P;PLC_LPC_RESERVED_6             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
-1;P;PLC_LPC_RESERVED_7             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
-1;P;PLC_LPC_RESERVED_8             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_ERRORS_COUNT           ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors counter
+1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]LPC communication errors mask
+1;P;PLC_LPC_RESERVED_3             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_4             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_5             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_6             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_7             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
+1;P;PLC_LPC_RESERVED_8             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;4989;10  ;[RO]reserved
 ;;;;;;;;;;;;
 1;P;RTU0_TYPE_PORT                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5000;10  ;[RO]
 1;P;RTU0_BAUDRATE                  ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5000;10  ;[RO]
@@ -5257,8 +5257,8 @@
 1;P;NODE_43_STATUS                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5256;2   ;[RW]
 1;P;NODE_44_DEV_NODE               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5258;2   ;[RW]
 1;P;NODE_44_STATUS                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5258;2   ;[RW]
-0;P;NODE_45_DEV_NODE               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5260;2   ;[RW]
-0;P;NODE_45_STATUS                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5260;2   ;[RW]
+1;P;NODE_45_DEV_NODE               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5260;2   ;[RW]
+1;P;NODE_45_STATUS                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5260;2   ;[RW]
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
@@ -5436,16 +5436,16 @@
 1;P;PLC_TOUCH_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Touch volume 
 1;P;PLC_ALARM_VOLUME               ;BYTE     ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Alarm volume (when alarm)
 1;P;PLC_BUZZER                     ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5435;4   ;[RW]Enable dynamic buzzer sound (0x44332211 up=0x11(%) on=0x22(cs) off=0x33(cs) rep=0x44(times))
-1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
-1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
+1;P;PLC_FastIO_Ena                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast IO Enable
+1;P;PLC_FastIO_Dir                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast IO Configuration
+1;P;PLC_FastIO_1                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 1
+1;P;PLC_FastIO_2                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 2
+1;P;PLC_FastIO_3                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 3
+1;P;PLC_FastIO_4                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Input 4
+1;P;PLC_FastIO_5                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 1
+1;P;PLC_FastIO_6                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 2
+1;P;PLC_FastIO_7                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 3
+1;P;PLC_FastIO_8                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Fast Output 4
 0;P;PLC_FastIO_9                   ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
 0;P;PLC_FastIO_10                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
 0;P;PLC_FastIO_11                  ;BIT      ;0   ;PLC       ;               ;    ;    ;      ;5439;34  ;[RW]Not available
