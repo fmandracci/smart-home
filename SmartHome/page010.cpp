@@ -139,11 +139,32 @@ void page010::updateWidgets()
         .arg(PLC_control_type)
         .toUpper()
         );
+
+    if (PLC_BA_BlackoutDetected || PLC_EP_BlackoutDetected) { // NB: no || PLC_EP_OverloadDetected
+        ui->pushButton_mute->setVisible(true);
+    } else {
+        ui->pushButton_mute->setVisible(false);
+        if (ui->pushButton_mute->isChecked()) {
+            ui->pushButton_mute->setChecked(false);
+        }
+        if (PLC_mute_BlackoutDetected) {
+            doWrite_PLC_mute_BlackoutDetected(0);
+        }
+    }
 }
 
 void page010::on_pushButton_home_clicked()
 {
     goto_start_page();
+}
+
+void page010::on_pushButton_mute_toggled(bool checked)
+{
+    if (checked) {
+        doWrite_PLC_mute_BlackoutDetected(1);
+    } else {
+        doWrite_PLC_mute_BlackoutDetected(0);
+    }
 }
 
 void page010::changeEvent(QEvent * event)

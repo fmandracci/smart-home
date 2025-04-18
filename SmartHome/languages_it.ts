@@ -1220,17 +1220,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="235"/>
+        <location filename="page010.ui" line="144"/>
         <source>SMART HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="869"/>
+        <location filename="page010.ui" line="922"/>
         <source>PLC_ConfigPassword</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="142"/>
+        <location filename="page010.ui" line="232"/>
         <source>XXXXxxXX
 x.xxx
 x.xxx
@@ -1238,18 +1238,18 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="971"/>
+        <location filename="page010.ui" line="1024"/>
         <source>PLC_BA_password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="314"/>
-        <location filename="page010.ui" line="413"/>
-        <location filename="page010.ui" line="512"/>
-        <location filename="page010.ui" line="662"/>
-        <location filename="page010.ui" line="761"/>
-        <location filename="page010.ui" line="863"/>
-        <location filename="page010.ui" line="965"/>
+        <location filename="page010.ui" line="367"/>
+        <location filename="page010.ui" line="466"/>
+        <location filename="page010.ui" line="565"/>
+        <location filename="page010.ui" line="715"/>
+        <location filename="page010.ui" line="814"/>
+        <location filename="page010.ui" line="916"/>
+        <location filename="page010.ui" line="1018"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1257,170 +1257,178 @@ xx</source>
 <context>
     <name>page011</name>
     <message>
-        <location filename="page011.ui" line="731"/>
-        <source>set tp*</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="161"/>
+        <location filename="page011.ui" line="108"/>
         <source>set home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="875"/>
-        <source>TPAC1007</source>
+        <location filename="page011.ui" line="663"/>
+        <source>tpac1007</source>
+        <oldsource>TPAC1007</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="186"/>
-        <location filename="page011.ui" line="446"/>
+        <location filename="page011.ui" line="133"/>
+        <location filename="page011.ui" line="287"/>
         <source>x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="449"/>
-        <location filename="page011.ui" line="455"/>
+        <location filename="page011.ui" line="290"/>
+        <location filename="page011.ui" line="296"/>
         <source>PLC_LPC_ERRORS_COUNT</source>
         <oldsource>PLC_LPC_ERRORS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="192"/>
-        <location filename="page011.ui" line="274"/>
-        <location filename="page011.ui" line="452"/>
-        <location filename="page011.ui" line="574"/>
+        <location filename="page011.ui" line="139"/>
+        <location filename="page011.ui" line="221"/>
+        <location filename="page011.ui" line="293"/>
+        <location filename="page011.ui" line="415"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="418"/>
+        <location filename="page011.ui" line="1242"/>
         <source>BA test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="665"/>
-        <source>XX MPNE C</source>
+        <location filename="page011.ui" line="506"/>
+        <source>mpne_c</source>
+        <oldsource>XX mpne C</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1085"/>
-        <source>XX MPNC</source>
+        <location filename="page011.ui" line="873"/>
+        <source>mpnc</source>
+        <oldsource>XX mpnc</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1282"/>
-        <source>EP 7E</source>
-        <oldsource>7E</oldsource>
+        <location filename="page011.ui" line="1070"/>
+        <source>7e</source>
+        <oldsource>EP 7e</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="365"/>
-        <source>Fonts</source>
+        <location filename="page011.ui" line="1295"/>
+        <source>mpne_a</source>
+        <oldsource>BA mpne A</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="120"/>
-        <source>BA MPNE A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="189"/>
-        <location filename="page011.ui" line="195"/>
+        <location filename="page011.ui" line="136"/>
+        <location filename="page011.ui" line="142"/>
         <source>PLC_EngineStatus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="198"/>
+        <location filename="page011.ui" line="145"/>
         <source>status = </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="568"/>
+        <location filename="page011.ui" line="409"/>
         <source>xx.x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="571"/>
-        <location filename="page011.ui" line="577"/>
+        <location filename="page011.ui" line="412"/>
+        <location filename="page011.ui" line="418"/>
         <source>PLC_CPU_TEMP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="580"/>
+        <location filename="page011.ui" line="421"/>
         <source>cpu = </source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page011.ui" line="583"/>
+        <location filename="page011.ui" line="424"/>
         <source>°C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page011.ui" line="560"/>
+        <source>netconf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="716"/>
+        <source>menu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="757"/>
+        <source>config</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="820"/>
+        <source>display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="926"/>
+        <source>info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1020"/>
+        <source>date&amp;&amp;time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page011.ui" line="1348"/>
-        <source>BA MPNE B</source>
+        <source>mpne_b</source>
+        <oldsource>BA mpne B</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page011.ui" line="1401"/>
-        <source>XX MPNE D</source>
+        <source>fonts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="268"/>
+        <location filename="page011.ui" line="1189"/>
+        <source>mpne_e</source>
+        <oldsource>BA mpne E</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="1136"/>
+        <source>mpne_d</source>
+        <oldsource>XX mpne D</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page011.ui" line="215"/>
         <source>0xxxxxxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1191"/>
-        <source>TPX*</source>
+        <location filename="page011.ui" line="979"/>
+        <source>tpx*</source>
+        <oldsource>TPX*</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="271"/>
-        <location filename="page011.ui" line="277"/>
+        <location filename="page011.ui" line="218"/>
+        <location filename="page011.ui" line="224"/>
         <source>PLC_LPC_ERRORS_MASK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="772"/>
-        <source>NetConf</source>
+        <location filename="page011.ui" line="381"/>
+        <source>7m</source>
+        <oldsource>EP 7m</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page011.ui" line="1138"/>
-        <source>Info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="540"/>
-        <source>EP 7M</source>
-        <oldsource>7M</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="1032"/>
-        <source>Display</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="928"/>
-        <source>Menu</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="969"/>
-        <source>Config</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="822"/>
-        <source>Tn ARQ01</source>
-        <oldsource>ARQ01</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page011.ui" line="1232"/>
-        <source>Date Time</source>
+        <location filename="page011.ui" line="610"/>
+        <source>arq01</source>
+        <oldsource>Tn arq01</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3421,365 +3429,2292 @@ xx</source>
     </message>
 </context>
 <context>
-    <name>page045</name>
+    <name>page045a</name>
     <message>
-        <location filename="page045.ui" line="672"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="107"/>
-        <location filename="page045.ui" line="175"/>
-        <location filename="page045.ui" line="243"/>
-        <location filename="page045.ui" line="311"/>
-        <location filename="page045.ui" line="382"/>
-        <location filename="page045.ui" line="545"/>
-        <location filename="page045.ui" line="613"/>
-        <location filename="page045.ui" line="777"/>
-        <location filename="page045.ui" line="856"/>
-        <location filename="page045.ui" line="924"/>
-        <location filename="page045.ui" line="989"/>
-        <location filename="page045.ui" line="1057"/>
-        <location filename="page045.ui" line="1122"/>
-        <location filename="page045.ui" line="1187"/>
-        <location filename="page045.ui" line="1252"/>
-        <location filename="page045.ui" line="1320"/>
-        <location filename="page045.ui" line="1388"/>
-        <location filename="page045.ui" line="1456"/>
-        <location filename="page045.ui" line="1524"/>
-        <location filename="page045.ui" line="1592"/>
-        <source>ATCMlabel widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="119"/>
-        <location filename="page045.ui" line="122"/>
-        <location filename="page045.ui" line="187"/>
-        <location filename="page045.ui" line="190"/>
-        <location filename="page045.ui" line="255"/>
-        <location filename="page045.ui" line="258"/>
-        <location filename="page045.ui" line="326"/>
-        <location filename="page045.ui" line="329"/>
-        <location filename="page045.ui" line="394"/>
-        <location filename="page045.ui" line="397"/>
-        <location filename="page045.ui" line="557"/>
-        <location filename="page045.ui" line="560"/>
-        <location filename="page045.ui" line="625"/>
-        <location filename="page045.ui" line="628"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="610"/>
-        <location filename="page045.ui" line="616"/>
-        <source>RTU0_BAUDRATE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="480"/>
-        <location filename="page045.ui" line="1684"/>
-        <location filename="page045.ui" line="1767"/>
-        <source>ATCMcombobox widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="477"/>
-        <location filename="page045.ui" line="483"/>
-        <source>RTU0_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="511"/>
-        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="308"/>
-        <location filename="page045.ui" line="314"/>
-        <source>RTU0_BUS_LOAD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="542"/>
-        <location filename="page045.ui" line="548"/>
-        <source>RTU0_WRITE_QUEUE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="104"/>
-        <location filename="page045.ui" line="110"/>
-        <source>RTU0_READS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="379"/>
-        <location filename="page045.ui" line="385"/>
-        <source>RTU0_WRITES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="240"/>
-        <location filename="page045.ui" line="246"/>
-        <source>RTU0_TIMEOUTS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="172"/>
-        <location filename="page045.ui" line="178"/>
-        <source>RTU0_COMM_ERRORS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="669"/>
-        <location filename="page045.ui" line="681"/>
-        <source>PLC_ResetValues</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="918"/>
-        <location filename="page045.ui" line="1051"/>
-        <location filename="page045.ui" line="1116"/>
-        <location filename="page045.ui" line="1181"/>
-        <source>xxxxxxxx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1054"/>
-        <location filename="page045.ui" line="1060"/>
-        <source>MPNE_B_SN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="930"/>
-        <location filename="page045.ui" line="1063"/>
-        <source>S/N </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1119"/>
-        <location filename="page045.ui" line="1125"/>
-        <source>MPNE_A_LifeTime</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1131"/>
-        <location filename="page045.ui" line="1196"/>
-        <source> s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="850"/>
-        <location filename="page045.ui" line="983"/>
-        <source>0xxxxx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="853"/>
-        <location filename="page045.ui" line="859"/>
-        <source>MPNE_A_FwRev</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="862"/>
-        <location filename="page045.ui" line="995"/>
-        <source>FW </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1764"/>
-        <location filename="page045.ui" line="1770"/>
-        <source>NODE_12_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="704"/>
-        <location filename="page045.ui" line="707"/>
-        <source>ZERO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="774"/>
-        <location filename="page045.ui" line="780"/>
-        <source>PLC_BA_enabled_sensors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1715"/>
-        <location filename="page045.ui" line="1798"/>
-        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1681"/>
-        <location filename="page045.ui" line="1687"/>
-        <source>NODE_11_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1184"/>
-        <location filename="page045.ui" line="1190"/>
-        <source>MPNE_B_LifeTime</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1246"/>
-        <location filename="page045.ui" line="1314"/>
-        <location filename="page045.ui" line="1382"/>
-        <location filename="page045.ui" line="1450"/>
-        <location filename="page045.ui" line="1518"/>
-        <location filename="page045.ui" line="1586"/>
-        <source>0xXXxx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1589"/>
-        <location filename="page045.ui" line="1595"/>
-        <source>MPNE_A_ExpType</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1326"/>
-        <location filename="page045.ui" line="1598"/>
-        <source>T:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1521"/>
-        <location filename="page045.ui" line="1527"/>
-        <source>MPNE_A_ExpID</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="1258"/>
-        <location filename="page045.ui" line="1530"/>
-        <source>ID:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="607"/>
-        <source>xxxxx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="619"/>
-        <source> baud</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="446"/>
-        <source>RTU0 MPNE_A,B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="305"/>
-        <location filename="page045.ui" line="771"/>
-        <source>xx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="317"/>
-        <source>load </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="320"/>
-        <source> %</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page045.ui" line="101"/>
-        <location filename="page045.ui" line="169"/>
-        <location filename="page045.ui" line="237"/>
-        <location filename="page045.ui" line="376"/>
-        <location filename="page045.ui" line="539"/>
+        <location filename="page045a.ui" line="98"/>
+        <location filename="page045a.ui" line="237"/>
+        <location filename="page045a.ui" line="305"/>
+        <location filename="page045a.ui" line="435"/>
+        <location filename="page045a.ui" line="604"/>
         <source>nnnnnnnnn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="113"/>
+        <location filename="page045a.ui" line="101"/>
+        <location filename="page045a.ui" line="107"/>
+        <source>RTU0_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="104"/>
+        <location filename="page045a.ui" line="172"/>
+        <location filename="page045a.ui" line="243"/>
+        <location filename="page045a.ui" line="311"/>
+        <location filename="page045a.ui" line="441"/>
+        <location filename="page045a.ui" line="542"/>
+        <location filename="page045a.ui" line="610"/>
+        <location filename="page045a.ui" line="1934"/>
+        <location filename="page045a.ui" line="2250"/>
+        <location filename="page045a.ui" line="2318"/>
+        <location filename="page045a.ui" line="2551"/>
+        <location filename="page045a.ui" line="2729"/>
+        <location filename="page045a.ui" line="2878"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="110"/>
         <source>rd: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="551"/>
-        <source>wq: </source>
+        <location filename="page045a.ui" line="116"/>
+        <location filename="page045a.ui" line="119"/>
+        <location filename="page045a.ui" line="187"/>
+        <location filename="page045a.ui" line="190"/>
+        <location filename="page045a.ui" line="255"/>
+        <location filename="page045a.ui" line="258"/>
+        <location filename="page045a.ui" line="323"/>
+        <location filename="page045a.ui" line="326"/>
+        <location filename="page045a.ui" line="453"/>
+        <location filename="page045a.ui" line="456"/>
+        <location filename="page045a.ui" line="554"/>
+        <location filename="page045a.ui" line="557"/>
+        <location filename="page045a.ui" line="622"/>
+        <location filename="page045a.ui" line="625"/>
+        <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="249"/>
-        <source>to: </source>
+        <location filename="page045a.ui" line="166"/>
+        <source>xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="388"/>
-        <source>wr: </source>
+        <location filename="page045a.ui" line="169"/>
+        <location filename="page045a.ui" line="175"/>
+        <source>RTU0_BUS_LOAD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="181"/>
+        <location filename="page045a.ui" line="178"/>
+        <source>load </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="181"/>
+        <source> %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="240"/>
+        <location filename="page045a.ui" line="246"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="249"/>
         <source>ce: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="729"/>
-        <location filename="page045.ui" line="735"/>
+        <location filename="page045a.ui" line="308"/>
+        <location filename="page045a.ui" line="314"/>
+        <source>RTU0_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="317"/>
+        <source>wr: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="373"/>
+        <location filename="page045a.ui" line="379"/>
+        <source>RTU0_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="376"/>
+        <location filename="page045a.ui" line="1131"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="407"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="438"/>
+        <location filename="page045a.ui" line="444"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="447"/>
+        <source>to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="505"/>
+        <source>RTU0 MPNE_A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="536"/>
+        <source>xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="539"/>
+        <location filename="page045a.ui" line="545"/>
+        <source>RTU0_BAUDRATE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="548"/>
+        <source> baud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="607"/>
+        <location filename="page045a.ui" line="613"/>
+        <source>RTU0_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="616"/>
+        <source>wq: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="663"/>
+        <location filename="page045a.ui" line="669"/>
         <source>PLC_Iam_BA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="732"/>
-        <source>ATCMled widget</source>
+        <location filename="page045a.ui" line="714"/>
+        <location filename="page045a.ui" line="726"/>
+        <source>PLC_ResetValues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="786"/>
-        <source> / 32</source>
+        <location filename="page045a.ui" line="717"/>
+        <location filename="page045a.ui" line="796"/>
+        <location filename="page045a.ui" line="903"/>
+        <location filename="page045a.ui" line="979"/>
+        <location filename="page045a.ui" line="1055"/>
+        <location filename="page045a.ui" line="1232"/>
+        <location filename="page045a.ui" line="1297"/>
+        <location filename="page045a.ui" line="1362"/>
+        <location filename="page045a.ui" line="1511"/>
+        <location filename="page045a.ui" line="1587"/>
+        <location filename="page045a.ui" line="1663"/>
+        <location filename="page045a.ui" line="2044"/>
+        <location filename="page045a.ui" line="2109"/>
+        <location filename="page045a.ui" line="2185"/>
+        <location filename="page045a.ui" line="2664"/>
+        <location filename="page045a.ui" line="2946"/>
+        <location filename="page045a.ui" line="3022"/>
+        <location filename="page045a.ui" line="3087"/>
+        <location filename="page045a.ui" line="3149"/>
+        <location filename="page045a.ui" line="3211"/>
+        <location filename="page045a.ui" line="3273"/>
+        <location filename="page045a.ui" line="3335"/>
+        <location filename="page045a.ui" line="3397"/>
+        <location filename="page045a.ui" line="3459"/>
+        <location filename="page045a.ui" line="3521"/>
+        <location filename="page045a.ui" line="3583"/>
+        <location filename="page045a.ui" line="3645"/>
+        <location filename="page045a.ui" line="3707"/>
+        <location filename="page045a.ui" line="3769"/>
+        <location filename="page045a.ui" line="3831"/>
+        <location filename="page045a.ui" line="3893"/>
+        <location filename="page045a.ui" line="3955"/>
+        <location filename="page045a.ui" line="4017"/>
+        <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1249"/>
-        <location filename="page045.ui" line="1255"/>
-        <source>MPNE_B_ExpID</source>
+        <location filename="page045a.ui" line="749"/>
+        <location filename="page045a.ui" line="752"/>
+        <source>ZERO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1317"/>
-        <location filename="page045.ui" line="1323"/>
-        <source>MPNE_B_ExpType</source>
+        <location filename="page045a.ui" line="793"/>
+        <location filename="page045a.ui" line="805"/>
+        <source>MPNE_A_DigDir_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1385"/>
-        <location filename="page045.ui" line="1391"/>
+        <location filename="page045a.ui" line="1931"/>
+        <location filename="page045a.ui" line="1937"/>
+        <source>MPNE_A_ExpType</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2041"/>
+        <location filename="page045a.ui" line="2053"/>
+        <source>MPNE_A_DigDir_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2106"/>
+        <location filename="page045a.ui" line="2118"/>
+        <source>MPNE_A_DigOut_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2148"/>
+        <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2182"/>
+        <location filename="page045a.ui" line="2194"/>
+        <source>MPNE_A_DigDir_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2247"/>
+        <location filename="page045a.ui" line="2253"/>
         <source>MPNE_A_Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1453"/>
-        <location filename="page045.ui" line="1459"/>
-        <source>MPNE_B_Status</source>
+        <location filename="page045a.ui" line="2315"/>
+        <location filename="page045a.ui" line="2321"/>
+        <source>MPNE_A_SN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1656"/>
+        <location filename="page045a.ui" line="2548"/>
+        <location filename="page045a.ui" line="2554"/>
+        <source>MPNE_A_ExpID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2661"/>
+        <location filename="page045a.ui" line="2673"/>
+        <source>MPNE_A_DigDir_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2726"/>
+        <location filename="page045a.ui" line="2732"/>
+        <source>MPNE_A_LifeTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2875"/>
+        <location filename="page045a.ui" line="2881"/>
+        <source>MPNE_A_FwRev</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2943"/>
+        <location filename="page045a.ui" line="2955"/>
+        <source>MPNE_A_DigOut_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2985"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3019"/>
+        <location filename="page045a.ui" line="3031"/>
+        <source>MPNE_A_DigDir_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3084"/>
+        <location filename="page045a.ui" line="3096"/>
+        <source>MPNE_A_DigOut_17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3112"/>
+        <source>17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3146"/>
+        <location filename="page045a.ui" line="3158"/>
+        <source>MPNE_A_DigOut_18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3174"/>
+        <source>18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3208"/>
+        <location filename="page045a.ui" line="3220"/>
+        <source>MPNE_A_DigOut_19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3236"/>
+        <source>19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3270"/>
+        <location filename="page045a.ui" line="3282"/>
+        <source>MPNE_A_DigOut_20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3332"/>
+        <location filename="page045a.ui" line="3344"/>
+        <source>MPNE_A_DigOut_21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3360"/>
+        <source>21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3394"/>
+        <location filename="page045a.ui" line="3406"/>
+        <source>MPNE_A_DigOut_22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3422"/>
+        <source>22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3456"/>
+        <location filename="page045a.ui" line="3468"/>
+        <source>MPNE_A_DigOut_23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3484"/>
+        <source>23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3518"/>
+        <location filename="page045a.ui" line="3530"/>
+        <source>MPNE_A_DigOut_24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3546"/>
+        <source>24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3580"/>
+        <location filename="page045a.ui" line="3592"/>
+        <source>MPNE_A_DigOut_25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3608"/>
+        <source>25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3642"/>
+        <location filename="page045a.ui" line="3654"/>
+        <source>MPNE_A_DigOut_26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3670"/>
+        <source>26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3704"/>
+        <location filename="page045a.ui" line="3716"/>
+        <source>MPNE_A_DigOut_27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3732"/>
+        <source>27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3766"/>
+        <location filename="page045a.ui" line="3778"/>
+        <source>MPNE_A_DigOut_28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3794"/>
+        <source>28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3828"/>
+        <location filename="page045a.ui" line="3840"/>
+        <source>MPNE_A_DigOut_29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3856"/>
+        <source>29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3890"/>
+        <location filename="page045a.ui" line="3902"/>
+        <source>MPNE_A_DigOut_30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3918"/>
+        <source>30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3952"/>
+        <location filename="page045a.ui" line="3964"/>
+        <source>MPNE_A_DigOut_31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3980"/>
+        <source>31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4014"/>
+        <location filename="page045a.ui" line="4026"/>
+        <source>MPNE_A_DigOut_32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4042"/>
+        <source>32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4078"/>
+        <source>9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4108"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4138"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4168"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4198"/>
+        <source>13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4228"/>
+        <source>14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4258"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="4288"/>
+        <source>16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="666"/>
+        <location filename="page045a.ui" line="855"/>
+        <location filename="page045a.ui" line="1184"/>
+        <location filename="page045a.ui" line="1421"/>
+        <location filename="page045a.ui" line="1463"/>
+        <location filename="page045a.ui" line="1733"/>
+        <location filename="page045a.ui" line="1775"/>
+        <location filename="page045a.ui" line="1844"/>
+        <location filename="page045a.ui" line="1886"/>
+        <location filename="page045a.ui" line="1996"/>
+        <location filename="page045a.ui" line="2377"/>
+        <location filename="page045a.ui" line="2419"/>
+        <location filename="page045a.ui" line="2461"/>
+        <location filename="page045a.ui" line="2503"/>
+        <location filename="page045a.ui" line="2616"/>
+        <location filename="page045a.ui" line="2788"/>
+        <location filename="page045a.ui" line="2830"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="821"/>
+        <location filename="page045a.ui" line="1257"/>
+        <location filename="page045a.ui" line="1322"/>
+        <location filename="page045a.ui" line="1387"/>
+        <location filename="page045a.ui" line="2069"/>
+        <location filename="page045a.ui" line="2210"/>
+        <location filename="page045a.ui" line="2689"/>
+        <location filename="page045a.ui" line="3047"/>
+        <source>in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="824"/>
+        <location filename="page045a.ui" line="1260"/>
+        <location filename="page045a.ui" line="1325"/>
+        <location filename="page045a.ui" line="1390"/>
+        <location filename="page045a.ui" line="2072"/>
+        <location filename="page045a.ui" line="2213"/>
+        <location filename="page045a.ui" line="2692"/>
+        <location filename="page045a.ui" line="3050"/>
+        <source>OUT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2872"/>
+        <source>0xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2884"/>
+        <source>FW </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1162"/>
+        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2312"/>
+        <location filename="page045a.ui" line="2723"/>
+        <source>xxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2738"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="2324"/>
+        <source>S/N </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="852"/>
+        <location filename="page045a.ui" line="858"/>
+        <location filename="page045a.ui" line="1181"/>
+        <location filename="page045a.ui" line="1187"/>
+        <location filename="page045a.ui" line="1418"/>
+        <location filename="page045a.ui" line="1424"/>
+        <location filename="page045a.ui" line="1460"/>
+        <location filename="page045a.ui" line="1466"/>
+        <location filename="page045a.ui" line="1730"/>
+        <location filename="page045a.ui" line="1736"/>
+        <location filename="page045a.ui" line="1772"/>
+        <location filename="page045a.ui" line="1778"/>
+        <location filename="page045a.ui" line="1841"/>
+        <location filename="page045a.ui" line="1847"/>
+        <location filename="page045a.ui" line="1883"/>
+        <location filename="page045a.ui" line="1889"/>
+        <location filename="page045a.ui" line="1993"/>
+        <location filename="page045a.ui" line="1999"/>
+        <location filename="page045a.ui" line="2374"/>
+        <location filename="page045a.ui" line="2380"/>
+        <location filename="page045a.ui" line="2416"/>
+        <location filename="page045a.ui" line="2422"/>
+        <location filename="page045a.ui" line="2458"/>
+        <location filename="page045a.ui" line="2464"/>
+        <location filename="page045a.ui" line="2500"/>
+        <location filename="page045a.ui" line="2506"/>
+        <location filename="page045a.ui" line="2613"/>
+        <location filename="page045a.ui" line="2619"/>
+        <location filename="page045a.ui" line="2785"/>
+        <location filename="page045a.ui" line="2791"/>
+        <location filename="page045a.ui" line="2827"/>
+        <location filename="page045a.ui" line="2833"/>
+        <source>MPNE_A_DigIn_1</source>
+        <oldsource>MPNE_C_FwRev</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="900"/>
+        <location filename="page045a.ui" line="912"/>
+        <source>MPNE_A_DigOut_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="942"/>
+        <source>7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="976"/>
+        <location filename="page045a.ui" line="988"/>
+        <source>MPNE_A_DigOut_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1018"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1052"/>
+        <location filename="page045a.ui" line="1064"/>
+        <source>MPNE_A_DigOut_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1094"/>
+        <location filename="page045a.ui" line="1097"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1128"/>
+        <location filename="page045a.ui" line="1134"/>
+        <source>NODE_11_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1229"/>
+        <location filename="page045a.ui" line="1241"/>
+        <source>MPNE_A_DigDir_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1294"/>
+        <location filename="page045a.ui" line="1306"/>
+        <source>MPNE_A_DigDir_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1359"/>
+        <location filename="page045a.ui" line="1371"/>
+        <source>MPNE_A_DigDir_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1508"/>
+        <location filename="page045a.ui" line="1520"/>
+        <source>MPNE_A_DigOut_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1550"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1584"/>
+        <location filename="page045a.ui" line="1596"/>
+        <source>MPNE_A_DigOut_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1626"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1660"/>
+        <location filename="page045a.ui" line="1672"/>
+        <source>MPNE_A_DigOut_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1702"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1819"/>
         <source>MPNE_A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="1739"/>
-        <source>MPNE_B</source>
+        <location filename="page045a.ui" line="1928"/>
+        <location filename="page045a.ui" line="2244"/>
+        <location filename="page045a.ui" line="2545"/>
+        <source>0xXXxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="986"/>
-        <location filename="page045.ui" line="992"/>
+        <location filename="page045a.ui" line="2557"/>
+        <source>ID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="1940"/>
+        <source>T:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045a.ui" line="3298"/>
+        <source>20</source>
+        <oldsource>ON</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>page045b</name>
+    <message>
+        <location filename="page045b.ui" line="98"/>
+        <location filename="page045b.ui" line="237"/>
+        <location filename="page045b.ui" line="305"/>
+        <location filename="page045b.ui" line="435"/>
+        <location filename="page045b.ui" line="604"/>
+        <source>nnnnnnnnn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="101"/>
+        <location filename="page045b.ui" line="107"/>
+        <source>RTU0_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="104"/>
+        <location filename="page045b.ui" line="172"/>
+        <location filename="page045b.ui" line="243"/>
+        <location filename="page045b.ui" line="311"/>
+        <location filename="page045b.ui" line="441"/>
+        <location filename="page045b.ui" line="542"/>
+        <location filename="page045b.ui" line="610"/>
+        <location filename="page045b.ui" line="1934"/>
+        <location filename="page045b.ui" line="2250"/>
+        <location filename="page045b.ui" line="2318"/>
+        <location filename="page045b.ui" line="2551"/>
+        <location filename="page045b.ui" line="2729"/>
+        <location filename="page045b.ui" line="2878"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="110"/>
+        <source>rd: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="116"/>
+        <location filename="page045b.ui" line="119"/>
+        <location filename="page045b.ui" line="187"/>
+        <location filename="page045b.ui" line="190"/>
+        <location filename="page045b.ui" line="255"/>
+        <location filename="page045b.ui" line="258"/>
+        <location filename="page045b.ui" line="323"/>
+        <location filename="page045b.ui" line="326"/>
+        <location filename="page045b.ui" line="453"/>
+        <location filename="page045b.ui" line="456"/>
+        <location filename="page045b.ui" line="554"/>
+        <location filename="page045b.ui" line="557"/>
+        <location filename="page045b.ui" line="622"/>
+        <location filename="page045b.ui" line="625"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="166"/>
+        <source>xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="169"/>
+        <location filename="page045b.ui" line="175"/>
+        <source>RTU0_BUS_LOAD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="178"/>
+        <source>load </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="181"/>
+        <source> %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="240"/>
+        <location filename="page045b.ui" line="246"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="249"/>
+        <source>ce: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="308"/>
+        <location filename="page045b.ui" line="314"/>
+        <source>RTU0_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="317"/>
+        <source>wr: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="373"/>
+        <location filename="page045b.ui" line="379"/>
+        <source>RTU0_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="376"/>
+        <location filename="page045b.ui" line="1131"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="407"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="438"/>
+        <location filename="page045b.ui" line="444"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="447"/>
+        <source>to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="505"/>
+        <source>RTU0 MPNE_B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="536"/>
+        <source>xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="539"/>
+        <location filename="page045b.ui" line="545"/>
+        <source>RTU0_BAUDRATE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="548"/>
+        <source> baud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="607"/>
+        <location filename="page045b.ui" line="613"/>
+        <source>RTU0_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="616"/>
+        <source>wq: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="663"/>
+        <location filename="page045b.ui" line="669"/>
+        <source>PLC_Iam_BA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="714"/>
+        <location filename="page045b.ui" line="726"/>
+        <source>PLC_ResetValues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="717"/>
+        <location filename="page045b.ui" line="796"/>
+        <location filename="page045b.ui" line="903"/>
+        <location filename="page045b.ui" line="979"/>
+        <location filename="page045b.ui" line="1055"/>
+        <location filename="page045b.ui" line="1232"/>
+        <location filename="page045b.ui" line="1297"/>
+        <location filename="page045b.ui" line="1362"/>
+        <location filename="page045b.ui" line="1511"/>
+        <location filename="page045b.ui" line="1587"/>
+        <location filename="page045b.ui" line="1663"/>
+        <location filename="page045b.ui" line="2044"/>
+        <location filename="page045b.ui" line="2109"/>
+        <location filename="page045b.ui" line="2185"/>
+        <location filename="page045b.ui" line="2664"/>
+        <location filename="page045b.ui" line="2946"/>
+        <location filename="page045b.ui" line="3022"/>
+        <location filename="page045b.ui" line="3087"/>
+        <location filename="page045b.ui" line="3149"/>
+        <location filename="page045b.ui" line="3211"/>
+        <location filename="page045b.ui" line="3273"/>
+        <location filename="page045b.ui" line="3335"/>
+        <location filename="page045b.ui" line="3397"/>
+        <location filename="page045b.ui" line="3459"/>
+        <location filename="page045b.ui" line="3521"/>
+        <location filename="page045b.ui" line="3583"/>
+        <location filename="page045b.ui" line="3645"/>
+        <location filename="page045b.ui" line="3707"/>
+        <location filename="page045b.ui" line="3769"/>
+        <location filename="page045b.ui" line="3831"/>
+        <location filename="page045b.ui" line="3893"/>
+        <location filename="page045b.ui" line="3955"/>
+        <location filename="page045b.ui" line="4017"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="749"/>
+        <location filename="page045b.ui" line="752"/>
+        <source>ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3084"/>
+        <location filename="page045b.ui" line="3096"/>
+        <source>MPNE_B_DigOut_17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3112"/>
+        <source>17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3146"/>
+        <location filename="page045b.ui" line="3158"/>
+        <source>MPNE_B_DigOut_18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3174"/>
+        <source>18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3208"/>
+        <location filename="page045b.ui" line="3220"/>
+        <source>MPNE_B_DigOut_19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3236"/>
+        <source>19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3270"/>
+        <location filename="page045b.ui" line="3282"/>
+        <source>MPNE_B_DigOut_20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3332"/>
+        <location filename="page045b.ui" line="3344"/>
+        <source>MPNE_B_DigOut_21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3360"/>
+        <source>21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3394"/>
+        <location filename="page045b.ui" line="3406"/>
+        <source>MPNE_B_DigOut_22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3422"/>
+        <source>22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3456"/>
+        <location filename="page045b.ui" line="3468"/>
+        <source>MPNE_B_DigOut_23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3484"/>
+        <source>23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3518"/>
+        <location filename="page045b.ui" line="3530"/>
+        <source>MPNE_B_DigOut_24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3546"/>
+        <source>24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3580"/>
+        <location filename="page045b.ui" line="3592"/>
+        <source>MPNE_B_DigOut_25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3608"/>
+        <source>25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3642"/>
+        <location filename="page045b.ui" line="3654"/>
+        <source>MPNE_B_DigOut_26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3670"/>
+        <source>26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3704"/>
+        <location filename="page045b.ui" line="3716"/>
+        <source>MPNE_B_DigOut_27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3732"/>
+        <source>27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3766"/>
+        <location filename="page045b.ui" line="3778"/>
+        <source>MPNE_B_DigOut_28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3794"/>
+        <source>28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3828"/>
+        <location filename="page045b.ui" line="3840"/>
+        <source>MPNE_B_DigOut_29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3856"/>
+        <source>29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3890"/>
+        <location filename="page045b.ui" line="3902"/>
+        <source>MPNE_B_DigOut_30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3918"/>
+        <source>30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3952"/>
+        <location filename="page045b.ui" line="3964"/>
+        <source>MPNE_B_DigOut_31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3980"/>
+        <source>31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4014"/>
+        <location filename="page045b.ui" line="4026"/>
+        <source>MPNE_B_DigOut_32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4042"/>
+        <source>32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4078"/>
+        <source>9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4108"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4138"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4168"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4198"/>
+        <source>13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4228"/>
+        <source>14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4258"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="4288"/>
+        <source>16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="666"/>
+        <location filename="page045b.ui" line="855"/>
+        <location filename="page045b.ui" line="1184"/>
+        <location filename="page045b.ui" line="1421"/>
+        <location filename="page045b.ui" line="1463"/>
+        <location filename="page045b.ui" line="1733"/>
+        <location filename="page045b.ui" line="1775"/>
+        <location filename="page045b.ui" line="1844"/>
+        <location filename="page045b.ui" line="1886"/>
+        <location filename="page045b.ui" line="1996"/>
+        <location filename="page045b.ui" line="2377"/>
+        <location filename="page045b.ui" line="2419"/>
+        <location filename="page045b.ui" line="2461"/>
+        <location filename="page045b.ui" line="2503"/>
+        <location filename="page045b.ui" line="2616"/>
+        <location filename="page045b.ui" line="2788"/>
+        <location filename="page045b.ui" line="2830"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="821"/>
+        <location filename="page045b.ui" line="1257"/>
+        <location filename="page045b.ui" line="1322"/>
+        <location filename="page045b.ui" line="1387"/>
+        <location filename="page045b.ui" line="2069"/>
+        <location filename="page045b.ui" line="2210"/>
+        <location filename="page045b.ui" line="2689"/>
+        <location filename="page045b.ui" line="3047"/>
+        <source>in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="824"/>
+        <location filename="page045b.ui" line="1260"/>
+        <location filename="page045b.ui" line="1325"/>
+        <location filename="page045b.ui" line="1390"/>
+        <location filename="page045b.ui" line="2072"/>
+        <location filename="page045b.ui" line="2213"/>
+        <location filename="page045b.ui" line="2692"/>
+        <location filename="page045b.ui" line="3050"/>
+        <source>OUT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2872"/>
+        <source>0xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2884"/>
+        <source>FW </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1162"/>
+        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2312"/>
+        <location filename="page045b.ui" line="2723"/>
+        <source>xxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2738"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2315"/>
+        <location filename="page045b.ui" line="2321"/>
+        <source>MPNE_B_SN</source>
+        <oldsource>MPNE_C_SN</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2324"/>
+        <source>S/N </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2875"/>
+        <location filename="page045b.ui" line="2881"/>
         <source>MPNE_B_FwRev</source>
+        <oldsource>MPNE_C_FwRev</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page045.ui" line="921"/>
-        <location filename="page045.ui" line="927"/>
-        <source>MPNE_A_SN</source>
+        <location filename="page045b.ui" line="1928"/>
+        <location filename="page045b.ui" line="2244"/>
+        <location filename="page045b.ui" line="2545"/>
+        <source>0xXXxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2557"/>
+        <source>ID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1940"/>
+        <source>T:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1819"/>
+        <source>MPNE_B</source>
+        <oldsource>MPNE_C</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1931"/>
+        <location filename="page045b.ui" line="1937"/>
+        <source>MPNE_B_ExpType</source>
+        <oldsource>MPNE_C_ExpType</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2148"/>
+        <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2247"/>
+        <location filename="page045b.ui" line="2253"/>
+        <source>MPNE_B_Status</source>
+        <oldsource>MPNE_C_Status</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2548"/>
+        <location filename="page045b.ui" line="2554"/>
+        <source>MPNE_B_ExpID</source>
+        <oldsource>MPNE_C_ExpID</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2726"/>
+        <location filename="page045b.ui" line="2732"/>
+        <source>MPNE_B_LifeTime</source>
+        <oldsource>MPNE_C_LifeTime</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1229"/>
+        <location filename="page045b.ui" line="1241"/>
+        <source>MPNE_B_DigDir_4</source>
+        <oldsource>MPNE_C_DigDir_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="793"/>
+        <location filename="page045b.ui" line="805"/>
+        <source>MPNE_B_DigDir_2</source>
+        <oldsource>MPNE_C_DigDir_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="852"/>
+        <location filename="page045b.ui" line="858"/>
+        <location filename="page045b.ui" line="1181"/>
+        <location filename="page045b.ui" line="1187"/>
+        <location filename="page045b.ui" line="1418"/>
+        <location filename="page045b.ui" line="1424"/>
+        <location filename="page045b.ui" line="1460"/>
+        <location filename="page045b.ui" line="1466"/>
+        <location filename="page045b.ui" line="1730"/>
+        <location filename="page045b.ui" line="1736"/>
+        <location filename="page045b.ui" line="1772"/>
+        <location filename="page045b.ui" line="1778"/>
+        <location filename="page045b.ui" line="1841"/>
+        <location filename="page045b.ui" line="1847"/>
+        <location filename="page045b.ui" line="1883"/>
+        <location filename="page045b.ui" line="1889"/>
+        <location filename="page045b.ui" line="1993"/>
+        <location filename="page045b.ui" line="1999"/>
+        <location filename="page045b.ui" line="2374"/>
+        <location filename="page045b.ui" line="2380"/>
+        <location filename="page045b.ui" line="2416"/>
+        <location filename="page045b.ui" line="2422"/>
+        <location filename="page045b.ui" line="2458"/>
+        <location filename="page045b.ui" line="2464"/>
+        <location filename="page045b.ui" line="2500"/>
+        <location filename="page045b.ui" line="2506"/>
+        <location filename="page045b.ui" line="2613"/>
+        <location filename="page045b.ui" line="2619"/>
+        <location filename="page045b.ui" line="2785"/>
+        <location filename="page045b.ui" line="2791"/>
+        <location filename="page045b.ui" line="2827"/>
+        <location filename="page045b.ui" line="2833"/>
+        <source>MPNE_B_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="942"/>
+        <source>7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1018"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1094"/>
+        <location filename="page045b.ui" line="1097"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1128"/>
+        <location filename="page045b.ui" line="1134"/>
+        <source>NODE_12_STATUS</source>
+        <oldsource>NODE_11_STATUS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1359"/>
+        <location filename="page045b.ui" line="1371"/>
+        <source>MPNE_B_DigDir_3</source>
+        <oldsource>MPNE_C_DigDir_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1294"/>
+        <location filename="page045b.ui" line="1306"/>
+        <source>MPNE_B_DigDir_5</source>
+        <oldsource>MPNE_C_DigDir_5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="976"/>
+        <location filename="page045b.ui" line="988"/>
+        <source>MPNE_B_DigOut_1</source>
+        <oldsource>MPNE_C_DigOut_1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3298"/>
+        <source>20</source>
+        <oldsource>ON</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1052"/>
+        <location filename="page045b.ui" line="1064"/>
+        <source>MPNE_B_DigOut_2</source>
+        <oldsource>MPNE_C_DigOut_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1508"/>
+        <location filename="page045b.ui" line="1520"/>
+        <source>MPNE_B_DigOut_3</source>
+        <oldsource>MPNE_C_DigOut_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1550"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1626"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1660"/>
+        <location filename="page045b.ui" line="1672"/>
+        <source>MPNE_B_DigOut_4</source>
+        <oldsource>MPNE_C_DigOut_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1584"/>
+        <location filename="page045b.ui" line="1596"/>
+        <source>MPNE_B_DigOut_5</source>
+        <oldsource>MPNE_C_DigOut_5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="1702"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2943"/>
+        <location filename="page045b.ui" line="2955"/>
+        <source>MPNE_B_DigOut_6</source>
+        <oldsource>MPNE_C_DigOut_6</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2985"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="3019"/>
+        <location filename="page045b.ui" line="3031"/>
+        <source>MPNE_B_DigDir_7</source>
+        <oldsource>MPNE_C_DigDir_7</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2041"/>
+        <location filename="page045b.ui" line="2053"/>
+        <source>MPNE_B_DigDir_6</source>
+        <oldsource>MPNE_C_DigDir_6</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2182"/>
+        <location filename="page045b.ui" line="2194"/>
+        <source>MPNE_B_DigDir_8</source>
+        <oldsource>MPNE_C_DigDir_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2106"/>
+        <location filename="page045b.ui" line="2118"/>
+        <source>MPNE_B_DigOut_8</source>
+        <oldsource>MPNE_C_DigOut_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="900"/>
+        <location filename="page045b.ui" line="912"/>
+        <source>MPNE_B_DigOut_7</source>
+        <oldsource>MPNE_C_DigOut_7</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045b.ui" line="2661"/>
+        <location filename="page045b.ui" line="2673"/>
+        <source>MPNE_B_DigDir_1</source>
+        <oldsource>MPNE_C_DigDir_1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>page045e</name>
+    <message>
+        <location filename="page045e.ui" line="98"/>
+        <location filename="page045e.ui" line="237"/>
+        <location filename="page045e.ui" line="305"/>
+        <location filename="page045e.ui" line="435"/>
+        <location filename="page045e.ui" line="604"/>
+        <source>nnnnnnnnn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="101"/>
+        <location filename="page045e.ui" line="107"/>
+        <source>RTU3_READS</source>
+        <oldsource>RTU0_READS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="104"/>
+        <location filename="page045e.ui" line="172"/>
+        <location filename="page045e.ui" line="243"/>
+        <location filename="page045e.ui" line="311"/>
+        <location filename="page045e.ui" line="441"/>
+        <location filename="page045e.ui" line="542"/>
+        <location filename="page045e.ui" line="610"/>
+        <location filename="page045e.ui" line="1934"/>
+        <location filename="page045e.ui" line="2250"/>
+        <location filename="page045e.ui" line="2318"/>
+        <location filename="page045e.ui" line="2551"/>
+        <location filename="page045e.ui" line="2729"/>
+        <location filename="page045e.ui" line="2878"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="110"/>
+        <source>rd: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="116"/>
+        <location filename="page045e.ui" line="119"/>
+        <location filename="page045e.ui" line="187"/>
+        <location filename="page045e.ui" line="190"/>
+        <location filename="page045e.ui" line="255"/>
+        <location filename="page045e.ui" line="258"/>
+        <location filename="page045e.ui" line="323"/>
+        <location filename="page045e.ui" line="326"/>
+        <location filename="page045e.ui" line="453"/>
+        <location filename="page045e.ui" line="456"/>
+        <location filename="page045e.ui" line="554"/>
+        <location filename="page045e.ui" line="557"/>
+        <location filename="page045e.ui" line="622"/>
+        <location filename="page045e.ui" line="625"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="166"/>
+        <source>xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="169"/>
+        <location filename="page045e.ui" line="175"/>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU0_BUS_LOAD</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="178"/>
+        <source>load </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="181"/>
+        <source> %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="240"/>
+        <location filename="page045e.ui" line="246"/>
+        <source>RTU3_COMM_ERRORS</source>
+        <oldsource>RTU0_COMM_ERRORS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="249"/>
+        <source>ce: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="308"/>
+        <location filename="page045e.ui" line="314"/>
+        <source>RTU3_WRITES</source>
+        <oldsource>RTU0_WRITES</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="317"/>
+        <source>wr: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="373"/>
+        <location filename="page045e.ui" line="379"/>
+        <source>RTU3_STATUS</source>
+        <oldsource>RTU0_STATUS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="376"/>
+        <location filename="page045e.ui" line="1131"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="407"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="438"/>
+        <location filename="page045e.ui" line="444"/>
+        <source>RTU3_TIMEOUTS</source>
+        <oldsource>RTU0_TIMEOUTS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="447"/>
+        <source>to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="505"/>
+        <source>RTU3 MPNE_E</source>
+        <oldsource>RTU0 MPNE_E</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="536"/>
+        <source>xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="539"/>
+        <location filename="page045e.ui" line="545"/>
+        <source>RTU3_BAUDRATE</source>
+        <oldsource>RTU0_BAUDRATE</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="548"/>
+        <source> baud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="607"/>
+        <location filename="page045e.ui" line="613"/>
+        <source>RTU3_WRITE_QUEUE</source>
+        <oldsource>RTU0_WRITE_QUEUE</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="616"/>
+        <source>wq: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="663"/>
+        <location filename="page045e.ui" line="669"/>
+        <source>PLC_Iam_BA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="666"/>
+        <location filename="page045e.ui" line="855"/>
+        <location filename="page045e.ui" line="1184"/>
+        <location filename="page045e.ui" line="1421"/>
+        <location filename="page045e.ui" line="1463"/>
+        <location filename="page045e.ui" line="1733"/>
+        <location filename="page045e.ui" line="1775"/>
+        <location filename="page045e.ui" line="1844"/>
+        <location filename="page045e.ui" line="1886"/>
+        <location filename="page045e.ui" line="1996"/>
+        <location filename="page045e.ui" line="2377"/>
+        <location filename="page045e.ui" line="2419"/>
+        <location filename="page045e.ui" line="2461"/>
+        <location filename="page045e.ui" line="2503"/>
+        <location filename="page045e.ui" line="2616"/>
+        <location filename="page045e.ui" line="2788"/>
+        <location filename="page045e.ui" line="2830"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="714"/>
+        <location filename="page045e.ui" line="726"/>
+        <source>PLC_ResetValues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="717"/>
+        <location filename="page045e.ui" line="796"/>
+        <location filename="page045e.ui" line="903"/>
+        <location filename="page045e.ui" line="979"/>
+        <location filename="page045e.ui" line="1055"/>
+        <location filename="page045e.ui" line="1232"/>
+        <location filename="page045e.ui" line="1297"/>
+        <location filename="page045e.ui" line="1362"/>
+        <location filename="page045e.ui" line="1511"/>
+        <location filename="page045e.ui" line="1587"/>
+        <location filename="page045e.ui" line="1663"/>
+        <location filename="page045e.ui" line="2044"/>
+        <location filename="page045e.ui" line="2109"/>
+        <location filename="page045e.ui" line="2185"/>
+        <location filename="page045e.ui" line="2664"/>
+        <location filename="page045e.ui" line="2946"/>
+        <location filename="page045e.ui" line="3022"/>
+        <location filename="page045e.ui" line="3087"/>
+        <location filename="page045e.ui" line="3149"/>
+        <location filename="page045e.ui" line="3211"/>
+        <location filename="page045e.ui" line="3273"/>
+        <location filename="page045e.ui" line="3335"/>
+        <location filename="page045e.ui" line="3397"/>
+        <location filename="page045e.ui" line="3459"/>
+        <location filename="page045e.ui" line="3521"/>
+        <location filename="page045e.ui" line="3583"/>
+        <location filename="page045e.ui" line="3645"/>
+        <location filename="page045e.ui" line="3707"/>
+        <location filename="page045e.ui" line="3769"/>
+        <location filename="page045e.ui" line="3831"/>
+        <location filename="page045e.ui" line="3893"/>
+        <location filename="page045e.ui" line="3955"/>
+        <location filename="page045e.ui" line="4017"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="749"/>
+        <location filename="page045e.ui" line="752"/>
+        <source>ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="793"/>
+        <location filename="page045e.ui" line="805"/>
+        <source>MPNE_E_DigDir_2</source>
+        <oldsource>MPNE_A_DigDir_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="821"/>
+        <location filename="page045e.ui" line="1257"/>
+        <location filename="page045e.ui" line="1322"/>
+        <location filename="page045e.ui" line="1387"/>
+        <location filename="page045e.ui" line="2069"/>
+        <location filename="page045e.ui" line="2210"/>
+        <location filename="page045e.ui" line="2689"/>
+        <location filename="page045e.ui" line="3047"/>
+        <source>in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="824"/>
+        <location filename="page045e.ui" line="1260"/>
+        <location filename="page045e.ui" line="1325"/>
+        <location filename="page045e.ui" line="1390"/>
+        <location filename="page045e.ui" line="2072"/>
+        <location filename="page045e.ui" line="2213"/>
+        <location filename="page045e.ui" line="2692"/>
+        <location filename="page045e.ui" line="3050"/>
+        <source>OUT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="852"/>
+        <location filename="page045e.ui" line="858"/>
+        <location filename="page045e.ui" line="1181"/>
+        <location filename="page045e.ui" line="1187"/>
+        <location filename="page045e.ui" line="1418"/>
+        <location filename="page045e.ui" line="1424"/>
+        <location filename="page045e.ui" line="1460"/>
+        <location filename="page045e.ui" line="1466"/>
+        <location filename="page045e.ui" line="1730"/>
+        <location filename="page045e.ui" line="1736"/>
+        <location filename="page045e.ui" line="1772"/>
+        <location filename="page045e.ui" line="1778"/>
+        <location filename="page045e.ui" line="1841"/>
+        <location filename="page045e.ui" line="1847"/>
+        <location filename="page045e.ui" line="1883"/>
+        <location filename="page045e.ui" line="1889"/>
+        <location filename="page045e.ui" line="1993"/>
+        <location filename="page045e.ui" line="1999"/>
+        <location filename="page045e.ui" line="2374"/>
+        <location filename="page045e.ui" line="2380"/>
+        <location filename="page045e.ui" line="2416"/>
+        <location filename="page045e.ui" line="2422"/>
+        <location filename="page045e.ui" line="2458"/>
+        <location filename="page045e.ui" line="2464"/>
+        <location filename="page045e.ui" line="2500"/>
+        <location filename="page045e.ui" line="2506"/>
+        <location filename="page045e.ui" line="2613"/>
+        <location filename="page045e.ui" line="2619"/>
+        <location filename="page045e.ui" line="2785"/>
+        <location filename="page045e.ui" line="2791"/>
+        <location filename="page045e.ui" line="2827"/>
+        <location filename="page045e.ui" line="2833"/>
+        <source>MPNE_E_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2661"/>
+        <location filename="page045e.ui" line="2673"/>
+        <source>MPNE_E_DigDir_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2726"/>
+        <location filename="page045e.ui" line="2732"/>
+        <source>MPNE_E_LifeTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2875"/>
+        <location filename="page045e.ui" line="2881"/>
+        <source>MPNE_E_FwRev</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2943"/>
+        <location filename="page045e.ui" line="2955"/>
+        <source>MPNE_E_DigOut_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3019"/>
+        <location filename="page045e.ui" line="3031"/>
+        <source>MPNE_E_DigDir_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3084"/>
+        <location filename="page045e.ui" line="3096"/>
+        <source>MPNE_E_DigOut_17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3146"/>
+        <location filename="page045e.ui" line="3158"/>
+        <source>MPNE_E_DigOut_18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3208"/>
+        <location filename="page045e.ui" line="3220"/>
+        <source>MPNE_E_DigOut_19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3270"/>
+        <location filename="page045e.ui" line="3282"/>
+        <source>MPNE_E_DigOut_20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3332"/>
+        <location filename="page045e.ui" line="3344"/>
+        <source>MPNE_E_DigOut_21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3394"/>
+        <location filename="page045e.ui" line="3406"/>
+        <source>MPNE_E_DigOut_22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3456"/>
+        <location filename="page045e.ui" line="3468"/>
+        <source>MPNE_E_DigOut_23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3518"/>
+        <location filename="page045e.ui" line="3530"/>
+        <source>MPNE_E_DigOut_24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3580"/>
+        <location filename="page045e.ui" line="3592"/>
+        <source>MPNE_E_DigOut_25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3642"/>
+        <location filename="page045e.ui" line="3654"/>
+        <source>MPNE_E_DigOut_26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3704"/>
+        <location filename="page045e.ui" line="3716"/>
+        <source>MPNE_E_DigOut_27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3766"/>
+        <location filename="page045e.ui" line="3778"/>
+        <source>MPNE_E_DigOut_28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3828"/>
+        <location filename="page045e.ui" line="3840"/>
+        <source>MPNE_E_DigOut_29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3890"/>
+        <location filename="page045e.ui" line="3902"/>
+        <source>MPNE_E_DigOut_30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3952"/>
+        <location filename="page045e.ui" line="3964"/>
+        <source>MPNE_E_DigOut_31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4014"/>
+        <location filename="page045e.ui" line="4026"/>
+        <source>MPNE_E_DigOut_32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="900"/>
+        <location filename="page045e.ui" line="912"/>
+        <source>MPNE_E_DigOut_7</source>
+        <oldsource>MPNE_A_DigOut_7</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="942"/>
+        <source>7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="976"/>
+        <location filename="page045e.ui" line="988"/>
+        <source>MPNE_E_DigOut_1</source>
+        <oldsource>MPNE_A_DigOut_1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1018"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1052"/>
+        <location filename="page045e.ui" line="1064"/>
+        <source>MPNE_E_DigOut_2</source>
+        <oldsource>MPNE_A_DigOut_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1094"/>
+        <location filename="page045e.ui" line="1097"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1128"/>
+        <location filename="page045e.ui" line="1134"/>
+        <source>NODE_45_STATUS</source>
+        <oldsource>NODE_11_STATUS</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1162"/>
+        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1229"/>
+        <location filename="page045e.ui" line="1241"/>
+        <source>MPNE_E_DigDir_4</source>
+        <oldsource>MPNE_A_DigDir_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1294"/>
+        <location filename="page045e.ui" line="1306"/>
+        <source>MPNE_E_DigDir_5</source>
+        <oldsource>MPNE_A_DigDir_5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1359"/>
+        <location filename="page045e.ui" line="1371"/>
+        <source>MPNE_E_DigDir_3</source>
+        <oldsource>MPNE_A_DigDir_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1508"/>
+        <location filename="page045e.ui" line="1520"/>
+        <source>MPNE_E_DigOut_3</source>
+        <oldsource>MPNE_A_DigOut_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1550"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1584"/>
+        <location filename="page045e.ui" line="1596"/>
+        <source>MPNE_E_DigOut_5</source>
+        <oldsource>MPNE_A_DigOut_5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1626"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1660"/>
+        <location filename="page045e.ui" line="1672"/>
+        <source>MPNE_E_DigOut_4</source>
+        <oldsource>MPNE_A_DigOut_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1702"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1819"/>
+        <source>MPNE_E</source>
+        <oldsource>MPNE_A</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1928"/>
+        <location filename="page045e.ui" line="2244"/>
+        <location filename="page045e.ui" line="2545"/>
+        <source>0xXXxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1931"/>
+        <location filename="page045e.ui" line="1937"/>
+        <source>MPNE_E_ExpType</source>
+        <oldsource>MPNE_A_ExpType</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="1940"/>
+        <source>T:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2041"/>
+        <location filename="page045e.ui" line="2053"/>
+        <source>MPNE_E_DigDir_6</source>
+        <oldsource>MPNE_A_DigDir_6</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2106"/>
+        <location filename="page045e.ui" line="2118"/>
+        <source>MPNE_E_DigOut_8</source>
+        <oldsource>MPNE_A_DigOut_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2148"/>
+        <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2182"/>
+        <location filename="page045e.ui" line="2194"/>
+        <source>MPNE_E_DigDir_8</source>
+        <oldsource>MPNE_A_DigDir_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2247"/>
+        <location filename="page045e.ui" line="2253"/>
+        <source>MPNE_E_Status</source>
+        <oldsource>MPNE_A_Status</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2312"/>
+        <location filename="page045e.ui" line="2723"/>
+        <source>xxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2315"/>
+        <location filename="page045e.ui" line="2321"/>
+        <source>MPNE_E_SN</source>
+        <oldsource>MPNE_A_SN</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2324"/>
+        <source>S/N </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2548"/>
+        <location filename="page045e.ui" line="2554"/>
+        <source>MPNE_E_ExpID</source>
+        <oldsource>MPNE_A_ExpID</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2557"/>
+        <source>ID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2738"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2872"/>
+        <source>0xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2884"/>
+        <source>FW </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="2985"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3112"/>
+        <source>17</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3174"/>
+        <source>18</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3236"/>
+        <source>19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3298"/>
+        <source>20</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3360"/>
+        <source>21</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3422"/>
+        <source>22</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3484"/>
+        <source>23</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3546"/>
+        <source>24</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3608"/>
+        <source>25</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3670"/>
+        <source>26</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3732"/>
+        <source>27</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3794"/>
+        <source>28</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3856"/>
+        <source>29</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3918"/>
+        <source>30</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="3980"/>
+        <source>31</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4042"/>
+        <source>32</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4078"/>
+        <source>9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4108"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4138"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4168"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4198"/>
+        <source>13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4228"/>
+        <source>14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4258"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page045e.ui" line="4288"/>
+        <source>16</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5825,791 +7760,1388 @@ yellow2</source>
     </message>
 </context>
 <context>
-    <name>page049</name>
+    <name>page049c</name>
     <message>
-        <location filename="page049.ui" line="666"/>
-        <location filename="page049.ui" line="678"/>
-        <source>PLC_ResetValues</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="669"/>
-        <location filename="page049.ui" line="778"/>
-        <location filename="page049.ui" line="973"/>
-        <location filename="page049.ui" line="1168"/>
-        <location filename="page049.ui" line="2469"/>
-        <location filename="page049.ui" line="2528"/>
-        <location filename="page049.ui" line="2587"/>
-        <location filename="page049.ui" line="2646"/>
-        <location filename="page049.ui" line="2705"/>
-        <location filename="page049.ui" line="2768"/>
-        <location filename="page049.ui" line="2831"/>
-        <location filename="page049.ui" line="2894"/>
-        <location filename="page049.ui" line="2957"/>
-        <location filename="page049.ui" line="3020"/>
-        <location filename="page049.ui" line="3083"/>
-        <location filename="page049.ui" line="3142"/>
-        <location filename="page049.ui" line="3201"/>
-        <location filename="page049.ui" line="3260"/>
-        <location filename="page049.ui" line="3323"/>
-        <location filename="page049.ui" line="3454"/>
-        <location filename="page049.ui" line="3513"/>
-        <location filename="page049.ui" line="3712"/>
-        <location filename="page049.ui" line="3775"/>
-        <location filename="page049.ui" line="3838"/>
-        <location filename="page049.ui" line="3901"/>
-        <location filename="page049.ui" line="4032"/>
-        <location filename="page049.ui" line="4091"/>
-        <location filename="page049.ui" line="4154"/>
-        <location filename="page049.ui" line="4217"/>
-        <location filename="page049.ui" line="4276"/>
-        <location filename="page049.ui" line="4339"/>
-        <location filename="page049.ui" line="4398"/>
-        <location filename="page049.ui" line="4457"/>
-        <source>ATCMbutton widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="701"/>
-        <location filename="page049.ui" line="704"/>
-        <source>ZERO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="536"/>
-        <source>xxxxx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="539"/>
-        <location filename="page049.ui" line="545"/>
-        <source>RTU0_BAUDRATE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="104"/>
-        <location filename="page049.ui" line="172"/>
-        <location filename="page049.ui" line="243"/>
-        <location filename="page049.ui" line="311"/>
-        <location filename="page049.ui" line="441"/>
-        <location filename="page049.ui" line="542"/>
-        <location filename="page049.ui" line="610"/>
-        <location filename="page049.ui" line="843"/>
-        <location filename="page049.ui" line="911"/>
-        <location filename="page049.ui" line="1038"/>
-        <location filename="page049.ui" line="1106"/>
-        <location filename="page049.ui" line="1289"/>
-        <location filename="page049.ui" line="1357"/>
-        <location filename="page049.ui" line="1425"/>
-        <location filename="page049.ui" line="1493"/>
-        <location filename="page049.ui" line="1561"/>
-        <location filename="page049.ui" line="1685"/>
-        <location filename="page049.ui" line="1750"/>
-        <location filename="page049.ui" line="1815"/>
-        <location filename="page049.ui" line="1880"/>
-        <location filename="page049.ui" line="1948"/>
-        <location filename="page049.ui" line="2016"/>
-        <location filename="page049.ui" line="2084"/>
-        <location filename="page049.ui" line="2206"/>
-        <location filename="page049.ui" line="2274"/>
-        <location filename="page049.ui" line="2342"/>
-        <location filename="page049.ui" line="2410"/>
-        <location filename="page049.ui" line="3392"/>
-        <location filename="page049.ui" line="3582"/>
-        <location filename="page049.ui" line="3650"/>
-        <location filename="page049.ui" line="3970"/>
-        <source>ATCMlabel widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="548"/>
-        <source> baud</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="116"/>
-        <location filename="page049.ui" line="119"/>
-        <location filename="page049.ui" line="187"/>
-        <location filename="page049.ui" line="190"/>
-        <location filename="page049.ui" line="255"/>
-        <location filename="page049.ui" line="258"/>
-        <location filename="page049.ui" line="323"/>
-        <location filename="page049.ui" line="326"/>
-        <location filename="page049.ui" line="453"/>
-        <location filename="page049.ui" line="456"/>
-        <location filename="page049.ui" line="554"/>
-        <location filename="page049.ui" line="557"/>
-        <location filename="page049.ui" line="622"/>
-        <location filename="page049.ui" line="625"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="505"/>
-        <source>RTU0 MPNE_C,D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="373"/>
-        <location filename="page049.ui" line="379"/>
-        <source>RTU0_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="376"/>
-        <location filename="page049.ui" line="1230"/>
-        <location filename="page049.ui" line="1626"/>
-        <source>ATCMcombobox widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="407"/>
-        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="166"/>
-        <source>xx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="169"/>
-        <location filename="page049.ui" line="175"/>
-        <source>RTU0_BUS_LOAD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="178"/>
-        <source>load </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="181"/>
-        <source> %</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="98"/>
-        <location filename="page049.ui" line="237"/>
-        <location filename="page049.ui" line="305"/>
-        <location filename="page049.ui" line="435"/>
-        <location filename="page049.ui" line="604"/>
+        <location filename="page049c.ui" line="98"/>
+        <location filename="page049c.ui" line="237"/>
+        <location filename="page049c.ui" line="409"/>
+        <location filename="page049c.ui" line="477"/>
+        <location filename="page049c.ui" line="545"/>
         <source>nnnnnnnnn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="101"/>
-        <location filename="page049.ui" line="107"/>
+        <location filename="page049c.ui" line="412"/>
+        <location filename="page049c.ui" line="418"/>
         <source>RTU0_READS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="110"/>
+        <location filename="page049c.ui" line="104"/>
+        <location filename="page049c.ui" line="172"/>
+        <location filename="page049c.ui" line="243"/>
+        <location filename="page049c.ui" line="415"/>
+        <location filename="page049c.ui" line="483"/>
+        <location filename="page049c.ui" line="551"/>
+        <location filename="page049c.ui" line="655"/>
+        <location filename="page049c.ui" line="935"/>
+        <location filename="page049c.ui" line="1163"/>
+        <location filename="page049c.ui" line="1310"/>
+        <location filename="page049c.ui" line="1384"/>
+        <location filename="page049c.ui" line="1500"/>
+        <location filename="page049c.ui" line="1723"/>
+        <location filename="page049c.ui" line="1797"/>
+        <location filename="page049c.ui" line="2281"/>
+        <location filename="page049c.ui" line="2397"/>
+        <location filename="page049c.ui" line="2723"/>
+        <location filename="page049c.ui" line="2859"/>
+        <location filename="page049c.ui" line="2933"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="421"/>
         <source>rd: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="607"/>
-        <location filename="page049.ui" line="613"/>
-        <source>RTU0_WRITE_QUEUE</source>
+        <location filename="page049c.ui" line="116"/>
+        <location filename="page049c.ui" line="119"/>
+        <location filename="page049c.ui" line="187"/>
+        <location filename="page049c.ui" line="190"/>
+        <location filename="page049c.ui" line="255"/>
+        <location filename="page049c.ui" line="258"/>
+        <location filename="page049c.ui" line="427"/>
+        <location filename="page049c.ui" line="430"/>
+        <location filename="page049c.ui" line="495"/>
+        <location filename="page049c.ui" line="498"/>
+        <location filename="page049c.ui" line="563"/>
+        <location filename="page049c.ui" line="566"/>
+        <location filename="page049c.ui" line="667"/>
+        <location filename="page049c.ui" line="670"/>
+        <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="616"/>
-        <source>wq: </source>
+        <location filename="page049c.ui" line="166"/>
+        <source>xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="438"/>
-        <location filename="page049.ui" line="444"/>
-        <source>RTU0_TIMEOUTS</source>
+        <location filename="page049c.ui" line="169"/>
+        <location filename="page049c.ui" line="175"/>
+        <source>RTU0_BUS_LOAD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="447"/>
-        <source>to: </source>
+        <location filename="page049c.ui" line="178"/>
+        <source>load </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="308"/>
-        <location filename="page049.ui" line="314"/>
-        <source>RTU0_WRITES</source>
+        <location filename="page049c.ui" line="181"/>
+        <source> %</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="317"/>
-        <source>wr: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="240"/>
-        <location filename="page049.ui" line="246"/>
+        <location filename="page049c.ui" line="240"/>
+        <location filename="page049c.ui" line="246"/>
         <source>RTU0_COMM_ERRORS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="249"/>
+        <location filename="page049c.ui" line="249"/>
         <source>ce: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="775"/>
-        <location filename="page049.ui" line="787"/>
-        <source>MPNE_D_DigDir_7</source>
+        <location filename="page049c.ui" line="101"/>
+        <location filename="page049c.ui" line="107"/>
+        <source>RTU0_WRITES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="837"/>
-        <location filename="page049.ui" line="905"/>
-        <location filename="page049.ui" line="1419"/>
-        <location filename="page049.ui" line="3644"/>
-        <source>xx.x</source>
+        <location filename="page049c.ui" line="110"/>
+        <source>wr: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="840"/>
-        <location filename="page049.ui" line="846"/>
-        <source>MPNE_C_AnIn_2</source>
+        <location filename="page049c.ui" line="305"/>
+        <location filename="page049c.ui" line="311"/>
+        <source>RTU0_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="908"/>
-        <location filename="page049.ui" line="914"/>
-        <source>MPNE_D_AnIn_2</source>
+        <location filename="page049c.ui" line="308"/>
+        <location filename="page049c.ui" line="3220"/>
+        <source>ATCMcombobox widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="970"/>
-        <location filename="page049.ui" line="982"/>
-        <source>MPNE_D_DigDir_5</source>
+        <location filename="page049c.ui" line="339"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1035"/>
-        <location filename="page049.ui" line="1041"/>
-        <source>MPNE_D_AnOut1Conf</source>
+        <location filename="page049c.ui" line="358"/>
+        <location filename="page049c.ui" line="364"/>
+        <source>PLC_Iam_BA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1165"/>
-        <location filename="page049.ui" line="1177"/>
-        <source>MPNE_D_DigDir_6</source>
+        <location filename="page049c.ui" line="480"/>
+        <location filename="page049c.ui" line="486"/>
+        <source>RTU0_TIMEOUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1363"/>
-        <location filename="page049.ui" line="3976"/>
-        <source>AI_2 </source>
+        <location filename="page049c.ui" line="489"/>
+        <source>to: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3510"/>
-        <location filename="page049.ui" line="3522"/>
-        <source>MPNE_D_DigOut_1</source>
+        <location filename="page049c.ui" line="618"/>
+        <source>RTU0 MPNE_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3579"/>
-        <location filename="page049.ui" line="3585"/>
-        <source>MPNE_D_AnIn1Conf</source>
+        <location filename="page049c.ui" line="649"/>
+        <source>xxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3647"/>
-        <location filename="page049.ui" line="3653"/>
-        <source>MPNE_D_AnIn_1</source>
+        <location filename="page049c.ui" line="652"/>
+        <location filename="page049c.ui" line="658"/>
+        <source>RTU0_BAUDRATE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3709"/>
-        <location filename="page049.ui" line="3721"/>
-        <source>MPNE_D_DigOut_4</source>
+        <location filename="page049c.ui" line="661"/>
+        <source> baud</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3772"/>
-        <location filename="page049.ui" line="3784"/>
-        <source>MPNE_D_DigOut_8</source>
+        <location filename="page049c.ui" line="548"/>
+        <location filename="page049c.ui" line="554"/>
+        <source>RTU0_WRITE_QUEUE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3835"/>
-        <location filename="page049.ui" line="3847"/>
-        <source>MPNE_D_DigOut_3</source>
+        <location filename="page049c.ui" line="557"/>
+        <source>wq: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3898"/>
-        <location filename="page049.ui" line="3910"/>
-        <source>MPNE_D_DigOut_7</source>
+        <location filename="page049c.ui" line="717"/>
+        <location filename="page049c.ui" line="729"/>
+        <source>PLC_ResetValues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3967"/>
-        <location filename="page049.ui" line="3973"/>
-        <source>MPNE_D_AnIn2Conf</source>
+        <location filename="page049c.ui" line="720"/>
+        <location filename="page049c.ui" line="799"/>
+        <location filename="page049c.ui" line="864"/>
+        <location filename="page049c.ui" line="1084"/>
+        <location filename="page049c.ui" line="1231"/>
+        <location filename="page049c.ui" line="1610"/>
+        <location filename="page049c.ui" line="1865"/>
+        <location filename="page049c.ui" line="1938"/>
+        <location filename="page049c.ui" line="2053"/>
+        <location filename="page049c.ui" line="2202"/>
+        <location filename="page049c.ui" line="2788"/>
+        <location filename="page049c.ui" line="3004"/>
+        <location filename="page049c.ui" line="3111"/>
+        <location filename="page049c.ui" line="3279"/>
+        <location filename="page049c.ui" line="3352"/>
+        <location filename="page049c.ui" line="3425"/>
+        <location filename="page049c.ui" line="3490"/>
+        <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="4029"/>
-        <location filename="page049.ui" line="4041"/>
-        <source>MPNE_D_DigDir_8</source>
+        <location filename="page049c.ui" line="752"/>
+        <location filename="page049c.ui" line="755"/>
+        <source>ZERO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="4088"/>
-        <location filename="page049.ui" line="4100"/>
-        <source>MPNE_D_DigOut_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4151"/>
-        <location filename="page049.ui" line="4163"/>
-        <source>MPNE_D_DigOut_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4214"/>
-        <location filename="page049.ui" line="4226"/>
-        <source>MPNE_D_DigDir_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4273"/>
-        <location filename="page049.ui" line="4285"/>
-        <source>MPNE_D_DigOut_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4336"/>
-        <location filename="page049.ui" line="4348"/>
-        <source>MPNE_D_DigDir_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4395"/>
-        <location filename="page049.ui" line="4407"/>
-        <source>MPNE_D_DigDir_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="4454"/>
-        <location filename="page049.ui" line="4466"/>
-        <source>MPNE_D_DigDir_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <location filename="page049.ui" line="852"/>
-        <location filename="page049.ui" line="920"/>
-        <location filename="page049.ui" line="1434"/>
-        <location filename="page049.ui" line="3659"/>
-        <source>°C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1032"/>
-        <location filename="page049.ui" line="1283"/>
-        <location filename="page049.ui" line="1351"/>
-        <location filename="page049.ui" line="1487"/>
-        <location filename="page049.ui" line="3576"/>
-        <location filename="page049.ui" line="3964"/>
-        <source>n</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1286"/>
-        <location filename="page049.ui" line="1292"/>
-        <source>MPNE_C_AnOut1Conf</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1044"/>
-        <location filename="page049.ui" line="1295"/>
-        <source>AO_1 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1227"/>
-        <location filename="page049.ui" line="1233"/>
-        <source>NODE_14_STATUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1261"/>
-        <location filename="page049.ui" line="1657"/>
-        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1354"/>
-        <location filename="page049.ui" line="1360"/>
-        <source>MPNE_C_AnIn2Conf</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1422"/>
-        <location filename="page049.ui" line="1428"/>
-        <source>MPNE_C_AnIn_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1499"/>
-        <location filename="page049.ui" line="3588"/>
-        <source>AI_1 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1490"/>
-        <location filename="page049.ui" line="1496"/>
-        <source>MPNE_C_AnIn1Conf</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1555"/>
-        <location filename="page049.ui" line="3386"/>
-        <source>xx.xx</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1558"/>
-        <location filename="page049.ui" line="1564"/>
-        <source>MPNE_C_AnOut1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1570"/>
-        <location filename="page049.ui" line="3401"/>
-        <source> V</source>
-        <oldsource>V</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="3389"/>
-        <location filename="page049.ui" line="3395"/>
-        <source>MPNE_D_AnOut1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="3451"/>
-        <location filename="page049.ui" line="3463"/>
-        <source>MPNE_C_DigDir_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="803"/>
-        <location filename="page049.ui" line="998"/>
-        <location filename="page049.ui" line="1193"/>
-        <location filename="page049.ui" line="2494"/>
-        <location filename="page049.ui" line="2553"/>
-        <location filename="page049.ui" line="2612"/>
-        <location filename="page049.ui" line="2671"/>
-        <location filename="page049.ui" line="3108"/>
-        <location filename="page049.ui" line="3167"/>
-        <location filename="page049.ui" line="3226"/>
-        <location filename="page049.ui" line="3479"/>
-        <location filename="page049.ui" line="4057"/>
-        <location filename="page049.ui" line="4242"/>
-        <location filename="page049.ui" line="4364"/>
-        <location filename="page049.ui" line="4423"/>
-        <location filename="page049.ui" line="4482"/>
-        <source>in</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="729"/>
+        <location filename="page049c.ui" line="361"/>
+        <location filename="page049c.ui" line="994"/>
+        <location filename="page049c.ui" line="1036"/>
+        <location filename="page049c.ui" line="1446"/>
+        <location filename="page049c.ui" line="1562"/>
+        <location filename="page049c.ui" line="1669"/>
+        <location filename="page049c.ui" line="2005"/>
+        <location filename="page049c.ui" line="2112"/>
+        <location filename="page049c.ui" line="2154"/>
+        <location filename="page049c.ui" line="2343"/>
+        <location filename="page049c.ui" line="2459"/>
+        <location filename="page049c.ui" line="2501"/>
+        <location filename="page049c.ui" line="2543"/>
+        <location filename="page049c.ui" line="2585"/>
+        <location filename="page049c.ui" line="2627"/>
+        <location filename="page049c.ui" line="2669"/>
+        <location filename="page049c.ui" line="3063"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="806"/>
-        <location filename="page049.ui" line="1001"/>
-        <location filename="page049.ui" line="1196"/>
-        <location filename="page049.ui" line="2497"/>
-        <location filename="page049.ui" line="2556"/>
-        <location filename="page049.ui" line="2615"/>
-        <location filename="page049.ui" line="2674"/>
-        <location filename="page049.ui" line="3111"/>
-        <location filename="page049.ui" line="3170"/>
-        <location filename="page049.ui" line="3229"/>
-        <location filename="page049.ui" line="3482"/>
-        <location filename="page049.ui" line="4060"/>
-        <location filename="page049.ui" line="4245"/>
-        <location filename="page049.ui" line="4367"/>
-        <location filename="page049.ui" line="4426"/>
-        <location filename="page049.ui" line="4485"/>
+        <location filename="page049c.ui" line="824"/>
+        <location filename="page049c.ui" line="889"/>
+        <location filename="page049c.ui" line="1635"/>
+        <location filename="page049c.ui" line="2078"/>
+        <location filename="page049c.ui" line="2813"/>
+        <location filename="page049c.ui" line="3029"/>
+        <location filename="page049c.ui" line="3450"/>
+        <location filename="page049c.ui" line="3515"/>
+        <source>in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="827"/>
+        <location filename="page049c.ui" line="892"/>
+        <location filename="page049c.ui" line="1638"/>
+        <location filename="page049c.ui" line="2081"/>
+        <location filename="page049c.ui" line="2816"/>
+        <location filename="page049c.ui" line="3032"/>
+        <location filename="page049c.ui" line="3453"/>
+        <location filename="page049c.ui" line="3518"/>
         <source>OUT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1100"/>
-        <location filename="page049.ui" line="1874"/>
+        <location filename="page049c.ui" line="1494"/>
+        <location filename="page049c.ui" line="2275"/>
+        <source>xx.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2278"/>
+        <location filename="page049c.ui" line="2284"/>
+        <source>MPNE_C_AnIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page049c.ui" line="1509"/>
+        <location filename="page049c.ui" line="2290"/>
+        <source>°C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1304"/>
+        <location filename="page049c.ui" line="2391"/>
+        <location filename="page049c.ui" line="2853"/>
+        <source>n</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2865"/>
+        <source>AO_1 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1717"/>
         <source>0xxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1103"/>
-        <location filename="page049.ui" line="1109"/>
-        <source>MPNE_D_FwRev</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1112"/>
-        <location filename="page049.ui" line="1886"/>
+        <location filename="page049c.ui" line="1729"/>
         <source>FW </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1623"/>
-        <location filename="page049.ui" line="1629"/>
+        <location filename="page049c.ui" line="3251"/>
+        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2856"/>
+        <location filename="page049c.ui" line="2862"/>
+        <source>MPNE_C_AnOut1Conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2394"/>
+        <location filename="page049c.ui" line="2400"/>
+        <source>MPNE_C_AnIn2Conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2403"/>
+        <source>AI_2 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1497"/>
+        <location filename="page049c.ui" line="1503"/>
+        <source>MPNE_C_AnIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="991"/>
+        <location filename="page049c.ui" line="997"/>
+        <source>MPNE_C_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1033"/>
+        <source>MPNE_C_DigIn_12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1123"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1270"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1307"/>
+        <location filename="page049c.ui" line="1313"/>
+        <source>MPNE_C_AnIn1Conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1316"/>
+        <source>AI_1 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1443"/>
+        <source>MPNE_C_DigIn_9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1559"/>
+        <source>MPNE_C_DigIn_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1666"/>
+        <source>MPNE_C_DigIn_11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1791"/>
+        <source>xx.xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1794"/>
+        <location filename="page049c.ui" line="1800"/>
+        <source>MPNE_C_AnOut1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1806"/>
+        <source> V</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1904"/>
+        <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1977"/>
+        <source>7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2002"/>
+        <source>MPNE_C_DigIn_14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2109"/>
+        <source>MPNE_C_DigIn_13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2151"/>
+        <source>MPNE_C_DigIn_15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2241"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2340"/>
+        <source>MPNE_C_DigIn_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2456"/>
+        <source>MPNE_C_DigIn_16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2498"/>
+        <source>MPNE_C_DigIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2540"/>
+        <source>MPNE_C_DigIn_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2582"/>
+        <source>MPNE_C_DigIn_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2624"/>
+        <source>MPNE_C_DigIn_10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2666"/>
+        <source>MPNE_C_DigIn_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3060"/>
+        <source>MPNE_C_DigIn_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3150"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3217"/>
+        <location filename="page049c.ui" line="3223"/>
         <source>NODE_13_STATUS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1679"/>
-        <location filename="page049.ui" line="1744"/>
-        <location filename="page049.ui" line="1809"/>
-        <location filename="page049.ui" line="2404"/>
+        <location filename="page049c.ui" line="3554"/>
+        <source>9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3584"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3614"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3644"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3674"/>
+        <source>13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3704"/>
+        <source>14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3734"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3764"/>
+        <source>16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="929"/>
+        <location filename="page049c.ui" line="2717"/>
         <source>xxxxxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1682"/>
-        <location filename="page049.ui" line="1688"/>
-        <source>MPNE_D_LifeTime</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1694"/>
-        <location filename="page049.ui" line="2419"/>
+        <location filename="page049c.ui" line="2732"/>
         <source> s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1747"/>
-        <location filename="page049.ui" line="1753"/>
+        <location filename="page049c.ui" line="932"/>
+        <location filename="page049c.ui" line="938"/>
         <source>MPNE_C_SN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1756"/>
-        <location filename="page049.ui" line="1821"/>
+        <location filename="page049c.ui" line="941"/>
         <source>S/N </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1812"/>
-        <location filename="page049.ui" line="1818"/>
-        <source>MPNE_D_SN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="1877"/>
-        <location filename="page049.ui" line="1883"/>
+        <location filename="page049c.ui" line="1720"/>
+        <location filename="page049c.ui" line="1726"/>
         <source>MPNE_C_FwRev</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1942"/>
-        <location filename="page049.ui" line="2010"/>
-        <location filename="page049.ui" line="2078"/>
-        <location filename="page049.ui" line="2200"/>
-        <location filename="page049.ui" line="2268"/>
-        <location filename="page049.ui" line="2336"/>
+        <location filename="page049c.ui" line="1157"/>
+        <location filename="page049c.ui" line="1378"/>
+        <location filename="page049c.ui" line="2927"/>
         <source>0xXXxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="1945"/>
-        <location filename="page049.ui" line="1951"/>
-        <source>MPNE_D_Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2013"/>
-        <location filename="page049.ui" line="2019"/>
-        <source>MPNE_D_ExpID</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2022"/>
-        <location filename="page049.ui" line="2348"/>
+        <location filename="page049c.ui" line="2939"/>
         <source>ID:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2081"/>
-        <location filename="page049.ui" line="2087"/>
-        <source>MPNE_D_ExpType</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2090"/>
-        <location filename="page049.ui" line="2212"/>
+        <location filename="page049c.ui" line="1169"/>
         <source>T:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2148"/>
+        <location filename="page049c.ui" line="3186"/>
         <source>MPNE_C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2175"/>
-        <source>MPNE_D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2203"/>
-        <location filename="page049.ui" line="2209"/>
+        <location filename="page049c.ui" line="1160"/>
+        <location filename="page049c.ui" line="1166"/>
         <source>MPNE_C_ExpType</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2271"/>
-        <location filename="page049.ui" line="2277"/>
+        <location filename="page049c.ui" line="1381"/>
+        <location filename="page049c.ui" line="1387"/>
         <source>MPNE_C_Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2339"/>
-        <location filename="page049.ui" line="2345"/>
+        <location filename="page049c.ui" line="2930"/>
+        <location filename="page049c.ui" line="2936"/>
         <source>MPNE_C_ExpID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2407"/>
-        <location filename="page049.ui" line="2413"/>
+        <location filename="page049c.ui" line="2720"/>
+        <location filename="page049c.ui" line="2726"/>
         <source>MPNE_C_LifeTime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2466"/>
-        <location filename="page049.ui" line="2478"/>
+        <location filename="page049c.ui" line="861"/>
+        <location filename="page049c.ui" line="873"/>
         <source>MPNE_C_DigDir_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3080"/>
-        <location filename="page049.ui" line="3092"/>
-        <source>MPNE_C_DigDir_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2525"/>
-        <location filename="page049.ui" line="2537"/>
+        <location filename="page049c.ui" line="1607"/>
+        <location filename="page049c.ui" line="1619"/>
         <source>MPNE_C_DigDir_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3198"/>
-        <location filename="page049.ui" line="3210"/>
-        <source>MPNE_C_DigDir_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2584"/>
-        <location filename="page049.ui" line="2596"/>
+        <location filename="page049c.ui" line="796"/>
+        <location filename="page049c.ui" line="808"/>
         <source>MPNE_C_DigDir_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2643"/>
-        <location filename="page049.ui" line="2655"/>
+        <location filename="page049c.ui" line="3001"/>
+        <location filename="page049c.ui" line="3013"/>
         <source>MPNE_C_DigDir_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3139"/>
-        <location filename="page049.ui" line="3151"/>
-        <source>MPNE_C_DigDir_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2702"/>
-        <location filename="page049.ui" line="2714"/>
+        <location filename="page049c.ui" line="3276"/>
+        <location filename="page049c.ui" line="3288"/>
         <source>MPNE_C_DigOut_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2737"/>
-        <location filename="page049.ui" line="2800"/>
-        <location filename="page049.ui" line="2863"/>
-        <location filename="page049.ui" line="2926"/>
-        <location filename="page049.ui" line="2989"/>
-        <location filename="page049.ui" line="3052"/>
-        <location filename="page049.ui" line="3292"/>
-        <location filename="page049.ui" line="3355"/>
-        <location filename="page049.ui" line="3545"/>
-        <location filename="page049.ui" line="3744"/>
-        <location filename="page049.ui" line="3807"/>
-        <location filename="page049.ui" line="3870"/>
-        <location filename="page049.ui" line="3933"/>
-        <location filename="page049.ui" line="4123"/>
-        <location filename="page049.ui" line="4186"/>
-        <location filename="page049.ui" line="4308"/>
-        <source>off</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2740"/>
-        <location filename="page049.ui" line="2803"/>
-        <location filename="page049.ui" line="2866"/>
-        <location filename="page049.ui" line="2929"/>
-        <location filename="page049.ui" line="2992"/>
-        <location filename="page049.ui" line="3055"/>
-        <location filename="page049.ui" line="3295"/>
-        <location filename="page049.ui" line="3358"/>
-        <location filename="page049.ui" line="3548"/>
-        <location filename="page049.ui" line="3747"/>
-        <location filename="page049.ui" line="3810"/>
-        <location filename="page049.ui" line="3873"/>
-        <location filename="page049.ui" line="3936"/>
-        <location filename="page049.ui" line="4126"/>
-        <location filename="page049.ui" line="4189"/>
-        <location filename="page049.ui" line="4311"/>
-        <source>ON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page049.ui" line="2765"/>
-        <location filename="page049.ui" line="2777"/>
+        <location filename="page049c.ui" line="1081"/>
+        <location filename="page049c.ui" line="1093"/>
         <source>MPNE_C_DigOut_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2828"/>
-        <location filename="page049.ui" line="2840"/>
+        <location filename="page049c.ui" line="1228"/>
+        <location filename="page049c.ui" line="1240"/>
         <source>MPNE_C_DigOut_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2891"/>
-        <location filename="page049.ui" line="2903"/>
+        <location filename="page049c.ui" line="3318"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3349"/>
+        <location filename="page049c.ui" line="3361"/>
         <source>MPNE_C_DigOut_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="2954"/>
-        <location filename="page049.ui" line="2966"/>
+        <location filename="page049c.ui" line="2199"/>
+        <location filename="page049c.ui" line="2211"/>
         <source>MPNE_C_DigOut_5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3017"/>
-        <location filename="page049.ui" line="3029"/>
+        <location filename="page049c.ui" line="3108"/>
+        <location filename="page049c.ui" line="3120"/>
         <source>MPNE_C_DigOut_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3320"/>
-        <location filename="page049.ui" line="3332"/>
+        <location filename="page049c.ui" line="3391"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="3487"/>
+        <location filename="page049c.ui" line="3499"/>
+        <source>MPNE_C_DigDir_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2785"/>
+        <location filename="page049c.ui" line="2797"/>
+        <source>MPNE_C_DigDir_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="2050"/>
+        <location filename="page049c.ui" line="2062"/>
+        <source>MPNE_C_DigDir_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1862"/>
+        <location filename="page049c.ui" line="1874"/>
+        <source>MPNE_C_DigOut_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049c.ui" line="1935"/>
+        <location filename="page049c.ui" line="1947"/>
         <source>MPNE_C_DigOut_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page049.ui" line="3257"/>
-        <location filename="page049.ui" line="3269"/>
-        <source>MPNE_C_DigOut_8</source>
+        <location filename="page049c.ui" line="3422"/>
+        <location filename="page049c.ui" line="3434"/>
+        <source>MPNE_C_DigDir_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>page049d</name>
+    <message>
+        <location filename="page049d.ui" line="98"/>
+        <location filename="page049d.ui" line="237"/>
+        <location filename="page049d.ui" line="409"/>
+        <location filename="page049d.ui" line="477"/>
+        <location filename="page049d.ui" line="545"/>
+        <source>nnnnnnnnn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="412"/>
+        <location filename="page049d.ui" line="418"/>
+        <source>RTU0_READS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="104"/>
+        <location filename="page049d.ui" line="172"/>
+        <location filename="page049d.ui" line="243"/>
+        <location filename="page049d.ui" line="415"/>
+        <location filename="page049d.ui" line="483"/>
+        <location filename="page049d.ui" line="551"/>
+        <location filename="page049d.ui" line="655"/>
+        <location filename="page049d.ui" line="935"/>
+        <location filename="page049d.ui" line="1163"/>
+        <location filename="page049d.ui" line="1310"/>
+        <location filename="page049d.ui" line="1384"/>
+        <location filename="page049d.ui" line="1500"/>
+        <location filename="page049d.ui" line="1723"/>
+        <location filename="page049d.ui" line="1797"/>
+        <location filename="page049d.ui" line="2281"/>
+        <location filename="page049d.ui" line="2397"/>
+        <location filename="page049d.ui" line="2723"/>
+        <location filename="page049d.ui" line="2859"/>
+        <location filename="page049d.ui" line="2933"/>
+        <source>ATCMlabel widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="421"/>
+        <source>rd: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="116"/>
+        <location filename="page049d.ui" line="119"/>
+        <location filename="page049d.ui" line="187"/>
+        <location filename="page049d.ui" line="190"/>
+        <location filename="page049d.ui" line="255"/>
+        <location filename="page049d.ui" line="258"/>
+        <location filename="page049d.ui" line="427"/>
+        <location filename="page049d.ui" line="430"/>
+        <location filename="page049d.ui" line="495"/>
+        <location filename="page049d.ui" line="498"/>
+        <location filename="page049d.ui" line="563"/>
+        <location filename="page049d.ui" line="566"/>
+        <location filename="page049d.ui" line="667"/>
+        <location filename="page049d.ui" line="670"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="166"/>
+        <source>xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="169"/>
+        <location filename="page049d.ui" line="175"/>
+        <source>RTU0_BUS_LOAD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="178"/>
+        <source>load </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="181"/>
+        <source> %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="240"/>
+        <location filename="page049d.ui" line="246"/>
+        <source>RTU0_COMM_ERRORS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="249"/>
+        <source>ce: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="101"/>
+        <location filename="page049d.ui" line="107"/>
+        <source>RTU0_WRITES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="110"/>
+        <source>wr: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="305"/>
+        <location filename="page049d.ui" line="311"/>
+        <source>RTU0_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="308"/>
+        <location filename="page049d.ui" line="3220"/>
+        <source>ATCMcombobox widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="339"/>
+        <source>1;NOT_CONNECTED;2;CONNECTED;3;CONNECTED_WITH_ERRORS;4;DEVICE_BLACKLIST;5;NO_HOPE;0;ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="358"/>
+        <location filename="page049d.ui" line="364"/>
+        <source>PLC_Iam_BA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="480"/>
+        <location filename="page049d.ui" line="486"/>
+        <source>RTU0_TIMEOUTS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="489"/>
+        <source>to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="618"/>
+        <source>RTU0 MPNE_D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="649"/>
+        <source>xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="652"/>
+        <location filename="page049d.ui" line="658"/>
+        <source>RTU0_BAUDRATE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="661"/>
+        <source> baud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="548"/>
+        <location filename="page049d.ui" line="554"/>
+        <source>RTU0_WRITE_QUEUE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="557"/>
+        <source>wq: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="717"/>
+        <location filename="page049d.ui" line="729"/>
+        <source>PLC_ResetValues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="720"/>
+        <location filename="page049d.ui" line="799"/>
+        <location filename="page049d.ui" line="864"/>
+        <location filename="page049d.ui" line="1084"/>
+        <location filename="page049d.ui" line="1231"/>
+        <location filename="page049d.ui" line="1610"/>
+        <location filename="page049d.ui" line="1865"/>
+        <location filename="page049d.ui" line="1938"/>
+        <location filename="page049d.ui" line="2053"/>
+        <location filename="page049d.ui" line="2202"/>
+        <location filename="page049d.ui" line="2788"/>
+        <location filename="page049d.ui" line="3004"/>
+        <location filename="page049d.ui" line="3111"/>
+        <location filename="page049d.ui" line="3279"/>
+        <location filename="page049d.ui" line="3352"/>
+        <location filename="page049d.ui" line="3425"/>
+        <location filename="page049d.ui" line="3490"/>
+        <source>ATCMbutton widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="752"/>
+        <location filename="page049d.ui" line="755"/>
+        <source>ZERO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="361"/>
+        <location filename="page049d.ui" line="994"/>
+        <location filename="page049d.ui" line="1036"/>
+        <location filename="page049d.ui" line="1446"/>
+        <location filename="page049d.ui" line="1562"/>
+        <location filename="page049d.ui" line="1669"/>
+        <location filename="page049d.ui" line="2005"/>
+        <location filename="page049d.ui" line="2112"/>
+        <location filename="page049d.ui" line="2154"/>
+        <location filename="page049d.ui" line="2343"/>
+        <location filename="page049d.ui" line="2459"/>
+        <location filename="page049d.ui" line="2501"/>
+        <location filename="page049d.ui" line="2543"/>
+        <location filename="page049d.ui" line="2585"/>
+        <location filename="page049d.ui" line="2627"/>
+        <location filename="page049d.ui" line="2669"/>
+        <location filename="page049d.ui" line="3063"/>
+        <source>ATCMled widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3487"/>
+        <location filename="page049d.ui" line="3499"/>
+        <source>MPNE_D_DigDir_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="824"/>
+        <location filename="page049d.ui" line="889"/>
+        <location filename="page049d.ui" line="1635"/>
+        <location filename="page049d.ui" line="2078"/>
+        <location filename="page049d.ui" line="2813"/>
+        <location filename="page049d.ui" line="3029"/>
+        <location filename="page049d.ui" line="3450"/>
+        <location filename="page049d.ui" line="3515"/>
+        <source>in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="827"/>
+        <location filename="page049d.ui" line="892"/>
+        <location filename="page049d.ui" line="1638"/>
+        <location filename="page049d.ui" line="2081"/>
+        <location filename="page049d.ui" line="2816"/>
+        <location filename="page049d.ui" line="3032"/>
+        <location filename="page049d.ui" line="3453"/>
+        <location filename="page049d.ui" line="3518"/>
+        <source>OUT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1494"/>
+        <location filename="page049d.ui" line="2275"/>
+        <source>xx.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2278"/>
+        <location filename="page049d.ui" line="2284"/>
+        <source>MPNE_D_AnIn_2</source>
+        <oldsource>MPNE_C_AnIn_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="page049d.ui" line="1509"/>
+        <location filename="page049d.ui" line="2290"/>
+        <source>°C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3001"/>
+        <location filename="page049d.ui" line="3013"/>
+        <source>MPNE_D_DigDir_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1304"/>
+        <location filename="page049d.ui" line="2391"/>
+        <location filename="page049d.ui" line="2853"/>
+        <source>n</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2856"/>
+        <location filename="page049d.ui" line="2862"/>
+        <source>MPNE_D_AnOut1Conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2865"/>
+        <source>AO_1 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1717"/>
+        <source>0xxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1720"/>
+        <location filename="page049d.ui" line="1726"/>
+        <source>MPNE_D_FwRev</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1729"/>
+        <source>FW </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2785"/>
+        <location filename="page049d.ui" line="2797"/>
+        <source>MPNE_D_DigDir_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3251"/>
+        <source>0;NO_NODE;1;NODE_OK;2;TIMEOUT;3;BLACKLIST;4;DISCONNECTED;5;DISABLED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2394"/>
+        <location filename="page049d.ui" line="2400"/>
+        <source>MPNE_D_AnIn2Conf</source>
+        <oldsource>MPNE_C_AnIn2Conf</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2403"/>
+        <source>AI_2 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1497"/>
+        <location filename="page049d.ui" line="1503"/>
+        <source>MPNE_D_AnIn_1</source>
+        <oldsource>MPNE_C_AnIn_1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="991"/>
+        <location filename="page049d.ui" line="997"/>
+        <source>MPNE_D_DigIn_1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1033"/>
+        <source>MPNE_D_DigIn_12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1123"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1270"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1307"/>
+        <location filename="page049d.ui" line="1313"/>
+        <source>MPNE_D_AnIn1Conf</source>
+        <oldsource>MPNE_C_AnIn1Conf</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1316"/>
+        <source>AI_1 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1443"/>
+        <source>MPNE_D_DigIn_9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1559"/>
+        <source>MPNE_D_DigIn_4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1666"/>
+        <source>MPNE_D_DigIn_11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1791"/>
+        <source>xx.xx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1794"/>
+        <location filename="page049d.ui" line="1800"/>
+        <source>MPNE_D_AnOut1</source>
+        <oldsource>MPNE_C_AnOut1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1806"/>
+        <source> V</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1904"/>
+        <source>8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1977"/>
+        <source>7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2002"/>
+        <source>MPNE_D_DigIn_14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2109"/>
+        <source>MPNE_D_DigIn_13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2151"/>
+        <source>MPNE_D_DigIn_15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2241"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2340"/>
+        <source>MPNE_D_DigIn_7</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2456"/>
+        <source>MPNE_D_DigIn_16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2498"/>
+        <source>MPNE_D_DigIn_2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2540"/>
+        <source>MPNE_D_DigIn_5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2582"/>
+        <source>MPNE_D_DigIn_8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2624"/>
+        <source>MPNE_D_DigIn_10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2666"/>
+        <source>MPNE_D_DigIn_6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3060"/>
+        <source>MPNE_D_DigIn_3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3150"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3217"/>
+        <location filename="page049d.ui" line="3223"/>
+        <source>NODE_13_STATUS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3554"/>
+        <source>9</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3584"/>
+        <source>10</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3614"/>
+        <source>11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3644"/>
+        <source>12</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3674"/>
+        <source>13</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3704"/>
+        <source>14</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3734"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3764"/>
+        <source>16</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="929"/>
+        <location filename="page049d.ui" line="2717"/>
+        <source>xxxxxxxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2720"/>
+        <location filename="page049d.ui" line="2726"/>
+        <source>MPNE_D_LifeTime</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2732"/>
+        <source> s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="932"/>
+        <location filename="page049d.ui" line="938"/>
+        <source>MPNE_D_SN</source>
+        <oldsource>MPNE_C_SN</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="941"/>
+        <source>S/N </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1157"/>
+        <location filename="page049d.ui" line="1378"/>
+        <location filename="page049d.ui" line="2927"/>
+        <source>0xXXxx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1381"/>
+        <location filename="page049d.ui" line="1387"/>
+        <source>MPNE_D_Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2930"/>
+        <location filename="page049d.ui" line="2936"/>
+        <source>MPNE_D_ExpID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2939"/>
+        <source>ID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1160"/>
+        <location filename="page049d.ui" line="1166"/>
+        <source>MPNE_D_ExpType</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1169"/>
+        <source>T:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3186"/>
+        <source>MPNE_D</source>
+        <oldsource>MPNE_C</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="861"/>
+        <location filename="page049d.ui" line="873"/>
+        <source>MPNE_D_DigDir_4</source>
+        <oldsource>MPNE_C_DigDir_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1607"/>
+        <location filename="page049d.ui" line="1619"/>
+        <source>MPNE_D_DigDir_2</source>
+        <oldsource>MPNE_C_DigDir_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="796"/>
+        <location filename="page049d.ui" line="808"/>
+        <source>MPNE_D_DigDir_3</source>
+        <oldsource>MPNE_C_DigDir_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3276"/>
+        <location filename="page049d.ui" line="3288"/>
+        <source>MPNE_D_DigOut_1</source>
+        <oldsource>MPNE_C_DigOut_1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1081"/>
+        <location filename="page049d.ui" line="1093"/>
+        <source>MPNE_D_DigOut_2</source>
+        <oldsource>MPNE_C_DigOut_2</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1228"/>
+        <location filename="page049d.ui" line="1240"/>
+        <source>MPNE_D_DigOut_3</source>
+        <oldsource>MPNE_C_DigOut_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3349"/>
+        <location filename="page049d.ui" line="3361"/>
+        <source>MPNE_D_DigOut_4</source>
+        <oldsource>MPNE_C_DigOut_4</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2199"/>
+        <location filename="page049d.ui" line="2211"/>
+        <source>MPNE_D_DigOut_5</source>
+        <oldsource>MPNE_C_DigOut_5</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3108"/>
+        <location filename="page049d.ui" line="3120"/>
+        <source>MPNE_D_DigOut_6</source>
+        <oldsource>MPNE_C_DigOut_6</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="2050"/>
+        <location filename="page049d.ui" line="2062"/>
+        <source>MPNE_D_DigDir_8</source>
+        <oldsource>MPNE_C_DigDir_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1862"/>
+        <location filename="page049d.ui" line="1874"/>
+        <source>MPNE_D_DigOut_8</source>
+        <oldsource>MPNE_C_DigOut_8</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="1935"/>
+        <location filename="page049d.ui" line="1947"/>
+        <source>MPNE_D_DigOut_7</source>
+        <oldsource>MPNE_C_DigOut_7</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3318"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3391"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page049d.ui" line="3422"/>
+        <location filename="page049d.ui" line="3434"/>
+        <source>MPNE_D_DigDir_1</source>
+        <oldsource>MPNE_C_DigDir_1</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

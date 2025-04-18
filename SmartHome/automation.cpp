@@ -47,7 +47,6 @@ const QString heating_name(int heating_status)
 int currentThermostat = -1;
 int currentWattmeter = -1;
 
-
 void setup(void)
 {
     qDebug() << HMIversion;
@@ -57,7 +56,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(1205);
+    doWrite_PLC_HMI_Version(2000);
 
     // --------- system ---------------------------------------------
     if (PLC_PRODUCT_ID == 0x4100010A || PLC_PRODUCT_ID == 0x4120010A) {

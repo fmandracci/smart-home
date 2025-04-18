@@ -1064,6 +1064,13 @@ int PLC_Tn_heating = 0;
 
 
 /*
+ * Variable PLC_mute_BlackoutDetected
+ */
+
+int PLC_mute_BlackoutDetected = 0;
+
+
+/*
  * Variable PLC_time_bis	[ PLC_time + PLC_timeOffset ]
  */
 
@@ -12796,6 +12803,454 @@ u_int32_t QcPm_ActiveEnergy_0 = 0;
 
 
 /*
+ * Variable MPNE_E_FwRev	[ MPNE firmware revision ]
+ */
+
+u_int16_t MPNE_E_FwRev = 0;
+
+
+/*
+ * Variable MPNE_E_ExpID	[ MPNE ID expansions ]
+ */
+
+u_int16_t MPNE_E_ExpID = 0;
+
+
+/*
+ * Variable MPNE_E_ExpType	[ MPNE expansions type ]
+ */
+
+u_int16_t MPNE_E_ExpType = 0;
+
+
+/*
+ * Variable MPNE_E_SN	[ MPNE serial number ]
+ */
+
+u_int32_t MPNE_E_SN = 0;
+
+
+/*
+ * Variable MPNE_E_LifeTime	[ MPNE lifetime 1s ]
+ */
+
+u_int32_t MPNE_E_LifeTime = 0;
+
+
+/*
+ * Variable MPNE_E_Status	[ MPNE status register ]
+ */
+
+u_int16_t MPNE_E_Status = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_1	[ Digital input 1 value ]
+ */
+
+int MPNE_E_DigIn_1 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_2	[ Digital input 2 value ]
+ */
+
+int MPNE_E_DigIn_2 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_3	[ Digital input 3 value ]
+ */
+
+int MPNE_E_DigIn_3 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_4	[ Digital input 4 value ]
+ */
+
+int MPNE_E_DigIn_4 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_5	[ Digital input 5 value ]
+ */
+
+int MPNE_E_DigIn_5 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_6	[ Digital input 6 value ]
+ */
+
+int MPNE_E_DigIn_6 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_7	[ Digital input 7 value ]
+ */
+
+int MPNE_E_DigIn_7 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_8	[ Digital input 8 value ]
+ */
+
+int MPNE_E_DigIn_8 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_9	[ Digital input 9 value ]
+ */
+
+int MPNE_E_DigIn_9 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_10	[ Digital input 10 value ]
+ */
+
+int MPNE_E_DigIn_10 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_11	[ Digital input 11 value ]
+ */
+
+int MPNE_E_DigIn_11 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_12	[ Digital input 12 value ]
+ */
+
+int MPNE_E_DigIn_12 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_13	[ Digital input 13 value ]
+ */
+
+int MPNE_E_DigIn_13 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_14	[ Digital input 14 value ]
+ */
+
+int MPNE_E_DigIn_14 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_15	[ Digital input 15 value ]
+ */
+
+int MPNE_E_DigIn_15 = 0;
+
+
+/*
+ * Variable MPNE_E_DigIn_16	[ Digital input 16 value ]
+ */
+
+int MPNE_E_DigIn_16 = 0;
+
+
+/*
+ * Variable MPNE_E_StatusWord	[ Fast Input Output Status Word ]
+ */
+
+u_int16_t MPNE_E_StatusWord = 0;
+
+
+/*
+ * Variable MPNE_E_Watchdog	[ Watchdog ]
+ */
+
+u_int16_t MPNE_E_Watchdog = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_1	[ Digital 1 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_1 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_2	[ Digital 2 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_2 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_3	[ Digital 3 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_3 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_4	[ Digital 4 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_4 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_5	[ Digital 5 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_5 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_6	[ Digital 6 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_6 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_7	[ Digital 7 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_7 = 0;
+
+
+/*
+ * Variable MPNE_E_DigDir_8	[ Digital 8 direction (input = 0 output = 1) ]
+ */
+
+int MPNE_E_DigDir_8 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_1	[ Digital output 1 value ]
+ */
+
+int MPNE_E_DigOut_1 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_2	[ Digital output 2 value ]
+ */
+
+int MPNE_E_DigOut_2 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_3	[ Digital output 3 value ]
+ */
+
+int MPNE_E_DigOut_3 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_4	[ Digital output 4 value ]
+ */
+
+int MPNE_E_DigOut_4 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_5	[ Digital output 5 value ]
+ */
+
+int MPNE_E_DigOut_5 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_6	[ Digital output 6 value ]
+ */
+
+int MPNE_E_DigOut_6 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_7	[ Digital output 7 value ]
+ */
+
+int MPNE_E_DigOut_7 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_8	[ Digital output 8 value ]
+ */
+
+int MPNE_E_DigOut_8 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_17	[ Digital output 17 value ]
+ */
+
+int MPNE_E_DigOut_17 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_18	[ Digital output 18 value ]
+ */
+
+int MPNE_E_DigOut_18 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_19	[ Digital output 19 value ]
+ */
+
+int MPNE_E_DigOut_19 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_20	[ Digital output 20 value ]
+ */
+
+int MPNE_E_DigOut_20 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_21	[ Digital output 21 value ]
+ */
+
+int MPNE_E_DigOut_21 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_22	[ Digital output 22 value ]
+ */
+
+int MPNE_E_DigOut_22 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_23	[ Digital output 23 value ]
+ */
+
+int MPNE_E_DigOut_23 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_24	[ Digital output 24 value ]
+ */
+
+int MPNE_E_DigOut_24 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_25	[ Digital output 25 value ]
+ */
+
+int MPNE_E_DigOut_25 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_26	[ Digital output 26 value ]
+ */
+
+int MPNE_E_DigOut_26 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_27	[ Digital output 27 value ]
+ */
+
+int MPNE_E_DigOut_27 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_28	[ Digital output 28 value ]
+ */
+
+int MPNE_E_DigOut_28 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_29	[ Digital output 29 value ]
+ */
+
+int MPNE_E_DigOut_29 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_30	[ Digital output 30 value ]
+ */
+
+int MPNE_E_DigOut_30 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_31	[ Digital output 31 value ]
+ */
+
+int MPNE_E_DigOut_31 = 0;
+
+
+/*
+ * Variable MPNE_E_DigOut_32	[ Digital output 32 value ]
+ */
+
+int MPNE_E_DigOut_32 = 0;
+
+
+/*
+ * Variable MPNE_E_ControlWord_A	[ Fast Input Output Control Word Line A ]
+ */
+
+u_int16_t MPNE_E_ControlWord_A = 0;
+
+
+/*
+ * Variable MPNE_E_FastInDelay_A	[ Fast input delay time x 10us Line A ]
+ */
+
+u_int16_t MPNE_E_FastInDelay_A = 0;
+
+
+/*
+ * Variable MPNE_E_FastOutDelay_A	[ Fast output delay time x 10us Line A ]
+ */
+
+u_int16_t MPNE_E_FastOutDelay_A = 0;
+
+
+/*
+ * Variable MPNE_E_FastOutDuration_A	[ Fast output duration time x 10us Line A ]
+ */
+
+u_int16_t MPNE_E_FastOutDuration_A = 0;
+
+
+/*
+ * Variable MPNE_E_EncCounter_A	[ Encoder Counter Line A ]
+ */
+
+int32_t MPNE_E_EncCounter_A = 0;
+
+
+/*
+ * Variable MPNE_E_MatchRegister_A	[ Match Encoder register Line A ]
+ */
+
+int32_t MPNE_E_MatchRegister_A = 0;
+
+
+/*
+ * Variable MPNE_E_PTOTargetFreq_A	[ PTO Frequency Line A ]
+ */
+
+u_int16_t MPNE_E_PTOTargetFreq_A = 0;
+
+
+/*
+ * Variable MPNE_E_PTOSteps_A	[ PTO steps Line A ]
+ */
+
+u_int32_t MPNE_E_PTOSteps_A = 0;
+
+
+/*
  * Variable RTU0_TYPE_PORT
  */
 
@@ -14179,6 +14634,20 @@ u_int32_t NODE_44_DEV_NODE = 0;
  */
 
 u_int32_t NODE_44_STATUS = 0;
+
+
+/*
+ * Variable NODE_45_DEV_NODE
+ */
+
+u_int32_t NODE_45_DEV_NODE = 0;
+
+
+/*
+ * Variable NODE_45_STATUS
+ */
+
+u_int32_t NODE_45_STATUS = 0;
 
 
 /*
@@ -17178,6 +17647,24 @@ int
 getStatus_PLC_Tn_heating(void)
 {
 	return getStatus(ID_PLC_Tn_heating);
+}
+
+int
+doWrite_PLC_mute_BlackoutDetected(int value)
+{
+	return doWrite(ID_PLC_mute_BlackoutDetected, &value);
+}
+
+int
+addWrite_PLC_mute_BlackoutDetected(int value)
+{
+	return addWrite(ID_PLC_mute_BlackoutDetected, &value);
+}
+
+int
+getStatus_PLC_mute_BlackoutDetected(void)
+{
+	return getStatus(ID_PLC_mute_BlackoutDetected);
 }
 
 int
@@ -47349,6 +47836,1158 @@ getStatus_QcPm_ActiveEnergy_0(void)
 }
 
 int
+doWrite_MPNE_E_FwRev(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_FwRev, &value);
+}
+
+int
+addWrite_MPNE_E_FwRev(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_FwRev, &value);
+}
+
+int
+getStatus_MPNE_E_FwRev(void)
+{
+	return getStatus(ID_MPNE_E_FwRev);
+}
+
+int
+doWrite_MPNE_E_ExpID(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_ExpID, &value);
+}
+
+int
+addWrite_MPNE_E_ExpID(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_ExpID, &value);
+}
+
+int
+getStatus_MPNE_E_ExpID(void)
+{
+	return getStatus(ID_MPNE_E_ExpID);
+}
+
+int
+doWrite_MPNE_E_ExpType(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_ExpType, &value);
+}
+
+int
+addWrite_MPNE_E_ExpType(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_ExpType, &value);
+}
+
+int
+getStatus_MPNE_E_ExpType(void)
+{
+	return getStatus(ID_MPNE_E_ExpType);
+}
+
+int
+doWrite_MPNE_E_SN(u_int32_t value)
+{
+	return doWrite(ID_MPNE_E_SN, &value);
+}
+
+int
+addWrite_MPNE_E_SN(u_int32_t value)
+{
+	return addWrite(ID_MPNE_E_SN, &value);
+}
+
+int
+getStatus_MPNE_E_SN(void)
+{
+	return getStatus(ID_MPNE_E_SN);
+}
+
+int
+doWrite_MPNE_E_LifeTime(u_int32_t value)
+{
+	return doWrite(ID_MPNE_E_LifeTime, &value);
+}
+
+int
+addWrite_MPNE_E_LifeTime(u_int32_t value)
+{
+	return addWrite(ID_MPNE_E_LifeTime, &value);
+}
+
+int
+getStatus_MPNE_E_LifeTime(void)
+{
+	return getStatus(ID_MPNE_E_LifeTime);
+}
+
+int
+doWrite_MPNE_E_Status(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_Status, &value);
+}
+
+int
+addWrite_MPNE_E_Status(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_Status, &value);
+}
+
+int
+getStatus_MPNE_E_Status(void)
+{
+	return getStatus(ID_MPNE_E_Status);
+}
+
+int
+doWrite_MPNE_E_DigIn_1(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_1, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_1(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_1, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_1(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_1);
+}
+
+int
+doWrite_MPNE_E_DigIn_2(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_2, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_2(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_2, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_2(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_2);
+}
+
+int
+doWrite_MPNE_E_DigIn_3(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_3, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_3(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_3, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_3(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_3);
+}
+
+int
+doWrite_MPNE_E_DigIn_4(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_4, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_4(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_4, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_4(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_4);
+}
+
+int
+doWrite_MPNE_E_DigIn_5(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_5, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_5(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_5, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_5(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_5);
+}
+
+int
+doWrite_MPNE_E_DigIn_6(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_6, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_6(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_6, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_6(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_6);
+}
+
+int
+doWrite_MPNE_E_DigIn_7(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_7, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_7(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_7, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_7(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_7);
+}
+
+int
+doWrite_MPNE_E_DigIn_8(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_8, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_8(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_8, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_8(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_8);
+}
+
+int
+doWrite_MPNE_E_DigIn_9(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_9, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_9(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_9, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_9(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_9);
+}
+
+int
+doWrite_MPNE_E_DigIn_10(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_10, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_10(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_10, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_10(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_10);
+}
+
+int
+doWrite_MPNE_E_DigIn_11(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_11, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_11(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_11, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_11(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_11);
+}
+
+int
+doWrite_MPNE_E_DigIn_12(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_12, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_12(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_12, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_12(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_12);
+}
+
+int
+doWrite_MPNE_E_DigIn_13(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_13, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_13(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_13, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_13(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_13);
+}
+
+int
+doWrite_MPNE_E_DigIn_14(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_14, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_14(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_14, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_14(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_14);
+}
+
+int
+doWrite_MPNE_E_DigIn_15(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_15, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_15(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_15, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_15(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_15);
+}
+
+int
+doWrite_MPNE_E_DigIn_16(int value)
+{
+	return doWrite(ID_MPNE_E_DigIn_16, &value);
+}
+
+int
+addWrite_MPNE_E_DigIn_16(int value)
+{
+	return addWrite(ID_MPNE_E_DigIn_16, &value);
+}
+
+int
+getStatus_MPNE_E_DigIn_16(void)
+{
+	return getStatus(ID_MPNE_E_DigIn_16);
+}
+
+int
+doWrite_MPNE_E_StatusWord(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_StatusWord, &value);
+}
+
+int
+addWrite_MPNE_E_StatusWord(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_StatusWord, &value);
+}
+
+int
+getStatus_MPNE_E_StatusWord(void)
+{
+	return getStatus(ID_MPNE_E_StatusWord);
+}
+
+int
+doWrite_MPNE_E_Watchdog(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_Watchdog, &value);
+}
+
+int
+addWrite_MPNE_E_Watchdog(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_Watchdog, &value);
+}
+
+int
+getStatus_MPNE_E_Watchdog(void)
+{
+	return getStatus(ID_MPNE_E_Watchdog);
+}
+
+int
+doWrite_MPNE_E_DigDir_1(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_1, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_1(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_1, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_1(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_1);
+}
+
+int
+doWrite_MPNE_E_DigDir_2(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_2, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_2(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_2, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_2(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_2);
+}
+
+int
+doWrite_MPNE_E_DigDir_3(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_3, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_3(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_3, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_3(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_3);
+}
+
+int
+doWrite_MPNE_E_DigDir_4(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_4, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_4(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_4, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_4(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_4);
+}
+
+int
+doWrite_MPNE_E_DigDir_5(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_5, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_5(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_5, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_5(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_5);
+}
+
+int
+doWrite_MPNE_E_DigDir_6(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_6, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_6(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_6, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_6(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_6);
+}
+
+int
+doWrite_MPNE_E_DigDir_7(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_7, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_7(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_7, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_7(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_7);
+}
+
+int
+doWrite_MPNE_E_DigDir_8(int value)
+{
+	return doWrite(ID_MPNE_E_DigDir_8, &value);
+}
+
+int
+addWrite_MPNE_E_DigDir_8(int value)
+{
+	return addWrite(ID_MPNE_E_DigDir_8, &value);
+}
+
+int
+getStatus_MPNE_E_DigDir_8(void)
+{
+	return getStatus(ID_MPNE_E_DigDir_8);
+}
+
+int
+doWrite_MPNE_E_DigOut_1(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_1, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_1(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_1, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_1(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_1);
+}
+
+int
+doWrite_MPNE_E_DigOut_2(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_2, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_2(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_2, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_2(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_2);
+}
+
+int
+doWrite_MPNE_E_DigOut_3(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_3, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_3(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_3, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_3(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_3);
+}
+
+int
+doWrite_MPNE_E_DigOut_4(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_4, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_4(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_4, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_4(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_4);
+}
+
+int
+doWrite_MPNE_E_DigOut_5(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_5, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_5(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_5, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_5(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_5);
+}
+
+int
+doWrite_MPNE_E_DigOut_6(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_6, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_6(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_6, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_6(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_6);
+}
+
+int
+doWrite_MPNE_E_DigOut_7(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_7, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_7(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_7, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_7(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_7);
+}
+
+int
+doWrite_MPNE_E_DigOut_8(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_8, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_8(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_8, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_8(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_8);
+}
+
+int
+doWrite_MPNE_E_DigOut_17(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_17, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_17(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_17, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_17(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_17);
+}
+
+int
+doWrite_MPNE_E_DigOut_18(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_18, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_18(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_18, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_18(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_18);
+}
+
+int
+doWrite_MPNE_E_DigOut_19(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_19, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_19(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_19, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_19(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_19);
+}
+
+int
+doWrite_MPNE_E_DigOut_20(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_20, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_20(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_20, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_20(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_20);
+}
+
+int
+doWrite_MPNE_E_DigOut_21(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_21, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_21(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_21, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_21(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_21);
+}
+
+int
+doWrite_MPNE_E_DigOut_22(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_22, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_22(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_22, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_22(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_22);
+}
+
+int
+doWrite_MPNE_E_DigOut_23(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_23, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_23(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_23, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_23(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_23);
+}
+
+int
+doWrite_MPNE_E_DigOut_24(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_24, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_24(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_24, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_24(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_24);
+}
+
+int
+doWrite_MPNE_E_DigOut_25(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_25, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_25(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_25, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_25(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_25);
+}
+
+int
+doWrite_MPNE_E_DigOut_26(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_26, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_26(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_26, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_26(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_26);
+}
+
+int
+doWrite_MPNE_E_DigOut_27(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_27, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_27(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_27, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_27(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_27);
+}
+
+int
+doWrite_MPNE_E_DigOut_28(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_28, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_28(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_28, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_28(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_28);
+}
+
+int
+doWrite_MPNE_E_DigOut_29(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_29, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_29(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_29, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_29(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_29);
+}
+
+int
+doWrite_MPNE_E_DigOut_30(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_30, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_30(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_30, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_30(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_30);
+}
+
+int
+doWrite_MPNE_E_DigOut_31(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_31, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_31(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_31, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_31(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_31);
+}
+
+int
+doWrite_MPNE_E_DigOut_32(int value)
+{
+	return doWrite(ID_MPNE_E_DigOut_32, &value);
+}
+
+int
+addWrite_MPNE_E_DigOut_32(int value)
+{
+	return addWrite(ID_MPNE_E_DigOut_32, &value);
+}
+
+int
+getStatus_MPNE_E_DigOut_32(void)
+{
+	return getStatus(ID_MPNE_E_DigOut_32);
+}
+
+int
+doWrite_MPNE_E_ControlWord_A(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_ControlWord_A, &value);
+}
+
+int
+addWrite_MPNE_E_ControlWord_A(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_ControlWord_A, &value);
+}
+
+int
+getStatus_MPNE_E_ControlWord_A(void)
+{
+	return getStatus(ID_MPNE_E_ControlWord_A);
+}
+
+int
+doWrite_MPNE_E_FastInDelay_A(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_FastInDelay_A, &value);
+}
+
+int
+addWrite_MPNE_E_FastInDelay_A(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_FastInDelay_A, &value);
+}
+
+int
+getStatus_MPNE_E_FastInDelay_A(void)
+{
+	return getStatus(ID_MPNE_E_FastInDelay_A);
+}
+
+int
+doWrite_MPNE_E_FastOutDelay_A(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_FastOutDelay_A, &value);
+}
+
+int
+addWrite_MPNE_E_FastOutDelay_A(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_FastOutDelay_A, &value);
+}
+
+int
+getStatus_MPNE_E_FastOutDelay_A(void)
+{
+	return getStatus(ID_MPNE_E_FastOutDelay_A);
+}
+
+int
+doWrite_MPNE_E_FastOutDuration_A(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_FastOutDuration_A, &value);
+}
+
+int
+addWrite_MPNE_E_FastOutDuration_A(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_FastOutDuration_A, &value);
+}
+
+int
+getStatus_MPNE_E_FastOutDuration_A(void)
+{
+	return getStatus(ID_MPNE_E_FastOutDuration_A);
+}
+
+int
+doWrite_MPNE_E_EncCounter_A(int32_t value)
+{
+	return doWrite(ID_MPNE_E_EncCounter_A, &value);
+}
+
+int
+addWrite_MPNE_E_EncCounter_A(int32_t value)
+{
+	return addWrite(ID_MPNE_E_EncCounter_A, &value);
+}
+
+int
+getStatus_MPNE_E_EncCounter_A(void)
+{
+	return getStatus(ID_MPNE_E_EncCounter_A);
+}
+
+int
+doWrite_MPNE_E_MatchRegister_A(int32_t value)
+{
+	return doWrite(ID_MPNE_E_MatchRegister_A, &value);
+}
+
+int
+addWrite_MPNE_E_MatchRegister_A(int32_t value)
+{
+	return addWrite(ID_MPNE_E_MatchRegister_A, &value);
+}
+
+int
+getStatus_MPNE_E_MatchRegister_A(void)
+{
+	return getStatus(ID_MPNE_E_MatchRegister_A);
+}
+
+int
+doWrite_MPNE_E_PTOTargetFreq_A(u_int16_t value)
+{
+	return doWrite(ID_MPNE_E_PTOTargetFreq_A, &value);
+}
+
+int
+addWrite_MPNE_E_PTOTargetFreq_A(u_int16_t value)
+{
+	return addWrite(ID_MPNE_E_PTOTargetFreq_A, &value);
+}
+
+int
+getStatus_MPNE_E_PTOTargetFreq_A(void)
+{
+	return getStatus(ID_MPNE_E_PTOTargetFreq_A);
+}
+
+int
+doWrite_MPNE_E_PTOSteps_A(u_int32_t value)
+{
+	return doWrite(ID_MPNE_E_PTOSteps_A, &value);
+}
+
+int
+addWrite_MPNE_E_PTOSteps_A(u_int32_t value)
+{
+	return addWrite(ID_MPNE_E_PTOSteps_A, &value);
+}
+
+int
+getStatus_MPNE_E_PTOSteps_A(void)
+{
+	return getStatus(ID_MPNE_E_PTOSteps_A);
+}
+
+int
 doWrite_RTU0_TYPE_PORT(u_int32_t value)
 {
 	return doWrite(ID_RTU0_TYPE_PORT, &value);
@@ -50913,6 +52552,42 @@ getStatus_NODE_44_STATUS(void)
 }
 
 int
+doWrite_NODE_45_DEV_NODE(u_int32_t value)
+{
+	return doWrite(ID_NODE_45_DEV_NODE, &value);
+}
+
+int
+addWrite_NODE_45_DEV_NODE(u_int32_t value)
+{
+	return addWrite(ID_NODE_45_DEV_NODE, &value);
+}
+
+int
+getStatus_NODE_45_DEV_NODE(void)
+{
+	return getStatus(ID_NODE_45_DEV_NODE);
+}
+
+int
+doWrite_NODE_45_STATUS(u_int32_t value)
+{
+	return doWrite(ID_NODE_45_STATUS, &value);
+}
+
+int
+addWrite_NODE_45_STATUS(u_int32_t value)
+{
+	return addWrite(ID_NODE_45_STATUS, &value);
+}
+
+int
+getStatus_NODE_45_STATUS(void)
+{
+	return getStatus(ID_NODE_45_STATUS);
+}
+
+int
 doWrite_PLC_time(float value)
 {
 	return doWrite(ID_PLC_time, &value);
@@ -51930,6 +53605,7 @@ update_all(void)
 	retval += readFromDb(ID_PLC_EP_OverloadDetected, &PLC_EP_OverloadDetected);
 	retval += readFromDb(ID_PLC_nighttime, &PLC_nighttime);
 	retval += readFromDb(ID_PLC_Tn_heating, &PLC_Tn_heating);
+	retval += readFromDb(ID_PLC_mute_BlackoutDetected, &PLC_mute_BlackoutDetected);
 	retval += readFromDb(ID_PLC_time_bis, &PLC_time_bis);
 	retval += readFromDb(ID_PLC_timeMin_bis, &PLC_timeMin_bis);
 	retval += readFromDb(ID_PLC_timeMax_bis, &PLC_timeMax_bis);
@@ -53606,6 +55282,70 @@ update_all(void)
 	retval += readFromDb(ID_QcPm_ApparentPower_0, &QcPm_ApparentPower_0);
 	retval += readFromDb(ID_QcPm_PowerFactor_0, &QcPm_PowerFactor_0);
 	retval += readFromDb(ID_QcPm_ActiveEnergy_0, &QcPm_ActiveEnergy_0);
+	retval += readFromDb(ID_MPNE_E_FwRev, &MPNE_E_FwRev);
+	retval += readFromDb(ID_MPNE_E_ExpID, &MPNE_E_ExpID);
+	retval += readFromDb(ID_MPNE_E_ExpType, &MPNE_E_ExpType);
+	retval += readFromDb(ID_MPNE_E_SN, &MPNE_E_SN);
+	retval += readFromDb(ID_MPNE_E_LifeTime, &MPNE_E_LifeTime);
+	retval += readFromDb(ID_MPNE_E_Status, &MPNE_E_Status);
+	retval += readFromDb(ID_MPNE_E_DigIn_1, &MPNE_E_DigIn_1);
+	retval += readFromDb(ID_MPNE_E_DigIn_2, &MPNE_E_DigIn_2);
+	retval += readFromDb(ID_MPNE_E_DigIn_3, &MPNE_E_DigIn_3);
+	retval += readFromDb(ID_MPNE_E_DigIn_4, &MPNE_E_DigIn_4);
+	retval += readFromDb(ID_MPNE_E_DigIn_5, &MPNE_E_DigIn_5);
+	retval += readFromDb(ID_MPNE_E_DigIn_6, &MPNE_E_DigIn_6);
+	retval += readFromDb(ID_MPNE_E_DigIn_7, &MPNE_E_DigIn_7);
+	retval += readFromDb(ID_MPNE_E_DigIn_8, &MPNE_E_DigIn_8);
+	retval += readFromDb(ID_MPNE_E_DigIn_9, &MPNE_E_DigIn_9);
+	retval += readFromDb(ID_MPNE_E_DigIn_10, &MPNE_E_DigIn_10);
+	retval += readFromDb(ID_MPNE_E_DigIn_11, &MPNE_E_DigIn_11);
+	retval += readFromDb(ID_MPNE_E_DigIn_12, &MPNE_E_DigIn_12);
+	retval += readFromDb(ID_MPNE_E_DigIn_13, &MPNE_E_DigIn_13);
+	retval += readFromDb(ID_MPNE_E_DigIn_14, &MPNE_E_DigIn_14);
+	retval += readFromDb(ID_MPNE_E_DigIn_15, &MPNE_E_DigIn_15);
+	retval += readFromDb(ID_MPNE_E_DigIn_16, &MPNE_E_DigIn_16);
+	retval += readFromDb(ID_MPNE_E_StatusWord, &MPNE_E_StatusWord);
+	retval += readFromDb(ID_MPNE_E_Watchdog, &MPNE_E_Watchdog);
+	retval += readFromDb(ID_MPNE_E_DigDir_1, &MPNE_E_DigDir_1);
+	retval += readFromDb(ID_MPNE_E_DigDir_2, &MPNE_E_DigDir_2);
+	retval += readFromDb(ID_MPNE_E_DigDir_3, &MPNE_E_DigDir_3);
+	retval += readFromDb(ID_MPNE_E_DigDir_4, &MPNE_E_DigDir_4);
+	retval += readFromDb(ID_MPNE_E_DigDir_5, &MPNE_E_DigDir_5);
+	retval += readFromDb(ID_MPNE_E_DigDir_6, &MPNE_E_DigDir_6);
+	retval += readFromDb(ID_MPNE_E_DigDir_7, &MPNE_E_DigDir_7);
+	retval += readFromDb(ID_MPNE_E_DigDir_8, &MPNE_E_DigDir_8);
+	retval += readFromDb(ID_MPNE_E_DigOut_1, &MPNE_E_DigOut_1);
+	retval += readFromDb(ID_MPNE_E_DigOut_2, &MPNE_E_DigOut_2);
+	retval += readFromDb(ID_MPNE_E_DigOut_3, &MPNE_E_DigOut_3);
+	retval += readFromDb(ID_MPNE_E_DigOut_4, &MPNE_E_DigOut_4);
+	retval += readFromDb(ID_MPNE_E_DigOut_5, &MPNE_E_DigOut_5);
+	retval += readFromDb(ID_MPNE_E_DigOut_6, &MPNE_E_DigOut_6);
+	retval += readFromDb(ID_MPNE_E_DigOut_7, &MPNE_E_DigOut_7);
+	retval += readFromDb(ID_MPNE_E_DigOut_8, &MPNE_E_DigOut_8);
+	retval += readFromDb(ID_MPNE_E_DigOut_17, &MPNE_E_DigOut_17);
+	retval += readFromDb(ID_MPNE_E_DigOut_18, &MPNE_E_DigOut_18);
+	retval += readFromDb(ID_MPNE_E_DigOut_19, &MPNE_E_DigOut_19);
+	retval += readFromDb(ID_MPNE_E_DigOut_20, &MPNE_E_DigOut_20);
+	retval += readFromDb(ID_MPNE_E_DigOut_21, &MPNE_E_DigOut_21);
+	retval += readFromDb(ID_MPNE_E_DigOut_22, &MPNE_E_DigOut_22);
+	retval += readFromDb(ID_MPNE_E_DigOut_23, &MPNE_E_DigOut_23);
+	retval += readFromDb(ID_MPNE_E_DigOut_24, &MPNE_E_DigOut_24);
+	retval += readFromDb(ID_MPNE_E_DigOut_25, &MPNE_E_DigOut_25);
+	retval += readFromDb(ID_MPNE_E_DigOut_26, &MPNE_E_DigOut_26);
+	retval += readFromDb(ID_MPNE_E_DigOut_27, &MPNE_E_DigOut_27);
+	retval += readFromDb(ID_MPNE_E_DigOut_28, &MPNE_E_DigOut_28);
+	retval += readFromDb(ID_MPNE_E_DigOut_29, &MPNE_E_DigOut_29);
+	retval += readFromDb(ID_MPNE_E_DigOut_30, &MPNE_E_DigOut_30);
+	retval += readFromDb(ID_MPNE_E_DigOut_31, &MPNE_E_DigOut_31);
+	retval += readFromDb(ID_MPNE_E_DigOut_32, &MPNE_E_DigOut_32);
+	retval += readFromDb(ID_MPNE_E_ControlWord_A, &MPNE_E_ControlWord_A);
+	retval += readFromDb(ID_MPNE_E_FastInDelay_A, &MPNE_E_FastInDelay_A);
+	retval += readFromDb(ID_MPNE_E_FastOutDelay_A, &MPNE_E_FastOutDelay_A);
+	retval += readFromDb(ID_MPNE_E_FastOutDuration_A, &MPNE_E_FastOutDuration_A);
+	retval += readFromDb(ID_MPNE_E_EncCounter_A, &MPNE_E_EncCounter_A);
+	retval += readFromDb(ID_MPNE_E_MatchRegister_A, &MPNE_E_MatchRegister_A);
+	retval += readFromDb(ID_MPNE_E_PTOTargetFreq_A, &MPNE_E_PTOTargetFreq_A);
+	retval += readFromDb(ID_MPNE_E_PTOSteps_A, &MPNE_E_PTOSteps_A);
 	retval += readFromDb(ID_RTU0_TYPE_PORT, &RTU0_TYPE_PORT);
 	retval += readFromDb(ID_RTU0_BAUDRATE, &RTU0_BAUDRATE);
 	retval += readFromDb(ID_RTU0_STATUS, &RTU0_STATUS);
@@ -53804,6 +55544,8 @@ update_all(void)
 	retval += readFromDb(ID_NODE_43_STATUS, &NODE_43_STATUS);
 	retval += readFromDb(ID_NODE_44_DEV_NODE, &NODE_44_DEV_NODE);
 	retval += readFromDb(ID_NODE_44_STATUS, &NODE_44_STATUS);
+	retval += readFromDb(ID_NODE_45_DEV_NODE, &NODE_45_DEV_NODE);
+	retval += readFromDb(ID_NODE_45_STATUS, &NODE_45_STATUS);
 	retval += readFromDb(ID_PLC_time, &PLC_time);
 	retval += readFromDb(ID_PLC_timeMin, &PLC_timeMin);
 	retval += readFromDb(ID_PLC_timeMax, &PLC_timeMax);
