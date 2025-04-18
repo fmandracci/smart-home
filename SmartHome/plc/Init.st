@@ -24,10 +24,10 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 1205;
+	PLC_PLC_Version := 2000;
 
-	(* Fast I/O on TPX1043_03_C only *)
-	if PLC_PRODUCT_ID = 16#1043030C then
+	(* Fast I/O only on TPX1043_03_C and TPX4xx_01_A *)
+	if PLC_PRODUCT_ID = 16#1043030C or PLC_PRODUCT_ID = 16#4100010A or PLC_PRODUCT_ID = 16#4120010A or PLC_PRODUCT_ID = 16#4150010A or PLC_PRODUCT_ID = 16#4190010A then
 	    PLC_FastIO_Ena := 16#000000FF;
 	    PLC_FastIO_Dir := 16#000000F0;
 	end_if;
