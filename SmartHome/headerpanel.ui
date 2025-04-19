@@ -72,6 +72,9 @@
          <family>DejaVu Sans</family>
         </font>
        </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -475,8 +478,8 @@ color: rgb(255, 85, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>
