@@ -3214,13 +3214,13 @@ background-color: rgb(0, 0, 0);
         </font>
        </property>
        <property name="toolTip">
-        <string>NODE_13_STATUS</string>
+        <string>NODE_14_STATUS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMcombobox widget</string>
        </property>
        <property name="variable">
-        <string>NODE_13_STATUS</string>
+        <string>NODE_14_STATUS</string>
        </property>
        <property name="refresh">
         <number>500</number>

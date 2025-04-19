@@ -835,7 +835,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="8">
-      <widget class="ATCMled" name="atcmLed_digin_9">
+      <widget class="ATCMled" name="atcmLed_digin_09">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -849,13 +849,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_9</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_9</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1178,13 +1178,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_14</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_14</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1401,7 +1401,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="ATCMled" name="atcmLed_digin_5">
+      <widget class="ATCMled" name="atcmLed_digin_05">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -1415,13 +1415,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_5</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_5</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1457,13 +1457,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_15</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_15</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1727,13 +1727,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_11</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_11</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1769,13 +1769,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_16</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_16</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1838,13 +1838,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_12</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_12</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1866,7 +1866,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="ATCMled" name="atcmLed_digin_4">
+      <widget class="ATCMled" name="atcmLed_digin_04">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -1880,13 +1880,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_4</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_4</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -1976,7 +1976,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="ATCMled" name="atcmLed_digin_6">
+      <widget class="ATCMled" name="atcmLed_digin_06">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -1990,13 +1990,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_6</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_6</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2357,7 +2357,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="6">
-      <widget class="ATCMled" name="atcmLed_digin_7">
+      <widget class="ATCMled" name="atcmLed_digin_07">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -2371,13 +2371,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_7</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_7</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2399,7 +2399,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="ATCMled" name="atcmLed_digin_3">
+      <widget class="ATCMled" name="atcmLed_digin_03">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -2413,13 +2413,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_3</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_3</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2455,13 +2455,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_13</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_13</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2497,13 +2497,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_10</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_10</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2596,7 +2596,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="ATCMled" name="atcmLed_digin_1">
+      <widget class="ATCMled" name="atcmLed_digin_01">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -2768,7 +2768,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="7">
-      <widget class="ATCMled" name="atcmLed_digin_8">
+      <widget class="ATCMled" name="atcmLed_digin_08">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -2782,13 +2782,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_8</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_8</string>
        </property>
        <property name="refresh">
         <number>200</number>
@@ -2810,7 +2810,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="ATCMled" name="atcmLed_digin_2">
+      <widget class="ATCMled" name="atcmLed_digin_02">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -2824,13 +2824,13 @@ background-color: rgb(0, 0, 0);
         </size>
        </property>
        <property name="toolTip">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_2</string>
        </property>
        <property name="whatsThis">
         <string>ATCMled widget</string>
        </property>
        <property name="variable">
-        <string>MPNE_B_DigIn_1</string>
+        <string>MPNE_B_DigIn_2</string>
        </property>
        <property name="refresh">
         <number>200</number>
