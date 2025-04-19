@@ -25,6 +25,7 @@
 #define PAGE101B_H
 
 #include "pagebrowser.h"
+#include "automation.h"
 
 #include <QColor>
 
@@ -59,11 +60,17 @@ private slots:
     void on_pushButton_Hup_nt_clicked()   { humidity_nt_valueChanged(+deltaH);    }
     void on_pushButton_Hdown_nt_clicked() { humidity_nt_valueChanged(-deltaH);    }
 
-    void on_atcmButton_prev_clicked();
+    void on_pushButton_T_0_clicked()   { temperature_valueAbsolute(TemperatureSetPoint_min); }
+    void on_pushButton_T_1_clicked()   { temperature_valueAbsolute(120); } // 1 12.0°C
+    void on_pushButton_T_2_clicked()   { temperature_valueAbsolute(160); } // 2 16.0°C
+    void on_pushButton_T_3_clicked()   { temperature_valueAbsolute(200); } // 3 20.0°C
+    void on_pushButton_T_4_clicked()   { temperature_valueAbsolute(240); } // 4 24.0°C
+
+    void on_atcmButton_set_T_everywhere_clicked();
 
 private:
     Ui::page101b *ui;
-    void changeWidgets(int sunrise, int sunset, unsigned control_type,
+    void changeWidgets(int sunrise, int sunset,
                        const QString Tlabel, const char *trend, const QString title,
                        const QString Tsp, const QString Tsp_nt,
                        const QString Hsp, const QString Hsp_nt,
@@ -77,6 +84,7 @@ private:
     const int deltaH;
     int checkTvalue(int value, int diff);
     int checkHvalue(int value, int diff);
+    void temperature_valueAbsolute(int value);
     void temperature_valueChanged(int diff);
     void temperature_nt_valueChanged(int diff);
     void humidity_valueChanged(int diff);

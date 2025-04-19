@@ -47,18 +47,18 @@ void page101b::reload()
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
     switch (currentThermostat) {
-    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, PLC_T1_control_type, LABEL_01, "trend_T1.csv", home_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
-    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, PLC_T2_control_type, LABEL_02, "trend_T2.csv", home_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
-    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, PLC_T3_control_type, LABEL_03, "trend_T3.csv", home_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
+    case  1: changeWidgets(PLC_T1_sunrise, PLC_T1_sunset, LABEL_01, "trend_T1.csv", home_ini.value("T1/name").toString(), "PLC_T1_temperature_setpoint", "PLC_T1_temperature_setpoint_nt", "PLC_T1_humidity_setpoint", "PLC_T1_humidity_setpoint_nt", PLC_T1_temperature, PLC_T1_temperature_bis, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
+    case  2: changeWidgets(PLC_T2_sunrise, PLC_T2_sunset, LABEL_02, "trend_T2.csv", home_ini.value("T2/name").toString(), "PLC_T2_temperature_setpoint", "PLC_T2_temperature_setpoint_nt", "PLC_T2_humidity_setpoint", "PLC_T2_humidity_setpoint_nt", PLC_T2_temperature, PLC_T2_temperature_bis, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
+    case  3: changeWidgets(PLC_T3_sunrise, PLC_T3_sunset, LABEL_03, "trend_T3.csv", home_ini.value("T3/name").toString(), "PLC_T3_temperature_setpoint", "PLC_T3_temperature_setpoint_nt", "PLC_T3_humidity_setpoint", "PLC_T3_humidity_setpoint_nt", PLC_T3_temperature, PLC_T3_temperature_bis, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
     case  4:
         if (PLC_T4_control_type == ControlType_6)
-             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, "trend_T4puffer.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
+             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, LABEL_04, "trend_T4puffer.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
         else
-             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, PLC_T4_control_type, LABEL_04, "trend_T4.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
+             changeWidgets(PLC_T4_sunrise, PLC_T4_sunset, LABEL_04, "trend_T4.csv", home_ini.value("T4/name").toString(), "PLC_T4_temperature_setpoint", "PLC_T4_temperature_setpoint_nt", "PLC_T4_humidity_setpoint", "PLC_T4_humidity_setpoint_nt", PLC_T4_temperature, PLC_T4_temperature_bis, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04);
         break;
-    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, PLC_T5_control_type, LABEL_05, "trend_T5.csv", home_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
-    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, PLC_T6_control_type, LABEL_06, "trend_T6.csv", home_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
-    default: changeWidgets(0             , 0            , 0                  , "??"    , NULL          , ""                                  , ""                           , ""                              , ""                        , ""                           , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
+    case  5: changeWidgets(PLC_T5_sunrise, PLC_T5_sunset, LABEL_05, "trend_T5.csv", home_ini.value("T5/name").toString(), "PLC_T5_temperature_setpoint", "PLC_T5_temperature_setpoint_nt", "PLC_T5_humidity_setpoint", "PLC_T5_humidity_setpoint_nt", PLC_T5_temperature, PLC_T5_temperature_bis, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
+    case  6: changeWidgets(PLC_T6_sunrise, PLC_T6_sunset, LABEL_06, "trend_T6.csv", home_ini.value("T6/name").toString(), "PLC_T6_temperature_setpoint", "PLC_T6_temperature_setpoint_nt", "PLC_T6_humidity_setpoint", "PLC_T6_humidity_setpoint_nt", PLC_T6_temperature, PLC_T6_temperature_bis, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
+    default: changeWidgets(0             , 0            , "??"    , NULL          , ""                                  , ""                           , ""                              , ""                        , ""                           , 0                 , 0                     , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
     }
     // updateWidgets() called by changeWidgets()
 }
@@ -81,7 +81,7 @@ void page101b::updateData()
     }
 }
 
-void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
+void page101b::changeWidgets(int sunrise, int sunset,
                              const QString Tlabel, const char *trend, const QString title,
                              const QString Tsp, const QString Tsp_nt,
                              const QString Hsp, const QString Hsp_nt,
@@ -107,7 +107,7 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
     ui->label_heating_status->setStyleSheet(offStyleSheet);
     ui->label_heating_timer->setVisible(abs(enabled_sensors) > 0);
     ui->label_heating_timer->setStyleSheet(offStyleSheet);
-    ui->atcmButton_prev->setFontColor(color);
+    ui->atcmButton_set_T_everywhere->setFontColor(color);
 
     // right margin
     ui->atcmButton_next->setFontColor(color);
@@ -131,8 +131,6 @@ void page101b::changeWidgets(int sunrise, int sunset, unsigned control_type,
     ui->atcmLabel_Tn_humidity_setpoint->setFontColor(color);
     ui->atcmLabel_Tn_humidity_setpoint_nt->setVariable(Hsp_nt);
     ui->atcmLabel_Tn_humidity_setpoint_nt->setFontColor(color);
-
-    ui->label_range_scale->setVisible(control_type == ControlType_3 or control_type == ControlType_4 or control_type == ControlType_6 or control_type == ControlType_16); // Pt100 only
 
     updateWidgets(sunrise, sunset, Tlabel,
                   Tn_temperature, Tn_temperature_bis,
@@ -277,6 +275,84 @@ int page101b::checkHvalue(int value, int diff)
         retval = HumiditySetPoint_max;
     }
     return retval;
+}
+
+void page101b::temperature_valueAbsolute(int value)
+{
+    beginWrite();
+    {
+        switch (currentThermostat) {
+        case 1:
+            if (PLC_Iam_T1) {
+                addWrite_PLC_T1_temperature_setpoint(value);
+                addWrite_PLC_T1_temperature_setpoint_nt(value);
+                addWrite_SRV_T1_temperature_setpoint(value);
+                addWrite_SRV_T1_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T1_temperature_setpoint(value);
+                addWrite_TCP_T1_temperature_setpoint_nt(value);
+            }
+            break;
+        case 2:
+            if (PLC_Iam_T2) {
+                addWrite_PLC_T2_temperature_setpoint(value);
+                addWrite_PLC_T2_temperature_setpoint_nt(value);
+                addWrite_SRV_T2_temperature_setpoint(value);
+                addWrite_SRV_T2_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T2_temperature_setpoint(value);
+                addWrite_TCP_T2_temperature_setpoint_nt(value);
+            }
+            break;
+        case 3:
+            if (PLC_Iam_T3) {
+                addWrite_PLC_T3_temperature_setpoint(value);
+                addWrite_PLC_T3_temperature_setpoint_nt(value);
+                addWrite_SRV_T3_temperature_setpoint(value);
+                addWrite_SRV_T3_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T3_temperature_setpoint(value);
+                addWrite_TCP_T3_temperature_setpoint_nt(value);
+            }
+            break;
+        case 4:
+            if (PLC_Iam_T4) {
+                addWrite_PLC_T4_temperature_setpoint(value);
+                addWrite_PLC_T4_temperature_setpoint_nt(value);
+                addWrite_SRV_T4_temperature_setpoint(value);
+                addWrite_SRV_T4_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T4_temperature_setpoint(value);
+                addWrite_TCP_T4_temperature_setpoint_nt(value);
+            }
+            break;
+        case 5:
+            if (PLC_Iam_T5) {
+                addWrite_PLC_T5_temperature_setpoint(value);
+                addWrite_PLC_T5_temperature_setpoint_nt(value);
+                addWrite_SRV_T5_temperature_setpoint(value);
+                addWrite_SRV_T5_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T5_temperature_setpoint(value);
+                addWrite_TCP_T5_temperature_setpoint_nt(value);
+            }
+            break;
+        case 6:
+            if (PLC_Iam_T6) {
+                addWrite_PLC_T6_temperature_setpoint(value);
+                addWrite_PLC_T6_temperature_setpoint_nt(value);
+                addWrite_SRV_T6_temperature_setpoint(value);
+                addWrite_SRV_T6_temperature_setpoint_nt(value);
+            } else {
+                addWrite_TCP_T6_temperature_setpoint(value);
+                addWrite_TCP_T6_temperature_setpoint_nt(value);
+            }
+            break;
+        default:
+            ;
+        }
+    }
+    endWrite();
 }
 
 void page101b::temperature_valueChanged(int diff)
@@ -564,7 +640,7 @@ page101b::~page101b()
     delete ui;
 }
 
-void page101b::on_atcmButton_prev_clicked()
+void page101b::on_atcmButton_set_T_everywhere_clicked()
 {
     int setpoint = TemperatureSetPoint_min, setpoint_nt = TemperatureSetPoint_min;
 

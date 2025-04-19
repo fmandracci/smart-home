@@ -61,7 +61,7 @@ CONST
 	HumidityHysteresis     : INT := 70; (* 7.0 %RH *)
 	LowPassTiming          : TIME := T#120s;
 
-	TemperatureSetPoint_min : INT := 100; (* 10.0 °C *)
+	TemperatureSetPoint_min : INT :=  70; (*  7.0 °C *)
 	TemperatureSetPoint_max : INT := 300; (* 30.0 °C *)
 
 	TemperatureErrorValue   : INT := -2730; (* -273.0 °C = AnIn read error *)

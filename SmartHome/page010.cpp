@@ -20,7 +20,6 @@
 **
 ****************************************************************************/
 
-
 #include "app_logprint.h"
 #include "atcmplugin.h"
 #include "main.h"
@@ -151,11 +150,6 @@ void page010::updateWidgets()
             doWrite_PLC_mute_BlackoutDetected(0);
         }
     }
-}
-
-void page010::on_pushButton_home_clicked()
-{
-    goto_start_page();
 }
 
 void page010::on_pushButton_mute_toggled(bool checked)
