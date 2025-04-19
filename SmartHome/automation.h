@@ -29,6 +29,9 @@
 #include "global_functions.h"
 
 #include "headerleds.h"
+
+#include "crosstable.h" // PLC_...
+
 #define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
 #define HOME_INI_FILE "/local/root/home.ini"
 
@@ -47,7 +50,7 @@
 #define ControlType_PID    2
 
 #define TemperatureError        -2730
-#define	TemperatureSetPoint_min   100 // 10.0 °C
+#define	TemperatureSetPoint_min    70 //  7.0 *C <-- 10.0 °C
 #define	TemperatureSetPoint_max   300 // 30.0 °C
 
 #define HumidityError          0

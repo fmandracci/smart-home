@@ -24,6 +24,7 @@ protected slots:
     bool goto_page(const char *page, bool remember = true);
 
 private slots:
+    void on_pushButton_mute_toggled(bool checked);
     void on_pushButton_trend_clicked() { goto_trend_page(trend.toLatin1().data()); }
     void on_pushButton_time_clicked()  { goto_page("page020"); }
     void on_atcmButton_back_clicked()  { }

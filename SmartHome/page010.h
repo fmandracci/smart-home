@@ -43,9 +43,9 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_pushButton_time_clicked() { goto_page("page020"); }
-    void on_pushButton_home_clicked();
     void on_pushButton_mute_toggled(bool checked);
+    void on_pushButton_time_clicked() { goto_page("page020"); }
+    void on_pushButton_home_clicked() { goto_start_page(); }
 
 private:
     Ui::page010 *ui;

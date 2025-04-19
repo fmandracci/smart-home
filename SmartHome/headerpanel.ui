@@ -430,7 +430,7 @@ color: rgb(255, 85, 0);</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>0</height>
+       <height>18</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -455,7 +455,7 @@ color: rgb(255, 85, 0);</string>
       <set>Qt::AlignHCenter|Qt::AlignTop</set>
      </property>
      <property name="margin">
-      <number>2</number>
+      <number>0</number>
      </property>
     </widget>
    </item>

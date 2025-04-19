@@ -1,5 +1,5 @@
 L
-1;PLC_T5_temperature             ;00007F;16.00;24.00;
-1;PLC_T5_temperature_bis         ;0000FF;16.00;24.00;
-1;PLC_T5_temperature_ext         ;000000;16.00;24.00;
+1;PLC_T5_temperature             ;00007F;0.00;32.00;
+1;PLC_T5_temperature_bis         ;0000FF;0.00;32.00;
+1;PLC_T5_temperature_ext         ;000000;0.00;32.00;
 1;PLC_T5_heating                 ;FF0000;0.00;8.00;
