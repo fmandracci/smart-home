@@ -4936,8 +4936,8 @@ xx</source>
     <message>
         <location filename="page045b.ui" line="1128"/>
         <location filename="page045b.ui" line="1134"/>
-        <source>NODE_11_STATUS</source>
-        <oldsource>NODE_12_STATUS</oldsource>
+        <source>NODE_12_STATUS</source>
+        <oldsource>NODE_11_STATUS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5079,8 +5079,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="101"/>
         <location filename="page045e.ui" line="107"/>
-        <source>RTU0_READS</source>
-        <oldsource>RTU3_READS</oldsource>
+        <source>RTU3_READS</source>
+        <oldsource>RTU0_READS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5131,8 +5131,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="169"/>
         <location filename="page045e.ui" line="175"/>
-        <source>RTU0_BUS_LOAD</source>
-        <oldsource>RTU3_BUS_LOAD</oldsource>
+        <source>RTU3_BUS_LOAD</source>
+        <oldsource>RTU0_BUS_LOAD</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5148,8 +5148,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="240"/>
         <location filename="page045e.ui" line="246"/>
-        <source>RTU0_COMM_ERRORS</source>
-        <oldsource>RTU3_COMM_ERRORS</oldsource>
+        <source>RTU3_COMM_ERRORS</source>
+        <oldsource>RTU0_COMM_ERRORS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5160,8 +5160,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="308"/>
         <location filename="page045e.ui" line="314"/>
-        <source>RTU0_WRITES</source>
-        <oldsource>RTU3_WRITES</oldsource>
+        <source>RTU3_WRITES</source>
+        <oldsource>RTU0_WRITES</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5172,8 +5172,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="373"/>
         <location filename="page045e.ui" line="379"/>
-        <source>RTU0_STATUS</source>
-        <oldsource>RTU3_STATUS</oldsource>
+        <source>RTU3_STATUS</source>
+        <oldsource>RTU0_STATUS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5190,8 +5190,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="438"/>
         <location filename="page045e.ui" line="444"/>
-        <source>RTU0_TIMEOUTS</source>
-        <oldsource>RTU3_TIMEOUTS</oldsource>
+        <source>RTU3_TIMEOUTS</source>
+        <oldsource>RTU0_TIMEOUTS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5201,8 +5201,8 @@ xx</source>
     </message>
     <message>
         <location filename="page045e.ui" line="505"/>
-        <source>RTU0 MPNE_E</source>
-        <oldsource>RTU3 MPNE_E</oldsource>
+        <source>RTU3 MPNE_E</source>
+        <oldsource>RTU0 MPNE_E</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5213,8 +5213,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="539"/>
         <location filename="page045e.ui" line="545"/>
-        <source>RTU0_BAUDRATE</source>
-        <oldsource>RTU3_BAUDRATE</oldsource>
+        <source>RTU3_BAUDRATE</source>
+        <oldsource>RTU0_BAUDRATE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5225,8 +5225,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="607"/>
         <location filename="page045e.ui" line="613"/>
-        <source>RTU0_WRITE_QUEUE</source>
-        <oldsource>RTU3_WRITE_QUEUE</oldsource>
+        <source>RTU3_WRITE_QUEUE</source>
+        <oldsource>RTU0_WRITE_QUEUE</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5519,8 +5519,8 @@ xx</source>
     <message>
         <location filename="page045e.ui" line="1128"/>
         <location filename="page045e.ui" line="1134"/>
-        <source>NODE_11_STATUS</source>
-        <oldsource>NODE_45_STATUS</oldsource>
+        <source>NODE_45_STATUS</source>
+        <oldsource>NODE_11_STATUS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9110,7 +9110,8 @@ yellow2</source>
     <message>
         <location filename="page049d.ui" line="3217"/>
         <location filename="page049d.ui" line="3223"/>
-        <source>NODE_13_STATUS</source>
+        <source>NODE_14_STATUS</source>
+        <oldsource>NODE_13_STATUS</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

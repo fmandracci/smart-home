@@ -72,7 +72,7 @@ background-color: rgb(0, 0, 0);
       <number>1</number>
      </property>
      <item row="2" column="2">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_reads">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -98,13 +98,13 @@ background-color: rgb(0, 0, 0);
         <string>nnnnnnnnn</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_READS</string>
+        <string>RTU3_READS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_READS</string>
+        <string>RTU3_READS</string>
        </property>
        <property name="prefix">
         <string>rd: </string>
@@ -140,7 +140,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_load">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_load">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -166,13 +166,13 @@ background-color: rgb(0, 0, 0);
         <string>xx</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_BUS_LOAD</string>
+        <string>RTU3_BUS_LOAD</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_BUS_LOAD</string>
+        <string>RTU3_BUS_LOAD</string>
        </property>
        <property name="prefix">
         <string>load </string>
@@ -211,7 +211,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_errors">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -237,13 +237,13 @@ background-color: rgb(0, 0, 0);
         <string>nnnnnnnnn</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_COMM_ERRORS</string>
+        <string>RTU3_COMM_ERRORS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_COMM_ERRORS</string>
+        <string>RTU3_COMM_ERRORS</string>
        </property>
        <property name="prefix">
         <string>ce: </string>
@@ -279,7 +279,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_writes">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -305,13 +305,13 @@ background-color: rgb(0, 0, 0);
         <string>nnnnnnnnn</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_WRITES</string>
+        <string>RTU3_WRITES</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_WRITES</string>
+        <string>RTU3_WRITES</string>
        </property>
        <property name="prefix">
         <string>wr: </string>
@@ -347,7 +347,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
+      <widget class="ATCMcombobox" name="atcmComboBox_rtu3_status">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -370,13 +370,13 @@ background-color: rgb(0, 0, 0);
         </font>
        </property>
        <property name="toolTip">
-        <string>RTU0_STATUS</string>
+        <string>RTU3_STATUS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMcombobox widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_STATUS</string>
+        <string>RTU3_STATUS</string>
        </property>
        <property name="refresh">
         <number>500</number>
@@ -409,7 +409,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_timeouts">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -435,13 +435,13 @@ background-color: rgb(0, 0, 0);
         <string>nnnnnnnnn</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_TIMEOUTS</string>
+        <string>RTU3_TIMEOUTS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_TIMEOUTS</string>
+        <string>RTU3_TIMEOUTS</string>
        </property>
        <property name="prefix">
         <string>to: </string>
@@ -477,7 +477,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLabel" name="label_rtu0">
+      <widget class="QLabel" name="label_rtu3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -502,7 +502,7 @@ background-color: rgb(0, 0, 0);
         <string notr="true">background-color: rgb(255, 255, 127);</string>
        </property>
        <property name="text">
-        <string>RTU0 MPNE_E</string>
+        <string>RTU3 MPNE_E</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -510,7 +510,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_baudrate">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -536,13 +536,13 @@ background-color: rgb(0, 0, 0);
         <string>xxxxx</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_BAUDRATE</string>
+        <string>RTU3_BAUDRATE</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_BAUDRATE</string>
+        <string>RTU3_BAUDRATE</string>
        </property>
        <property name="suffix">
         <string> baud</string>
@@ -578,7 +578,7 @@ background-color: rgb(0, 0, 0);
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="ATCMlabel" name="atcmLabel_rtu0_queue">
+      <widget class="ATCMlabel" name="atcmLabel_rtu3_queue">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -604,13 +604,13 @@ background-color: rgb(0, 0, 0);
         <string>nnnnnnnnn</string>
        </property>
        <property name="toolTip">
-        <string>RTU0_WRITE_QUEUE</string>
+        <string>RTU3_WRITE_QUEUE</string>
        </property>
        <property name="whatsThis">
         <string>ATCMlabel widget</string>
        </property>
        <property name="variable">
-        <string>RTU0_WRITE_QUEUE</string>
+        <string>RTU3_WRITE_QUEUE</string>
        </property>
        <property name="prefix">
         <string>wq: </string>
@@ -1125,13 +1125,13 @@ background-color: rgb(0, 0, 0);
         </font>
        </property>
        <property name="toolTip">
-        <string>NODE_11_STATUS</string>
+        <string>NODE_45_STATUS</string>
        </property>
        <property name="whatsThis">
         <string>ATCMcombobox widget</string>
        </property>
        <property name="variable">
-        <string>NODE_11_STATUS</string>
+        <string>NODE_45_STATUS</string>
        </property>
        <property name="refresh">
         <number>500</number>
