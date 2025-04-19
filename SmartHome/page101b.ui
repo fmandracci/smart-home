@@ -386,7 +386,7 @@ border: 1px solid rgb(255,255,255);</string>
      <item row="5" column="5">
       <widget class="QPushButton" name="pushButton_Hup_nt">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -748,7 +748,7 @@ ss</string>
      <item row="5" column="2">
       <widget class="QPushButton" name="pushButton_Hup">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -905,7 +905,7 @@ background-color: rgb(0, 0, 127);</string>
      <item row="5" column="1">
       <widget class="QPushButton" name="pushButton_Hdown">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -955,7 +955,7 @@ background-color: rgb(170, 0, 0);</string>
      <item row="2" column="1">
       <widget class="QPushButton" name="pushButton_Tdown">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1005,7 +1005,7 @@ background-color: rgb(0, 0, 127);</string>
      <item row="2" column="2">
       <widget class="QPushButton" name="pushButton_Tup">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1055,7 +1055,7 @@ background-color: rgb(170, 0, 0);</string>
      <item row="5" column="4">
       <widget class="QPushButton" name="pushButton_Hdown_nt">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1105,7 +1105,7 @@ background-color: rgb(170, 0, 0);</string>
      <item row="2" column="4">
       <widget class="QPushButton" name="pushButton_Tdown_nt">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1155,7 +1155,7 @@ background-color: rgb(0, 0, 127);</string>
      <item row="2" column="5">
       <widget class="QPushButton" name="pushButton_Tup_nt">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1218,7 +1218,7 @@ background-color: rgb(170, 0, 0);</string>
      <item row="3" column="1">
       <widget class="QPushButton" name="pushButton_T_0">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1268,7 +1268,7 @@ background-color: rgb(64, 64, 64);</string>
      <item row="3" column="2">
       <widget class="QPushButton" name="pushButton_T_1">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1318,7 +1318,7 @@ background-color: rgb(64, 64, 64);</string>
      <item row="3" column="3">
       <widget class="QPushButton" name="pushButton_T_2">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1368,7 +1368,7 @@ background-color: rgb(64, 64, 64);</string>
      <item row="3" column="4">
       <widget class="QPushButton" name="pushButton_T_3">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1418,7 +1418,7 @@ background-color: rgb(64, 64, 64);</string>
      <item row="3" column="5">
       <widget class="QPushButton" name="pushButton_T_4">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -1472,12 +1472,6 @@ background-color: rgb(64, 64, 64);</string>
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>16777215</height>
-        </size>
        </property>
        <property name="font">
         <font>
@@ -1572,12 +1566,6 @@ everywhere</string>
         </sizepolicy>
        </property>
        <property name="minimumSize">
-        <size>
-         <width>80</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
         <size>
          <width>80</width>
          <height>32</height>
@@ -1708,8 +1696,8 @@ xx.x ℃</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

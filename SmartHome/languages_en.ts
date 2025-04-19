@@ -9404,8 +9404,8 @@ ss</source>
     </message>
     <message>
         <location filename="page101b.ui" line="617"/>
-        <location filename="page101b.ui" line="1492"/>
-        <location filename="page101b.ui" line="1644"/>
+        <location filename="page101b.ui" line="1486"/>
+        <location filename="page101b.ui" line="1632"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9436,14 +9436,14 @@ ss</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page101b.ui" line="1545"/>
-        <location filename="page101b.ui" line="1549"/>
+        <location filename="page101b.ui" line="1539"/>
+        <location filename="page101b.ui" line="1543"/>
         <source>set T
 everywhere</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page101b.ui" line="1598"/>
+        <location filename="page101b.ui" line="1586"/>
         <source>xx.x ℃
 xx.x ℃</source>
         <translation type="unfinished"></translation>

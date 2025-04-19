@@ -59,13 +59,13 @@ void page010::changeWidgets()
 
     if (mectScreenWidth >= 1280) {
         pointSize_time = 42;
-        pointSize_title = 6;
+        pointSize_title = 9;
     } else if (mectScreenWidth >= 800) {
         pointSize_time = 32;
-        pointSize_title = 6;
+        pointSize_title = 9;
     } else {
-        pointSize_time = 28;
-        pointSize_title = 6;
+        pointSize_time = 32;
+        pointSize_title = 7;
     }
 
     ui->header_leds->changeHeader();

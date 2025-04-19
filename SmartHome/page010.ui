@@ -37,7 +37,7 @@
 background-color: rgb(0, 0, 0);
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout_page">
    <property name="spacing">
     <number>0</number>
    </property>
@@ -1140,8 +1140,8 @@ xx</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>
