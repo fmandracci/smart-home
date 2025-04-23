@@ -32,9 +32,6 @@
 
 #include "crosstable.h" // PLC_...
 
-#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
-#define HOME_INI_FILE "/local/root/home.ini"
-
 #define XX_PIXMAP ":/systemicons/Equipment.png"
 #define TM_PIXMAP ":/icons/icons/Chronometer.png"
 #define EP_PIXMAP ":/icons/icons/Wattmeter.png"
@@ -68,6 +65,36 @@ const QString heating_name(int heating_status);
 
 extern int currentThermostat;
 extern int currentWattmeter;
+
+#if defined(MECT_SUITE_3_5)
+
+//extern int mectScreenWidth;
+//extern int mectScreenHeight;
+//extern float mectFontCorrector;
+
+#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
+#define POINTSIZE_ENORME  (42 * mectFontCorrector)
+#define POINTSIZE_GRANDE  (36 * mectFontCorrector)
+#define POINTSIZE_MEDIO   (20 * mectFontCorrector)
+#define POINTSIZE_PICCOLO ( 9 * mectFontCorrector)
+
+#elif defined(MECT_SUITE_3_4)
+
+extern int mectScreenWidth;
+extern int mectScreenHeight;
+extern float mectFontCorrector;
+
+#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
+#define POINTSIZE_ENORME  (28 * mectFontCorrector)
+#define POINTSIZE_GRANDE  (24 * mectFontCorrector)
+#define POINTSIZE_MEDIO   (14 * mectFontCorrector)
+#define POINTSIZE_PICCOLO ( 6 * mectFontCorrector)
+
+#else
+#error wrong framework
+#endif
+
+#define HOME_INI_FILE "/local/root/home.ini"
 
 // °☀ ①②③④ ⑤⑥⑦⑧ ⑨⑩
 
@@ -195,10 +222,10 @@ extern int currentWattmeter;
 
 #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
-#define FONT_SS_N(pointSize)  QString("font:      %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
-#define FONT_SS_B(pointSize)  QString("font: bold %1pt \"DejaVu Sans\";\n"       ).arg(pointSize)
-#define FONT_SS_I(pointSize)  QString("font: italic %1pt \"DejaVu Sans\";\n"     ).arg(pointSize)
-#define FONT_SS_BI(pointSize) QString("font: bold italic %1pt \"DejaVu Sans\";\n").arg(pointSize)
+#define FONT_SS_N(size_px)  QString("font: %1px \"DejaVu Sans\";\n"            ).arg(size_px)
+#define FONT_SS_B(size_px)  QString("font: bold %1px \"DejaVu Sans\";\n"       ).arg(size_px)
+#define FONT_SS_I(size_px)  QString("font: italic %1px \"DejaVu Sans\";\n"     ).arg(size_px)
+#define FONT_SS_BI(size_px) QString("font: bold italic %1px \"DejaVu Sans\";\n").arg(size_px)
 
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
@@ -283,18 +310,6 @@ int hhmmss2ms(int hhmmss);
     _trend_data_reload_ = true; \
     goto_page("trend"); \
 }
-
-#include <QWidget>
-#include <QLabel>
-void changeHeader(QWidget *time_button, QWidget *home_button,
-                  QLabel *label_EP = NULL, QLabel *label_BA = NULL, QLabel *label_green = NULL,
-                  QLabel *label_T5 = NULL, QLabel *label_T6 = NULL, QLabel *label_red = NULL,
-                  QLabel *label_T3 = NULL, QLabel *label_T4 = NULL, QLabel *label_yellow_1 = NULL,
-                  QLabel *label_T1 = NULL, QLabel *label_T2 = NULL, QLabel *label_yellow_2 = NULL);
-void updateLedLabels(QLabel *label_EP, QLabel *label_BA, QLabel *label_green,
-                     QLabel *label_T5, QLabel *label_T6, QLabel *label_red,
-                     QLabel *label_T3, QLabel *label_T4, QLabel *label_yellow_1,
-                     QLabel *label_T1, QLabel *label_T2, QLabel *label_yellow_2);
 
 void resetPLC_timeOffset();
 

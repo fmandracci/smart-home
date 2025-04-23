@@ -44,30 +44,23 @@ bool HeaderPanel::goto_page(const char *page, bool remember)
 
 void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char *back, const char *title)
 {
-    int pointSize_time  = 32; // 28
-    int pointSize_bttn  = 36; // 24
-    int pointSize_title =  6; //  6
+    ui->header_leds->changeWidgets();
 
-    if (mectScreenWidth >= 1280) {
-        pointSize_time = 42;
-        pointSize_bttn = 32;
-        pointSize_title = 6;
-    } else if (mectScreenWidth >= 800) {
-        pointSize_time = 32;
-        pointSize_bttn = 28;
-        pointSize_title = 6;
-    } else {
-        pointSize_time = 28;
-        pointSize_bttn = 24;
-        pointSize_title = 6;
-    }
+    ui->header_leds->scaleButton(ui->pushButton_mute);
+    ui->header_leds->scaleButton(ui->pushButton_trend);
 
-    ui->header_leds->changeHeader();
-    ui->pushButton_trend->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_bttn));
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_time));
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(pointSize_title));
-    ui->atcmButton_back->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_bttn));
-    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_bttn));
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
+    ui->pushButton_time->setMaximumHeight(ui->header_leds->timeHeight_px());
+
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
+    ui->label_title->setMaximumHeight(ui->header_leds->titleHeight_px());
+
+    ui->header_leds->scaleIconLabel(ui->label_icon);
+    ui->header_leds->scaleButton(ui->atcmButton_back);
+
+    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
+    ui->atcmButton_home->setMaximumWidth(ui->header_leds->ledsWidth_px());
+    ui->atcmButton_home->setMaximumHeight(ui->header_leds->ledsHeight_px());
 
     if (trend)
         HeaderPanel::trend = trend;
@@ -89,7 +82,8 @@ void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char 
 
 void HeaderPanel::updateWidgets(const QString datetime)
 {
-    ui->header_leds->updateLedLabels();
+    ui->header_leds->updateWidgets();
+
     if (datetime != NULL)
         ui->pushButton_time->setText(datetime);
     else
