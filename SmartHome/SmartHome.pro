@@ -127,6 +127,7 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
+    hmi_testing.ini \
     hmi_tp1043.ini \
     hmi_tp1070.ini \
     hmi_only \
@@ -140,3 +141,5 @@ other.files = $$OTHER_FILES
 other.path = /local/root
 
 INSTALLS += other
+
+DEFINES += MECT_SUITE_3_4

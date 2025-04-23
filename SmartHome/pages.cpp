@@ -133,8 +133,16 @@ void printVncDisplayString(char * vncString)
     mectScreenHeight = height;
     mectFontCorrector = fontCorrector;
 
-    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:0 vnc:size=%dx%d:0",
+#if defined(MECT_SUITE_3_5)
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:mmWidth=%d:mmHeight=%d:tty=/dev/tty8:0 vnc:size=%dx%d:0",
             rot, width_mm, height_mm, width, height);
+#elif defined(MECT_SUITE_3_4)
+    sprintf(vncString, "multi: transformed:linuxfb:rot%d:0 vnc:size=%dx%d:0",
+            rot, width, height);
+#else
+#error
+#endif
+
 #endif
 #endif
     fprintf(stderr, "vncString='%s' font corrector=%f\n", vncString, mectFontCorrector);

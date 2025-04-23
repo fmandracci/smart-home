@@ -54,23 +54,20 @@ void page010::updateData()
 
 void page010::changeWidgets()
 {
-    int pointSize_time  = 32; // 28
-    int pointSize_title =  6; //  6
+    ui->header_leds->changeWidgets();
 
-    if (mectScreenWidth >= 1280) {
-        pointSize_time = 42;
-        pointSize_title = 9;
-    } else if (mectScreenWidth >= 800) {
-        pointSize_time = 32;
-        pointSize_title = 9;
-    } else {
-        pointSize_time = 32;
-        pointSize_title = 7;
-    }
+    ui->header_leds->scaleButton(ui->pushButton_mute);
 
-    ui->header_leds->changeHeader();
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(pointSize_time));
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(pointSize_title));
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
+    ui->pushButton_time->setMaximumHeight(ui->header_leds->timeHeight_px());
+
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
+    ui->label_title->setMaximumHeight(ui->header_leds->titleHeight_px());
+
+    ui->header_leds->scaleButton(ui->pushButton_home);
+
+    ui->label_versions->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
+    ui->label_versions->setMaximumWidth(ui->header_leds->ledsWidth_px());
 
     if (PLC_ConfigPassword) {
         ui->atcmButton_settings->setPasswordVar("PLC_ConfigPassword");
@@ -128,7 +125,7 @@ void page010::changeWidgets()
 
 void page010::updateWidgets()
 {
-    ui->header_leds->updateLedLabels();
+    ui->header_leds->updateWidgets();
     ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
 
     ui->label_versions->setText(QString("%1\n%2_%3\n%4_%5\n%6")
