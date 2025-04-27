@@ -46,20 +46,12 @@ void page011::reload()
 
 void page011::changeWidgets()
 {
-    int pointSize_ct;
     int pointSize_bt;
+    int pointSize_ct;
 
-    if (mectScreenWidth >= 1280) {
-        pointSize_ct = 16;
-        pointSize_bt = 24;
-    } else if (mectScreenWidth >= 800) {
-        pointSize_ct = 14;
-        pointSize_bt = 18;
-    } else {
-        pointSize_ct = 10;
-        pointSize_bt = 10;
-    }
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
+    pointSize_bt = ui->headerPanel->ledSize_px();
+    pointSize_ct = ui->headerPanel->titleFont_px();
 
     if ((PLC_PRODUCT_ID & 0xF0000000) == 0x40000000) {
         ui->atcmLabel_cpu_temp->setVisible(true);
@@ -72,9 +64,9 @@ void page011::changeWidgets()
         ui->atcmLabel_errors->setVisible(false);
         ui->atcmLabel_mask->setVisible(false);
     }
-    QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255);" + FONT_SS_B(pointSize_bt));
-    QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255,  85,   0);" + FONT_SS_B(pointSize_bt));
-    QString sx("background-color: rgb(0, 0, 0); color: rgb(127, 127, 127); border: 1px solid rgb(127, 127, 127);" + FONT_SS_B(pointSize_bt));
+    QString sn("background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255); padding: 5px;" + FONT_SS_N(pointSize_bt));
+    QString sb("background-color: rgb(0, 0, 0); color: rgb(255,  85,   0); border: 1px solid rgb(255,  85,   0); padding: 5px;" + FONT_SS_B(pointSize_bt));
+    QString sx("background-color: rgb(0, 0, 0); color: rgb(127, 127, 127); border: 1px solid rgb(127, 127, 127); padding: 5px;" + FONT_SS_I(pointSize_bt));
 
     ui->pushButton_set_home->setStyleSheet(sn);
     ui->pushButton_TPX->setStyleSheet(sx);
@@ -108,6 +100,16 @@ void page011::changeWidgets()
     ui->atcmLabel_mask->setStyleSheet(cn);
 }
 
+void page011::highlightButton(QPushButton *button)
+{
+    int pointSize_bt = ui->headerPanel->ledSize_px();
+
+    QString ss("background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); border: 1px solid rgb(255, 255, 255); padding: 5px;" + FONT_SS_N(pointSize_bt));
+
+    button->setStyleSheet(ss);
+    button->repaint();
+}
+
 void page011::updateWidgets()
 {
     ui->headerPanel->updateWidgets();
@@ -122,6 +124,31 @@ void page011::updateData()
     page::updateData();
     updateWidgets();
 }
+
+void page011::on_pushButton_set_home_clicked()  { highlightButton(ui->pushButton_set_home ); beep(100); reload(); }
+void page011::on_pushButton_TPX_clicked()       { highlightButton(ui->pushButton_TPX      ); goto_page("page041" ); }
+void page011::on_pushButton_TPAC1007_clicked()  { highlightButton(ui->pushButton_TPAC1007 ); goto_page("page048" ); }
+
+void page011::on_pushButton_Config_clicked()    { highlightButton(ui->pushButton_Config   ); goto_page("page005" ); }
+void page011::on_pushButton_Menu_clicked()      { highlightButton(ui->pushButton_Menu     ); goto_page("menu"    ); }
+void page011::on_pushButton_EP_7M_clicked()     { highlightButton(ui->pushButton_EP_7M    ); goto_page("page043" ); }
+void page011::on_pushButton_EP_7E_clicked()     { highlightButton(ui->pushButton_EP_7E    ); goto_page("page043e"); }
+
+void page011::on_pushButton_DateTime_clicked()  { highlightButton(ui->pushButton_DateTime ); goto_page("time_set"); }
+void page011::on_pushButton_Display_clicked()   { highlightButton(ui->pushButton_Display  ); goto_page("display_settings"); }
+void page011::on_pushButton_Tn_ARQ01_clicked()  { highlightButton(ui->pushButton_Tn_ARQ01 ); goto_page("page044" ); }
+void page011::on_pushButton_XX_MPNC_clicked()   { highlightButton(ui->pushButton_XX_MPNC  ); goto_page("page047" ); }
+
+void page011::on_pushButton_NetConf_clicked()   { highlightButton(ui->pushButton_NetConf  ); goto_page("net_conf"); }
+void page011::on_pushButton_Info_clicked()      { highlightButton(ui->pushButton_Info     ); goto_page("info"    ); }
+void page011::on_pushButton_XX_MPNE_C_clicked() { highlightButton(ui->pushButton_XX_MPNE_C); goto_page("page049c" ); }
+void page011::on_pushButton_XX_MPNE_D_clicked() { highlightButton(ui->pushButton_XX_MPNE_D); goto_page("page049d" ); }
+
+void page011::on_pushButton_Fonts_clicked()     { highlightButton(ui->pushButton_Fonts    ); goto_page("page042" ); }
+void page011::on_pushButton_BA_test_clicked()   { highlightButton(ui->pushButton_BA_test  ); goto_page("page046" ); }
+void page011::on_pushButton_BA_MPNE_A_clicked() { highlightButton(ui->pushButton_BA_MPNE_A); goto_page("page045a" ); }
+void page011::on_pushButton_BA_MPNE_B_clicked() { highlightButton(ui->pushButton_BA_MPNE_B); goto_page("page045b" ); }
+void page011::on_pushButton_BA_MPNE_E_clicked() { highlightButton(ui->pushButton_BA_MPNE_E); goto_page("page045e" ); }
 
 void page011::changeEvent(QEvent * event)
 {

@@ -42,6 +42,9 @@ page043::page043(QWidget *parent) :
 void page043::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page043 EP 7M");
+
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinytinyFont_px()));
+    ui->frame->setStyleSheet(atcmss);
 }
 
 void page043::updateData()

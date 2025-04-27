@@ -52,30 +52,34 @@ background-color: rgb(0, 0, 0);
        <height>72</height>
       </size>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>90</height>
-      </size>
-     </property>
     </widget>
    </item>
    <item>
-    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0">
      <property name="sizeConstraint">
       <enum>QLayout::SetDefaultConstraint</enum>
-     </property>
-     <property name="horizontalSpacing">
-      <number>3</number>
-     </property>
-     <property name="verticalSpacing">
-      <number>1</number>
      </property>
      <property name="bottomMargin">
       <number>0</number>
      </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_set_home">
+      <widget class="QPushButton" name="pushButton_Config">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -85,7 +89,7 @@ background-color: rgb(0, 0, 0);
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
+         <height>31</height>
         </size>
        </property>
        <property name="font">
@@ -102,17 +106,178 @@ background-color: rgb(0, 0, 0);
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);
-border: 1px solid rgb(255, 255, 255);</string>
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
-        <string>set home</string>
+        <string>config</string>
        </property>
        <property name="flat">
         <bool>true</bool>
        </property>
       </widget>
      </item>
-     <item row="9" column="2">
+     <item row="5" column="4">
+      <widget class="QPushButton" name="pushButton_XX_MPNE_D">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>mpne_d</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="pushButton_BA_MPNE_A">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>mpne_a</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="pushButton_NetConf">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>netconf</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
       <widget class="ATCMlabel" name="atcmLabel_status">
        <property name="enabled">
         <bool>false</bool>
@@ -181,214 +346,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="2">
-      <spacer name="verticalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="9" column="4">
-      <widget class="ATCMlabel" name="atcmLabel_mask">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans Mono</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>0xxxxxxxxx</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_LPC_ERRORS_MASK</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_LPC_ERRORS_MASK</string>
-       </property>
-       <property name="prefix">
-        <string/>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-       <property name="format">
-        <enum>ATCMlabel::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="3">
-      <widget class="ATCMlabel" name="atcmLabel_errors">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans Mono</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>x</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_LPC_ERRORS_COUNT</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_LPC_ERRORS_COUNT</string>
-       </property>
-       <property name="prefix">
-        <string/>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="QPushButton" name="pushButton_EP_7M">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>7m</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
+     <item row="8" column="1">
       <widget class="ATCMlabel" name="atcmLabel_cpu_temp">
        <property name="enabled">
         <bool>false</bool>
@@ -460,217 +418,7 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="3">
-      <widget class="QPushButton" name="pushButton_XX_MPNE_C">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>mpne_c</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="6" column="1">
-      <widget class="QPushButton" name="pushButton_NetConf">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-border: 1px solid rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>netconf</string>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="3">
-      <widget class="QPushButton" name="pushButton_Tn_ARQ01">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>arq01</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4">
-      <widget class="QPushButton" name="pushButton_TPAC1007">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>tpac1007</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
+     <item row="3" column="2">
       <widget class="QPushButton" name="pushButton_Menu">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -681,7 +429,7 @@ border: 1px solid rgb(127, 127, 127);</string>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
+         <height>31</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -710,7 +458,8 @@ border: 1px solid rgb(127, 127, 127);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);
-border: 1px solid rgb(255, 255, 255);</string>
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
         <string>menu</string>
@@ -723,217 +472,133 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <widget class="QPushButton" name="pushButton_Config">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-border: 1px solid rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>config</string>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="5">
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>5</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="5" column="2">
-      <widget class="QPushButton" name="pushButton_Display">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-border: 1px solid rgb(255, 255, 255);
-color: rgb(255, 85, 0);</string>
-       </property>
-       <property name="text">
-        <string>display</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="QPushButton" name="pushButton_XX_MPNC">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>mpnc</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="2">
-      <widget class="QPushButton" name="pushButton_Info">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
-border: 1px solid rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>info</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_EP_7M">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>7m</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="4">
+      <widget class="ATCMlabel" name="atcmLabel_mask">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans Mono</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0xxxxxxxxx</string>
+       </property>
+       <property name="toolTip">
+        <string>PLC_LPC_ERRORS_MASK</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMlabel widget</string>
+       </property>
+       <property name="variable">
+        <string>PLC_LPC_ERRORS_MASK</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="max">
+        <string notr="true">0</string>
+       </property>
+       <property name="min">
+        <string notr="true">0</string>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+       <property name="format">
+        <enum>ATCMlabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
       <widget class="QPushButton" name="pushButton_TPX">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -944,7 +609,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
+         <height>31</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -972,8 +637,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
         <string>tpx*</string>
@@ -986,8 +652,8 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QPushButton" name="pushButton_DateTime">
+     <item row="5" column="3">
+      <widget class="QPushButton" name="pushButton_XX_MPNE_C">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -997,45 +663,7 @@ border: 1px solid rgb(127, 127, 127);</string>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(255, 85, 0);
-border: 1px solid rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>date&amp;&amp;time</string>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="4">
-      <widget class="QPushButton" name="pushButton_EP_7E">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
+         <height>31</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -1063,11 +691,12 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
-        <string>7e</string>
+        <string>mpne_c</string>
        </property>
        <property name="default">
         <bool>false</bool>
@@ -1077,232 +706,7 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="0">
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>5</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="6" column="4">
-      <widget class="QPushButton" name="pushButton_XX_MPNE_D">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>mpne_d</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="4">
-      <widget class="QPushButton" name="pushButton_BA_MPNE_E">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>mpne_e</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QPushButton" name="pushButton_BA_test">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>BA test</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="2">
-      <widget class="QPushButton" name="pushButton_BA_MPNE_A">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="sizeIncrement">
-        <size>
-         <width>1</width>
-         <height>1</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>16</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="focusPolicy">
-        <enum>Qt::NoFocus</enum>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
-       </property>
-       <property name="text">
-        <string>mpne_a</string>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="3">
+     <item row="7" column="3">
       <widget class="QPushButton" name="pushButton_BA_MPNE_B">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -1313,7 +717,7 @@ border: 1px solid rgb(127, 127, 127);</string>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
+         <height>31</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -1341,8 +745,9 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
         <string>mpne_b</string>
@@ -1355,8 +760,21 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
-      <widget class="QPushButton" name="pushButton_Fonts">
+     <item row="4" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_set_home">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -1366,7 +784,46 @@ border: 1px solid rgb(127, 127, 127);</string>
        <property name="minimumSize">
         <size>
          <width>100</width>
-         <height>32</height>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>set home</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="pushButton_Info">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
         </size>
        </property>
        <property name="maximumSize">
@@ -1394,8 +851,333 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(127, 127, 127);
-border: 1px solid rgb(127, 127, 127);</string>
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>info</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="pushButton_XX_MPNC">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>mpnc</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="pushButton_TPAC1007">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>tpac1007</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="pushButton_Tn_ARQ01">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>arq01</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_Display">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>display</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="pushButton_EP_7E">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>7e</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton_Fonts">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
        </property>
        <property name="text">
         <string>fonts</string>
@@ -1408,7 +1190,236 @@ border: 1px solid rgb(127, 127, 127);</string>
        </property>
       </widget>
      </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="pushButton_BA_test">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>BA test</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QPushButton" name="pushButton_BA_MPNE_E">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>1</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>mpne_e</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="ATCMlabel" name="atcmLabel_errors">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans Mono</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="toolTip">
+        <string>PLC_LPC_ERRORS_COUNT</string>
+       </property>
+       <property name="whatsThis">
+        <string>ATCMlabel widget</string>
+       </property>
+       <property name="variable">
+        <string>PLC_LPC_ERRORS_COUNT</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="refresh">
+        <number>200</number>
+       </property>
+       <property name="max">
+        <string notr="true">0</string>
+       </property>
+       <property name="min">
+        <string notr="true">0</string>
+       </property>
+       <property name="viewStatus">
+        <bool>false</bool>
+       </property>
+       <property name="visibilityVar">
+        <string/>
+       </property>
+       <property name="bgColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="fontColor">
+        <color>
+         <red>255</red>
+         <green>85</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="borderWidth">
+        <number>1</number>
+       </property>
+       <property name="borderRadius">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_DateTime">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>DejaVu Sans</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>date&amp;&amp;time</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
     </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_bottom">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>

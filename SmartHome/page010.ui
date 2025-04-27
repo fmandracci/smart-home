@@ -46,22 +46,9 @@ background-color: rgb(0, 0, 0);
    </property>
    <item>
     <layout class="QGridLayout" name="gridLayout_header">
-     <item row="1" column="6">
-      <spacer name="horizontalSpacer_7">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::MinimumExpanding</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>0</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
+     <property name="spacing">
+      <number>0</number>
+     </property>
      <item row="1" column="2">
       <spacer name="horizontalSpacer">
        <property name="orientation">
@@ -104,13 +91,13 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="minimumSize">
         <size>
-         <width>50</width>
-         <height>50</height>
+         <width>54</width>
+         <height>54</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>50</width>
+         <width>54</width>
          <height>16777215</height>
         </size>
        </property>
@@ -127,13 +114,13 @@ background-color: rgb(0, 0, 0);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Home.png</normaloff>:/systemicons/Home.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Home.png</normaloff>:/icons/icons/Home.png</iconset>
        </property>
        <property name="iconSize">
         <size>
-         <width>48</width>
-         <height>48</height>
+         <width>54</width>
+         <height>54</height>
         </size>
        </property>
        <property name="flat">
@@ -151,13 +138,13 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="minimumSize">
         <size>
-         <width>50</width>
-         <height>50</height>
+         <width>54</width>
+         <height>54</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>50</width>
+         <width>54</width>
          <height>16777215</height>
         </size>
        </property>
@@ -179,8 +166,8 @@ background-color: rgb(0, 0, 0);
        </property>
        <property name="iconSize">
         <size>
-         <width>48</width>
-         <height>48</height>
+         <width>54</width>
+         <height>54</height>
         </size>
        </property>
        <property name="checkable">
@@ -244,7 +231,7 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>48</width>
+         <width>54</width>
          <height>72</height>
         </size>
        </property>
@@ -263,7 +250,7 @@ color: rgb(255, 85, 0);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>54</width>
+         <width>56</width>
          <height>72</height>
         </size>
        </property>
@@ -931,8 +918,8 @@ xx</string>
        </property>
        <property name="iconSize">
         <size>
-         <width>48</width>
-         <height>48</height>
+         <width>72</width>
+         <height>72</height>
         </size>
        </property>
        <property name="styleSheet">
@@ -962,8 +949,8 @@ xx</string>
        <property name="bgColor">
         <color>
          <red>0</red>
-         <green>64</green>
-         <blue>64</blue>
+         <green>0</green>
+         <blue>0</blue>
         </color>
        </property>
        <property name="borderColor">
@@ -994,8 +981,8 @@ xx</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Equipment.png</normaloff>:/systemicons/Equipment.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Settings.png</normaloff>:/icons/icons/Settings.png</iconset>
        </property>
        <property name="borderWidth">
         <number>5</number>

@@ -64,12 +64,6 @@ background-color: rgb(0, 0, 0);
        <height>72</height>
       </size>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>90</height>
-      </size>
-     </property>
     </widget>
    </item>
    <item>
@@ -881,6 +875,19 @@ ss</string>
     </layout>
    </item>
    <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
     <widget class="ATCMbutton" name="atcmButton_down">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -978,8 +985,8 @@ ss</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="resources.qrc"/>
   <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

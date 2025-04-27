@@ -43,9 +43,6 @@
        <height>72</height>
       </size>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 85, 0);</string>
-     </property>
     </widget>
    </item>
    <item row="0" column="10" rowspan="2">
@@ -161,8 +158,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="systemicons.qrc">
-       <normaloff>:/systemicons/Mute.png</normaloff>:/systemicons/Mute.png</iconset>
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/Mute.png</normaloff>:/icons/icons/Mute.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -224,8 +221,8 @@
       <enum>Qt::NoFocus</enum>
      </property>
      <property name="icon">
-      <iconset resource="systemicons.qrc">
-       <normaloff>:/systemicons/Stock_graph.png</normaloff>:/systemicons/Stock_graph.png</iconset>
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/Trend.png</normaloff>:/icons/icons/Trend.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -439,8 +436,8 @@ color: rgb(255, 85, 0);</string>
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="systemicons.qrc">
-       <normaloff>:/systemicons/Raise.png</normaloff>:/systemicons/Raise.png</iconset>
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/Raise.png</normaloff>:/icons/icons/Raise.png</iconset>
      </property>
      <property name="borderWidth">
       <number>0</number>
@@ -509,7 +506,6 @@ color: rgb(255, 85, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

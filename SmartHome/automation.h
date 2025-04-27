@@ -32,7 +32,7 @@
 
 #include "crosstable.h" // PLC_...
 
-#define XX_PIXMAP ":/systemicons/Equipment.png"
+#define XX_PIXMAP ":/icons/icons/Settings.png"
 #define TM_PIXMAP ":/icons/icons/Chronometer.png"
 #define EP_PIXMAP ":/icons/icons/Wattmeter.png"
 #define RL_PIXMAP ":/icons/icons/Flash.png"
@@ -73,10 +73,6 @@ extern int currentWattmeter;
 //extern float mectFontCorrector;
 
 #define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
-#define POINTSIZE_ENORME  (42 * mectFontCorrector)
-#define POINTSIZE_GRANDE  (36 * mectFontCorrector)
-#define POINTSIZE_MEDIO   (20 * mectFontCorrector)
-#define POINTSIZE_PICCOLO ( 9 * mectFontCorrector)
 
 #elif defined(MECT_SUITE_3_4)
 
@@ -85,10 +81,6 @@ extern int mectScreenHeight;
 extern float mectFontCorrector;
 
 #define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
-#define POINTSIZE_ENORME  (28 * mectFontCorrector)
-#define POINTSIZE_GRANDE  (24 * mectFontCorrector)
-#define POINTSIZE_MEDIO   (14 * mectFontCorrector)
-#define POINTSIZE_PICCOLO ( 6 * mectFontCorrector)
 
 #else
 #error wrong framework

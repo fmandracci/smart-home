@@ -36,12 +36,6 @@ HeaderPanel::HeaderPanel(QWidget *parent) :
     TRANSLATE_FONT_SIZE(this);
 }
 
-bool HeaderPanel::goto_page(const char *page, bool remember)
-{
-    emit newPage(page, remember);
-    return true;
-}
-
 void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char *back, const char *title)
 {
     ui->header_leds->changeWidgets();
@@ -109,6 +103,60 @@ void HeaderPanel::on_pushButton_mute_toggled(bool checked)
     } else {
         doWrite_PLC_mute_BlackoutDetected(0);
     }
+}
+
+bool HeaderPanel::goto_page(const char *page, bool remember)
+{
+    emit newPage(page, remember);
+    return true;
+}
+
+int HeaderPanel::ledSize_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->ledSize_px();
+    else
+        return 0;
+}
+
+int HeaderPanel::ledsWidth_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->ledsWidth_px();
+    else
+        return 0;
+}
+
+int HeaderPanel::ledsHeight_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->ledsHeight_px();
+    else
+        return 0;
+}
+
+int HeaderPanel::titleFont_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->titleFont_px();
+    else
+        return 0;
+}
+
+int HeaderPanel::tinyFont_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->tinyFont_px();
+    else
+        return 0;
+}
+
+int HeaderPanel::tinytinyFont_px()
+{
+    if (ui and ui->header_leds)
+        return ui->header_leds->tinytinyFont_px();
+    else
+        return 0;
 }
 
 HeaderPanel::~HeaderPanel()

@@ -60,12 +60,7 @@ QTabBar::tab:!selected
 color: rgb(255, 255, 255);
 }
 
-ATCMcombobox
-{
-font: 13pt &quot;DejaVu Sans&quot;;
-}
-
-ATCMlabel
+ATCMcombobox, ATCMlabel, ATCMbutton
 {
 font: 13pt &quot;DejaVu Sans&quot;;
 }
@@ -73,11 +68,6 @@ font: 13pt &quot;DejaVu Sans&quot;;
 ATCMlabel#atcmLabel_offset_M, ATCMlabel#atcmLabel_offset_F, ATCMlabel#atcmLabel_offset_1, ATCMlabel#atcmLabel_offset_2, ATCMlabel#atcmLabel_offset_3, ATCMlabel#atcmLabel_offset_4, ATCMlabel#atcmLabel_offset_5, ATCMlabel#atcmLabel_offset_6, ATCMlabel#atcmLabel_offset_7, ATCMlabel#atcmLabel_offset_8, ATCMlabel#atcmLabel_offset_9, ATCMlabel#atcmLabel_offset_10
 {
 font: 10pt &quot;DejaVu Sans&quot;;
-}
-
-ATCMbutton
-{
-font: 13pt &quot;DejaVu Sans&quot;;
 }
 
 
@@ -104,13 +94,20 @@ font: 13pt &quot;DejaVu Sans&quot;;
        <height>72</height>
       </size>
      </property>
-     <property name="maximumSize">
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
       <size>
-       <width>16777215</width>
-       <height>90</height>
+       <width>20</width>
+       <height>40</height>
       </size>
      </property>
-    </widget>
+    </spacer>
    </item>
    <item>
     <widget class="QTabWidget" name="tabWidget">
@@ -122,8 +119,8 @@ font: 13pt &quot;DejaVu Sans&quot;;
      </property>
      <property name="minimumSize">
       <size>
-       <width>110</width>
-       <height>72</height>
+       <width>480</width>
+       <height>200</height>
       </size>
      </property>
      <property name="font">
@@ -8843,7 +8840,7 @@ font: 13pt &quot;DejaVu Sans&quot;;
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="tab_pw">
       <property name="sizePolicy">
        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
         <horstretch>0</horstretch>
@@ -8853,311 +8850,313 @@ font: 13pt &quot;DejaVu Sans&quot;;
       <attribute name="title">
        <string>pw</string>
       </attribute>
-      <widget class="ATCMlabel" name="atcmLabel_12">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>20</y>
-         <width>331</width>
-         <height>40</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>13</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>-XxxxXXXxxx</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_ConfigPassword</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_ConfigPassword</string>
-       </property>
-       <property name="prefix">
-        <string>config: </string>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string>PLC_view_passwords</string>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="bgSelectColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderSelectColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontSelectColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
-      <widget class="ATCMbutton" name="atcmButton">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>40</y>
-         <width>42</width>
-         <height>42</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>13</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-       <property name="checked">
-        <bool>false</bool>
-       </property>
-       <property name="toolTip">
-        <string>PLC_view_passwords</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMbutton widget</string>
-       </property>
-       <property name="pageName">
-        <string notr="true"/>
-       </property>
-       <property name="passwordVar">
-        <string/>
-       </property>
-       <property name="statusvar">
-        <string>PLC_view_passwords</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string/>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="bgPressColor">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderPressColor">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pressText">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Eye.png</normaloff>:/systemicons/Eye.png</iconset>
-       </property>
-       <property name="borderWidth">
-        <number>2</number>
-       </property>
-       <property name="borderRadius">
-        <number>40</number>
-       </property>
-       <property name="apparence">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
-      <widget class="ATCMlabel" name="atcmLabel_36">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>70</y>
-         <width>331</width>
-         <height>40</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>DejaVu Sans</family>
-         <pointsize>13</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>-XxxxXXXxxx</string>
-       </property>
-       <property name="toolTip">
-        <string>PLC_BA_password</string>
-       </property>
-       <property name="whatsThis">
-        <string>ATCMlabel widget</string>
-       </property>
-       <property name="variable">
-        <string>PLC_BA_password</string>
-       </property>
-       <property name="prefix">
-        <string>alarm: </string>
-       </property>
-       <property name="refresh">
-        <number>200</number>
-       </property>
-       <property name="max">
-        <string notr="true">0</string>
-       </property>
-       <property name="min">
-        <string notr="true">0</string>
-       </property>
-       <property name="viewStatus">
-        <bool>false</bool>
-       </property>
-       <property name="visibilityVar">
-        <string>PLC_view_passwords</string>
-       </property>
-       <property name="bgColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="bgSelectColor">
-        <color>
-         <red>0</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderSelectColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="fontSelectColor">
-        <color>
-         <red>255</red>
-         <green>85</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="borderWidth">
-        <number>1</number>
-       </property>
-       <property name="borderRadius">
-        <number>0</number>
-       </property>
-      </widget>
+      <layout class="QGridLayout" name="gridLayout_10">
+       <item row="2" column="2">
+        <widget class="ATCMlabel" name="atcmLabel_36">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>-XxxxXXXxxx</string>
+         </property>
+         <property name="toolTip">
+          <string>PLC_BA_password</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_BA_password</string>
+         </property>
+         <property name="prefix">
+          <string>alarm: </string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string>PLC_view_passwords</string>
+         </property>
+         <property name="bgColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="bgSelectColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderSelectColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="fontSelectColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="ATCMlabel" name="atcmLabel_12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>-XxxxXXXxxx</string>
+         </property>
+         <property name="toolTip">
+          <string>PLC_ConfigPassword</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMlabel widget</string>
+         </property>
+         <property name="variable">
+          <string>PLC_ConfigPassword</string>
+         </property>
+         <property name="prefix">
+          <string>config: </string>
+         </property>
+         <property name="refresh">
+          <number>200</number>
+         </property>
+         <property name="max">
+          <string notr="true">0</string>
+         </property>
+         <property name="min">
+          <string notr="true">0</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string>PLC_view_passwords</string>
+         </property>
+         <property name="bgColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="fontColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="bgSelectColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderSelectColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="fontSelectColor">
+          <color>
+           <red>255</red>
+           <green>85</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderWidth">
+          <number>1</number>
+         </property>
+         <property name="borderRadius">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" rowspan="2">
+        <widget class="ATCMbutton" name="atcmButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>42</width>
+           <height>42</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>PLC_view_passwords</string>
+         </property>
+         <property name="whatsThis">
+          <string>ATCMbutton widget</string>
+         </property>
+         <property name="pageName">
+          <string notr="true"/>
+         </property>
+         <property name="passwordVar">
+          <string/>
+         </property>
+         <property name="statusvar">
+          <string>PLC_view_passwords</string>
+         </property>
+         <property name="viewStatus">
+          <bool>false</bool>
+         </property>
+         <property name="visibilityVar">
+          <string/>
+         </property>
+         <property name="bgColor">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="bgPressColor">
+          <color>
+           <red>255</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="borderPressColor">
+          <color>
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pressText">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="systemicons.qrc">
+           <normaloff>:/systemicons/Eye.png</normaloff>:/systemicons/Eye.png</iconset>
+         </property>
+         <property name="borderWidth">
+          <number>2</number>
+         </property>
+         <property name="borderRadius">
+          <number>100</number>
+         </property>
+         <property name="apparence">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>

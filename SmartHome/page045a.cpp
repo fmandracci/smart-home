@@ -40,6 +40,9 @@ page045a::page045a(QWidget *parent) :
 void page045a::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page045a BA MPNE A");
+
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinyFont_px()));
+    ui->frame->setStyleSheet(atcmss);
 }
 
 void page045a::updateData()
