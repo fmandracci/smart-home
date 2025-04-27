@@ -43,35 +43,36 @@ public:
 private slots:
     void changeEvent(QEvent * event);
 
-    void on_pushButton_set_home_clicked()  { beep(100); }
-    void on_pushButton_TPX_clicked()       { goto_page("page041" ); }
-    void on_pushButton_TPAC1007_clicked()  { goto_page("page048" ); }
+    void on_pushButton_set_home_clicked()  ;
+    void on_pushButton_TPX_clicked()       ;
+    void on_pushButton_TPAC1007_clicked()  ;
 
-    void on_pushButton_Config_clicked()    { goto_page("page005" ); }
-    void on_pushButton_Menu_clicked()      { goto_page("menu"    ); }
-    void on_pushButton_EP_7M_clicked()     { goto_page("page043" ); }
-    void on_pushButton_EP_7E_clicked()     { goto_page("page043e"); }
+    void on_pushButton_Config_clicked()    ;
+    void on_pushButton_Menu_clicked()      ;
+    void on_pushButton_EP_7M_clicked()     ;
+    void on_pushButton_EP_7E_clicked()     ;
 
-    void on_pushButton_DateTime_clicked()  { goto_page("time_set"); }
-    void on_pushButton_Display_clicked()   { goto_page("display_settings"); }
-    void on_pushButton_Tn_ARQ01_clicked()  { goto_page("page044" ); }
-    void on_pushButton_XX_MPNC_clicked()   { goto_page("page047" ); }
+    void on_pushButton_DateTime_clicked()  ;
+    void on_pushButton_Display_clicked()   ;
+    void on_pushButton_Tn_ARQ01_clicked()  ;
+    void on_pushButton_XX_MPNC_clicked()   ;
 
-    void on_pushButton_NetConf_clicked()   { goto_page("net_conf"); }
-    void on_pushButton_Info_clicked()      { goto_page("info"    ); }
-    void on_pushButton_XX_MPNE_C_clicked() { goto_page("page049c" ); }
-    void on_pushButton_XX_MPNE_D_clicked() { goto_page("page049d" ); }
+    void on_pushButton_NetConf_clicked()   ;
+    void on_pushButton_Info_clicked()      ;
+    void on_pushButton_XX_MPNE_C_clicked() ;
+    void on_pushButton_XX_MPNE_D_clicked() ;
 
-    void on_pushButton_Fonts_clicked()     { goto_page("page042" ); }
-    void on_pushButton_BA_test_clicked()   { goto_page("page046" ); }
-    void on_pushButton_BA_MPNE_A_clicked() { goto_page("page045a" ); }
-    void on_pushButton_BA_MPNE_B_clicked() { goto_page("page045b" ); }
-    void on_pushButton_BA_MPNE_E_clicked() { goto_page("page045e" ); }
+    void on_pushButton_Fonts_clicked()     ;
+    void on_pushButton_BA_test_clicked()   ;
+    void on_pushButton_BA_MPNE_A_clicked() ;
+    void on_pushButton_BA_MPNE_B_clicked() ;
+    void on_pushButton_BA_MPNE_E_clicked() ;
 
 private:
     Ui::page011 *ui;
     void changeWidgets();
     void updateWidgets();
+    void highlightButton(QPushButton *button);
 };
 
 #endif // PAGE011_H

@@ -57,6 +57,9 @@ void page041::updateData()
 void page041::changeWidgets()
 {
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, "BACK", "page041: TPX*");
+
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinyFont_px()));
+    ui->frame->setStyleSheet(atcmss);
 }
 
 void page041::updateWidgets()

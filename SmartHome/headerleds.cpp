@@ -9,7 +9,7 @@ HeaderLeds::HeaderLeds(QWidget *parent) :
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    led_size_px = 18;
+    led_size_px = 18; // vedi changeWidgets()
 }
 
 void HeaderLeds::translateFontSize( QWidget *ui )
@@ -37,26 +37,54 @@ void HeaderLeds::scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor)
     }
 }
 
-void HeaderLeds::scaleIconLabel(QLabel *label, int size_px)
+void HeaderLeds::scaleIconLabel(QLabel *label)
 {
     if (label) {
-        if (size_px < 2 * led_size_px) {
-            size_px = 2 * led_size_px;
-        }
+        int size_px = 2 * led_size_px;
+
         label->setMaximumWidth(size_px);
         label->setMaximumHeight(size_px);
     }
 }
 
-void HeaderLeds::scaleButton(QAbstractButton *button, int size_px)
+void HeaderLeds::scaleButton(QAbstractButton *button)
 {
     if (button) {
-        if (size_px < 2 * led_size_px) {
-            size_px = 2 * led_size_px;
-        }
+        int size_px = 3 * led_size_px;
+
         button->setMaximumWidth(size_px);
         button->setMaximumHeight(size_px);
         button->setIconSize(QSize(size_px, size_px));
+    }
+}
+
+void HeaderLeds::scaleMainButton(ATCMbutton *button)
+{
+    if (button) {
+        int button_size_px = 5 * led_size_px;
+        int icon_size_px = 4 * led_size_px;
+        int border_size_px;
+
+        if (mectScreenWidth >= 1280) {
+            // 1280x800
+            border_size_px = 9;
+        } else if (mectScreenWidth >= 800) {
+            // 800x480
+            border_size_px = 7;
+        } else {
+            // 480x272
+            border_size_px = 5;
+        }
+
+        button->setMinimumWidth(button_size_px);
+        button->setMinimumHeight(button_size_px);
+        button->setMaximumWidth(button_size_px);
+        button->setMaximumHeight(button_size_px);
+
+        button->setIconSize(QSize(icon_size_px, icon_size_px));
+
+        button->setBorderWidth(border_size_px);
+        button->setBorderRadius(button_size_px + 2 * border_size_px + 1);
     }
 }
 
@@ -69,15 +97,15 @@ void HeaderLeds::changeWidgets()
 {
     if (mectScreenWidth >= 1280) {
         // 1280x800
-        led_size_px = 53;
+        led_size_px = 48; // 53;
     } else if (mectScreenWidth >= 800) {
         // 800x480
-        led_size_px = 32;
+        led_size_px = 30; // 32;
     } else {
         // 480x272
         led_size_px = 18;
     }
-    leds_width_px = 3 * led_size_px; // 159 96 54
+    leds_width_px  = 3 * led_size_px; // 159  96 54
     leds_height_px = 4 * led_size_px; // 212 128 72
 
     this->setMaximumWidth(leds_width_px);

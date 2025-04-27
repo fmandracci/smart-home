@@ -60,6 +60,32 @@ void page005::updateData()
 void page005::changeWidgets()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page005: Config");
+
+    QString pagess = "QWidget#page005 { background-color: rgb(0, 0, 0); }\n";
+    QString tabss1 = QString("QTabBar::tab"
+                             "{ "
+                             "background-color: rgb(0, 0, 0);"
+                             "border-top-left-radius: %1px; border-top-right-radius: %1px;"
+                             "border: 1px solid rgb(255, 255, 255);"
+                             "padding: 2px;"
+                             "min-width: %2px; min-height: %2px; "
+                             "%3"
+                             "}\n").arg(ui->headerPanel->ledSize_px() / 2)
+                                   .arg(2 * ui->headerPanel->ledSize_px())
+                                   .arg(FONT_SS_B(ui->headerPanel->titleFont_px()));
+    QString tabss2 = QString("QTabBar::tab:selected"
+                             "{"
+                             "color: rgb(0, 0, 0);"
+                             "background-color: rgb(255, 255, 255);"
+                             "border: 1px solid rgb(255, 255, 0);"
+                             "}\n");
+    QString tabss3 = QString("QTabBar::tab:!selected"
+                             "{"
+                             "color: rgb(255, 255, 255);"
+                             "}\n");
+    QString atcmss = QString("ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->titleFont_px()));
+
+    this->setStyleSheet(pagess + tabss1 + tabss2 + tabss3 + atcmss);
 }
 
 void page005::updateWidgets()

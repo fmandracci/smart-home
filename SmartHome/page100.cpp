@@ -82,25 +82,21 @@ void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoin
                                 int n, const QColor color)
 {
     if (n <= PLC_Tn_count) {
-        int pointSize_n ; // ①
-        int pointSize_sp; // Set Point
-        int pointSize_s ; // status
-        int pointSize_t ; // xx.x°C xx.x°C
-        int pointSize_e ; // xx.x°C
-
-        if (mectScreenWidth >= 800) {
-            pointSize_n  = 36;  // ①
-            pointSize_sp = 11;  // Set Point
-            pointSize_s  = 17;  // status
-            pointSize_t  = 19;  // xx.x°C xx.x°C
-            pointSize_e  = 12;  // xx.x°C
-        } else {
-            pointSize_n  = 24;  // ①
-            pointSize_sp =  8;  // Set Point
-            pointSize_s  = 12;  // status
-            pointSize_t  = 14;  // xx.x°C xx.x°C
-            pointSize_e  =  8;  // xx.x°C
+        int zoom;
+        switch (PLC_Tn_count) {
+        case 6: zoom = 100; break;
+        case 5: zoom = 116; break;
+        case 4: zoom = 133; break;
+        case 3: zoom = 150; break;
+        case 2: zoom = 166; break;
+        case 1: zoom = 183; break;
+        default: zoom = 99;
         }
+        int pointSize_n  = (mectScreenHeight - ui->headerPanel->ledsHeight_px()) / 7 * zoom / 100; // ①
+        int pointSize_sp = ui->headerPanel->tinyFont_px() * zoom / 100; // Set Point
+        int pointSize_s  = ui->headerPanel->titleFont_px() * zoom / 100; // status
+        int pointSize_t  = ui->headerPanel->titleFont_px() * zoom / 100; // xx.x°C xx.x°C
+        int pointSize_e  = ui->headerPanel->titleFont_px() * zoom / 100; // xx.x°C
 
         // label_n  ①
         label_n->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize_n));

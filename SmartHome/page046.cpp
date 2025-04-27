@@ -42,6 +42,10 @@ page046::page046(QWidget *parent) :
 void page046::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
+
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinyFont_px()));
+    ui->frame->setStyleSheet(atcmss);
+
     if (PLC_Iam_BA) {
         ui->pushButton_Test->setText("TEST");
         ui->pushButton_Test->setEnabled(true);

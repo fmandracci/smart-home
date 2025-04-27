@@ -30,6 +30,11 @@
         <file>icons/nymea.png</file>
         <file>icons/range_scale.png</file>
         <file>icons/LampIcon.png</file>
+        <file>icons/Settings.png</file>
+        <file>icons/Home.png</file>
+        <file>icons/Trend.png</file>
+        <file>icons/Mute.png</file>
+        <file>icons/Raise.png</file>
     </qresource>
     <qresource prefix="/fonts"/>
 </RCC>

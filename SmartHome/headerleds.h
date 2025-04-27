@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QAbstractButton>
 #include <QLabel>
+#include "atcmbutton.h"
 
 namespace Ui {
 class HeaderLeds;
@@ -28,10 +29,13 @@ public:
     int timeFont_px()     { return leds_width_px * 9 / 10; }
 
     int titleHeight_px()  { return led_size_px;    }
-    int titleFont_px()    { return led_size_px * 6 / 10; }
+    int titleFont_px()    { return led_size_px * 7 / 10; }
+    int tinyFont_px()     { return led_size_px * 5 / 10; }
+    int tinytinyFont_px() { return led_size_px * 4 / 10; }
 
-    void scaleIconLabel(QLabel *button, int size_px = 0);
-    void scaleButton(QAbstractButton *button, int size_px = 0);
+    void scaleIconLabel(QLabel *button);
+    void scaleButton(QAbstractButton *button);
+    void scaleMainButton(ATCMbutton *button);
 
     static void translateFontSize( QWidget *ui );
     static void scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor);

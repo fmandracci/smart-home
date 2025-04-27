@@ -40,6 +40,10 @@ page044::page044(QWidget *parent) :
 void page044::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page044 Tn ARQ01");
+
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinyFont_px()));
+    ui->frame->setStyleSheet(atcmss);
+
     variableList.clear();
     variableList << "ARQ_Parity" << "ARQ_Setup";
 }
