@@ -4,9 +4,9 @@ INPUT(
 ./automation.o
 ./headerleds.o
 ./headerpanel.o
-./page005.o
 ./page010.o
 ./page011.o
+./page012.o
 ./page020.o
 ./page021.o
 ./page022.o
@@ -36,9 +36,9 @@ INPUT(
 ./page500.o
 ./moc_headerleds.o
 ./moc_headerpanel.o
-./moc_page005.o
 ./moc_page010.o
 ./moc_page011.o
+./moc_page012.o
 ./moc_page020.o
 ./moc_page021.o
 ./moc_page022.o

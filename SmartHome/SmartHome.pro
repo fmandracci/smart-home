@@ -23,9 +23,9 @@ HEADERS += \
     automation.h \
     headerleds.h \
     headerpanel.h \
-    page005.h \
     page010.h \
     page011.h \
+    page012.h \
     page020.h \
     page021.h \
     page022.h \
@@ -57,9 +57,9 @@ HEADERS += \
 FORMS += \
     headerleds.ui \
     headerpanel.ui \
-    page005.ui \
     page010.ui \
     page011.ui \
+    page012.ui \
     page020.ui \
     page021.ui \
     page022.ui \
@@ -92,9 +92,9 @@ SOURCES += \
     automation.cpp \
     headerleds.cpp \
     headerpanel.cpp \
-    page005.cpp \
     page010.cpp \
     page011.cpp \
+    page012.cpp \
     page020.cpp \
     page021.cpp \
     page022.cpp \
