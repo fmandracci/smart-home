@@ -1616,7 +1616,7 @@ xx.x ℃</string>
      </property>
      <property name="maximumSize">
       <size>
-       <width>800</width>
+       <width>16777215</width>
        <height>20</height>
       </size>
      </property>

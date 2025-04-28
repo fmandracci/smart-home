@@ -212,7 +212,9 @@ extern float mectFontCorrector;
 #define TIME_FMT_DAYTIME   QTime::currentTime().toString(LABEL_DAYTIME + "HH:mm")
 #define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")
 
-#define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
+// #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
+#define COLOR_SS(color)    QString("color: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
+#define BG_COLOR_SS(color) QString("background-color: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
 #define FONT_SS_N(size_px)  QString("font: %1px \"DejaVu Sans\";\n"            ).arg(size_px)
 #define FONT_SS_B(size_px)  QString("font: bold %1px \"DejaVu Sans\";\n"       ).arg(size_px)

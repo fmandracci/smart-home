@@ -61,9 +61,12 @@
     </widget>
    </item>
    <item>
-    <spacer name="verticalSpacer">
+    <spacer name="verticalSpacer_top">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Ignored</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -1274,7 +1277,7 @@
     </widget>
    </item>
    <item>
-    <spacer name="verticalSpacer_2">
+    <spacer name="verticalSpacer_bottom">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
