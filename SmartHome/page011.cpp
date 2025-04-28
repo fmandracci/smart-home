@@ -129,7 +129,7 @@ void page011::on_pushButton_set_home_clicked()  { highlightButton(ui->pushButton
 void page011::on_pushButton_TPX_clicked()       { highlightButton(ui->pushButton_TPX      ); goto_page("page041" ); }
 void page011::on_pushButton_TPAC1007_clicked()  { highlightButton(ui->pushButton_TPAC1007 ); goto_page("page048" ); }
 
-void page011::on_pushButton_Config_clicked()    { highlightButton(ui->pushButton_Config   ); goto_page("page005" ); }
+void page011::on_pushButton_Config_clicked()    { highlightButton(ui->pushButton_Config   ); goto_page("page012" ); }
 void page011::on_pushButton_Menu_clicked()      { highlightButton(ui->pushButton_Menu     ); goto_page("menu"    ); }
 void page011::on_pushButton_EP_7M_clicked()     { highlightButton(ui->pushButton_EP_7M    ); goto_page("page043" ); }
 void page011::on_pushButton_EP_7E_clicked()     { highlightButton(ui->pushButton_EP_7E    ); goto_page("page043e"); }

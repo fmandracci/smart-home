@@ -193,9 +193,9 @@ void printVncDisplayString(char * vncString)
 
     userPageList
             << "system_ini"
-            << "page005"
             << "page010"
             << "page011"
+            << "page012"
             << "page020"
             << "page021"
             << "page022"
@@ -235,14 +235,14 @@ int create_page_nb(page ** p, int pageNb)
 {
     switch (pageNb)
     {
-    case 0x005:
-        *p = (page *)(new page005);
-        break;
     case 0x010:
         *p = (page *)(new page010);
         break;
     case 0x011:
         *p = (page *)(new page011);
+        break;
+    case 0x012:
+        *p = (page *)(new page012);
         break;
     case 0x020:
         *p = (page *)(new page020);
