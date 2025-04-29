@@ -50,8 +50,8 @@ void page011::changeWidgets()
     int pointSize_ct;
 
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
-    pointSize_bt = ui->headerPanel->ledSize_px();
-    pointSize_ct = ui->headerPanel->titleFont_px();
+    pointSize_bt = modulor->ledSize_px();
+    pointSize_ct = modulor->titleFont_px();
 
     if ((PLC_PRODUCT_ID & 0xF0000000) == 0x40000000) {
         ui->atcmLabel_cpu_temp->setVisible(true);
@@ -102,7 +102,7 @@ void page011::changeWidgets()
 
 void page011::highlightButton(QPushButton *button)
 {
-    int pointSize_bt = ui->headerPanel->ledSize_px();
+    int pointSize_bt = modulor->ledSize_px();
 
     QString ss("background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); border: 1px solid rgb(255, 255, 255); padding: 5px;" + FONT_SS_N(pointSize_bt));
 

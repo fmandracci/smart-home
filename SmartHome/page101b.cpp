@@ -101,31 +101,31 @@ void page101b::changeWidgets(int sunrise, int sunset,
         ui->headerPanel->changeWidgets(trend, TH_PIXMAP, NULL, QString("page101b: Tn " + title).toLatin1().data());
     }
 
-    int big_size_px = (mectScreenHeight - ui->headerPanel->ledsHeight_px()) / ((enabled_sensors < 0) ? 6 : 4) * 5 / 10; // ①;
-    int medium_size_px = ui->headerPanel->titleFont_px();
-    int small_size_px = ui->headerPanel->tinyFont_px();
-    int tiny_size_px = ui->headerPanel->tinytinyFont_px();
+    int big_size_px = modulor->bodyHeight_px() / ((enabled_sensors < 0) ? 6 : 4) * 5 / 10; // ①;
+    int medium_size_px = modulor->titleFont_px();
+    int small_size_px = modulor->smallFont_px();
+    int tiny_size_px = modulor->tinyFont_px();
 
     ui->label_Tn_temperature->setStyleSheet(COLOR_SS(color));
 
     // left margin
     ui->label_heating_status->setVisible(abs(enabled_sensors) > 0);
     ui->label_heating_status->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(medium_size_px));
-    ui->label_heating_status->setMaximumWidth(ui->headerPanel->ledsWidth_px());
+    ui->label_heating_status->setMaximumWidth(modulor->ledsWidth_px());
 
     ui->label_heating_timer->setVisible(abs(enabled_sensors) > 0);
     ui->label_heating_timer->setStyleSheet(                    COLOR_SS(color) +                    FONT_SS_B(small_size_px));
-    ui->label_heating_timer->setMaximumWidth(ui->headerPanel->ledsWidth_px());
+    ui->label_heating_timer->setMaximumWidth(modulor->ledsWidth_px());
 
     ui->atcmButton_set_T_everywhere->setFontColor(color);
 
     // right margin
     ui->label_Tn->setText(Tlabel);
     ui->label_Tn->setStyleSheet(COLOR_SS(color) + FONT_SS_B(big_size_px));
-    ui->label_Tn->setMaximumWidth(ui->headerPanel->ledsWidth_px());
+    ui->label_Tn->setMaximumWidth(modulor->ledsWidth_px());
 
     // ui->atcmButton_next->setFontColor(color);
-    ui->atcmButton_next->setMaximumWidth(ui->headerPanel->ledsWidth_px());
+    ui->atcmButton_next->setMaximumWidth(modulor->ledsWidth_px());
 
     // footer
     ui->atcmButton_down->setEnabled(enabled_sensors < 0 and Iam_Tn);

@@ -9,38 +9,32 @@ HeaderLeds::HeaderLeds(QWidget *parent) :
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    led_size_px = 18; // vedi changeWidgets()
 }
 
 void HeaderLeds::changeWidgets()
 {
-    if (mectScreenWidth >= 1280) {       // 1280x800
-        led_size_px = 48;
-    } else if (mectScreenWidth >= 800) { //  800x480
-        led_size_px = 30;
-    } else {                             //  480x272
-        led_size_px = 18;
-    }
+    this->setMinimumWidth(modulor->ledsWidth_px());
+    this->setMaximumWidth(modulor->ledsWidth_px());
 
-    leds_width_px  = 3 * led_size_px;
-    leds_height_px = 4 * led_size_px;
+    this->setMinimumHeight(modulor->ledsHeight_px());
+    this->setMaximumHeight(modulor->ledsHeight_px());
 
-    this->setMinimumWidth(leds_width_px);
-    this->setMaximumWidth(leds_width_px);
-    this->setMinimumHeight(leds_height_px);
-    this->setMaximumHeight(leds_height_px);
+    // implicit:
+    // ui->label_XX->setMaximumWidth(modulor->ledSize_px());
+    // ui->label_XX->setMaximumHeight(modulor->ledSize_px());
+
     this->repaint();
 }
 
 void HeaderLeds::updateWidgets()
 {
-    const QString       RED_OVER_BLACK = QString("color: rgb(255,   0,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString     GREEN_OVER_BLACK = QString("color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString    YELLOW_OVER_BLACK = QString("color: rgb(255, 255,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString      GREY_OVER_BLACK = QString("color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString DARK_GREY_OVER_BLACK = QString("color: rgb( 32,  32,  32); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString   MAGENTA_OVER_BLACK = QString("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
-    const QString      CYAN_OVER_BLACK = QString("color: rgb(  0, 255, 255); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(led_size_px);
+    const QString       RED_OVER_BLACK = QString("color: rgb(255,   0,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString     GREEN_OVER_BLACK = QString("color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString    YELLOW_OVER_BLACK = QString("color: rgb(255, 255,   0); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString      GREY_OVER_BLACK = QString("color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString DARK_GREY_OVER_BLACK = QString("color: rgb( 32,  32,  32); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString   MAGENTA_OVER_BLACK = QString("color: rgb(255,   0, 255); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
+    const QString      CYAN_OVER_BLACK = QString("color: rgb(  0, 255, 255); background-color: rgb(0, 0, 0); font: %1px \"DejaVu Sans\";\n").arg(modulor->ledSize_px());
 
     const QString     RED_OVER_BLACK_BORDER = RED_OVER_BLACK     + "border: 1px solid rgb(255,   0,   0);";
     const QString  YELLOW_OVER_BLACK_BORDER = YELLOW_OVER_BLACK  + "border: 1px solid rgb(255, 255,   0);";
@@ -213,82 +207,6 @@ void HeaderLeds::updateWidgets()
     } else {
         ui->label_T6->setText(LABEL_06);
         ui->label_T6->setStyleSheet(DARK_GREY_OVER_BLACK);
-    }
-}
-
-void HeaderLeds::translateFontSize( QWidget *ui )
-{
-    QObject *w;
-
-    if (ui) {
-        scaleWidgetFontSize(ui, mectFontCorrector);
-        foreach (w, ui->children()) {
-            QWidget *ww = dynamic_cast<QWidget *>(w);
-            if (ww) {
-                scaleWidgetFontSize(ww, mectFontCorrector);
-            }
-        }
-    }
-}
-
-void HeaderLeds::scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor)
-{
-    if (uiWidget and newScaleFactor != 0) {
-        QFont wFont = QFont(uiWidget->font());
-
-        wFont.setPointSize( (wFont.pointSize() * newScaleFactor));
-        uiWidget->setFont(wFont);
-    }
-}
-
-void HeaderLeds::scaleIconLabel(QLabel *label)
-{
-    if (label) {
-        int size_px = 2 * led_size_px;
-
-        label->setMaximumWidth(size_px);
-        label->setMaximumHeight(size_px);
-    }
-}
-
-void HeaderLeds::scaleButton(QAbstractButton *button)
-{
-    if (button) {
-        int size_px = 3 * led_size_px;
-
-        button->setMaximumWidth(size_px);
-        button->setMaximumHeight(size_px);
-        button->setIconSize(QSize(size_px, size_px));
-    }
-}
-
-void HeaderLeds::scaleMainButton(ATCMbutton *button)
-{
-    if (button) {
-        int button_size_px = 5 * led_size_px;
-        int icon_size_px = 4 * led_size_px;
-        int border_size_px;
-
-        if (mectScreenWidth >= 1280) {
-            // 1280x800
-            border_size_px = 9;
-        } else if (mectScreenWidth >= 800) {
-            // 800x480
-            border_size_px = 7;
-        } else {
-            // 480x272
-            border_size_px = 5;
-        }
-
-        button->setMinimumWidth(button_size_px);
-        button->setMinimumHeight(button_size_px);
-        button->setMaximumWidth(button_size_px);
-        button->setMaximumHeight(button_size_px);
-
-        button->setIconSize(QSize(icon_size_px, icon_size_px));
-
-        button->setBorderWidth(border_size_px);
-        button->setBorderRadius(button_size_px + 2 * border_size_px + 1);
     }
 }
 

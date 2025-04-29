@@ -23,6 +23,7 @@ HEADERS += \
     automation.h \
     headerleds.h \
     headerpanel.h \
+    modulor.h \
     page010.h \
     page011.h \
     page012.h \
@@ -92,6 +93,7 @@ SOURCES += \
     automation.cpp \
     headerleds.cpp \
     headerpanel.cpp \
+    modulor.cpp \
     page010.cpp \
     page011.cpp \
     page012.cpp \

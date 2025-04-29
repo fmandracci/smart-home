@@ -17,29 +17,36 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="80"/>
-        <location filename="headerpanel.ui" line="404"/>
+        <location filename="headerpanel.ui" line="270"/>
+        <location filename="headerpanel.ui" line="398"/>
+        <location filename="headerpanel.ui" line="485"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="483"/>
+        <location filename="headerpanel.ui" line="482"/>
+        <location filename="headerpanel.ui" line="494"/>
+        <source>PLC_mute_BlackoutDetected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="headerpanel.ui" line="97"/>
         <source>TITLE</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="headerpanel.ui" line="290"/>
+        <location filename="headerpanel.ui" line="355"/>
         <source>☼HH:mm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="headerpanel.ui" line="83"/>
+        <location filename="headerpanel.ui" line="273"/>
         <source>HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="headerpanel.ui" line="116"/>
-        <location filename="headerpanel.ui" line="119"/>
+        <location filename="headerpanel.ui" line="306"/>
+        <location filename="headerpanel.ui" line="309"/>
         <source>☰</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47,23 +54,29 @@
 <context>
     <name>page010</name>
     <message utf8="true">
-        <location filename="page010.ui" line="214"/>
+        <location filename="page010.ui" line="101"/>
         <source>☼HH:mm</source>
         <oldsource>HH:mm</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="304"/>
+        <location filename="page010.ui" line="134"/>
         <source>SMART HOME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="938"/>
+        <location filename="page010.ui" line="290"/>
+        <location filename="page010.ui" line="302"/>
+        <source>PLC_mute_BlackoutDetected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page010.ui" line="966"/>
         <source>PLC_ConfigPassword</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="271"/>
+        <location filename="page010.ui" line="169"/>
         <source>XXXXxxXX
 x.xxx
 x.xxx
@@ -71,18 +84,19 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="1040"/>
+        <location filename="page010.ui" line="1068"/>
         <source>PLC_BA_password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page010.ui" line="383"/>
-        <location filename="page010.ui" line="482"/>
-        <location filename="page010.ui" line="581"/>
-        <location filename="page010.ui" line="731"/>
-        <location filename="page010.ui" line="830"/>
-        <location filename="page010.ui" line="932"/>
-        <location filename="page010.ui" line="1034"/>
+        <location filename="page010.ui" line="293"/>
+        <location filename="page010.ui" line="411"/>
+        <location filename="page010.ui" line="510"/>
+        <location filename="page010.ui" line="609"/>
+        <location filename="page010.ui" line="759"/>
+        <location filename="page010.ui" line="858"/>
+        <location filename="page010.ui" line="960"/>
+        <location filename="page010.ui" line="1062"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1420,12 +1434,12 @@ xx</source>
 <context>
     <name>page020</name>
     <message>
-        <location filename="page020.ui" line="111"/>
+        <location filename="page020.ui" line="108"/>
         <source>--:--</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page020.ui" line="160"/>
+        <location filename="page020.ui" line="148"/>
         <source>ATCMdate widget</source>
         <translation type="unfinished"></translation>
     </message>

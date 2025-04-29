@@ -43,7 +43,7 @@ void page046::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
 
-    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(ui->headerPanel->tinyFont_px()));
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
     ui->frame->setStyleSheet(atcmss);
 
     if (PLC_Iam_BA) {

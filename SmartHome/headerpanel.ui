@@ -29,6 +29,196 @@
    <property name="spacing">
     <number>0</number>
    </property>
+   <item row="1" column="3">
+    <spacer name="horizontalSpacer_L1">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="9">
+    <spacer name="horizontalSpacer_R2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1" colspan="10">
+    <widget class="QLabel" name="label_title">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 85, 0);</string>
+     </property>
+     <property name="text">
+      <string>TITLE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignHCenter|Qt::AlignTop</set>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="8">
+    <widget class="QLabel" name="label_icon">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/icons/icons/nymea.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QPushButton" name="pushButton_trend">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>36</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/Trend.png</normaloff>:/icons/icons/Trend.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7">
+    <spacer name="horizontalSpacer_R1">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="5">
+    <spacer name="horizontalSpacer_L2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
    <item row="0" column="0" rowspan="2">
     <widget class="HeaderLeds" name="header_leds" native="true">
      <property name="sizePolicy">
@@ -45,7 +235,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="10" rowspan="2">
+   <item row="0" column="11" rowspan="2">
     <widget class="ATCMbutton" name="atcmButton_home">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -126,132 +316,7 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="QPushButton" name="pushButton_mute">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <family>DejaVu Sans</family>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="resources.qrc">
-       <normaloff>:/icons/icons/Mute.png</normaloff>:/icons/icons/Mute.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="2">
-    <spacer name="horizontalSpacer_L1">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="3">
-    <widget class="QPushButton" name="pushButton_trend">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <family>DejaVu Sans</family>
-       <pointsize>36</pointsize>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="icon">
-      <iconset resource="resources.qrc">
-       <normaloff>:/icons/icons/Trend.png</normaloff>:/icons/icons/Trend.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="4">
-    <spacer name="horizontalSpacer_L2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="5">
+   <item row="1" column="6">
     <widget class="QPushButton" name="pushButton_time">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -294,78 +359,7 @@ color: rgb(255, 85, 0);</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="6">
-    <spacer name="horizontalSpacer_R1">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="7">
-    <widget class="QLabel" name="label_icon">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>36</width>
-       <height>36</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <family>DejaVu Sans</family>
-      </font>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/icons/icons/nymea.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="8">
-    <spacer name="horizontalSpacer_R2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="9">
+   <item row="1" column="10">
     <widget class="ATCMbutton" name="atcmButton_back">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -447,11 +441,8 @@ color: rgb(255, 85, 0);</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="1" colspan="9">
-    <widget class="QLabel" name="label_title">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
+   <item row="1" column="2">
+    <widget class="ATCMbutton" name="atcmButton_mute">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
        <horstretch>0</horstretch>
@@ -460,32 +451,79 @@ color: rgb(255, 85, 0);</string>
      </property>
      <property name="minimumSize">
       <size>
-       <width>0</width>
-       <height>18</height>
+       <width>36</width>
+       <height>36</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>16777215</width>
-       <height>18</height>
+       <width>36</width>
+       <height>36</height>
       </size>
      </property>
      <property name="font">
       <font>
        <family>DejaVu Sans</family>
-       <pointsize>6</pointsize>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 85, 0);</string>
+     <property name="iconSize">
+      <size>
+       <width>36</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>PLC_mute_BlackoutDetected</string>
+     </property>
+     <property name="whatsThis">
+      <string>ATCMbutton widget</string>
+     </property>
+     <property name="pageName">
+      <string notr="true"/>
+     </property>
+     <property name="passwordVar">
+      <string/>
+     </property>
+     <property name="statusvar">
+      <string>PLC_mute_BlackoutDetected</string>
+     </property>
+     <property name="viewStatus">
+      <bool>false</bool>
+     </property>
+     <property name="visibilityVar">
+      <string/>
+     </property>
+     <property name="bgColor">
+      <color alpha="0">
+       <red>230</red>
+       <green>230</green>
+       <blue>230</blue>
+      </color>
      </property>
      <property name="text">
-      <string>TITLE</string>
+      <string/>
      </property>
-     <property name="alignment">
-      <set>Qt::AlignHCenter|Qt::AlignTop</set>
+     <property name="pressText">
+      <string/>
      </property>
-     <property name="margin">
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/MuteDark.png</normaloff>:/icons/icons/MuteDark.png</iconset>
+     </property>
+     <property name="pressIcon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/icons/icons/Mute.png</normaloff>:/icons/icons/Mute.png</iconset>
+     </property>
+     <property name="borderWidth">
+      <number>0</number>
+     </property>
+     <property name="borderRadius">
       <number>0</number>
      </property>
     </widget>

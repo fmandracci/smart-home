@@ -28,6 +28,7 @@
 #include "hmi_logger.h"
 #include "global_functions.h"
 
+#include "modulor.h"
 #include "headerleds.h"
 
 #include "crosstable.h" // PLC_...
@@ -66,21 +67,20 @@ const QString heating_name(int heating_status);
 extern int currentThermostat;
 extern int currentWattmeter;
 
+extern Modulor *modulor;
+#define TRANSLATE_FONT_SIZE(x) modulor->translateFontSize(x)
+
 #if defined(MECT_SUITE_3_5)
 
 //extern int mectScreenWidth;
 //extern int mectScreenHeight;
 //extern float mectFontCorrector;
 
-#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
-
 #elif defined(MECT_SUITE_3_4)
 
 extern int mectScreenWidth;
 extern int mectScreenHeight;
 extern float mectFontCorrector;
-
-#define TRANSLATE_FONT_SIZE(x) HeaderLeds::translateFontSize(x)
 
 #else
 #error wrong framework

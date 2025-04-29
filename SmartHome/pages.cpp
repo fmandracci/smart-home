@@ -145,6 +145,7 @@ void printVncDisplayString(char * vncString)
 
 #endif
 #endif
+    modulor = new Modulor(mectScreenWidth, mectScreenHeight, mectFontCorrector);
     fprintf(stderr, "vncString='%s' font corrector=%f\n", vncString, mectFontCorrector);
 
     // ------------ system.ini changes _before_ starting the plc runtime (this is hmi_only !) ------------
