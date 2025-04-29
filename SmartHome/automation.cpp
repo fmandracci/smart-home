@@ -35,6 +35,8 @@ float mectFontCorrector;
 #error
 #endif
 
+Modulor * modulor;
+
 const char *status_names[HEATING_COUNT + 1] = {
     "OFF",
     "AUTO",

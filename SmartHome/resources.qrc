@@ -35,6 +35,9 @@
         <file>icons/Trend.png</file>
         <file>icons/Mute.png</file>
         <file>icons/Raise.png</file>
+        <file>icons/MuteDark.png</file>
+        <file>icons/Next.png</file>
+        <file>icons/Previous.png</file>
     </qresource>
     <qresource prefix="/fonts"/>
 </RCC>

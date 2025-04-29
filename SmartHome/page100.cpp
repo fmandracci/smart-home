@@ -92,11 +92,11 @@ void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoin
         case 1: zoom = 183; break;
         default: zoom = 99;
         }
-        int pointSize_n  = (mectScreenHeight - ui->headerPanel->ledsHeight_px()) / 7 * zoom / 100; // ①
-        int pointSize_sp = ui->headerPanel->tinyFont_px() * zoom / 100; // Set Point
-        int pointSize_s  = ui->headerPanel->titleFont_px() * zoom / 100; // status
-        int pointSize_t  = ui->headerPanel->titleFont_px() * zoom / 100; // xx.x°C xx.x°C
-        int pointSize_e  = ui->headerPanel->titleFont_px() * zoom / 100; // xx.x°C
+        int pointSize_n  = modulor->bodyHeight_px() / 7 * zoom / 100; // ①
+        int pointSize_sp = modulor->smallFont_px() * zoom / 100; // Set Point
+        int pointSize_s  = modulor->titleFont_px() * zoom / 100; // status
+        int pointSize_t  = modulor->titleFont_px() * zoom / 100; // xx.x°C xx.x°C
+        int pointSize_e  = modulor->titleFont_px() * zoom / 100; // xx.x°C
 
         // label_n  ①
         label_n->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize_n));

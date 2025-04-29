@@ -841,8 +841,8 @@ color: rgb(255, 0, 0);</string>
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Previous.png</normaloff>:/systemicons/Previous.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Previous.png</normaloff>:/icons/icons/Previous.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -868,7 +868,7 @@ color: rgb(255, 0, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
  <slots>

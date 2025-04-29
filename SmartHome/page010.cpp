@@ -56,18 +56,19 @@ void page010::changeWidgets()
 {
     ui->header_leds->changeWidgets();
 
-    ui->header_leds->scaleButton(ui->pushButton_mute);
+    // ui->header_leds->setMaximumWidth(8 * modulor->titleFont_px()); //modulor->ledsWidth_px());
+    modulor->scaleButton(ui->atcmButton_mute);
 
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
-    ui->pushButton_time->setMaximumHeight(ui->header_leds->timeHeight_px());
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
+    ui->pushButton_time->setMaximumHeight(modulor->timeHeight_px());
 
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
-    ui->label_title->setMaximumHeight(ui->header_leds->titleHeight_px());
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
+    ui->label_title->setMaximumHeight(modulor->titleHeight_px());
 
-    ui->header_leds->scaleButton(ui->pushButton_home);
+    modulor->scaleButton(ui->pushButton_home);
 
-    ui->label_versions->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
-    ui->label_versions->setMaximumWidth(8 * ui->header_leds->titleFont_px()); //ui->header_leds->ledsWidth_px());
+    ui->label_versions->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
+    ui->label_versions->setMaximumWidth(8 * modulor->titleFont_px()); //modulor->ledsWidth_px());
 
     if (PLC_ConfigPassword) {
         ui->atcmButton_settings->setPasswordVar("PLC_ConfigPassword");
@@ -80,7 +81,7 @@ void page010::changeWidgets()
         ui->atcmButton_BA->setPasswordVar("");
     }
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_Tn_thermo);
+    modulor->scaleMainButton(ui->atcmButton_Tn_thermo);
     if (PLC_Tn_count >= 1) {
         ui->atcmButton_Tn_thermo->setEnabled(true);
         ui->atcmButton_Tn_thermo->setBorderColor(QColor(255,128,  0));
@@ -95,7 +96,7 @@ void page010::changeWidgets()
         ui->atcmButton_Tn_thermo->setBorderColor(QColor( 64, 64, 64));
     }
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_Tn_lamps);
+    modulor->scaleMainButton(ui->atcmButton_Tn_lamps);
     if (PLC_Tn_count >= 1 and (PLC_T1_enabled_lamps + PLC_T2_enabled_lamps + PLC_T3_enabled_lamps + PLC_T4_enabled_lamps + PLC_T5_enabled_lamps + PLC_T6_enabled_lamps) >= 1) {
         ui->atcmButton_Tn_lamps->setEnabled(true);
         ui->atcmButton_Tn_lamps->setBorderColor(QColor(  0,255,  0));
@@ -104,9 +105,9 @@ void page010::changeWidgets()
         ui->atcmButton_Tn_lamps->setBorderColor(QColor( 64, 64, 64));
     }
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_timers);
+    modulor->scaleMainButton(ui->atcmButton_timers);
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_EP_wattmeters);
+    modulor->scaleMainButton(ui->atcmButton_EP_wattmeters);
     if (PLC_EP_exists) {
         ui->atcmButton_EP_wattmeters->setEnabled(true);
         ui->atcmButton_EP_wattmeters->setBorderColor(QColor(255,  0,  0));
@@ -115,9 +116,9 @@ void page010::changeWidgets()
         ui->atcmButton_EP_wattmeters->setBorderColor(QColor( 64, 64, 64));
     }
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_settings);
+    modulor->scaleMainButton(ui->atcmButton_settings);
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_EP_relays);
+    modulor->scaleMainButton(ui->atcmButton_EP_relays);
     if (PLC_EP_exists and abs(PLC_EP_enabled_relays) >= 1) {
         ui->atcmButton_EP_relays->setEnabled(true);
         ui->atcmButton_EP_relays->setBorderColor(QColor(255,255,  0));
@@ -126,7 +127,7 @@ void page010::changeWidgets()
         ui->atcmButton_EP_relays->setBorderColor(QColor( 64, 64, 64));
     }
 
-    ui->header_leds->scaleMainButton(ui->atcmButton_BA);
+    modulor->scaleMainButton(ui->atcmButton_BA);
     if (PLC_BA_exists) {
         ui->atcmButton_BA->setEnabled(true);
         ui->atcmButton_BA->setBorderColor(QColor(128,  0,255));
@@ -150,24 +151,12 @@ void page010::updateWidgets()
         );
 
     if (PLC_BA_BlackoutDetected || PLC_EP_BlackoutDetected) { // NB: no || PLC_EP_OverloadDetected
-        ui->pushButton_mute->setVisible(true);
+        ui->atcmButton_mute->setEnabled(true);
     } else {
-        ui->pushButton_mute->setVisible(false);
-        if (ui->pushButton_mute->isChecked()) {
-            ui->pushButton_mute->setChecked(false);
-        }
+        ui->atcmButton_mute->setEnabled(false);
         if (PLC_mute_BlackoutDetected) {
             doWrite_PLC_mute_BlackoutDetected(0);
         }
-    }
-}
-
-void page010::on_pushButton_mute_toggled(bool checked)
-{
-    if (checked) {
-        doWrite_PLC_mute_BlackoutDetected(1);
-    } else {
-        doWrite_PLC_mute_BlackoutDetected(0);
     }
 }
 

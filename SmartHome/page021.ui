@@ -248,8 +248,8 @@ background-color: rgb(85, 170, 0);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Next.png</normaloff>:/systemicons/Next.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Next.png</normaloff>:/icons/icons/Next.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -1063,7 +1063,6 @@ color: rgb(255, 170, 0);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>

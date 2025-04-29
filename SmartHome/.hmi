@@ -4,6 +4,7 @@ INPUT(
 ./automation.o
 ./headerleds.o
 ./headerpanel.o
+./modulor.o
 ./page010.o
 ./page011.o
 ./page012.o

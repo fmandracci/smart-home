@@ -40,21 +40,21 @@ void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char 
 {
     ui->header_leds->changeWidgets();
 
-    ui->header_leds->scaleButton(ui->pushButton_mute);
-    ui->header_leds->scaleButton(ui->pushButton_trend);
+    modulor->scaleButton(ui->atcmButton_mute);
+    modulor->scaleButton(ui->pushButton_trend);
 
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
-    ui->pushButton_time->setMaximumHeight(ui->header_leds->timeHeight_px());
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
+    ui->pushButton_time->setMaximumHeight(modulor->timeHeight_px());
 
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(ui->header_leds->titleFont_px()));
-    ui->label_title->setMaximumHeight(ui->header_leds->titleHeight_px());
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
+    ui->label_title->setMaximumHeight(modulor->titleHeight_px());
 
-    ui->header_leds->scaleIconLabel(ui->label_icon);
-    ui->header_leds->scaleButton(ui->atcmButton_back);
+    modulor->scaleIconLabel(ui->label_icon);
+    modulor->scaleButton(ui->atcmButton_back);
 
-    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(ui->header_leds->timeFont_px()));
-    ui->atcmButton_home->setMaximumWidth(ui->header_leds->ledsWidth_px());
-    ui->atcmButton_home->setMaximumHeight(ui->header_leds->ledsHeight_px());
+    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
+    ui->atcmButton_home->setMaximumWidth(modulor->ledsWidth_px());
+    ui->atcmButton_home->setMaximumHeight(modulor->ledsHeight_px());
 
     if (trend)
         HeaderPanel::trend = trend;
@@ -84,24 +84,12 @@ void HeaderPanel::updateWidgets(const QString datetime)
         ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
 
     if (PLC_BA_BlackoutDetected || PLC_EP_BlackoutDetected) { // NB: no || PLC_EP_OverloadDetected
-        ui->pushButton_mute->setVisible(true);
+        ui->atcmButton_mute->setEnabled(true);
     } else {
-        ui->pushButton_mute->setVisible(false);
-        if (ui->pushButton_mute->isChecked()) {
-            ui->pushButton_mute->setChecked(false);
-        }
+        ui->atcmButton_mute->setEnabled(false);
         if (PLC_mute_BlackoutDetected) {
             doWrite_PLC_mute_BlackoutDetected(0);
         }
-    }
-}
-
-void HeaderPanel::on_pushButton_mute_toggled(bool checked)
-{
-    if (checked) {
-        doWrite_PLC_mute_BlackoutDetected(1);
-    } else {
-        doWrite_PLC_mute_BlackoutDetected(0);
     }
 }
 
@@ -109,54 +97,6 @@ bool HeaderPanel::goto_page(const char *page, bool remember)
 {
     emit newPage(page, remember);
     return true;
-}
-
-int HeaderPanel::ledSize_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->ledSize_px();
-    else
-        return 0;
-}
-
-int HeaderPanel::ledsWidth_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->ledsWidth_px();
-    else
-        return 0;
-}
-
-int HeaderPanel::ledsHeight_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->ledsHeight_px();
-    else
-        return 0;
-}
-
-int HeaderPanel::titleFont_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->titleFont_px();
-    else
-        return 0;
-}
-
-int HeaderPanel::tinyFont_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->tinyFont_px();
-    else
-        return 0;
-}
-
-int HeaderPanel::tinytinyFont_px()
-{
-    if (ui and ui->header_leds)
-        return ui->header_leds->tinytinyFont_px();
-    else
-        return 0;
 }
 
 HeaderPanel::~HeaderPanel()

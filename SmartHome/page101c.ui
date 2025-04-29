@@ -552,8 +552,8 @@ border: 1px solid rgb(255, 255, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Previous.png</normaloff>:/systemicons/Previous.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Previous.png</normaloff>:/icons/icons/Previous.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -654,8 +654,8 @@ border: 1px solid rgb(255, 255, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="systemicons.qrc">
-         <normaloff>:/systemicons/Next.png</normaloff>:/systemicons/Next.png</iconset>
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/icons/Next.png</normaloff>:/icons/icons/Next.png</iconset>
        </property>
        <property name="borderWidth">
         <number>0</number>
@@ -985,7 +985,6 @@ ss</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="systemicons.qrc"/>
   <include location="resources.qrc"/>
  </resources>
  <connections>
