@@ -32,7 +32,9 @@
 
 page300::page300(QWidget *parent) :
     page(parent),
-    ui(new Ui::page300)
+    ui(new Ui::page300),
+    black(0, 0, 0),
+    white(255, 255, 255)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -60,12 +62,13 @@ void page300::changeWidgets()
 
     ui->headerPanel->changeWidgets(NULL, RL_PIXMAP, NULL, "page300: EP relay");
 
+    ui->label->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(COLOR_00) + FONT_SS_B(modulor->smallFont_px()));
     if (PLC_EP_enabled_relays > 0) {
-        ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation").arg(PLC_EP_enabled_relays));
+        ui->label->setText(QString("%1 n.o. relays, with manual activation / deactivation\n").arg(PLC_EP_enabled_relays));
     } else if (PLC_EP_enabled_relays < 0) {
-        ui->label->setText(QString("%1 n.c. relays, with overload cutoff and manual rearm").arg(PLC_EP_enabled_relays));
+        ui->label->setText(QString("%1 n.c. relays, with overload cutoff and manual rearm\n").arg(PLC_EP_enabled_relays));
     } else {
-        ui->label->setText("no enabled relays");
+        ui->label->setText("no enabled relays\n");
     }
 
     ui->label_EP_relay_A->setText(home_ini.value("EP/relay_A").toString());
@@ -78,15 +81,15 @@ void page300::changeWidgets()
     ui->label_EP_relay_G->setText(home_ini.value("EP/relay_G").toString());
     ui->label_EP_relay_H->setText(home_ini.value("EP/relay_H").toString());
 
-    setupRelay(ui->pushButton_EP_relay_A, ui->label_EP_relay_A, 1);
-    setupRelay(ui->pushButton_EP_relay_B, ui->label_EP_relay_B, 2);
-    setupRelay(ui->pushButton_EP_relay_C, ui->label_EP_relay_C, 3);
-    setupRelay(ui->pushButton_EP_relay_D, ui->label_EP_relay_D, 4);
-    ui->line_1->setVisible(abs(PLC_EP_enabled_relays) >= 5);
-    setupRelay(ui->pushButton_EP_relay_E, ui->label_EP_relay_E, 5);
-    setupRelay(ui->pushButton_EP_relay_F, ui->label_EP_relay_F, 6);
-    setupRelay(ui->pushButton_EP_relay_G, ui->label_EP_relay_G, 7);
-    setupRelay(ui->pushButton_EP_relay_H, ui->label_EP_relay_H, 8);
+    setupRelay(ui->pushButton_EP_relay_A, ui->label_EP_relay_A, 1, COLOR_01);
+    setupRelay(ui->pushButton_EP_relay_B, ui->label_EP_relay_B, 2, COLOR_02);
+    setupRelay(ui->pushButton_EP_relay_C, ui->label_EP_relay_C, 3, COLOR_03);
+    setupRelay(ui->pushButton_EP_relay_D, ui->label_EP_relay_D, 4, COLOR_04);
+    // ui->line_1->setVisible(abs(PLC_EP_enabled_relays) >= 5);
+    setupRelay(ui->pushButton_EP_relay_E, ui->label_EP_relay_E, 5, COLOR_05);
+    setupRelay(ui->pushButton_EP_relay_F, ui->label_EP_relay_F, 6, COLOR_06);
+    setupRelay(ui->pushButton_EP_relay_G, ui->label_EP_relay_G, 7, COLOR_07);
+    setupRelay(ui->pushButton_EP_relay_H, ui->label_EP_relay_H, 8, COLOR_08);
 }
 
 void page300::updateWidgets()
@@ -97,16 +100,23 @@ void page300::updateWidgets()
     updateRelay(ui->pushButton_EP_relay_B, 2, PLC_EP_relay_B);
     updateRelay(ui->pushButton_EP_relay_C, 3, PLC_EP_relay_C);
     updateRelay(ui->pushButton_EP_relay_D, 4, PLC_EP_relay_D);
+
     updateRelay(ui->pushButton_EP_relay_E, 5, PLC_EP_relay_E);
     updateRelay(ui->pushButton_EP_relay_F, 6, PLC_EP_relay_F);
     updateRelay(ui->pushButton_EP_relay_G, 7, PLC_EP_relay_G);
     updateRelay(ui->pushButton_EP_relay_H, 8, PLC_EP_relay_H);
 }
 
-void page300::setupRelay(QPushButton *button, QLabel *label, int n)
+void page300::setupRelay(QPushButton *button, QLabel *label, int n, QColor color)
 {
-    button->setVisible(abs(PLC_EP_enabled_relays) >= n);
+    label->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(color) + FONT_SS_B(modulor->normalFont_px()));
     label->setVisible(abs(PLC_EP_enabled_relays) >= n);
+
+    modulor->scaleDoubleButton(button);
+    // centering
+    button->setMaximumWidth(16777215);
+    button->setMaximumHeight(16777215);
+    button->setVisible(abs(PLC_EP_enabled_relays) >= n);
 }
 
 void page300::updateRelay(QPushButton *button, int n, int value)

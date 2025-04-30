@@ -58,9 +58,11 @@ private slots:
 
 private:
     Ui::page300 *ui;
+    QColor black;
+    QColor white;
     void changeWidgets();
     void updateWidgets();
-    void setupRelay(QPushButton *button, QLabel *label, int n);
+    void setupRelay(QPushButton *button, QLabel *label, int n, QColor color);
     void updateRelay(QPushButton *button, int n, int value);
 };
 
