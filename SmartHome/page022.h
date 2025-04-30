@@ -58,6 +58,7 @@ private:
     enum {IDLE = 0, RUNNING, PAUSED} status;
     QElapsedTimer timer;
     qint64 value_ms;
+    QColor cyan;
     void updateTimer();
 };
 

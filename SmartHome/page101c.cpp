@@ -33,7 +33,9 @@
 
 page101c::page101c(QWidget *parent) :
     page(parent),
-    ui(new Ui::page101c)
+    ui(new Ui::page101c),
+    gray(64, 64, 64),
+    black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -69,22 +71,20 @@ void page101c::updateData()
     page::updateData();
 
     switch (currentThermostat) {
-    case  1: updateWidgets(PLC_T1_temperature, PLC_T1_nighttime, PLC_T1_temperature_setpoint, PLC_T1_temperature_setpoint_nt, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
-    case  2: updateWidgets(PLC_T2_temperature, PLC_T2_nighttime, PLC_T2_temperature_setpoint, PLC_T2_temperature_setpoint_nt, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
-    case  3: updateWidgets(PLC_T3_temperature, PLC_T3_nighttime, PLC_T3_temperature_setpoint, PLC_T3_temperature_setpoint_nt, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
-    case  4: updateWidgets(PLC_T4_temperature, PLC_T4_nighttime, PLC_T4_temperature_setpoint, PLC_T4_temperature_setpoint_nt, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
-    case  5: updateWidgets(PLC_T5_temperature, PLC_T5_nighttime, PLC_T5_temperature_setpoint, PLC_T5_temperature_setpoint_nt, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
-    case  6: updateWidgets(PLC_T6_temperature, PLC_T6_nighttime, PLC_T6_temperature_setpoint, PLC_T6_temperature_setpoint_nt, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
-    default: updateWidgets(0                 , 0              , 0                          , 0                             , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
+    case  1: updateWidgets(PLC_T1_temperature, PLC_T1_temperature_bis,  PLC_T1_temperature_setpoint, PLC_T1_temperature_setpoint_nt, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;
+    case  2: updateWidgets(PLC_T2_temperature, PLC_T2_temperature_bis,  PLC_T2_temperature_setpoint, PLC_T2_temperature_setpoint_nt, PLC_T2_enabled_sensors, PLC_Iam_T2, PLC_T2_isOK, PLC_T2_heating_status, PLC_T2_heating_timer, PLC_T2_heating, COLOR_02); break;
+    case  3: updateWidgets(PLC_T3_temperature, PLC_T3_temperature_bis,  PLC_T3_temperature_setpoint, PLC_T3_temperature_setpoint_nt, PLC_T3_enabled_sensors, PLC_Iam_T3, PLC_T3_isOK, PLC_T3_heating_status, PLC_T3_heating_timer, PLC_T3_heating, COLOR_03); break;
+    case  4: updateWidgets(PLC_T4_temperature, PLC_T4_temperature_bis,  PLC_T4_temperature_setpoint, PLC_T4_temperature_setpoint_nt, PLC_T4_enabled_sensors, PLC_Iam_T4, PLC_T4_isOK, PLC_T4_heating_status, PLC_T4_heating_timer, PLC_T4_heating, COLOR_04); break;
+    case  5: updateWidgets(PLC_T5_temperature, PLC_T5_temperature_bis,  PLC_T5_temperature_setpoint, PLC_T5_temperature_setpoint_nt, PLC_T5_enabled_sensors, PLC_Iam_T5, PLC_T5_isOK, PLC_T5_heating_status, PLC_T5_heating_timer, PLC_T5_heating, COLOR_05); break;
+    case  6: updateWidgets(PLC_T6_temperature, PLC_T6_temperature_bis,  PLC_T6_temperature_setpoint, PLC_T6_temperature_setpoint_nt, PLC_T6_enabled_sensors, PLC_Iam_T6, PLC_T6_isOK, PLC_T6_heating_status, PLC_T6_heating_timer, PLC_T6_heating, COLOR_06); break;
+    default: updateWidgets(0                 , 0                     ,  0                          , 0                             , 0                     , 0         , 0          , 0                    , 0                   , 0             , COLOR_01);
     }
 }
 
 void page101c::changeWidgets(const QString t, const char *trend, const QString title,
-                             int Tn_temperature, bool Tn_nightime, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
+                             int Tn_temperature, int Tn_temperature_bis, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
                              int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color)
 {
-    QString offStyleSheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
-
     // header
     if (PLC_Tn_count >= 2) {
         ui->headerPanel->changeWidgets(trend, TH_PIXMAP, "page100", QString("page101c: Tn " + title).toLatin1().data());
@@ -92,52 +92,59 @@ void page101c::changeWidgets(const QString t, const char *trend, const QString t
         currentThermostat = 1;
         ui->headerPanel->changeWidgets(trend, TH_PIXMAP, NULL, QString("page101c: Tn " + title).toLatin1().data());
     }
-    ui->label_Tn->setText(t);
-    ui->label_Tn->setStyleSheet(offStyleSheet);
-    ui->label_Tn_temperature->setStyleSheet(offStyleSheet);;
+
+    fontSize_t  = modulor->largeFont_px();
+    fontSize_xx = modulor->normalFont_px();
 
     // left margin
     ui->label_heating_status->setVisible(abs(enabled_sensors) > 0);
-    ui->label_heating_status->setStyleSheet(offStyleSheet);
+    ui->label_heating_status->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(fontSize_t));
+    ui->label_heating_status->setMaximumWidth(modulor->tripleSize_px());
+
     ui->label_heating_timer->setVisible(abs(enabled_sensors) > 0);
-    ui->label_heating_timer->setStyleSheet(offStyleSheet);
-    ui->atcmButton_prev->setFontColor(color);
+    ui->label_heating_timer->setStyleSheet(                    COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+    ui->label_heating_timer->setMaximumWidth(modulor->tripleSize_px());
+
+    modulor->scaleTripleButton(ui->atcmButton_prev);
 
     // right margin
-    ui->atcmButton_next->setFontColor(color);
+    ui->label_Tn->setText(t);
+    ui->label_Tn->setStyleSheet(                               COLOR_SS(color) +                    FONT_SS_B(modulor->LARGEFont_px()));
+    ui->label_Tn->setMaximumWidth(modulor->tripleSize_px());
+
+    modulor->scaleTripleButton(ui->atcmButton_next);
 
     // footer
     ui->atcmButton_down->setEnabled(enabled_sensors < 0 and Iam_Tn);
 
     // center grid
+    if (abs(enabled_sensors) >= 1) {
+        ui->label_Tn_temperature->setVisible(true);
+        ui->label_Tn_temperature->setStyleSheet(                COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+    } else {
+        ui->label_Tn_temperature->setVisible(false);
+    }
+    if (abs(enabled_sensors) >= 2) {
+        ui->label_Tn_temperature_bis->setVisible(true);
+        ui->label_Tn_temperature_bis->setStyleSheet(                COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+    } else {
+        ui->label_Tn_temperature_bis->setVisible(false);
+    }
+    ui->label_Tn_temperature_sp->setStyleSheet(                 COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+    ui->label_Tn_temperature_sp_nt->setStyleSheet(              COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
 
-    updateWidgets(Tn_temperature, Tn_nightime, Tn_temperature_setpoint, Tn_temperature_setpoint_nt,
+    updateWidgets(Tn_temperature, Tn_temperature_bis, Tn_temperature_setpoint, Tn_temperature_setpoint_nt,
                   enabled_sensors, Iam_Tn, Tn_isOK, Tn_heating_status, Tn_heating_timer, Tn_heating, color);
 }
 
-void page101c::updateWidgets(int Tn_temperature, bool Tn_nightime, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
+void page101c::updateWidgets(int Tn_temperature, int Tn_temperature_bis, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
                              int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color)
 {
-    QString offStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
-    QString onStylesheet = QString("background-color: rgb(%1, %2, %3); color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
-
-    QString disabledBorderStylesheet = QString("color: rgb(64, 64, 64); background-color: rgb(0, 0, 0); border: 1px solid rgb(64, 64, 64);");
-    QString inactiveBorderStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0); border: 1px solid rgb(%1, %2, %3);").arg(color.red()).arg(color.green()).arg(color.blue());
-    QString activeBorderStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0); border: 3px solid rgb(255, 255, 255);").arg(color.red()).arg(color.green()).arg(color.blue());
+    QString disabledBorderStylesheet = QString(BG_COLOR_SS(black) + COLOR_SS(gray) + BORDER_SS(gray) + FONT_SS_B(fontSize_t));
+    QString inactiveBorderStylesheet = QString(BG_COLOR_SS(black) + COLOR_SS(color) + BORDER_SS(color) + FONT_SS_B(fontSize_t));
+    QString activeBorderStylesheet = QString(BG_COLOR_SS(black) + COLOR_SS(color) + BORDER3_SS(color) + FONT_SS_B(fontSize_t));
 
     ui->headerPanel->updateWidgets();
-
-    QString tStr = Tn_temperature > TemperatureError ? QString("%1").arg(Tn_temperature / 10.0, 3, 'f', 1) : LABEL_NULL_T;
-    QString tspStr;
-
-    if (Tn_nightime) {
-        tspStr = QString("%1").arg(Tn_temperature_setpoint_nt / 10.0, 3, 'f', 1);
-    } else {
-        tspStr = QString("%1").arg(Tn_temperature_setpoint / 10.0, 3, 'f', 1);
-    }
-    ui->label_Tn_temperature->setText(QString("%1%2\n%3 %4%5")
-                                         .arg(tStr).arg(LABEL_CELSIUS)
-                                         .arg(LABEL_TRIANGLE).arg(tspStr).arg(LABEL_CELSIUS));
 
     // left margin
     if (Iam_Tn or Tn_isOK) {
@@ -145,7 +152,10 @@ void page101c::updateWidgets(int Tn_temperature, bool Tn_nightime, int Tn_temper
         ui->label_heating_timer->setVisible(abs(enabled_sensors) >= 1);
         if (abs(enabled_sensors) >= 1) {
             ui->label_heating_status->setText(heating_name(Tn_heating_status));
-            ui->label_heating_status->setStyleSheet(Tn_heating ? onStylesheet : offStylesheet);
+            if (Tn_heating)
+                ui->label_heating_status->setStyleSheet(BG_COLOR_SS(color) + COLOR_SS(black) + FONT_SS_B(fontSize_xx));
+            else
+                ui->label_heating_status->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(color) + FONT_SS_B(fontSize_xx));
             if (Tn_heating_status > HEATING_AUTO) {
                 ui->label_heating_timer->setText(QTime().addSecs(Tn_heating_timer).toString("HH:mm\nss"));
             } else {
@@ -154,7 +164,7 @@ void page101c::updateWidgets(int Tn_temperature, bool Tn_nightime, int Tn_temper
         }
     } else {
         ui->label_heating_status->setText(heating_name(-1)); // LABEL_MISSING);
-        ui->label_heating_status->setStyleSheet(offStylesheet);
+        ui->label_heating_status->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(color) + FONT_SS_B(fontSize_xx));
         ui->label_heating_timer->setText("");
         ui->label_heating_status->setVisible(true);
         ui->label_heating_timer->setVisible(true);
@@ -165,6 +175,19 @@ void page101c::updateWidgets(int Tn_temperature, bool Tn_nightime, int Tn_temper
     // footer
 
     // center grid
+    if (Tn_temperature > TemperatureError)
+        ui->label_Tn_temperature->setText(QString("%1%2").arg(Tn_temperature     / 10.0, 3, 'f', 1).arg(LABEL_CELSIUS));
+    else
+        ui->label_Tn_temperature->setText(QString("%1%2").arg(LABEL_NULL_T).arg(LABEL_CELSIUS));
+    if (Tn_temperature_bis > TemperatureError)
+        ui->label_Tn_temperature_bis->setText(QString("%1%2").arg(Tn_temperature_bis / 10.0, 3, 'f', 1).arg(LABEL_CELSIUS));
+    else
+        ui->label_Tn_temperature_bis->setText(QString("%1%2").arg(LABEL_NULL_T).arg(LABEL_CELSIUS));
+
+    ui->label_Tn_temperature_bis->setText(  QString("%1%2").arg(Tn_temperature_bis / 10.0, 3, 'f', 1).arg(LABEL_CELSIUS));
+    ui->label_Tn_temperature_sp->setText(   QString("%1 %2%3").arg(LABEL_TRIANGLE).arg(Tn_temperature_setpoint    / 10.0, 3, 'f', 1).arg(LABEL_CELSIUS));
+    ui->label_Tn_temperature_sp_nt->setText(QString("%1 %2%3").arg(LABEL_TRIANGLE).arg(Tn_temperature_setpoint_nt / 10.0, 3, 'f', 1).arg(LABEL_CELSIUS));
+
     ui->pushButton_off->setStyleSheet((Tn_heating_status == HEATING_OFF) ? activeBorderStylesheet : inactiveBorderStylesheet);
     ui->pushButton_ON->setStyleSheet((Tn_heating_status == HEATING_AUTO) ? activeBorderStylesheet : inactiveBorderStylesheet);
 

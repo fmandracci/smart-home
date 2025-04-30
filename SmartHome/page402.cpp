@@ -32,7 +32,8 @@
 
 page402::page402(QWidget *parent) :
     page(parent),
-    ui(new Ui::page402)
+    ui(new Ui::page402),
+    black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -78,25 +79,33 @@ void page402::changeWidgets(const char *trend, const QString t, const QString W,
 {
     QString colorStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
 
-    ui->headerPanel->changeWidgets(trend, EP_PIXMAP, "page401", QString("page402: EP W " + t).toLatin1().data());
+    ui->headerPanel->changeWidgets(trend, EP_PIXMAP, "page400", QString("page402: EP W " + t).toLatin1().data());
 
     // left
+    modulor->scaleTripleButton(ui->atcmButton_prev);
+
+    // right
     ui->label_wattmeterN->setText(t);
-    ui->label_wattmeterN->setStyleSheet(colorStylesheet);
-    ui->atcmButton_next->setFontColor(color);
+    ui->label_wattmeterN->setStyleSheet(QString(COLOR_SS(color) + FONT_SS_B(modulor->LARGEFont_px())));
+    ui->label_wattmeterN->setMaximumWidth(modulor->tripleSize_px());
+
+    modulor->scaleTripleButton(ui->atcmButton_next);
 
     // center
     ui->atcmGraph->setY1Variable(W);
     ui->atcmGraph->setY2Variable(M_W);
     ui->atcmGraph->setY1Label("W");
     ui->atcmGraph->setY2Label("W");
-    ui->atcmGraph->setStyleSheet(colorStylesheet);
+    ui->atcmGraph->setStyleSheet(QString(BG_COLOR_SS(black) + COLOR_SS(color)));
     ui->atcmGraph->setToolTip("");
 
     // bottom
     ui->atcmLabel_W->setVariable(W);
     ui->atcmLabel_W->setPrefix(t + " ");
+    ui->atcmLabel_W->setStyleSheet(QString(FONT_SS_B(modulor->smallFont_px())));
+
     ui->atcmLabel_M_W->setVariable(M_W);
+    ui->atcmLabel_M_W->setStyleSheet(QString(FONT_SS_B(modulor->smallFont_px())));
 }
 
 void page402::changeEvent(QEvent * event)

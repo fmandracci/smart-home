@@ -72,7 +72,7 @@ void page012::changeWidgets()
                              "%3"
                              "}\n").arg(modulor->ledSize_px() / 2)
                                    .arg(2 * modulor->ledSize_px())
-                                   .arg(FONT_SS_B(modulor->titleFont_px()));
+                                   .arg(FONT_SS_B(modulor->normalFont_px()));
     QString tabss2 = QString("QTabBar::tab:selected"
                              "{"
                              "color: rgb(0, 0, 0);"
@@ -83,7 +83,7 @@ void page012::changeWidgets()
                              "{"
                              "color: rgb(255, 255, 255);"
                              "}\n");
-    QString atcmss = QString("ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->titleFont_px()));
+    QString atcmss = QString("ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
 
     this->setStyleSheet(pagess + tabss1 + tabss2 + tabss3 + atcmss);
 }

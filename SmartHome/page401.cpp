@@ -73,59 +73,60 @@ void page401::changeWidgets(int n, const QString t, const char *trend, const QSt
                             const QString W, const QString var, const QString VA,
                             const QString kWh)
 {
-    QString colorStylesheet = QString("color: rgb(%1, %2, %3);").arg(color.red()).arg(color.green()).arg(color.blue());
-
     // name
     ui->headerPanel->changeWidgets(trend, EP_PIXMAP, "page400", QString("page401: EP W: " + name).toLatin1().data());
 
     // left
-    ui->atcmButton_prev->setFontColor(color);
 
     // right
     ui->label_wattmeterN->setText(t);
-    ui->label_wattmeterN->setStyleSheet(colorStylesheet);
-    ui->atcmButton_next->setFontColor(color);
+    ui->label_wattmeterN->setStyleSheet(QString(COLOR_SS(color) + FONT_SS_B(modulor->LARGEFont_px())));
+    ui->label_wattmeterN->setMaximumWidth(modulor->tripleSize_px());
+
+    modulor->scaleTripleButton(ui->atcmButton_next);
 
     // center
     ui->atcmLabel_EP_wattmeterN_W->setVariable(W);
+    ui->atcmLabel_EP_wattmeterN_W->setStyleSheet(QString(FONT_SS_B(modulor->LargeFont_px())));
     ui->atcmLabel_EP_wattmeterN_W->setFontColor(color);
     ui->atcmLabel_EP_wattmeterN_W->setBorderColor(color);
 
     ui->atcmLabel_EP_wattmeterN_var->setVariable(var);
+    ui->atcmLabel_EP_wattmeterN_var->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
     ui->atcmLabel_EP_wattmeterN_var->setFontColor(color);
 
+    ui->atcmLabel_EP_wattmeterN_A->setFontColor(color);
+    ui->atcmLabel_EP_wattmeterN_A->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
+    ui->atcmLabel_EP_wattmeterN_A_1->setFontColor(color);
+    ui->atcmLabel_EP_wattmeterN_A_1->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
+    ui->atcmLabel_EP_wattmeterN_A_2->setFontColor(color);
+    ui->atcmLabel_EP_wattmeterN_A_2->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
+    ui->atcmLabel_EP_wattmeterN_A_3->setFontColor(color);
+    ui->atcmLabel_EP_wattmeterN_A_3->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
     if (n == 1) {
         ui->atcmLabel_EP_wattmeterN_A->setVariable("PLC_EP_wattmeter_M_A");
-        ui->atcmLabel_EP_wattmeterN_A->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_1->setVariable("PLC_EP_wattmeter_M_1_A");
-        ui->atcmLabel_EP_wattmeterN_A_1->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_1->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_2->setVariable("PLC_EP_wattmeter_M_2_A");
-        ui->atcmLabel_EP_wattmeterN_A_2->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_2->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_3->setVariable("PLC_EP_wattmeter_M_3_A");
-        ui->atcmLabel_EP_wattmeterN_A_3->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_3->setVisible(true);
 
     } else if (n == 2) {
         ui->atcmLabel_EP_wattmeterN_A->setVariable("PLC_EP_wattmeter_F_A");
-        ui->atcmLabel_EP_wattmeterN_A->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_1->setVariable("PLC_EP_wattmeter_F_1_A");
-        ui->atcmLabel_EP_wattmeterN_A_1->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_1->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_2->setVariable("PLC_EP_wattmeter_F_2_A");
-        ui->atcmLabel_EP_wattmeterN_A_2->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_2->setVisible(true);
 
         ui->atcmLabel_EP_wattmeterN_A_3->setVariable("PLC_EP_wattmeter_F_3_A");
-        ui->atcmLabel_EP_wattmeterN_A_3->setFontColor(color);
         ui->atcmLabel_EP_wattmeterN_A_3->setVisible(true);
 
     } else {
@@ -136,21 +137,22 @@ void page401::changeWidgets(int n, const QString t, const char *trend, const QSt
     }
 
     ui->atcmLabel_EP_wattmeterN_VA->setVariable(VA);
+    ui->atcmLabel_EP_wattmeterN_VA->setStyleSheet(QString(FONT_SS_B(modulor->normalFont_px())));
     ui->atcmLabel_EP_wattmeterN_VA->setFontColor(color);
 
     ui->atcmLabel_EP_wattmeterN_kWh->setVariable(kWh);
+    ui->atcmLabel_EP_wattmeterN_kWh->setStyleSheet(QString(FONT_SS_B(modulor->largeFont_px())));
     ui->atcmLabel_EP_wattmeterN_kWh->setFontColor(color);
     ui->atcmLabel_EP_wattmeterN_kWh->setBorderColor(color);
 
+    ui->atcmLabel_EP_wattmeterN_e_kWh->setStyleSheet(QString(FONT_SS_B(modulor->largeFont_px())));
+    ui->atcmLabel_EP_wattmeterN_e_kWh->setFontColor(color);
+    ui->atcmLabel_EP_wattmeterN_e_kWh->setBorderColor(color);
     if (n == 1) {
         ui->atcmLabel_EP_wattmeterN_e_kWh->setVariable("PLC_EP_wattmeter_M_e_kWh");
-        ui->atcmLabel_EP_wattmeterN_e_kWh->setFontColor(color);
-        ui->atcmLabel_EP_wattmeterN_e_kWh->setBorderColor(color);
         ui->atcmLabel_EP_wattmeterN_e_kWh->setVisible(true);
     } else if (n == 2) {
         ui->atcmLabel_EP_wattmeterN_e_kWh->setVariable("PLC_EP_wattmeter_F_e_kWh");
-        ui->atcmLabel_EP_wattmeterN_e_kWh->setFontColor(color);
-        ui->atcmLabel_EP_wattmeterN_e_kWh->setBorderColor(color);
         ui->atcmLabel_EP_wattmeterN_e_kWh->setVisible(true);
     } else {
         ui->atcmLabel_EP_wattmeterN_e_kWh->setVisible(false);

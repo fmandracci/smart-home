@@ -144,7 +144,7 @@ background-color: rgb(85, 170, 0);
       </widget>
      </item>
      <item row="0" column="4" rowspan="5">
-      <widget class="ATCMbutton" name="atcmButtonReset_3">
+      <widget class="ATCMbutton" name="atcmButton_next">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -1067,7 +1067,7 @@ color: rgb(255, 170, 0);</string>
  </resources>
  <connections>
   <connection>
-   <sender>atcmButtonReset_3</sender>
+   <sender>atcmButton_next</sender>
    <signal>newPage(const char*,bool)</signal>
    <receiver>page021</receiver>
    <slot>goto_page(const char*,bool)</slot>

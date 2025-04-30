@@ -40,21 +40,21 @@ void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char 
 {
     ui->header_leds->changeWidgets();
 
-    modulor->scaleButton(ui->atcmButton_mute);
-    modulor->scaleButton(ui->pushButton_trend);
+    modulor->scaleDoubleButton(ui->atcmButton_mute);
+    modulor->scaleDoubleButton(ui->pushButton_trend);
 
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
-    ui->pushButton_time->setMaximumHeight(modulor->timeHeight_px());
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->LARGEFont_px()));
+    ui->pushButton_time->setMaximumHeight(modulor->tripleSize_px());
 
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
-    ui->label_title->setMaximumHeight(modulor->titleHeight_px());
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->normalFont_px()));
+    ui->label_title->setMaximumHeight(modulor->quadrupleSize_px());
 
     modulor->scaleIconLabel(ui->label_icon);
-    modulor->scaleButton(ui->atcmButton_back);
+    modulor->scaleDoubleButton(ui->atcmButton_back);
 
-    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
-    ui->atcmButton_home->setMaximumWidth(modulor->ledsWidth_px());
-    ui->atcmButton_home->setMaximumHeight(modulor->ledsHeight_px());
+    ui->atcmButton_home->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->LARGEFont_px()));
+    ui->atcmButton_home->setMaximumWidth(modulor->tripleSize_px());
+    ui->atcmButton_home->setMaximumHeight(modulor->quadrupleSize_px());
 
     if (trend)
         HeaderPanel::trend = trend;

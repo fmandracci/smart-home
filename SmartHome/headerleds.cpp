@@ -13,11 +13,11 @@ HeaderLeds::HeaderLeds(QWidget *parent) :
 
 void HeaderLeds::changeWidgets()
 {
-    this->setMinimumWidth(modulor->ledsWidth_px());
-    this->setMaximumWidth(modulor->ledsWidth_px());
+    this->setMinimumWidth(modulor->tripleSize_px());
+    this->setMaximumWidth(modulor->tripleSize_px());
 
-    this->setMinimumHeight(modulor->ledsHeight_px());
-    this->setMaximumHeight(modulor->ledsHeight_px());
+    this->setMinimumHeight(modulor->quadrupleSize_px());
+    this->setMaximumHeight(modulor->quadrupleSize_px());
 
     // implicit:
     // ui->label_XX->setMaximumWidth(modulor->ledSize_px());

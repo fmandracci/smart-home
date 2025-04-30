@@ -36,7 +36,8 @@ page200::page200(QWidget *parent) :
     LampOffIcon(QPixmap(":/icons/icons/Lamp.png")),
     LampPressIcon(QPixmap(":/icons/icons/LampGreen.png")),
     LampOnIcon(QPixmap(":/icons/icons/LampOn.png")),
-    LampWarningIcon(QPixmap(":/systemicons/Error.png"))
+    LampWarningIcon(QPixmap(":/systemicons/Error.png")),
+    black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -104,18 +105,18 @@ void page200::changeLamps(int t, const QColor color, const QString name,
                           QLabel *label_t_1, QLabel *label_t_2, QLabel *label_t_3, QLabel *label_t_4, QLabel *label_t_5,
                           const QString name_t_1, const QString name_t_2, const QString name_t_3, const QString name_t_4, const QString name_t_5)
 {
-    QString offStyleSheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
+    QString color_ss = QString(BG_COLOR_SS(black) + COLOR_SS(color));
 
     if (t <= PLC_Tn_count and enabled_lamps_t > 0) {
         label_n->setText(name);
-        label_n->setStyleSheet(offStyleSheet);
+        label_n->setStyleSheet(color_ss + FONT_SS_B(modulor->normalFont_px()));
         label_n->setVisible(true);
 
-        changeLamp(t, offStyleSheet, enabled_lamps_t, 1, button_t_1, label_t_1, name_t_1);
-        changeLamp(t, offStyleSheet, enabled_lamps_t, 2, button_t_2, label_t_2, name_t_2);
-        changeLamp(t, offStyleSheet, enabled_lamps_t, 3, button_t_3, label_t_3, name_t_3);
-        changeLamp(t, offStyleSheet, enabled_lamps_t, 4, button_t_4, label_t_4, name_t_4);
-        changeLamp(t, offStyleSheet, enabled_lamps_t, 5, button_t_5, label_t_5, name_t_5);
+        changeLamp(t, color_ss, enabled_lamps_t, 1, button_t_1, label_t_1, name_t_1);
+        changeLamp(t, color_ss, enabled_lamps_t, 2, button_t_2, label_t_2, name_t_2);
+        changeLamp(t, color_ss, enabled_lamps_t, 3, button_t_3, label_t_3, name_t_3);
+        changeLamp(t, color_ss, enabled_lamps_t, 4, button_t_4, label_t_4, name_t_4);
+        changeLamp(t, color_ss, enabled_lamps_t, 5, button_t_5, label_t_5, name_t_5);
 
     } else {
         label_n->setVisible(false);
@@ -132,11 +133,11 @@ void page200::changeLamps(int t, const QColor color, const QString name,
     }
 }
 
-void page200::changeLamp(int t, const QString colorSS, int enabled_lamps_t, int n, QPushButton *button_t_n, QLabel *label_t_n, const QString name_t_n)
+void page200::changeLamp(int t, const QString color_ss, int enabled_lamps_t, int n, QPushButton *button_t_n, QLabel *label_t_n, const QString name_t_n)
 {
     if (t <= PLC_Tn_count and n <= enabled_lamps_t) {
         button_t_n->setVisible(true);
-        label_t_n->setStyleSheet(colorSS);
+        label_t_n->setStyleSheet(color_ss + FONT_SS_N(modulor->smallFont_px()));
         label_t_n->setText(name_t_n);
         label_t_n->setVisible(true);
     } else {

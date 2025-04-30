@@ -51,7 +51,7 @@ void page011::changeWidgets()
 
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, NULL, "page011 settings");
     pointSize_bt = modulor->ledSize_px();
-    pointSize_ct = modulor->titleFont_px();
+    pointSize_ct = modulor->normalFont_px();
 
     if ((PLC_PRODUCT_ID & 0xF0000000) == 0x40000000) {
         ui->atcmLabel_cpu_temp->setVisible(true);

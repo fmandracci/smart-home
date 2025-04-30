@@ -32,7 +32,8 @@
 
 page022::page022(QWidget *parent) :
     page(parent),
-    ui(new Ui::page022)
+    ui(new Ui::page022),
+    cyan(0, 255, 255)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -62,6 +63,12 @@ void page022::updateData()
 void page022::changeWidgets()
 {
     ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page022: chrono");
+
+    modulor->scaleTripleButton(ui->atcmButton_prev);
+
+    modulor->scaleQuadrupleButton(ui->atcmButton_StartPause);
+    ui->label_timer->setStyleSheet(COLOR_SS(cyan) + FONT_SS_B(modulor->LargeFont_px()));
+    modulor->scaleQuadrupleButton(ui->atcmButton_Reset);
 }
 
 void page022::updateTimer()

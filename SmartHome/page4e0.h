@@ -65,7 +65,7 @@ private:
     Ui::page4e0 *ui;
     void changeWidgets();
     void updateWidgets();
-    int pointSize();
+    int fontSize_px;
     void gotoWattmeterPage(int n) {
         currentWattmeter = n;
         goto_page("page401");

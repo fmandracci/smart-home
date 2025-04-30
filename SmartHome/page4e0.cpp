@@ -36,6 +36,7 @@ page4e0::page4e0(QWidget *parent) :
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    fontSize_px = modulor->normalFont_px();
 }
 
 void page4e0::reload()
@@ -56,24 +57,12 @@ void page4e0::updateData()
 void page4e0::changeWidgets()
 {
     ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page4e0: EP kWh");
-}
 
-int page4e0::pointSize()
-{
-    int retval;
-
-    if (mectScreenWidth >= 800) {
-        retval = 14;
-    } else {
-        retval = 9;
-    }
-    return retval;
+    modulor->scaleTripleButton(ui->pushButton_prev);
 }
 
 void page4e0::updateWattmeter(QPushButton *pushButton_kWh, const QString label, int n, int value_kWh, const QColor color)
 {
-    int ps = pointSize();
-
     if (PLC_EP_enabled_wattmeters >= n) {
         if (PLC_EP_wattmeters_ok & (1 << (n - 1))) {
             pushButton_kWh->setText(QString("%1 %2 kWh").arg(label).arg(value_kWh/10.0, 9, 'f', 1));
@@ -81,9 +70,9 @@ void page4e0::updateWattmeter(QPushButton *pushButton_kWh, const QString label, 
             pushButton_kWh->setText(QString("%1 %2%3 kWh").arg(label).arg(LABEL_WARNING).arg(LABEL_NULL_kWh));
         }
         if (n == 1) {
-            pushButton_kWh->setStyleSheet(COLOR_SS(color) + FONT_SS_B(ps) + BORDER_SS(color));
+            pushButton_kWh->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_px) + BORDER_SS(color));
         } else {
-            pushButton_kWh->setStyleSheet(COLOR_SS(color) + FONT_SS_N(ps) + BORDER_SS(color));
+            pushButton_kWh->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_px) + BORDER_SS(color));
         }
         pushButton_kWh->setVisible(true);
     } else {

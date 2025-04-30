@@ -38,20 +38,11 @@ page400::page400(QWidget *parent) :
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
     connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
-    pointSize = 9;
+    fontSize_px = modulor->normalFont_px();
 }
 
 void page400::reload()
 {
-#ifdef Q_WS_QWS
-    if (mectScreenWidth >= 800) {
-        pointSize = 14;
-    } else {
-        pointSize = 9;
-    }
-#else
-    pointSize = 14;
-#endif
     changeWidgets();
     updateWidgets();
 }
@@ -90,15 +81,17 @@ void page400::changeWidgets()
     changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_08").toByteArray()), 10, COLOR_10, ui->pushButton08_W);
     changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_09").toByteArray()), 11, COLOR_11, ui->pushButton09_W);
     changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), 12, COLOR_12, ui->pushButton10_W);
+
+    modulor->scaleTripleButton(ui->pushButton_next);
 }
 
 void page400::changeWattmeterCommon(QLabel *label_max_assigned_W, QLabel *label_overload_W, QLabel *label_V, QLabel *label_Hz)
 {
     if (PLC_EP_enabled_wattmeters >= 1) {
-        label_max_assigned_W->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(pointSize));
-        label_overload_W->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(pointSize));
-        label_V->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(pointSize));
-        label_Hz->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(pointSize));
+        label_max_assigned_W->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(fontSize_px));
+        label_overload_W->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(fontSize_px));
+        label_V->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(fontSize_px));
+        label_Hz->setStyleSheet(COLOR_SS(COLOR_01) + FONT_SS_N(fontSize_px));
 
         label_max_assigned_W->setVisible(true);
         label_overload_W->setVisible(true);
@@ -117,9 +110,9 @@ void page400::changeWattmeterFull(QString label, int n, const QColor color,
 {
     changeWattmeter(label, n, color, pushButton_W);
     if (PLC_EP_enabled_wattmeters >= n) {
-        label_pf->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize));
-        label_var->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize));
-        label_VA->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize));
+        label_pf->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_px));
+        label_var->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_px));
+        label_VA->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_px));
 
         label_pf->setVisible(true);
         label_var->setVisible(true);
@@ -135,9 +128,9 @@ void page400::changeWattmeter(const QString label, int n, const QColor color, QP
 {
     if (PLC_EP_enabled_wattmeters >= n) {
         if (n <= 2) {
-            pushButton_W->setStyleSheet(COLOR_SS(color) + FONT_SS_B(pointSize) + BORDER_SS(color));
+            pushButton_W->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_px) + BORDER_SS(color));
         } else {
-            pushButton_W->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize) + BORDER_SS(color));
+            pushButton_W->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_px) + BORDER_SS(color));
         }
         pushButton_W->setText(QString("%1\n%2 W").arg(label).arg(LABEL_NULL_W));
         pushButton_W->setVisible(true);
