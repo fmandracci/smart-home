@@ -9953,47 +9953,47 @@ ss</source>
 <context>
     <name>page300</name>
     <message>
-        <location filename="page300.ui" line="93"/>
+        <location filename="page300.ui" line="313"/>
         <source>n n.c. relays, with overload cutoff and manual rearm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="425"/>
+        <location filename="page300.ui" line="715"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="227"/>
+        <location filename="page300.ui" line="675"/>
         <source>F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="465"/>
+        <location filename="page300.ui" line="347"/>
         <source>H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="505"/>
+        <location filename="page300.ui" line="509"/>
         <source>E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="714"/>
+        <location filename="page300.ui" line="156"/>
         <source>G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="267"/>
+        <location filename="page300.ui" line="755"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="307"/>
+        <location filename="page300.ui" line="387"/>
         <source>D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page300.ui" line="148"/>
+        <location filename="page300.ui" line="469"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
