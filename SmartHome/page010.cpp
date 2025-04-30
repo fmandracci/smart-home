@@ -56,19 +56,19 @@ void page010::changeWidgets()
 {
     ui->header_leds->changeWidgets();
 
-    // ui->header_leds->setMaximumWidth(8 * modulor->titleFont_px()); //modulor->ledsWidth_px());
-    modulor->scaleButton(ui->atcmButton_mute);
+    modulor->scaleTripleButton(ui->atcmButton_mute);
 
-    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->timeFont_px()));
-    ui->pushButton_time->setMaximumHeight(modulor->timeHeight_px());
+    ui->pushButton_time->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_B(modulor->LARGEFont_px()));
+    ui->pushButton_time->setMaximumHeight(modulor->tripleSize_px());
 
-    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
-    ui->label_title->setMaximumHeight(modulor->titleHeight_px());
+    ui->label_title->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->normalFont_px()));
+    ui->label_title->setMaximumHeight(modulor->quadrupleSize_px());
 
-    modulor->scaleButton(ui->pushButton_home);
+    modulor->scaleTripleButton(ui->pushButton_home);
 
-    ui->label_versions->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->titleFont_px()));
-    ui->label_versions->setMaximumWidth(8 * modulor->titleFont_px()); //modulor->ledsWidth_px());
+    ui->label_versions->setStyleSheet(COLOR_SS(COLOR_HEADER) + FONT_SS_N(modulor->smallFont_px()));
+    ui->label_versions->setMinimumWidth(modulor->tripleSize_px());
+    ui->label_versions->setMaximumWidth(modulor->tripleSize_px());
 
     if (PLC_ConfigPassword) {
         ui->atcmButton_settings->setPasswordVar("PLC_ConfigPassword");

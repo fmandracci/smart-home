@@ -64,10 +64,14 @@ private slots:
 private:
     Ui::page101c *ui;
     void changeWidgets(const QString t, const char *trend, const QString title,
-                       int Tn_temperature, bool Tn_nightime, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
+                       int Tn_temperature, int Tn_temperature_bis, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
                        int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color);
-    void updateWidgets(int Tn_temperature, bool Tn_nightime, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
+    void updateWidgets(int Tn_temperature, int Tn_temperature_bis, int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
                        int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color);
+    const QColor gray;
+    const QColor black;
+    int fontSize_t;
+    int fontSize_xx;
     void changeStatus(int status);
     void changeTimer(int timer);
 };

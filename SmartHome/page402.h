@@ -46,6 +46,7 @@ private slots:
 private:
     Ui::page402 *ui;
     void changeWidgets(const char*trend, const QString t, const QString W, const QString M_W, const QColor color);
+    QColor black;
 };
 
 #endif // PAGE402_H

@@ -58,6 +58,9 @@ private:
     void updateWidgets(int daily_heating_s, int monthly_heating_s,
                        int Tn_temperature_setpoint, int Tn_temperature_setpoint_nt,
                        int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating,  const QColor color);
+    const QColor black;
+    int fontSize_t;
+    int fontSize_xx;
 };
 
 #endif // PAGE101A_H

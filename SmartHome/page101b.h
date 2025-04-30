@@ -79,9 +79,15 @@ private:
     void updateWidgets(int sunrise, int sunset, const QString Tlabel,
                        int Tn_temperature, int Tn_temperature_bis,
                        int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color);
-
     const int deltaT;
     const int deltaH;
+    const QColor gray;
+    const QColor white;
+    const QColor blue;
+    const QColor red;
+    const QColor black;
+    int fontSize_t;
+    int fontSize_xx;
     int checkTvalue(int value, int diff);
     int checkHvalue(int value, int diff);
     void temperature_valueAbsolute(int value);

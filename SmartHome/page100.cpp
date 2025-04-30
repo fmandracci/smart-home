@@ -84,38 +84,36 @@ void page100::changeTemperature(QLabel *label_n, QPushButton *pushButton_setpoin
     if (n <= PLC_Tn_count) {
         int zoom;
         switch (PLC_Tn_count) {
-        case 6: zoom = 100; break;
-        case 5: zoom = 116; break;
-        case 4: zoom = 133; break;
-        case 3: zoom = 150; break;
-        case 2: zoom = 166; break;
-        case 1: zoom = 183; break;
+        case 6: zoom = 110; break;
+        case 5: zoom = 120; break;
+        case 4: zoom = 130; break;
+        case 3: zoom = 140; break;
+        case 2: zoom = 150; break;
+        case 1: zoom = 160; break; // never reached --> page101a
         default: zoom = 99;
         }
-        int pointSize_n  = modulor->bodyHeight_px() / 7 * zoom / 100; // ①
-        int pointSize_sp = modulor->smallFont_px() * zoom / 100; // Set Point
-        int pointSize_s  = modulor->titleFont_px() * zoom / 100; // status
-        int pointSize_t  = modulor->titleFont_px() * zoom / 100; // xx.x°C xx.x°C
-        int pointSize_e  = modulor->titleFont_px() * zoom / 100; // xx.x°C
+        int fontSize_N  = modulor->largeFont_px() * zoom / 100; // ①
+        int fontSize_t  = modulor->normalFont_px() * zoom / 100; // status xx.x°C xx.x°C xx.x°C
+        int fontSize_sp = modulor->smallFont_px() * zoom / 100; // Set Point
 
         // label_n  ①
-        label_n->setStyleSheet(COLOR_SS(color) + FONT_SS_N(pointSize_n));
+        label_n->setStyleSheet(COLOR_SS(color) + FONT_SS_N(fontSize_N));
         label_n->setVisible(true);
 
         // pushButton_setpoint
-        pushButton_setpoint->setStyleSheet(COLOR_SS(color) + FONT_SS_B(pointSize_sp) + BORDER_SS(color));
+        pushButton_setpoint->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_sp) + BORDER_SS(color));
         pushButton_setpoint->setVisible(true);
 
         // pushButton_status "AUTO"
-        pushButton_status->setStyleSheet(COLOR_SS(color) + FONT_SS_B(pointSize_s) + BORDER_SS(color));
+        pushButton_status->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_t) + BORDER_SS(color));
         pushButton_status->setVisible(true);
 
         // pushButton xx.x°C xx.x°C
-        pushButton->setStyleSheet(COLOR_SS(color) + FONT_SS_B(pointSize_t) + BORDER_SS(color));
+        pushButton->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_t) + BORDER_SS(color));
         pushButton->setVisible(true);
 
         // label_ext  "-2.5°C"
-        label_ext->setStyleSheet(COLOR_SS(color) + FONT_SS_BI(pointSize_e));
+        label_ext->setStyleSheet(COLOR_SS(color) + FONT_SS_B(fontSize_t));
         label_ext->setVisible(true);
 
     } else {

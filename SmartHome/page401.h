@@ -44,7 +44,6 @@ public:
     
 private slots:
     void changeEvent(QEvent * event);
-    void on_pushButton_plot_clicked() { goto_page("page402"); }
 
 private:
     Ui::page401 *ui;

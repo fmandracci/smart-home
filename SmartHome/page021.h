@@ -59,6 +59,8 @@ private:
     enum {IDLE = 0, RUNNING, PAUSED, RINGING, RINGING_BIS} status_1, status_2;
     QElapsedTimer timer_1, timer_2;
     qint64 value_1_ms, value_2_ms;
+    QColor giallo;
+    QColor verde;
     void updateTimers();
     void resetTimer_1(int value);
     void resetTimer_2(int value);

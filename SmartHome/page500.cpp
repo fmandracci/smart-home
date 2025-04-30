@@ -47,15 +47,6 @@ page500::page500(QWidget *parent) :
     ui->pushButton_RINGING->setEnabled(false);
     ui->pushButton_MUTED->setEnabled(false);
     ui->pushButton_TESTING->setEnabled(false);
-
-    ui->pushButton_OFF->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_DAYTIME->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_NIGHTTIME->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_EVERYTHING->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_ENABLED->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_RINGING->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_MUTED->setStyleSheet(inactive_StyleSheet);
-    ui->pushButton_TESTING->setStyleSheet(inactive_StyleSheet);
 }
 
 void page500::reload()
@@ -77,34 +68,19 @@ void page500::updateData()
 
 void page500::changeWidgets()
 {
-    int pointSize_b;
-    int pointSize_s;
-    int pixelSize_xy;
-
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
 
     ui->headerPanel->changeWidgets(NULL, BA_PIXMAP, NULL, "page500: BA");
 
-    if (mectScreenWidth >= 1280) {
-        pointSize_b = 22;
-        pointSize_s = 14;
-        pixelSize_xy = 30;
-    } else if (mectScreenWidth >= 800) {
-        pointSize_b = 11;
-        pointSize_s =  7;
-        pixelSize_xy = 15;
-    } else {
-        pointSize_b = 11;
-        pointSize_s =  7;
-        pixelSize_xy = 15;
-    }
+    QString bf = FONT_SS_N(modulor->normalFont_px()); // STATUS/BUTTONS
 
-    QString bf = FONT_SS_N(pointSize_b); // vedi updateWidgets()
     ACTIVE_StyleSheet  = bf + "background-color: rgb(255,  85,   0); color: rgb(  0,   0,   0); border: none; font: bold;";
     Possible_StyleSheet= bf + "background-color: rgb( 85,   0,   0); color: rgb(255, 255, 255); border: none;            ";
     inactive_StyleSheet= bf + "background-color: rgb(  0,   0,   0); color: rgb( 64,  64,  64); border: none;            ";
 
-    QString sf = FONT_SS_N(pointSize_s); // vedi updateSensor()
+    QSize labelSize(modulor->normalFont_px(), modulor->normalFont_px()); // sensor leds
+    QString sf = FONT_SS_N(modulor->smallFont_px()); // sensor leds and sensor names
+
     WHITE_OVER_BLACK   = sf + "color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);";
     GREY_OVER_BLACK    = sf + "color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);";
     GREEN_OVER_BLACK   = sf + "color: rgb(  0, 255,   0); background-color: rgb(0, 0, 0);";
@@ -147,8 +123,6 @@ void page500::changeWidgets()
     ui->label_sensor_30->setStyleSheet(WHITE_OVER_BLACK);
     ui->label_sensor_31->setStyleSheet(WHITE_OVER_BLACK);
     ui->label_sensor_32->setStyleSheet(WHITE_OVER_BLACK);
-
-    QSize labelSize(pixelSize_xy, pixelSize_xy);
 
     ui->label_BA_OK_01->setStyleSheet(sf); ui->label_BA_OK_01->setMaximumSize(labelSize);
     ui->label_BA_OK_02->setStyleSheet(sf); ui->label_BA_OK_02->setMaximumSize(labelSize);

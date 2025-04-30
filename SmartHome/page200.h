@@ -88,6 +88,7 @@ private:
     const QIcon LampPressIcon;
     const QIcon LampOnIcon;
     const QIcon LampWarningIcon;
+    const QColor black;
 
     void changeWidgets();
     void changeLamps(int t, const QColor color, const QString name,

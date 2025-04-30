@@ -35,7 +35,12 @@ page101b::page101b(QWidget *parent) :
     page(parent),
     ui(new Ui::page101b),
     deltaT(5), //  0.5 °C
-    deltaH(100) // 10.0 %
+    deltaH(100), // 10.0 %
+    gray(64, 64, 64),
+    white(255, 255, 255),
+    blue(0, 0, 127),
+    red(127, 0, 0),
+    black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -88,11 +93,6 @@ void page101b::changeWidgets(int sunrise, int sunset,
                              int Tn_temperature, int Tn_temperature_bis,
                              int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color)
 {
-    const QColor gray(64, 64, 64);
-    const QColor white(255, 255, 255);
-    const QColor blue(0, 0, 127);
-    const QColor red(127, 0, 0);
-
     // header
     if (PLC_Tn_count >= 2) {
         ui->headerPanel->changeWidgets(trend, TH_PIXMAP, "page100", QString("page101b: Tn " + title).toLatin1().data());
@@ -101,66 +101,72 @@ void page101b::changeWidgets(int sunrise, int sunset,
         ui->headerPanel->changeWidgets(trend, TH_PIXMAP, NULL, QString("page101b: Tn " + title).toLatin1().data());
     }
 
-    int big_size_px = modulor->bodyHeight_px() / ((enabled_sensors < 0) ? 6 : 4) * 5 / 10; // ①;
-    int medium_size_px = modulor->titleFont_px();
-    int small_size_px = modulor->smallFont_px();
-    int tiny_size_px = modulor->tinyFont_px();
-
-    ui->label_Tn_temperature->setStyleSheet(COLOR_SS(color));
+    if (enabled_sensors < 0) {
+        // (T,H)
+        fontSize_t  = modulor->normalFont_px();
+        fontSize_xx = modulor->tinyFont_px();
+    } else {
+        // (T)
+        fontSize_t  = modulor->largeFont_px();
+        fontSize_xx = modulor->normalFont_px();
+    }
 
     // left margin
     ui->label_heating_status->setVisible(abs(enabled_sensors) > 0);
-    ui->label_heating_status->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(medium_size_px));
-    ui->label_heating_status->setMaximumWidth(modulor->ledsWidth_px());
+    ui->label_heating_status->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(fontSize_t));
+    ui->label_heating_status->setMaximumWidth(modulor->tripleSize_px());
 
     ui->label_heating_timer->setVisible(abs(enabled_sensors) > 0);
-    ui->label_heating_timer->setStyleSheet(                    COLOR_SS(color) +                    FONT_SS_B(small_size_px));
-    ui->label_heating_timer->setMaximumWidth(modulor->ledsWidth_px());
+    ui->label_heating_timer->setStyleSheet(                    COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+    ui->label_heating_timer->setMaximumWidth(modulor->tripleSize_px());
 
     ui->atcmButton_set_T_everywhere->setFontColor(color);
 
     // right margin
     ui->label_Tn->setText(Tlabel);
-    ui->label_Tn->setStyleSheet(COLOR_SS(color) + FONT_SS_B(big_size_px));
-    ui->label_Tn->setMaximumWidth(modulor->ledsWidth_px());
+    ui->label_Tn->setStyleSheet(                               COLOR_SS(color) +                    FONT_SS_B(modulor->LARGEFont_px()));
+    ui->label_Tn->setMaximumWidth(modulor->tripleSize_px());
 
-    // ui->atcmButton_next->setFontColor(color);
-    ui->atcmButton_next->setMaximumWidth(modulor->ledsWidth_px());
+    modulor->scaleTripleButton(ui->atcmButton_next);
 
     // footer
     ui->atcmButton_down->setEnabled(enabled_sensors < 0 and Iam_Tn);
 
     // center grid
-    ui->pushButton_sunrise->setStyleSheet(                     COLOR_SS(color) + BORDER_SS(color) + FONT_SS_B(big_size_px));
+    ui->pushButton_sunrise->setStyleSheet(                     COLOR_SS(color) + BORDER_SS(color) + FONT_SS_B(fontSize_t));
     ui->pushButton_sunrise->setEnabled(Iam_Tn);
 
-    ui->atcmButton_set_T_everywhere->setStyleSheet(            COLOR_SS(color) +                    FONT_SS_B(tiny_size_px));
+    ui->atcmButton_set_T_everywhere->setStyleSheet(            COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
 
-    ui->pushButton_sunset->setStyleSheet(                      COLOR_SS(color) + BORDER_SS(color) + FONT_SS_B(big_size_px));
+    ui->pushButton_sunset->setStyleSheet(                      COLOR_SS(color) + BORDER_SS(color) + FONT_SS_B(fontSize_t));
     ui->pushButton_sunset->setEnabled(Iam_Tn);
 
     ui->atcmLabel_Tn_temperature_setpoint->setVariable(Tsp);
-    ui->atcmLabel_Tn_temperature_setpoint->setStyleSheet(      COLOR_SS(color) +                    FONT_SS_B(big_size_px));
-    ui->label_Tn_temperature->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(small_size_px));
+    ui->atcmLabel_Tn_temperature_setpoint->setStyleSheet(                                           FONT_SS_B(fontSize_t));
+    ui->atcmLabel_Tn_temperature_setpoint->setFontColor(color);
+
+    ui->label_Tn_temperature->setStyleSheet(                   COLOR_SS(color) +                    FONT_SS_B(fontSize_xx));
+
     ui->atcmLabel_Tn_temperature_setpoint_nt->setVariable(Tsp_nt);
-    ui->atcmLabel_Tn_temperature_setpoint_nt->setStyleSheet(   COLOR_SS(color) +                    FONT_SS_B(big_size_px));
+    ui->atcmLabel_Tn_temperature_setpoint_nt->setStyleSheet(                                        FONT_SS_B(fontSize_t));
+    ui->atcmLabel_Tn_temperature_setpoint_nt->setFontColor(color);
 
-    ui->pushButton_Tdown->setStyleSheet(   BG_COLOR_SS(blue) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_Tup->setStyleSheet(     BG_COLOR_SS(red)  + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
+    ui->pushButton_Tdown->setStyleSheet(   BG_COLOR_SS(blue) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_Tup->setStyleSheet(     BG_COLOR_SS(red)  + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
 
-    ui->pushButton_Tdown_nt->setStyleSheet(BG_COLOR_SS(blue) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_Tup_nt->setStyleSheet(  BG_COLOR_SS(red)  + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
+    ui->pushButton_Tdown_nt->setStyleSheet(BG_COLOR_SS(blue) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_Tup_nt->setStyleSheet(  BG_COLOR_SS(red)  + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
 
-    ui->pushButton_T_0->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_T_1->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_T_2->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_T_3->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
-    ui->pushButton_T_4->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(big_size_px));
+    ui->pushButton_T_0->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_T_1->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_T_2->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_T_3->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
+    ui->pushButton_T_4->setStyleSheet(     BG_COLOR_SS(gray) + COLOR_SS(white) + BORDER_SS(white) + FONT_SS_B(fontSize_t));
 
     ui->atcmLabel_Tn_humidity_setpoint->setVariable(Hsp);
-    ui->atcmLabel_Tn_humidity_setpoint->setStyleSheet(         COLOR_SS(color) + FONT_SS_B(big_size_px));
+    ui->atcmLabel_Tn_humidity_setpoint->setStyleSheet(         COLOR_SS(color) +                    FONT_SS_B(fontSize_t));
     ui->atcmLabel_Tn_humidity_setpoint_nt->setVariable(Hsp_nt);
-    ui->atcmLabel_Tn_humidity_setpoint_nt->setStyleSheet(      COLOR_SS(color) + FONT_SS_B(big_size_px));
+    ui->atcmLabel_Tn_humidity_setpoint_nt->setStyleSheet(      COLOR_SS(color) +                    FONT_SS_B(fontSize_t));
 
     updateWidgets(sunrise, sunset, Tlabel,
                   Tn_temperature, Tn_temperature_bis,
@@ -170,10 +176,6 @@ void page101b::changeWidgets(int sunrise, int sunset,
 void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int Tn_temperature, int Tn_temperature_bis,
                              int enabled_sensors, int Iam_Tn, bool Tn_isOK, int Tn_heating_status, int Tn_heating_timer, bool Tn_heating, const QColor color)
 {
-    QString offStylesheet = QString("color: rgb(%1, %2, %3); background-color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
-    QString onStylesheet = QString("background-color: rgb(%1, %2, %3); color: rgb(0, 0, 0);").arg(color.red()).arg(color.green()).arg(color.blue());
-    bool x;
-
     ui->headerPanel->updateWidgets();
 
     QString tStr = Tn_temperature > TemperatureError ? QString("%1").arg(Tn_temperature / 10.0, 3, 'f', 1) : LABEL_NULL_T;
@@ -191,7 +193,10 @@ void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int 
         ui->label_heating_timer->setVisible(abs(enabled_sensors) >= 1);
         if (abs(enabled_sensors) >= 1) {
             ui->label_heating_status->setText(heating_name(Tn_heating_status));
-            ui->label_heating_status->setStyleSheet(Tn_heating ? onStylesheet : offStylesheet);
+            if (Tn_heating)
+                ui->label_heating_status->setStyleSheet(BG_COLOR_SS(color) + COLOR_SS(black) + FONT_SS_B(fontSize_xx));
+            else
+                ui->label_heating_status->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(color) + FONT_SS_B(fontSize_xx));
             if (Tn_heating_status > HEATING_AUTO) {
                 ui->label_heating_timer->setText(QTime().addSecs(Tn_heating_timer).toString("HH:mm\nss"));
             } else {
@@ -200,7 +205,7 @@ void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int 
         }
     } else {
         ui->label_heating_status->setText(heating_name(-1)); // LABEL_MISSING);
-        ui->label_heating_status->setStyleSheet(offStylesheet);
+        ui->label_heating_status->setStyleSheet(BG_COLOR_SS(black) + COLOR_SS(color) + FONT_SS_B(fontSize_xx));
         ui->label_heating_timer->setText("");
         ui->label_heating_status->setVisible(true);
         ui->label_heating_timer->setVisible(true);
@@ -211,6 +216,7 @@ void page101b::updateWidgets(int sunrise, int sunset, const QString Tlabel, int 
     // footer
 
     // center grid
+    bool x;
     x = ui->pushButton_sunrise->blockSignals(true);
     ui->pushButton_sunrise->setText((Iam_Tn ? "" : Tlabel) + QTime().addSecs(3600 * (sunrise / 100) + 60 * (sunrise % 100)).toString("HH:mm ") + LABEL_WSUNRAYS);
     ui->pushButton_sunrise->blockSignals(x);

@@ -209,8 +209,8 @@ extern float mectFontCorrector;
 
 #define TEMP_FMT           QString("%1.%2%3").arg(PLC_CPU_TEMP / 10).arg(PLC_CPU_TEMP % 10).arg(LABEL_CELSIUS)
 #define TIME_FMT           QTime::currentTime().toString("HH:mm")
-#define TIME_FMT_DAYTIME   QTime::currentTime().toString(LABEL_DAYTIME + "HH:mm")
-#define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm")
+#define TIME_FMT_DAYTIME   QTime::currentTime().toString(LABEL_DAYTIME   + "HH:mm" + LABEL_F_SPACE)
+#define TIME_FMT_NIGHTTIME QTime::currentTime().toString(LABEL_NIGHTTIME + "HH:mm" + LABEL_F_SPACE)
 
 // #define COLOR_SS(color)    QString("background-color: rgb(0, 0, 0);\ncolor: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 #define COLOR_SS(color)    QString("color: rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
@@ -222,6 +222,7 @@ extern float mectFontCorrector;
 #define FONT_SS_BI(size_px) QString("font: bold italic %1px \"DejaVu Sans\";\n").arg(size_px)
 
 #define BORDER_SS(color)    QString("border: 1px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
+#define BORDER3_SS(color)    QString("border: 3px solid rgb(%1, %2, %3);\n").arg(color.red()).arg(color.green()).arg(color.blue())
 
 #define ALARM_STATUS_ZERO     0x0000 // not configured yet
 #define ALARM_STATUS_OFF      0x0001

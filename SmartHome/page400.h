@@ -63,7 +63,7 @@ private slots:
 
 private:
     Ui::page400 *ui;
-    int pointSize;
+    int fontSize_px;
     void gotoWattmeterPage(int n) {
         currentWattmeter = n;
         goto_page("page401");

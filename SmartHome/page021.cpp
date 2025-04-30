@@ -32,7 +32,9 @@
 
 page021::page021(QWidget *parent) :
     page(parent),
-    ui(new Ui::page021)
+    ui(new Ui::page021),
+    giallo(255, 170, 0),
+    verde(85, 170, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
@@ -54,6 +56,17 @@ void page021::reload()
 void page021::changeWidgets()
 {
     ui->headerPanel->changeWidgets(NULL, TM_PIXMAP, NULL, "page021: timer");
+
+    modulor->scaleQuadrupleButton(ui->atcmButtonStartStop_1);
+    ui->pushButton_timer_1->setStyleSheet(COLOR_SS(giallo) + FONT_SS_B(modulor->LargeFont_px()));
+    modulor->scaleQuadrupleButton(ui->atcmButtonReset_1);
+
+    modulor->scaleQuadrupleButton(ui->atcmButtonStartStop_2);
+    ui->pushButton_timer_2->setStyleSheet(COLOR_SS(verde) + FONT_SS_B(modulor->LargeFont_px()));
+    modulor->scaleQuadrupleButton(ui->atcmButtonReset_2);
+
+    modulor->scaleTripleButton(ui->atcmButton_next);
+
     updateTimers();
 }
 
