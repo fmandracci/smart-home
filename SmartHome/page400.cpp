@@ -62,11 +62,13 @@ void page400::changeWidgets()
 
     ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page400: EP W");
 
+    ui->progressBar->setMaximumWidth(modulor->tripleSize_px());
+
     changeWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz);
     changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()),  1, COLOR_01, ui->pushButton_M_W,
                         ui->label_M_pf, ui->label_M_var, ui->label_M_VA);
 
-    ui->line->setVisible(PLC_EP_enabled_wattmeters >= 2);
+    // ui->line->setVisible(PLC_EP_enabled_wattmeters >= 2);
     changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__F").toByteArray()),  2, COLOR_02, ui->pushButton_F_W,
                         ui->label_F_pf, ui->label_F_var, ui->label_F_VA);
 
@@ -83,6 +85,7 @@ void page400::changeWidgets()
     changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), 12, COLOR_12, ui->pushButton10_W);
 
     modulor->scaleTripleButton(ui->pushButton_next);
+    ui->pushButton_next->setMaximumWidth(modulor->tripleSize_px());
 }
 
 void page400::changeWattmeterCommon(QLabel *label_max_assigned_W, QLabel *label_overload_W, QLabel *label_V, QLabel *label_Hz)
@@ -158,13 +161,13 @@ void page400::updateWidgets()
     ui->progressBar->setRange(0, (PLC_EP_overload_W * 133 / 100)); // 3300W --> 4500W
     ui->progressBar->setValue(PLC_EP_wattmeter_M_W);
     if (PLC_EP_wattmeter_M_W >= PLC_EP_overload_W) {
-        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid black; background-color: black; } "
+        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid grey; background-color: black; } "
                                        "QProgressBar::chunk { background-color: red; height: 10px; margin: 1px; } ");
     } else if (PLC_EP_wattmeter_M_W >= (PLC_EP_overload_W * 91 / 100)) { // 3300W --> 3000W
-        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid black; background-color: black; } "
+        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid grey; background-color: black; } "
                                        "QProgressBar::chunk { background-color: yellow; height: 10px; margin: 1px; } ");
     } else {
-        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid black; background-color: black; } "
+        ui->progressBar->setStyleSheet("QProgressBar { border: 2px solid grey; background-color: black; } "
                                        "QProgressBar::chunk { background-color: green; height: 10px; margin: 1px; } ");
     }
 

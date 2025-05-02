@@ -43,7 +43,8 @@ void page046::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
 
-    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
+    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()))
+                   + QString("ATCMled { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
     ui->frame->setStyleSheet(atcmss);
 
     if (PLC_Iam_BA) {
@@ -52,6 +53,64 @@ void page046::reload()
     } else {
         ui->pushButton_Test->setText("(test)");
         ui->pushButton_Test->setEnabled(false);
+    }
+
+    QSize iconSize(modulor->normalFont_px(), modulor->normalFont_px());
+    ui->atcmButton_BA_led_green->setIconSize(iconSize);
+    ui->atcmButton_BA_led_red->setIconSize(iconSize);
+    ui->atcmButton_BA_led_yellow1->setIconSize(iconSize);
+    ui->atcmButton_BA_led_yellow2->setIconSize(iconSize);
+    ui->atcmButton_BA_siren->setIconSize(iconSize);
+    ui->atcmButton_BA_relay_A->setIconSize(iconSize);
+    ui->atcmButton_BA_relay_B->setIconSize(iconSize);
+    ui->atcmButton_BA_relay_C->setIconSize(iconSize);
+
+    setSensor(ui->atcmButton_DO_1, 1);
+    setSensor(ui->atcmButton_DO_2, 2);
+    setSensor(ui->atcmButton_DO_3, 3);
+    setSensor(ui->atcmButton_DO_4, 4);
+    setSensor(ui->atcmButton_DO_5, 5);
+    setSensor(ui->atcmButton_DO_6, 6);
+    setSensor(ui->atcmButton_DO_7, 7);
+    setSensor(ui->atcmButton_DO_8, 8);
+
+    setSensor(ui->atcmButton_DO_9, 9);
+    setSensor(ui->atcmButton_DO_10, 10);
+    setSensor(ui->atcmButton_DO_11, 11);
+    setSensor(ui->atcmButton_DO_12, 12);
+    setSensor(ui->atcmButton_DO_13, 13);
+    setSensor(ui->atcmButton_DO_14, 14);
+    setSensor(ui->atcmButton_DO_15, 15);
+    setSensor(ui->atcmButton_DO_16, 16);
+
+    setSensor(ui->atcmButton_DO_17, 17);
+    setSensor(ui->atcmButton_DO_18, 18);
+    setSensor(ui->atcmButton_DO_19, 19);
+    setSensor(ui->atcmButton_DO_20, 20);
+    setSensor(ui->atcmButton_DO_21, 21);
+    setSensor(ui->atcmButton_DO_22, 22);
+    setSensor(ui->atcmButton_DO_23, 23);
+    setSensor(ui->atcmButton_DO_24, 24);
+
+    setSensor(ui->atcmButton_DO_25, 25);
+    setSensor(ui->atcmButton_DO_26, 26);
+    setSensor(ui->atcmButton_DO_27, 27);
+    setSensor(ui->atcmButton_DO_28, 28);
+    setSensor(ui->atcmButton_DO_29, 29);
+    setSensor(ui->atcmButton_DO_30, 30);
+    setSensor(ui->atcmButton_DO_31, 31);
+    setSensor(ui->atcmButton_DO_32, 32);
+}
+
+void page046::setSensor(ATCMbutton *button, int n)
+{
+    if (PLC_BA_enabled_sensors >= n)
+    {
+        button->setEnabled(true);
+        button->setBgColor(QColor(230,230,230));
+    } else {
+        button->setEnabled(false);
+        button->setBgColor(QColor( 32, 32, 32));
     }
 }
 

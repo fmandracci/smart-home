@@ -119,7 +119,10 @@ void page200::changeLamps(int t, const QColor color, const QString name,
         changeLamp(t, color_ss, enabled_lamps_t, 5, button_t_5, label_t_5, name_t_5);
 
     } else {
-        label_n->setVisible(false);
+        label_n->setText(name);
+        label_n->setStyleSheet(color_ss + FONT_SS_B(modulor->normalFont_px()));
+        label_n->setVisible(true);
+
         button_t_1->setVisible(false);
         button_t_2->setVisible(false);
         button_t_3->setVisible(false);

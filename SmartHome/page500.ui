@@ -73,28 +73,15 @@ border: none;
     </widget>
    </item>
    <item>
-    <spacer name="verticalSpacer_top">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="horizontalSpacing">
+      <number>2</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>1</number>
+     </property>
      <property name="topMargin">
       <number>0</number>
-     </property>
-     <property name="spacing">
-      <number>1</number>
      </property>
      <item row="1" column="3">
       <widget class="QPushButton" name="pushButton_RINGING">
@@ -107,13 +94,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -144,13 +125,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -181,13 +156,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -218,13 +187,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -255,13 +218,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -292,13 +249,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -329,13 +280,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -366,13 +311,7 @@ border: none;
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>36</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>320</width>
-         <height>100</height>
+         <height>27</height>
         </size>
        </property>
        <property name="font">
@@ -395,23 +334,10 @@ border: none;
     </layout>
    </item>
    <item>
-    <spacer name="verticalSpacer_middle">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item>
     <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
      <property name="leftMargin">
       <number>0</number>
      </property>
@@ -419,7 +345,7 @@ border: none;
       <number>0</number>
      </property>
      <item>
-      <spacer name="horizontalSpacer_2">
+      <spacer name="horizontalSpacer_L">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -434,10 +360,10 @@ border: none;
      <item>
       <layout class="QGridLayout" name="gridLayout_1_8">
        <property name="margin">
-        <number>3</number>
+        <number>0</number>
        </property>
        <property name="spacing">
-        <number>3</number>
+        <number>0</number>
        </property>
        <item row="7" column="1">
         <widget class="QLabel" name="label_sensor_07">
@@ -636,25 +562,6 @@ border: none;
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="Line" name="line_4_5">
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
@@ -954,28 +861,34 @@ border: none;
          </property>
         </widget>
        </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="Line" name="line_4_5">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
       </layout>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_9_16">
        <property name="margin">
-        <number>3</number>
+        <number>0</number>
        </property>
        <property name="spacing">
-        <number>3</number>
+        <number>0</number>
        </property>
        <item row="5" column="1">
         <widget class="QLabel" name="label_sensor_13">
@@ -1174,25 +1087,6 @@ border: none;
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="Line" name="line_12_13">
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
@@ -1492,28 +1386,34 @@ border: none;
          </property>
         </widget>
        </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="Line" name="line_12_13">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
       </layout>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_17_24">
        <property name="margin">
-        <number>3</number>
+        <number>0</number>
        </property>
        <property name="spacing">
-        <number>3</number>
+        <number>0</number>
        </property>
        <item row="6" column="1">
         <widget class="QLabel" name="label_sensor_22">
@@ -1712,25 +1612,6 @@ border: none;
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="Line" name="line_20_21">
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
@@ -2030,28 +1911,34 @@ border: none;
          </property>
         </widget>
        </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="Line" name="line_20_21">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
       </layout>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_5">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_25_32">
        <property name="margin">
-        <number>3</number>
+        <number>0</number>
        </property>
        <property name="spacing">
-        <number>3</number>
+        <number>0</number>
        </property>
        <item row="3" column="1">
         <widget class="QLabel" name="label_sensor_28">
@@ -2250,25 +2137,6 @@ border: none;
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="Line" name="line_28_29">
-         <property name="font">
-          <font>
-           <family>DejaVu Sans</family>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
@@ -2568,10 +2436,29 @@ border: none;
          </property>
         </widget>
        </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="Line" name="line_28_29">
+         <property name="font">
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="horizontalSpacer_R">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>

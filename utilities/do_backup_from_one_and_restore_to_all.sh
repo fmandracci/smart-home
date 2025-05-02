@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="2.0_03"
+VERSION="2.0_04"
 
 V0_ADDR="192.168.5.243"
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>72</height>
+    <width>541</width>
+    <height>74</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -372,11 +372,11 @@ color: rgb(255, 85, 0);</string>
      </property>
      <property name="icon">
       <iconset resource="resources.qrc">
-       <normaloff>:/icons/icons/MuteDark.png</normaloff>:/icons/icons/MuteDark.png</iconset>
+       <normaloff>:/icons/icons/Mute.png</normaloff>:/icons/icons/Mute.png</iconset>
      </property>
      <property name="pressIcon">
       <iconset resource="resources.qrc">
-       <normaloff>:/icons/icons/Mute.png</normaloff>:/icons/icons/Mute.png</iconset>
+       <normaloff>:/icons/icons/MuteRed.png</normaloff>:/icons/icons/MuteRed.png</iconset>
      </property>
      <property name="borderWidth">
       <number>0</number>
