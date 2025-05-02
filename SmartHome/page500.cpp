@@ -69,6 +69,7 @@ void page500::updateData()
 void page500::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->changeWidgets(NULL, BA_PIXMAP, NULL, "page500: BA");
 
