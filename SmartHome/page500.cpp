@@ -73,13 +73,23 @@ void page500::changeWidgets()
     ui->headerPanel->changeWidgets(NULL, BA_PIXMAP, NULL, "page500: BA");
 
     QString bf = FONT_SS_N(modulor->normalFont_px()); // STATUS/BUTTONS
+    int minimum_height = modulor->normalFont_px() * 15 / 10;
 
     ACTIVE_StyleSheet  = bf + "background-color: rgb(255,  85,   0); color: rgb(  0,   0,   0); border: none; font: bold;";
     Possible_StyleSheet= bf + "background-color: rgb( 85,   0,   0); color: rgb(255, 255, 255); border: none;            ";
     inactive_StyleSheet= bf + "background-color: rgb(  0,   0,   0); color: rgb( 64,  64,  64); border: none;            ";
 
-    QSize labelSize(modulor->normalFont_px(), modulor->normalFont_px()); // sensor leds
-    QString sf = FONT_SS_N(modulor->smallFont_px()); // sensor leds and sensor names
+    ui->pushButton_OFF->setMinimumHeight(minimum_height);
+    ui->pushButton_DAYTIME->setMinimumHeight(minimum_height);
+    ui->pushButton_NIGHTTIME->setMinimumHeight(minimum_height);
+    ui->pushButton_EVERYTHING->setMinimumHeight(minimum_height);
+    ui->pushButton_ENABLED->setMinimumHeight(minimum_height);
+    ui->pushButton_RINGING->setMinimumHeight(minimum_height);
+    ui->pushButton_MUTED->setMinimumHeight(minimum_height);
+    ui->pushButton_TESTING->setMinimumHeight(minimum_height);
+
+    QSize labelSize(modulor->largeFont_px(), modulor->largeFont_px()); // sensor leds
+    QString sf = FONT_SS_N(modulor->normalFont_px()); // sensor leds and sensor names
 
     WHITE_OVER_BLACK   = sf + "color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);";
     GREY_OVER_BLACK    = sf + "color: rgb( 64,  64,  64); background-color: rgb(0, 0, 0);";

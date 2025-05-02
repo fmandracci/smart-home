@@ -253,7 +253,7 @@ xx.x℃</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -272,7 +272,7 @@ xx.x℃</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -319,7 +319,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -338,7 +338,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -400,6 +400,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="text">
         <string>⑥</string>
        </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
@@ -415,7 +418,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -434,7 +437,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -637,6 +640,9 @@ xx.x℃</string>
        <property name="text">
         <string>⑤</string>
        </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
@@ -652,7 +658,7 @@ xx.x℃</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -671,7 +677,7 @@ xx.x℃</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -864,7 +870,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -883,7 +889,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -917,7 +923,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>205</width>
+         <width>200</width>
          <height>32</height>
         </size>
        </property>
@@ -936,7 +942,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>14</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -995,6 +1001,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="text">
         <string>①</string>
        </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
@@ -1034,6 +1043,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>③</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1075,6 +1087,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="text">
         <string>②</string>
        </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
@@ -1114,6 +1129,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>④</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1252,7 +1270,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1262,6 +1280,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1294,7 +1315,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1304,6 +1325,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1336,7 +1360,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1346,6 +1370,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1378,7 +1405,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1388,6 +1415,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1420,7 +1450,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1430,6 +1460,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1462,7 +1495,7 @@ border: 1px solid rgb(255, 255, 255);</string>
        <property name="font">
         <font>
          <family>DejaVu Sans</family>
-         <pointsize>8</pointsize>
+         <pointsize>18</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
@@ -1472,6 +1505,9 @@ border: 1px solid rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>xx.x℃</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1484,6 +1520,9 @@ border: 1px solid rgb(255, 255, 255);</string>
     <spacer name="verticalSpacer_bottom">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Ignored</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>

@@ -38,6 +38,7 @@
         <file>icons/MuteDark.png</file>
         <file>icons/Next.png</file>
         <file>icons/Previous.png</file>
+        <file>icons/MuteRed.png</file>
     </qresource>
     <qresource prefix="/fonts"/>
 </RCC>
