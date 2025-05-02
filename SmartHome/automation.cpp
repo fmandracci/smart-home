@@ -27,12 +27,22 @@
 #include <QSettings>
 
 #if defined(MECT_SUITE_3_5)
+
 #elif defined(MECT_SUITE_3_4)
 int mectScreenWidth;
 int mectScreenHeight;
 float mectFontCorrector;
+
 #else
 #error
+#endif
+
+#if defined(KIT_RPI4)
+#define IP_ADDR_ADD_DEV_ETH0 "sudo ip addr add %1.%2.%3.%4/24 dev eth0"
+
+#else
+#define IP_ADDR_ADD_DEV_ETH0 "ip addr add %1.%2.%3.%4/24 dev eth0"
+
 #endif
 
 Modulor * modulor;
@@ -67,7 +77,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(2005);
+    doWrite_PLC_HMI_Version(2006);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'
@@ -91,7 +101,7 @@ void setup(void)
         unsigned byte2 = (TCP0_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP0_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP0_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -101,7 +111,7 @@ void setup(void)
         unsigned byte2 = (TCP1_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP1_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP1_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -111,7 +121,7 @@ void setup(void)
         unsigned byte2 = (TCP2_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP2_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP2_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -121,7 +131,7 @@ void setup(void)
         unsigned byte2 = (TCP3_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP3_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP3_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -131,7 +141,7 @@ void setup(void)
         unsigned byte2 = (TCP4_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP4_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP4_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -141,7 +151,7 @@ void setup(void)
         unsigned byte2 = (TCP5_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP5_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP5_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -151,7 +161,7 @@ void setup(void)
         unsigned byte2 = (TCP6_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP6_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP6_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
@@ -161,7 +171,7 @@ void setup(void)
         unsigned byte2 = (TCP7_IP_ADDRESS & 0x00FF0000) >> 16;
         unsigned byte1 = (TCP7_IP_ADDRESS & 0x0000FF00) >>  8;
         unsigned byte0 = (TCP7_IP_ADDRESS & 0x000000FF) >>  0;
-        QString command = QString("sudo ip addr add %1.%2.%3.%4/24 dev eth0").arg(byte3).arg(byte2).arg(byte1).arg(byte0);
+        QString command = QString(IP_ADDR_ADD_DEV_ETH0).arg(byte3).arg(byte2).arg(byte1).arg(byte0);
 
         qDebug() << command;
         system(command.toLatin1().data());
