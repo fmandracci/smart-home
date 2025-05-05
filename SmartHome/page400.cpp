@@ -59,30 +59,31 @@ void page400::updateData()
 void page400::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page400: EP W");
 
     ui->progressBar->setMaximumWidth(modulor->tripleSize_px());
 
     changeWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz);
-    changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()),  1, COLOR_01, ui->pushButton_M_W,
+    changeWattmeterFull(home_ini.value("EP/meter__M").toString(),  1, COLOR_01, ui->pushButton_M_W,
                         ui->label_M_pf, ui->label_M_var, ui->label_M_VA);
 
     // ui->line->setVisible(PLC_EP_enabled_wattmeters >= 2);
-    changeWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__F").toByteArray()),  2, COLOR_02, ui->pushButton_F_W,
+    changeWattmeterFull(home_ini.value("EP/meter__F").toString(),  2, COLOR_02, ui->pushButton_F_W,
                         ui->label_F_pf, ui->label_F_var, ui->label_F_VA);
 
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_01").toByteArray()),  3, COLOR_03, ui->pushButton01_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_02").toByteArray()),  4, COLOR_04, ui->pushButton02_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_03").toByteArray()),  5, COLOR_05, ui->pushButton03_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_04").toByteArray()),  6, COLOR_06, ui->pushButton04_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_05").toByteArray()),  7, COLOR_07, ui->pushButton05_W);
+    changeWattmeter(home_ini.value("EP/meter_01").toString(),  3, COLOR_03, ui->pushButton01_W);
+    changeWattmeter(home_ini.value("EP/meter_02").toString(),  4, COLOR_04, ui->pushButton02_W);
+    changeWattmeter(home_ini.value("EP/meter_03").toString(),  5, COLOR_05, ui->pushButton03_W);
+    changeWattmeter(home_ini.value("EP/meter_04").toString(),  6, COLOR_06, ui->pushButton04_W);
+    changeWattmeter(home_ini.value("EP/meter_05").toString(),  7, COLOR_07, ui->pushButton05_W);
 
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_06").toByteArray()),  8, COLOR_08, ui->pushButton06_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_07").toByteArray()),  9, COLOR_09, ui->pushButton07_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_08").toByteArray()), 10, COLOR_10, ui->pushButton08_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_09").toByteArray()), 11, COLOR_11, ui->pushButton09_W);
-    changeWattmeter(QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), 12, COLOR_12, ui->pushButton10_W);
+    changeWattmeter(home_ini.value("EP/meter_06").toString(),  8, COLOR_08, ui->pushButton06_W);
+    changeWattmeter(home_ini.value("EP/meter_07").toString(),  9, COLOR_09, ui->pushButton07_W);
+    changeWattmeter(home_ini.value("EP/meter_08").toString(), 10, COLOR_10, ui->pushButton08_W);
+    changeWattmeter(home_ini.value("EP/meter_09").toString(), 11, COLOR_11, ui->pushButton09_W);
+    changeWattmeter(home_ini.value("EP/meter_10").toString(), 12, COLOR_12, ui->pushButton10_W);
 
     modulor->scaleTripleButton(ui->pushButton_next);
     ui->pushButton_next->setMaximumWidth(modulor->tripleSize_px());
@@ -145,6 +146,7 @@ void page400::changeWattmeter(const QString label, int n, const QColor color, QP
 void page400::updateWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->updateWidgets();
 
@@ -172,21 +174,21 @@ void page400::updateWidgets()
     }
 
     updateWattmeterCommon(ui->label_max_assigned_W, ui->label_overload_W, ui->label_M_V, ui->label_M_Hz, PLC_EP_max_assigned_W, PLC_EP_overload_W, PLC_EP_wattmeter_M_V, PLC_EP_wattmeter_M_Hz);
-    updateWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()),  1, ui->pushButton_M_W, ui->label_M_pf, ui->label_M_var, ui->label_M_VA, PLC_EP_wattmeter_M_W, PLC_EP_wattmeter_M_pf, PLC_EP_wattmeter_M_var, PLC_EP_wattmeter_M_VA);
+    updateWattmeterFull(home_ini.value("EP/meter__M").toString(),  1, ui->pushButton_M_W, ui->label_M_pf, ui->label_M_var, ui->label_M_VA, PLC_EP_wattmeter_M_W, PLC_EP_wattmeter_M_pf, PLC_EP_wattmeter_M_var, PLC_EP_wattmeter_M_VA);
 
-    updateWattmeterFull(QString::fromUtf8(home_ini.value("EP/meter__F").toByteArray()),  2, ui->pushButton_F_W, ui->label_F_pf, ui->label_F_var, ui->label_F_VA, PLC_EP_wattmeter_F_W, PLC_EP_wattmeter_F_pf, PLC_EP_wattmeter_F_var, PLC_EP_wattmeter_F_VA);
+    updateWattmeterFull(home_ini.value("EP/meter__F").toString(),  2, ui->pushButton_F_W, ui->label_F_pf, ui->label_F_var, ui->label_F_VA, PLC_EP_wattmeter_F_W, PLC_EP_wattmeter_F_pf, PLC_EP_wattmeter_F_var, PLC_EP_wattmeter_F_VA);
 
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_01").toByteArray()),  3, ui->pushButton01_W, PLC_EP_wattmeter01_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_02").toByteArray()),  4, ui->pushButton02_W, PLC_EP_wattmeter02_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_03").toByteArray()),  5, ui->pushButton03_W, PLC_EP_wattmeter03_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_04").toByteArray()),  6, ui->pushButton04_W, PLC_EP_wattmeter04_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_05").toByteArray()),  7, ui->pushButton05_W, PLC_EP_wattmeter05_W);
+    updateWattmeter(home_ini.value("EP/meter_01").toString(),  3, ui->pushButton01_W, PLC_EP_wattmeter01_W);
+    updateWattmeter(home_ini.value("EP/meter_02").toString(),  4, ui->pushButton02_W, PLC_EP_wattmeter02_W);
+    updateWattmeter(home_ini.value("EP/meter_03").toString(),  5, ui->pushButton03_W, PLC_EP_wattmeter03_W);
+    updateWattmeter(home_ini.value("EP/meter_04").toString(),  6, ui->pushButton04_W, PLC_EP_wattmeter04_W);
+    updateWattmeter(home_ini.value("EP/meter_05").toString(),  7, ui->pushButton05_W, PLC_EP_wattmeter05_W);
 
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_06").toByteArray()),  8, ui->pushButton06_W, PLC_EP_wattmeter06_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_07").toByteArray()),  9, ui->pushButton07_W, PLC_EP_wattmeter07_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_08").toByteArray()), 10, ui->pushButton08_W, PLC_EP_wattmeter08_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_09").toByteArray()), 11, ui->pushButton09_W, PLC_EP_wattmeter09_W);
-    updateWattmeter(QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), 12, ui->pushButton10_W, PLC_EP_wattmeter10_W);
+    updateWattmeter(home_ini.value("EP/meter_06").toString(),  8, ui->pushButton06_W, PLC_EP_wattmeter06_W);
+    updateWattmeter(home_ini.value("EP/meter_07").toString(),  9, ui->pushButton07_W, PLC_EP_wattmeter07_W);
+    updateWattmeter(home_ini.value("EP/meter_08").toString(), 10, ui->pushButton08_W, PLC_EP_wattmeter08_W);
+    updateWattmeter(home_ini.value("EP/meter_09").toString(), 11, ui->pushButton09_W, PLC_EP_wattmeter09_W);
+    updateWattmeter(home_ini.value("EP/meter_10").toString(), 12, ui->pushButton10_W, PLC_EP_wattmeter10_W);
 }
 
 void page400::updateWattmeterCommon(QLabel *label_max_assigned_W, QLabel *label_overload_W, QLabel *label_V, QLabel *label_Hz,

@@ -42,20 +42,21 @@ page401::page401(QWidget *parent) :
 void page401::reload()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     switch (currentWattmeter) {
-    case  1: changeWidgets( 1, LABEL__M, "trend_W-M.csv", QString::fromUtf8(home_ini.value("EP/meter__M").toByteArray()), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;
-    case  2: changeWidgets( 2, LABEL__F, "trend_W-F.csv", QString::fromUtf8(home_ini.value("EP/meter__F").toByteArray()), COLOR_02, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_F_var", "PLC_EP_wattmeter_F_VA", "PLC_EP_wattmeter_F_kWh"); break;
-    case  3: changeWidgets( 3, LABEL_01, "trend_W01.csv", QString::fromUtf8(home_ini.value("EP/meter_01").toByteArray()), COLOR_03, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter01_var", "PLC_EP_wattmeter01_VA", "PLC_EP_wattmeter01_kWh"); break;
-    case  4: changeWidgets( 4, LABEL_02, "trend_W02.csv", QString::fromUtf8(home_ini.value("EP/meter_02").toByteArray()), COLOR_04, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter02_var", "PLC_EP_wattmeter02_VA", "PLC_EP_wattmeter02_kWh"); break;
-    case  5: changeWidgets( 5, LABEL_03, "trend_W03.csv", QString::fromUtf8(home_ini.value("EP/meter_03").toByteArray()), COLOR_05, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter03_var", "PLC_EP_wattmeter03_VA", "PLC_EP_wattmeter03_kWh"); break;
-    case  6: changeWidgets( 6, LABEL_04, "trend_W04.csv", QString::fromUtf8(home_ini.value("EP/meter_04").toByteArray()), COLOR_06, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter04_var", "PLC_EP_wattmeter04_VA", "PLC_EP_wattmeter04_kWh"); break;
-    case  7: changeWidgets( 7, LABEL_05, "trend_W05.csv", QString::fromUtf8(home_ini.value("EP/meter_05").toByteArray()), COLOR_07, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter05_var", "PLC_EP_wattmeter05_VA", "PLC_EP_wattmeter05_kWh"); break;
-    case  8: changeWidgets( 8, LABEL_06, "trend_W06.csv", QString::fromUtf8(home_ini.value("EP/meter_06").toByteArray()), COLOR_08, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter06_var", "PLC_EP_wattmeter06_VA", "PLC_EP_wattmeter06_kWh"); break;
-    case  9: changeWidgets( 9, LABEL_07, "trend_W07.csv", QString::fromUtf8(home_ini.value("EP/meter_07").toByteArray()), COLOR_09, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter07_var", "PLC_EP_wattmeter07_VA", "PLC_EP_wattmeter07_kWh"); break;
-    case  0: changeWidgets(10, LABEL_08, "trend_W08.csv", QString::fromUtf8(home_ini.value("EP/meter_08").toByteArray()), COLOR_10, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter08_var", "PLC_EP_wattmeter08_VA", "PLC_EP_wattmeter08_kWh"); break;
-    case 11: changeWidgets(11, LABEL_09, "trend_W09.csv", QString::fromUtf8(home_ini.value("EP/meter_09").toByteArray()), COLOR_11, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter09_var", "PLC_EP_wattmeter09_VA", "PLC_EP_wattmeter09_kWh"); break;
-    case 12: changeWidgets(12, LABEL_10, "trend_W10.csv", QString::fromUtf8(home_ini.value("EP/meter_10").toByteArray()), COLOR_12, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter10_var", "PLC_EP_wattmeter10_VA", "PLC_EP_wattmeter10_kWh"); break;
+    case  1: changeWidgets( 1, LABEL__M, "trend_W-M.csv", home_ini.value("EP/meter__M").toString(), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;
+    case  2: changeWidgets( 2, LABEL__F, "trend_W-F.csv", home_ini.value("EP/meter__F").toString(), COLOR_02, "PLC_EP_wattmeter_F_W", "PLC_EP_wattmeter_F_var", "PLC_EP_wattmeter_F_VA", "PLC_EP_wattmeter_F_kWh"); break;
+    case  3: changeWidgets( 3, LABEL_01, "trend_W01.csv", home_ini.value("EP/meter_01").toString(), COLOR_03, "PLC_EP_wattmeter01_W", "PLC_EP_wattmeter01_var", "PLC_EP_wattmeter01_VA", "PLC_EP_wattmeter01_kWh"); break;
+    case  4: changeWidgets( 4, LABEL_02, "trend_W02.csv", home_ini.value("EP/meter_02").toString(), COLOR_04, "PLC_EP_wattmeter02_W", "PLC_EP_wattmeter02_var", "PLC_EP_wattmeter02_VA", "PLC_EP_wattmeter02_kWh"); break;
+    case  5: changeWidgets( 5, LABEL_03, "trend_W03.csv", home_ini.value("EP/meter_03").toString(), COLOR_05, "PLC_EP_wattmeter03_W", "PLC_EP_wattmeter03_var", "PLC_EP_wattmeter03_VA", "PLC_EP_wattmeter03_kWh"); break;
+    case  6: changeWidgets( 6, LABEL_04, "trend_W04.csv", home_ini.value("EP/meter_04").toString(), COLOR_06, "PLC_EP_wattmeter04_W", "PLC_EP_wattmeter04_var", "PLC_EP_wattmeter04_VA", "PLC_EP_wattmeter04_kWh"); break;
+    case  7: changeWidgets( 7, LABEL_05, "trend_W05.csv", home_ini.value("EP/meter_05").toString(), COLOR_07, "PLC_EP_wattmeter05_W", "PLC_EP_wattmeter05_var", "PLC_EP_wattmeter05_VA", "PLC_EP_wattmeter05_kWh"); break;
+    case  8: changeWidgets( 8, LABEL_06, "trend_W06.csv", home_ini.value("EP/meter_06").toString(), COLOR_08, "PLC_EP_wattmeter06_W", "PLC_EP_wattmeter06_var", "PLC_EP_wattmeter06_VA", "PLC_EP_wattmeter06_kWh"); break;
+    case  9: changeWidgets( 9, LABEL_07, "trend_W07.csv", home_ini.value("EP/meter_07").toString(), COLOR_09, "PLC_EP_wattmeter07_W", "PLC_EP_wattmeter07_var", "PLC_EP_wattmeter07_VA", "PLC_EP_wattmeter07_kWh"); break;
+    case 10: changeWidgets(10, LABEL_08, "trend_W08.csv", home_ini.value("EP/meter_08").toString(), COLOR_10, "PLC_EP_wattmeter08_W", "PLC_EP_wattmeter08_var", "PLC_EP_wattmeter08_VA", "PLC_EP_wattmeter08_kWh"); break;
+    case 11: changeWidgets(11, LABEL_09, "trend_W09.csv", home_ini.value("EP/meter_09").toString(), COLOR_11, "PLC_EP_wattmeter09_W", "PLC_EP_wattmeter09_var", "PLC_EP_wattmeter09_VA", "PLC_EP_wattmeter09_kWh"); break;
+    case 12: changeWidgets(12, LABEL_10, "trend_W10.csv", home_ini.value("EP/meter_10").toString(), COLOR_12, "PLC_EP_wattmeter10_W", "PLC_EP_wattmeter10_var", "PLC_EP_wattmeter10_VA", "PLC_EP_wattmeter10_kWh"); break;
     default: ;
     }
 }
