@@ -59,6 +59,7 @@ void page300::updateData()
 void page300::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->changeWidgets(NULL, RL_PIXMAP, NULL, "page300: EP relay");
 

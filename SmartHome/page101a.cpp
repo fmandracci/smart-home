@@ -44,6 +44,7 @@ page101a::page101a(QWidget *parent) :
 void page101a::reload()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     switch (currentThermostat) {
     case  1: changeWidgets(LABEL_01, "trend_T1.csv", home_ini.value("T1/name").toString(), "PLC_T1_temperature", "PLC_T1_temperature_bis", "PLC_T1_temperature_ext", "PLC_T1_humidity", "PLC_T1_humidity_bis", "PLC_T1_humidity_ext", PLC_T1_max_request_W, "PLC_T1_requested_W", "PLC_EP_T1_assigned_W", PLC_T1_daily_heating_s, PLC_T1_monthly_heating_s, PLC_T1_temperature_setpoint, PLC_T1_temperature_setpoint_nt, PLC_T1_enabled_sensors, PLC_Iam_T1, PLC_T1_isOK, PLC_T1_heating_status, PLC_T1_heating_timer, PLC_T1_heating, COLOR_01); break;

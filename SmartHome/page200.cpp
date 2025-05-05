@@ -63,6 +63,7 @@ void page200::updateData()
 void page200::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
+    home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->changeWidgets(NULL, LM_PIXMAP, NULL, "page200: Tn lamps");
 
