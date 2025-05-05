@@ -40,6 +40,9 @@ FUNCTION BA_Watchdog
 	elsif PLC_control_type = ControlType_7 then
 		; (* Fast I/O on GPIO *)
 
+	elsif PLC_control_type = ControlType_9 then
+		; (* MPNE_E on RTU3 *)
+
 	elsif PLC_control_type = ControlType_12 then
 		; (* Fast I/O on GPIO *)
 

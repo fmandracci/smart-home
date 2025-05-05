@@ -94,6 +94,14 @@ FUNCTION BA_ReadSensors
 			PLC_BA_input_12 := PLC_FastIO_4;
 			PLC_BA_blackout_digin := PLC_FastIO_4; (* --> PLC_BA_BlackoutDetected Alarm *)
 
+		elsif PLC_control_type = ControlType_9 then
+			(* MPNE_E on RTU3 *)
+			PLC_BA_input_9  := false;
+		    PLC_BA_input_10 := false;
+		    PLC_BA_input_11 := false;
+			PLC_BA_input_12 := false;
+			PLC_BA_blackout_digin := MPNE_E_DigIn_16; (* --> PLC_BA_BlackoutDetected Alarm *)
+
 		elsif PLC_control_type = ControlType_12 then
 			(* Fast I/O on GPIO *)
 			PLC_BA_input_9  := false;

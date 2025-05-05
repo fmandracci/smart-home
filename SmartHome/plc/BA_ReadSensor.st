@@ -91,6 +91,27 @@ END_VAR
              3: BA_ReadSensor := PLC_FastIO_3 ;
 			else BA_ReadSensor := false;
 			end_case;
+	
+		elsif PLC_control_type = ControlType_9 then
+			(* MPNE_E on RTU3 *)
+			if n <= 8 then
+				if NODE_45_STATUS = NODE_NODE_OK then
+					case n of
+		             1: SetMpneDigDir_IN(MPNE_E_DigDir_1); BA_ReadSensor := MPNE_E_DigIn_1 ;
+		             2: SetMpneDigDir_IN(MPNE_E_DigDir_2); BA_ReadSensor := MPNE_E_DigIn_2 ;
+		             3: SetMpneDigDir_IN(MPNE_E_DigDir_3); BA_ReadSensor := MPNE_E_DigIn_3 ;
+		             4: SetMpneDigDir_IN(MPNE_E_DigDir_4); BA_ReadSensor := MPNE_E_DigIn_4 ;
+		             5: SetMpneDigDir_IN(MPNE_E_DigDir_5); BA_ReadSensor := MPNE_E_DigIn_5 ;
+		             6: SetMpneDigDir_IN(MPNE_E_DigDir_6); BA_ReadSensor := MPNE_E_DigIn_6 ;
+		             7: SetMpneDigDir_IN(MPNE_E_DigDir_7); BA_ReadSensor := MPNE_E_DigIn_7 ;
+		             8: SetMpneDigDir_IN(MPNE_E_DigDir_8); BA_ReadSensor := MPNE_E_DigIn_8 ;
+					else
+						BA_ReadSensor := false;
+					end_case;
+				else
+					BA_ReadSensor := false;
+				end_if;
+			end_if;
 
 		elsif PLC_control_type = ControlType_12 then
 			(* Fast I/O on GPIO *)

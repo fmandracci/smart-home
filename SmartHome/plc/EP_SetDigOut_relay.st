@@ -65,11 +65,13 @@ END_VAR
 			; (* TP.. *)
 		end_if; 
 
-	elsif PLC_control_type = ControlType_7 then
+	elsif PLC_control_type = ControlType_7 or PLC_control_type = ControlType_9 then
 		(* Fast I/O 7,8 on GPIO *);
 		case n of
-    	1: if PLC_FastIO_7 <> value then PLC_FastIO_7 := value; end_if;
-    	2: if PLC_FastIO_8 <> value then PLC_FastIO_8 := value; end_if;
+    	1: if PLC_FastIO_5 <> value then PLC_FastIO_5 := value; end_if;
+    	2: if PLC_FastIO_6 <> value then PLC_FastIO_6 := value; end_if;
+    	3: if PLC_FastIO_7 <> value then PLC_FastIO_7 := value; end_if;
+    	4: if PLC_FastIO_8 <> value then PLC_FastIO_8 := value; end_if;
 		else ;
 		end_case;
 

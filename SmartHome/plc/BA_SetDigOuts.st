@@ -97,6 +97,18 @@ END_VAR
         if PLC_FastIO_5 <> siren                              then PLC_FastIO_5 := siren                             ; end_if;
         if PLC_FastIO_6 <> (enable_A or enable_B or enable_C) then PLC_FastIO_6 := (enable_A or enable_B or enable_C); end_if;
 
+	elsif PLC_control_type = ControlType_9 then
+		(* MPNE_E on RTU3 *)
+        if MPNE_E_DigOut_29 <> green    then MPNE_E_DigOut_29 := green   ; end_if;
+        if MPNE_E_DigOut_30 <> red      then MPNE_E_DigOut_30 := red     ; end_if;
+        if MPNE_E_DigOut_31 <> yellow1  then MPNE_E_DigOut_31 := yellow1 ; end_if;
+        if MPNE_E_DigOut_32 <> yellow2  then MPNE_E_DigOut_32 := yellow2 ; end_if;
+
+		if MPNE_E_DigOut_25 <> siren    then MPNE_E_DigOut_25 := siren   ; end_if;
+        if MPNE_E_DigOut_26 <> enable_A then MPNE_E_DigOut_26 := enable_A; end_if;
+        if MPNE_E_DigOut_27 <> enable_B then MPNE_E_DigOut_27 := enable_B; end_if;
+        if MPNE_E_DigOut_28 <> enable_C then MPNE_E_DigOut_28 := enable_C; end_if;
+
 	elsif PLC_control_type = ControlType_12 then
 		(* Fast I/O on GPIO *)
 		(* no leds, all enabled in one DigOut *)

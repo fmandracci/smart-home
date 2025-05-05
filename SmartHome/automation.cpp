@@ -77,7 +77,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(2006);
+    doWrite_PLC_HMI_Version(2007);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'

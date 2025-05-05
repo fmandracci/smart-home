@@ -24,10 +24,11 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 2000;
+	PLC_PLC_Version := 2007;
 
 	(* Fast I/O only on TPX1043_03_C and TPX4xx_01_A *)
-	if PLC_PRODUCT_ID = 16#1043030C or PLC_PRODUCT_ID = 16#4100010A or PLC_PRODUCT_ID = 16#4120010A or PLC_PRODUCT_ID = 16#4150010A or PLC_PRODUCT_ID = 16#4190010A then
+	if PLC_PRODUCT_ID = 16#1043030C
+	or PLC_PRODUCT_ID = 16#4100010A or PLC_PRODUCT_ID = 16#4120010A or PLC_PRODUCT_ID = 16#4150010A or PLC_PRODUCT_ID = 16#4190010A then
 	    PLC_FastIO_Ena := 16#000000FF;
 	    PLC_FastIO_Dir := 16#000000F0;
 	end_if;
@@ -53,7 +54,7 @@ PROGRAM Init
 
 		(* INPUT: wattmeters *)
 		if PLC_EP_enabled_wattmeters >= 1 then
-			if PLC_control_type = ControlType_1 or PLC_control_type = ControlType_7 or PLC_control_type = ControlType_12 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_14 or PLC_control_type = ControlType_15 then
+			if PLC_control_type = ControlType_1 or PLC_control_type = ControlType_7 or PLC_control_type = ControlType_9 or PLC_control_type = ControlType_12 or PLC_control_type = ControlType_13 or PLC_control_type = ControlType_14 or PLC_control_type = ControlType_15 then
 				(* Finder 7M.24/7M.38 wattmeters 1..12 on RTU0 *)
 				if PLC_EP_enabled_wattmeters >=  1 then NODE_15_STATUS := 1; end_if;
 				if PLC_EP_enabled_wattmeters >=  2 then NODE_16_STATUS := 1; end_if;
@@ -90,7 +91,8 @@ PROGRAM Init
 		(* OUTPUT: relays *)
 		if abs(PLC_EP_enabled_relays) >= 1 then
 			if PLC_control_type = ControlType_1 then
-				if PLC_PRODUCT_ID = 16#1043030C then
+				if PLC_PRODUCT_ID = 16#1043030C
+				or PLC_PRODUCT_ID = 16#4100010A or PLC_PRODUCT_ID = 16#4120010A or PLC_PRODUCT_ID = 16#4150010A or PLC_PRODUCT_ID = 16#4190010A then
 					(* Fast I/O on GPIO *);
 				elsif PLC_PRODUCT_ID = 16#100704AD or PLC_PRODUCT_ID = 16#100704AE or PLC_PRODUCT_ID = 16#100704AA or PLC_PRODUCT_ID = 16#100704AC then
 					(* TPAC1007_04_AD/E/A/C Local I/O on RTU3 *)
@@ -98,7 +100,7 @@ PROGRAM Init
 				else
 					; (* TP.. *)
 				end_if; 
-			elsif PLC_control_type = ControlType_7 then
+			elsif PLC_control_type = ControlType_7 or PLC_control_type = ControlType_9 then
 				(* Fast I/O on GPIO *);
 			elsif PLC_control_type = ControlType_12 then
 				(* Fast I/O on GPIO *);
@@ -493,6 +495,9 @@ PROGRAM Init
 			end_if;
 		elsif PLC_control_type = ControlType_7 then
 			;(* Fast I/O on GPIO *)
+		elsif PLC_control_type = ControlType_9 then
+			(* MPNE_E on RTU3 *)
+			NODE_45_STATUS := 1;
 		elsif PLC_control_type = ControlType_12 then
 			;(* Fast I/O on GPIO *)
 		elsif PLC_control_type = ControlType_13 then
