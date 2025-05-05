@@ -63,6 +63,17 @@ END_VAR;
             if MPNE_B_DigOut_31 <> values[31] then MPNE_B_DigOut_31 := values[31]; end_if;
             if MPNE_B_DigOut_32 <> values[32] then MPNE_B_DigOut_32 := values[32]; end_if;
 
+    	elsif PLC_control_type = ControlType_9 then
+			(* MPNE_E on RTU3 *)
+            if MPNE_E_DigOut_17 <> values[ 1] then MPNE_E_DigOut_17 := values[ 1]; end_if;
+            if MPNE_E_DigOut_18 <> values[ 2] then MPNE_E_DigOut_18 := values[ 2]; end_if;
+            if MPNE_E_DigOut_19 <> values[ 3] then MPNE_E_DigOut_19 := values[ 3]; end_if;
+            if MPNE_E_DigOut_20 <> values[ 4] then MPNE_E_DigOut_20 := values[ 4]; end_if;
+            if MPNE_E_DigOut_21 <> values[ 5] then MPNE_E_DigOut_21 := values[ 5]; end_if;
+            if MPNE_E_DigOut_22 <> values[ 6] then MPNE_E_DigOut_22 := values[ 6]; end_if;
+            if MPNE_E_DigOut_23 <> values[ 7] then MPNE_E_DigOut_23 := values[ 7]; end_if;
+            if MPNE_E_DigOut_24 <> values[ 8] then MPNE_E_DigOut_24 := values[ 8]; end_if;
+
         elsif PLC_control_type = ControlType_12 then
             (* Fast I/O on GPIO *)
             ; (* one enable only *)
