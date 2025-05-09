@@ -73,7 +73,23 @@ border: none;
     </widget>
    </item>
    <item>
-    <layout class="QGridLayout" name="gridLayout">
+    <spacer name="verticalSpacer_top">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_commands">
      <property name="horizontalSpacing">
       <number>2</number>
      </property>
@@ -334,9 +350,25 @@ border: none;
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <spacer name="verticalSpacer_middle">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_sensors">
      <property name="spacing">
-      <number>0</number>
+      <number>3</number>
      </property>
      <property name="leftMargin">
       <number>0</number>
@@ -359,10 +391,13 @@ border: none;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_1_8">
-       <property name="margin">
+       <property name="horizontalSpacing">
+        <number>3</number>
+       </property>
+       <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <property name="spacing">
+       <property name="margin">
         <number>0</number>
        </property>
        <item row="7" column="1">
@@ -884,10 +919,13 @@ border: none;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_9_16">
-       <property name="margin">
+       <property name="horizontalSpacing">
+        <number>3</number>
+       </property>
+       <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <property name="spacing">
+       <property name="margin">
         <number>0</number>
        </property>
        <item row="5" column="1">
@@ -1409,10 +1447,13 @@ border: none;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_17_24">
-       <property name="margin">
+       <property name="horizontalSpacing">
+        <number>3</number>
+       </property>
+       <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <property name="spacing">
+       <property name="margin">
         <number>0</number>
        </property>
        <item row="6" column="1">
@@ -1934,10 +1975,13 @@ border: none;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_25_32">
-       <property name="margin">
+       <property name="horizontalSpacing">
+        <number>3</number>
+       </property>
+       <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <property name="spacing">
+       <property name="margin">
         <number>0</number>
        </property>
        <item row="3" column="1">
@@ -2478,7 +2522,7 @@ border: none;
       <enum>Qt::Vertical</enum>
      </property>
      <property name="sizeType">
-      <enum>QSizePolicy::MinimumExpanding</enum>
+      <enum>QSizePolicy::Ignored</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>

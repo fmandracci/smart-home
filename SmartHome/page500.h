@@ -75,6 +75,7 @@ private:
     void sendCommand(uint32_t command);
     // unsigned old_sensor_status[1 + ALARM_SENSORS_MAX]; // starts @ 1
     void updateSensor(int i, unsigned status, QLabel *label_ok, QLabel *label_sensor);
+    void changeLabel(QLabel *label, const QString text);
     void changeWidgets();
     void updateWidgets();
 };

@@ -10422,79 +10422,79 @@ Y2=PLC_EP_wattmeter_M_Pmax</oldsource>
 <context>
     <name>page500</name>
     <message>
-        <location filename="page500.ui" line="144"/>
+        <location filename="page500.ui" line="160"/>
         <source>OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="268"/>
+        <location filename="page500.ui" line="284"/>
         <source>EVERYTHING</source>
         <oldsource>3 everything</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="206"/>
+        <location filename="page500.ui" line="222"/>
         <source>NIGHTTIME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="299"/>
+        <location filename="page500.ui" line="315"/>
         <source>ENABLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="330"/>
+        <location filename="page500.ui" line="346"/>
         <source>MUTED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="113"/>
+        <location filename="page500.ui" line="129"/>
         <source>RINGING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="175"/>
+        <location filename="page500.ui" line="191"/>
         <source>TESTING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="386"/>
-        <location filename="page500.ui" line="411"/>
-        <location filename="page500.ui" line="436"/>
-        <location filename="page500.ui" line="461"/>
-        <location filename="page500.ui" line="486"/>
-        <location filename="page500.ui" line="511"/>
-        <location filename="page500.ui" line="536"/>
-        <location filename="page500.ui" line="561"/>
-        <location filename="page500.ui" line="911"/>
-        <location filename="page500.ui" line="936"/>
-        <location filename="page500.ui" line="961"/>
-        <location filename="page500.ui" line="986"/>
-        <location filename="page500.ui" line="1011"/>
-        <location filename="page500.ui" line="1036"/>
-        <location filename="page500.ui" line="1061"/>
-        <location filename="page500.ui" line="1086"/>
-        <location filename="page500.ui" line="1436"/>
-        <location filename="page500.ui" line="1461"/>
-        <location filename="page500.ui" line="1486"/>
-        <location filename="page500.ui" line="1511"/>
-        <location filename="page500.ui" line="1536"/>
-        <location filename="page500.ui" line="1561"/>
-        <location filename="page500.ui" line="1586"/>
-        <location filename="page500.ui" line="1611"/>
-        <location filename="page500.ui" line="1961"/>
-        <location filename="page500.ui" line="1986"/>
-        <location filename="page500.ui" line="2011"/>
-        <location filename="page500.ui" line="2036"/>
-        <location filename="page500.ui" line="2061"/>
-        <location filename="page500.ui" line="2086"/>
-        <location filename="page500.ui" line="2111"/>
-        <location filename="page500.ui" line="2136"/>
+        <location filename="page500.ui" line="421"/>
+        <location filename="page500.ui" line="446"/>
+        <location filename="page500.ui" line="471"/>
+        <location filename="page500.ui" line="496"/>
+        <location filename="page500.ui" line="521"/>
+        <location filename="page500.ui" line="546"/>
+        <location filename="page500.ui" line="571"/>
+        <location filename="page500.ui" line="596"/>
+        <location filename="page500.ui" line="949"/>
+        <location filename="page500.ui" line="974"/>
+        <location filename="page500.ui" line="999"/>
+        <location filename="page500.ui" line="1024"/>
+        <location filename="page500.ui" line="1049"/>
+        <location filename="page500.ui" line="1074"/>
+        <location filename="page500.ui" line="1099"/>
+        <location filename="page500.ui" line="1124"/>
+        <location filename="page500.ui" line="1477"/>
+        <location filename="page500.ui" line="1502"/>
+        <location filename="page500.ui" line="1527"/>
+        <location filename="page500.ui" line="1552"/>
+        <location filename="page500.ui" line="1577"/>
+        <location filename="page500.ui" line="1602"/>
+        <location filename="page500.ui" line="1627"/>
+        <location filename="page500.ui" line="1652"/>
+        <location filename="page500.ui" line="2005"/>
+        <location filename="page500.ui" line="2030"/>
+        <location filename="page500.ui" line="2055"/>
+        <location filename="page500.ui" line="2080"/>
+        <location filename="page500.ui" line="2105"/>
+        <location filename="page500.ui" line="2130"/>
+        <location filename="page500.ui" line="2155"/>
+        <location filename="page500.ui" line="2180"/>
         <source>nn = A/B mm </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page500.ui" line="237"/>
+        <location filename="page500.ui" line="253"/>
         <source>DAYTIME</source>
         <translation type="unfinished"></translation>
     </message>
