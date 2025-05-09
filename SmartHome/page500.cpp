@@ -66,6 +66,28 @@ void page500::updateData()
     updateWidgets();
 }
 
+void page500::changeLabel(QLabel *label, const QString text)
+{
+    QString base_style = FONT_SS_N(modulor->normalFont_px()) + "background-color: rgb(0, 0, 0);";
+
+    if (text.contains(LABEL_01))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_01));
+    else if (text.contains(LABEL_02))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_02));
+    else if (text.contains(LABEL_03))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_03));
+    else if (text.contains(LABEL_04))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_04));
+    else if (text.contains(LABEL_05))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_05));
+    else if (text.contains(LABEL_06))
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_06));
+    else
+        label->setStyleSheet(base_style + COLOR_SS(COLOR_00));
+
+    label->setText(text);
+}
+
 void page500::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
@@ -98,42 +120,6 @@ void page500::changeWidgets()
     RED_OVER_BLACK     = sf + "color: rgb(255,   0,   0); background-color: rgb(0, 0, 0);";
     ORANGE_OVER_BLACK  = sf + "color: rgb(255, 128,   0); background-color: rgb(0, 0, 0);";
     MAGENTA_OVER_BLACK = sf + "color: rgb(255,   0, 255); background-color: rgb(0, 0, 0);";
-
-    ui->label_sensor_01->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_02->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_03->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_04->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_05->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_06->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_07->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_08->setStyleSheet(WHITE_OVER_BLACK);
-
-    ui->label_sensor_09->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_10->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_11->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_12->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_13->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_14->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_15->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_16->setStyleSheet(WHITE_OVER_BLACK);
-
-    ui->label_sensor_17->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_18->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_19->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_20->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_21->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_22->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_23->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_24->setStyleSheet(WHITE_OVER_BLACK);
-
-    ui->label_sensor_25->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_26->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_27->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_28->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_29->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_30->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_31->setStyleSheet(WHITE_OVER_BLACK);
-    ui->label_sensor_32->setStyleSheet(WHITE_OVER_BLACK);
 
     ui->label_BA_OK_01->setStyleSheet(sf); ui->label_BA_OK_01->setMaximumSize(labelSize);
     ui->label_BA_OK_02->setStyleSheet(sf); ui->label_BA_OK_02->setMaximumSize(labelSize);
@@ -171,41 +157,41 @@ void page500::changeWidgets()
     ui->label_BA_OK_31->setStyleSheet(sf); ui->label_BA_OK_31->setMaximumSize(labelSize);
     ui->label_BA_OK_32->setStyleSheet(sf); ui->label_BA_OK_32->setMaximumSize(labelSize);
 
-    ui->label_sensor_01->setText(home_ini.value("BA/sensor_01").toString());
-    ui->label_sensor_02->setText(home_ini.value("BA/sensor_02").toString());
-    ui->label_sensor_03->setText(home_ini.value("BA/sensor_03").toString());
-    ui->label_sensor_04->setText(home_ini.value("BA/sensor_04").toString());
-    ui->label_sensor_05->setText(home_ini.value("BA/sensor_05").toString());
-    ui->label_sensor_06->setText(home_ini.value("BA/sensor_06").toString());
-    ui->label_sensor_07->setText(home_ini.value("BA/sensor_07").toString());
-    ui->label_sensor_08->setText(home_ini.value("BA/sensor_08").toString());
+    changeLabel(ui->label_sensor_01, home_ini.value("BA/sensor_01").toString());
+    changeLabel(ui->label_sensor_02, home_ini.value("BA/sensor_02").toString());
+    changeLabel(ui->label_sensor_03, home_ini.value("BA/sensor_03").toString());
+    changeLabel(ui->label_sensor_04, home_ini.value("BA/sensor_04").toString());
+    changeLabel(ui->label_sensor_05, home_ini.value("BA/sensor_05").toString());
+    changeLabel(ui->label_sensor_06, home_ini.value("BA/sensor_06").toString());
+    changeLabel(ui->label_sensor_07, home_ini.value("BA/sensor_07").toString());
+    changeLabel(ui->label_sensor_08, home_ini.value("BA/sensor_08").toString());
 
-    ui->label_sensor_09->setText(home_ini.value("BA/sensor_09").toString());
-    ui->label_sensor_10->setText(home_ini.value("BA/sensor_10").toString());
-    ui->label_sensor_11->setText(home_ini.value("BA/sensor_11").toString());
-    ui->label_sensor_12->setText(home_ini.value("BA/sensor_12").toString());
-    ui->label_sensor_13->setText(home_ini.value("BA/sensor_13").toString());
-    ui->label_sensor_14->setText(home_ini.value("BA/sensor_14").toString());
-    ui->label_sensor_15->setText(home_ini.value("BA/sensor_15").toString());
-    ui->label_sensor_16->setText(home_ini.value("BA/sensor_16").toString());
+    changeLabel(ui->label_sensor_09, home_ini.value("BA/sensor_09").toString());
+    changeLabel(ui->label_sensor_10, home_ini.value("BA/sensor_10").toString());
+    changeLabel(ui->label_sensor_11, home_ini.value("BA/sensor_11").toString());
+    changeLabel(ui->label_sensor_12, home_ini.value("BA/sensor_12").toString());
+    changeLabel(ui->label_sensor_13, home_ini.value("BA/sensor_13").toString());
+    changeLabel(ui->label_sensor_14, home_ini.value("BA/sensor_14").toString());
+    changeLabel(ui->label_sensor_15, home_ini.value("BA/sensor_15").toString());
+    changeLabel(ui->label_sensor_16, home_ini.value("BA/sensor_16").toString());
 
-    ui->label_sensor_17->setText(home_ini.value("BA/sensor_17").toString());
-    ui->label_sensor_18->setText(home_ini.value("BA/sensor_18").toString());
-    ui->label_sensor_19->setText(home_ini.value("BA/sensor_19").toString());
-    ui->label_sensor_20->setText(home_ini.value("BA/sensor_20").toString());
-    ui->label_sensor_21->setText(home_ini.value("BA/sensor_21").toString());
-    ui->label_sensor_22->setText(home_ini.value("BA/sensor_22").toString());
-    ui->label_sensor_23->setText(home_ini.value("BA/sensor_23").toString());
-    ui->label_sensor_24->setText(home_ini.value("BA/sensor_24").toString());
+    changeLabel(ui->label_sensor_17, home_ini.value("BA/sensor_17").toString());
+    changeLabel(ui->label_sensor_18, home_ini.value("BA/sensor_18").toString());
+    changeLabel(ui->label_sensor_19, home_ini.value("BA/sensor_19").toString());
+    changeLabel(ui->label_sensor_20, home_ini.value("BA/sensor_20").toString());
+    changeLabel(ui->label_sensor_21, home_ini.value("BA/sensor_21").toString());
+    changeLabel(ui->label_sensor_22, home_ini.value("BA/sensor_22").toString());
+    changeLabel(ui->label_sensor_23, home_ini.value("BA/sensor_23").toString());
+    changeLabel(ui->label_sensor_24, home_ini.value("BA/sensor_24").toString());
 
-    ui->label_sensor_25->setText(home_ini.value("BA/sensor_25").toString());
-    ui->label_sensor_26->setText(home_ini.value("BA/sensor_26").toString());
-    ui->label_sensor_27->setText(home_ini.value("BA/sensor_27").toString());
-    ui->label_sensor_28->setText(home_ini.value("BA/sensor_28").toString());
-    ui->label_sensor_29->setText(home_ini.value("BA/sensor_29").toString());
-    ui->label_sensor_30->setText(home_ini.value("BA/sensor_30").toString());
-    ui->label_sensor_31->setText(home_ini.value("BA/sensor_31").toString());
-    ui->label_sensor_32->setText(home_ini.value("BA/sensor_32").toString());
+    changeLabel(ui->label_sensor_25, home_ini.value("BA/sensor_25").toString());
+    changeLabel(ui->label_sensor_26, home_ini.value("BA/sensor_26").toString());
+    changeLabel(ui->label_sensor_27, home_ini.value("BA/sensor_27").toString());
+    changeLabel(ui->label_sensor_28, home_ini.value("BA/sensor_28").toString());
+    changeLabel(ui->label_sensor_29, home_ini.value("BA/sensor_29").toString());
+    changeLabel(ui->label_sensor_30, home_ini.value("BA/sensor_30").toString());
+    changeLabel(ui->label_sensor_31, home_ini.value("BA/sensor_31").toString());
+    changeLabel(ui->label_sensor_32, home_ini.value("BA/sensor_32").toString());
 }
 
 void page500::updateWidgets()
@@ -290,7 +276,7 @@ void page500::updateWidgets()
     updateSensor( 2, PLC_BA_OK_2 , ui->label_BA_OK_02, ui->label_sensor_02);
     updateSensor( 3, PLC_BA_OK_3 , ui->label_BA_OK_03, ui->label_sensor_03);
     updateSensor( 4, PLC_BA_OK_4 , ui->label_BA_OK_04, ui->label_sensor_04);
-    ui->line_4_5->setVisible(PLC_BA_enabled_sensors >= 5);
+    ui->line_4_5->setVisible(false); // PLC_BA_enabled_sensors >= 5);
     updateSensor( 5, PLC_BA_OK_5 , ui->label_BA_OK_05, ui->label_sensor_05);
     updateSensor( 6, PLC_BA_OK_6 , ui->label_BA_OK_06, ui->label_sensor_06);
     updateSensor( 7, PLC_BA_OK_7 , ui->label_BA_OK_07, ui->label_sensor_07);
@@ -300,7 +286,7 @@ void page500::updateWidgets()
     updateSensor(10, PLC_BA_OK_10, ui->label_BA_OK_10, ui->label_sensor_10);
     updateSensor(11, PLC_BA_OK_11, ui->label_BA_OK_11, ui->label_sensor_11);
     updateSensor(12, PLC_BA_OK_12, ui->label_BA_OK_12, ui->label_sensor_12);
-    ui->line_12_13->setVisible(PLC_BA_enabled_sensors >= 13);
+    ui->line_12_13->setVisible(false); // PLC_BA_enabled_sensors >= 13);
     updateSensor(13, PLC_BA_OK_13, ui->label_BA_OK_13, ui->label_sensor_13);
     updateSensor(14, PLC_BA_OK_14, ui->label_BA_OK_14, ui->label_sensor_14);
     updateSensor(15, PLC_BA_OK_15, ui->label_BA_OK_15, ui->label_sensor_15);
@@ -310,7 +296,7 @@ void page500::updateWidgets()
     updateSensor(18, PLC_BA_OK_18, ui->label_BA_OK_18, ui->label_sensor_18);
     updateSensor(19, PLC_BA_OK_19, ui->label_BA_OK_19, ui->label_sensor_19);
     updateSensor(20, PLC_BA_OK_20, ui->label_BA_OK_20, ui->label_sensor_20);
-    ui->line_20_21->setVisible(PLC_BA_enabled_sensors >= 21);
+    ui->line_20_21->setVisible(false); // PLC_BA_enabled_sensors >= 21);
     updateSensor(21, PLC_BA_OK_21, ui->label_BA_OK_21, ui->label_sensor_21);
     updateSensor(22, PLC_BA_OK_22, ui->label_BA_OK_22, ui->label_sensor_22);
     updateSensor(23, PLC_BA_OK_23, ui->label_BA_OK_23, ui->label_sensor_23);
@@ -320,7 +306,7 @@ void page500::updateWidgets()
     updateSensor(26, PLC_BA_OK_26, ui->label_BA_OK_26, ui->label_sensor_26);
     updateSensor(27, PLC_BA_OK_27, ui->label_BA_OK_27, ui->label_sensor_27);
     updateSensor(28, PLC_BA_OK_28, ui->label_BA_OK_28, ui->label_sensor_28);
-    ui->line_28_29->setVisible(PLC_BA_enabled_sensors >= 29);
+    ui->line_28_29->setVisible(false); // PLC_BA_enabled_sensors >= 29);
     updateSensor(29, PLC_BA_OK_29, ui->label_BA_OK_29, ui->label_sensor_29);
     updateSensor(30, PLC_BA_OK_30, ui->label_BA_OK_30, ui->label_sensor_30);
     updateSensor(31, PLC_BA_OK_31, ui->label_BA_OK_31, ui->label_sensor_31);
