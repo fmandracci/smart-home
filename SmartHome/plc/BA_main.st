@@ -28,9 +28,10 @@ VAR
 	timer : TON;
 	NEXT_STATUS : UINT := 0;
 	NEXT_INDEX : UINT := 0;
+	tmp : BOOL;
 END_VAR
 CONST
-	WaitSensorsDelay : TIME := T#9973ms;
+	WaitSensorsDelay : TIME := T#1999ms;
 END_CONST;
 
 	if not PLC_Iam_BA then
@@ -87,9 +88,15 @@ END_CONST;
 	2: (* ----- read sensors ---------------------------------------------- *)
 
 		if not BA_ReadSensorsReady() then
-			substatus := 3;
+			substatus := 3;  (* filtering because of node status *)
 		else
-			PLC_BA_blackout_digin := BA_ReadSensor(0); (* blackout detection *)
+			tmp := BA_ReadSensor(0); (* blackout detection *)
+			if not tmp then
+				substatus := 3; (* filtering because of blackout detection only *)
+			else
+				PLC_BA_blackout_digin := tmp;
+				substatus := 4;
+			end_if;
 			PLC_BA_DigIn_1 := BA_ReadSensor(1 );
 			PLC_BA_DigIn_2 := BA_ReadSensor(2 );
 			PLC_BA_DigIn_3 := BA_ReadSensor(3 );
@@ -122,8 +129,6 @@ END_CONST;
 			PLC_BA_DigIn_30:= BA_ReadSensor(30);
 			PLC_BA_DigIn_31:= BA_ReadSensor(31);
 			PLC_BA_DigIn_32:= BA_ReadSensor(32);
-
-			substatus := 4;
 		end_if;
 	
 	3: (* ----- wait for ready sensors (only once) ------------------------ *)
@@ -131,6 +136,7 @@ END_CONST;
 		timer(IN := TRUE, PT := WaitSensorsDelay);
 		if timer.Q then
 			timer(IN := FALSE);
+			substatus := 4;
 			if BA_ReadSensorsReady() then
 				PLC_BA_blackout_digin := BA_ReadSensor(0); (* blackout detection *)
 				PLC_BA_DigIn_1 := BA_ReadSensor(1 );
@@ -200,8 +206,6 @@ END_CONST;
 				PLC_BA_DigIn_31:= false;
 				PLC_BA_DigIn_32:= false;
 			end_if;
-
-			substatus := 4;
 		end_if;
 
 	4: (* ----- check sensors --------------------------------------------- *)
