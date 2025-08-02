@@ -73,6 +73,14 @@ END_VAR;
             if MPNE_E_DigOut_22 <> values[ 6] then MPNE_E_DigOut_22 := values[ 6]; end_if;
             if MPNE_E_DigOut_23 <> values[ 7] then MPNE_E_DigOut_23 := values[ 7]; end_if;
             if MPNE_E_DigOut_24 <> values[ 8] then MPNE_E_DigOut_24 := values[ 8]; end_if;
+			SetMpneDigDir_IN(MPNE_E_DigDir_1); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_2); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_3); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_4); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_5); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_6); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_7); 
+			SetMpneDigDir_IN(MPNE_E_DigDir_8); 
 
         elsif PLC_control_type = ControlType_12 then
             (* Fast I/O on GPIO *)
