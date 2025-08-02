@@ -30,7 +30,7 @@ VAR
 	NEXT_INDEX : UINT := 0;
 END_VAR
 CONST
-	WaitSensorsDelay : TIME := T#8009ms;
+	WaitSensorsDelay : TIME := T#9973ms;
 END_CONST;
 
 	if not PLC_Iam_BA then
