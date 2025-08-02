@@ -46,22 +46,42 @@ END_VAR;
             if MPNE_A_DigOut_31 <> values[15] then MPNE_A_DigOut_31 := values[15]; end_if;
             if MPNE_A_DigOut_32 <> values[16] then MPNE_A_DigOut_32 := values[16]; end_if;
 
-            if MPNE_B_DigOut_17 <> values[17] then MPNE_B_DigOut_17 := values[17]; end_if;
-            if MPNE_B_DigOut_18 <> values[18] then MPNE_B_DigOut_18 := values[18]; end_if;
-            if MPNE_B_DigOut_19 <> values[19] then MPNE_B_DigOut_19 := values[19]; end_if;
-            if MPNE_B_DigOut_20 <> values[20] then MPNE_B_DigOut_20 := values[20]; end_if;
-            if MPNE_B_DigOut_21 <> values[21] then MPNE_B_DigOut_21 := values[21]; end_if;
-            if MPNE_B_DigOut_22 <> values[22] then MPNE_B_DigOut_22 := values[22]; end_if;
-            if MPNE_B_DigOut_23 <> values[23] then MPNE_B_DigOut_23 := values[23]; end_if;
-            if MPNE_B_DigOut_24 <> values[24] then MPNE_B_DigOut_24 := values[24]; end_if;
-            if MPNE_B_DigOut_25 <> values[25] then MPNE_B_DigOut_25 := values[25]; end_if;
-            if MPNE_B_DigOut_26 <> values[26] then MPNE_B_DigOut_26 := values[26]; end_if;
-            if MPNE_B_DigOut_27 <> values[27] then MPNE_B_DigOut_27 := values[27]; end_if;
-            if MPNE_B_DigOut_28 <> values[28] then MPNE_B_DigOut_28 := values[28]; end_if;
-            if MPNE_B_DigOut_29 <> values[29] then MPNE_B_DigOut_29 := values[29]; end_if;
-            if MPNE_B_DigOut_30 <> values[30] then MPNE_B_DigOut_30 := values[30]; end_if;
-            if MPNE_B_DigOut_31 <> values[31] then MPNE_B_DigOut_31 := values[31]; end_if;
-            if MPNE_B_DigOut_32 <> values[32] then MPNE_B_DigOut_32 := values[32]; end_if;
+			SetMpneDigDir_IN(MPNE_A_DigDir_1); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_2); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_3); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_4); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_5); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_6); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_7); 
+			SetMpneDigDir_IN(MPNE_A_DigDir_8); 
+
+			if PLC_BA_enabled_sensors > 16 then
+	            if MPNE_B_DigOut_17 <> values[17] then MPNE_B_DigOut_17 := values[17]; end_if;
+	            if MPNE_B_DigOut_18 <> values[18] then MPNE_B_DigOut_18 := values[18]; end_if;
+	            if MPNE_B_DigOut_19 <> values[19] then MPNE_B_DigOut_19 := values[19]; end_if;
+	            if MPNE_B_DigOut_20 <> values[20] then MPNE_B_DigOut_20 := values[20]; end_if;
+	            if MPNE_B_DigOut_21 <> values[21] then MPNE_B_DigOut_21 := values[21]; end_if;
+	            if MPNE_B_DigOut_22 <> values[22] then MPNE_B_DigOut_22 := values[22]; end_if;
+	            if MPNE_B_DigOut_23 <> values[23] then MPNE_B_DigOut_23 := values[23]; end_if;
+	            if MPNE_B_DigOut_24 <> values[24] then MPNE_B_DigOut_24 := values[24]; end_if;
+	            if MPNE_B_DigOut_25 <> values[25] then MPNE_B_DigOut_25 := values[25]; end_if;
+	            if MPNE_B_DigOut_26 <> values[26] then MPNE_B_DigOut_26 := values[26]; end_if;
+	            if MPNE_B_DigOut_27 <> values[27] then MPNE_B_DigOut_27 := values[27]; end_if;
+	            if MPNE_B_DigOut_28 <> values[28] then MPNE_B_DigOut_28 := values[28]; end_if;
+	            if MPNE_B_DigOut_29 <> values[29] then MPNE_B_DigOut_29 := values[29]; end_if;
+	            if MPNE_B_DigOut_30 <> values[30] then MPNE_B_DigOut_30 := values[30]; end_if;
+	            if MPNE_B_DigOut_31 <> values[31] then MPNE_B_DigOut_31 := values[31]; end_if;
+	            if MPNE_B_DigOut_32 <> values[32] then MPNE_B_DigOut_32 := values[32]; end_if;
+
+				SetMpneDigDir_IN(MPNE_B_DigDir_1); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_2); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_3); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_4); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_5); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_6); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_7); 
+				SetMpneDigDir_IN(MPNE_B_DigDir_8); 
+			end_if;
 
     	elsif PLC_control_type = ControlType_9 then
 			(* MPNE_E on RTU3 *)
@@ -73,6 +93,7 @@ END_VAR;
             if MPNE_E_DigOut_22 <> values[ 6] then MPNE_E_DigOut_22 := values[ 6]; end_if;
             if MPNE_E_DigOut_23 <> values[ 7] then MPNE_E_DigOut_23 := values[ 7]; end_if;
             if MPNE_E_DigOut_24 <> values[ 8] then MPNE_E_DigOut_24 := values[ 8]; end_if;
+
 			SetMpneDigDir_IN(MPNE_E_DigDir_1); 
 			SetMpneDigDir_IN(MPNE_E_DigDir_2); 
 			SetMpneDigDir_IN(MPNE_E_DigDir_3); 

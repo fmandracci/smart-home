@@ -74,43 +74,42 @@ END_VAR
 			(* MPNE_A, MPNE_B on RTU0 *)
 			if n <= 16 then
 				case n of
-				 1: SetMpneDigDir_IN(MPNE_A_DigDir_1); BA_ReadSensor := MPNE_A_DigIn_1 ;
-				 2: SetMpneDigDir_IN(MPNE_A_DigDir_2); BA_ReadSensor := MPNE_A_DigIn_2 ;
-				 3: SetMpneDigDir_IN(MPNE_A_DigDir_3); BA_ReadSensor := MPNE_A_DigIn_3 ;
-				 4: SetMpneDigDir_IN(MPNE_A_DigDir_4); BA_ReadSensor := MPNE_A_DigIn_4 ;
-				 5: SetMpneDigDir_IN(MPNE_A_DigDir_5); BA_ReadSensor := MPNE_A_DigIn_5 ;
-				 6: SetMpneDigDir_IN(MPNE_A_DigDir_6); BA_ReadSensor := MPNE_A_DigIn_6 ;
-				 7: SetMpneDigDir_IN(MPNE_A_DigDir_7); BA_ReadSensor := MPNE_A_DigIn_7 ;
-				 8: SetMpneDigDir_IN(MPNE_A_DigDir_8); BA_ReadSensor := MPNE_A_DigIn_8 ;
-				 9:                                    BA_ReadSensor := MPNE_A_DigIn_9 ;
-				10:                                    BA_ReadSensor := MPNE_A_DigIn_10;
-				11:                                    BA_ReadSensor := MPNE_A_DigIn_11;
-				12:                                    BA_ReadSensor := MPNE_A_DigIn_12;
-				13:                                    BA_ReadSensor := MPNE_A_DigIn_13;
-				14:                                    BA_ReadSensor := MPNE_A_DigIn_14;
-				15:                                    BA_ReadSensor := MPNE_A_DigIn_15;
-				16:                                    BA_ReadSensor := MPNE_A_DigIn_16;
+				 1: (* SetMpneDigDir_IN(MPNE_A_DigDir_1); *) BA_ReadSensor := MPNE_A_DigIn_1 ;
+				 2: (* SetMpneDigDir_IN(MPNE_A_DigDir_2); *) BA_ReadSensor := MPNE_A_DigIn_2 ;
+				 3: (* SetMpneDigDir_IN(MPNE_A_DigDir_3); *) BA_ReadSensor := MPNE_A_DigIn_3 ;
+				 4: (* SetMpneDigDir_IN(MPNE_A_DigDir_4); *) BA_ReadSensor := MPNE_A_DigIn_4 ;
+				 5: (* SetMpneDigDir_IN(MPNE_A_DigDir_5); *) BA_ReadSensor := MPNE_A_DigIn_5 ;
+				 6: (* SetMpneDigDir_IN(MPNE_A_DigDir_6); *) BA_ReadSensor := MPNE_A_DigIn_6 ;
+				 7: (* SetMpneDigDir_IN(MPNE_A_DigDir_7); *) BA_ReadSensor := MPNE_A_DigIn_7 ;
+				 8: (* SetMpneDigDir_IN(MPNE_A_DigDir_8); *) BA_ReadSensor := MPNE_A_DigIn_8 ;
+				 9:                                          BA_ReadSensor := MPNE_A_DigIn_9 ;
+				10:                                          BA_ReadSensor := MPNE_A_DigIn_10;
+				11:                                          BA_ReadSensor := MPNE_A_DigIn_11;
+				12:                                          BA_ReadSensor := MPNE_A_DigIn_12;
+				13:                                          BA_ReadSensor := MPNE_A_DigIn_13;
+				14:                                          BA_ReadSensor := MPNE_A_DigIn_14;
+				15:                                          BA_ReadSensor := MPNE_A_DigIn_15;
+				16:                                          BA_ReadSensor := MPNE_A_DigIn_16;
 				else BA_ReadSensor := false;
 				end_case;
 			else
 				case n of
-				17: SetMpneDigDir_IN(MPNE_B_DigDir_1); BA_ReadSensor := MPNE_B_DigIn_1 ;
-				18: SetMpneDigDir_IN(MPNE_B_DigDir_2); BA_ReadSensor := MPNE_B_DigIn_2 ;
-				19: SetMpneDigDir_IN(MPNE_B_DigDir_3); BA_ReadSensor := MPNE_B_DigIn_3 ;
-				20: SetMpneDigDir_IN(MPNE_B_DigDir_4); BA_ReadSensor := MPNE_B_DigIn_4 ;
-				21: SetMpneDigDir_IN(MPNE_B_DigDir_5); BA_ReadSensor := MPNE_B_DigIn_5 ;
-				22: SetMpneDigDir_IN(MPNE_B_DigDir_6); BA_ReadSensor := MPNE_B_DigIn_6 ;
-				23: SetMpneDigDir_IN(MPNE_B_DigDir_7); BA_ReadSensor := MPNE_B_DigIn_7 ;
-				24: SetMpneDigDir_IN(MPNE_B_DigDir_8); BA_ReadSensor := MPNE_B_DigIn_8 ;
-
-				25:                                    BA_ReadSensor := MPNE_B_DigIn_9 ;
-				26:                                    BA_ReadSensor := MPNE_B_DigIn_10;
-				27:                                    BA_ReadSensor := MPNE_B_DigIn_11;
-				28:                                    BA_ReadSensor := MPNE_B_DigIn_12;
-				29:                                    BA_ReadSensor := MPNE_B_DigIn_13;
-				30:                                    BA_ReadSensor := MPNE_B_DigIn_14;
-				31:                                    BA_ReadSensor := MPNE_B_DigIn_15;
-				32:                                    BA_ReadSensor := MPNE_B_DigIn_16;
+				17: (* SetMpneDigDir_IN(MPNE_B_DigDir_1); *) BA_ReadSensor := MPNE_B_DigIn_1 ;
+				18: (* SetMpneDigDir_IN(MPNE_B_DigDir_2); *) BA_ReadSensor := MPNE_B_DigIn_2 ;
+				19: (* SetMpneDigDir_IN(MPNE_B_DigDir_3); *) BA_ReadSensor := MPNE_B_DigIn_3 ;
+				20: (* SetMpneDigDir_IN(MPNE_B_DigDir_4); *) BA_ReadSensor := MPNE_B_DigIn_4 ;
+				21: (* SetMpneDigDir_IN(MPNE_B_DigDir_5); *) BA_ReadSensor := MPNE_B_DigIn_5 ;
+				22: (* SetMpneDigDir_IN(MPNE_B_DigDir_6); *) BA_ReadSensor := MPNE_B_DigIn_6 ;
+				23: (* SetMpneDigDir_IN(MPNE_B_DigDir_7); *) BA_ReadSensor := MPNE_B_DigIn_7 ;
+				24: (* SetMpneDigDir_IN(MPNE_B_DigDir_8); *) BA_ReadSensor := MPNE_B_DigIn_8 ;
+				25:                                          BA_ReadSensor := MPNE_B_DigIn_9 ;
+				26:                                          BA_ReadSensor := MPNE_B_DigIn_10;
+				27:                                          BA_ReadSensor := MPNE_B_DigIn_11;
+				28:                                          BA_ReadSensor := MPNE_B_DigIn_12;
+				29:                                          BA_ReadSensor := MPNE_B_DigIn_13;
+				30:                                          BA_ReadSensor := MPNE_B_DigIn_14;
+				31:                                          BA_ReadSensor := MPNE_B_DigIn_15;
+				32:                                          BA_ReadSensor := MPNE_B_DigIn_16;
 				else BA_ReadSensor := false;
 				end_case;
 			end_if;
