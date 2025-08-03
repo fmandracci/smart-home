@@ -47,6 +47,10 @@ END_VAR
 			(* MPNE_E on RTU3 *)
 			BA_ReadSensor := MPNE_E_DigIn_16;
 
+		elsif PLC_control_type = ControlType_99 then
+			(* MPNE_A on RTU0 *)
+			BA_ReadSensor := MPNE_A_DigIn_16;
+
 		elsif PLC_control_type = ControlType_12 then
 			(* Fast I/O on GPIO *)
 			BA_ReadSensor := PLC_FastIO_4;
@@ -143,14 +147,14 @@ END_VAR
 			(* MPNE_A on RTU0 *)
 			if n <= 8 then
 				case n of
-				1: SetMpneDigDir_IN(MPNE_A_DigDir_1); BA_ReadSensor := MPNE_A_DigIn_1 ;
-				2: SetMpneDigDir_IN(MPNE_A_DigDir_2); BA_ReadSensor := MPNE_A_DigIn_2 ;
-				3: SetMpneDigDir_IN(MPNE_A_DigDir_3); BA_ReadSensor := MPNE_A_DigIn_3 ;
-				4: SetMpneDigDir_IN(MPNE_A_DigDir_4); BA_ReadSensor := MPNE_A_DigIn_4 ;
-				5: SetMpneDigDir_IN(MPNE_A_DigDir_5); BA_ReadSensor := MPNE_A_DigIn_5 ;
-				6: SetMpneDigDir_IN(MPNE_A_DigDir_6); BA_ReadSensor := MPNE_A_DigIn_6 ;
-				7: SetMpneDigDir_IN(MPNE_A_DigDir_7); BA_ReadSensor := MPNE_A_DigIn_7 ;
-				8: SetMpneDigDir_IN(MPNE_A_DigDir_8); BA_ReadSensor := MPNE_A_DigIn_8 ;
+				1: (* SetMpneDigDir_IN(MPNE_A_DigDir_1); *) BA_ReadSensor := MPNE_A_DigIn_1 ;
+				2: (* SetMpneDigDir_IN(MPNE_A_DigDir_2); *) BA_ReadSensor := MPNE_A_DigIn_2 ;
+				3: (* SetMpneDigDir_IN(MPNE_A_DigDir_3); *) BA_ReadSensor := MPNE_A_DigIn_3 ;
+				4: (* SetMpneDigDir_IN(MPNE_A_DigDir_4); *) BA_ReadSensor := MPNE_A_DigIn_4 ;
+				5: (* SetMpneDigDir_IN(MPNE_A_DigDir_5); *) BA_ReadSensor := MPNE_A_DigIn_5 ;
+				6: (* SetMpneDigDir_IN(MPNE_A_DigDir_6); *) BA_ReadSensor := MPNE_A_DigIn_6 ;
+				7: (* SetMpneDigDir_IN(MPNE_A_DigDir_7); *) BA_ReadSensor := MPNE_A_DigIn_7 ;
+				8: (* SetMpneDigDir_IN(MPNE_A_DigDir_8); *) BA_ReadSensor := MPNE_A_DigIn_8 ;
 				else BA_ReadSensor := false;
 				end_case;
 			end_if;

@@ -116,7 +116,7 @@ END_VAR
         if MPNE_A_DigOut_31 <> yellow1  then MPNE_A_DigOut_31 := yellow1 ; end_if;
         if MPNE_A_DigOut_32 <> yellow2  then MPNE_A_DigOut_32 := yellow2 ; end_if;
 
-	if MPNE_A_DigOut_25 <> siren    then MPNE_A_DigOut_25 := siren   ; end_if;
+		if MPNE_A_DigOut_25 <> siren    then MPNE_A_DigOut_25 := siren   ; end_if;
         if MPNE_A_DigOut_26 <> enable_A then MPNE_A_DigOut_26 := enable_A; end_if;
         if MPNE_A_DigOut_27 <> enable_B then MPNE_A_DigOut_27 := enable_B; end_if;
         if MPNE_A_DigOut_28 <> enable_C then MPNE_A_DigOut_28 := enable_C; end_if;
