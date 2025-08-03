@@ -24,7 +24,7 @@ PROGRAM Init
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
-	PLC_PLC_Version := 2010;
+	PLC_PLC_Version := 2011;
 
 	(* Fast I/O only on TPX1043_03_C and TPX4xx_01_A *)
 	if PLC_PRODUCT_ID = 16#1043030C
@@ -498,6 +498,9 @@ PROGRAM Init
 		elsif PLC_control_type = ControlType_9 then
 			(* MPNE_E on RTU3 *)
 			NODE_45_STATUS := 1;
+		elsif PLC_control_type = ControlType_99 then
+			(* MPNE_A on RTU0 *)
+			NODE_11_STATUS := 1;
 		elsif PLC_control_type = ControlType_12 then
 			;(* Fast I/O on GPIO *)
 		elsif PLC_control_type = ControlType_13 then

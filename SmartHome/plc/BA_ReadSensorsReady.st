@@ -41,6 +41,10 @@ FUNCTION BA_ReadSensorsReady : BOOL
 		(* MPNE_E on RTU3 *)
 		BA_ReadSensorsReady :=  (NODE_45_STATUS = NODE_NODE_OK);
 
+	elsif PLC_control_type = ControlType_99 then
+		(* MPNE_A on RTU0 *)
+		BA_ReadSensorsReady :=  (NODE_11_STATUS = NODE_NODE_OK);
+
 	elsif PLC_control_type = ControlType_12 then
 		(* Fast I/O on GPIO *)
 		BA_ReadSensorsReady := true;
