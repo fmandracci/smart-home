@@ -912,7 +912,7 @@ font: 10pt &quot;DejaVu Sans&quot;;
           <number>200</number>
          </property>
          <property name="max">
-          <string notr="true">16</string>
+          <string notr="true">99</string>
          </property>
          <property name="min">
           <string notr="true">0</string>

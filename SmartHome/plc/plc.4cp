@@ -56,7 +56,6 @@ file=SetAnIn_PT100R.st
 file=SetMpneDigDir_IN.st
 file=BA_WriteConfig.st
 file=BA_WriteLeds.st
-file=BA_ReadSensors.st
 file=BA_CheckSensors.st
 file=BA_CheckSensor.st
 file=Tn_Watchdog.st
@@ -80,6 +79,7 @@ file=BA_TestConfig.st
 file=BA_WriteConfigBits.st
 file=EP_ManageRequest.st
 file=Tn_OverHeat.st
+file=BA_ReadSensorsReady.st
 
 [Classes.FunctionBlocks]
 file=Thermostat.st

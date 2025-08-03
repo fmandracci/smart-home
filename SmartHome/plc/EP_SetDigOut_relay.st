@@ -75,6 +75,9 @@ END_VAR
 		else ;
 		end_case;
 
+	elsif PLC_control_type = ControlType_99 then
+		;
+
 	elsif PLC_control_type = ControlType_12 then
 		(* Fast I/O on GPIO *);
 		case n of

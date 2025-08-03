@@ -28,11 +28,15 @@ VAR
 	timer : TON;
 	NEXT_STATUS : UINT := 0;
 	NEXT_INDEX : UINT := 0;
-END_VAR;
+	tmp : BOOL;
+END_VAR
+CONST
+	WaitSensorsDelay : TIME := T#1999ms;
+END_CONST;
 
-    if not PLC_Iam_BA then
+	if not PLC_Iam_BA then
 		return;
-    end_if;
+	end_if;
 	if PLC_BA_just_started then
 		PLC_BA_just_started := false;
 		timer(IN := FALSE);
@@ -70,7 +74,7 @@ END_VAR;
 		end_case;
 
 		BA_WriteConfig(NEXT_INDEX, PLC_BA_config_index, PLC_BA_config_mask);
-	    PLC_BA_command := ALARM_COMMAND_NONE;
+		PLC_BA_command := ALARM_COMMAND_NONE;
 		substatus := 1;
 
 	1: (* ----- waiting config after write -------------------------------- *)
@@ -83,10 +87,128 @@ END_VAR;
 
 	2: (* ----- read sensors ---------------------------------------------- *)
 
-		BA_ReadSensors();
-		substatus := 3;
+		if not BA_ReadSensorsReady() then
+			substatus := 3;  (* filtering because of node status *)
+		else
+			tmp := BA_ReadSensor(0); (* blackout detection *)
+			if not tmp then
+				substatus := 3; (* filtering because of blackout detection only *)
+			else
+				PLC_BA_blackout_digin := tmp;
+				substatus := 4;
+			end_if;
+			PLC_BA_DigIn_1 := BA_ReadSensor(1 );
+			PLC_BA_DigIn_2 := BA_ReadSensor(2 );
+			PLC_BA_DigIn_3 := BA_ReadSensor(3 );
+			PLC_BA_DigIn_4 := BA_ReadSensor(4 );
+			PLC_BA_DigIn_5 := BA_ReadSensor(5 );
+			PLC_BA_DigIn_6 := BA_ReadSensor(6 );
+			PLC_BA_DigIn_7 := BA_ReadSensor(7 );
+			PLC_BA_DigIn_8 := BA_ReadSensor(8 );
+			PLC_BA_DigIn_9 := BA_ReadSensor(9 );
+			PLC_BA_DigIn_10:= BA_ReadSensor(10);
+			PLC_BA_DigIn_11:= BA_ReadSensor(11);
+			PLC_BA_DigIn_12:= BA_ReadSensor(12);
+			PLC_BA_DigIn_13:= BA_ReadSensor(13);
+			PLC_BA_DigIn_14:= BA_ReadSensor(14);
+			PLC_BA_DigIn_15:= BA_ReadSensor(15);
+			PLC_BA_DigIn_16:= BA_ReadSensor(16);
+			PLC_BA_DigIn_17:= BA_ReadSensor(17);
+			PLC_BA_DigIn_18:= BA_ReadSensor(18);
+			PLC_BA_DigIn_19:= BA_ReadSensor(19);
+			PLC_BA_DigIn_20:= BA_ReadSensor(20);
+			PLC_BA_DigIn_21:= BA_ReadSensor(21);
+			PLC_BA_DigIn_22:= BA_ReadSensor(22);
+			PLC_BA_DigIn_23:= BA_ReadSensor(23);
+			PLC_BA_DigIn_24:= BA_ReadSensor(24);
+			PLC_BA_DigIn_25:= BA_ReadSensor(25);
+			PLC_BA_DigIn_26:= BA_ReadSensor(26);
+			PLC_BA_DigIn_27:= BA_ReadSensor(27);
+			PLC_BA_DigIn_28:= BA_ReadSensor(28);
+			PLC_BA_DigIn_29:= BA_ReadSensor(29);
+			PLC_BA_DigIn_30:= BA_ReadSensor(30);
+			PLC_BA_DigIn_31:= BA_ReadSensor(31);
+			PLC_BA_DigIn_32:= BA_ReadSensor(32);
+		end_if;
 	
-	3: (* ----- check sensors --------------------------------------------- *)
+	3: (* ----- wait for ready sensors (only once) ------------------------ *)
+
+		timer(IN := TRUE, PT := WaitSensorsDelay);
+		if timer.Q then
+			timer(IN := FALSE);
+			substatus := 4;
+			if BA_ReadSensorsReady() then
+				PLC_BA_blackout_digin := BA_ReadSensor(0); (* blackout detection *)
+				PLC_BA_DigIn_1 := BA_ReadSensor(1 );
+				PLC_BA_DigIn_2 := BA_ReadSensor(2 );
+				PLC_BA_DigIn_3 := BA_ReadSensor(3 );
+				PLC_BA_DigIn_4 := BA_ReadSensor(4 );
+				PLC_BA_DigIn_5 := BA_ReadSensor(5 );
+				PLC_BA_DigIn_6 := BA_ReadSensor(6 );
+				PLC_BA_DigIn_7 := BA_ReadSensor(7 );
+				PLC_BA_DigIn_8 := BA_ReadSensor(8 );
+				PLC_BA_DigIn_9 := BA_ReadSensor(9 );
+				PLC_BA_DigIn_10:= BA_ReadSensor(10);
+				PLC_BA_DigIn_11:= BA_ReadSensor(11);
+				PLC_BA_DigIn_12:= BA_ReadSensor(12);
+				PLC_BA_DigIn_13:= BA_ReadSensor(13);
+				PLC_BA_DigIn_14:= BA_ReadSensor(14);
+				PLC_BA_DigIn_15:= BA_ReadSensor(15);
+				PLC_BA_DigIn_16:= BA_ReadSensor(16);
+				PLC_BA_DigIn_17:= BA_ReadSensor(17);
+				PLC_BA_DigIn_18:= BA_ReadSensor(18);
+				PLC_BA_DigIn_19:= BA_ReadSensor(19);
+				PLC_BA_DigIn_20:= BA_ReadSensor(20);
+				PLC_BA_DigIn_21:= BA_ReadSensor(21);
+				PLC_BA_DigIn_22:= BA_ReadSensor(22);
+				PLC_BA_DigIn_23:= BA_ReadSensor(23);
+				PLC_BA_DigIn_24:= BA_ReadSensor(24);
+				PLC_BA_DigIn_25:= BA_ReadSensor(25);
+				PLC_BA_DigIn_26:= BA_ReadSensor(26);
+				PLC_BA_DigIn_27:= BA_ReadSensor(27);
+				PLC_BA_DigIn_28:= BA_ReadSensor(28);
+				PLC_BA_DigIn_29:= BA_ReadSensor(29);
+				PLC_BA_DigIn_30:= BA_ReadSensor(30);
+				PLC_BA_DigIn_31:= BA_ReadSensor(31);
+				PLC_BA_DigIn_32:= BA_ReadSensor(32);
+			else
+				PLC_BA_blackout_digin := false;
+				PLC_BA_DigIn_1 := false;
+				PLC_BA_DigIn_2 := false;
+				PLC_BA_DigIn_3 := false;
+				PLC_BA_DigIn_4 := false;
+				PLC_BA_DigIn_5 := false;
+				PLC_BA_DigIn_6 := false;
+				PLC_BA_DigIn_7 := false;
+				PLC_BA_DigIn_8 := false;
+				PLC_BA_DigIn_9 := false;
+				PLC_BA_DigIn_10:= false;
+				PLC_BA_DigIn_11:= false;
+				PLC_BA_DigIn_12:= false;
+				PLC_BA_DigIn_13:= false;
+				PLC_BA_DigIn_14:= false;
+				PLC_BA_DigIn_15:= false;
+				PLC_BA_DigIn_16:= false;
+				PLC_BA_DigIn_17:= false;
+				PLC_BA_DigIn_18:= false;
+				PLC_BA_DigIn_19:= false;
+				PLC_BA_DigIn_20:= false;
+				PLC_BA_DigIn_21:= false;
+				PLC_BA_DigIn_22:= false;
+				PLC_BA_DigIn_23:= false;
+				PLC_BA_DigIn_24:= false;
+				PLC_BA_DigIn_25:= false;
+				PLC_BA_DigIn_26:= false;
+				PLC_BA_DigIn_27:= false;
+				PLC_BA_DigIn_28:= false;
+				PLC_BA_DigIn_29:= false;
+				PLC_BA_DigIn_30:= false;
+				PLC_BA_DigIn_31:= false;
+				PLC_BA_DigIn_32:= false;
+			end_if;
+		end_if;
+
+	4: (* ----- check sensors --------------------------------------------- *)
 
 		case PLC_BA_status of
 

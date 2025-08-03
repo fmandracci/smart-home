@@ -34,6 +34,7 @@ CONST
 	ControlType_7  :UINT := 7;  (* EP+T1..6+BA: *) 
 	ControlType_8  :UINT := 8;  (* Tn: *) 
 	ControlType_9  :UINT := 9;  (* EP+BA: *) 
+	ControlType_99 :UINT := 99; (* BA: *) 
 	ControlType_10 :UINT := 10; (* Tn: *) 
 	ControlType_11 :UINT := 11; (* Tn: *)
 	ControlType_12 :UINT := 12; (* EP+T1+BA: *)

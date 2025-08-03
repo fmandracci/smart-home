@@ -266,6 +266,7 @@ extern float mectFontCorrector;
 #define ControlType_7   7
 #define ControlType_8   8
 #define ControlType_9   9
+#define ControlType_99 99
 #define ControlType_10 10
 #define ControlType_11 11
 #define ControlType_12 12

@@ -20,46 +20,49 @@
 **
 ****************************************************************************)
 
-FUNCTION BA_Watchdog
+FUNCTION BA_ReadSensorsReady : BOOL
 #import "Crosstable.gvl"
 #import "Resource1.gvl"
 
 	if PLC_control_type = ControlType_2 then
 		(* MPNE_A, MPNE_B on RTU0 *)
-		if (PLC_BA_enabled_sensors >=  1) then
-			if MPNE_A_Watchdog <> WatchDogTimeout_s and NODE_11_STATUS = NODE_NODE_OK then
-				MPNE_A_Watchdog := WatchDogTimeout_s;
-			end_if;
-		end_if;
-        if (PLC_BA_enabled_sensors >= 17) then
-			if MPNE_B_Watchdog <> WatchDogTimeout_s and NODE_12_STATUS = NODE_NODE_OK then
-				MPNE_B_Watchdog := WatchDogTimeout_s;
-			end_if;
+
+		if PLC_BA_enabled_sensors <= 16 then
+			BA_ReadSensorsReady := (NODE_11_STATUS = NODE_NODE_OK);
+		else
+			BA_ReadSensorsReady := (NODE_11_STATUS = NODE_NODE_OK) and (NODE_12_STATUS = NODE_NODE_OK);
 		end_if;
 
 	elsif PLC_control_type = ControlType_7 then
-		; (* Fast I/O on GPIO *)
+		(* Fast I/O on GPIO *)
+		BA_ReadSensorsReady := true;
 
 	elsif PLC_control_type = ControlType_9 then
-		; (* MPNE_E on RTU3 *)
+		(* MPNE_E on RTU3 *)
+		BA_ReadSensorsReady :=  (NODE_45_STATUS = NODE_NODE_OK);
 
 	elsif PLC_control_type = ControlType_99 then
-		; (* MPNE_A on RTU0 *)
+		(* MPNE_A on RTU0 *)
+		BA_ReadSensorsReady :=  (NODE_11_STATUS = NODE_NODE_OK);
 
 	elsif PLC_control_type = ControlType_12 then
-		; (* Fast I/O on GPIO *)
+		(* Fast I/O on GPIO *)
+		BA_ReadSensorsReady := true;
 
 	elsif PLC_control_type = ControlType_13 then
-		; (* TPAC1007_04_AD Local I/O on RTU3 *)
+		(* TPAC1007_04_AD Local I/O on RTU3 *)
+		BA_ReadSensorsReady := (NODE_31_STATUS = NODE_NODE_OK);
+
+	elsif PLC_control_type = ControlType_16 then
+		(* TPAC1007_04_AD Local I/O on RTU3 *)
+		BA_ReadSensorsReady := (NODE_31_STATUS = NODE_NODE_OK);
 
 	elsif PLC_control_type = ControlType_14 or PLC_control_type = ControlType_6 then
 		(* MPNC DI16 "A,B" + DO16 "A,B" on RTU0 *)
-		if MPNC_WatchDog <> WatchDogTimeout_s and NODE_27_STATUS = NODE_NODE_OK then
-			MPNC_WatchDog := WatchDogTimeout_s;
-		end_if;
+		BA_ReadSensorsReady := (NODE_27_STATUS = NODE_NODE_OK);
 
-	elsif PLC_control_type = ControlType_16 then
-		; (* TPAC1007_04_AD Local I/O on RTU3 *)
+	else
+		BA_ReadSensorsReady := false;
 
 	end_if;
 
