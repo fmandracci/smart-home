@@ -10606,335 +10606,905 @@ int doWrite_PLC_Reserved_7(u_int16_t value);
 int addWrite_PLC_Reserved_7(u_int16_t value);
 int getStatus_PLC_Reserved_7(void);
 
-#define ID_SysActivePower_0 4539
-extern float SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
-int doWrite_SysActivePower_0(float value);
-int addWrite_SysActivePower_0(float value);
-int getStatus_SysActivePower_0(void);
+#define ID_SystemVoltage_0 4539
+extern float SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
+int doWrite_SystemVoltage_0(float value);
+int addWrite_SystemVoltage_0(float value);
+int getStatus_SystemVoltage_0(void);
 
-#define ID_SysActivePower_1 4540
-extern float SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
-int doWrite_SysActivePower_1(float value);
-int addWrite_SysActivePower_1(float value);
-int getStatus_SysActivePower_1(void);
+#define ID_Ph1Current_0 4540
+extern float Ph1Current_0;
+int doWrite_Ph1Current_0(float value);
+int addWrite_Ph1Current_0(float value);
+int getStatus_Ph1Current_0(void);
 
-#define ID_SysActivePower_2 4541
-extern float SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
-int doWrite_SysActivePower_2(float value);
-int addWrite_SysActivePower_2(float value);
-int getStatus_SysActivePower_2(void);
+#define ID_Ph2Current_0 4541
+extern float Ph2Current_0;
+int doWrite_Ph2Current_0(float value);
+int addWrite_Ph2Current_0(float value);
+int getStatus_Ph2Current_0(void);
 
-#define ID_SysActivePower_3 4542
-extern float SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
-int doWrite_SysActivePower_3(float value);
-int addWrite_SysActivePower_3(float value);
-int getStatus_SysActivePower_3(void);
+#define ID_Ph3Current_0 4542
+extern float Ph3Current_0;
+int doWrite_Ph3Current_0(float value);
+int addWrite_Ph3Current_0(float value);
+int getStatus_Ph3Current_0(void);
 
-#define ID_SysActivePower_4 4543
-extern float SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
-int doWrite_SysActivePower_4(float value);
-int addWrite_SysActivePower_4(float value);
-int getStatus_SysActivePower_4(void);
+#define ID_NeutralCurrent_0 4543
+extern float NeutralCurrent_0;
+int doWrite_NeutralCurrent_0(float value);
+int addWrite_NeutralCurrent_0(float value);
+int getStatus_NeutralCurrent_0(void);
 
-#define ID_SysActivePower_5 4544
-extern float SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
-int doWrite_SysActivePower_5(float value);
-int addWrite_SysActivePower_5(float value);
-int getStatus_SysActivePower_5(void);
-
-#define ID_SysActivePower_6 4545
-extern float SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
-int doWrite_SysActivePower_6(float value);
-int addWrite_SysActivePower_6(float value);
-int getStatus_SysActivePower_6(void);
-
-#define ID_SysActivePower_7 4546
-extern float SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
-int doWrite_SysActivePower_7(float value);
-int addWrite_SysActivePower_7(float value);
-int getStatus_SysActivePower_7(void);
-
-#define ID_SysActivePower_8 4547
-extern float SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
-int doWrite_SysActivePower_8(float value);
-int addWrite_SysActivePower_8(float value);
-int getStatus_SysActivePower_8(void);
-
-#define ID_SysActivePower_9 4548
-extern float SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
-int doWrite_SysActivePower_9(float value);
-int addWrite_SysActivePower_9(float value);
-int getStatus_SysActivePower_9(void);
-
-#define ID_SysActivePower_10 4549
-extern float SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) */
-int doWrite_SysActivePower_10(float value);
-int addWrite_SysActivePower_10(float value);
-int getStatus_SysActivePower_10(void);
-
-#define ID_SysActivePower_11 4550
-extern float SysActivePower_11;	/* 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) */
-int doWrite_SysActivePower_11(float value);
-int addWrite_SysActivePower_11(float value);
-int getStatus_SysActivePower_11(void);
-
-#define ID_SysApparentPower_0 4551
-extern float SysApparentPower_0;	/* 0x0A 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_0(float value);
-int addWrite_SysApparentPower_0(float value);
-int getStatus_SysApparentPower_0(void);
-
-#define ID_SysApparentPower_1 4552
-extern float SysApparentPower_1;	/* 0x0B 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_1(float value);
-int addWrite_SysApparentPower_1(float value);
-int getStatus_SysApparentPower_1(void);
-
-#define ID_SysApparentPower_2 4553
-extern float SysApparentPower_2;	/* 0x0C 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_2(float value);
-int addWrite_SysApparentPower_2(float value);
-int getStatus_SysApparentPower_2(void);
-
-#define ID_SysApparentPower_3 4554
-extern float SysApparentPower_3;	/* 0x0D 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_3(float value);
-int addWrite_SysApparentPower_3(float value);
-int getStatus_SysApparentPower_3(void);
-
-#define ID_SysApparentPower_4 4555
-extern float SysApparentPower_4;	/* 0x0E 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_4(float value);
-int addWrite_SysApparentPower_4(float value);
-int getStatus_SysApparentPower_4(void);
-
-#define ID_SysApparentPower_5 4556
-extern float SysApparentPower_5;	/* 0x0F 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_5(float value);
-int addWrite_SysApparentPower_5(float value);
-int getStatus_SysApparentPower_5(void);
-
-#define ID_SysApparentPower_6 4557
-extern float SysApparentPower_6;	/* 0x10 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_6(float value);
-int addWrite_SysApparentPower_6(float value);
-int getStatus_SysApparentPower_6(void);
-
-#define ID_SysApparentPower_7 4558
-extern float SysApparentPower_7;	/* 0x11 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_7(float value);
-int addWrite_SysApparentPower_7(float value);
-int getStatus_SysApparentPower_7(void);
-
-#define ID_SysApparentPower_8 4559
-extern float SysApparentPower_8;	/* 0x12 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_8(float value);
-int addWrite_SysApparentPower_8(float value);
-int getStatus_SysApparentPower_8(void);
-
-#define ID_SysApparentPower_9 4560
-extern float SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_9(float value);
-int addWrite_SysApparentPower_9(float value);
-int getStatus_SysApparentPower_9(void);
-
-#define ID_SysApparentPower_10 4561
-extern float SysApparentPower_10;	/* 0x14 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_10(float value);
-int addWrite_SysApparentPower_10(float value);
-int getStatus_SysApparentPower_10(void);
-
-#define ID_SysApparentPower_11 4562
-extern float SysApparentPower_11;	/* 0x15 0x102E Potenza Apparente 0 in VA (UPS) */
-int doWrite_SysApparentPower_11(float value);
-int addWrite_SysApparentPower_11(float value);
-int getStatus_SysApparentPower_11(void);
-
-#define ID_SysExpActiveEnergy_0 4563
-extern float SysExpActiveEnergy_0;	/* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
-int doWrite_SysExpActiveEnergy_0(float value);
-int addWrite_SysExpActiveEnergy_0(float value);
-int getStatus_SysExpActiveEnergy_0(void);
-
-#define ID_SysExpActiveEnergy_1 4564
-extern float SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
-int doWrite_SysExpActiveEnergy_1(float value);
-int addWrite_SysExpActiveEnergy_1(float value);
-int getStatus_SysExpActiveEnergy_1(void);
-
-#define ID_SysImpActiveEnergy_0 4565
-extern float SysImpActiveEnergy_0;	/* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
-int doWrite_SysImpActiveEnergy_0(float value);
-int addWrite_SysImpActiveEnergy_0(float value);
-int getStatus_SysImpActiveEnergy_0(void);
-
-#define ID_SysImpActiveEnergy_1 4566
-extern float SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
-int doWrite_SysImpActiveEnergy_1(float value);
-int addWrite_SysImpActiveEnergy_1(float value);
-int getStatus_SysImpActiveEnergy_1(void);
-
-#define ID_SysImpActiveEnergy_2 4567
-extern float SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_2(float value);
-int addWrite_SysImpActiveEnergy_2(float value);
-int getStatus_SysImpActiveEnergy_2(void);
-
-#define ID_SysImpActiveEnergy_3 4568
-extern float SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_3(float value);
-int addWrite_SysImpActiveEnergy_3(float value);
-int getStatus_SysImpActiveEnergy_3(void);
-
-#define ID_SysImpActiveEnergy_4 4569
-extern float SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_4(float value);
-int addWrite_SysImpActiveEnergy_4(float value);
-int getStatus_SysImpActiveEnergy_4(void);
-
-#define ID_SysImpActiveEnergy_5 4570
-extern float SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_5(float value);
-int addWrite_SysImpActiveEnergy_5(float value);
-int getStatus_SysImpActiveEnergy_5(void);
-
-#define ID_SysImpActiveEnergy_6 4571
-extern float SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_6(float value);
-int addWrite_SysImpActiveEnergy_6(float value);
-int getStatus_SysImpActiveEnergy_6(void);
-
-#define ID_SysImpActiveEnergy_7 4572
-extern float SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_7(float value);
-int addWrite_SysImpActiveEnergy_7(float value);
-int getStatus_SysImpActiveEnergy_7(void);
-
-#define ID_SysImpActiveEnergy_8 4573
-extern float SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_8(float value);
-int addWrite_SysImpActiveEnergy_8(float value);
-int getStatus_SysImpActiveEnergy_8(void);
-
-#define ID_SysImpActiveEnergy_9 4574
-extern float SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_9(float value);
-int addWrite_SysImpActiveEnergy_9(float value);
-int getStatus_SysImpActiveEnergy_9(void);
-
-#define ID_SysImpActiveEnergy_10 4575
-extern float SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_10(float value);
-int addWrite_SysImpActiveEnergy_10(float value);
-int getStatus_SysImpActiveEnergy_10(void);
-
-#define ID_SysImpActiveEnergy_11 4576
-extern float SysImpActiveEnergy_11;	/* 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
-int doWrite_SysImpActiveEnergy_11(float value);
-int addWrite_SysImpActiveEnergy_11(float value);
-int getStatus_SysImpActiveEnergy_11(void);
-
-#define ID_SysPowerFactor_0 4577
-extern float SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
-int doWrite_SysPowerFactor_0(float value);
-int addWrite_SysPowerFactor_0(float value);
-int getStatus_SysPowerFactor_0(void);
-
-#define ID_SysPowerFactor_1 4578
-extern float SysPowerFactor_1;	/* 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) */
-int doWrite_SysPowerFactor_1(float value);
-int addWrite_SysPowerFactor_1(float value);
-int getStatus_SysPowerFactor_1(void);
-
-#define ID_SysReactivePower_0 4579
-extern float SysReactivePower_0;	/* 0x0A 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_0(float value);
-int addWrite_SysReactivePower_0(float value);
-int getStatus_SysReactivePower_0(void);
-
-#define ID_Frequency_0 4580
-extern float Frequency_0;	/* 0x0A 0x1038 Frequenza in Hz */
-int doWrite_Frequency_0(float value);
-int addWrite_Frequency_0(float value);
-int getStatus_Frequency_0(void);
-
-#define ID_SysReactivePower_1 4581
-extern float SysReactivePower_1;	/* 0x0B 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_1(float value);
-int addWrite_SysReactivePower_1(float value);
-int getStatus_SysReactivePower_1(void);
-
-#define ID_SysReactivePower_2 4583
-extern float SysReactivePower_2;	/* 0x0C 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_2(float value);
-int addWrite_SysReactivePower_2(float value);
-int getStatus_SysReactivePower_2(void);
-
-#define ID_SysReactivePower_3 4584
-extern float SysReactivePower_3;	/* 0x0D 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_3(float value);
-int addWrite_SysReactivePower_3(float value);
-int getStatus_SysReactivePower_3(void);
-
-#define ID_SysReactivePower_4 4585
-extern float SysReactivePower_4;	/* 0x0E 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_4(float value);
-int addWrite_SysReactivePower_4(float value);
-int getStatus_SysReactivePower_4(void);
-
-#define ID_SysReactivePower_5 4586
-extern float SysReactivePower_5;	/* 0x0F 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_5(float value);
-int addWrite_SysReactivePower_5(float value);
-int getStatus_SysReactivePower_5(void);
-
-#define ID_SysReactivePower_6 4587
-extern float SysReactivePower_6;	/* 0x10 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_6(float value);
-int addWrite_SysReactivePower_6(float value);
-int getStatus_SysReactivePower_6(void);
-
-#define ID_SysReactivePower_7 4588
-extern float SysReactivePower_7;	/* 0x11 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_7(float value);
-int addWrite_SysReactivePower_7(float value);
-int getStatus_SysReactivePower_7(void);
-
-#define ID_SysReactivePower_8 4589
-extern float SysReactivePower_8;	/* 0x12 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_8(float value);
-int addWrite_SysReactivePower_8(float value);
-int getStatus_SysReactivePower_8(void);
-
-#define ID_SysReactivePower_9 4590
-extern float SysReactivePower_9;	/* 0x13 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_9(float value);
-int addWrite_SysReactivePower_9(float value);
-int getStatus_SysReactivePower_9(void);
-
-#define ID_SysReactivePower_10 4591
-extern float SysReactivePower_10;	/* 0x14 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_10(float value);
-int addWrite_SysReactivePower_10(float value);
-int getStatus_SysReactivePower_10(void);
-
-#define ID_SysReactivePower_11 4592
-extern float SysReactivePower_11;	/* 0x15 0x1036 Potenza Reattiva 0 in var */
-int doWrite_SysReactivePower_11(float value);
-int addWrite_SysReactivePower_11(float value);
-int getStatus_SysReactivePower_11(void);
-
-#define ID_SystemCurrent_0 4593
+#define ID_SystemCurrent_0 4544
 extern float SystemCurrent_0;	/* 0x0A 0x1016 Corrente in A */
 int doWrite_SystemCurrent_0(float value);
 int addWrite_SystemCurrent_0(float value);
 int getStatus_SystemCurrent_0(void);
 
-#define ID_SystemVoltage_0 4595
-extern float SystemVoltage_0;	/* 0x0A 0x100C Tensione in V (PRINCIPALE) */
-int doWrite_SystemVoltage_0(float value);
-int addWrite_SystemVoltage_0(float value);
-int getStatus_SystemVoltage_0(void);
+#define ID_Ph1PowerFactor_0 4545
+extern float Ph1PowerFactor_0;
+int doWrite_Ph1PowerFactor_0(float value);
+int addWrite_Ph1PowerFactor_0(float value);
+int getStatus_Ph1PowerFactor_0(void);
+
+#define ID_Ph2PowerFactor_0 4546
+extern float Ph2PowerFactor_0;
+int doWrite_Ph2PowerFactor_0(float value);
+int addWrite_Ph2PowerFactor_0(float value);
+int getStatus_Ph2PowerFactor_0(void);
+
+#define ID_Ph3PowerFactor_0 4547
+extern float Ph3PowerFactor_0;
+int doWrite_Ph3PowerFactor_0(float value);
+int addWrite_Ph3PowerFactor_0(float value);
+int getStatus_Ph3PowerFactor_0(void);
+
+#define ID_SysPowerFactor_0 4548
+extern float SysPowerFactor_0;	/* 0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE) */
+int doWrite_SysPowerFactor_0(float value);
+int addWrite_SysPowerFactor_0(float value);
+int getStatus_SysPowerFactor_0(void);
+
+#define ID_Ph1ActivePower_0 4549
+extern float Ph1ActivePower_0;
+int doWrite_Ph1ActivePower_0(float value);
+int addWrite_Ph1ActivePower_0(float value);
+int getStatus_Ph1ActivePower_0(void);
+
+#define ID_Ph2ActivePower_0 4550
+extern float Ph2ActivePower_0;
+int doWrite_Ph2ActivePower_0(float value);
+int addWrite_Ph2ActivePower_0(float value);
+int getStatus_Ph2ActivePower_0(void);
+
+#define ID_Ph3ActivePower_0 4551
+extern float Ph3ActivePower_0;
+int doWrite_Ph3ActivePower_0(float value);
+int addWrite_Ph3ActivePower_0(float value);
+int getStatus_Ph3ActivePower_0(void);
+
+#define ID_SysActivePower_0 4552
+extern float SysActivePower_0;	/* 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
+int doWrite_SysActivePower_0(float value);
+int addWrite_SysActivePower_0(float value);
+int getStatus_SysActivePower_0(void);
+
+#define ID_Ph1ApparentPower_0 4553
+extern float Ph1ApparentPower_0;
+int doWrite_Ph1ApparentPower_0(float value);
+int addWrite_Ph1ApparentPower_0(float value);
+int getStatus_Ph1ApparentPower_0(void);
+
+#define ID_Ph2ApparentPower_0 4554
+extern float Ph2ApparentPower_0;
+int doWrite_Ph2ApparentPower_0(float value);
+int addWrite_Ph2ApparentPower_0(float value);
+int getStatus_Ph2ApparentPower_0(void);
+
+#define ID_Ph3ApparentPower_0 4555
+extern float Ph3ApparentPower_0;
+int doWrite_Ph3ApparentPower_0(float value);
+int addWrite_Ph3ApparentPower_0(float value);
+int getStatus_Ph3ApparentPower_0(void);
+
+#define ID_SysApparentPower_0 4556
+extern float SysApparentPower_0;	/* 0x0A 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_0(float value);
+int addWrite_SysApparentPower_0(float value);
+int getStatus_SysApparentPower_0(void);
+
+#define ID_Ph1ReactivePower_0 4557
+extern float Ph1ReactivePower_0;
+int doWrite_Ph1ReactivePower_0(float value);
+int addWrite_Ph1ReactivePower_0(float value);
+int getStatus_Ph1ReactivePower_0(void);
+
+#define ID_Ph2ReactivePower_0 4558
+extern float Ph2ReactivePower_0;
+int doWrite_Ph2ReactivePower_0(float value);
+int addWrite_Ph2ReactivePower_0(float value);
+int getStatus_Ph2ReactivePower_0(void);
+
+#define ID_Ph3ReactivePower_0 4559
+extern float Ph3ReactivePower_0;
+int doWrite_Ph3ReactivePower_0(float value);
+int addWrite_Ph3ReactivePower_0(float value);
+int getStatus_Ph3ReactivePower_0(void);
+
+#define ID_SysReactivePower_0 4560
+extern float SysReactivePower_0;	/* 0x0A 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_0(float value);
+int addWrite_SysReactivePower_0(float value);
+int getStatus_SysReactivePower_0(void);
+
+#define ID_Frequency_0 4561
+extern float Frequency_0;	/* 0x0A 0x1038 Frequenza in Hz */
+int doWrite_Frequency_0(float value);
+int addWrite_Frequency_0(float value);
+int getStatus_Frequency_0(void);
+
+#define ID_SysImpActiveEnergy_0 4562
+extern float SysImpActiveEnergy_0;	/* 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
+int doWrite_SysImpActiveEnergy_0(float value);
+int addWrite_SysImpActiveEnergy_0(float value);
+int getStatus_SysImpActiveEnergy_0(void);
+
+#define ID_Ph1ExpActiveEnergy_0 4563
+extern float Ph1ExpActiveEnergy_0;
+int doWrite_Ph1ExpActiveEnergy_0(float value);
+int addWrite_Ph1ExpActiveEnergy_0(float value);
+int getStatus_Ph1ExpActiveEnergy_0(void);
+
+#define ID_Ph2ExpActiveEnergy_0 4564
+extern float Ph2ExpActiveEnergy_0;
+int doWrite_Ph2ExpActiveEnergy_0(float value);
+int addWrite_Ph2ExpActiveEnergy_0(float value);
+int getStatus_Ph2ExpActiveEnergy_0(void);
+
+#define ID_Ph3ExpActiveEnergy_0 4565
+extern float Ph3ExpActiveEnergy_0;
+int doWrite_Ph3ExpActiveEnergy_0(float value);
+int addWrite_Ph3ExpActiveEnergy_0(float value);
+int getStatus_Ph3ExpActiveEnergy_0(void);
+
+#define ID_SysExpActiveEnergy_0 4566
+extern float SysExpActiveEnergy_0;	/* 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
+int doWrite_SysExpActiveEnergy_0(float value);
+int addWrite_SysExpActiveEnergy_0(float value);
+int getStatus_SysExpActiveEnergy_0(void);
+
+#define ID_SystemCurrent_1 4572
+extern float SystemCurrent_1;	/* 0x0B 0x1016 Corrente in A */
+int doWrite_SystemCurrent_1(float value);
+int addWrite_SystemCurrent_1(float value);
+int getStatus_SystemCurrent_1(void);
+
+#define ID_Ph1PowerFactor_1 4573
+extern float Ph1PowerFactor_1;
+int doWrite_Ph1PowerFactor_1(float value);
+int addWrite_Ph1PowerFactor_1(float value);
+int getStatus_Ph1PowerFactor_1(void);
+
+#define ID_Ph2PowerFactor_1 4574
+extern float Ph2PowerFactor_1;
+int doWrite_Ph2PowerFactor_1(float value);
+int addWrite_Ph2PowerFactor_1(float value);
+int getStatus_Ph2PowerFactor_1(void);
+
+#define ID_Ph3PowerFactor_1 4575
+extern float Ph3PowerFactor_1;
+int doWrite_Ph3PowerFactor_1(float value);
+int addWrite_Ph3PowerFactor_1(float value);
+int getStatus_Ph3PowerFactor_1(void);
+
+#define ID_SysPowerFactor_1 4576
+extern float SysPowerFactor_1;	/* 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) */
+int doWrite_SysPowerFactor_1(float value);
+int addWrite_SysPowerFactor_1(float value);
+int getStatus_SysPowerFactor_1(void);
+
+#define ID_Ph1ActivePower_1 4577
+extern float Ph1ActivePower_1;
+int doWrite_Ph1ActivePower_1(float value);
+int addWrite_Ph1ActivePower_1(float value);
+int getStatus_Ph1ActivePower_1(void);
+
+#define ID_Ph2ActivePower_1 4578
+extern float Ph2ActivePower_1;
+int doWrite_Ph2ActivePower_1(float value);
+int addWrite_Ph2ActivePower_1(float value);
+int getStatus_Ph2ActivePower_1(void);
+
+#define ID_Ph3ActivePower_1 4579
+extern float Ph3ActivePower_1;
+int doWrite_Ph3ActivePower_1(float value);
+int addWrite_Ph3ActivePower_1(float value);
+int getStatus_Ph3ActivePower_1(void);
+
+#define ID_SysActivePower_1 4580
+extern float SysActivePower_1;	/* 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) */
+int doWrite_SysActivePower_1(float value);
+int addWrite_SysActivePower_1(float value);
+int getStatus_SysActivePower_1(void);
+
+#define ID_Ph1ApparentPower_1 4581
+extern float Ph1ApparentPower_1;
+int doWrite_Ph1ApparentPower_1(float value);
+int addWrite_Ph1ApparentPower_1(float value);
+int getStatus_Ph1ApparentPower_1(void);
+
+#define ID_Ph2ApparentPower_1 4582
+extern float Ph2ApparentPower_1;
+int doWrite_Ph2ApparentPower_1(float value);
+int addWrite_Ph2ApparentPower_1(float value);
+int getStatus_Ph2ApparentPower_1(void);
+
+#define ID_Ph3ApparentPower_1 4583
+extern float Ph3ApparentPower_1;
+int doWrite_Ph3ApparentPower_1(float value);
+int addWrite_Ph3ApparentPower_1(float value);
+int getStatus_Ph3ApparentPower_1(void);
+
+#define ID_SysApparentPower_1 4584
+extern float SysApparentPower_1;	/* 0x0B 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_1(float value);
+int addWrite_SysApparentPower_1(float value);
+int getStatus_SysApparentPower_1(void);
+
+#define ID_Ph1ReactivePower_1 4585
+extern float Ph1ReactivePower_1;
+int doWrite_Ph1ReactivePower_1(float value);
+int addWrite_Ph1ReactivePower_1(float value);
+int getStatus_Ph1ReactivePower_1(void);
+
+#define ID_Ph2ReactivePower_1 4586
+extern float Ph2ReactivePower_1;
+int doWrite_Ph2ReactivePower_1(float value);
+int addWrite_Ph2ReactivePower_1(float value);
+int getStatus_Ph2ReactivePower_1(void);
+
+#define ID_Ph3ReactivePower_1 4587
+extern float Ph3ReactivePower_1;
+int doWrite_Ph3ReactivePower_1(float value);
+int addWrite_Ph3ReactivePower_1(float value);
+int getStatus_Ph3ReactivePower_1(void);
+
+#define ID_SysReactivePower_1 4588
+extern float SysReactivePower_1;	/* 0x0B 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_1(float value);
+int addWrite_SysReactivePower_1(float value);
+int getStatus_SysReactivePower_1(void);
+
+#define ID_SysImpActiveEnergy_1 4590
+extern float SysImpActiveEnergy_1;	/* 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) */
+int doWrite_SysImpActiveEnergy_1(float value);
+int addWrite_SysImpActiveEnergy_1(float value);
+int getStatus_SysImpActiveEnergy_1(void);
+
+#define ID_Ph1ExpActiveEnergy_1 4591
+extern float Ph1ExpActiveEnergy_1;
+int doWrite_Ph1ExpActiveEnergy_1(float value);
+int addWrite_Ph1ExpActiveEnergy_1(float value);
+int getStatus_Ph1ExpActiveEnergy_1(void);
+
+#define ID_Ph2ExpActiveEnergy_1 4592
+extern float Ph2ExpActiveEnergy_1;
+int doWrite_Ph2ExpActiveEnergy_1(float value);
+int addWrite_Ph2ExpActiveEnergy_1(float value);
+int getStatus_Ph2ExpActiveEnergy_1(void);
+
+#define ID_Ph3ExpActiveEnergy_1 4593
+extern float Ph3ExpActiveEnergy_1;
+int doWrite_Ph3ExpActiveEnergy_1(float value);
+int addWrite_Ph3ExpActiveEnergy_1(float value);
+int getStatus_Ph3ExpActiveEnergy_1(void);
+
+#define ID_SysExpActiveEnergy_1 4594
+extern float SysExpActiveEnergy_1;	/* 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) */
+int doWrite_SysExpActiveEnergy_1(float value);
+int addWrite_SysExpActiveEnergy_1(float value);
+int getStatus_SysExpActiveEnergy_1(void);
+
+#define ID_SysActivePower_2 4595
+extern float SysActivePower_2;	/* 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) */
+int doWrite_SysActivePower_2(float value);
+int addWrite_SysActivePower_2(float value);
+int getStatus_SysActivePower_2(void);
+
+#define ID_Ph1ApparentPower_2 4596
+extern float Ph1ApparentPower_2;
+int doWrite_Ph1ApparentPower_2(float value);
+int addWrite_Ph1ApparentPower_2(float value);
+int getStatus_Ph1ApparentPower_2(void);
+
+#define ID_Ph2ApparentPower_2 4597
+extern float Ph2ApparentPower_2;
+int doWrite_Ph2ApparentPower_2(float value);
+int addWrite_Ph2ApparentPower_2(float value);
+int getStatus_Ph2ApparentPower_2(void);
+
+#define ID_Ph3ApparentPower_2 4598
+extern float Ph3ApparentPower_2;
+int doWrite_Ph3ApparentPower_2(float value);
+int addWrite_Ph3ApparentPower_2(float value);
+int getStatus_Ph3ApparentPower_2(void);
+
+#define ID_SysApparentPower_2 4599
+extern float SysApparentPower_2;	/* 0x0C 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_2(float value);
+int addWrite_SysApparentPower_2(float value);
+int getStatus_SysApparentPower_2(void);
+
+#define ID_Ph1ReactivePower_2 4600
+extern float Ph1ReactivePower_2;
+int doWrite_Ph1ReactivePower_2(float value);
+int addWrite_Ph1ReactivePower_2(float value);
+int getStatus_Ph1ReactivePower_2(void);
+
+#define ID_Ph2ReactivePower_2 4601
+extern float Ph2ReactivePower_2;
+int doWrite_Ph2ReactivePower_2(float value);
+int addWrite_Ph2ReactivePower_2(float value);
+int getStatus_Ph2ReactivePower_2(void);
+
+#define ID_Ph3ReactivePower_2 4602
+extern float Ph3ReactivePower_2;
+int doWrite_Ph3ReactivePower_2(float value);
+int addWrite_Ph3ReactivePower_2(float value);
+int getStatus_Ph3ReactivePower_2(void);
+
+#define ID_SysReactivePower_2 4603
+extern float SysReactivePower_2;	/* 0x0C 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_2(float value);
+int addWrite_SysReactivePower_2(float value);
+int getStatus_SysReactivePower_2(void);
+
+#define ID_SysImpActiveEnergy_2 4604
+extern float SysImpActiveEnergy_2;	/* 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_2(float value);
+int addWrite_SysImpActiveEnergy_2(float value);
+int getStatus_SysImpActiveEnergy_2(void);
+
+#define ID_SysActivePower_3 4605
+extern float SysActivePower_3;	/* 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) */
+int doWrite_SysActivePower_3(float value);
+int addWrite_SysActivePower_3(float value);
+int getStatus_SysActivePower_3(void);
+
+#define ID_Ph1ApparentPower_3 4606
+extern float Ph1ApparentPower_3;
+int doWrite_Ph1ApparentPower_3(float value);
+int addWrite_Ph1ApparentPower_3(float value);
+int getStatus_Ph1ApparentPower_3(void);
+
+#define ID_Ph2ApparentPower_3 4607
+extern float Ph2ApparentPower_3;
+int doWrite_Ph2ApparentPower_3(float value);
+int addWrite_Ph2ApparentPower_3(float value);
+int getStatus_Ph2ApparentPower_3(void);
+
+#define ID_Ph3ApparentPower_3 4608
+extern float Ph3ApparentPower_3;
+int doWrite_Ph3ApparentPower_3(float value);
+int addWrite_Ph3ApparentPower_3(float value);
+int getStatus_Ph3ApparentPower_3(void);
+
+#define ID_SysApparentPower_3 4609
+extern float SysApparentPower_3;	/* 0x0D 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_3(float value);
+int addWrite_SysApparentPower_3(float value);
+int getStatus_SysApparentPower_3(void);
+
+#define ID_Ph1ReactivePower_3 4610
+extern float Ph1ReactivePower_3;
+int doWrite_Ph1ReactivePower_3(float value);
+int addWrite_Ph1ReactivePower_3(float value);
+int getStatus_Ph1ReactivePower_3(void);
+
+#define ID_Ph2ReactivePower_3 4611
+extern float Ph2ReactivePower_3;
+int doWrite_Ph2ReactivePower_3(float value);
+int addWrite_Ph2ReactivePower_3(float value);
+int getStatus_Ph2ReactivePower_3(void);
+
+#define ID_Ph3ReactivePower_3 4612
+extern float Ph3ReactivePower_3;
+int doWrite_Ph3ReactivePower_3(float value);
+int addWrite_Ph3ReactivePower_3(float value);
+int getStatus_Ph3ReactivePower_3(void);
+
+#define ID_SysReactivePower_3 4613
+extern float SysReactivePower_3;	/* 0x0D 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_3(float value);
+int addWrite_SysReactivePower_3(float value);
+int getStatus_SysReactivePower_3(void);
+
+#define ID_SysImpActiveEnergy_3 4614
+extern float SysImpActiveEnergy_3;	/* 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_3(float value);
+int addWrite_SysImpActiveEnergy_3(float value);
+int getStatus_SysImpActiveEnergy_3(void);
+
+#define ID_SysActivePower_4 4615
+extern float SysActivePower_4;	/* 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) */
+int doWrite_SysActivePower_4(float value);
+int addWrite_SysActivePower_4(float value);
+int getStatus_SysActivePower_4(void);
+
+#define ID_Ph1ApparentPower_4 4616
+extern float Ph1ApparentPower_4;
+int doWrite_Ph1ApparentPower_4(float value);
+int addWrite_Ph1ApparentPower_4(float value);
+int getStatus_Ph1ApparentPower_4(void);
+
+#define ID_Ph2ApparentPower_4 4617
+extern float Ph2ApparentPower_4;
+int doWrite_Ph2ApparentPower_4(float value);
+int addWrite_Ph2ApparentPower_4(float value);
+int getStatus_Ph2ApparentPower_4(void);
+
+#define ID_Ph3ApparentPower_4 4618
+extern float Ph3ApparentPower_4;
+int doWrite_Ph3ApparentPower_4(float value);
+int addWrite_Ph3ApparentPower_4(float value);
+int getStatus_Ph3ApparentPower_4(void);
+
+#define ID_SysApparentPower_4 4619
+extern float SysApparentPower_4;	/* 0x0E 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_4(float value);
+int addWrite_SysApparentPower_4(float value);
+int getStatus_SysApparentPower_4(void);
+
+#define ID_Ph1ReactivePower_4 4620
+extern float Ph1ReactivePower_4;
+int doWrite_Ph1ReactivePower_4(float value);
+int addWrite_Ph1ReactivePower_4(float value);
+int getStatus_Ph1ReactivePower_4(void);
+
+#define ID_Ph2ReactivePower_4 4621
+extern float Ph2ReactivePower_4;
+int doWrite_Ph2ReactivePower_4(float value);
+int addWrite_Ph2ReactivePower_4(float value);
+int getStatus_Ph2ReactivePower_4(void);
+
+#define ID_Ph3ReactivePower_4 4622
+extern float Ph3ReactivePower_4;
+int doWrite_Ph3ReactivePower_4(float value);
+int addWrite_Ph3ReactivePower_4(float value);
+int getStatus_Ph3ReactivePower_4(void);
+
+#define ID_SysReactivePower_4 4623
+extern float SysReactivePower_4;	/* 0x0E 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_4(float value);
+int addWrite_SysReactivePower_4(float value);
+int getStatus_SysReactivePower_4(void);
+
+#define ID_SysImpActiveEnergy_4 4624
+extern float SysImpActiveEnergy_4;	/* 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_4(float value);
+int addWrite_SysImpActiveEnergy_4(float value);
+int getStatus_SysImpActiveEnergy_4(void);
+
+#define ID_SysActivePower_5 4625
+extern float SysActivePower_5;	/* 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) */
+int doWrite_SysActivePower_5(float value);
+int addWrite_SysActivePower_5(float value);
+int getStatus_SysActivePower_5(void);
+
+#define ID_Ph1ApparentPower_5 4626
+extern float Ph1ApparentPower_5;
+int doWrite_Ph1ApparentPower_5(float value);
+int addWrite_Ph1ApparentPower_5(float value);
+int getStatus_Ph1ApparentPower_5(void);
+
+#define ID_Ph2ApparentPower_5 4627
+extern float Ph2ApparentPower_5;
+int doWrite_Ph2ApparentPower_5(float value);
+int addWrite_Ph2ApparentPower_5(float value);
+int getStatus_Ph2ApparentPower_5(void);
+
+#define ID_Ph3ApparentPower_5 4628
+extern float Ph3ApparentPower_5;
+int doWrite_Ph3ApparentPower_5(float value);
+int addWrite_Ph3ApparentPower_5(float value);
+int getStatus_Ph3ApparentPower_5(void);
+
+#define ID_SysApparentPower_5 4629
+extern float SysApparentPower_5;	/* 0x0F 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_5(float value);
+int addWrite_SysApparentPower_5(float value);
+int getStatus_SysApparentPower_5(void);
+
+#define ID_Ph1ReactivePower_5 4630
+extern float Ph1ReactivePower_5;
+int doWrite_Ph1ReactivePower_5(float value);
+int addWrite_Ph1ReactivePower_5(float value);
+int getStatus_Ph1ReactivePower_5(void);
+
+#define ID_Ph2ReactivePower_5 4631
+extern float Ph2ReactivePower_5;
+int doWrite_Ph2ReactivePower_5(float value);
+int addWrite_Ph2ReactivePower_5(float value);
+int getStatus_Ph2ReactivePower_5(void);
+
+#define ID_Ph3ReactivePower_5 4632
+extern float Ph3ReactivePower_5;
+int doWrite_Ph3ReactivePower_5(float value);
+int addWrite_Ph3ReactivePower_5(float value);
+int getStatus_Ph3ReactivePower_5(void);
+
+#define ID_SysReactivePower_5 4633
+extern float SysReactivePower_5;	/* 0x0F 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_5(float value);
+int addWrite_SysReactivePower_5(float value);
+int getStatus_SysReactivePower_5(void);
+
+#define ID_SysImpActiveEnergy_5 4634
+extern float SysImpActiveEnergy_5;	/* 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_5(float value);
+int addWrite_SysImpActiveEnergy_5(float value);
+int getStatus_SysImpActiveEnergy_5(void);
+
+#define ID_SysActivePower_6 4635
+extern float SysActivePower_6;	/* 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) */
+int doWrite_SysActivePower_6(float value);
+int addWrite_SysActivePower_6(float value);
+int getStatus_SysActivePower_6(void);
+
+#define ID_Ph1ApparentPower_6 4636
+extern float Ph1ApparentPower_6;
+int doWrite_Ph1ApparentPower_6(float value);
+int addWrite_Ph1ApparentPower_6(float value);
+int getStatus_Ph1ApparentPower_6(void);
+
+#define ID_Ph2ApparentPower_6 4637
+extern float Ph2ApparentPower_6;
+int doWrite_Ph2ApparentPower_6(float value);
+int addWrite_Ph2ApparentPower_6(float value);
+int getStatus_Ph2ApparentPower_6(void);
+
+#define ID_Ph3ApparentPower_6 4638
+extern float Ph3ApparentPower_6;
+int doWrite_Ph3ApparentPower_6(float value);
+int addWrite_Ph3ApparentPower_6(float value);
+int getStatus_Ph3ApparentPower_6(void);
+
+#define ID_SysApparentPower_6 4639
+extern float SysApparentPower_6;	/* 0x10 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_6(float value);
+int addWrite_SysApparentPower_6(float value);
+int getStatus_SysApparentPower_6(void);
+
+#define ID_Ph1ReactivePower_6 4640
+extern float Ph1ReactivePower_6;
+int doWrite_Ph1ReactivePower_6(float value);
+int addWrite_Ph1ReactivePower_6(float value);
+int getStatus_Ph1ReactivePower_6(void);
+
+#define ID_Ph2ReactivePower_6 4641
+extern float Ph2ReactivePower_6;
+int doWrite_Ph2ReactivePower_6(float value);
+int addWrite_Ph2ReactivePower_6(float value);
+int getStatus_Ph2ReactivePower_6(void);
+
+#define ID_Ph3ReactivePower_6 4642
+extern float Ph3ReactivePower_6;
+int doWrite_Ph3ReactivePower_6(float value);
+int addWrite_Ph3ReactivePower_6(float value);
+int getStatus_Ph3ReactivePower_6(void);
+
+#define ID_SysReactivePower_6 4643
+extern float SysReactivePower_6;	/* 0x10 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_6(float value);
+int addWrite_SysReactivePower_6(float value);
+int getStatus_SysReactivePower_6(void);
+
+#define ID_SysImpActiveEnergy_6 4644
+extern float SysImpActiveEnergy_6;	/* 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_6(float value);
+int addWrite_SysImpActiveEnergy_6(float value);
+int getStatus_SysImpActiveEnergy_6(void);
+
+#define ID_SysActivePower_7 4645
+extern float SysActivePower_7;	/* 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) */
+int doWrite_SysActivePower_7(float value);
+int addWrite_SysActivePower_7(float value);
+int getStatus_SysActivePower_7(void);
+
+#define ID_Ph1ApparentPower_7 4646
+extern float Ph1ApparentPower_7;
+int doWrite_Ph1ApparentPower_7(float value);
+int addWrite_Ph1ApparentPower_7(float value);
+int getStatus_Ph1ApparentPower_7(void);
+
+#define ID_Ph2ApparentPower_7 4647
+extern float Ph2ApparentPower_7;
+int doWrite_Ph2ApparentPower_7(float value);
+int addWrite_Ph2ApparentPower_7(float value);
+int getStatus_Ph2ApparentPower_7(void);
+
+#define ID_Ph3ApparentPower_7 4648
+extern float Ph3ApparentPower_7;
+int doWrite_Ph3ApparentPower_7(float value);
+int addWrite_Ph3ApparentPower_7(float value);
+int getStatus_Ph3ApparentPower_7(void);
+
+#define ID_SysApparentPower_7 4649
+extern float SysApparentPower_7;	/* 0x11 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_7(float value);
+int addWrite_SysApparentPower_7(float value);
+int getStatus_SysApparentPower_7(void);
+
+#define ID_Ph1ReactivePower_7 4650
+extern float Ph1ReactivePower_7;
+int doWrite_Ph1ReactivePower_7(float value);
+int addWrite_Ph1ReactivePower_7(float value);
+int getStatus_Ph1ReactivePower_7(void);
+
+#define ID_Ph2ReactivePower_7 4651
+extern float Ph2ReactivePower_7;
+int doWrite_Ph2ReactivePower_7(float value);
+int addWrite_Ph2ReactivePower_7(float value);
+int getStatus_Ph2ReactivePower_7(void);
+
+#define ID_Ph3ReactivePower_7 4652
+extern float Ph3ReactivePower_7;
+int doWrite_Ph3ReactivePower_7(float value);
+int addWrite_Ph3ReactivePower_7(float value);
+int getStatus_Ph3ReactivePower_7(void);
+
+#define ID_SysReactivePower_7 4653
+extern float SysReactivePower_7;	/* 0x11 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_7(float value);
+int addWrite_SysReactivePower_7(float value);
+int getStatus_SysReactivePower_7(void);
+
+#define ID_SysImpActiveEnergy_7 4654
+extern float SysImpActiveEnergy_7;	/* 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_7(float value);
+int addWrite_SysImpActiveEnergy_7(float value);
+int getStatus_SysImpActiveEnergy_7(void);
+
+#define ID_SysActivePower_8 4655
+extern float SysActivePower_8;	/* 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) */
+int doWrite_SysActivePower_8(float value);
+int addWrite_SysActivePower_8(float value);
+int getStatus_SysActivePower_8(void);
+
+#define ID_Ph1ApparentPower_8 4656
+extern float Ph1ApparentPower_8;
+int doWrite_Ph1ApparentPower_8(float value);
+int addWrite_Ph1ApparentPower_8(float value);
+int getStatus_Ph1ApparentPower_8(void);
+
+#define ID_Ph2ApparentPower_8 4657
+extern float Ph2ApparentPower_8;
+int doWrite_Ph2ApparentPower_8(float value);
+int addWrite_Ph2ApparentPower_8(float value);
+int getStatus_Ph2ApparentPower_8(void);
+
+#define ID_Ph3ApparentPower_8 4658
+extern float Ph3ApparentPower_8;
+int doWrite_Ph3ApparentPower_8(float value);
+int addWrite_Ph3ApparentPower_8(float value);
+int getStatus_Ph3ApparentPower_8(void);
+
+#define ID_SysApparentPower_8 4659
+extern float SysApparentPower_8;	/* 0x12 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_8(float value);
+int addWrite_SysApparentPower_8(float value);
+int getStatus_SysApparentPower_8(void);
+
+#define ID_Ph1ReactivePower_8 4660
+extern float Ph1ReactivePower_8;
+int doWrite_Ph1ReactivePower_8(float value);
+int addWrite_Ph1ReactivePower_8(float value);
+int getStatus_Ph1ReactivePower_8(void);
+
+#define ID_Ph2ReactivePower_8 4661
+extern float Ph2ReactivePower_8;
+int doWrite_Ph2ReactivePower_8(float value);
+int addWrite_Ph2ReactivePower_8(float value);
+int getStatus_Ph2ReactivePower_8(void);
+
+#define ID_Ph3ReactivePower_8 4662
+extern float Ph3ReactivePower_8;
+int doWrite_Ph3ReactivePower_8(float value);
+int addWrite_Ph3ReactivePower_8(float value);
+int getStatus_Ph3ReactivePower_8(void);
+
+#define ID_SysReactivePower_8 4663
+extern float SysReactivePower_8;	/* 0x12 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_8(float value);
+int addWrite_SysReactivePower_8(float value);
+int getStatus_SysReactivePower_8(void);
+
+#define ID_SysImpActiveEnergy_8 4664
+extern float SysImpActiveEnergy_8;	/* 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_8(float value);
+int addWrite_SysImpActiveEnergy_8(float value);
+int getStatus_SysImpActiveEnergy_8(void);
+
+#define ID_SysActivePower_9 4665
+extern float SysActivePower_9;	/* 0x13 0x1026 Potenza Attiva 0 in W (UPS) */
+int doWrite_SysActivePower_9(float value);
+int addWrite_SysActivePower_9(float value);
+int getStatus_SysActivePower_9(void);
+
+#define ID_Ph1ApparentPower_9 4666
+extern float Ph1ApparentPower_9;
+int doWrite_Ph1ApparentPower_9(float value);
+int addWrite_Ph1ApparentPower_9(float value);
+int getStatus_Ph1ApparentPower_9(void);
+
+#define ID_Ph2ApparentPower_9 4667
+extern float Ph2ApparentPower_9;
+int doWrite_Ph2ApparentPower_9(float value);
+int addWrite_Ph2ApparentPower_9(float value);
+int getStatus_Ph2ApparentPower_9(void);
+
+#define ID_Ph3ApparentPower_9 4668
+extern float Ph3ApparentPower_9;
+int doWrite_Ph3ApparentPower_9(float value);
+int addWrite_Ph3ApparentPower_9(float value);
+int getStatus_Ph3ApparentPower_9(void);
+
+#define ID_SysApparentPower_9 4669
+extern float SysApparentPower_9;	/* 0x13 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_9(float value);
+int addWrite_SysApparentPower_9(float value);
+int getStatus_SysApparentPower_9(void);
+
+#define ID_Ph1ReactivePower_9 4670
+extern float Ph1ReactivePower_9;
+int doWrite_Ph1ReactivePower_9(float value);
+int addWrite_Ph1ReactivePower_9(float value);
+int getStatus_Ph1ReactivePower_9(void);
+
+#define ID_Ph2ReactivePower_9 4671
+extern float Ph2ReactivePower_9;
+int doWrite_Ph2ReactivePower_9(float value);
+int addWrite_Ph2ReactivePower_9(float value);
+int getStatus_Ph2ReactivePower_9(void);
+
+#define ID_Ph3ReactivePower_9 4672
+extern float Ph3ReactivePower_9;
+int doWrite_Ph3ReactivePower_9(float value);
+int addWrite_Ph3ReactivePower_9(float value);
+int getStatus_Ph3ReactivePower_9(void);
+
+#define ID_SysReactivePower_9 4673
+extern float SysReactivePower_9;	/* 0x13 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_9(float value);
+int addWrite_SysReactivePower_9(float value);
+int getStatus_SysReactivePower_9(void);
+
+#define ID_SysImpActiveEnergy_9 4674
+extern float SysImpActiveEnergy_9;	/* 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_9(float value);
+int addWrite_SysImpActiveEnergy_9(float value);
+int getStatus_SysImpActiveEnergy_9(void);
+
+#define ID_SysActivePower_10 4675
+extern float SysActivePower_10;	/* 0x14 0x1026 Potenza Attiva 0 in W (Puffer) */
+int doWrite_SysActivePower_10(float value);
+int addWrite_SysActivePower_10(float value);
+int getStatus_SysActivePower_10(void);
+
+#define ID_Ph1ApparentPower_10 4676
+extern float Ph1ApparentPower_10;
+int doWrite_Ph1ApparentPower_10(float value);
+int addWrite_Ph1ApparentPower_10(float value);
+int getStatus_Ph1ApparentPower_10(void);
+
+#define ID_Ph2ApparentPower_10 4677
+extern float Ph2ApparentPower_10;
+int doWrite_Ph2ApparentPower_10(float value);
+int addWrite_Ph2ApparentPower_10(float value);
+int getStatus_Ph2ApparentPower_10(void);
+
+#define ID_Ph3ApparentPower_10 4678
+extern float Ph3ApparentPower_10;
+int doWrite_Ph3ApparentPower_10(float value);
+int addWrite_Ph3ApparentPower_10(float value);
+int getStatus_Ph3ApparentPower_10(void);
+
+#define ID_SysApparentPower_10 4679
+extern float SysApparentPower_10;	/* 0x14 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_10(float value);
+int addWrite_SysApparentPower_10(float value);
+int getStatus_SysApparentPower_10(void);
+
+#define ID_Ph1ReactivePower_10 4680
+extern float Ph1ReactivePower_10;
+int doWrite_Ph1ReactivePower_10(float value);
+int addWrite_Ph1ReactivePower_10(float value);
+int getStatus_Ph1ReactivePower_10(void);
+
+#define ID_Ph2ReactivePower_10 4681
+extern float Ph2ReactivePower_10;
+int doWrite_Ph2ReactivePower_10(float value);
+int addWrite_Ph2ReactivePower_10(float value);
+int getStatus_Ph2ReactivePower_10(void);
+
+#define ID_Ph3ReactivePower_10 4682
+extern float Ph3ReactivePower_10;
+int doWrite_Ph3ReactivePower_10(float value);
+int addWrite_Ph3ReactivePower_10(float value);
+int getStatus_Ph3ReactivePower_10(void);
+
+#define ID_SysReactivePower_10 4683
+extern float SysReactivePower_10;	/* 0x14 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_10(float value);
+int addWrite_SysReactivePower_10(float value);
+int getStatus_SysReactivePower_10(void);
+
+#define ID_SysImpActiveEnergy_10 4684
+extern float SysImpActiveEnergy_10;	/* 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_10(float value);
+int addWrite_SysImpActiveEnergy_10(float value);
+int getStatus_SysImpActiveEnergy_10(void);
+
+#define ID_SysActivePower_11 4685
+extern float SysActivePower_11;	/* 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) */
+int doWrite_SysActivePower_11(float value);
+int addWrite_SysActivePower_11(float value);
+int getStatus_SysActivePower_11(void);
+
+#define ID_Ph1ApparentPower_11 4686
+extern float Ph1ApparentPower_11;
+int doWrite_Ph1ApparentPower_11(float value);
+int addWrite_Ph1ApparentPower_11(float value);
+int getStatus_Ph1ApparentPower_11(void);
+
+#define ID_Ph2ApparentPower_11 4687
+extern float Ph2ApparentPower_11;
+int doWrite_Ph2ApparentPower_11(float value);
+int addWrite_Ph2ApparentPower_11(float value);
+int getStatus_Ph2ApparentPower_11(void);
+
+#define ID_Ph3ApparentPower_11 4688
+extern float Ph3ApparentPower_11;
+int doWrite_Ph3ApparentPower_11(float value);
+int addWrite_Ph3ApparentPower_11(float value);
+int getStatus_Ph3ApparentPower_11(void);
+
+#define ID_SysApparentPower_11 4689
+extern float SysApparentPower_11;	/* 0x15 0x102E Potenza Apparente 0 in VA (UPS) */
+int doWrite_SysApparentPower_11(float value);
+int addWrite_SysApparentPower_11(float value);
+int getStatus_SysApparentPower_11(void);
+
+#define ID_Ph1ReactivePower_11 4690
+extern float Ph1ReactivePower_11;
+int doWrite_Ph1ReactivePower_11(float value);
+int addWrite_Ph1ReactivePower_11(float value);
+int getStatus_Ph1ReactivePower_11(void);
+
+#define ID_Ph2ReactivePower_11 4691
+extern float Ph2ReactivePower_11;
+int doWrite_Ph2ReactivePower_11(float value);
+int addWrite_Ph2ReactivePower_11(float value);
+int getStatus_Ph2ReactivePower_11(void);
+
+#define ID_Ph3ReactivePower_11 4692
+extern float Ph3ReactivePower_11;
+int doWrite_Ph3ReactivePower_11(float value);
+int addWrite_Ph3ReactivePower_11(float value);
+int getStatus_Ph3ReactivePower_11(void);
+
+#define ID_SysReactivePower_11 4693
+extern float SysReactivePower_11;	/* 0x15 0x1036 Potenza Reattiva 0 in var */
+int doWrite_SysReactivePower_11(float value);
+int addWrite_SysReactivePower_11(float value);
+int getStatus_SysReactivePower_11(void);
+
+#define ID_SysImpActiveEnergy_11 4694
+extern float SysImpActiveEnergy_11;	/* 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) */
+int doWrite_SysImpActiveEnergy_11(float value);
+int addWrite_SysImpActiveEnergy_11(float value);
+int getStatus_SysImpActiveEnergy_11(void);
 
 #define ID_QcPm_Voltage_0 4700
 extern int16_t QcPm_Voltage_0;	/* QC-PM485 xxx.x V */

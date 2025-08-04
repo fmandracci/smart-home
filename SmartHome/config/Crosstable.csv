@@ -4536,162 +4536,162 @@
 1;P;PLC_AnIn3Filter                ;UINT     ;0   ;RTU       ;               ;3   ;20  ;31    ;4482;57  ;[RW]Analog input 3 filter
 1;P;PLC_Reserved_6                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;32    ;4482;57  ;[RW]Reserved
 1;P;PLC_Reserved_7                 ;UINT     ;0   ;RTU       ;               ;3   ;20  ;33    ;4482;57  ;[RW]Reserved
-2;P;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4134  ;4539;1   ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
-2;P;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4134  ;4540;1   ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
-2;P;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4134  ;4541;1   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
-2;P;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4134  ;4542;1   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
-2;P;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4134  ;4543;1   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
-2;P;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4134  ;4544;1   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
-2;P;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4134  ;4545;1   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
-2;P;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4134  ;4546;1   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
-2;P;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4134  ;4547;1   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
-2;P;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4134  ;4548;1   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
-2;P;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4134  ;4549;1   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Puffer)
-2;P;SysActivePower_11              ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4134  ;4550;1   ;[RW]0x15 0x1026 Potenza Attiva 0 in W (Caldaia)
-2;P;SysApparentPower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4142  ;4551;1   ;[RO]0x0A 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4142  ;4552;1   ;[RO]0x0B 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4142  ;4553;1   ;[RO]0x0C 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4142  ;4554;1   ;[RO]0x0D 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4142  ;4555;1   ;[RO]0x0E 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4142  ;4556;1   ;[RO]0x0F 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4142  ;4557;1   ;[RO]0x10 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4142  ;4558;1   ;[RO]0x11 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4142  ;4559;1   ;[RO]0x12 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4142  ;4560;1   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4142  ;4561;1   ;[RO]0x14 0x102E Potenza Apparente 0 in VA (UPS)
-2;P;SysApparentPower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4142  ;4562;1   ;[RO]0x15 0x102E Potenza Apparente 0 in VA (UPS)
-3;P;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4366  ;4563;1   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
-3;P;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4366  ;4564;1   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
-3;P;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4358  ;4565;1   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
-3;P;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4358  ;4566;1   ;[RO]0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
-3;P;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;0   ;12  ;4358  ;4567;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;0   ;13  ;4358  ;4568;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;0   ;14  ;4358  ;4569;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;0   ;15  ;4358  ;4570;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;0   ;16  ;4358  ;4571;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;0   ;17  ;4358  ;4572;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;0   ;18  ;4358  ;4573;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;0   ;19  ;4358  ;4574;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;0   ;20  ;4358  ;4575;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-3;P;SysImpActiveEnergy_11          ;REALCDAB ;1   ;RTU       ;               ;0   ;21  ;4358  ;4576;1   ;[RO]0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS)
-2;P;SysPowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;0   ;10  ;4126  ;4577;1   ;[RO]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
-2;P;SysPowerFactor_1               ;REALCDAB ;3   ;RTU       ;               ;0   ;11  ;4126  ;4578;1   ;[RO]0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE)
-2;P;SysReactivePower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4150  ;4579;2   ;[RO]0x0A 0x1036 Potenza Reattiva 0 in var
-2;P;Frequency_0                    ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4152  ;4579;2   ;[RO]0x0A 0x1038 Frequenza in Hz
-2;P;SysReactivePower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4150  ;4581;1   ;[RO]0x0B 0x1036 Potenza Reattiva 0 in var
-0;P;Frequency_1                    ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4152  ;4582;1   ;[RO]0x0B 0x1038 Frequenza in Hz
-2;P;SysReactivePower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4150  ;4583;1   ;[RO]0x0C 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4150  ;4584;1   ;[RO]0x0D 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4150  ;4585;1   ;[RO]0x0E 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4150  ;4586;1   ;[RO]0x0F 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4150  ;4587;1   ;[RO]0x10 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4150  ;4588;1   ;[RO]0x11 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4150  ;4589;1   ;[RO]0x12 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4150  ;4590;1   ;[RO]0x13 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4150  ;4591;1   ;[RO]0x14 0x1036 Potenza Reattiva 0 in var
-2;P;SysReactivePower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4150  ;4592;1   ;[RO]0x15 0x1036 Potenza Reattiva 0 in var
-2;P;SystemCurrent_0                ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4118  ;4593;1   ;[RO]0x0A 0x1016 Corrente in A
-0;P;SystemCurrent_1                ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4118  ;4594;1   ;[RO]0x0B 0x1016 Corrente in A
-2;P;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4108  ;4595;1   ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
-0;P;SystemVoltage_1                ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4108  ;4596;1   ;[RO]0x0B 0x100C Tensione in V (PRINCIPALE)
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
-;;;;;;;;;;;;
+2;P;SystemVoltage_0                ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4108  ;4539;23  ;[RO]0x0A 0x100C Tensione in V (PRINCIPALE)
+2;P;Ph1Current_0                   ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4110  ;4539;23  ;[RO]
+2;P;Ph2Current_0                   ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4112  ;4539;23  ;[RO]
+2;P;Ph3Current_0                   ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4114  ;4539;23  ;[RO]
+2;P;NeutralCurrent_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4116  ;4539;23  ;[RO]
+2;P;SystemCurrent_0                ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4118  ;4539;23  ;[RO]0x0A 0x1016 Corrente in A
+2;P;Ph1PowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;0   ;10  ;4120  ;4539;23  ;[RO]
+2;P;Ph2PowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;0   ;10  ;4122  ;4539;23  ;[RO]
+2;P;Ph3PowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;0   ;10  ;4124  ;4539;23  ;[RO]
+2;P;SysPowerFactor_0               ;REALCDAB ;3   ;RTU       ;               ;0   ;10  ;4126  ;4539;23  ;[RO]0x0A 0x101E Fattore di Potenza 0 (PRINCIPALE)
+2;P;Ph1ActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4128  ;4539;23  ;[RO]
+2;P;Ph2ActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4130  ;4539;23  ;[RO]
+2;P;Ph3ActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4132  ;4539;23  ;[RO]
+2;P;SysActivePower_0               ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4134  ;4539;23  ;[RO]0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
+2;P;Ph1ApparentPower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4136  ;4539;23  ;[RO]
+2;P;Ph2ApparentPower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4138  ;4539;23  ;[RO]
+2;P;Ph3ApparentPower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4140  ;4539;23  ;[RO]
+2;P;SysApparentPower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4142  ;4539;23  ;[RO]0x0A 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4144  ;4539;23  ;[RO]
+2;P;Ph2ReactivePower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4146  ;4539;23  ;[RO]
+2;P;Ph3ReactivePower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4148  ;4539;23  ;[RO]
+2;P;SysReactivePower_0             ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4150  ;4539;23  ;[RO]0x0A 0x1036 Potenza Reattiva 0 in var
+2;P;Frequency_0                    ;REALCDAB ;0   ;RTU       ;               ;0   ;10  ;4152  ;4539;23  ;[RO]0x0A 0x1038 Frequenza in Hz
+3;P;SysImpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4358  ;4562;5   ;[RO]0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
+3;P;Ph1ExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4360  ;4562;5   ;[RO]
+3;P;Ph2ExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4362  ;4562;5   ;[RO]
+3;P;Ph3ExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4364  ;4562;5   ;[RO]
+3;P;SysExpActiveEnergy_0           ;REALCDAB ;1   ;RTU       ;               ;0   ;10  ;4366  ;4562;5   ;[RO]0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
+0;P;SystemVoltage_1                ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4108  ;4567;1   ;[RO]0x0B 0x100C Tensione in V (PRINCIPALE)
+0;P;Ph1Current_1                   ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4110  ;4568;1   ;[RO]
+0;P;Ph2Current_1                   ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4112  ;4569;1   ;[RO]
+0;P;Ph3Current_1                   ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4114  ;4570;1   ;[RO]
+0;P;NeutralCurrent_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4116  ;4571;1   ;[RO]
+2;P;SystemCurrent_1                ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4118  ;4572;17  ;[RO]0x0B 0x1016 Corrente in A
+2;P;Ph1PowerFactor_1               ;REALCDAB ;3   ;RTU       ;               ;0   ;11  ;4120  ;4572;17  ;[RO]
+2;P;Ph2PowerFactor_1               ;REALCDAB ;3   ;RTU       ;               ;0   ;11  ;4122  ;4572;17  ;[RO]
+2;P;Ph3PowerFactor_1               ;REALCDAB ;3   ;RTU       ;               ;0   ;11  ;4124  ;4572;17  ;[RO]
+2;P;SysPowerFactor_1               ;REALCDAB ;3   ;RTU       ;               ;0   ;11  ;4126  ;4572;17  ;[RO]0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE)
+2;P;Ph1ActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4128  ;4572;17  ;[RO]
+2;P;Ph2ActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4130  ;4572;17  ;[RO]
+2;P;Ph3ActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4132  ;4572;17  ;[RO]
+2;P;SysActivePower_1               ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4134  ;4572;17  ;[RO]0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE)
+2;P;Ph1ApparentPower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4136  ;4572;17  ;[RO]
+2;P;Ph2ApparentPower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4138  ;4572;17  ;[RO]
+2;P;Ph3ApparentPower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4140  ;4572;17  ;[RO]
+2;P;SysApparentPower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4142  ;4572;17  ;[RO]0x0B 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4144  ;4572;17  ;[RO]
+2;P;Ph2ReactivePower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4146  ;4572;17  ;[RO]
+2;P;Ph3ReactivePower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4148  ;4572;17  ;[RO]
+2;P;SysReactivePower_1             ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4150  ;4572;17  ;[RO]0x0B 0x1036 Potenza Reattiva 0 in var
+0;P;Frequency_1                    ;REALCDAB ;0   ;RTU       ;               ;0   ;11  ;4152  ;4589;1   ;[RO]0x0B 0x1038 Frequenza in Hz
+3;P;SysImpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4358  ;4590;5   ;[RO]0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE)
+3;P;Ph1ExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4360  ;4590;5   ;[RO]
+3;P;Ph2ExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4362  ;4590;5   ;[RO]
+3;P;Ph3ExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4364  ;4590;5   ;[RO]
+3;P;SysExpActiveEnergy_1           ;REALCDAB ;1   ;RTU       ;               ;0   ;11  ;4366  ;4590;5   ;[RO]0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE)
+2;P;SysActivePower_2               ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4134  ;4595;9   ;[RO]0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI)
+2;P;Ph1ApparentPower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4136  ;4595;9   ;[RO]
+2;P;Ph2ApparentPower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4138  ;4595;9   ;[RO]
+2;P;Ph3ApparentPower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4140  ;4595;9   ;[RO]
+2;P;SysApparentPower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4142  ;4595;9   ;[RO]0x0C 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4144  ;4595;9   ;[RO]
+2;P;Ph2ReactivePower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4146  ;4595;9   ;[RO]
+2;P;Ph3ReactivePower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4148  ;4595;9   ;[RO]
+2;P;SysReactivePower_2             ;REALCDAB ;0   ;RTU       ;               ;0   ;12  ;4150  ;4595;9   ;[RO]0x0C 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_2           ;REALCDAB ;1   ;RTU       ;               ;0   ;12  ;4358  ;4604;1   ;[RO]0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_3               ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4134  ;4605;9   ;[RO]0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA)
+2;P;Ph1ApparentPower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4136  ;4605;9   ;[RO]
+2;P;Ph2ApparentPower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4138  ;4605;9   ;[RO]
+2;P;Ph3ApparentPower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4140  ;4605;9   ;[RO]
+2;P;SysApparentPower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4142  ;4605;9   ;[RO]0x0D 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4144  ;4605;9   ;[RO]
+2;P;Ph2ReactivePower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4146  ;4605;9   ;[RO]
+2;P;Ph3ReactivePower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4148  ;4605;9   ;[RO]
+2;P;SysReactivePower_3             ;REALCDAB ;0   ;RTU       ;               ;0   ;13  ;4150  ;4605;9   ;[RO]0x0D 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_3           ;REALCDAB ;1   ;RTU       ;               ;0   ;13  ;4358  ;4614;1   ;[RO]0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_4               ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4134  ;4615;9   ;[RO]0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA)
+2;P;Ph1ApparentPower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4136  ;4615;9   ;[RO]
+2;P;Ph2ApparentPower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4138  ;4615;9   ;[RO]
+2;P;Ph3ApparentPower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4140  ;4615;9   ;[RO]
+2;P;SysApparentPower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4142  ;4615;9   ;[RO]0x0E 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4144  ;4615;9   ;[RO]
+2;P;Ph2ReactivePower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4146  ;4615;9   ;[RO]
+2;P;Ph3ReactivePower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4148  ;4615;9   ;[RO]
+2;P;SysReactivePower_4             ;REALCDAB ;0   ;RTU       ;               ;0   ;14  ;4150  ;4615;9   ;[RO]0x0E 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_4           ;REALCDAB ;1   ;RTU       ;               ;0   ;14  ;4358  ;4624;1   ;[RO]0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_5               ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4134  ;4625;9   ;[RO]0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO)
+2;P;Ph1ApparentPower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4136  ;4625;9   ;[RO]
+2;P;Ph2ApparentPower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4138  ;4625;9   ;[RO]
+2;P;Ph3ApparentPower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4140  ;4625;9   ;[RO]
+2;P;SysApparentPower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4142  ;4625;9   ;[RO]0x0F 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4144  ;4625;9   ;[RO]
+2;P;Ph2ReactivePower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4146  ;4625;9   ;[RO]
+2;P;Ph3ReactivePower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4148  ;4625;9   ;[RO]
+2;P;SysReactivePower_5             ;REALCDAB ;0   ;RTU       ;               ;0   ;15  ;4150  ;4625;9   ;[RO]0x0F 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_5           ;REALCDAB ;1   ;RTU       ;               ;0   ;15  ;4358  ;4634;1   ;[RO]0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_6               ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4134  ;4635;9   ;[RO]0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA)
+2;P;Ph1ApparentPower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4136  ;4635;9   ;[RO]
+2;P;Ph2ApparentPower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4138  ;4635;9   ;[RO]
+2;P;Ph3ApparentPower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4140  ;4635;9   ;[RO]
+2;P;SysApparentPower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4142  ;4635;9   ;[RO]0x10 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4144  ;4635;9   ;[RO]
+2;P;Ph2ReactivePower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4146  ;4635;9   ;[RO]
+2;P;Ph3ReactivePower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4148  ;4635;9   ;[RO]
+2;P;SysReactivePower_6             ;REALCDAB ;0   ;RTU       ;               ;0   ;16  ;4150  ;4635;9   ;[RO]0x10 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_6           ;REALCDAB ;1   ;RTU       ;               ;0   ;16  ;4358  ;4644;1   ;[RO]0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_7               ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4134  ;4645;9   ;[RO]0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE)
+2;P;Ph1ApparentPower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4136  ;4645;9   ;[RO]
+2;P;Ph2ApparentPower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4138  ;4645;9   ;[RO]
+2;P;Ph3ApparentPower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4140  ;4645;9   ;[RO]
+2;P;SysApparentPower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4142  ;4645;9   ;[RO]0x11 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4144  ;4645;9   ;[RO]
+2;P;Ph2ReactivePower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4146  ;4645;9   ;[RO]
+2;P;Ph3ReactivePower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4148  ;4645;9   ;[RO]
+2;P;SysReactivePower_7             ;REALCDAB ;0   ;RTU       ;               ;0   ;17  ;4150  ;4645;9   ;[RO]0x11 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_7           ;REALCDAB ;1   ;RTU       ;               ;0   ;17  ;4358  ;4654;1   ;[RO]0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_8               ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4134  ;4655;9   ;[RO]0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA)
+2;P;Ph1ApparentPower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4136  ;4655;9   ;[RO]
+2;P;Ph2ApparentPower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4138  ;4655;9   ;[RO]
+2;P;Ph3ApparentPower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4140  ;4655;9   ;[RO]
+2;P;SysApparentPower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4142  ;4655;9   ;[RO]0x12 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4144  ;4655;9   ;[RO]
+2;P;Ph2ReactivePower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4146  ;4655;9   ;[RO]
+2;P;Ph3ReactivePower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4148  ;4655;9   ;[RO]
+2;P;SysReactivePower_8             ;REALCDAB ;0   ;RTU       ;               ;0   ;18  ;4150  ;4655;9   ;[RO]0x12 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_8           ;REALCDAB ;1   ;RTU       ;               ;0   ;18  ;4358  ;4664;1   ;[RO]0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_9               ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4134  ;4665;9   ;[RO]0x13 0x1026 Potenza Attiva 0 in W (UPS)
+2;P;Ph1ApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4136  ;4665;9   ;[RO]
+2;P;Ph2ApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4138  ;4665;9   ;[RO]
+2;P;Ph3ApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4140  ;4665;9   ;[RO]
+2;P;SysApparentPower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4142  ;4665;9   ;[RO]0x13 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4144  ;4665;9   ;[RO]
+2;P;Ph2ReactivePower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4146  ;4665;9   ;[RO]
+2;P;Ph3ReactivePower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4148  ;4665;9   ;[RO]
+2;P;SysReactivePower_9             ;REALCDAB ;0   ;RTU       ;               ;0   ;19  ;4150  ;4665;9   ;[RO]0x13 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_9           ;REALCDAB ;1   ;RTU       ;               ;0   ;19  ;4358  ;4674;1   ;[RO]0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_10              ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4134  ;4675;9   ;[RO]0x14 0x1026 Potenza Attiva 0 in W (Puffer)
+2;P;Ph1ApparentPower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4136  ;4675;9   ;[RO]
+2;P;Ph2ApparentPower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4138  ;4675;9   ;[RO]
+2;P;Ph3ApparentPower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4140  ;4675;9   ;[RO]
+2;P;SysApparentPower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4142  ;4675;9   ;[RO]0x14 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4144  ;4675;9   ;[RO]
+2;P;Ph2ReactivePower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4146  ;4675;9   ;[RO]
+2;P;Ph3ReactivePower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4148  ;4675;9   ;[RO]
+2;P;SysReactivePower_10            ;REALCDAB ;0   ;RTU       ;               ;0   ;20  ;4150  ;4675;9   ;[RO]0x14 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_10          ;REALCDAB ;1   ;RTU       ;               ;0   ;20  ;4358  ;4684;1   ;[RO]0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS)
+2;P;SysActivePower_11              ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4134  ;4685;9   ;[RW]0x15 0x1026 Potenza Attiva 0 in W (Caldaia)
+2;P;Ph1ApparentPower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4136  ;4685;9   ;[RO]
+2;P;Ph2ApparentPower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4138  ;4685;9   ;[RO]
+2;P;Ph3ApparentPower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4140  ;4685;9   ;[RO]
+2;P;SysApparentPower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4142  ;4685;9   ;[RO]0x15 0x102E Potenza Apparente 0 in VA (UPS)
+2;P;Ph1ReactivePower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4144  ;4685;9   ;[RO]
+2;P;Ph2ReactivePower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4146  ;4685;9   ;[RO]
+2;P;Ph3ReactivePower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4148  ;4685;9   ;[RO]
+2;P;SysReactivePower_11            ;REALCDAB ;0   ;RTU       ;               ;0   ;21  ;4150  ;4685;9   ;[RO]0x15 0x1036 Potenza Reattiva 0 in var
+3;P;SysImpActiveEnergy_11          ;REALCDAB ;1   ;RTU       ;               ;0   ;21  ;4358  ;4694;1   ;[RO]0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS)
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;
 ;;;;;;;;;;;;

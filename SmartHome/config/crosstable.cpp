@@ -12362,269 +12362,66 @@ u_int16_t PLC_Reserved_7 = 0;
 
 
 /*
- * Variable SysActivePower_0	[ 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ * Variable SystemVoltage_0	[ 0x0A 0x100C Tensione in V (PRINCIPALE) ]
  */
 
-float SysActivePower_0 = 0;
+float SystemVoltage_0 = 0;
 
 
 /*
- * Variable SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ * Variable Ph1Current_0
  */
 
-float SysActivePower_1 = 0;
+float Ph1Current_0 = 0;
 
 
 /*
- * Variable SysActivePower_2	[ 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) ]
+ * Variable Ph2Current_0
  */
 
-float SysActivePower_2 = 0;
+float Ph2Current_0 = 0;
 
 
 /*
- * Variable SysActivePower_3	[ 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) ]
+ * Variable Ph3Current_0
  */
 
-float SysActivePower_3 = 0;
+float Ph3Current_0 = 0;
 
 
 /*
- * Variable SysActivePower_4	[ 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) ]
+ * Variable NeutralCurrent_0
  */
 
-float SysActivePower_4 = 0;
+float NeutralCurrent_0 = 0;
 
 
 /*
- * Variable SysActivePower_5	[ 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) ]
+ * Variable SystemCurrent_0	[ 0x0A 0x1016 Corrente in A ]
  */
 
-float SysActivePower_5 = 0;
+float SystemCurrent_0 = 0;
 
 
 /*
- * Variable SysActivePower_6	[ 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) ]
+ * Variable Ph1PowerFactor_0
  */
 
-float SysActivePower_6 = 0;
+float Ph1PowerFactor_0 = 0;
 
 
 /*
- * Variable SysActivePower_7	[ 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) ]
+ * Variable Ph2PowerFactor_0
  */
 
-float SysActivePower_7 = 0;
+float Ph2PowerFactor_0 = 0;
 
 
 /*
- * Variable SysActivePower_8	[ 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) ]
+ * Variable Ph3PowerFactor_0
  */
 
-float SysActivePower_8 = 0;
-
-
-/*
- * Variable SysActivePower_9	[ 0x13 0x1026 Potenza Attiva 0 in W (UPS) ]
- */
-
-float SysActivePower_9 = 0;
-
-
-/*
- * Variable SysActivePower_10	[ 0x14 0x1026 Potenza Attiva 0 in W (Puffer) ]
- */
-
-float SysActivePower_10 = 0;
-
-
-/*
- * Variable SysActivePower_11	[ 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) ]
- */
-
-float SysActivePower_11 = 0;
-
-
-/*
- * Variable SysApparentPower_0	[ 0x0A 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_0 = 0;
-
-
-/*
- * Variable SysApparentPower_1	[ 0x0B 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_1 = 0;
-
-
-/*
- * Variable SysApparentPower_2	[ 0x0C 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_2 = 0;
-
-
-/*
- * Variable SysApparentPower_3	[ 0x0D 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_3 = 0;
-
-
-/*
- * Variable SysApparentPower_4	[ 0x0E 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_4 = 0;
-
-
-/*
- * Variable SysApparentPower_5	[ 0x0F 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_5 = 0;
-
-
-/*
- * Variable SysApparentPower_6	[ 0x10 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_6 = 0;
-
-
-/*
- * Variable SysApparentPower_7	[ 0x11 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_7 = 0;
-
-
-/*
- * Variable SysApparentPower_8	[ 0x12 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_8 = 0;
-
-
-/*
- * Variable SysApparentPower_9	[ 0x13 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_9 = 0;
-
-
-/*
- * Variable SysApparentPower_10	[ 0x14 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_10 = 0;
-
-
-/*
- * Variable SysApparentPower_11	[ 0x15 0x102E Potenza Apparente 0 in VA (UPS) ]
- */
-
-float SysApparentPower_11 = 0;
-
-
-/*
- * Variable SysExpActiveEnergy_0	[ 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
- */
-
-float SysExpActiveEnergy_0 = 0;
-
-
-/*
- * Variable SysExpActiveEnergy_1	[ 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
- */
-
-float SysExpActiveEnergy_1 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_0	[ 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
- */
-
-float SysImpActiveEnergy_0 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_1	[ 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
- */
-
-float SysImpActiveEnergy_1 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_2	[ 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_2 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_3	[ 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_3 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_4	[ 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_4 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_5	[ 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_5 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_6	[ 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_6 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_7	[ 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_7 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_8	[ 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_8 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_9	[ 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_9 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_10	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_10 = 0;
-
-
-/*
- * Variable SysImpActiveEnergy_11	[ 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
- */
-
-float SysImpActiveEnergy_11 = 0;
+float Ph3PowerFactor_0 = 0;
 
 
 /*
@@ -12635,10 +12432,80 @@ float SysPowerFactor_0 = 0;
 
 
 /*
- * Variable SysPowerFactor_1	[ 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) ]
+ * Variable Ph1ActivePower_0
  */
 
-float SysPowerFactor_1 = 0;
+float Ph1ActivePower_0 = 0;
+
+
+/*
+ * Variable Ph2ActivePower_0
+ */
+
+float Ph2ActivePower_0 = 0;
+
+
+/*
+ * Variable Ph3ActivePower_0
+ */
+
+float Ph3ActivePower_0 = 0;
+
+
+/*
+ * Variable SysActivePower_0	[ 0x0A 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ */
+
+float SysActivePower_0 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_0
+ */
+
+float Ph1ApparentPower_0 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_0
+ */
+
+float Ph2ApparentPower_0 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_0
+ */
+
+float Ph3ApparentPower_0 = 0;
+
+
+/*
+ * Variable SysApparentPower_0	[ 0x0A 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_0 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_0
+ */
+
+float Ph1ReactivePower_0 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_0
+ */
+
+float Ph2ReactivePower_0 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_0
+ */
+
+float Ph3ReactivePower_0 = 0;
 
 
 /*
@@ -12656,10 +12523,248 @@ float Frequency_0 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_0	[ 0x0A 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysImpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable Ph1ExpActiveEnergy_0
+ */
+
+float Ph1ExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable Ph2ExpActiveEnergy_0
+ */
+
+float Ph2ExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable Ph3ExpActiveEnergy_0
+ */
+
+float Ph3ExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable SysExpActiveEnergy_0	[ 0x0A 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysExpActiveEnergy_0 = 0;
+
+
+/*
+ * Variable SystemCurrent_1	[ 0x0B 0x1016 Corrente in A ]
+ */
+
+float SystemCurrent_1 = 0;
+
+
+/*
+ * Variable Ph1PowerFactor_1
+ */
+
+float Ph1PowerFactor_1 = 0;
+
+
+/*
+ * Variable Ph2PowerFactor_1
+ */
+
+float Ph2PowerFactor_1 = 0;
+
+
+/*
+ * Variable Ph3PowerFactor_1
+ */
+
+float Ph3PowerFactor_1 = 0;
+
+
+/*
+ * Variable SysPowerFactor_1	[ 0x0B 0x101E Fattore di Potenza 0 (PRINCIPALE) ]
+ */
+
+float SysPowerFactor_1 = 0;
+
+
+/*
+ * Variable Ph1ActivePower_1
+ */
+
+float Ph1ActivePower_1 = 0;
+
+
+/*
+ * Variable Ph2ActivePower_1
+ */
+
+float Ph2ActivePower_1 = 0;
+
+
+/*
+ * Variable Ph3ActivePower_1
+ */
+
+float Ph3ActivePower_1 = 0;
+
+
+/*
+ * Variable SysActivePower_1	[ 0x0B 0x1026 Potenza Attiva 0 in W (PRINCIPALE) ]
+ */
+
+float SysActivePower_1 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_1
+ */
+
+float Ph1ApparentPower_1 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_1
+ */
+
+float Ph2ApparentPower_1 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_1
+ */
+
+float Ph3ApparentPower_1 = 0;
+
+
+/*
+ * Variable SysApparentPower_1	[ 0x0B 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_1 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_1
+ */
+
+float Ph1ReactivePower_1 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_1
+ */
+
+float Ph2ReactivePower_1 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_1
+ */
+
+float Ph3ReactivePower_1 = 0;
+
+
+/*
  * Variable SysReactivePower_1	[ 0x0B 0x1036 Potenza Reattiva 0 in var ]
  */
 
 float SysReactivePower_1 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_1	[ 0x0B 0x1106 Energia Attiva Importata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysImpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable Ph1ExpActiveEnergy_1
+ */
+
+float Ph1ExpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable Ph2ExpActiveEnergy_1
+ */
+
+float Ph2ExpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable Ph3ExpActiveEnergy_1
+ */
+
+float Ph3ExpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable SysExpActiveEnergy_1	[ 0x0B 0x110E Energia Attiva Esportata 0 in Wh (PRINCIPALE) ]
+ */
+
+float SysExpActiveEnergy_1 = 0;
+
+
+/*
+ * Variable SysActivePower_2	[ 0x0C 0x1026 Potenza Attiva 0 in W (ESTERNI) ]
+ */
+
+float SysActivePower_2 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_2
+ */
+
+float Ph1ApparentPower_2 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_2
+ */
+
+float Ph2ApparentPower_2 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_2
+ */
+
+float Ph3ApparentPower_2 = 0;
+
+
+/*
+ * Variable SysApparentPower_2	[ 0x0C 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_2 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_2
+ */
+
+float Ph1ReactivePower_2 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_2
+ */
+
+float Ph2ReactivePower_2 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_2
+ */
+
+float Ph3ReactivePower_2 = 0;
 
 
 /*
@@ -12670,10 +12775,136 @@ float SysReactivePower_2 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_2	[ 0x0C 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_2 = 0;
+
+
+/*
+ * Variable SysActivePower_3	[ 0x0D 0x1026 Potenza Attiva 0 in W (PIANO SOPRA) ]
+ */
+
+float SysActivePower_3 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_3
+ */
+
+float Ph1ApparentPower_3 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_3
+ */
+
+float Ph2ApparentPower_3 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_3
+ */
+
+float Ph3ApparentPower_3 = 0;
+
+
+/*
+ * Variable SysApparentPower_3	[ 0x0D 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_3 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_3
+ */
+
+float Ph1ReactivePower_3 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_3
+ */
+
+float Ph2ReactivePower_3 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_3
+ */
+
+float Ph3ReactivePower_3 = 0;
+
+
+/*
  * Variable SysReactivePower_3	[ 0x0D 0x1036 Potenza Reattiva 0 in var ]
  */
 
 float SysReactivePower_3 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_3	[ 0x0D 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_3 = 0;
+
+
+/*
+ * Variable SysActivePower_4	[ 0x0E 0x1026 Potenza Attiva 0 in W (PIANO TERRA) ]
+ */
+
+float SysActivePower_4 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_4
+ */
+
+float Ph1ApparentPower_4 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_4
+ */
+
+float Ph2ApparentPower_4 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_4
+ */
+
+float Ph3ApparentPower_4 = 0;
+
+
+/*
+ * Variable SysApparentPower_4	[ 0x0E 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_4 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_4
+ */
+
+float Ph1ReactivePower_4 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_4
+ */
+
+float Ph2ReactivePower_4 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_4
+ */
+
+float Ph3ReactivePower_4 = 0;
 
 
 /*
@@ -12684,10 +12915,136 @@ float SysReactivePower_4 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_4	[ 0x0E 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_4 = 0;
+
+
+/*
+ * Variable SysActivePower_5	[ 0x0F 0x1026 Potenza Attiva 0 in W (PIANO SOTTO) ]
+ */
+
+float SysActivePower_5 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_5
+ */
+
+float Ph1ApparentPower_5 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_5
+ */
+
+float Ph2ApparentPower_5 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_5
+ */
+
+float Ph3ApparentPower_5 = 0;
+
+
+/*
+ * Variable SysApparentPower_5	[ 0x0F 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_5 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_5
+ */
+
+float Ph1ReactivePower_5 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_5
+ */
+
+float Ph2ReactivePower_5 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_5
+ */
+
+float Ph3ReactivePower_5 = 0;
+
+
+/*
  * Variable SysReactivePower_5	[ 0x0F 0x1036 Potenza Reattiva 0 in var ]
  */
 
 float SysReactivePower_5 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_5	[ 0x0F 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_5 = 0;
+
+
+/*
+ * Variable SysActivePower_6	[ 0x10 0x1026 Potenza Attiva 0 in W (AUTO ELETTRICA) ]
+ */
+
+float SysActivePower_6 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_6
+ */
+
+float Ph1ApparentPower_6 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_6
+ */
+
+float Ph2ApparentPower_6 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_6
+ */
+
+float Ph3ApparentPower_6 = 0;
+
+
+/*
+ * Variable SysApparentPower_6	[ 0x10 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_6 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_6
+ */
+
+float Ph1ReactivePower_6 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_6
+ */
+
+float Ph2ReactivePower_6 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_6
+ */
+
+float Ph3ReactivePower_6 = 0;
 
 
 /*
@@ -12698,10 +13055,136 @@ float SysReactivePower_6 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_6	[ 0x10 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_6 = 0;
+
+
+/*
+ * Variable SysActivePower_7	[ 0x11 0x1026 Potenza Attiva 0 in W (DEUMIDIFICATORE) ]
+ */
+
+float SysActivePower_7 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_7
+ */
+
+float Ph1ApparentPower_7 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_7
+ */
+
+float Ph2ApparentPower_7 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_7
+ */
+
+float Ph3ApparentPower_7 = 0;
+
+
+/*
+ * Variable SysApparentPower_7	[ 0x11 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_7 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_7
+ */
+
+float Ph1ReactivePower_7 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_7
+ */
+
+float Ph2ReactivePower_7 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_7
+ */
+
+float Ph3ReactivePower_7 = 0;
+
+
+/*
  * Variable SysReactivePower_7	[ 0x11 0x1036 Potenza Reattiva 0 in var ]
  */
 
 float SysReactivePower_7 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_7	[ 0x11 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_7 = 0;
+
+
+/*
+ * Variable SysActivePower_8	[ 0x12 0x1026 Potenza Attiva 0 in W (LAVANDERIA) ]
+ */
+
+float SysActivePower_8 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_8
+ */
+
+float Ph1ApparentPower_8 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_8
+ */
+
+float Ph2ApparentPower_8 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_8
+ */
+
+float Ph3ApparentPower_8 = 0;
+
+
+/*
+ * Variable SysApparentPower_8	[ 0x12 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_8 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_8
+ */
+
+float Ph1ReactivePower_8 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_8
+ */
+
+float Ph2ReactivePower_8 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_8
+ */
+
+float Ph3ReactivePower_8 = 0;
 
 
 /*
@@ -12712,10 +13195,136 @@ float SysReactivePower_8 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_8	[ 0x12 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_8 = 0;
+
+
+/*
+ * Variable SysActivePower_9	[ 0x13 0x1026 Potenza Attiva 0 in W (UPS) ]
+ */
+
+float SysActivePower_9 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_9
+ */
+
+float Ph1ApparentPower_9 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_9
+ */
+
+float Ph2ApparentPower_9 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_9
+ */
+
+float Ph3ApparentPower_9 = 0;
+
+
+/*
+ * Variable SysApparentPower_9	[ 0x13 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_9 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_9
+ */
+
+float Ph1ReactivePower_9 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_9
+ */
+
+float Ph2ReactivePower_9 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_9
+ */
+
+float Ph3ReactivePower_9 = 0;
+
+
+/*
  * Variable SysReactivePower_9	[ 0x13 0x1036 Potenza Reattiva 0 in var ]
  */
 
 float SysReactivePower_9 = 0;
+
+
+/*
+ * Variable SysImpActiveEnergy_9	[ 0x13 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_9 = 0;
+
+
+/*
+ * Variable SysActivePower_10	[ 0x14 0x1026 Potenza Attiva 0 in W (Puffer) ]
+ */
+
+float SysActivePower_10 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_10
+ */
+
+float Ph1ApparentPower_10 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_10
+ */
+
+float Ph2ApparentPower_10 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_10
+ */
+
+float Ph3ApparentPower_10 = 0;
+
+
+/*
+ * Variable SysApparentPower_10	[ 0x14 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_10 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_10
+ */
+
+float Ph1ReactivePower_10 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_10
+ */
+
+float Ph2ReactivePower_10 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_10
+ */
+
+float Ph3ReactivePower_10 = 0;
 
 
 /*
@@ -12726,6 +13335,69 @@ float SysReactivePower_10 = 0;
 
 
 /*
+ * Variable SysImpActiveEnergy_10	[ 0x14 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
+ */
+
+float SysImpActiveEnergy_10 = 0;
+
+
+/*
+ * Variable SysActivePower_11	[ 0x15 0x1026 Potenza Attiva 0 in W (Caldaia) ]
+ */
+
+float SysActivePower_11 = 0;
+
+
+/*
+ * Variable Ph1ApparentPower_11
+ */
+
+float Ph1ApparentPower_11 = 0;
+
+
+/*
+ * Variable Ph2ApparentPower_11
+ */
+
+float Ph2ApparentPower_11 = 0;
+
+
+/*
+ * Variable Ph3ApparentPower_11
+ */
+
+float Ph3ApparentPower_11 = 0;
+
+
+/*
+ * Variable SysApparentPower_11	[ 0x15 0x102E Potenza Apparente 0 in VA (UPS) ]
+ */
+
+float SysApparentPower_11 = 0;
+
+
+/*
+ * Variable Ph1ReactivePower_11
+ */
+
+float Ph1ReactivePower_11 = 0;
+
+
+/*
+ * Variable Ph2ReactivePower_11
+ */
+
+float Ph2ReactivePower_11 = 0;
+
+
+/*
+ * Variable Ph3ReactivePower_11
+ */
+
+float Ph3ReactivePower_11 = 0;
+
+
+/*
  * Variable SysReactivePower_11	[ 0x15 0x1036 Potenza Reattiva 0 in var ]
  */
 
@@ -12733,17 +13405,10 @@ float SysReactivePower_11 = 0;
 
 
 /*
- * Variable SystemCurrent_0	[ 0x0A 0x1016 Corrente in A ]
+ * Variable SysImpActiveEnergy_11	[ 0x15 0x1106 Energia Attiva Importata 0 in Wh (UPS) ]
  */
 
-float SystemCurrent_0 = 0;
-
-
-/*
- * Variable SystemVoltage_0	[ 0x0A 0x100C Tensione in V (PRINCIPALE) ]
- */
-
-float SystemVoltage_0 = 0;
+float SysImpActiveEnergy_11 = 0;
 
 
 /*
@@ -46702,687 +47367,165 @@ getStatus_PLC_Reserved_7(void)
 }
 
 int
-doWrite_SysActivePower_0(float value)
+doWrite_SystemVoltage_0(float value)
 {
-	return doWrite(ID_SysActivePower_0, &value);
+	return doWrite(ID_SystemVoltage_0, &value);
 }
 
 int
-addWrite_SysActivePower_0(float value)
+addWrite_SystemVoltage_0(float value)
 {
-	return addWrite(ID_SysActivePower_0, &value);
+	return addWrite(ID_SystemVoltage_0, &value);
 }
 
 int
-getStatus_SysActivePower_0(void)
+getStatus_SystemVoltage_0(void)
 {
-	return getStatus(ID_SysActivePower_0);
+	return getStatus(ID_SystemVoltage_0);
 }
 
 int
-doWrite_SysActivePower_1(float value)
+doWrite_Ph1Current_0(float value)
 {
-	return doWrite(ID_SysActivePower_1, &value);
+	return doWrite(ID_Ph1Current_0, &value);
 }
 
 int
-addWrite_SysActivePower_1(float value)
+addWrite_Ph1Current_0(float value)
 {
-	return addWrite(ID_SysActivePower_1, &value);
+	return addWrite(ID_Ph1Current_0, &value);
 }
 
 int
-getStatus_SysActivePower_1(void)
+getStatus_Ph1Current_0(void)
 {
-	return getStatus(ID_SysActivePower_1);
+	return getStatus(ID_Ph1Current_0);
 }
 
 int
-doWrite_SysActivePower_2(float value)
+doWrite_Ph2Current_0(float value)
 {
-	return doWrite(ID_SysActivePower_2, &value);
+	return doWrite(ID_Ph2Current_0, &value);
 }
 
 int
-addWrite_SysActivePower_2(float value)
+addWrite_Ph2Current_0(float value)
 {
-	return addWrite(ID_SysActivePower_2, &value);
+	return addWrite(ID_Ph2Current_0, &value);
 }
 
 int
-getStatus_SysActivePower_2(void)
+getStatus_Ph2Current_0(void)
 {
-	return getStatus(ID_SysActivePower_2);
+	return getStatus(ID_Ph2Current_0);
 }
 
 int
-doWrite_SysActivePower_3(float value)
+doWrite_Ph3Current_0(float value)
 {
-	return doWrite(ID_SysActivePower_3, &value);
+	return doWrite(ID_Ph3Current_0, &value);
 }
 
 int
-addWrite_SysActivePower_3(float value)
+addWrite_Ph3Current_0(float value)
 {
-	return addWrite(ID_SysActivePower_3, &value);
+	return addWrite(ID_Ph3Current_0, &value);
 }
 
 int
-getStatus_SysActivePower_3(void)
+getStatus_Ph3Current_0(void)
 {
-	return getStatus(ID_SysActivePower_3);
+	return getStatus(ID_Ph3Current_0);
 }
 
 int
-doWrite_SysActivePower_4(float value)
+doWrite_NeutralCurrent_0(float value)
 {
-	return doWrite(ID_SysActivePower_4, &value);
+	return doWrite(ID_NeutralCurrent_0, &value);
 }
 
 int
-addWrite_SysActivePower_4(float value)
+addWrite_NeutralCurrent_0(float value)
 {
-	return addWrite(ID_SysActivePower_4, &value);
+	return addWrite(ID_NeutralCurrent_0, &value);
 }
 
 int
-getStatus_SysActivePower_4(void)
+getStatus_NeutralCurrent_0(void)
 {
-	return getStatus(ID_SysActivePower_4);
+	return getStatus(ID_NeutralCurrent_0);
 }
 
 int
-doWrite_SysActivePower_5(float value)
+doWrite_SystemCurrent_0(float value)
 {
-	return doWrite(ID_SysActivePower_5, &value);
+	return doWrite(ID_SystemCurrent_0, &value);
 }
 
 int
-addWrite_SysActivePower_5(float value)
+addWrite_SystemCurrent_0(float value)
 {
-	return addWrite(ID_SysActivePower_5, &value);
+	return addWrite(ID_SystemCurrent_0, &value);
 }
 
 int
-getStatus_SysActivePower_5(void)
+getStatus_SystemCurrent_0(void)
 {
-	return getStatus(ID_SysActivePower_5);
+	return getStatus(ID_SystemCurrent_0);
 }
 
 int
-doWrite_SysActivePower_6(float value)
+doWrite_Ph1PowerFactor_0(float value)
 {
-	return doWrite(ID_SysActivePower_6, &value);
+	return doWrite(ID_Ph1PowerFactor_0, &value);
 }
 
 int
-addWrite_SysActivePower_6(float value)
+addWrite_Ph1PowerFactor_0(float value)
 {
-	return addWrite(ID_SysActivePower_6, &value);
+	return addWrite(ID_Ph1PowerFactor_0, &value);
 }
 
 int
-getStatus_SysActivePower_6(void)
+getStatus_Ph1PowerFactor_0(void)
 {
-	return getStatus(ID_SysActivePower_6);
+	return getStatus(ID_Ph1PowerFactor_0);
 }
 
 int
-doWrite_SysActivePower_7(float value)
+doWrite_Ph2PowerFactor_0(float value)
 {
-	return doWrite(ID_SysActivePower_7, &value);
+	return doWrite(ID_Ph2PowerFactor_0, &value);
 }
 
 int
-addWrite_SysActivePower_7(float value)
+addWrite_Ph2PowerFactor_0(float value)
 {
-	return addWrite(ID_SysActivePower_7, &value);
+	return addWrite(ID_Ph2PowerFactor_0, &value);
 }
 
 int
-getStatus_SysActivePower_7(void)
+getStatus_Ph2PowerFactor_0(void)
 {
-	return getStatus(ID_SysActivePower_7);
+	return getStatus(ID_Ph2PowerFactor_0);
 }
 
 int
-doWrite_SysActivePower_8(float value)
+doWrite_Ph3PowerFactor_0(float value)
 {
-	return doWrite(ID_SysActivePower_8, &value);
+	return doWrite(ID_Ph3PowerFactor_0, &value);
 }
 
 int
-addWrite_SysActivePower_8(float value)
+addWrite_Ph3PowerFactor_0(float value)
 {
-	return addWrite(ID_SysActivePower_8, &value);
+	return addWrite(ID_Ph3PowerFactor_0, &value);
 }
 
 int
-getStatus_SysActivePower_8(void)
+getStatus_Ph3PowerFactor_0(void)
 {
-	return getStatus(ID_SysActivePower_8);
-}
-
-int
-doWrite_SysActivePower_9(float value)
-{
-	return doWrite(ID_SysActivePower_9, &value);
-}
-
-int
-addWrite_SysActivePower_9(float value)
-{
-	return addWrite(ID_SysActivePower_9, &value);
-}
-
-int
-getStatus_SysActivePower_9(void)
-{
-	return getStatus(ID_SysActivePower_9);
-}
-
-int
-doWrite_SysActivePower_10(float value)
-{
-	return doWrite(ID_SysActivePower_10, &value);
-}
-
-int
-addWrite_SysActivePower_10(float value)
-{
-	return addWrite(ID_SysActivePower_10, &value);
-}
-
-int
-getStatus_SysActivePower_10(void)
-{
-	return getStatus(ID_SysActivePower_10);
-}
-
-int
-doWrite_SysActivePower_11(float value)
-{
-	return doWrite(ID_SysActivePower_11, &value);
-}
-
-int
-addWrite_SysActivePower_11(float value)
-{
-	return addWrite(ID_SysActivePower_11, &value);
-}
-
-int
-getStatus_SysActivePower_11(void)
-{
-	return getStatus(ID_SysActivePower_11);
-}
-
-int
-doWrite_SysApparentPower_0(float value)
-{
-	return doWrite(ID_SysApparentPower_0, &value);
-}
-
-int
-addWrite_SysApparentPower_0(float value)
-{
-	return addWrite(ID_SysApparentPower_0, &value);
-}
-
-int
-getStatus_SysApparentPower_0(void)
-{
-	return getStatus(ID_SysApparentPower_0);
-}
-
-int
-doWrite_SysApparentPower_1(float value)
-{
-	return doWrite(ID_SysApparentPower_1, &value);
-}
-
-int
-addWrite_SysApparentPower_1(float value)
-{
-	return addWrite(ID_SysApparentPower_1, &value);
-}
-
-int
-getStatus_SysApparentPower_1(void)
-{
-	return getStatus(ID_SysApparentPower_1);
-}
-
-int
-doWrite_SysApparentPower_2(float value)
-{
-	return doWrite(ID_SysApparentPower_2, &value);
-}
-
-int
-addWrite_SysApparentPower_2(float value)
-{
-	return addWrite(ID_SysApparentPower_2, &value);
-}
-
-int
-getStatus_SysApparentPower_2(void)
-{
-	return getStatus(ID_SysApparentPower_2);
-}
-
-int
-doWrite_SysApparentPower_3(float value)
-{
-	return doWrite(ID_SysApparentPower_3, &value);
-}
-
-int
-addWrite_SysApparentPower_3(float value)
-{
-	return addWrite(ID_SysApparentPower_3, &value);
-}
-
-int
-getStatus_SysApparentPower_3(void)
-{
-	return getStatus(ID_SysApparentPower_3);
-}
-
-int
-doWrite_SysApparentPower_4(float value)
-{
-	return doWrite(ID_SysApparentPower_4, &value);
-}
-
-int
-addWrite_SysApparentPower_4(float value)
-{
-	return addWrite(ID_SysApparentPower_4, &value);
-}
-
-int
-getStatus_SysApparentPower_4(void)
-{
-	return getStatus(ID_SysApparentPower_4);
-}
-
-int
-doWrite_SysApparentPower_5(float value)
-{
-	return doWrite(ID_SysApparentPower_5, &value);
-}
-
-int
-addWrite_SysApparentPower_5(float value)
-{
-	return addWrite(ID_SysApparentPower_5, &value);
-}
-
-int
-getStatus_SysApparentPower_5(void)
-{
-	return getStatus(ID_SysApparentPower_5);
-}
-
-int
-doWrite_SysApparentPower_6(float value)
-{
-	return doWrite(ID_SysApparentPower_6, &value);
-}
-
-int
-addWrite_SysApparentPower_6(float value)
-{
-	return addWrite(ID_SysApparentPower_6, &value);
-}
-
-int
-getStatus_SysApparentPower_6(void)
-{
-	return getStatus(ID_SysApparentPower_6);
-}
-
-int
-doWrite_SysApparentPower_7(float value)
-{
-	return doWrite(ID_SysApparentPower_7, &value);
-}
-
-int
-addWrite_SysApparentPower_7(float value)
-{
-	return addWrite(ID_SysApparentPower_7, &value);
-}
-
-int
-getStatus_SysApparentPower_7(void)
-{
-	return getStatus(ID_SysApparentPower_7);
-}
-
-int
-doWrite_SysApparentPower_8(float value)
-{
-	return doWrite(ID_SysApparentPower_8, &value);
-}
-
-int
-addWrite_SysApparentPower_8(float value)
-{
-	return addWrite(ID_SysApparentPower_8, &value);
-}
-
-int
-getStatus_SysApparentPower_8(void)
-{
-	return getStatus(ID_SysApparentPower_8);
-}
-
-int
-doWrite_SysApparentPower_9(float value)
-{
-	return doWrite(ID_SysApparentPower_9, &value);
-}
-
-int
-addWrite_SysApparentPower_9(float value)
-{
-	return addWrite(ID_SysApparentPower_9, &value);
-}
-
-int
-getStatus_SysApparentPower_9(void)
-{
-	return getStatus(ID_SysApparentPower_9);
-}
-
-int
-doWrite_SysApparentPower_10(float value)
-{
-	return doWrite(ID_SysApparentPower_10, &value);
-}
-
-int
-addWrite_SysApparentPower_10(float value)
-{
-	return addWrite(ID_SysApparentPower_10, &value);
-}
-
-int
-getStatus_SysApparentPower_10(void)
-{
-	return getStatus(ID_SysApparentPower_10);
-}
-
-int
-doWrite_SysApparentPower_11(float value)
-{
-	return doWrite(ID_SysApparentPower_11, &value);
-}
-
-int
-addWrite_SysApparentPower_11(float value)
-{
-	return addWrite(ID_SysApparentPower_11, &value);
-}
-
-int
-getStatus_SysApparentPower_11(void)
-{
-	return getStatus(ID_SysApparentPower_11);
-}
-
-int
-doWrite_SysExpActiveEnergy_0(float value)
-{
-	return doWrite(ID_SysExpActiveEnergy_0, &value);
-}
-
-int
-addWrite_SysExpActiveEnergy_0(float value)
-{
-	return addWrite(ID_SysExpActiveEnergy_0, &value);
-}
-
-int
-getStatus_SysExpActiveEnergy_0(void)
-{
-	return getStatus(ID_SysExpActiveEnergy_0);
-}
-
-int
-doWrite_SysExpActiveEnergy_1(float value)
-{
-	return doWrite(ID_SysExpActiveEnergy_1, &value);
-}
-
-int
-addWrite_SysExpActiveEnergy_1(float value)
-{
-	return addWrite(ID_SysExpActiveEnergy_1, &value);
-}
-
-int
-getStatus_SysExpActiveEnergy_1(void)
-{
-	return getStatus(ID_SysExpActiveEnergy_1);
-}
-
-int
-doWrite_SysImpActiveEnergy_0(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_0, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_0(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_0, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_0(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_0);
-}
-
-int
-doWrite_SysImpActiveEnergy_1(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_1, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_1(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_1, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_1(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_1);
-}
-
-int
-doWrite_SysImpActiveEnergy_2(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_2, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_2(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_2, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_2(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_2);
-}
-
-int
-doWrite_SysImpActiveEnergy_3(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_3, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_3(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_3, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_3(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_3);
-}
-
-int
-doWrite_SysImpActiveEnergy_4(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_4, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_4(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_4, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_4(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_4);
-}
-
-int
-doWrite_SysImpActiveEnergy_5(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_5, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_5(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_5, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_5(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_5);
-}
-
-int
-doWrite_SysImpActiveEnergy_6(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_6, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_6(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_6, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_6(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_6);
-}
-
-int
-doWrite_SysImpActiveEnergy_7(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_7, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_7(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_7, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_7(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_7);
-}
-
-int
-doWrite_SysImpActiveEnergy_8(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_8, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_8(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_8, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_8(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_8);
-}
-
-int
-doWrite_SysImpActiveEnergy_9(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_9, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_9(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_9, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_9(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_9);
-}
-
-int
-doWrite_SysImpActiveEnergy_10(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_10, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_10(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_10, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_10(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_10);
-}
-
-int
-doWrite_SysImpActiveEnergy_11(float value)
-{
-	return doWrite(ID_SysImpActiveEnergy_11, &value);
-}
-
-int
-addWrite_SysImpActiveEnergy_11(float value)
-{
-	return addWrite(ID_SysImpActiveEnergy_11, &value);
-}
-
-int
-getStatus_SysImpActiveEnergy_11(void)
-{
-	return getStatus(ID_SysImpActiveEnergy_11);
+	return getStatus(ID_Ph3PowerFactor_0);
 }
 
 int
@@ -47404,21 +47547,201 @@ getStatus_SysPowerFactor_0(void)
 }
 
 int
-doWrite_SysPowerFactor_1(float value)
+doWrite_Ph1ActivePower_0(float value)
 {
-	return doWrite(ID_SysPowerFactor_1, &value);
+	return doWrite(ID_Ph1ActivePower_0, &value);
 }
 
 int
-addWrite_SysPowerFactor_1(float value)
+addWrite_Ph1ActivePower_0(float value)
 {
-	return addWrite(ID_SysPowerFactor_1, &value);
+	return addWrite(ID_Ph1ActivePower_0, &value);
 }
 
 int
-getStatus_SysPowerFactor_1(void)
+getStatus_Ph1ActivePower_0(void)
 {
-	return getStatus(ID_SysPowerFactor_1);
+	return getStatus(ID_Ph1ActivePower_0);
+}
+
+int
+doWrite_Ph2ActivePower_0(float value)
+{
+	return doWrite(ID_Ph2ActivePower_0, &value);
+}
+
+int
+addWrite_Ph2ActivePower_0(float value)
+{
+	return addWrite(ID_Ph2ActivePower_0, &value);
+}
+
+int
+getStatus_Ph2ActivePower_0(void)
+{
+	return getStatus(ID_Ph2ActivePower_0);
+}
+
+int
+doWrite_Ph3ActivePower_0(float value)
+{
+	return doWrite(ID_Ph3ActivePower_0, &value);
+}
+
+int
+addWrite_Ph3ActivePower_0(float value)
+{
+	return addWrite(ID_Ph3ActivePower_0, &value);
+}
+
+int
+getStatus_Ph3ActivePower_0(void)
+{
+	return getStatus(ID_Ph3ActivePower_0);
+}
+
+int
+doWrite_SysActivePower_0(float value)
+{
+	return doWrite(ID_SysActivePower_0, &value);
+}
+
+int
+addWrite_SysActivePower_0(float value)
+{
+	return addWrite(ID_SysActivePower_0, &value);
+}
+
+int
+getStatus_SysActivePower_0(void)
+{
+	return getStatus(ID_SysActivePower_0);
+}
+
+int
+doWrite_Ph1ApparentPower_0(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_0, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_0(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_0, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_0(void)
+{
+	return getStatus(ID_Ph1ApparentPower_0);
+}
+
+int
+doWrite_Ph2ApparentPower_0(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_0, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_0(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_0, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_0(void)
+{
+	return getStatus(ID_Ph2ApparentPower_0);
+}
+
+int
+doWrite_Ph3ApparentPower_0(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_0, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_0(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_0, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_0(void)
+{
+	return getStatus(ID_Ph3ApparentPower_0);
+}
+
+int
+doWrite_SysApparentPower_0(float value)
+{
+	return doWrite(ID_SysApparentPower_0, &value);
+}
+
+int
+addWrite_SysApparentPower_0(float value)
+{
+	return addWrite(ID_SysApparentPower_0, &value);
+}
+
+int
+getStatus_SysApparentPower_0(void)
+{
+	return getStatus(ID_SysApparentPower_0);
+}
+
+int
+doWrite_Ph1ReactivePower_0(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_0, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_0(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_0, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_0(void)
+{
+	return getStatus(ID_Ph1ReactivePower_0);
+}
+
+int
+doWrite_Ph2ReactivePower_0(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_0, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_0(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_0, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_0(void)
+{
+	return getStatus(ID_Ph2ReactivePower_0);
+}
+
+int
+doWrite_Ph3ReactivePower_0(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_0, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_0(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_0, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_0(void)
+{
+	return getStatus(ID_Ph3ReactivePower_0);
 }
 
 int
@@ -47458,6 +47781,384 @@ getStatus_Frequency_0(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_0(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_0, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_0(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_0, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_0(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_0);
+}
+
+int
+doWrite_Ph1ExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_Ph1ExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_Ph1ExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_Ph1ExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_Ph1ExpActiveEnergy_0(void)
+{
+	return getStatus(ID_Ph1ExpActiveEnergy_0);
+}
+
+int
+doWrite_Ph2ExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_Ph2ExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_Ph2ExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_Ph2ExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_Ph2ExpActiveEnergy_0(void)
+{
+	return getStatus(ID_Ph2ExpActiveEnergy_0);
+}
+
+int
+doWrite_Ph3ExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_Ph3ExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_Ph3ExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_Ph3ExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_Ph3ExpActiveEnergy_0(void)
+{
+	return getStatus(ID_Ph3ExpActiveEnergy_0);
+}
+
+int
+doWrite_SysExpActiveEnergy_0(float value)
+{
+	return doWrite(ID_SysExpActiveEnergy_0, &value);
+}
+
+int
+addWrite_SysExpActiveEnergy_0(float value)
+{
+	return addWrite(ID_SysExpActiveEnergy_0, &value);
+}
+
+int
+getStatus_SysExpActiveEnergy_0(void)
+{
+	return getStatus(ID_SysExpActiveEnergy_0);
+}
+
+int
+doWrite_SystemCurrent_1(float value)
+{
+	return doWrite(ID_SystemCurrent_1, &value);
+}
+
+int
+addWrite_SystemCurrent_1(float value)
+{
+	return addWrite(ID_SystemCurrent_1, &value);
+}
+
+int
+getStatus_SystemCurrent_1(void)
+{
+	return getStatus(ID_SystemCurrent_1);
+}
+
+int
+doWrite_Ph1PowerFactor_1(float value)
+{
+	return doWrite(ID_Ph1PowerFactor_1, &value);
+}
+
+int
+addWrite_Ph1PowerFactor_1(float value)
+{
+	return addWrite(ID_Ph1PowerFactor_1, &value);
+}
+
+int
+getStatus_Ph1PowerFactor_1(void)
+{
+	return getStatus(ID_Ph1PowerFactor_1);
+}
+
+int
+doWrite_Ph2PowerFactor_1(float value)
+{
+	return doWrite(ID_Ph2PowerFactor_1, &value);
+}
+
+int
+addWrite_Ph2PowerFactor_1(float value)
+{
+	return addWrite(ID_Ph2PowerFactor_1, &value);
+}
+
+int
+getStatus_Ph2PowerFactor_1(void)
+{
+	return getStatus(ID_Ph2PowerFactor_1);
+}
+
+int
+doWrite_Ph3PowerFactor_1(float value)
+{
+	return doWrite(ID_Ph3PowerFactor_1, &value);
+}
+
+int
+addWrite_Ph3PowerFactor_1(float value)
+{
+	return addWrite(ID_Ph3PowerFactor_1, &value);
+}
+
+int
+getStatus_Ph3PowerFactor_1(void)
+{
+	return getStatus(ID_Ph3PowerFactor_1);
+}
+
+int
+doWrite_SysPowerFactor_1(float value)
+{
+	return doWrite(ID_SysPowerFactor_1, &value);
+}
+
+int
+addWrite_SysPowerFactor_1(float value)
+{
+	return addWrite(ID_SysPowerFactor_1, &value);
+}
+
+int
+getStatus_SysPowerFactor_1(void)
+{
+	return getStatus(ID_SysPowerFactor_1);
+}
+
+int
+doWrite_Ph1ActivePower_1(float value)
+{
+	return doWrite(ID_Ph1ActivePower_1, &value);
+}
+
+int
+addWrite_Ph1ActivePower_1(float value)
+{
+	return addWrite(ID_Ph1ActivePower_1, &value);
+}
+
+int
+getStatus_Ph1ActivePower_1(void)
+{
+	return getStatus(ID_Ph1ActivePower_1);
+}
+
+int
+doWrite_Ph2ActivePower_1(float value)
+{
+	return doWrite(ID_Ph2ActivePower_1, &value);
+}
+
+int
+addWrite_Ph2ActivePower_1(float value)
+{
+	return addWrite(ID_Ph2ActivePower_1, &value);
+}
+
+int
+getStatus_Ph2ActivePower_1(void)
+{
+	return getStatus(ID_Ph2ActivePower_1);
+}
+
+int
+doWrite_Ph3ActivePower_1(float value)
+{
+	return doWrite(ID_Ph3ActivePower_1, &value);
+}
+
+int
+addWrite_Ph3ActivePower_1(float value)
+{
+	return addWrite(ID_Ph3ActivePower_1, &value);
+}
+
+int
+getStatus_Ph3ActivePower_1(void)
+{
+	return getStatus(ID_Ph3ActivePower_1);
+}
+
+int
+doWrite_SysActivePower_1(float value)
+{
+	return doWrite(ID_SysActivePower_1, &value);
+}
+
+int
+addWrite_SysActivePower_1(float value)
+{
+	return addWrite(ID_SysActivePower_1, &value);
+}
+
+int
+getStatus_SysActivePower_1(void)
+{
+	return getStatus(ID_SysActivePower_1);
+}
+
+int
+doWrite_Ph1ApparentPower_1(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_1, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_1(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_1, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_1(void)
+{
+	return getStatus(ID_Ph1ApparentPower_1);
+}
+
+int
+doWrite_Ph2ApparentPower_1(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_1, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_1(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_1, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_1(void)
+{
+	return getStatus(ID_Ph2ApparentPower_1);
+}
+
+int
+doWrite_Ph3ApparentPower_1(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_1, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_1(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_1, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_1(void)
+{
+	return getStatus(ID_Ph3ApparentPower_1);
+}
+
+int
+doWrite_SysApparentPower_1(float value)
+{
+	return doWrite(ID_SysApparentPower_1, &value);
+}
+
+int
+addWrite_SysApparentPower_1(float value)
+{
+	return addWrite(ID_SysApparentPower_1, &value);
+}
+
+int
+getStatus_SysApparentPower_1(void)
+{
+	return getStatus(ID_SysApparentPower_1);
+}
+
+int
+doWrite_Ph1ReactivePower_1(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_1, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_1(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_1, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_1(void)
+{
+	return getStatus(ID_Ph1ReactivePower_1);
+}
+
+int
+doWrite_Ph2ReactivePower_1(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_1, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_1(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_1, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_1(void)
+{
+	return getStatus(ID_Ph2ReactivePower_1);
+}
+
+int
+doWrite_Ph3ReactivePower_1(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_1, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_1(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_1, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_1(void)
+{
+	return getStatus(ID_Ph3ReactivePower_1);
+}
+
+int
 doWrite_SysReactivePower_1(float value)
 {
 	return doWrite(ID_SysReactivePower_1, &value);
@@ -47473,6 +48174,240 @@ int
 getStatus_SysReactivePower_1(void)
 {
 	return getStatus(ID_SysReactivePower_1);
+}
+
+int
+doWrite_SysImpActiveEnergy_1(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_1, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_1(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_1, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_1(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_1);
+}
+
+int
+doWrite_Ph1ExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_Ph1ExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_Ph1ExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_Ph1ExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_Ph1ExpActiveEnergy_1(void)
+{
+	return getStatus(ID_Ph1ExpActiveEnergy_1);
+}
+
+int
+doWrite_Ph2ExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_Ph2ExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_Ph2ExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_Ph2ExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_Ph2ExpActiveEnergy_1(void)
+{
+	return getStatus(ID_Ph2ExpActiveEnergy_1);
+}
+
+int
+doWrite_Ph3ExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_Ph3ExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_Ph3ExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_Ph3ExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_Ph3ExpActiveEnergy_1(void)
+{
+	return getStatus(ID_Ph3ExpActiveEnergy_1);
+}
+
+int
+doWrite_SysExpActiveEnergy_1(float value)
+{
+	return doWrite(ID_SysExpActiveEnergy_1, &value);
+}
+
+int
+addWrite_SysExpActiveEnergy_1(float value)
+{
+	return addWrite(ID_SysExpActiveEnergy_1, &value);
+}
+
+int
+getStatus_SysExpActiveEnergy_1(void)
+{
+	return getStatus(ID_SysExpActiveEnergy_1);
+}
+
+int
+doWrite_SysActivePower_2(float value)
+{
+	return doWrite(ID_SysActivePower_2, &value);
+}
+
+int
+addWrite_SysActivePower_2(float value)
+{
+	return addWrite(ID_SysActivePower_2, &value);
+}
+
+int
+getStatus_SysActivePower_2(void)
+{
+	return getStatus(ID_SysActivePower_2);
+}
+
+int
+doWrite_Ph1ApparentPower_2(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_2, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_2(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_2, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_2(void)
+{
+	return getStatus(ID_Ph1ApparentPower_2);
+}
+
+int
+doWrite_Ph2ApparentPower_2(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_2, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_2(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_2, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_2(void)
+{
+	return getStatus(ID_Ph2ApparentPower_2);
+}
+
+int
+doWrite_Ph3ApparentPower_2(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_2, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_2(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_2, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_2(void)
+{
+	return getStatus(ID_Ph3ApparentPower_2);
+}
+
+int
+doWrite_SysApparentPower_2(float value)
+{
+	return doWrite(ID_SysApparentPower_2, &value);
+}
+
+int
+addWrite_SysApparentPower_2(float value)
+{
+	return addWrite(ID_SysApparentPower_2, &value);
+}
+
+int
+getStatus_SysApparentPower_2(void)
+{
+	return getStatus(ID_SysApparentPower_2);
+}
+
+int
+doWrite_Ph1ReactivePower_2(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_2, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_2(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_2, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_2(void)
+{
+	return getStatus(ID_Ph1ReactivePower_2);
+}
+
+int
+doWrite_Ph2ReactivePower_2(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_2, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_2(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_2, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_2(void)
+{
+	return getStatus(ID_Ph2ReactivePower_2);
+}
+
+int
+doWrite_Ph3ReactivePower_2(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_2, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_2(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_2, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_2(void)
+{
+	return getStatus(ID_Ph3ReactivePower_2);
 }
 
 int
@@ -47494,6 +48429,168 @@ getStatus_SysReactivePower_2(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_2(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_2, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_2(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_2, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_2(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_2);
+}
+
+int
+doWrite_SysActivePower_3(float value)
+{
+	return doWrite(ID_SysActivePower_3, &value);
+}
+
+int
+addWrite_SysActivePower_3(float value)
+{
+	return addWrite(ID_SysActivePower_3, &value);
+}
+
+int
+getStatus_SysActivePower_3(void)
+{
+	return getStatus(ID_SysActivePower_3);
+}
+
+int
+doWrite_Ph1ApparentPower_3(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_3, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_3(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_3, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_3(void)
+{
+	return getStatus(ID_Ph1ApparentPower_3);
+}
+
+int
+doWrite_Ph2ApparentPower_3(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_3, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_3(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_3, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_3(void)
+{
+	return getStatus(ID_Ph2ApparentPower_3);
+}
+
+int
+doWrite_Ph3ApparentPower_3(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_3, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_3(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_3, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_3(void)
+{
+	return getStatus(ID_Ph3ApparentPower_3);
+}
+
+int
+doWrite_SysApparentPower_3(float value)
+{
+	return doWrite(ID_SysApparentPower_3, &value);
+}
+
+int
+addWrite_SysApparentPower_3(float value)
+{
+	return addWrite(ID_SysApparentPower_3, &value);
+}
+
+int
+getStatus_SysApparentPower_3(void)
+{
+	return getStatus(ID_SysApparentPower_3);
+}
+
+int
+doWrite_Ph1ReactivePower_3(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_3, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_3(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_3, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_3(void)
+{
+	return getStatus(ID_Ph1ReactivePower_3);
+}
+
+int
+doWrite_Ph2ReactivePower_3(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_3, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_3(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_3, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_3(void)
+{
+	return getStatus(ID_Ph2ReactivePower_3);
+}
+
+int
+doWrite_Ph3ReactivePower_3(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_3, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_3(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_3, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_3(void)
+{
+	return getStatus(ID_Ph3ReactivePower_3);
+}
+
+int
 doWrite_SysReactivePower_3(float value)
 {
 	return doWrite(ID_SysReactivePower_3, &value);
@@ -47509,6 +48606,168 @@ int
 getStatus_SysReactivePower_3(void)
 {
 	return getStatus(ID_SysReactivePower_3);
+}
+
+int
+doWrite_SysImpActiveEnergy_3(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_3, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_3(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_3, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_3(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_3);
+}
+
+int
+doWrite_SysActivePower_4(float value)
+{
+	return doWrite(ID_SysActivePower_4, &value);
+}
+
+int
+addWrite_SysActivePower_4(float value)
+{
+	return addWrite(ID_SysActivePower_4, &value);
+}
+
+int
+getStatus_SysActivePower_4(void)
+{
+	return getStatus(ID_SysActivePower_4);
+}
+
+int
+doWrite_Ph1ApparentPower_4(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_4, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_4(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_4, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_4(void)
+{
+	return getStatus(ID_Ph1ApparentPower_4);
+}
+
+int
+doWrite_Ph2ApparentPower_4(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_4, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_4(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_4, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_4(void)
+{
+	return getStatus(ID_Ph2ApparentPower_4);
+}
+
+int
+doWrite_Ph3ApparentPower_4(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_4, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_4(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_4, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_4(void)
+{
+	return getStatus(ID_Ph3ApparentPower_4);
+}
+
+int
+doWrite_SysApparentPower_4(float value)
+{
+	return doWrite(ID_SysApparentPower_4, &value);
+}
+
+int
+addWrite_SysApparentPower_4(float value)
+{
+	return addWrite(ID_SysApparentPower_4, &value);
+}
+
+int
+getStatus_SysApparentPower_4(void)
+{
+	return getStatus(ID_SysApparentPower_4);
+}
+
+int
+doWrite_Ph1ReactivePower_4(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_4, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_4(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_4, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_4(void)
+{
+	return getStatus(ID_Ph1ReactivePower_4);
+}
+
+int
+doWrite_Ph2ReactivePower_4(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_4, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_4(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_4, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_4(void)
+{
+	return getStatus(ID_Ph2ReactivePower_4);
+}
+
+int
+doWrite_Ph3ReactivePower_4(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_4, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_4(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_4, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_4(void)
+{
+	return getStatus(ID_Ph3ReactivePower_4);
 }
 
 int
@@ -47530,6 +48789,168 @@ getStatus_SysReactivePower_4(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_4(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_4, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_4(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_4, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_4(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_4);
+}
+
+int
+doWrite_SysActivePower_5(float value)
+{
+	return doWrite(ID_SysActivePower_5, &value);
+}
+
+int
+addWrite_SysActivePower_5(float value)
+{
+	return addWrite(ID_SysActivePower_5, &value);
+}
+
+int
+getStatus_SysActivePower_5(void)
+{
+	return getStatus(ID_SysActivePower_5);
+}
+
+int
+doWrite_Ph1ApparentPower_5(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_5, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_5(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_5, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_5(void)
+{
+	return getStatus(ID_Ph1ApparentPower_5);
+}
+
+int
+doWrite_Ph2ApparentPower_5(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_5, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_5(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_5, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_5(void)
+{
+	return getStatus(ID_Ph2ApparentPower_5);
+}
+
+int
+doWrite_Ph3ApparentPower_5(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_5, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_5(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_5, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_5(void)
+{
+	return getStatus(ID_Ph3ApparentPower_5);
+}
+
+int
+doWrite_SysApparentPower_5(float value)
+{
+	return doWrite(ID_SysApparentPower_5, &value);
+}
+
+int
+addWrite_SysApparentPower_5(float value)
+{
+	return addWrite(ID_SysApparentPower_5, &value);
+}
+
+int
+getStatus_SysApparentPower_5(void)
+{
+	return getStatus(ID_SysApparentPower_5);
+}
+
+int
+doWrite_Ph1ReactivePower_5(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_5, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_5(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_5, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_5(void)
+{
+	return getStatus(ID_Ph1ReactivePower_5);
+}
+
+int
+doWrite_Ph2ReactivePower_5(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_5, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_5(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_5, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_5(void)
+{
+	return getStatus(ID_Ph2ReactivePower_5);
+}
+
+int
+doWrite_Ph3ReactivePower_5(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_5, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_5(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_5, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_5(void)
+{
+	return getStatus(ID_Ph3ReactivePower_5);
+}
+
+int
 doWrite_SysReactivePower_5(float value)
 {
 	return doWrite(ID_SysReactivePower_5, &value);
@@ -47545,6 +48966,168 @@ int
 getStatus_SysReactivePower_5(void)
 {
 	return getStatus(ID_SysReactivePower_5);
+}
+
+int
+doWrite_SysImpActiveEnergy_5(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_5, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_5(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_5, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_5(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_5);
+}
+
+int
+doWrite_SysActivePower_6(float value)
+{
+	return doWrite(ID_SysActivePower_6, &value);
+}
+
+int
+addWrite_SysActivePower_6(float value)
+{
+	return addWrite(ID_SysActivePower_6, &value);
+}
+
+int
+getStatus_SysActivePower_6(void)
+{
+	return getStatus(ID_SysActivePower_6);
+}
+
+int
+doWrite_Ph1ApparentPower_6(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_6, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_6(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_6, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_6(void)
+{
+	return getStatus(ID_Ph1ApparentPower_6);
+}
+
+int
+doWrite_Ph2ApparentPower_6(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_6, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_6(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_6, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_6(void)
+{
+	return getStatus(ID_Ph2ApparentPower_6);
+}
+
+int
+doWrite_Ph3ApparentPower_6(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_6, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_6(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_6, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_6(void)
+{
+	return getStatus(ID_Ph3ApparentPower_6);
+}
+
+int
+doWrite_SysApparentPower_6(float value)
+{
+	return doWrite(ID_SysApparentPower_6, &value);
+}
+
+int
+addWrite_SysApparentPower_6(float value)
+{
+	return addWrite(ID_SysApparentPower_6, &value);
+}
+
+int
+getStatus_SysApparentPower_6(void)
+{
+	return getStatus(ID_SysApparentPower_6);
+}
+
+int
+doWrite_Ph1ReactivePower_6(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_6, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_6(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_6, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_6(void)
+{
+	return getStatus(ID_Ph1ReactivePower_6);
+}
+
+int
+doWrite_Ph2ReactivePower_6(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_6, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_6(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_6, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_6(void)
+{
+	return getStatus(ID_Ph2ReactivePower_6);
+}
+
+int
+doWrite_Ph3ReactivePower_6(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_6, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_6(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_6, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_6(void)
+{
+	return getStatus(ID_Ph3ReactivePower_6);
 }
 
 int
@@ -47566,6 +49149,168 @@ getStatus_SysReactivePower_6(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_6(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_6, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_6(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_6, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_6(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_6);
+}
+
+int
+doWrite_SysActivePower_7(float value)
+{
+	return doWrite(ID_SysActivePower_7, &value);
+}
+
+int
+addWrite_SysActivePower_7(float value)
+{
+	return addWrite(ID_SysActivePower_7, &value);
+}
+
+int
+getStatus_SysActivePower_7(void)
+{
+	return getStatus(ID_SysActivePower_7);
+}
+
+int
+doWrite_Ph1ApparentPower_7(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_7, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_7(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_7, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_7(void)
+{
+	return getStatus(ID_Ph1ApparentPower_7);
+}
+
+int
+doWrite_Ph2ApparentPower_7(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_7, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_7(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_7, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_7(void)
+{
+	return getStatus(ID_Ph2ApparentPower_7);
+}
+
+int
+doWrite_Ph3ApparentPower_7(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_7, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_7(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_7, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_7(void)
+{
+	return getStatus(ID_Ph3ApparentPower_7);
+}
+
+int
+doWrite_SysApparentPower_7(float value)
+{
+	return doWrite(ID_SysApparentPower_7, &value);
+}
+
+int
+addWrite_SysApparentPower_7(float value)
+{
+	return addWrite(ID_SysApparentPower_7, &value);
+}
+
+int
+getStatus_SysApparentPower_7(void)
+{
+	return getStatus(ID_SysApparentPower_7);
+}
+
+int
+doWrite_Ph1ReactivePower_7(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_7, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_7(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_7, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_7(void)
+{
+	return getStatus(ID_Ph1ReactivePower_7);
+}
+
+int
+doWrite_Ph2ReactivePower_7(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_7, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_7(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_7, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_7(void)
+{
+	return getStatus(ID_Ph2ReactivePower_7);
+}
+
+int
+doWrite_Ph3ReactivePower_7(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_7, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_7(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_7, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_7(void)
+{
+	return getStatus(ID_Ph3ReactivePower_7);
+}
+
+int
 doWrite_SysReactivePower_7(float value)
 {
 	return doWrite(ID_SysReactivePower_7, &value);
@@ -47581,6 +49326,168 @@ int
 getStatus_SysReactivePower_7(void)
 {
 	return getStatus(ID_SysReactivePower_7);
+}
+
+int
+doWrite_SysImpActiveEnergy_7(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_7, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_7(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_7, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_7(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_7);
+}
+
+int
+doWrite_SysActivePower_8(float value)
+{
+	return doWrite(ID_SysActivePower_8, &value);
+}
+
+int
+addWrite_SysActivePower_8(float value)
+{
+	return addWrite(ID_SysActivePower_8, &value);
+}
+
+int
+getStatus_SysActivePower_8(void)
+{
+	return getStatus(ID_SysActivePower_8);
+}
+
+int
+doWrite_Ph1ApparentPower_8(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_8, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_8(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_8, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_8(void)
+{
+	return getStatus(ID_Ph1ApparentPower_8);
+}
+
+int
+doWrite_Ph2ApparentPower_8(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_8, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_8(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_8, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_8(void)
+{
+	return getStatus(ID_Ph2ApparentPower_8);
+}
+
+int
+doWrite_Ph3ApparentPower_8(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_8, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_8(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_8, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_8(void)
+{
+	return getStatus(ID_Ph3ApparentPower_8);
+}
+
+int
+doWrite_SysApparentPower_8(float value)
+{
+	return doWrite(ID_SysApparentPower_8, &value);
+}
+
+int
+addWrite_SysApparentPower_8(float value)
+{
+	return addWrite(ID_SysApparentPower_8, &value);
+}
+
+int
+getStatus_SysApparentPower_8(void)
+{
+	return getStatus(ID_SysApparentPower_8);
+}
+
+int
+doWrite_Ph1ReactivePower_8(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_8, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_8(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_8, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_8(void)
+{
+	return getStatus(ID_Ph1ReactivePower_8);
+}
+
+int
+doWrite_Ph2ReactivePower_8(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_8, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_8(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_8, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_8(void)
+{
+	return getStatus(ID_Ph2ReactivePower_8);
+}
+
+int
+doWrite_Ph3ReactivePower_8(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_8, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_8(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_8, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_8(void)
+{
+	return getStatus(ID_Ph3ReactivePower_8);
 }
 
 int
@@ -47602,6 +49509,168 @@ getStatus_SysReactivePower_8(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_8(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_8, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_8(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_8, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_8(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_8);
+}
+
+int
+doWrite_SysActivePower_9(float value)
+{
+	return doWrite(ID_SysActivePower_9, &value);
+}
+
+int
+addWrite_SysActivePower_9(float value)
+{
+	return addWrite(ID_SysActivePower_9, &value);
+}
+
+int
+getStatus_SysActivePower_9(void)
+{
+	return getStatus(ID_SysActivePower_9);
+}
+
+int
+doWrite_Ph1ApparentPower_9(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_9, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_9(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_9, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_9(void)
+{
+	return getStatus(ID_Ph1ApparentPower_9);
+}
+
+int
+doWrite_Ph2ApparentPower_9(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_9, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_9(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_9, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_9(void)
+{
+	return getStatus(ID_Ph2ApparentPower_9);
+}
+
+int
+doWrite_Ph3ApparentPower_9(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_9, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_9(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_9, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_9(void)
+{
+	return getStatus(ID_Ph3ApparentPower_9);
+}
+
+int
+doWrite_SysApparentPower_9(float value)
+{
+	return doWrite(ID_SysApparentPower_9, &value);
+}
+
+int
+addWrite_SysApparentPower_9(float value)
+{
+	return addWrite(ID_SysApparentPower_9, &value);
+}
+
+int
+getStatus_SysApparentPower_9(void)
+{
+	return getStatus(ID_SysApparentPower_9);
+}
+
+int
+doWrite_Ph1ReactivePower_9(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_9, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_9(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_9, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_9(void)
+{
+	return getStatus(ID_Ph1ReactivePower_9);
+}
+
+int
+doWrite_Ph2ReactivePower_9(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_9, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_9(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_9, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_9(void)
+{
+	return getStatus(ID_Ph2ReactivePower_9);
+}
+
+int
+doWrite_Ph3ReactivePower_9(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_9, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_9(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_9, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_9(void)
+{
+	return getStatus(ID_Ph3ReactivePower_9);
+}
+
+int
 doWrite_SysReactivePower_9(float value)
 {
 	return doWrite(ID_SysReactivePower_9, &value);
@@ -47617,6 +49686,168 @@ int
 getStatus_SysReactivePower_9(void)
 {
 	return getStatus(ID_SysReactivePower_9);
+}
+
+int
+doWrite_SysImpActiveEnergy_9(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_9, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_9(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_9, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_9(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_9);
+}
+
+int
+doWrite_SysActivePower_10(float value)
+{
+	return doWrite(ID_SysActivePower_10, &value);
+}
+
+int
+addWrite_SysActivePower_10(float value)
+{
+	return addWrite(ID_SysActivePower_10, &value);
+}
+
+int
+getStatus_SysActivePower_10(void)
+{
+	return getStatus(ID_SysActivePower_10);
+}
+
+int
+doWrite_Ph1ApparentPower_10(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_10, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_10(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_10, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_10(void)
+{
+	return getStatus(ID_Ph1ApparentPower_10);
+}
+
+int
+doWrite_Ph2ApparentPower_10(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_10, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_10(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_10, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_10(void)
+{
+	return getStatus(ID_Ph2ApparentPower_10);
+}
+
+int
+doWrite_Ph3ApparentPower_10(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_10, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_10(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_10, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_10(void)
+{
+	return getStatus(ID_Ph3ApparentPower_10);
+}
+
+int
+doWrite_SysApparentPower_10(float value)
+{
+	return doWrite(ID_SysApparentPower_10, &value);
+}
+
+int
+addWrite_SysApparentPower_10(float value)
+{
+	return addWrite(ID_SysApparentPower_10, &value);
+}
+
+int
+getStatus_SysApparentPower_10(void)
+{
+	return getStatus(ID_SysApparentPower_10);
+}
+
+int
+doWrite_Ph1ReactivePower_10(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_10, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_10(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_10, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_10(void)
+{
+	return getStatus(ID_Ph1ReactivePower_10);
+}
+
+int
+doWrite_Ph2ReactivePower_10(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_10, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_10(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_10, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_10(void)
+{
+	return getStatus(ID_Ph2ReactivePower_10);
+}
+
+int
+doWrite_Ph3ReactivePower_10(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_10, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_10(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_10, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_10(void)
+{
+	return getStatus(ID_Ph3ReactivePower_10);
 }
 
 int
@@ -47638,6 +49869,168 @@ getStatus_SysReactivePower_10(void)
 }
 
 int
+doWrite_SysImpActiveEnergy_10(float value)
+{
+	return doWrite(ID_SysImpActiveEnergy_10, &value);
+}
+
+int
+addWrite_SysImpActiveEnergy_10(float value)
+{
+	return addWrite(ID_SysImpActiveEnergy_10, &value);
+}
+
+int
+getStatus_SysImpActiveEnergy_10(void)
+{
+	return getStatus(ID_SysImpActiveEnergy_10);
+}
+
+int
+doWrite_SysActivePower_11(float value)
+{
+	return doWrite(ID_SysActivePower_11, &value);
+}
+
+int
+addWrite_SysActivePower_11(float value)
+{
+	return addWrite(ID_SysActivePower_11, &value);
+}
+
+int
+getStatus_SysActivePower_11(void)
+{
+	return getStatus(ID_SysActivePower_11);
+}
+
+int
+doWrite_Ph1ApparentPower_11(float value)
+{
+	return doWrite(ID_Ph1ApparentPower_11, &value);
+}
+
+int
+addWrite_Ph1ApparentPower_11(float value)
+{
+	return addWrite(ID_Ph1ApparentPower_11, &value);
+}
+
+int
+getStatus_Ph1ApparentPower_11(void)
+{
+	return getStatus(ID_Ph1ApparentPower_11);
+}
+
+int
+doWrite_Ph2ApparentPower_11(float value)
+{
+	return doWrite(ID_Ph2ApparentPower_11, &value);
+}
+
+int
+addWrite_Ph2ApparentPower_11(float value)
+{
+	return addWrite(ID_Ph2ApparentPower_11, &value);
+}
+
+int
+getStatus_Ph2ApparentPower_11(void)
+{
+	return getStatus(ID_Ph2ApparentPower_11);
+}
+
+int
+doWrite_Ph3ApparentPower_11(float value)
+{
+	return doWrite(ID_Ph3ApparentPower_11, &value);
+}
+
+int
+addWrite_Ph3ApparentPower_11(float value)
+{
+	return addWrite(ID_Ph3ApparentPower_11, &value);
+}
+
+int
+getStatus_Ph3ApparentPower_11(void)
+{
+	return getStatus(ID_Ph3ApparentPower_11);
+}
+
+int
+doWrite_SysApparentPower_11(float value)
+{
+	return doWrite(ID_SysApparentPower_11, &value);
+}
+
+int
+addWrite_SysApparentPower_11(float value)
+{
+	return addWrite(ID_SysApparentPower_11, &value);
+}
+
+int
+getStatus_SysApparentPower_11(void)
+{
+	return getStatus(ID_SysApparentPower_11);
+}
+
+int
+doWrite_Ph1ReactivePower_11(float value)
+{
+	return doWrite(ID_Ph1ReactivePower_11, &value);
+}
+
+int
+addWrite_Ph1ReactivePower_11(float value)
+{
+	return addWrite(ID_Ph1ReactivePower_11, &value);
+}
+
+int
+getStatus_Ph1ReactivePower_11(void)
+{
+	return getStatus(ID_Ph1ReactivePower_11);
+}
+
+int
+doWrite_Ph2ReactivePower_11(float value)
+{
+	return doWrite(ID_Ph2ReactivePower_11, &value);
+}
+
+int
+addWrite_Ph2ReactivePower_11(float value)
+{
+	return addWrite(ID_Ph2ReactivePower_11, &value);
+}
+
+int
+getStatus_Ph2ReactivePower_11(void)
+{
+	return getStatus(ID_Ph2ReactivePower_11);
+}
+
+int
+doWrite_Ph3ReactivePower_11(float value)
+{
+	return doWrite(ID_Ph3ReactivePower_11, &value);
+}
+
+int
+addWrite_Ph3ReactivePower_11(float value)
+{
+	return addWrite(ID_Ph3ReactivePower_11, &value);
+}
+
+int
+getStatus_Ph3ReactivePower_11(void)
+{
+	return getStatus(ID_Ph3ReactivePower_11);
+}
+
+int
 doWrite_SysReactivePower_11(float value)
 {
 	return doWrite(ID_SysReactivePower_11, &value);
@@ -47656,39 +50049,21 @@ getStatus_SysReactivePower_11(void)
 }
 
 int
-doWrite_SystemCurrent_0(float value)
+doWrite_SysImpActiveEnergy_11(float value)
 {
-	return doWrite(ID_SystemCurrent_0, &value);
+	return doWrite(ID_SysImpActiveEnergy_11, &value);
 }
 
 int
-addWrite_SystemCurrent_0(float value)
+addWrite_SysImpActiveEnergy_11(float value)
 {
-	return addWrite(ID_SystemCurrent_0, &value);
+	return addWrite(ID_SysImpActiveEnergy_11, &value);
 }
 
 int
-getStatus_SystemCurrent_0(void)
+getStatus_SysImpActiveEnergy_11(void)
 {
-	return getStatus(ID_SystemCurrent_0);
-}
-
-int
-doWrite_SystemVoltage_0(float value)
-{
-	return doWrite(ID_SystemVoltage_0, &value);
-}
-
-int
-addWrite_SystemVoltage_0(float value)
-{
-	return addWrite(ID_SystemVoltage_0, &value);
-}
-
-int
-getStatus_SystemVoltage_0(void)
-{
-	return getStatus(ID_SystemVoltage_0);
+	return getStatus(ID_SysImpActiveEnergy_11);
 }
 
 int
@@ -55219,61 +57594,156 @@ update_all(void)
 	retval += readFromDb(ID_PLC_AnIn3Filter, &PLC_AnIn3Filter);
 	retval += readFromDb(ID_PLC_Reserved_6, &PLC_Reserved_6);
 	retval += readFromDb(ID_PLC_Reserved_7, &PLC_Reserved_7);
-	retval += readFromDb(ID_SysActivePower_0, &SysActivePower_0);
-	retval += readFromDb(ID_SysActivePower_1, &SysActivePower_1);
-	retval += readFromDb(ID_SysActivePower_2, &SysActivePower_2);
-	retval += readFromDb(ID_SysActivePower_3, &SysActivePower_3);
-	retval += readFromDb(ID_SysActivePower_4, &SysActivePower_4);
-	retval += readFromDb(ID_SysActivePower_5, &SysActivePower_5);
-	retval += readFromDb(ID_SysActivePower_6, &SysActivePower_6);
-	retval += readFromDb(ID_SysActivePower_7, &SysActivePower_7);
-	retval += readFromDb(ID_SysActivePower_8, &SysActivePower_8);
-	retval += readFromDb(ID_SysActivePower_9, &SysActivePower_9);
-	retval += readFromDb(ID_SysActivePower_10, &SysActivePower_10);
-	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
-	retval += readFromDb(ID_SysApparentPower_0, &SysApparentPower_0);
-	retval += readFromDb(ID_SysApparentPower_1, &SysApparentPower_1);
-	retval += readFromDb(ID_SysApparentPower_2, &SysApparentPower_2);
-	retval += readFromDb(ID_SysApparentPower_3, &SysApparentPower_3);
-	retval += readFromDb(ID_SysApparentPower_4, &SysApparentPower_4);
-	retval += readFromDb(ID_SysApparentPower_5, &SysApparentPower_5);
-	retval += readFromDb(ID_SysApparentPower_6, &SysApparentPower_6);
-	retval += readFromDb(ID_SysApparentPower_7, &SysApparentPower_7);
-	retval += readFromDb(ID_SysApparentPower_8, &SysApparentPower_8);
-	retval += readFromDb(ID_SysApparentPower_9, &SysApparentPower_9);
-	retval += readFromDb(ID_SysApparentPower_10, &SysApparentPower_10);
-	retval += readFromDb(ID_SysApparentPower_11, &SysApparentPower_11);
-	retval += readFromDb(ID_SysExpActiveEnergy_0, &SysExpActiveEnergy_0);
-	retval += readFromDb(ID_SysExpActiveEnergy_1, &SysExpActiveEnergy_1);
-	retval += readFromDb(ID_SysImpActiveEnergy_0, &SysImpActiveEnergy_0);
-	retval += readFromDb(ID_SysImpActiveEnergy_1, &SysImpActiveEnergy_1);
-	retval += readFromDb(ID_SysImpActiveEnergy_2, &SysImpActiveEnergy_2);
-	retval += readFromDb(ID_SysImpActiveEnergy_3, &SysImpActiveEnergy_3);
-	retval += readFromDb(ID_SysImpActiveEnergy_4, &SysImpActiveEnergy_4);
-	retval += readFromDb(ID_SysImpActiveEnergy_5, &SysImpActiveEnergy_5);
-	retval += readFromDb(ID_SysImpActiveEnergy_6, &SysImpActiveEnergy_6);
-	retval += readFromDb(ID_SysImpActiveEnergy_7, &SysImpActiveEnergy_7);
-	retval += readFromDb(ID_SysImpActiveEnergy_8, &SysImpActiveEnergy_8);
-	retval += readFromDb(ID_SysImpActiveEnergy_9, &SysImpActiveEnergy_9);
-	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
-	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
+	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
+	retval += readFromDb(ID_Ph1Current_0, &Ph1Current_0);
+	retval += readFromDb(ID_Ph2Current_0, &Ph2Current_0);
+	retval += readFromDb(ID_Ph3Current_0, &Ph3Current_0);
+	retval += readFromDb(ID_NeutralCurrent_0, &NeutralCurrent_0);
+	retval += readFromDb(ID_SystemCurrent_0, &SystemCurrent_0);
+	retval += readFromDb(ID_Ph1PowerFactor_0, &Ph1PowerFactor_0);
+	retval += readFromDb(ID_Ph2PowerFactor_0, &Ph2PowerFactor_0);
+	retval += readFromDb(ID_Ph3PowerFactor_0, &Ph3PowerFactor_0);
 	retval += readFromDb(ID_SysPowerFactor_0, &SysPowerFactor_0);
-	retval += readFromDb(ID_SysPowerFactor_1, &SysPowerFactor_1);
+	retval += readFromDb(ID_Ph1ActivePower_0, &Ph1ActivePower_0);
+	retval += readFromDb(ID_Ph2ActivePower_0, &Ph2ActivePower_0);
+	retval += readFromDb(ID_Ph3ActivePower_0, &Ph3ActivePower_0);
+	retval += readFromDb(ID_SysActivePower_0, &SysActivePower_0);
+	retval += readFromDb(ID_Ph1ApparentPower_0, &Ph1ApparentPower_0);
+	retval += readFromDb(ID_Ph2ApparentPower_0, &Ph2ApparentPower_0);
+	retval += readFromDb(ID_Ph3ApparentPower_0, &Ph3ApparentPower_0);
+	retval += readFromDb(ID_SysApparentPower_0, &SysApparentPower_0);
+	retval += readFromDb(ID_Ph1ReactivePower_0, &Ph1ReactivePower_0);
+	retval += readFromDb(ID_Ph2ReactivePower_0, &Ph2ReactivePower_0);
+	retval += readFromDb(ID_Ph3ReactivePower_0, &Ph3ReactivePower_0);
 	retval += readFromDb(ID_SysReactivePower_0, &SysReactivePower_0);
 	retval += readFromDb(ID_Frequency_0, &Frequency_0);
+	retval += readFromDb(ID_SysImpActiveEnergy_0, &SysImpActiveEnergy_0);
+	retval += readFromDb(ID_Ph1ExpActiveEnergy_0, &Ph1ExpActiveEnergy_0);
+	retval += readFromDb(ID_Ph2ExpActiveEnergy_0, &Ph2ExpActiveEnergy_0);
+	retval += readFromDb(ID_Ph3ExpActiveEnergy_0, &Ph3ExpActiveEnergy_0);
+	retval += readFromDb(ID_SysExpActiveEnergy_0, &SysExpActiveEnergy_0);
+	retval += readFromDb(ID_SystemCurrent_1, &SystemCurrent_1);
+	retval += readFromDb(ID_Ph1PowerFactor_1, &Ph1PowerFactor_1);
+	retval += readFromDb(ID_Ph2PowerFactor_1, &Ph2PowerFactor_1);
+	retval += readFromDb(ID_Ph3PowerFactor_1, &Ph3PowerFactor_1);
+	retval += readFromDb(ID_SysPowerFactor_1, &SysPowerFactor_1);
+	retval += readFromDb(ID_Ph1ActivePower_1, &Ph1ActivePower_1);
+	retval += readFromDb(ID_Ph2ActivePower_1, &Ph2ActivePower_1);
+	retval += readFromDb(ID_Ph3ActivePower_1, &Ph3ActivePower_1);
+	retval += readFromDb(ID_SysActivePower_1, &SysActivePower_1);
+	retval += readFromDb(ID_Ph1ApparentPower_1, &Ph1ApparentPower_1);
+	retval += readFromDb(ID_Ph2ApparentPower_1, &Ph2ApparentPower_1);
+	retval += readFromDb(ID_Ph3ApparentPower_1, &Ph3ApparentPower_1);
+	retval += readFromDb(ID_SysApparentPower_1, &SysApparentPower_1);
+	retval += readFromDb(ID_Ph1ReactivePower_1, &Ph1ReactivePower_1);
+	retval += readFromDb(ID_Ph2ReactivePower_1, &Ph2ReactivePower_1);
+	retval += readFromDb(ID_Ph3ReactivePower_1, &Ph3ReactivePower_1);
 	retval += readFromDb(ID_SysReactivePower_1, &SysReactivePower_1);
+	retval += readFromDb(ID_SysImpActiveEnergy_1, &SysImpActiveEnergy_1);
+	retval += readFromDb(ID_Ph1ExpActiveEnergy_1, &Ph1ExpActiveEnergy_1);
+	retval += readFromDb(ID_Ph2ExpActiveEnergy_1, &Ph2ExpActiveEnergy_1);
+	retval += readFromDb(ID_Ph3ExpActiveEnergy_1, &Ph3ExpActiveEnergy_1);
+	retval += readFromDb(ID_SysExpActiveEnergy_1, &SysExpActiveEnergy_1);
+	retval += readFromDb(ID_SysActivePower_2, &SysActivePower_2);
+	retval += readFromDb(ID_Ph1ApparentPower_2, &Ph1ApparentPower_2);
+	retval += readFromDb(ID_Ph2ApparentPower_2, &Ph2ApparentPower_2);
+	retval += readFromDb(ID_Ph3ApparentPower_2, &Ph3ApparentPower_2);
+	retval += readFromDb(ID_SysApparentPower_2, &SysApparentPower_2);
+	retval += readFromDb(ID_Ph1ReactivePower_2, &Ph1ReactivePower_2);
+	retval += readFromDb(ID_Ph2ReactivePower_2, &Ph2ReactivePower_2);
+	retval += readFromDb(ID_Ph3ReactivePower_2, &Ph3ReactivePower_2);
 	retval += readFromDb(ID_SysReactivePower_2, &SysReactivePower_2);
+	retval += readFromDb(ID_SysImpActiveEnergy_2, &SysImpActiveEnergy_2);
+	retval += readFromDb(ID_SysActivePower_3, &SysActivePower_3);
+	retval += readFromDb(ID_Ph1ApparentPower_3, &Ph1ApparentPower_3);
+	retval += readFromDb(ID_Ph2ApparentPower_3, &Ph2ApparentPower_3);
+	retval += readFromDb(ID_Ph3ApparentPower_3, &Ph3ApparentPower_3);
+	retval += readFromDb(ID_SysApparentPower_3, &SysApparentPower_3);
+	retval += readFromDb(ID_Ph1ReactivePower_3, &Ph1ReactivePower_3);
+	retval += readFromDb(ID_Ph2ReactivePower_3, &Ph2ReactivePower_3);
+	retval += readFromDb(ID_Ph3ReactivePower_3, &Ph3ReactivePower_3);
 	retval += readFromDb(ID_SysReactivePower_3, &SysReactivePower_3);
+	retval += readFromDb(ID_SysImpActiveEnergy_3, &SysImpActiveEnergy_3);
+	retval += readFromDb(ID_SysActivePower_4, &SysActivePower_4);
+	retval += readFromDb(ID_Ph1ApparentPower_4, &Ph1ApparentPower_4);
+	retval += readFromDb(ID_Ph2ApparentPower_4, &Ph2ApparentPower_4);
+	retval += readFromDb(ID_Ph3ApparentPower_4, &Ph3ApparentPower_4);
+	retval += readFromDb(ID_SysApparentPower_4, &SysApparentPower_4);
+	retval += readFromDb(ID_Ph1ReactivePower_4, &Ph1ReactivePower_4);
+	retval += readFromDb(ID_Ph2ReactivePower_4, &Ph2ReactivePower_4);
+	retval += readFromDb(ID_Ph3ReactivePower_4, &Ph3ReactivePower_4);
 	retval += readFromDb(ID_SysReactivePower_4, &SysReactivePower_4);
+	retval += readFromDb(ID_SysImpActiveEnergy_4, &SysImpActiveEnergy_4);
+	retval += readFromDb(ID_SysActivePower_5, &SysActivePower_5);
+	retval += readFromDb(ID_Ph1ApparentPower_5, &Ph1ApparentPower_5);
+	retval += readFromDb(ID_Ph2ApparentPower_5, &Ph2ApparentPower_5);
+	retval += readFromDb(ID_Ph3ApparentPower_5, &Ph3ApparentPower_5);
+	retval += readFromDb(ID_SysApparentPower_5, &SysApparentPower_5);
+	retval += readFromDb(ID_Ph1ReactivePower_5, &Ph1ReactivePower_5);
+	retval += readFromDb(ID_Ph2ReactivePower_5, &Ph2ReactivePower_5);
+	retval += readFromDb(ID_Ph3ReactivePower_5, &Ph3ReactivePower_5);
 	retval += readFromDb(ID_SysReactivePower_5, &SysReactivePower_5);
+	retval += readFromDb(ID_SysImpActiveEnergy_5, &SysImpActiveEnergy_5);
+	retval += readFromDb(ID_SysActivePower_6, &SysActivePower_6);
+	retval += readFromDb(ID_Ph1ApparentPower_6, &Ph1ApparentPower_6);
+	retval += readFromDb(ID_Ph2ApparentPower_6, &Ph2ApparentPower_6);
+	retval += readFromDb(ID_Ph3ApparentPower_6, &Ph3ApparentPower_6);
+	retval += readFromDb(ID_SysApparentPower_6, &SysApparentPower_6);
+	retval += readFromDb(ID_Ph1ReactivePower_6, &Ph1ReactivePower_6);
+	retval += readFromDb(ID_Ph2ReactivePower_6, &Ph2ReactivePower_6);
+	retval += readFromDb(ID_Ph3ReactivePower_6, &Ph3ReactivePower_6);
 	retval += readFromDb(ID_SysReactivePower_6, &SysReactivePower_6);
+	retval += readFromDb(ID_SysImpActiveEnergy_6, &SysImpActiveEnergy_6);
+	retval += readFromDb(ID_SysActivePower_7, &SysActivePower_7);
+	retval += readFromDb(ID_Ph1ApparentPower_7, &Ph1ApparentPower_7);
+	retval += readFromDb(ID_Ph2ApparentPower_7, &Ph2ApparentPower_7);
+	retval += readFromDb(ID_Ph3ApparentPower_7, &Ph3ApparentPower_7);
+	retval += readFromDb(ID_SysApparentPower_7, &SysApparentPower_7);
+	retval += readFromDb(ID_Ph1ReactivePower_7, &Ph1ReactivePower_7);
+	retval += readFromDb(ID_Ph2ReactivePower_7, &Ph2ReactivePower_7);
+	retval += readFromDb(ID_Ph3ReactivePower_7, &Ph3ReactivePower_7);
 	retval += readFromDb(ID_SysReactivePower_7, &SysReactivePower_7);
+	retval += readFromDb(ID_SysImpActiveEnergy_7, &SysImpActiveEnergy_7);
+	retval += readFromDb(ID_SysActivePower_8, &SysActivePower_8);
+	retval += readFromDb(ID_Ph1ApparentPower_8, &Ph1ApparentPower_8);
+	retval += readFromDb(ID_Ph2ApparentPower_8, &Ph2ApparentPower_8);
+	retval += readFromDb(ID_Ph3ApparentPower_8, &Ph3ApparentPower_8);
+	retval += readFromDb(ID_SysApparentPower_8, &SysApparentPower_8);
+	retval += readFromDb(ID_Ph1ReactivePower_8, &Ph1ReactivePower_8);
+	retval += readFromDb(ID_Ph2ReactivePower_8, &Ph2ReactivePower_8);
+	retval += readFromDb(ID_Ph3ReactivePower_8, &Ph3ReactivePower_8);
 	retval += readFromDb(ID_SysReactivePower_8, &SysReactivePower_8);
+	retval += readFromDb(ID_SysImpActiveEnergy_8, &SysImpActiveEnergy_8);
+	retval += readFromDb(ID_SysActivePower_9, &SysActivePower_9);
+	retval += readFromDb(ID_Ph1ApparentPower_9, &Ph1ApparentPower_9);
+	retval += readFromDb(ID_Ph2ApparentPower_9, &Ph2ApparentPower_9);
+	retval += readFromDb(ID_Ph3ApparentPower_9, &Ph3ApparentPower_9);
+	retval += readFromDb(ID_SysApparentPower_9, &SysApparentPower_9);
+	retval += readFromDb(ID_Ph1ReactivePower_9, &Ph1ReactivePower_9);
+	retval += readFromDb(ID_Ph2ReactivePower_9, &Ph2ReactivePower_9);
+	retval += readFromDb(ID_Ph3ReactivePower_9, &Ph3ReactivePower_9);
 	retval += readFromDb(ID_SysReactivePower_9, &SysReactivePower_9);
+	retval += readFromDb(ID_SysImpActiveEnergy_9, &SysImpActiveEnergy_9);
+	retval += readFromDb(ID_SysActivePower_10, &SysActivePower_10);
+	retval += readFromDb(ID_Ph1ApparentPower_10, &Ph1ApparentPower_10);
+	retval += readFromDb(ID_Ph2ApparentPower_10, &Ph2ApparentPower_10);
+	retval += readFromDb(ID_Ph3ApparentPower_10, &Ph3ApparentPower_10);
+	retval += readFromDb(ID_SysApparentPower_10, &SysApparentPower_10);
+	retval += readFromDb(ID_Ph1ReactivePower_10, &Ph1ReactivePower_10);
+	retval += readFromDb(ID_Ph2ReactivePower_10, &Ph2ReactivePower_10);
+	retval += readFromDb(ID_Ph3ReactivePower_10, &Ph3ReactivePower_10);
 	retval += readFromDb(ID_SysReactivePower_10, &SysReactivePower_10);
+	retval += readFromDb(ID_SysImpActiveEnergy_10, &SysImpActiveEnergy_10);
+	retval += readFromDb(ID_SysActivePower_11, &SysActivePower_11);
+	retval += readFromDb(ID_Ph1ApparentPower_11, &Ph1ApparentPower_11);
+	retval += readFromDb(ID_Ph2ApparentPower_11, &Ph2ApparentPower_11);
+	retval += readFromDb(ID_Ph3ApparentPower_11, &Ph3ApparentPower_11);
+	retval += readFromDb(ID_SysApparentPower_11, &SysApparentPower_11);
+	retval += readFromDb(ID_Ph1ReactivePower_11, &Ph1ReactivePower_11);
+	retval += readFromDb(ID_Ph2ReactivePower_11, &Ph2ReactivePower_11);
+	retval += readFromDb(ID_Ph3ReactivePower_11, &Ph3ReactivePower_11);
 	retval += readFromDb(ID_SysReactivePower_11, &SysReactivePower_11);
-	retval += readFromDb(ID_SystemCurrent_0, &SystemCurrent_0);
-	retval += readFromDb(ID_SystemVoltage_0, &SystemVoltage_0);
+	retval += readFromDb(ID_SysImpActiveEnergy_11, &SysImpActiveEnergy_11);
 	retval += readFromDb(ID_QcPm_Voltage_0, &QcPm_Voltage_0);
 	retval += readFromDb(ID_QcPm_Current_0, &QcPm_Current_0);
 	retval += readFromDb(ID_QcPm_Frequency_0, &QcPm_Frequency_0);
