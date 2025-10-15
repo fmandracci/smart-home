@@ -127,6 +127,22 @@ page#system_ini  QCheckBox, page#system_ini  QLabel	{
 	background-color: DimGray;
 	color: rgb(255, 237, 0);
 }
+page#net_conf    QCheckBox::indicator,
+page#system_ini  QCheckBox::indicator  {
+        width: 40px;
+        height:40px;
+        subcontrol-origin:border;
+        Subcontrol-position:left Center;
+}
+page#net_conf    QCheckBox::indicator:checked,
+page#system_ini  QCheckBox::indicator:checked  {
+    image: url(:/libicons/img/Switch_On_yellow.png);
+}
+page#net_conf    QCheckBox::indicator:unchecked,
+page#system_ini  QCheckBox::indicator:unchecked  {
+    image: url(:/libicons/img/Switch_Off_yellow.png);
+}
+
 /* QTabWidget and Tab Bar (info, net_conf, system_ini) */
 page#info QTabWidget::pane, 
 page#net_conf QTabWidget::pane, 
@@ -184,32 +200,43 @@ page#alarms QLineEdit  {
 	color: Yellow;
 }
 /* QListWidget in alarms, alarms_history, recipe_select, item_selector */
-/* QTableWidget in recipe, store */
+/* QTableWidget in recipe, store  net_conf */
 page#alarms QListWidget, 
 page#alarms_history QListWidget, 
 page#recipe_select QListWidget, 
 QDialog#item_selector QListWidget,
 page#recipe QTableWidget, 
-page#store QTableWidget	{ 
-	background-color: DarkGrey;
+page#store QTableWidget,
+page#net_conf  QTableWidget  {
+        background-color: SteelBlue;
 	alternate-background-color: LightGrey;
+        color: yellow;
 	show-decoration-selected: 1;
 	gridline-color:  LightSkyBlue;
-	font: 11pt "DejaVu Sans";
+        font: 13pt "DejaVu Sans";
 }
 QDialog#item_selector QListWidget,
 page#recipe_select QListWidget  {
-	font: 11pt "DejaVu Sans" bold;
+        font: 12pt "DejaVu Sans" bold;
 }
 page#alarms QListWidget::item:selected, 
 page#alarms_history QListWidget::item:selected, 
 page#recipe_select QListWidget::item:selected, 
 QDialog#item_selector QListWidget::item:selected,
 page#recipe QTableWidget::item:selected, 
-page#store QTableWidget::item:selected	{
+page#store QTableWidget::item:selected,
+page#net_conf  QTableWidget::item:selected  {
 	border: 2px solid CadetBlue;
 	background: red;
 	color: yellow;
+}
+page#recipe QHeaderView::section,
+page#store QHeaderView::section,
+page#net_conf  QHeaderView::section {
+        background-color: DarkCyan ;
+        background: DimGray;
+        color: yellow;
+        font: 9pt "DejaVu Sans";
 }
 /* trend QLabel, Qwt */
 page#trend QLabel, page#trend QwtPlotCanvas  {
@@ -229,9 +256,9 @@ QMessageBox QLabel {
    color: Navy;
 }
 QMessageBox QPushButton {
-	icon-size: 48px  48px;
-	min-width: 82px;
-	min-height: 48px;
+        icon-size: 36px  36px;
+        min-width: 108px;
+        min-height: 64px;
 	border: 2px solid CornflowerBlue;
 	border-radius: 8px;
 	color:  DarkGreen;
@@ -447,6 +474,15 @@ page#net_conf     QComboBox,
 page#time_set     QComboBox,
 page#system_ini   QComboBox  {
     padding: 1px 0px 1px 3px;
+    font: 14pt "DejaVu Sans";
+}
+page#alarms       QComboBox QAbstractItemView,
+page#alarms_history QComboBox QAbstractItemView,
+page#net_conf     QComboBox QAbstractItemView,
+page#time_set     QComboBox QAbstractItemView,
+page#system_ini   QComboBox QAbstractItemView {
+    background-color: LightGray;
+    color: MediumBlue;
 }
 page#alarms       QComboBox::drop-down,
 page#alarms_history QComboBox::drop-down,
@@ -468,3 +504,4 @@ page#system_ini   QComboBox::down-arrow  {
     width: 55px;
     height: 55px;
 }
+

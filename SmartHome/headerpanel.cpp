@@ -78,7 +78,7 @@ void HeaderPanel::updateWidgets(const QString datetime)
 {
     ui->header_leds->updateWidgets();
 
-    if (datetime != NULL)
+    if (datetime != nullptr)
         ui->pushButton_time->setText(datetime);
     else
         ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);

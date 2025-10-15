@@ -42,7 +42,7 @@ page401::page401(QWidget *parent) :
 void page401::reload()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
-    home_ini.setIniCodec("UTF-8");
+    // FIXME: home_ini.setIniCodec("UTF-8");
 
     switch (currentWattmeter) {
     case  1: changeWidgets( 1, LABEL__M, "trend_W-M.csv", home_ini.value("EP/meter__M").toString(), COLOR_01, "PLC_EP_wattmeter_M_W", "PLC_EP_wattmeter_M_var", "PLC_EP_wattmeter_M_VA", "PLC_EP_wattmeter_M_kWh"); break;

@@ -59,7 +59,7 @@ void page400::updateData()
 void page400::changeWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
-    home_ini.setIniCodec("UTF-8");
+    // FIXME: home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->changeWidgets("trend_Wall.csv", EP_PIXMAP, NULL, "page400: EP W");
 
@@ -146,7 +146,7 @@ void page400::changeWattmeter(const QString label, int n, const QColor color, QP
 void page400::updateWidgets()
 {
     QSettings home_ini(HOME_INI_FILE, QSettings::IniFormat);
-    home_ini.setIniCodec("UTF-8");
+    // FIXME: home_ini.setIniCodec("UTF-8");
 
     ui->headerPanel->updateWidgets();
 

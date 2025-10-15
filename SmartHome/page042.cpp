@@ -86,21 +86,21 @@ void page042::resizeLabelFont(QLabel *myLabel, float fontFactor)
 
 void page042::reload()
 {
-    // Font DejaVu Sans
-    QFontMetrics fmLabel100(ui->label100px->font());
-    QFontMetrics fmLabel50(ui->label50px->font());
-    QFontMetrics fmLabel25(ui->label25px->font());
-    qDebug("Font DejaVu Sans Label Size for label100: W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel100.width(ui->label100px->text()), fmLabel100.height(), fmLabel100.boundingRect(ui->label100px->text()).width(), fmLabel100.boundingRect(ui->label100px->text()).height());
-    qDebug("Font DejaVu Sans Label Size for label50:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel50.width(ui->label50px->text()), fmLabel50.height(), fmLabel50.boundingRect(ui->label50px->text()).width(), fmLabel50.boundingRect(ui->label50px->text()).height());
-    qDebug("Font DejaVu Sans Label Size for label25:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel25.width(ui->label25px->text()), fmLabel25.height(), fmLabel25.boundingRect(ui->label25px->text()).width(), fmLabel25.boundingRect(ui->label25px->text()).height());
+    // // Font DejaVu Sans
+    // QFontMetrics fmLabel100(ui->label100px->font());
+    // QFontMetrics fmLabel50(ui->label50px->font());
+    // QFontMetrics fmLabel25(ui->label25px->font());
+    // qDebug("Font DejaVu Sans Label Size for label100: W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel100.width(ui->label100px->text()), fmLabel100.height(), fmLabel100.boundingRect(ui->label100px->text()).width(), fmLabel100.boundingRect(ui->label100px->text()).height());
+    // qDebug("Font DejaVu Sans Label Size for label50:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel50.width(ui->label50px->text()), fmLabel50.height(), fmLabel50.boundingRect(ui->label50px->text()).width(), fmLabel50.boundingRect(ui->label50px->text()).height());
+    // qDebug("Font DejaVu Sans Label Size for label25:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel25.width(ui->label25px->text()), fmLabel25.height(), fmLabel25.boundingRect(ui->label25px->text()).width(), fmLabel25.boundingRect(ui->label25px->text()).height());
 
-    // Font Ubuntu
-    QFontMetrics fmLabel100_2(ui->label100px_2->font());
-    QFontMetrics fmLabel50_2(ui->label50px_2->font());
-    QFontMetrics fmLabel25_2(ui->label25px_2->font());
-    qDebug("Font Ubuntu Label Size for label100_2: W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel100_2.width(ui->label100px_2->text()), fmLabel100_2.height(), fmLabel100_2.boundingRect(ui->label100px_2->text()).width(), fmLabel100_2.boundingRect(ui->label100px_2->text()).height());
-    qDebug("Font Ubuntu Label Size for label50_2:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel50_2.width(ui->label50px_2->text()), fmLabel50_2.height(), fmLabel50_2.boundingRect(ui->label50px_2->text()).width(), fmLabel50_2.boundingRect(ui->label50px_2->text()).height());
-    qDebug("Font Ubuntu Label Size for label25_2:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel25_2.width(ui->label25px_2->text()), fmLabel25_2.height(), fmLabel25_2.boundingRect(ui->label25px_2->text()).width(), fmLabel25_2.boundingRect(ui->label25px_2->text()).height());
+    // // Font Ubuntu
+    // QFontMetrics fmLabel100_2(ui->label100px_2->font());
+    // QFontMetrics fmLabel50_2(ui->label50px_2->font());
+    // QFontMetrics fmLabel25_2(ui->label25px_2->font());
+    // qDebug("Font Ubuntu Label Size for label100_2: W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel100_2.width(ui->label100px_2->text()), fmLabel100_2.height(), fmLabel100_2.boundingRect(ui->label100px_2->text()).width(), fmLabel100_2.boundingRect(ui->label100px_2->text()).height());
+    // qDebug("Font Ubuntu Label Size for label50_2:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel50_2.width(ui->label50px_2->text()), fmLabel50_2.height(), fmLabel50_2.boundingRect(ui->label50px_2->text()).width(), fmLabel50_2.boundingRect(ui->label50px_2->text()).height());
+    // qDebug("Font Ubuntu Label Size for label25_2:  W:%d - H:%d Bounding Rect: W:%d H:%d", fmLabel25_2.width(ui->label25px_2->text()), fmLabel25_2.height(), fmLabel25_2.boundingRect(ui->label25px_2->text()).width(), fmLabel25_2.boundingRect(ui->label25px_2->text()).height());
 }
 
 void page042::updateData()

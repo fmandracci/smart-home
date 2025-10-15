@@ -303,7 +303,7 @@ int hhmmss2ms(int hhmmss);
 }
 
 #define goto_trend_page(name) { \
-    strncpy(_actual_trend_, name, sizeof(_actual_trend_)); \
+    strncpy(_actual_trend_, name, sizeof(_actual_trend_) - 1); \
     _trend_data_reload_ = true; \
     goto_page("trend"); \
 }
