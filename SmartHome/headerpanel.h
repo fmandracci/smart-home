@@ -36,6 +36,7 @@ private:
     Ui::HeaderPanel *ui;
     page *pparent;
     QString trend;
+    QString title;
 };
 
 #endif // HEADERPANEL_H

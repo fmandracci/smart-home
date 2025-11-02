@@ -140,6 +140,7 @@ void page010::changeWidgets()
 void page010::updateWidgets()
 {
     ui->header_leds->updateWidgets();
+    ui->label_title->setText("SMART HOME" + QTime::currentTime().toString(" [ss]"));
     ui->pushButton_time->setText(PLC_nighttime ? TIME_FMT_NIGHTTIME : TIME_FMT_DAYTIME);
 
     ui->label_versions->setText(QString("%1\n%2_%3\n%4_%5\n%6")

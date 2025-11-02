@@ -56,21 +56,26 @@ void HeaderPanel::changeWidgets(const char *trend, const char *icon, const char 
     ui->atcmButton_home->setMaximumWidth(modulor->tripleSize_px());
     ui->atcmButton_home->setMaximumHeight(modulor->quadrupleSize_px());
 
-    if (trend)
+    if (trend) {
         HeaderPanel::trend = trend;
-    else
+        ui->pushButton_trend->setVisible(true);
+    } else
         ui->pushButton_trend->setVisible(false);
-    if (icon)
+    if (icon) {
         ui->label_icon->setPixmap(QPixmap(icon));
-    else
+        ui->label_icon->setVisible(true);
+    } else
         ui->label_icon->setVisible(false);
-    if (back)
+    if (back) {
         ui->atcmButton_back->setPageName(back);
-    else
+        ui->atcmButton_back->setVisible(true);
+    } else
         ui->atcmButton_back->setVisible(false);
-    if (title)
+    if (title) {
+        HeaderPanel::title = title;
         ui->label_title->setText(title);
-    else
+        ui->label_title->setVisible(true);
+    } else
         ui->label_title->setVisible(false);
 }
 
@@ -78,6 +83,7 @@ void HeaderPanel::updateWidgets(const QString datetime)
 {
     ui->header_leds->updateWidgets();
 
+    ui->label_title->setText(title + QTime::currentTime().toString(" [ss]"));
     if (datetime != nullptr)
         ui->pushButton_time->setText(datetime);
     else
