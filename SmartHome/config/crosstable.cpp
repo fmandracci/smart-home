@@ -15529,7 +15529,7 @@ u_int32_t PLC_LPC_FW_VER = 0;
  * Variable PLC_LPC_TEMP	[ reserved ]
  */
 
-int16_t PLC_LPC_TEMP = 0;
+u_int32_t PLC_LPC_TEMP = 0;
 
 
 /*
@@ -55503,13 +55503,13 @@ getStatus_PLC_LPC_FW_VER(void)
 }
 
 int
-doWrite_PLC_LPC_TEMP(int16_t value)
+doWrite_PLC_LPC_TEMP(u_int32_t value)
 {
 	return doWrite(ID_PLC_LPC_TEMP, &value);
 }
 
 int
-addWrite_PLC_LPC_TEMP(int16_t value)
+addWrite_PLC_LPC_TEMP(u_int32_t value)
 {
 	return addWrite(ID_PLC_LPC_TEMP, &value);
 }

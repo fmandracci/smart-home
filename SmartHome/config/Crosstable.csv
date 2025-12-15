@@ -5427,7 +5427,7 @@
 1;P;PLC_LPC_ERRORS_MASK            ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]LPC communication errors mask
 1;P;PLC_LPC_MODEL_ID               ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
 1;P;PLC_LPC_FW_VER                 ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
-1;P;PLC_LPC_TEMP                   ;INT      ;1   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
+1;P;PLC_LPC_TEMP                   ;UDINT    ;1   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
 1;P;PLC_LPC_RESERVED_6             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
 1;P;PLC_LPC_RESERVED_7             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
 1;P;PLC_LPC_RESERVED_8             ;UDINT    ;0   ;PLC       ;               ;    ;    ;      ;5410;24  ;[RO]reserved
