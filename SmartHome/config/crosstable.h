@@ -13319,9 +13319,9 @@ int addWrite_PLC_LPC_FW_VER(u_int32_t value);
 int getStatus_PLC_LPC_FW_VER(void);
 
 #define ID_PLC_LPC_TEMP 5430
-extern int16_t PLC_LPC_TEMP;	/* reserved */
-int doWrite_PLC_LPC_TEMP(int16_t value);
-int addWrite_PLC_LPC_TEMP(int16_t value);
+extern u_int32_t PLC_LPC_TEMP;	/* reserved */
+int doWrite_PLC_LPC_TEMP(u_int32_t value);
+int addWrite_PLC_LPC_TEMP(u_int32_t value);
 int getStatus_PLC_LPC_TEMP(void);
 
 #define ID_PLC_LPC_RESERVED_6 5431
