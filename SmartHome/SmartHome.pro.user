@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 2.8.1, 2025-12-15T18:09:17. -->
+<!-- Written by QtCreator 2.8.1, 2025-12-15T19:01:43. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -138,7 +138,7 @@
        <value type="QString">-r</value>
       </valuelist>
       <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
-      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
+      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">-j 16</value>
       <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
@@ -227,12 +227,12 @@
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_T4.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend1.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_W07.csv</value>
+       <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/hmi_only</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/hmi_tp1070.ini</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_T5.csv</value>
-       <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/hmi_only</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_W02.csv</value>
-       <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_T2.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/home_L.ini</value>
+       <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_T2.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_T3.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_W04.csv</value>
        <value type="QString">/extra/Projects/smart-home_3.5/SmartHome/config/trend_W03.csv</value>
@@ -320,11 +320,11 @@
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
-       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/root</value>
+       <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
        <value type="QString">/local/data/customtrend</value>
@@ -393,50 +393,50 @@
        <value type="QString">/opt/Qt4.8.7/rpi4/rootfs</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:54</value>
-       <value type="QDateTime">2025-12-15T18:08:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:54</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:56</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:54</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
+       <value type="QDateTime">2025-12-15T19:00:55</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">false</value>
      </valuemap>
