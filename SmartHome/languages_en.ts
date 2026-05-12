@@ -1477,37 +1477,41 @@ xx</source>
 <context>
     <name>page041</name>
     <message>
-        <location filename="page041.ui" line="904"/>
-        <location filename="page041.ui" line="910"/>
+        <location filename="page041.ui" line="907"/>
+        <location filename="page041.ui" line="913"/>
         <source>PLC_FastIO_2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="622"/>
-        <location filename="page041.ui" line="799"/>
-        <location filename="page041.ui" line="907"/>
-        <location filename="page041.ui" line="1252"/>
+        <location filename="page041.ui" line="625"/>
+        <location filename="page041.ui" line="802"/>
+        <location filename="page041.ui" line="910"/>
+        <location filename="page041.ui" line="1258"/>
         <source>ATCMled widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="123"/>
         <location filename="page041.ui" line="183"/>
-        <location filename="page041.ui" line="310"/>
         <location filename="page041.ui" line="370"/>
         <location filename="page041.ui" line="497"/>
-        <location filename="page041.ui" line="843"/>
-        <location filename="page041.ui" line="1008"/>
-        <location filename="page041.ui" line="1068"/>
-        <location filename="page041.ui" line="1128"/>
-        <location filename="page041.ui" line="1188"/>
+        <location filename="page041.ui" line="846"/>
+        <location filename="page041.ui" line="1074"/>
+        <location filename="page041.ui" line="1194"/>
         <source>xxxxxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page041.ui" line="126"/>
         <location filename="page041.ui" line="132"/>
-        <source>PLC_LPC_RESERVED_3</source>
+        <source>PLC_LPC_MODEL_ID</source>
+        <oldsource>PLC_LPC_RESERVED_3</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page041.ui" line="123"/>
+        <location filename="page041.ui" line="310"/>
+        <location filename="page041.ui" line="1134"/>
+        <source>0xXXXXxxxx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1516,78 +1520,102 @@ xx</source>
         <location filename="page041.ui" line="316"/>
         <location filename="page041.ui" line="376"/>
         <location filename="page041.ui" line="503"/>
-        <location filename="page041.ui" line="849"/>
-        <location filename="page041.ui" line="957"/>
-        <location filename="page041.ui" line="1014"/>
-        <location filename="page041.ui" line="1074"/>
-        <location filename="page041.ui" line="1134"/>
-        <location filename="page041.ui" line="1194"/>
+        <location filename="page041.ui" line="852"/>
+        <location filename="page041.ui" line="960"/>
+        <location filename="page041.ui" line="1017"/>
+        <location filename="page041.ui" line="1080"/>
+        <location filename="page041.ui" line="1140"/>
+        <location filename="page041.ui" line="1200"/>
         <source>ATCMlabel widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page041.ui" line="135"/>
-        <source>3: 0x</source>
+        <source>3: </source>
+        <oldsource>3: 0x</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1071"/>
+        <location filename="page041.ui" line="509"/>
+        <source>1: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page041.ui" line="1011"/>
+        <source>XX.X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page041.ui" line="1014"/>
+        <location filename="page041.ui" line="1020"/>
+        <source>PLC_LPC_TEMP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page041.ui" line="1023"/>
+        <source>5: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page041.ui" line="1077"/>
+        <location filename="page041.ui" line="1083"/>
         <source>PLC_LPC_RESERVED_7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1080"/>
+        <location filename="page041.ui" line="1086"/>
         <source>7: 0x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page041.ui" line="313"/>
         <location filename="page041.ui" line="319"/>
-        <source>PLC_LPC_RESERVED_4</source>
+        <source>PLC_LPC_FW_VER</source>
+        <oldsource>PLC_LPC_RESERVED_4</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page041.ui" line="322"/>
-        <source>4: 0x</source>
+        <source>4: </source>
+        <oldsource>4: 0x</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="796"/>
-        <location filename="page041.ui" line="802"/>
+        <location filename="page041.ui" line="799"/>
+        <location filename="page041.ui" line="805"/>
         <source>PLC_FastIO_3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="731"/>
-        <location filename="page041.ui" line="743"/>
+        <location filename="page041.ui" line="734"/>
+        <location filename="page041.ui" line="746"/>
         <source>PLC_nBACKLIGHT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page041.ui" line="249"/>
         <location filename="page041.ui" line="436"/>
-        <location filename="page041.ui" line="557"/>
-        <location filename="page041.ui" line="672"/>
-        <location filename="page041.ui" line="734"/>
+        <location filename="page041.ui" line="560"/>
+        <location filename="page041.ui" line="675"/>
+        <location filename="page041.ui" line="737"/>
         <source>ATCMbutton widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="759"/>
         <location filename="page041.ui" line="762"/>
+        <location filename="page041.ui" line="765"/>
         <source>nBACKLIGHT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="554"/>
-        <location filename="page041.ui" line="566"/>
+        <location filename="page041.ui" line="557"/>
+        <location filename="page041.ui" line="569"/>
         <source>PLC_FastIO_8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="582"/>
         <location filename="page041.ui" line="585"/>
+        <location filename="page041.ui" line="588"/>
         <source>FO8</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1604,24 +1632,13 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1011"/>
-        <location filename="page041.ui" line="1017"/>
-        <source>PLC_LPC_RESERVED_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page041.ui" line="1020"/>
-        <source>5: 0x</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page041.ui" line="1191"/>
         <location filename="page041.ui" line="1197"/>
+        <location filename="page041.ui" line="1203"/>
         <source>PLC_LPC_RESERVED_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1200"/>
+        <location filename="page041.ui" line="1206"/>
         <source>6: 0x</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1648,14 +1665,14 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="669"/>
-        <location filename="page041.ui" line="681"/>
+        <location filename="page041.ui" line="672"/>
+        <location filename="page041.ui" line="684"/>
         <source>PLC_FastIO_6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="697"/>
         <location filename="page041.ui" line="700"/>
+        <location filename="page041.ui" line="703"/>
         <source>FO6</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1666,25 +1683,20 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="846"/>
-        <location filename="page041.ui" line="852"/>
+        <location filename="page041.ui" line="849"/>
+        <location filename="page041.ui" line="855"/>
         <source>PLC_FastIO_Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="855"/>
+        <location filename="page041.ui" line="858"/>
         <source>dir:0x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1131"/>
         <location filename="page041.ui" line="1137"/>
+        <location filename="page041.ui" line="1143"/>
         <source>PLC_LPC_ERRORS_MASK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page041.ui" line="1140"/>
-        <source>0x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1700,30 +1712,36 @@ xx</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="619"/>
-        <location filename="page041.ui" line="625"/>
+        <location filename="page041.ui" line="622"/>
+        <location filename="page041.ui" line="628"/>
         <source>PLC_FastIO_1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="1249"/>
+        <location filename="page041.ui" line="1146"/>
+        <source>2: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page041.ui" line="1255"/>
+        <location filename="page041.ui" line="1261"/>
         <source>PLC_FastIO_4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="951"/>
+        <location filename="page041.ui" line="954"/>
         <source>xx.x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page041.ui" line="954"/>
-        <location filename="page041.ui" line="960"/>
+        <location filename="page041.ui" line="957"/>
+        <location filename="page041.ui" line="963"/>
         <source>PLC_CPU_TEMP</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="page041.ui" line="963"/>
+        <location filename="page041.ui" line="966"/>
+        <location filename="page041.ui" line="1026"/>
         <source>°C</source>
         <translation type="unfinished"></translation>
     </message>

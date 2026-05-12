@@ -120,19 +120,19 @@
          </font>
         </property>
         <property name="text">
-         <string>xxxxxxxx</string>
+         <string>0xXXXXxxxx</string>
         </property>
         <property name="toolTip">
-         <string>PLC_LPC_RESERVED_3</string>
+         <string>PLC_LPC_MODEL_ID</string>
         </property>
         <property name="whatsThis">
          <string>ATCMlabel widget</string>
         </property>
         <property name="variable">
-         <string>PLC_LPC_RESERVED_3</string>
+         <string>PLC_LPC_MODEL_ID</string>
         </property>
         <property name="prefix">
-         <string>3: 0x</string>
+         <string>3: </string>
         </property>
         <property name="refresh">
          <number>200</number>
@@ -307,19 +307,19 @@
          </font>
         </property>
         <property name="text">
-         <string>xxxxxxxx</string>
+         <string>0xXXXXxxxx</string>
         </property>
         <property name="toolTip">
-         <string>PLC_LPC_RESERVED_4</string>
+         <string>PLC_LPC_FW_VER</string>
         </property>
         <property name="whatsThis">
          <string>ATCMlabel widget</string>
         </property>
         <property name="variable">
-         <string>PLC_LPC_RESERVED_4</string>
+         <string>PLC_LPC_FW_VER</string>
         </property>
         <property name="prefix">
-         <string>4: 0x</string>
+         <string>4: </string>
         </property>
         <property name="refresh">
          <number>200</number>
@@ -504,6 +504,9 @@
         </property>
         <property name="variable">
          <string>PLC_LPC_ERRORS_COUNT</string>
+        </property>
+        <property name="prefix">
+         <string>1: </string>
         </property>
         <property name="refresh">
          <number>200</number>
@@ -1005,19 +1008,22 @@
          </font>
         </property>
         <property name="text">
-         <string>xxxxxxxx</string>
+         <string>XX.X</string>
         </property>
         <property name="toolTip">
-         <string>PLC_LPC_RESERVED_5</string>
+         <string>PLC_LPC_TEMP</string>
         </property>
         <property name="whatsThis">
          <string>ATCMlabel widget</string>
         </property>
         <property name="variable">
-         <string>PLC_LPC_RESERVED_5</string>
+         <string>PLC_LPC_TEMP</string>
         </property>
         <property name="prefix">
-         <string>5: 0x</string>
+         <string>5: </string>
+        </property>
+        <property name="suffix">
+         <string>°C</string>
         </property>
         <property name="refresh">
          <number>200</number>
@@ -1041,7 +1047,7 @@
          <number>0</number>
         </property>
         <property name="format">
-         <enum>ATCMlabel::Hex</enum>
+         <enum>ATCMlabel::Dec</enum>
         </property>
        </widget>
       </item>
@@ -1125,7 +1131,7 @@
          </font>
         </property>
         <property name="text">
-         <string>xxxxxxxx</string>
+         <string>0xXXXXxxxx</string>
         </property>
         <property name="toolTip">
          <string>PLC_LPC_ERRORS_MASK</string>
@@ -1137,7 +1143,7 @@
          <string>PLC_LPC_ERRORS_MASK</string>
         </property>
         <property name="prefix">
-         <string>0x</string>
+         <string>2: </string>
         </property>
         <property name="refresh">
          <number>200</number>

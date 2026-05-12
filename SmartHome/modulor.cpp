@@ -9,7 +9,7 @@ Modulor::Modulor(int screenWidth_px, int screenHeight_px, float fontCorrector)
         led_size_px = 48;
     } else if (screen_width_px >= 800) { //  800x480
         led_size_px = 30;
-    } else {                            //  480x272
+    } else {                             //  480x272
         led_size_px = 18;
     }
 
@@ -23,6 +23,7 @@ Modulor::Modulor(int screenWidth_px, int screenHeight_px, float fontCorrector)
     LARGE_font_px  = led_size_px * 30 / 10 * 9 / 10;
     Large_font_px  = led_size_px * 20 / 10 * 9 / 10;
     large_font_px  = led_size_px * 15 / 10 * 9 / 10;
+
     normal_font_px = led_size_px * 10 / 10 * 9 / 10;
     small_font_px  = led_size_px *  5 / 10 * 9 / 10;
     tiny_font_px   = led_size_px *  4 / 10 * 9 / 10;
