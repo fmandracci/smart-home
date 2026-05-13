@@ -71,8 +71,10 @@ for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $B
 		--exclude ppp                                                         || { echo "cannot restore the local/etc/ files to $XX_ADDR"; exit; } 
 	# NO: rsync -Haxc --delete $FOLDER/local/retentive root@$XX_ADDR:/local/retentive || { echo "cannot rsync the local/retentive file to $XX_ADDR"; exit; } 
 	rsync -Haxc --delete $FOLDER/local/root/     root@$XX_ADDR:/local/root/ \
-		--exclude fcrts                                                       || { echo "cannot restore the local/root/ files to $XX_ADDR"; exit; } 
-	# NB: neither --exclude hmi.ini nor --exclude hmi.qss
+		--exclude fcrts \
+		--exclude hmi.ini \
+		--exclude home.ini	                                              || { echo "cannot restore the local/root/ files to $XX_ADDR"; exit; } 
+	# NB: no --exclude hmi.qss
 
 	ssh root@$XX_ADDR sync                                                        || { echo "cannot sync the filesystem in $XX_ADDR"; exit; } 
 done
