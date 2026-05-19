@@ -1,0 +1,30 @@
+[EP]
+relay_A="Relay\nCucina"
+
+meter__M="Quadro"
+meter__F="U.P.S."
+meter_01="Cucina"
+
+[T1]
+name="Casa"
+
+[T2]
+name="Th.TWO"
+
+[T3]
+name="Th.THREE"
+
+[T4]
+name="Th.FOUR"
+
+[T5]
+name="Th.FIVE"
+
+[T6]
+name="Th.SIX"
+
+[BA]
+sensor_01="01 = Porte Ingresso"
+sensor_02="02 = IR V  Piano"
+sensor_03="03 = IR VI Piano"
+
