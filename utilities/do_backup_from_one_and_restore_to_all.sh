@@ -1,13 +1,16 @@
 #!/bin/bash
 
-VERSION="2.0_08"
+VERSION="2.1_01"
 
-V0_ADDR="192.168.5.243"
+V0_ADDR="192.168.5.211"
 
-# V1_ADDR="192.168.5.19"
-# V2_ADDR="192.168.5.50"
-# V3_ADDR="192.168.5.45"
-# V4_ADDR="192.168.5.120"
+V1_ADDR="192.168.5.51"
+V2_ADDR="192.168.5.52"
+V3_ADDR="192.168.5.53"
+V4_ADDR="192.168.5.54"
+V5_ADDR="192.168.5.55"
+V6_ADDR="192.168.5.56"
+V7_ADDR="192.168.5.57"
 
 # EP_ADDR="192.168.5.20"
 # T1_ADDR="192.168.5.21"
@@ -17,17 +20,6 @@ V0_ADDR="192.168.5.243"
 # T5_ADDR="192.168.5.25"
 # T6_ADDR="192.168.5.26"
 # BA_ADDR="192.168.5.27"
-
-# X0_ADDR="192.168.0.60"
-# X1_ADDR="192.168.0.61"
-# X2_ADDR="192.168.0.62"
-# X3_ADDR="192.168.0.63"
-# X4_ADDR="192.168.0.64"
-# X5_ADDR="192.168.0.65"
-# X6_ADDR="192.168.0.66"
-# X7_ADDR="192.168.0.67"
-# X8_ADDR="192.168.0.68"
-# X9_ADDR="192.168.0.69"
 
 	echo "------------------ SmartHome_v$VERSION ------------------"
 
@@ -52,13 +44,13 @@ FOLDER="SmartHome_v$VERSION"
 	rsync -Hax root@$V0_ADDR:/local/retentive $FOLDER/local/retentive || { echo "cannot backup the local/retentive file"; exit; } 
 	rsync -Hax root@$V0_ADDR:/local/root/     $FOLDER/local/root/     || { echo "cannot backup the local/root/ files"; exit; } 
 
-for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $X0_ADDR $X1_ADDR $X2_ADDR $X3_ADDR $X4_ADDR $X5_ADDR $X6_ADDR $X7_ADDR; do
+for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $V5_ADDR $V6_ADDR $V7_ADDR; do
 
 	echo "------------------ stopping $XX_ADDR ------------------"
 	ssh root@$XX_ADDR /etc/rc.d/init.d/autoexec stop                  || { echo "cannot stop the application"; exit; } 
 done
 
-for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $X0_ADDR $X1_ADDR $X2_ADDR $X3_ADDR $X4_ADDR $X5_ADDR $X6_ADDR $X7_ADDR $X8_ADDR $X9_ADDR; do
+for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $V5_ADDR $V6_ADDR $V7_ADDR; do
 
 	echo "------------------ restore to $XX_ADDR ------------------"
 	rsync -Haxc --delete $FOLDER/local/control/ root@$XX_ADDR:/local/control/     || { echo "cannot restore the local/control/ files to $XX_ADDR"; exit; } 
@@ -73,8 +65,7 @@ for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $B
 	rsync -Haxc --delete $FOLDER/local/root/     root@$XX_ADDR:/local/root/ \
 		--exclude fcrts \
 		--exclude hmi.ini \
-		--exclude home.ini	                                              || { echo "cannot restore the local/root/ files to $XX_ADDR"; exit; } 
-	# NB: no --exclude hmi.qss
+		--exclude home.ini                                                    || { echo "cannot restore the local/root/ files to $XX_ADDR"; exit; } 
 
 	ssh root@$XX_ADDR sync                                                        || { echo "cannot sync the filesystem in $XX_ADDR"; exit; } 
 done
@@ -82,7 +73,7 @@ done
 	echo "------------------ restarting $V0_ADDR ------------------"
 	ssh root@$V0_ADDR /sbin/reboot                                    || { echo "cannot reboot $V0_ADDR"; exit; } 
 
-for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $X0_ADDR $X1_ADDR $X2_ADDR $X3_ADDR $X4_ADDR $X5_ADDR $X6_ADDR $X7_ADDR $X8_ADDR $X9_ADDR; do
+for XX_ADDR in $EP_ADDR $T1_ADDR $T2_ADDR $T3_ADDR $T4_ADDR $T5_ADDR $T6_ADDR $BA_ADDR $V1_ADDR $V2_ADDR $V3_ADDR $V4_ADDR $V5_ADDR $V6_ADDR $V7_ADDR; do
 
 	echo "------------------ restarting $XX_ADDR ------------------"
 	ssh root@$XX_ADDR /sbin/reboot                                    || { echo "cannot reboot $XX_ADDR"; exit; } 
