@@ -83,5 +83,5 @@ RESOURCES += \
 include(./languages.pri)
 
 #Current Mect Suite Version:
-DEFINES += "MECT_SUITE_VERSION=\"\\\"6.0.0\\\"\""
+DEFINES += "MECT_SUITE_VERSION=\"\\\"6.1.0\\\"\""
 
