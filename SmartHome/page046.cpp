@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page046.h"
 #include "ui_page046.h"
@@ -31,20 +31,20 @@
 #include "automation.h"
 
 page046::page046(QWidget *parent) :
-    page(parent),
+    page("page046", parent),
     ui(new Ui::page046)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page046::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page046 BA test");
 
-    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()))
-                   + QString("ATCMled { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
+    QString atcmss = QString("QLabel, MECTcombobox, MECTlabel, MECTbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()))
+                   + QString("MECTled { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
     ui->frame->setStyleSheet(atcmss);
 
     if (PLC_Iam_BA) {
@@ -102,7 +102,7 @@ void page046::reload()
     setSensor(ui->atcmButton_DO_32, 32);
 }
 
-void page046::setSensor(ATCMbutton *button, int n)
+void page046::setSensor(MECTbutton *button, int n)
 {
     if (PLC_BA_enabled_sensors >= n)
     {

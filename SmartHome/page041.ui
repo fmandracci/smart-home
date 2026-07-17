@@ -107,7 +107,7 @@ background-color: rgb(0, 0, 0);
 <number>9</number>
 </property>
 <item row="1" column="3">
-<widget class="ATCMlabel" name="atcmLabel_3">
+<widget class="MECTlabel" name="atcmLabel_3">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -133,16 +133,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_MODEL_ID</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_MODEL_ID</string>
 </property>
 <property name="prefix">
 <string>3: </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -163,12 +160,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="4">
-<widget class="ATCMlabel" name="atcmLabel_8">
+<widget class="MECTlabel" name="atcmLabel_8">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -194,16 +191,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_RESERVED_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_RESERVED_8</string>
 </property>
 <property name="prefix">
 <string>8: 0x</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -224,12 +218,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMbutton" name="atcmButton_6">
+<widget class="MECTbutton" name="atcmButton_6">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -255,7 +249,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -263,7 +257,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_FastIO_5</string>
 </property>
 <property name="viewStatus">
@@ -297,7 +291,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMlabel" name="atcmLabel_4">
+<widget class="MECTlabel" name="atcmLabel_4">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -323,16 +317,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_FW_VER</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_FW_VER</string>
 </property>
 <property name="prefix">
 <string>4: </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -353,12 +344,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="2">
-<widget class="ATCMlabel" name="atcmLabel_9">
+<widget class="MECTlabel" name="atcmLabel_9">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -384,16 +375,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_Ena</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_Ena</string>
 </property>
 <property name="prefix">
 <string>ena: 0x</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -414,12 +402,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="2" column="1">
-<widget class="ATCMbutton" name="atcmButton_8">
+<widget class="MECTbutton" name="atcmButton_8">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -445,7 +433,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -453,7 +441,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_FastIO_7</string>
 </property>
 <property name="viewStatus">
@@ -487,7 +475,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMlabel" name="atcmLabel_1">
+<widget class="MECTlabel" name="atcmLabel_1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -513,16 +501,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_ERRORS_COUNT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_ERRORS_COUNT</string>
 </property>
 <property name="prefix">
 <string>1: </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -545,7 +530,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="1">
-<widget class="ATCMbutton" name="atcmButton_9">
+<widget class="MECTbutton" name="atcmButton_9">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -571,7 +556,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -579,7 +564,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_FastIO_8</string>
 </property>
 <property name="viewStatus">
@@ -613,7 +598,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMled" name="atcmLed_1">
+<widget class="MECTled" name="atcmLed_1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -636,13 +621,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_1</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -667,7 +649,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMbutton" name="atcmButton_7">
+<widget class="MECTbutton" name="atcmButton_7">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -693,7 +675,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -701,7 +683,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_FastIO_6</string>
 </property>
 <property name="viewStatus">
@@ -735,7 +717,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMbutton" name="atcmButton_5">
+<widget class="MECTbutton" name="atcmButton_5">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -755,7 +737,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_nBACKLIGHT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -763,7 +745,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_nBACKLIGHT</string>
 </property>
 <property name="viewStatus">
@@ -803,7 +785,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="0">
-<widget class="ATCMled" name="atcmLed_3">
+<widget class="MECTled" name="atcmLed_3">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -826,13 +808,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_3</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -857,7 +836,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="2">
-<widget class="ATCMlabel" name="atcmLabel_10">
+<widget class="MECTlabel" name="atcmLabel_10">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -883,16 +862,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_Dir</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_Dir</string>
 </property>
 <property name="prefix">
 <string>dir:0x</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -913,12 +889,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_2">
+<widget class="MECTled" name="atcmLed_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -941,13 +917,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_2</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -972,7 +945,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMlabel" name="atcmLabel_ct">
+<widget class="MECTlabel" name="atcmLabel_ct">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -998,16 +971,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_CPU_TEMP</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_CPU_TEMP</string>
 </property>
 <property name="suffix">
 <string>°C</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1030,7 +1000,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3">
-<widget class="ATCMlabel" name="atcmLabel_5">
+<widget class="MECTlabel" name="atcmLabel_5">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1056,7 +1026,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_TEMP</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_TEMP</string>
@@ -1066,9 +1036,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string>°C</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1089,12 +1056,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Dec</enum>
+<enum>MECTlabel::MECTLabelFormat::Dec</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="3">
-<widget class="ATCMlabel" name="atcmLabel_7">
+<widget class="MECTlabel" name="atcmLabel_7">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1120,16 +1087,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_RESERVED_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_RESERVED_7</string>
 </property>
 <property name="prefix">
 <string>7: 0x</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1150,12 +1114,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMlabel" name="atcmLabel_2">
+<widget class="MECTlabel" name="atcmLabel_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1181,16 +1145,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_ERRORS_MASK</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_ERRORS_MASK</string>
 </property>
 <property name="prefix">
 <string>2: </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1211,12 +1172,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="2" column="4">
-<widget class="ATCMlabel" name="atcmLabel_6">
+<widget class="MECTlabel" name="atcmLabel_6">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1242,16 +1203,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_LPC_RESERVED_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_RESERVED_6</string>
 </property>
 <property name="prefix">
 <string>6: 0x</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1272,12 +1230,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="0">
-<widget class="ATCMled" name="atcmLed_4">
+<widget class="MECTled" name="atcmLed_4">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1300,13 +1258,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_FastIO_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_FastIO_4</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1350,19 +1305,19 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMled</class>
+<class>MECTled</class>
 <extends>QLabel</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -1376,6 +1331,6 @@ background-color: rgb(0, 0, 0);
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

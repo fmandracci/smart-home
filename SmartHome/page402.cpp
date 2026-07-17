@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page402.h"
 #include "ui_page402.h"
@@ -31,20 +31,20 @@
 #include "automation.h"
 
 page402::page402(QWidget *parent) :
-    page(parent),
+    page("page402", parent),
     ui(new Ui::page402),
     black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page402::reload()
 {
-    ui->atcmGraph->RunStop();
+    // ui->atcmGraph->RunStop();
     resetPLC_timeOffset();
-    ui->atcmGraph->RunStop();
+    // ui->atcmGraph->RunStop();
 
     ui->atcmLabel_M_W->setVariable("PLC_EP_wattmeter_M_W");
     ui->atcmLabel_M_W->setPrefix(LABEL__M + " ");
@@ -92,12 +92,12 @@ void page402::changeWidgets(const char *trend, const QString t, const QString W,
     modulor->scaleTripleButton(ui->atcmButton_next);
 
     // center
-    ui->atcmGraph->setY1Variable(W);
-    ui->atcmGraph->setY2Variable(M_W);
-    ui->atcmGraph->setY1Label("W");
-    ui->atcmGraph->setY2Label("W");
-    ui->atcmGraph->setStyleSheet(QString(BG_COLOR_SS(black) + COLOR_SS(color)));
-    ui->atcmGraph->setToolTip("");
+    // ui->atcmGraph->setY1Variable(W);
+    // ui->atcmGraph->setY2Variable(M_W);
+    // ui->atcmGraph->setY1Label("W");
+    // ui->atcmGraph->setY2Label("W");
+    // ui->atcmGraph->setStyleSheet(QString(BG_COLOR_SS(black) + COLOR_SS(color)));
+    // ui->atcmGraph->setToolTip("");
 
     // bottom
     ui->atcmLabel_W->setVariable(W);

@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page200.h"
 #include "ui_page200.h"
@@ -31,7 +31,7 @@
 #include "automation.h"
 
 page200::page200(QWidget *parent) :
-    page(parent),
+    page("page200", parent),
     ui(new Ui::page200),
     LampOffIcon(QPixmap(":/icons/icons/Lamp.png")),
     LampPressIcon(QPixmap(":/icons/icons/LampGreen.png")),
@@ -41,7 +41,7 @@ page200::page200(QWidget *parent) :
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page200::reload()

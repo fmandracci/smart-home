@@ -183,7 +183,7 @@ border: 1px solid rgb(255,255,255);</string>
 </widget>
 </item>
 <item row="1" column="4" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Tn_temperature_setpoint_nt">
+<widget class="MECTlabel" name="atcmLabel_Tn_temperature_setpoint_nt">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -220,7 +220,7 @@ border: 1px solid rgb(255,255,255);</string>
 <string>PLC_T1_temperature_setpoint_nt</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_T1_temperature_setpoint_nt</string>
@@ -230,9 +230,6 @@ border: 1px solid rgb(255,255,255);</string>
 </property>
 <property name="suffix">
 <string>℃</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -290,7 +287,7 @@ border: 1px solid rgb(255,255,255);</string>
 </widget>
 </item>
 <item row="4" column="4" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Tn_humidity_setpoint_nt">
+<widget class="MECTlabel" name="atcmLabel_Tn_humidity_setpoint_nt">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -327,7 +324,7 @@ border: 1px solid rgb(255,255,255);</string>
 <string>PLC_T1_humidity_setpoint_nt</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_T1_humidity_setpoint_nt</string>
@@ -337,9 +334,6 @@ border: 1px solid rgb(255,255,255);</string>
 </property>
 <property name="suffix">
 <string>%◂</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -447,7 +441,7 @@ background-color: rgb(0, 0, 127);</string>
 </widget>
 </item>
 <item row="4" column="1" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Tn_humidity_setpoint">
+<widget class="MECTlabel" name="atcmLabel_Tn_humidity_setpoint">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -484,7 +478,7 @@ background-color: rgb(0, 0, 127);</string>
 <string>PLC_T1_humidity</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_T1_humidity</string>
@@ -494,9 +488,6 @@ background-color: rgb(0, 0, 127);</string>
 </property>
 <property name="suffix">
 <string>%◂</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -598,7 +589,7 @@ border: 1px solid rgb(255,255,255);</string>
 </widget>
 </item>
 <item row="2" column="6" rowspan="5">
-<widget class="ATCMbutton" name="atcmButton_next">
+<widget class="MECTbutton" name="atcmButton_next">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -627,7 +618,7 @@ border: 1px solid rgb(255,255,255);</string>
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true">page101c</string>
@@ -635,7 +626,7 @@ border: 1px solid rgb(255,255,255);</string>
 <property name="remember">
 <bool>false</bool>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -778,7 +769,7 @@ background-color: rgb(0, 0, 127);</string>
 </widget>
 </item>
 <item row="1" column="1" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Tn_temperature_setpoint">
+<widget class="MECTlabel" name="atcmLabel_Tn_temperature_setpoint">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -815,7 +806,7 @@ background-color: rgb(0, 0, 127);</string>
 <string>PLC_T1_temperature_setpoint</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_T1_temperature_setpoint</string>
@@ -825,9 +816,6 @@ background-color: rgb(0, 0, 127);</string>
 </property>
 <property name="suffix">
 <string>℃</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1448,7 +1436,7 @@ background-color: rgb(64, 64, 64);</string>
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMbutton" name="atcmButton_set_T_everywhere">
+<widget class="MECTbutton" name="atcmButton_set_T_everywhere">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1465,7 +1453,7 @@ background-color: rgb(64, 64, 64);</string>
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1473,7 +1461,7 @@ background-color: rgb(64, 64, 64);</string>
 <property name="remember">
 <bool>false</bool>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -1620,7 +1608,7 @@ xx.x ℃</string>
 </spacer>
 </item>
 <item>
-<widget class="ATCMbutton" name="atcmButton_down">
+<widget class="MECTbutton" name="atcmButton_down">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1655,12 +1643,12 @@ xx.x ℃</string>
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -1705,14 +1693,14 @@ xx.x ℃</string>
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -1727,9 +1715,9 @@ xx.x ℃</string>
 <connections>
 <connection>
 <sender>atcmButton_next</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101b</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1743,9 +1731,9 @@ xx.x ℃</string>
 </connection>
 <connection>
 <sender>atcmButton_set_T_everywhere</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101b</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1759,9 +1747,9 @@ xx.x ℃</string>
 </connection>
 <connection>
 <sender>atcmButton_down</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101b</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1775,6 +1763,6 @@ xx.x ℃</string>
 </connection>
 </connections>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

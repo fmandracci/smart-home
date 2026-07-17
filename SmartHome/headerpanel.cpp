@@ -99,7 +99,7 @@ void HeaderPanel::updateWidgets(const QString datetime)
     }
 }
 
-bool HeaderPanel::goto_page(const char *page, bool remember)
+bool HeaderPanel::goto_page(QString page, bool remember)
 {
     emit newPage(page, remember);
     return true;

@@ -21,7 +21,7 @@
 ****************************************************************************/
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page010.h"
 #include "ui_page010.h"
@@ -30,7 +30,7 @@
 #include "automation.h"
 
 page010::page010(QWidget *parent) :
-    page(parent),
+    page("page010", parent),
     ui(new Ui::page010)
 {
     ui->setupUi(this);

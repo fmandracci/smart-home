@@ -106,7 +106,7 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <item>
-<widget class="ATCMled" name="atcmLed_Iam_BA">
+<widget class="MECTled" name="atcmLed_Iam_BA">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -129,13 +129,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_BA</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_BA</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -160,7 +157,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMlabel" name="atcmLabel_sensors">
+<widget class="MECTlabel" name="atcmLabel_sensors">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -188,7 +185,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_BA_enabled_sensors</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_BA_enabled_sensors</string>
@@ -198,9 +195,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -290,7 +284,7 @@ background-color: rgb(255, 170, 255);
 </widget>
 </item>
 <item>
-<widget class="ATCMcombobox" name="atcmComboBox_status">
+<widget class="MECTcombobox" name="atcmComboBox_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -322,13 +316,10 @@ background-color: rgb(255, 170, 255);
 <string>PLC_BA_status</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>PLC_BA_status</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -561,7 +552,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMbutton" name="atcmButton_BA_led_green">
+<widget class="MECTbutton" name="atcmButton_BA_led_green">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -602,7 +593,7 @@ everyt.</string>
 <string>PLC_BA_led_green</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -610,7 +601,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_led_green</string>
 </property>
 <property name="viewStatus">
@@ -673,7 +664,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMbutton" name="atcmButton_BA_led_red">
+<widget class="MECTbutton" name="atcmButton_BA_led_red">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -714,7 +705,7 @@ everyt.</string>
 <string>PLC_BA_led_red</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -722,7 +713,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_led_red</string>
 </property>
 <property name="viewStatus">
@@ -785,7 +776,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMbutton" name="atcmButton_BA_led_yellow1">
+<widget class="MECTbutton" name="atcmButton_BA_led_yellow1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -826,7 +817,7 @@ everyt.</string>
 <string>PLC_BA_led_yellow1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -834,7 +825,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_led_yellow1</string>
 </property>
 <property name="viewStatus">
@@ -897,7 +888,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMbutton" name="atcmButton_BA_led_yellow2">
+<widget class="MECTbutton" name="atcmButton_BA_led_yellow2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -938,7 +929,7 @@ everyt.</string>
 <string>PLC_BA_led_yellow2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -946,7 +937,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_led_yellow2</string>
 </property>
 <property name="viewStatus">
@@ -1009,7 +1000,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMled" name="atcmLed_BA_blackout_digin">
+<widget class="MECTled" name="atcmLed_BA_blackout_digin">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1032,7 +1023,7 @@ everyt.</string>
 <string>PLC_BA_blackout_digin</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -1042,9 +1033,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_blackout_digin</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1063,7 +1051,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="5">
-<widget class="ATCMbutton" name="atcmButton_BA_siren">
+<widget class="MECTbutton" name="atcmButton_BA_siren">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1104,7 +1092,7 @@ everyt.</string>
 <string>PLC_BA_siren</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1112,7 +1100,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_siren</string>
 </property>
 <property name="viewStatus">
@@ -1175,7 +1163,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="6">
-<widget class="ATCMbutton" name="atcmButton_BA_relay_A">
+<widget class="MECTbutton" name="atcmButton_BA_relay_A">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1216,7 +1204,7 @@ everyt.</string>
 <string>PLC_BA_relay_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1224,7 +1212,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_relay_A</string>
 </property>
 <property name="viewStatus">
@@ -1287,7 +1275,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="7">
-<widget class="ATCMbutton" name="atcmButton_BA_relay_B">
+<widget class="MECTbutton" name="atcmButton_BA_relay_B">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1328,7 +1316,7 @@ everyt.</string>
 <string>PLC_BA_relay_B</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1336,7 +1324,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_relay_B</string>
 </property>
 <property name="viewStatus">
@@ -1399,7 +1387,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="8">
-<widget class="ATCMbutton" name="atcmButton_BA_relay_C">
+<widget class="MECTbutton" name="atcmButton_BA_relay_C">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1440,7 +1428,7 @@ everyt.</string>
 <string>PLC_BA_relay_C</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1448,7 +1436,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_relay_C</string>
 </property>
 <property name="viewStatus">
@@ -1541,7 +1529,7 @@ everyt.</string>
 <number>3</number>
 </property>
 <item row="1" column="2">
-<widget class="ATCMled" name="atcmLed_BA_DI_19">
+<widget class="MECTled" name="atcmLed_BA_DI_19">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1558,7 +1546,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_19</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -1568,9 +1556,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_19</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1589,7 +1574,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="6">
-<widget class="ATCMbutton" name="atcmButton_DO_23">
+<widget class="MECTbutton" name="atcmButton_DO_23">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1615,7 +1600,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_23</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1623,7 +1608,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_23</string>
 </property>
 <property name="viewStatus">
@@ -1657,7 +1642,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMbutton" name="atcmButton_DO_18">
+<widget class="MECTbutton" name="atcmButton_DO_18">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1683,7 +1668,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_18</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1691,7 +1676,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_18</string>
 </property>
 <property name="viewStatus">
@@ -1725,7 +1710,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="7">
-<widget class="ATCMled" name="atcmLed_BA_DI_24">
+<widget class="MECTled" name="atcmLed_BA_DI_24">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1742,7 +1727,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_24</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -1752,9 +1737,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_24</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1773,7 +1755,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="5">
-<widget class="ATCMbutton" name="atcmButton_DO_22">
+<widget class="MECTbutton" name="atcmButton_DO_22">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1799,7 +1781,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_22</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1807,7 +1789,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_22</string>
 </property>
 <property name="viewStatus">
@@ -1841,7 +1823,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMbutton" name="atcmButton_DO_20">
+<widget class="MECTbutton" name="atcmButton_DO_20">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1867,7 +1849,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_20</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1875,7 +1857,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_20</string>
 </property>
 <property name="viewStatus">
@@ -1909,7 +1891,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_BA_DI_17">
+<widget class="MECTled" name="atcmLed_BA_DI_17">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1926,7 +1908,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_17</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -1936,9 +1918,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_17</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1957,7 +1936,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="7">
-<widget class="ATCMbutton" name="atcmButton_DO_24">
+<widget class="MECTbutton" name="atcmButton_DO_24">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1983,7 +1962,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_24</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1991,7 +1970,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_24</string>
 </property>
 <property name="viewStatus">
@@ -2025,7 +2004,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMled" name="atcmLed_BA_DI_20">
+<widget class="MECTled" name="atcmLed_BA_DI_20">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2042,7 +2021,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_20</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2052,9 +2031,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_20</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2073,7 +2049,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMbutton" name="atcmButton_DO_19">
+<widget class="MECTbutton" name="atcmButton_DO_19">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2099,7 +2075,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_19</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2107,7 +2083,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_19</string>
 </property>
 <property name="viewStatus">
@@ -2141,7 +2117,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMbutton" name="atcmButton_DO_21">
+<widget class="MECTbutton" name="atcmButton_DO_21">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2167,7 +2143,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_21</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2175,7 +2151,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_21</string>
 </property>
 <property name="viewStatus">
@@ -2209,7 +2185,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMbutton" name="atcmButton_DO_17">
+<widget class="MECTbutton" name="atcmButton_DO_17">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2235,7 +2211,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_17</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2243,7 +2219,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_17</string>
 </property>
 <property name="viewStatus">
@@ -2277,7 +2253,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="5">
-<widget class="ATCMled" name="atcmLed_BA_DI_22">
+<widget class="MECTled" name="atcmLed_BA_DI_22">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2294,7 +2270,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_22</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2304,9 +2280,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_22</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2325,7 +2298,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="6">
-<widget class="ATCMled" name="atcmLed_BA_DI_23">
+<widget class="MECTled" name="atcmLed_BA_DI_23">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2342,7 +2315,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_23</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2352,9 +2325,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_23</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2373,7 +2343,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMled" name="atcmLed_BA_DI_21">
+<widget class="MECTled" name="atcmLed_BA_DI_21">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2390,7 +2360,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_21</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2400,9 +2370,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_21</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2421,7 +2388,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMled" name="atcmLed_BA_DI_18">
+<widget class="MECTled" name="atcmLed_BA_DI_18">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2438,7 +2405,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_18</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2448,9 +2415,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_18</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2488,7 +2452,7 @@ everyt.</string>
 <number>3</number>
 </property>
 <item row="1" column="1">
-<widget class="ATCMled" name="atcmLed_BA_DI_10">
+<widget class="MECTled" name="atcmLed_BA_DI_10">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2505,7 +2469,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_10</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2515,9 +2479,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_10</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2536,7 +2497,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMbutton" name="atcmButton_DO_12">
+<widget class="MECTbutton" name="atcmButton_DO_12">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2562,7 +2523,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_12</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2570,7 +2531,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_12</string>
 </property>
 <property name="viewStatus">
@@ -2604,7 +2565,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_BA_DI_09">
+<widget class="MECTled" name="atcmLed_BA_DI_09">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2621,7 +2582,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_9</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2631,9 +2592,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_9</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2652,7 +2610,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="7">
-<widget class="ATCMbutton" name="atcmButton_DO_16">
+<widget class="MECTbutton" name="atcmButton_DO_16">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2678,7 +2636,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_16</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2686,7 +2644,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_16</string>
 </property>
 <property name="viewStatus">
@@ -2720,7 +2678,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="5">
-<widget class="ATCMbutton" name="atcmButton_DO_14">
+<widget class="MECTbutton" name="atcmButton_DO_14">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2746,7 +2704,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_14</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2754,7 +2712,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_14</string>
 </property>
 <property name="viewStatus">
@@ -2788,7 +2746,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMbutton" name="atcmButton_DO_10">
+<widget class="MECTbutton" name="atcmButton_DO_10">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2814,7 +2772,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_10</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2822,7 +2780,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_10</string>
 </property>
 <property name="viewStatus">
@@ -2856,7 +2814,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMled" name="atcmLed_BA_DI_13">
+<widget class="MECTled" name="atcmLed_BA_DI_13">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2873,7 +2831,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_13</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2883,9 +2841,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_13</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2904,7 +2859,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMbutton" name="atcmButton_DO_13">
+<widget class="MECTbutton" name="atcmButton_DO_13">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2930,7 +2885,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_13</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2938,7 +2893,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_13</string>
 </property>
 <property name="viewStatus">
@@ -2972,7 +2927,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="5">
-<widget class="ATCMled" name="atcmLed_BA_DI_14">
+<widget class="MECTled" name="atcmLed_BA_DI_14">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2989,7 +2944,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_14</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2999,9 +2954,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_14</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3020,7 +2972,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="6">
-<widget class="ATCMled" name="atcmLed_BA_DI_15">
+<widget class="MECTled" name="atcmLed_BA_DI_15">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3037,7 +2989,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_15</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3047,9 +2999,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_15</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3068,7 +3017,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMbutton" name="atcmButton_DO_11">
+<widget class="MECTbutton" name="atcmButton_DO_11">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3094,7 +3043,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_11</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3102,7 +3051,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_11</string>
 </property>
 <property name="viewStatus">
@@ -3136,7 +3085,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="6">
-<widget class="ATCMbutton" name="atcmButton_DO_15">
+<widget class="MECTbutton" name="atcmButton_DO_15">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3162,7 +3111,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_15</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3170,7 +3119,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_15</string>
 </property>
 <property name="viewStatus">
@@ -3204,7 +3153,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMbutton" name="atcmButton_DO_9">
+<widget class="MECTbutton" name="atcmButton_DO_9">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3230,7 +3179,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_9</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3238,7 +3187,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_9</string>
 </property>
 <property name="viewStatus">
@@ -3272,7 +3221,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMled" name="atcmLed_BA_DI_11">
+<widget class="MECTled" name="atcmLed_BA_DI_11">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3289,7 +3238,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_11</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3299,9 +3248,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_11</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3320,7 +3266,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMled" name="atcmLed_BA_DI_12">
+<widget class="MECTled" name="atcmLed_BA_DI_12">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3337,7 +3283,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_12</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3347,9 +3293,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_12</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3368,7 +3311,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="7">
-<widget class="ATCMled" name="atcmLed_BA_DI_16">
+<widget class="MECTled" name="atcmLed_BA_DI_16">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3385,7 +3328,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_16</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3395,9 +3338,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_16</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3435,7 +3375,7 @@ everyt.</string>
 <number>3</number>
 </property>
 <item row="0" column="6">
-<widget class="ATCMbutton" name="atcmButton_DO_31">
+<widget class="MECTbutton" name="atcmButton_DO_31">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3461,7 +3401,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_31</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3469,7 +3409,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_31</string>
 </property>
 <property name="viewStatus">
@@ -3503,7 +3443,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMbutton" name="atcmButton_DO_29">
+<widget class="MECTbutton" name="atcmButton_DO_29">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3529,7 +3469,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_29</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3537,7 +3477,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_29</string>
 </property>
 <property name="viewStatus">
@@ -3571,7 +3511,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="6">
-<widget class="ATCMled" name="atcmLed_BA_DI_31">
+<widget class="MECTled" name="atcmLed_BA_DI_31">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3588,7 +3528,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_31</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3598,9 +3538,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_31</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3619,7 +3556,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMled" name="atcmLed_BA_DI_26">
+<widget class="MECTled" name="atcmLed_BA_DI_26">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3636,7 +3573,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_26</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3646,9 +3583,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_26</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3667,7 +3601,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMled" name="atcmLed_BA_DI_28">
+<widget class="MECTled" name="atcmLed_BA_DI_28">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3684,7 +3618,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_28</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3694,9 +3628,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_28</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3715,7 +3646,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="5">
-<widget class="ATCMled" name="atcmLed_BA_DI_30">
+<widget class="MECTled" name="atcmLed_BA_DI_30">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3732,7 +3663,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_30</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3742,9 +3673,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_30</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3763,7 +3691,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="7">
-<widget class="ATCMled" name="atcmLed_BA_DI_32">
+<widget class="MECTled" name="atcmLed_BA_DI_32">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3780,7 +3708,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_32</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3790,9 +3718,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_32</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3811,7 +3736,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMbutton" name="atcmButton_DO_25">
+<widget class="MECTbutton" name="atcmButton_DO_25">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3837,7 +3762,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_25</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3845,7 +3770,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_25</string>
 </property>
 <property name="viewStatus">
@@ -3879,7 +3804,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMbutton" name="atcmButton_DO_26">
+<widget class="MECTbutton" name="atcmButton_DO_26">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3905,7 +3830,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_26</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3913,7 +3838,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_26</string>
 </property>
 <property name="viewStatus">
@@ -3947,7 +3872,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_BA_DI_25">
+<widget class="MECTled" name="atcmLed_BA_DI_25">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3964,7 +3889,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_25</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -3974,9 +3899,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_25</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3995,7 +3917,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMled" name="atcmLed_BA_DI_29">
+<widget class="MECTled" name="atcmLed_BA_DI_29">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4012,7 +3934,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_29</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4022,9 +3944,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_29</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4043,7 +3962,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMled" name="atcmLed_BA_DI_27">
+<widget class="MECTled" name="atcmLed_BA_DI_27">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4060,7 +3979,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_27</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4070,9 +3989,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_27</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4091,7 +4007,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="7">
-<widget class="ATCMbutton" name="atcmButton_DO_32">
+<widget class="MECTbutton" name="atcmButton_DO_32">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4117,7 +4033,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_32</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4125,7 +4041,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_32</string>
 </property>
 <property name="viewStatus">
@@ -4159,7 +4075,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="5">
-<widget class="ATCMbutton" name="atcmButton_DO_30">
+<widget class="MECTbutton" name="atcmButton_DO_30">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4185,7 +4101,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_30</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4193,7 +4109,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_30</string>
 </property>
 <property name="viewStatus">
@@ -4227,7 +4143,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMbutton" name="atcmButton_DO_28">
+<widget class="MECTbutton" name="atcmButton_DO_28">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4253,7 +4169,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_28</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4261,7 +4177,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_28</string>
 </property>
 <property name="viewStatus">
@@ -4295,7 +4211,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMbutton" name="atcmButton_DO_27">
+<widget class="MECTbutton" name="atcmButton_DO_27">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4321,7 +4237,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_27</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4329,7 +4245,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_27</string>
 </property>
 <property name="viewStatus">
@@ -4382,7 +4298,7 @@ everyt.</string>
 <number>3</number>
 </property>
 <item row="1" column="5">
-<widget class="ATCMled" name="atcmLed_BA_DI_06">
+<widget class="MECTled" name="atcmLed_BA_DI_06">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4399,7 +4315,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4409,9 +4325,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_6</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4430,7 +4343,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMbutton" name="atcmButton_DO_5">
+<widget class="MECTbutton" name="atcmButton_DO_5">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4456,7 +4369,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4464,7 +4377,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_5</string>
 </property>
 <property name="viewStatus">
@@ -4498,7 +4411,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="7">
-<widget class="ATCMbutton" name="atcmButton_DO_8">
+<widget class="MECTbutton" name="atcmButton_DO_8">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4524,7 +4437,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4532,7 +4445,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_8</string>
 </property>
 <property name="viewStatus">
@@ -4566,7 +4479,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_BA_DI_01">
+<widget class="MECTled" name="atcmLed_BA_DI_01">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4583,7 +4496,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4593,9 +4506,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_1</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4614,7 +4524,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMbutton" name="atcmButton_DO_2">
+<widget class="MECTbutton" name="atcmButton_DO_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4640,7 +4550,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4648,7 +4558,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_2</string>
 </property>
 <property name="viewStatus">
@@ -4682,7 +4592,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMled" name="atcmLed_BA_DI_03">
+<widget class="MECTled" name="atcmLed_BA_DI_03">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4699,7 +4609,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4709,9 +4619,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_3</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4730,7 +4637,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMled" name="atcmLed_BA_DI_02">
+<widget class="MECTled" name="atcmLed_BA_DI_02">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4747,7 +4654,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4757,9 +4664,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_2</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4778,7 +4682,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMbutton" name="atcmButton_DO_4">
+<widget class="MECTbutton" name="atcmButton_DO_4">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4804,7 +4708,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4812,7 +4716,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_4</string>
 </property>
 <property name="viewStatus">
@@ -4846,7 +4750,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="7">
-<widget class="ATCMled" name="atcmLed_BA_DI_08">
+<widget class="MECTled" name="atcmLed_BA_DI_08">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4863,7 +4767,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4873,9 +4777,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_8</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4894,7 +4795,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMled" name="atcmLed_BA_DI_05">
+<widget class="MECTled" name="atcmLed_BA_DI_05">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4911,7 +4812,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -4921,9 +4822,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_5</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4942,7 +4840,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="6">
-<widget class="ATCMbutton" name="atcmButton_DO_7">
+<widget class="MECTbutton" name="atcmButton_DO_7">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4968,7 +4866,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4976,7 +4874,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_7</string>
 </property>
 <property name="viewStatus">
@@ -5010,7 +4908,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMbutton" name="atcmButton_DO_1">
+<widget class="MECTbutton" name="atcmButton_DO_1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -5036,7 +4934,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -5044,7 +4942,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_1</string>
 </property>
 <property name="viewStatus">
@@ -5078,7 +4976,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="6">
-<widget class="ATCMled" name="atcmLed_BA_DI_07">
+<widget class="MECTled" name="atcmLed_BA_DI_07">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -5095,7 +4993,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -5105,9 +5003,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_7</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -5126,7 +5021,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="5">
-<widget class="ATCMbutton" name="atcmButton_DO_6">
+<widget class="MECTbutton" name="atcmButton_DO_6">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -5152,7 +5047,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -5160,7 +5055,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_6</string>
 </property>
 <property name="viewStatus">
@@ -5194,7 +5089,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMbutton" name="atcmButton_DO_3">
+<widget class="MECTbutton" name="atcmButton_DO_3">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -5220,7 +5115,7 @@ everyt.</string>
 <string>PLC_BA_DigOut_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -5228,7 +5123,7 @@ everyt.</string>
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_BA_DigOut_3</string>
 </property>
 <property name="viewStatus">
@@ -5262,7 +5157,7 @@ everyt.</string>
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMled" name="atcmLed_BA_DI_04">
+<widget class="MECTled" name="atcmLed_BA_DI_04">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -5279,7 +5174,7 @@ everyt.</string>
 <string>PLC_BA_DigIn_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -5289,9 +5184,6 @@ everyt.</string>
 </property>
 <property name="variable">
 <string>PLC_BA_DigIn_4</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -5333,24 +5225,24 @@ everyt.</string>
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMcombobox</class>
+<class>MECTcombobox</class>
 <extends>QComboBox</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMled</class>
+<class>MECTled</class>
 <extends>QLabel</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -5365,6 +5257,6 @@ everyt.</string>
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

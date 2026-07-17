@@ -35,7 +35,6 @@ page#info QLabel,
 page#menu QLabel, 
 page#options QLabel, 
 page#time_set QLabel, 
-page#trend QLabel, 
 page#trend_range QLabel, 
 page#login_pwd QLabel, 
 page#set_password QLabel, 
@@ -238,14 +237,10 @@ page#net_conf  QHeaderView::section {
         color: yellow;
         font: 9pt "DejaVu Sans";
 }
-/* trend QLabel, Qwt */
-page#trend QLabel, page#trend QwtPlotCanvas  {
+/* trend QLabel */
+page#trend QLabel  {
 	background-color: DimGray;
 	color: rgb(255, 237, 0);
-}
-page#trend QwtScaleWidget {
-	color: rgb(255, 237, 0);
-	font: 7pt DejaVu Sans;
 }
 /* QMessageBox for System and User QMessageBox */
 QMessageBox {
@@ -286,7 +281,9 @@ QDialogButtonBox {
 }
 /* alphanumpad and numpad common  settings */
 QDialog#alphanumpad, QDialog#numpad  {
-	background-color: rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
+    border: 3px solid Yellow;
+    border-radius: 10px;
 }
 QDialog#alphanumpad QMessageBox,
 QDialog#numpad QMessageBox   {
@@ -433,6 +430,7 @@ page#trend_range  QDateEdit
     border: 1px solid  rgb(100,100,100);
     spacing: 1px;
 }
+/*
 page#time_set     QDateEdit::down-arrow,
 page#store_filter QDateEdit::down-arrow,
 page#trend_range  QDateEdit::down-arrow {
@@ -467,6 +465,7 @@ page#store_filter QCalendarWidget QToolButton#qt_calendar_nextmonth
     qproperty-iconSize: 30px;
     qproperty-icon: url(:/libicons/img/Sq-right.png);
 }
+*/
 /* Combobox for alarms, alarms_history net_conf time_set system_ini */
 page#alarms       QComboBox,
 page#alarms_history QComboBox,
@@ -504,4 +503,3 @@ page#system_ini   QComboBox::down-arrow  {
     width: 55px;
     height: 55px;
 }
-

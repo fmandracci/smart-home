@@ -69,7 +69,7 @@ void Modulor::scaleTripleButton(QAbstractButton *button)
     }
 }
 
-void Modulor::scaleQuadrupleButton(ATCMbutton *button)
+void Modulor::scaleQuadrupleButton(MECTbutton *button)
 {
     if (button) {
         int button_size_px = 4 * led_size_px;
@@ -96,7 +96,7 @@ void Modulor::scaleQuadrupleButton(ATCMbutton *button)
     }
 }
 
-void Modulor::scaleMainButton(ATCMbutton *button)
+void Modulor::scaleMainButton(MECTbutton *button)
 {
     if (button) {
         int button_size_px = 5 * led_size_px;

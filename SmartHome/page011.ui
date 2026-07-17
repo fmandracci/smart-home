@@ -284,7 +284,7 @@ padding: 5px;</string>
 </widget>
 </item>
 <item row="8" column="2">
-<widget class="ATCMlabel" name="atcmLabel_status">
+<widget class="MECTlabel" name="atcmLabel_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -307,16 +307,13 @@ padding: 5px;</string>
 <string>PLC_EngineStatus</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EngineStatus</string>
 </property>
 <property name="prefix">
 <string>status = </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -353,7 +350,7 @@ padding: 5px;</string>
 </widget>
 </item>
 <item row="8" column="1">
-<widget class="ATCMlabel" name="atcmLabel_cpu_temp">
+<widget class="MECTlabel" name="atcmLabel_cpu_temp">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -376,7 +373,7 @@ padding: 5px;</string>
 <string>PLC_CPU_TEMP</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_CPU_TEMP</string>
@@ -386,9 +383,6 @@ padding: 5px;</string>
 </property>
 <property name="suffix">
 <string>°C</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -533,7 +527,7 @@ padding: 5px;</string>
 </widget>
 </item>
 <item row="8" column="4">
-<widget class="ATCMlabel" name="atcmLabel_mask">
+<widget class="MECTlabel" name="atcmLabel_mask">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -556,16 +550,13 @@ padding: 5px;</string>
 <string>PLC_LPC_ERRORS_MASK</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_ERRORS_MASK</string>
 </property>
 <property name="prefix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -600,7 +591,7 @@ padding: 5px;</string>
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
@@ -1305,7 +1296,7 @@ padding: 5px;</string>
 </widget>
 </item>
 <item row="8" column="3">
-<widget class="ATCMlabel" name="atcmLabel_errors">
+<widget class="MECTlabel" name="atcmLabel_errors">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1328,16 +1319,13 @@ padding: 5px;</string>
 <string>PLC_LPC_ERRORS_COUNT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_LPC_ERRORS_COUNT</string>
 </property>
 <property name="prefix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1431,9 +1419,9 @@ padding: 5px;</string>
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -1445,6 +1433,6 @@ padding: 5px;</string>
 <resources/>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

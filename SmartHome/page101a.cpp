@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page101a.h"
 #include "ui_page101a.h"
@@ -32,13 +32,13 @@
 #include <QTime>
 
 page101a::page101a(QWidget *parent) :
-    page(parent),
+    page("page101a", parent),
     ui(new Ui::page101a),
     black(0, 0, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page101a::reload()

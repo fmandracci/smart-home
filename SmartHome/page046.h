@@ -26,7 +26,7 @@
 
 #include "pagebrowser.h"
 
-#include <atcmbutton.h>
+#include <mectbutton.h>
 
 namespace Ui {
 class page046;
@@ -48,7 +48,7 @@ private slots:
 
 private:
     Ui::page046 *ui;
-    void setSensor(ATCMbutton *button, int n);
+    void setSensor(MECTbutton *button, int n);
 };
 
 #endif // PAGE046_H

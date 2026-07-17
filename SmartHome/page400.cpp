@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page400.h"
 #include "ui_page400.h"
@@ -32,12 +32,12 @@
 #include <QScreen>
 
 page400::page400(QWidget *parent) :
-    page(parent),
+    page("page400", parent),
     ui(new Ui::page400)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
     fontSize_px = modulor->normalFont_px();
 }
 

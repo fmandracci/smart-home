@@ -21,7 +21,7 @@ public:
     void updateWidgets(const QString datetime = (const char *)NULL);
 
 protected slots:
-    bool goto_page(const char *page, bool remember = true);
+    bool goto_page(QString page, bool remember = true);
 
 private slots:
     void on_pushButton_trend_clicked() { goto_trend_page(trend.toLatin1().data()); }
@@ -30,7 +30,7 @@ private slots:
     void on_atcmButton_home_clicked()  { }
 
 signals:
-    void newPage(const char * pagename, bool remember);
+    void newPage(QString pagename, bool remember);
 
 private:
     Ui::HeaderPanel *ui;

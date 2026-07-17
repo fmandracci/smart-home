@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page4e0.h"
 #include "ui_page4e0.h"
@@ -30,12 +30,12 @@
 #include "automation.h"
 
 page4e0::page4e0(QWidget *parent) :
-    page(parent),
+    page("page4e0", parent),
     ui(new Ui::page4e0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
     fontSize_px = modulor->normalFont_px();
 }
 

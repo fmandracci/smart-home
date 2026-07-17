@@ -2712,6 +2712,6 @@ color: rgb(255, 255, 255);</string>
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

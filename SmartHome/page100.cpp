@@ -20,22 +20,23 @@
 **
 ****************************************************************************/
 
-#include "app_logprint.h"
-#include "atcmplugin.h"
-#include "main.h"
 #include "page100.h"
-#include "ui_page100.h"
+#include "app_logprint.h"
 #include "crosstable.h"
+#include "main.h"
+#include "mectplugin.h"
+#include "ui_page100.h"
 
 #include "automation.h"
 
 page100::page100(QWidget *parent) :
-    page(parent),
+    page("page100", parent),
     ui(new Ui::page100)
 {
     ui->setupUi(this);
+
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page100::reload()
@@ -50,6 +51,7 @@ void page100::updateData()
         return;
     }
     page::updateData();
+
     updateWidgets();
 }
 
@@ -206,7 +208,7 @@ void page100::updateTemperature(QLabel *label_n, const QString label_on, const Q
     }
 }
 
-void page100::changeEvent(QEvent * event)
+void page100::changeEvent(QEvent *event)
 {
     if (event->type() == QEvent::LanguageChange) {
         ui->retranslateUi(this);

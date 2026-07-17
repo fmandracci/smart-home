@@ -24,6 +24,7 @@
 #ifndef _PAGES_H_
 #define _PAGES_H_
 
+#include "page0.h"
 #include "page010.h"
 #include "page011.h"
 #include "page012.h"

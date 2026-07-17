@@ -26,7 +26,9 @@
 #include <QDebug>
 #include <QSettings>
 
-#if defined(MECT_SUITE_3_5)
+#if defined(MECT_SUITE_6_1)
+
+#elif defined(MECT_SUITE_3_5)
 
 #elif defined(MECT_SUITE_3_4)
 int mectScreenWidth;
@@ -77,7 +79,7 @@ void setup(void)
         fputc('*', stderr);
         sleep(1);
     }
-    doWrite_PLC_HMI_Version(2101);
+    doWrite_PLC_HMI_Version(2102);
 
     // --------- system ---------------------------------------------
     doWrite_PLC_timeWin(300); // graph: 5'

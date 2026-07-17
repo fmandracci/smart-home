@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page101b.h"
 #include "ui_page101b.h"
@@ -32,7 +32,7 @@
 #include <QTime>
 
 page101b::page101b(QWidget *parent) :
-    page(parent),
+    page("page101b", parent),
     ui(new Ui::page101b),
     deltaT(5), //  0.5 °C
     deltaH(100), // 10.0 %
@@ -44,7 +44,7 @@ page101b::page101b(QWidget *parent) :
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page101b::reload()

@@ -53,7 +53,7 @@ background-color: rgb(255, 140, 255)
 }
 </string>
 </property>
-<widget class="ATCMbutton" name="atcmButtonHome">
+<widget class="MECTbutton" name="atcmButtonHome">
 <property name="geometry">
 <rect>
 <x>2</x>
@@ -96,12 +96,12 @@ background-color: rgb(255, 140, 255)
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true">BACK</string>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -480,9 +480,9 @@ background-color: rgb(255, 140, 255)
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 </customwidgets>
 <resources>
@@ -491,9 +491,9 @@ background-color: rgb(255, 140, 255)
 <connections>
 <connection>
 <sender>atcmButtonHome</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page042</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -507,6 +507,6 @@ background-color: rgb(255, 140, 255)
 </connection>
 </connections>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

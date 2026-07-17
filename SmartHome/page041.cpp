@@ -21,7 +21,7 @@
 ****************************************************************************/
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page041.h"
 #include "ui_page041.h"
@@ -30,12 +30,12 @@
 #include "automation.h"
 
 page041::page041(QWidget *parent) :
-    page(parent),
+    page("page041", parent),
     ui(new Ui::page041)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page041::reload()
@@ -58,7 +58,7 @@ void page041::changeWidgets()
 {
     ui->headerPanel->changeWidgets("trend1.csv", XX_PIXMAP, "BACK", "page041: TPX*");
 
-    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
+    QString atcmss = QString("QLabel, MECTcombobox, MECTlabel, MECTbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
     ui->frame->setStyleSheet(atcmss);
 }
 

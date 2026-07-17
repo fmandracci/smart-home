@@ -22,26 +22,26 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page049d.h"
 #include "ui_page049d.h"
 #include "crosstable.h"
 
 page049d::page049d(QWidget *parent) :
-    page(parent),
+    page("page049d", parent),
     ui(new Ui::page049d)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page049d::reload()
 {
     ui->headerPanel->changeWidgets(NULL, XX_PIXMAP, "BACK", "page049d XX MPNE D");
 
-    QString atcmss = QString("QLabel, ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
+    QString atcmss = QString("QLabel, MECTcombobox, MECTlabel, MECTbutton { %1 }\n").arg(FONT_SS_N(modulor->smallFont_px()));
     ui->frame->setStyleSheet(atcmss);
 }
 

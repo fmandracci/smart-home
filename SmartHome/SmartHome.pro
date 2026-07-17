@@ -129,11 +129,7 @@ RESOURCES += \
     resources.qrc
 
 OTHER_FILES += \
-    hmi_tp1043.ini \
-    hmi_tp1070.ini \
-    hmi_tpx4100.ini \
-    hmi_tpx4120.ini \
-    hmi_only \
+    hmi.ini \
     hmi.qss \
     home_C.ini \
     home_L.ini \
@@ -146,4 +142,7 @@ other.path = /local/root
 
 INSTALLS += other
 
-DEFINES += MECT_SUITE_3_5
+DEFINES += MECT_SUITE_6_1
+
+DISTFILES += \
+    hmi.ini

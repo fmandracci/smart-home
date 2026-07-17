@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page021.h"
 #include "ui_page021.h"
@@ -31,14 +31,14 @@
 #include "automation.h"
 
 page021::page021(QWidget *parent) :
-    page(parent),
+    page("page021", parent),
     ui(new Ui::page021),
     giallo(255, 170, 0),
     verde(85, 170, 0)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 
     resetTimer_1(TimerValue_1);
     resetTimer_2(TimerValue_2);

@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QAbstractButton>
 #include <QLabel>
-#include <atcmbutton.h>
+#include <mectbutton.h>
 
 class Modulor
 {
@@ -30,8 +30,8 @@ public:
     void scaleIconLabel(QLabel *button);
     void scaleDoubleButton(QAbstractButton *button);
     void scaleTripleButton(QAbstractButton *button);
-    void scaleQuadrupleButton(ATCMbutton *button);
-    void scaleMainButton(ATCMbutton *button);
+    void scaleQuadrupleButton(MECTbutton *button);
+    void scaleMainButton(MECTbutton *button);
 
     void translateFontSize(QWidget *ui );
     void scaleWidgetFontSize(QWidget *uiWidget, float newScaleFactor);

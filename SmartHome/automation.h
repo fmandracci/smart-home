@@ -70,11 +70,9 @@ extern int currentWattmeter;
 extern Modulor *modulor;
 #define TRANSLATE_FONT_SIZE(x) modulor->translateFontSize(x)
 
-#if defined(MECT_SUITE_3_5)
+#if defined(MECT_SUITE_6_1)
 
-//extern int mectScreenWidth;
-//extern int mectScreenHeight;
-//extern float mectFontCorrector;
+#elif defined(MECT_SUITE_3_5)
 
 #elif defined(MECT_SUITE_3_4)
 

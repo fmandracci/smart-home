@@ -91,7 +91,7 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <item row="7" column="3">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_A_3">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_A_3">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -122,7 +122,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_3_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_3_A</string>
@@ -132,9 +132,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -192,7 +189,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="7" column="2">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_A_2">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_A_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -223,7 +220,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_2_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_2_A</string>
@@ -233,9 +230,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -293,7 +287,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="7" column="1">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_A_1">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_A_1">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -324,7 +318,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_1_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_1_A</string>
@@ -334,9 +328,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -394,7 +385,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="1" rowspan="5" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_W">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_W">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -425,16 +416,13 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_W</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_W</string>
 </property>
 <property name="suffix">
 <string> W</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -478,7 +466,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="3">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_VA">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_VA">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -509,7 +497,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_VA</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_VA</string>
@@ -519,9 +507,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> VA</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -592,7 +577,7 @@ background-color: rgb(0, 0, 0);
 </spacer>
 </item>
 <item row="6" column="1">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_var">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_var">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -623,7 +608,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_var</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_var</string>
@@ -633,9 +618,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> var</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -693,7 +675,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="2">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_A">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_A">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -724,7 +706,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_A</string>
@@ -734,9 +716,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -794,7 +773,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="0" rowspan="7">
-<widget class="ATCMbutton" name="atcmButton_prev">
+<widget class="MECTbutton" name="atcmButton_prev">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -825,12 +804,12 @@ background-color: rgb(0, 0, 0);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -885,7 +864,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="8" column="1" colspan="3">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_kWh">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_kWh">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -916,7 +895,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_kWh</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_kWh</string>
@@ -926,9 +905,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> kWh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -986,7 +962,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="9" column="1" colspan="3">
-<widget class="ATCMlabel" name="atcmLabel_EP_wattmeterN_e_kWh">
+<widget class="MECTlabel" name="atcmLabel_EP_wattmeterN_e_kWh">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1017,7 +993,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_wattmeter_M_e_kWh</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_wattmeter_M_e_kWh</string>
@@ -1027,9 +1003,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> e.kWh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1087,7 +1060,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="5" rowspan="7">
-<widget class="ATCMbutton" name="atcmButton_next">
+<widget class="MECTbutton" name="atcmButton_next">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1118,12 +1091,12 @@ background-color: rgb(0, 0, 0);
 <string>page: page402  status: </string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true">page402</string>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -1236,14 +1209,14 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -1258,9 +1231,9 @@ background-color: rgb(0, 0, 0);
 <connections>
 <connection>
 <sender>atcmButton_prev</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page401</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>21</x>
@@ -1274,9 +1247,9 @@ background-color: rgb(0, 0, 0);
 </connection>
 <connection>
 <sender>atcmButton_next</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page401</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>449</x>
@@ -1290,6 +1263,6 @@ background-color: rgb(0, 0, 0);
 </connection>
 </connections>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

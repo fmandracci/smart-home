@@ -106,7 +106,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="0" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
+<widget class="MECTcombobox" name="atcmComboBox_rtu0_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -132,13 +132,10 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>RTU0_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -168,7 +165,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
+<widget class="MECTlabel" name="atcmLabel_rtu0_writes">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -197,16 +194,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITES</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITES</string>
 </property>
 <property name="prefix">
 <string>wr: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -236,7 +230,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
+<widget class="MECTlabel" name="atcmLabel_rtu0_timeouts">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -265,16 +259,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="prefix">
 <string>to: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -304,7 +295,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_load">
+<widget class="MECTlabel" name="atcmLabel_rtu0_load">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -333,7 +324,7 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BUS_LOAD</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BUS_LOAD</string>
@@ -343,9 +334,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> %</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -408,7 +396,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="0">
-<widget class="ATCMbutton" name="atcmButton_ResetValues">
+<widget class="MECTbutton" name="atcmButton_ResetValues">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -436,7 +424,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_ResetValues</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string/>
@@ -444,7 +432,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_ResetValues</string>
 </property>
 <property name="viewStatus">
@@ -485,7 +473,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
+<widget class="MECTlabel" name="atcmLabel_rtu0_reads">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -514,16 +502,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_READS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_READS</string>
 </property>
 <property name="prefix">
 <string>rd: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -553,7 +538,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
+<widget class="MECTlabel" name="atcmLabel_rtu0_baudrate">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -582,16 +567,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="suffix">
 <string> baud</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -621,7 +603,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+<widget class="MECTlabel" name="atcmLabel_rtu0_errors">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -650,16 +632,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="prefix">
 <string>ce: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -689,7 +668,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="1">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_load_2">
+<widget class="MECTlabel" name="atcmLabel_rtu0_load_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -718,7 +697,7 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITE_QUEUE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITE_QUEUE</string>
@@ -728,9 +707,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -760,7 +736,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMlabel" name="atcmLabel_enabled_wattmeters">
+<widget class="MECTlabel" name="atcmLabel_enabled_wattmeters">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -791,7 +767,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_EP_enabled_wattmeters</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>PLC_EP_enabled_wattmeters</string>
@@ -801,9 +777,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> / 12</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -847,7 +820,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMled" name="atcmLed">
+<widget class="MECTled" name="atcmLed">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -858,13 +831,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_EP</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_EP</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -912,7 +882,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="6" column="1">
-<widget class="ATCMcombobox" name="atcmComboBox__M">
+<widget class="MECTcombobox" name="atcmComboBox__M">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -940,13 +910,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_32_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_32_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -976,7 +943,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox__F">
+<widget class="MECTcombobox" name="atcmComboBox__F">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1004,13 +971,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_33_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_33_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1106,7 +1070,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMlabel" name="atcmLabel_P">
+<widget class="MECTlabel" name="atcmLabel_P">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1135,7 +1099,7 @@ background-color: rgb(0, 0, 0);
 <string>SysActivePower_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysActivePower_0</string>
@@ -1145,9 +1109,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> W</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1177,7 +1138,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="3">
-<widget class="ATCMlabel" name="atcmLabel_Q_2">
+<widget class="MECTlabel" name="atcmLabel_Q_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1206,7 +1167,7 @@ background-color: rgb(0, 0, 0);
 <string>SysReactivePower_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysReactivePower_1</string>
@@ -1216,9 +1177,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> var</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1248,7 +1206,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="4">
-<widget class="ATCMcombobox" name="atcmComboBox_2">
+<widget class="MECTcombobox" name="atcmComboBox_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1274,13 +1232,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_35_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_35_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1310,7 +1265,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="8" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_4">
+<widget class="MECTcombobox" name="atcmComboBox_4">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1336,13 +1291,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_37_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_37_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1372,7 +1324,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="3">
-<widget class="ATCMcombobox" name="atcmComboBox_1">
+<widget class="MECTcombobox" name="atcmComboBox_1">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1398,13 +1350,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_34_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_34_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1434,7 +1383,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMlabel" name="atcmLabel_C">
+<widget class="MECTlabel" name="atcmLabel_C">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1463,16 +1412,13 @@ background-color: rgb(0, 0, 0);
 <string>SysPowerFactor_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysPowerFactor_0</string>
 </property>
 <property name="prefix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1502,7 +1448,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="4">
-<widget class="ATCMlabel" name="atcmLabel_S_2">
+<widget class="MECTlabel" name="atcmLabel_S_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1531,7 +1477,7 @@ background-color: rgb(0, 0, 0);
 <string>SysApparentPower_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysApparentPower_1</string>
@@ -1541,9 +1487,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> VA</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1573,7 +1516,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="5" column="3" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Eout_2">
+<widget class="MECTlabel" name="atcmLabel_Eout_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1602,7 +1545,7 @@ background-color: rgb(0, 0, 0);
 <string>SysExpActiveEnergy_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysExpActiveEnergy_1</string>
@@ -1612,9 +1555,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Wh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1644,7 +1584,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="1" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Ein">
+<widget class="MECTlabel" name="atcmLabel_Ein">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1673,7 +1613,7 @@ background-color: rgb(0, 0, 0);
 <string>SysImpActiveEnergy_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysImpActiveEnergy_0</string>
@@ -1683,9 +1623,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Wh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1715,7 +1652,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="4">
-<widget class="ATCMlabel" name="atcmLabel_C_2">
+<widget class="MECTlabel" name="atcmLabel_C_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1744,16 +1681,13 @@ background-color: rgb(0, 0, 0);
 <string>SysPowerFactor_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysPowerFactor_1</string>
 </property>
 <property name="prefix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1783,7 +1717,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMlabel" name="atcmLabel_U">
+<widget class="MECTlabel" name="atcmLabel_U">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1812,7 +1746,7 @@ background-color: rgb(0, 0, 0);
 <string>SystemVoltage_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SystemVoltage_0</string>
@@ -1822,9 +1756,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> V</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1854,7 +1785,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Eout">
+<widget class="MECTlabel" name="atcmLabel_Eout">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1883,7 +1814,7 @@ background-color: rgb(0, 0, 0);
 <string>SysExpActiveEnergy_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysExpActiveEnergy_0</string>
@@ -1893,9 +1824,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Wh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1925,7 +1853,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="8" column="1">
-<widget class="ATCMcombobox" name="atcmComboBox_3">
+<widget class="MECTcombobox" name="atcmComboBox_3">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1951,13 +1879,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_36_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_36_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1987,7 +1912,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="2">
-<widget class="ATCMlabel" name="atcmLabel_I_2">
+<widget class="MECTlabel" name="atcmLabel_I_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2016,7 +1941,7 @@ background-color: rgb(0, 0, 0);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string/>
@@ -2026,9 +1951,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2058,7 +1980,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="8" column="4">
-<widget class="ATCMcombobox" name="atcmComboBox_6">
+<widget class="MECTcombobox" name="atcmComboBox_6">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2084,13 +2006,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_39_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_39_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2120,7 +2039,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMlabel" name="atcmLabel_Q">
+<widget class="MECTlabel" name="atcmLabel_Q">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2149,7 +2068,7 @@ background-color: rgb(0, 0, 0);
 <string>SysReactivePower_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysReactivePower_0</string>
@@ -2159,9 +2078,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> var</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2191,7 +2107,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMlabel" name="atcmLabel_S">
+<widget class="MECTlabel" name="atcmLabel_S">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2220,7 +2136,7 @@ background-color: rgb(0, 0, 0);
 <string>SysApparentPower_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysApparentPower_0</string>
@@ -2230,9 +2146,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> VA</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2262,7 +2175,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="5" column="1" colspan="2">
-<widget class="ATCMlabel" name="atcmLabel_Ein_2">
+<widget class="MECTlabel" name="atcmLabel_Ein_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2291,7 +2204,7 @@ background-color: rgb(0, 0, 0);
 <string>SysImpActiveEnergy_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysImpActiveEnergy_1</string>
@@ -2301,9 +2214,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Wh</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2333,7 +2243,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="8" column="3">
-<widget class="ATCMcombobox" name="atcmComboBox_5">
+<widget class="MECTcombobox" name="atcmComboBox_5">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2359,13 +2269,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_38_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_38_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2395,7 +2302,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="3">
-<widget class="ATCMlabel" name="atcmLabel_F_2">
+<widget class="MECTlabel" name="atcmLabel_F_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2424,7 +2331,7 @@ background-color: rgb(0, 0, 0);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string/>
@@ -2434,9 +2341,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Hz</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2466,7 +2370,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="2">
-<widget class="ATCMlabel" name="atcmLabel_I">
+<widget class="MECTlabel" name="atcmLabel_I">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2495,7 +2399,7 @@ background-color: rgb(0, 0, 0);
 <string>SystemCurrent_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SystemCurrent_0</string>
@@ -2505,9 +2409,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2537,7 +2438,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="3">
-<widget class="ATCMlabel" name="atcmLabel_F">
+<widget class="MECTlabel" name="atcmLabel_F">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2566,7 +2467,7 @@ background-color: rgb(0, 0, 0);
 <string>Frequency_0</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>Frequency_0</string>
@@ -2576,9 +2477,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> Hz</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2608,7 +2506,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="2">
-<widget class="ATCMlabel" name="atcmLabel_P_2">
+<widget class="MECTlabel" name="atcmLabel_P_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2637,7 +2535,7 @@ background-color: rgb(0, 0, 0);
 <string>SysActivePower_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>SysActivePower_1</string>
@@ -2647,9 +2545,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> W</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2679,7 +2574,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="9" column="1">
-<widget class="ATCMcombobox" name="atcmComboBox_7">
+<widget class="MECTcombobox" name="atcmComboBox_7">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2705,13 +2600,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_40_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_40_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2741,7 +2633,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="9" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_8">
+<widget class="MECTcombobox" name="atcmComboBox_8">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2767,13 +2659,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_41_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_41_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2803,7 +2692,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="9" column="3">
-<widget class="ATCMcombobox" name="atcmComboBox_9">
+<widget class="MECTcombobox" name="atcmComboBox_9">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2829,13 +2718,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_42_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_42_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2865,7 +2751,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="9" column="4">
-<widget class="ATCMcombobox" name="atcmComboBox_10">
+<widget class="MECTcombobox" name="atcmComboBox_10">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2891,13 +2777,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_43_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_43_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2927,7 +2810,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="1">
-<widget class="ATCMlabel" name="atcmLabel_U_2">
+<widget class="MECTlabel" name="atcmLabel_U_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2956,7 +2839,7 @@ background-color: rgb(0, 0, 0);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string/>
@@ -2966,9 +2849,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> V</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -3019,24 +2899,24 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMcombobox</class>
+<class>MECTcombobox</class>
 <extends>QComboBox</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMled</class>
+<class>MECTled</class>
 <extends>QLabel</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -3050,6 +2930,6 @@ background-color: rgb(0, 0, 0);
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

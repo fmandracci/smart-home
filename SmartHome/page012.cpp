@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page012.h"
 #include "ui_page012.h"
@@ -31,7 +31,7 @@
 #include "automation.h"
 
 page012::page012(QWidget *parent) :
-    page(parent),
+    page("page012", parent),
     ui(new Ui::page012)
 {
     ui->setupUi(this);
@@ -39,7 +39,7 @@ page012::page012(QWidget *parent) :
      * protection_level = pwd_operator_e;
      */
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page012::reload()
@@ -83,7 +83,7 @@ void page012::changeWidgets()
                              "{"
                              "color: rgb(255, 255, 255);"
                              "}\n");
-    QString atcmss = QString("ATCMcombobox, ATCMlabel, ATCMbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
+    QString atcmss = QString("MECTcombobox, MECTlabel, MECTbutton { %1 }\n").arg(FONT_SS_N(modulor->normalFont_px()));
 
     this->setStyleSheet(pagess + tabss1 + tabss2 + tabss3 + atcmss);
 }

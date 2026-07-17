@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page500.h"
 #include "ui_page500.h"
@@ -32,12 +32,12 @@
 #include <QSettings>
 
 page500::page500(QWidget *parent) :
-    page(parent),
+    page("page500", parent),
     ui(new Ui::page500)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 
     ui->pushButton_OFF->setEnabled(false);
     ui->pushButton_DAYTIME->setEnabled(false);

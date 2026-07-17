@@ -15526,7 +15526,7 @@ u_int32_t PLC_LPC_FW_VER = 0;
 
 
 /*
- * Variable PLC_LPC_TEMP	[ reserved ]
+ * Variable PLC_LPC_TEMP	[ LPC Temperature in degrees Celsius ]
  */
 
 u_int32_t PLC_LPC_TEMP = 0;

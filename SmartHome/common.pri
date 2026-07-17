@@ -14,26 +14,9 @@ target.path = /local/root
 
 INCLUDEPATH += . ./config
 
-# vedi mkspecs/linux-mectsuite-*/qmake.conf
-# LIBS += \
-# -lATCMcommon \
-# -lATCMutility \
-# -lATCMcommunication \
-# -lATCMlogger \
-# -lATCMstore \
-# -lATCMalarms \
-# -lATCMrecipe \
-# -lATCMtrend \
-# -lATCMsystem \
-# -lATCMplugin \
-# -lATCMinputdialog \
-# -lts \
-# -lqwt 
-
 # Input
 HEADERS += \
         config/crosstable.h \
-        style.h \
         pages.h
 
 SOURCES += \
@@ -42,14 +25,13 @@ SOURCES += \
 
 !isEmpty(MECT_QTCREATOR_TEMPLATES) {
 	# pre-elaboration
-	check_missing_file.commands = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/cleanmissingpage.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
+	check_missing_file.commands        = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/cleanmissingpage.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
 	check_undeclared_variable.commands = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/check_cross_var.pl \"$$_PRO_FILE_PWD_\"
-	check_gotopage_bind.commands = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
-	check_systemini.commands = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
-	check_default_font.commands = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/defaultfont.pl \"$$_PRO_FILE_PWD_\"
+	check_gotopage_bind.commands       = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/connectbutton.pl \"$$_PRO_FILE_PWD_\"
+	check_systemini.commands           = @perl $${MECT_QTCREATOR_TEMPLATES}/wizards/projects/MectSuite/ATCM-template-project/check_systemini.pl \"$$_PRO_FILE_\" \"$$_PRO_FILE_PWD_\"
 
-        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
-        PRE_TARGETDEPS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini check_default_font # crosstable_compiler
+        QMAKE_EXTRA_TARGETS += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
+        PRE_TARGETDEPS      += check_missing_file check_undeclared_variable check_gotopage_bind check_systemini
 }
 
 # system icons
@@ -84,4 +66,3 @@ include(./languages.pri)
 
 #Current Mect Suite Version:
 DEFINES += "MECT_SUITE_VERSION=\"\\\"6.1.0\\\"\""
-

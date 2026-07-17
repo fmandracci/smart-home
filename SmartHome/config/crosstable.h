@@ -13319,7 +13319,7 @@ int addWrite_PLC_LPC_FW_VER(u_int32_t value);
 int getStatus_PLC_LPC_FW_VER(void);
 
 #define ID_PLC_LPC_TEMP 5430
-extern u_int32_t PLC_LPC_TEMP;	/* reserved */
+extern u_int32_t PLC_LPC_TEMP;	/* LPC Temperature in degrees Celsius */
 int doWrite_PLC_LPC_TEMP(u_int32_t value);
 int addWrite_PLC_LPC_TEMP(u_int32_t value);
 int getStatus_PLC_LPC_TEMP(void);

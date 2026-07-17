@@ -2,7 +2,7 @@
 # @file
 #
 # @section LICENSE
-# Copyright Mect s.r.l. 2013
+# Copyright Mect s.r.l. 2025
 #
 # @brief include project file for tyranslation management
 #

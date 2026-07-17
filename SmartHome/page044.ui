@@ -106,7 +106,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="1" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_load">
+<widget class="MECTlabel" name="atcmLabel_rtu0_load">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -135,7 +135,7 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BUS_LOAD</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BUS_LOAD</string>
@@ -145,9 +145,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> %</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -177,7 +174,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="5">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
+<widget class="MECTlabel" name="atcmLabel_rtu0_baudrate">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -206,16 +203,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="suffix">
 <string> baud</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -278,7 +272,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="0">
-<widget class="ATCMled" name="atcmLed_1">
+<widget class="MECTled" name="atcmLed_1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -295,13 +289,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T1</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -326,7 +317,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="4">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
+<widget class="MECTlabel" name="atcmLabel_rtu0_writes">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -355,16 +346,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITES</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITES</string>
 </property>
 <property name="prefix">
 <string>wr: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -394,7 +382,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="4">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
+<widget class="MECTlabel" name="atcmLabel_rtu0_reads">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -423,16 +411,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_READS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_READS</string>
 </property>
 <property name="prefix">
 <string>rd: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -462,7 +447,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="5">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+<widget class="MECTlabel" name="atcmLabel_rtu0_errors">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -491,16 +476,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="prefix">
 <string>ce: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -530,7 +512,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMled" name="atcmLed_3">
+<widget class="MECTled" name="atcmLed_3">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -547,13 +529,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T3</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -578,7 +557,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_queue">
+<widget class="MECTlabel" name="atcmLabel_rtu0_queue">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -607,16 +586,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITE_QUEUE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITE_QUEUE</string>
 </property>
 <property name="prefix">
 <string>wq: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -646,7 +622,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="2" rowspan="3">
-<widget class="ATCMbutton" name="atcmButton_ResetValues">
+<widget class="MECTbutton" name="atcmButton_ResetValues">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -672,7 +648,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_ResetValues</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string/>
@@ -680,7 +656,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_ResetValues</string>
 </property>
 <property name="viewStatus">
@@ -721,7 +697,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="4">
-<widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
+<widget class="MECTcombobox" name="atcmComboBox_rtu0_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -747,13 +723,10 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>RTU0_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -783,7 +756,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="5">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
+<widget class="MECTlabel" name="atcmLabel_rtu0_timeouts">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -812,16 +785,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="prefix">
 <string>to: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -851,7 +821,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="0">
-<widget class="ATCMled" name="atcmLed_2">
+<widget class="MECTled" name="atcmLed_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -868,13 +838,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T2</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -899,7 +866,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="1">
-<widget class="ATCMled" name="atcmLed_4">
+<widget class="MECTled" name="atcmLed_4">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -916,13 +883,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T4</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -947,7 +911,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="1">
-<widget class="ATCMled" name="atcmLed_5">
+<widget class="MECTled" name="atcmLed_5">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -964,13 +928,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T5</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -995,7 +956,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMled" name="atcmLed_6">
+<widget class="MECTled" name="atcmLed_6">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1012,13 +973,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_T6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_T6</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1063,7 +1021,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="4" column="2">
-<widget class="ATCMlabel" name="atcmLabel_Rele_h">
+<widget class="MECTlabel" name="atcmLabel_Rele_h">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1098,7 +1056,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_LIFETIME_RELE_h</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_LIFETIME_RELE_h</string>
@@ -1108,9 +1066,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> h</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1140,7 +1095,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_Baudrate">
+<widget class="MECTcombobox" name="atcmComboBox_Baudrate">
 <property name="enabled">
 <bool>true</bool>
 </property>
@@ -1172,13 +1127,10 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Baudrate</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>ARQ_Baudrate</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1208,7 +1160,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="3">
-<widget class="ATCMlabel" name="atcmLabel_TCj">
+<widget class="MECTlabel" name="atcmLabel_TCj">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1243,7 +1195,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_TCJ</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_TCJ</string>
@@ -1253,9 +1205,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string>°</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1285,7 +1234,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="1">
-<widget class="ATCMcombobox" name="atcmComboBox_StopBits">
+<widget class="MECTcombobox" name="atcmComboBox_StopBits">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1317,13 +1266,10 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_StopBits</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>ARQ_StopBits</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1353,7 +1299,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="5" column="3">
-<widget class="ATCMlabel" name="atcmLabel_Watchdog">
+<widget class="MECTlabel" name="atcmLabel_Watchdog">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1385,7 +1331,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Watchdog</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_Watchdog</string>
@@ -1395,9 +1341,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> s</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1437,7 +1380,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="1">
-<widget class="ATCMlabel" name="atcmLabel_Led_h">
+<widget class="MECTlabel" name="atcmLabel_Led_h">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1472,7 +1415,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_UPTIME_LED_h</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_UPTIME_LED_h</string>
@@ -1482,9 +1425,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> h</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1514,7 +1454,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="0">
-<widget class="ATCMlabel" name="atcmLabel_StOut_A">
+<widget class="MECTlabel" name="atcmLabel_StOut_A">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1546,7 +1486,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_StOut_current</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_StOut_current</string>
@@ -1556,9 +1496,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1588,7 +1525,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="5" column="1">
-<widget class="ATCMlabel" name="atcmLabel_PN">
+<widget class="MECTlabel" name="atcmLabel_PN">
 <property name="enabled">
 <bool>true</bool>
 </property>
@@ -1623,7 +1560,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_PartNumber</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_PartNumber</string>
@@ -1633,9 +1570,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1665,7 +1599,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="0">
-<widget class="ATCMlabel" name="atcmLabel_AnOut">
+<widget class="MECTlabel" name="atcmLabel_AnOut">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1697,7 +1631,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_AnOut</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_AnOut</string>
@@ -1707,9 +1641,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> V</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1742,7 +1673,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="3">
-<widget class="ATCMlabel" name="atcmLabel_Address">
+<widget class="MECTlabel" name="atcmLabel_Address">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1777,16 +1708,13 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Address</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_Address</string>
 </property>
 <property name="prefix">
 <string>Address </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1816,7 +1744,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="0">
-<widget class="ATCMcombobox" name="atcmComboBox_Parity">
+<widget class="MECTcombobox" name="atcmComboBox_Parity">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1848,13 +1776,10 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Parity</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>ARQ_Parity</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1884,7 +1809,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="5" column="0">
-<widget class="ATCMlabel" name="atcmLabel_Setup">
+<widget class="MECTlabel" name="atcmLabel_Setup">
 <property name="enabled">
 <bool>true</bool>
 </property>
@@ -1919,16 +1844,13 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Setup</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_Setup</string>
 </property>
 <property name="prefix">
 <string>SET </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1966,12 +1888,12 @@ background-color: rgb(0, 0, 0);
 <enum>QFrame::Raised</enum>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="5" column="2">
-<widget class="ATCMlabel" name="atcmLabel_SN">
+<widget class="MECTlabel" name="atcmLabel_SN">
 <property name="enabled">
 <bool>true</bool>
 </property>
@@ -2006,7 +1928,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_SerialNumber</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_SerialNumber</string>
@@ -2016,9 +1938,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2048,7 +1967,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="2">
-<widget class="ATCMbutton" name="atcmButton_Rele">
+<widget class="MECTbutton" name="atcmButton_Rele">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2080,7 +1999,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_Rele</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2088,7 +2007,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>ARQ_Rele</string>
 </property>
 <property name="viewStatus">
@@ -2129,7 +2048,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="1">
-<widget class="ATCMbutton" name="atcmButton_StOut">
+<widget class="MECTbutton" name="atcmButton_StOut">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2164,12 +2083,12 @@ background-color: rgb(0, 0, 0);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -2237,7 +2156,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="1">
-<widget class="ATCMcombobox" name="atcmComboBox_node10_status">
+<widget class="MECTcombobox" name="atcmComboBox_node10_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2257,13 +2176,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_10_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_10_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2326,7 +2242,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_SelfTest_AnOut">
+<widget class="MECTled" name="atcmLed_SelfTest_AnOut">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2337,7 +2253,7 @@ background-color: rgb(0, 0, 0);
 <string>AQR_ERROR_SELFTEST_ANOUT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2347,9 +2263,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>AQR_ERROR_SELFTEST_ANOUT</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2393,7 +2306,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_SelfTest_D01">
+<widget class="MECTled" name="atcmLed_SelfTest_D01">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2404,7 +2317,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_SELFTEST_DO1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2414,9 +2327,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_SELFTEST_DO1</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2460,7 +2370,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_ParamError">
+<widget class="MECTled" name="atcmLed_ParamError">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2471,7 +2381,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_PARAMETER</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2481,9 +2391,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_PARAMETER</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2527,7 +2434,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_SelfTest_On">
+<widget class="MECTled" name="atcmLed_SelfTest_On">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2538,7 +2445,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_SELFTEST_ON</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2548,9 +2455,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_SELFTEST_ON</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2596,7 +2500,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_Watchdog">
+<widget class="MECTled" name="atcmLed_Watchdog">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2607,7 +2511,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_WATCHDOG</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2617,9 +2521,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_WATCHDOG</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2663,7 +2564,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_StOut_A">
+<widget class="MECTled" name="atcmLed_StOut_A">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2674,7 +2575,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_STOUT_A</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2684,9 +2585,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_STOUT_A</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2730,7 +2628,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_StOut">
+<widget class="MECTled" name="atcmLed_StOut">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2741,7 +2639,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_STOUT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2751,9 +2649,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_STOUT</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2797,7 +2692,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item>
-<widget class="ATCMled" name="atcmLed_AnOut">
+<widget class="MECTled" name="atcmLed_AnOut">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2808,7 +2703,7 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_ERROR_ANOUT</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="font">
 <font>
@@ -2818,9 +2713,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="variable">
 <string>ARQ_ERROR_ANOUT</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2841,7 +2733,7 @@ background-color: rgb(0, 0, 0);
 </layout>
 </item>
 <item row="3" column="3">
-<widget class="ATCMlabel" name="atcmLabel_FW">
+<widget class="MECTlabel" name="atcmLabel_FW">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2876,16 +2768,13 @@ background-color: rgb(0, 0, 0);
 <string>ARQ_FW</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>ARQ_FW</string>
 </property>
 <property name="prefix">
 <string>FW  </string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -2913,7 +2802,7 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
@@ -2939,24 +2828,24 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMcombobox</class>
+<class>MECTcombobox</class>
 <extends>QComboBox</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMled</class>
+<class>MECTled</class>
 <extends>QLabel</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -2970,6 +2859,6 @@ background-color: rgb(0, 0, 0);
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

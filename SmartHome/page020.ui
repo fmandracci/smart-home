@@ -135,7 +135,7 @@ background-color: rgb(0, 0, 0);
 </spacer>
 </item>
 <item>
-<widget class="ATCMdate" name="atcmDate">
+<widget class="MECTdate" name="atcmDate">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -151,7 +151,7 @@ background-color: rgb(0, 0, 0);
 </font>
 </property>
 <property name="whatsThis">
-<string>ATCMdate widget</string>
+<string>MECTdate widget</string>
 </property>
 <property name="bgColor">
 <color>
@@ -195,9 +195,9 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMdate</class>
+<class>MECTdate</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -209,6 +209,6 @@ background-color: rgb(0, 0, 0);
 <resources/>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

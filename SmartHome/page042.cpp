@@ -21,7 +21,7 @@
 ****************************************************************************/
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page042.h"
 #include "ui_page042.h"
@@ -34,7 +34,7 @@
 #include <QProcess>
 
 page042::page042(QWidget *parent) :
-    page(parent),
+    page("page042", parent),
     ui(new Ui::page042)
 {
     ui->setupUi(this);

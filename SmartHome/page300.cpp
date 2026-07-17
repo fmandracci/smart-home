@@ -22,7 +22,7 @@
 
 
 #include "app_logprint.h"
-#include "atcmplugin.h"
+#include "mectplugin.h"
 #include "main.h"
 #include "page300.h"
 #include "ui_page300.h"
@@ -31,14 +31,14 @@
 #include "automation.h"
 
 page300::page300(QWidget *parent) :
-    page(parent),
+    page("page300", parent),
     ui(new Ui::page300),
     black(0, 0, 0),
     white(255, 255, 255)
 {
     ui->setupUi(this);
     TRANSLATE_FONT_SIZE(this);
-    connect(ui->headerPanel, SIGNAL(newPage(const char*,bool)), this, SLOT(goto_page(const char*,bool)));
+    connect(ui->headerPanel, SIGNAL(newPage(QString,bool)), this, SLOT(goto_page(QString,bool)));
 }
 
 void page300::reload()

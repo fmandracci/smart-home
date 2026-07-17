@@ -103,7 +103,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="2" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_reads">
+<widget class="MECTlabel" name="atcmLabel_rtu0_reads">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -132,16 +132,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_READS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_READS</string>
 </property>
 <property name="prefix">
 <string>rd: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -171,7 +168,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="1">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_load">
+<widget class="MECTlabel" name="atcmLabel_rtu0_load">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -200,7 +197,7 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BUS_LOAD</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BUS_LOAD</string>
@@ -210,9 +207,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> %</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -242,7 +236,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_errors">
+<widget class="MECTlabel" name="atcmLabel_rtu0_errors">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -271,16 +265,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_COMM_ERRORS</string>
 </property>
 <property name="prefix">
 <string>ce: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -310,7 +301,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="2">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_writes">
+<widget class="MECTlabel" name="atcmLabel_rtu0_writes">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -339,16 +330,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITES</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITES</string>
 </property>
 <property name="prefix">
 <string>wr: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -378,7 +366,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="2">
-<widget class="ATCMcombobox" name="atcmComboBox_rtu0_status">
+<widget class="MECTcombobox" name="atcmComboBox_rtu0_status">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -404,13 +392,10 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>RTU0_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -440,7 +425,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_timeouts">
+<widget class="MECTlabel" name="atcmLabel_rtu0_timeouts">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -469,16 +454,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_TIMEOUTS</string>
 </property>
 <property name="prefix">
 <string>to: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -541,7 +523,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="3">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_baudrate">
+<widget class="MECTlabel" name="atcmLabel_rtu0_baudrate">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -570,16 +552,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_BAUDRATE</string>
 </property>
 <property name="suffix">
 <string> baud</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -609,7 +588,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="1">
-<widget class="ATCMlabel" name="atcmLabel_rtu0_queue">
+<widget class="MECTlabel" name="atcmLabel_rtu0_queue">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -638,16 +617,13 @@ background-color: rgb(0, 0, 0);
 <string>RTU0_WRITE_QUEUE</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>RTU0_WRITE_QUEUE</string>
 </property>
 <property name="prefix">
 <string>wq: </string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="max">
 <string>0</string>
@@ -677,7 +653,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="0">
-<widget class="ATCMled" name="atcmLed">
+<widget class="MECTled" name="atcmLed">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -694,13 +670,10 @@ background-color: rgb(0, 0, 0);
 <string>PLC_Iam_BA</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>PLC_Iam_BA</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -725,7 +698,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="0" rowspan="2">
-<widget class="ATCMbutton" name="atcmButton_ResetValues">
+<widget class="MECTbutton" name="atcmButton_ResetValues">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -751,7 +724,7 @@ background-color: rgb(0, 0, 0);
 <string>PLC_ResetValues</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string/>
@@ -759,7 +732,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>PLC_ResetValues</string>
 </property>
 <property name="viewStatus">
@@ -820,7 +793,7 @@ background-color: rgb(0, 0, 0);
 <number>1</number>
 </property>
 <item row="4" column="1">
-<widget class="ATCMled" name="atcmLed_digin_02">
+<widget class="MECTled" name="atcmLed_digin_02">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -837,13 +810,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_2</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -868,7 +838,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="11">
-<widget class="ATCMbutton" name="atcmButton_dout_28">
+<widget class="MECTbutton" name="atcmButton_dout_28">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -891,7 +861,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_28</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -899,7 +869,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_28</string>
 </property>
 <property name="viewStatus">
@@ -930,7 +900,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="12" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_9">
+<widget class="MECTlabel" name="atcmLabel_9">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -953,7 +923,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_ExpType</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_ExpType</string>
@@ -963,9 +933,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -993,12 +960,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="2">
-<widget class="ATCMbutton" name="atcmButton_dout_03">
+<widget class="MECTbutton" name="atcmButton_dout_03">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1021,7 +988,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1029,7 +996,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_3</string>
 </property>
 <property name="viewStatus">
@@ -1105,7 +1072,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="12" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_2">
+<widget class="MECTlabel" name="atcmLabel_2">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1128,7 +1095,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_SN</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_SN</string>
@@ -1138,9 +1105,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1170,7 +1134,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="13">
-<widget class="ATCMled" name="atcmLed_digin_14">
+<widget class="MECTled" name="atcmLed_digin_14">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1187,13 +1151,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_14</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_14</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1218,7 +1179,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="3">
-<widget class="ATCMbutton" name="atcmButton_dout_04">
+<widget class="MECTbutton" name="atcmButton_dout_04">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1241,7 +1202,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1249,7 +1210,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_4</string>
 </property>
 <property name="viewStatus">
@@ -1294,7 +1255,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="8" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel">
+<widget class="MECTlabel" name="atcmLabel">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -1317,7 +1278,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_FwRev</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_FwRev</string>
@@ -1327,9 +1288,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -1357,12 +1315,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="3" column="4">
-<widget class="ATCMbutton" name="atcmButton_dout_05">
+<widget class="MECTbutton" name="atcmButton_dout_05">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1385,7 +1343,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1393,7 +1351,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_5</string>
 </property>
 <property name="viewStatus">
@@ -1438,7 +1396,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="5">
-<widget class="ATCMled" name="atcmLed_digin_06">
+<widget class="MECTled" name="atcmLed_digin_06">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1455,13 +1413,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_6</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1486,7 +1441,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="5">
-<widget class="ATCMbutton" name="atcmButton_dir_6">
+<widget class="MECTbutton" name="atcmButton_dir_6">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1509,7 +1464,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1517,7 +1472,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_6</string>
 </property>
 <property name="viewStatus">
@@ -1551,7 +1506,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="10">
-<widget class="ATCMbutton" name="atcmButton_dout_27">
+<widget class="MECTbutton" name="atcmButton_dout_27">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1574,7 +1529,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_27</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1582,7 +1537,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_27</string>
 </property>
 <property name="viewStatus">
@@ -1613,7 +1568,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="9">
-<widget class="ATCMled" name="atcmLed_digin_10">
+<widget class="MECTled" name="atcmLed_digin_10">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1630,13 +1585,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_10</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_10</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1692,7 +1644,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="5">
-<widget class="ATCMbutton" name="atcmButton_dout_06">
+<widget class="MECTbutton" name="atcmButton_dout_06">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1715,7 +1667,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_6</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1723,7 +1675,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_6</string>
 </property>
 <property name="viewStatus">
@@ -1768,7 +1720,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="14">
-<widget class="ATCMled" name="atcmLed_digin_15">
+<widget class="MECTled" name="atcmLed_digin_15">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1785,13 +1737,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_15</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_15</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -1816,7 +1765,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="4">
-<widget class="ATCMbutton" name="atcmButton_dir_5">
+<widget class="MECTbutton" name="atcmButton_dir_5">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1839,7 +1788,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1847,7 +1796,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_5</string>
 </property>
 <property name="viewStatus">
@@ -1881,7 +1830,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="6">
-<widget class="ATCMbutton" name="atcmButton_dout_07">
+<widget class="MECTbutton" name="atcmButton_dout_07">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1904,7 +1853,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1912,7 +1861,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_7</string>
 </property>
 <property name="viewStatus">
@@ -1957,7 +1906,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="0">
-<widget class="ATCMbutton" name="atcmButton_dout_17">
+<widget class="MECTbutton" name="atcmButton_dout_17">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1980,7 +1929,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_17</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -1988,7 +1937,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_17</string>
 </property>
 <property name="viewStatus">
@@ -2019,7 +1968,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="3">
-<widget class="ATCMbutton" name="atcmButton_dout_20">
+<widget class="MECTbutton" name="atcmButton_dout_20">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2042,7 +1991,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_20</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2050,7 +1999,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_20</string>
 </property>
 <property name="viewStatus">
@@ -2081,7 +2030,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="1">
-<widget class="ATCMbutton" name="atcmButton_dir_2">
+<widget class="MECTbutton" name="atcmButton_dir_2">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2104,7 +2053,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2112,7 +2061,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_2</string>
 </property>
 <property name="viewStatus">
@@ -2146,7 +2095,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="2">
-<widget class="ATCMled" name="atcmLed_digin_03">
+<widget class="MECTled" name="atcmLed_digin_03">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2163,13 +2112,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_3</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2194,7 +2140,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="0" column="4" colspan="4">
-<widget class="ATCMcombobox" name="atcmComboBox_4">
+<widget class="MECTcombobox" name="atcmComboBox_4">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -2214,13 +2160,10 @@ background-color: rgb(0, 0, 0);
 <string>NODE_11_STATUS</string>
 </property>
 <property name="whatsThis">
-<string>ATCMcombobox widget</string>
+<string>MECTcombobox widget</string>
 </property>
 <property name="variable">
 <string>NODE_11_STATUS</string>
-</property>
-<property name="refresh">
-<number>500</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2250,7 +2193,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="7">
-<widget class="ATCMled" name="atcmLed_digin_08">
+<widget class="MECTled" name="atcmLed_digin_08">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2267,13 +2210,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_8</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2298,7 +2238,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="15">
-<widget class="ATCMbutton" name="atcmButton_dout_32">
+<widget class="MECTbutton" name="atcmButton_dout_32">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2321,7 +2261,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_32</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2329,7 +2269,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_32</string>
 </property>
 <property name="viewStatus">
@@ -2360,7 +2300,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="8">
-<widget class="ATCMled" name="atcmLed_digin_09">
+<widget class="MECTled" name="atcmLed_digin_09">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2377,13 +2317,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_9</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_9</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2408,7 +2345,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="4">
-<widget class="ATCMled" name="atcmLed_digin_05">
+<widget class="MECTled" name="atcmLed_digin_05">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2425,13 +2362,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_5</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_5</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2456,7 +2390,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="2">
-<widget class="ATCMbutton" name="atcmButton_dir_3">
+<widget class="MECTbutton" name="atcmButton_dir_3">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2479,7 +2413,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_3</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2487,7 +2421,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_3</string>
 </property>
 <property name="viewStatus">
@@ -2521,7 +2455,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="14">
-<widget class="ATCMbutton" name="atcmButton_dout_31">
+<widget class="MECTbutton" name="atcmButton_dout_31">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2544,7 +2478,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_31</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2552,7 +2486,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_31</string>
 </property>
 <property name="viewStatus">
@@ -2583,7 +2517,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="7">
-<widget class="ATCMbutton" name="atcmButton_dout_08">
+<widget class="MECTbutton" name="atcmButton_dout_08">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2606,7 +2540,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2614,7 +2548,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_8</string>
 </property>
 <property name="viewStatus">
@@ -2659,7 +2593,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="12">
-<widget class="ATCMled" name="atcmLed_digin_13">
+<widget class="MECTled" name="atcmLed_digin_13">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2676,13 +2610,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_13</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_13</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2707,7 +2638,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="6">
-<widget class="ATCMbutton" name="atcmButton_dout_23">
+<widget class="MECTbutton" name="atcmButton_dout_23">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2730,7 +2661,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_23</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2738,7 +2669,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_23</string>
 </property>
 <property name="viewStatus">
@@ -2769,7 +2700,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="5">
-<widget class="ATCMbutton" name="atcmButton_dout_22">
+<widget class="MECTbutton" name="atcmButton_dout_22">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2792,7 +2723,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_22</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2800,7 +2731,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_22</string>
 </property>
 <property name="viewStatus">
@@ -2862,7 +2793,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="6">
-<widget class="ATCMled" name="atcmLed_digin_07">
+<widget class="MECTled" name="atcmLed_digin_07">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2879,13 +2810,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_7</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -2910,7 +2838,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="4">
-<widget class="ATCMbutton" name="atcmButton_dout_21">
+<widget class="MECTbutton" name="atcmButton_dout_21">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2933,7 +2861,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_21</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -2941,7 +2869,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_21</string>
 </property>
 <property name="viewStatus">
@@ -2972,7 +2900,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="9">
-<widget class="ATCMbutton" name="atcmButton_dout_26">
+<widget class="MECTbutton" name="atcmButton_dout_26">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -2995,7 +2923,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_26</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3003,7 +2931,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_26</string>
 </property>
 <property name="viewStatus">
@@ -3065,7 +2993,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="8" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_8">
+<widget class="MECTlabel" name="atcmLabel_8">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -3088,7 +3016,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_ExpID</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_ExpID</string>
@@ -3098,9 +3026,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -3131,12 +3056,12 @@ background-color: rgb(0, 0, 0);
 <enum>QFrame::Plain</enum>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="6" column="12">
-<widget class="ATCMbutton" name="atcmButton_dout_29">
+<widget class="MECTbutton" name="atcmButton_dout_29">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3159,7 +3084,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_29</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3167,7 +3092,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_29</string>
 </property>
 <property name="viewStatus">
@@ -3198,7 +3123,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="0">
-<widget class="ATCMbutton" name="atcmButton_dout_01">
+<widget class="MECTbutton" name="atcmButton_dout_01">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3221,7 +3146,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3229,7 +3154,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_1</string>
 </property>
 <property name="viewStatus">
@@ -3274,7 +3199,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="3">
-<widget class="ATCMbutton" name="atcmButton_dir_4">
+<widget class="MECTbutton" name="atcmButton_dir_4">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3297,7 +3222,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3305,7 +3230,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_4</string>
 </property>
 <property name="viewStatus">
@@ -3339,7 +3264,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="3" column="1">
-<widget class="ATCMbutton" name="atcmButton_dout_02">
+<widget class="MECTbutton" name="atcmButton_dout_02">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3362,7 +3287,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_2</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3370,7 +3295,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_2</string>
 </property>
 <property name="viewStatus">
@@ -3418,7 +3343,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="11">
-<widget class="ATCMled" name="atcmLed_digin_12">
+<widget class="MECTled" name="atcmLed_digin_12">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3435,13 +3360,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_12</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_12</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3466,7 +3388,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="7">
-<widget class="ATCMbutton" name="atcmButton_dout_24">
+<widget class="MECTbutton" name="atcmButton_dout_24">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3489,7 +3411,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_24</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3497,7 +3419,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_24</string>
 </property>
 <property name="viewStatus">
@@ -3528,7 +3450,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="8">
-<widget class="ATCMbutton" name="atcmButton_dout_25">
+<widget class="MECTbutton" name="atcmButton_dout_25">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3551,7 +3473,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_25</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3559,7 +3481,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_25</string>
 </property>
 <property name="viewStatus">
@@ -3648,7 +3570,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="13">
-<widget class="ATCMbutton" name="atcmButton_dout_30">
+<widget class="MECTbutton" name="atcmButton_dout_30">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3671,7 +3593,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_30</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3679,7 +3601,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_30</string>
 </property>
 <property name="viewStatus">
@@ -3710,7 +3632,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="6">
-<widget class="ATCMbutton" name="atcmButton_dir_7">
+<widget class="MECTbutton" name="atcmButton_dir_7">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3733,7 +3655,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_7</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3741,7 +3663,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_7</string>
 </property>
 <property name="viewStatus">
@@ -3775,7 +3697,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="1">
-<widget class="ATCMbutton" name="atcmButton_dout_18">
+<widget class="MECTbutton" name="atcmButton_dout_18">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3798,7 +3720,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_18</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3806,7 +3728,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_18</string>
 </property>
 <property name="viewStatus">
@@ -3837,7 +3759,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="3">
-<widget class="ATCMled" name="atcmLed_digin_04">
+<widget class="MECTled" name="atcmLed_digin_04">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3854,13 +3776,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_4</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_4</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -3885,7 +3804,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="7">
-<widget class="ATCMbutton" name="atcmButton_dir_8">
+<widget class="MECTbutton" name="atcmButton_dir_8">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3908,7 +3827,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_8</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3916,7 +3835,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_8</string>
 </property>
 <property name="viewStatus">
@@ -3950,7 +3869,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="2" column="0">
-<widget class="ATCMbutton" name="atcmButton_dir_1">
+<widget class="MECTbutton" name="atcmButton_dir_1">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -3973,7 +3892,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigDir_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -3981,7 +3900,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigDir_1</string>
 </property>
 <property name="viewStatus">
@@ -4046,7 +3965,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="15">
-<widget class="ATCMled" name="atcmLed_digin_16">
+<widget class="MECTled" name="atcmLed_digin_16">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4063,13 +3982,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_16</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_16</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4094,7 +4010,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="6" column="2">
-<widget class="ATCMbutton" name="atcmButton_dout_19">
+<widget class="MECTbutton" name="atcmButton_dout_19">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4117,7 +4033,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigOut_19</string>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
@@ -4125,7 +4041,7 @@ background-color: rgb(0, 0, 0);
 <property name="passwordVar">
 <string/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string>MPNE_A_DigOut_19</string>
 </property>
 <property name="viewStatus">
@@ -4156,7 +4072,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="4" column="0">
-<widget class="ATCMled" name="atcmLed_digin_01">
+<widget class="MECTled" name="atcmLed_digin_01">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4173,13 +4089,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_1</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_1</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4204,7 +4117,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="4" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_13">
+<widget class="MECTlabel" name="atcmLabel_13">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -4227,7 +4140,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_Status</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_Status</string>
@@ -4237,9 +4150,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string/>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -4267,12 +4177,12 @@ background-color: rgb(0, 0, 0);
 <number>0</number>
 </property>
 <property name="format">
-<enum>ATCMlabel::Hex</enum>
+<enum>MECTlabel::MECTLabelFormat::Hex</enum>
 </property>
 </widget>
 </item>
 <item row="4" column="10">
-<widget class="ATCMled" name="atcmLed_digin_11">
+<widget class="MECTled" name="atcmLed_digin_11">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -4289,13 +4199,10 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_DigIn_11</string>
 </property>
 <property name="whatsThis">
-<string>ATCMled widget</string>
+<string>MECTled widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_DigIn_11</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="viewStatus">
 <bool>false</bool>
@@ -4351,7 +4258,7 @@ background-color: rgb(0, 0, 0);
 </widget>
 </item>
 <item row="1" column="0" colspan="4">
-<widget class="ATCMlabel" name="atcmLabel_3">
+<widget class="MECTlabel" name="atcmLabel_3">
 <property name="enabled">
 <bool>false</bool>
 </property>
@@ -4374,7 +4281,7 @@ background-color: rgb(0, 0, 0);
 <string>MPNE_A_LifeTime</string>
 </property>
 <property name="whatsThis">
-<string>ATCMlabel widget</string>
+<string>MECTlabel widget</string>
 </property>
 <property name="variable">
 <string>MPNE_A_LifeTime</string>
@@ -4384,9 +4291,6 @@ background-color: rgb(0, 0, 0);
 </property>
 <property name="suffix">
 <string> s</string>
-</property>
-<property name="refresh">
-<number>200</number>
 </property>
 <property name="max">
 <string notr="true">0</string>
@@ -4481,24 +4385,24 @@ background-color: rgb(0, 0, 0);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMcombobox</class>
+<class>MECTcombobox</class>
 <extends>QComboBox</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMlabel</class>
+<class>MECTlabel</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
-<class>ATCMled</class>
+<class>MECTled</class>
 <extends>QLabel</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -4513,6 +4417,6 @@ background-color: rgb(0, 0, 0);
 </resources>
 <connections/>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>

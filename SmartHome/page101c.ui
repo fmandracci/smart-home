@@ -729,7 +729,7 @@ border: 1px solid rgb(255, 255, 255);
 </widget>
 </item>
 <item row="2" column="0" rowspan="4">
-<widget class="ATCMbutton" name="atcmButton_prev">
+<widget class="MECTbutton" name="atcmButton_prev">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -764,7 +764,7 @@ border: 1px solid rgb(255, 255, 255);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true">page101b</string>
@@ -772,7 +772,7 @@ border: 1px solid rgb(255, 255, 255);
 <property name="remember">
 <bool>false</bool>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -912,7 +912,7 @@ border: 1px solid rgb(255, 255, 255);
 </widget>
 </item>
 <item row="3" column="5" rowspan="3">
-<widget class="ATCMbutton" name="atcmButton_next">
+<widget class="MECTbutton" name="atcmButton_next">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -947,7 +947,7 @@ border: 1px solid rgb(255, 255, 255);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true">page101a</string>
@@ -955,7 +955,7 @@ border: 1px solid rgb(255, 255, 255);
 <property name="remember">
 <bool>false</bool>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -1029,7 +1029,7 @@ border: 1px solid rgb(255, 255, 255);
 </spacer>
 </item>
 <item>
-<widget class="ATCMbutton" name="atcmButton_down">
+<widget class="MECTbutton" name="atcmButton_down">
 <property name="sizePolicy">
 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
 <horstretch>0</horstretch>
@@ -1058,12 +1058,12 @@ border: 1px solid rgb(255, 255, 255);
 <string/>
 </property>
 <property name="whatsThis">
-<string>ATCMbutton widget</string>
+<string>MECTbutton widget</string>
 </property>
 <property name="pageName">
 <string notr="true"/>
 </property>
-<property name="statusvar">
+<property name="variable">
 <string notr="true"/>
 </property>
 <property name="viewStatus">
@@ -1110,9 +1110,9 @@ border: 1px solid rgb(255, 255, 255);
 </widget>
 <customwidgets>
 <customwidget>
-<class>ATCMbutton</class>
+<class>MECTbutton</class>
 <extends>QPushButton</extends>
-<header>atcmplugin.h</header>
+<header>mectplugin.h</header>
 </customwidget>
 <customwidget>
 <class>HeaderPanel</class>
@@ -1127,9 +1127,9 @@ border: 1px solid rgb(255, 255, 255);
 <connections>
 <connection>
 <sender>atcmButton_next</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101c</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1143,9 +1143,9 @@ border: 1px solid rgb(255, 255, 255);
 </connection>
 <connection>
 <sender>atcmButton_prev</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101c</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1159,9 +1159,9 @@ border: 1px solid rgb(255, 255, 255);
 </connection>
 <connection>
 <sender>atcmButton_down</sender>
-<signal>newPage(const char*,bool)</signal>
+<signal>newPage(QString,bool)</signal>
 <receiver>page101c</receiver>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 <hints>
 <hint type="sourcelabel">
 <x>20</x>
@@ -1175,6 +1175,6 @@ border: 1px solid rgb(255, 255, 255);
 </connection>
 </connections>
 <slots>
-<slot>goto_page(const char*,bool)</slot>
+<slot>goto_page(QString,bool)</slot>
 </slots>
 </ui>
