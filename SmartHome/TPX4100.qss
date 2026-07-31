@@ -1,0 +1,547 @@
+/*--------------------------------------*/
+/* Stylesheet for TPX4100 10inch family */
+/*--------------------------------------*/
+/* System Pages Background */
+QDialog#item_selector, 
+QDialog#qrcode, 
+page#alarms, 
+page#alarms_history, 
+page#data_manager, 
+page#display_settings, 
+page#info,  
+page#login_pwd, 
+page#menu, 
+page#net_conf, 
+page#options, 
+page#recipe, 
+page#recipe_select, 
+page#set_password, 
+page#store, 
+page#store_filter, 
+page#system_ini, 
+page#time_set, 
+page#trend, 
+page#trend_other, 
+page#trend_range {
+        font: 23px "DejaVu Sans";
+}
+/* System Pages QLabel Font, Background and Color */
+QDialog#item_selector QLabel, 
+QDialog#qrcode        QLabel, 
+page#alarms           QLabel, 
+page#alarms_history   QLabel, 
+page#data_manager     QLabel, 
+page#display_settings QLabel, 
+page#info             QLabel, 
+page#login_pwd        QLabel, 
+page#menu             QLabel, 
+page#options          QLabel, 
+page#recipe           QLabel, 
+page#recipe_select    QLabel, 
+page#set_password     QLabel, 
+page#store            QLabel, 
+page#store_filter     QLabel, 
+page#time_set         QLabel, 
+page#trend            QLabel, 
+page#trend_range      QLabel  {
+        font: 22px "DejaVu Sans";
+}
+page#trend_range QLabel#labelPen  {
+        font: 31px "DejaVu Sans" bold;
+}
+/* System Pages QPushButton Background and Color */
+QDialog#item_selector QPushButton, 
+QDialog#qrcode        QPushButton, 
+page#alarms           QPushButton, 
+page#alarms_history   QPushButton, 
+page#data_manager     QPushButton, 
+page#display_settings QPushButton, 
+page#info             QPushButton, 
+page#login_pwd        QPushButton, 
+page#menu             QPushButton, 
+page#net_conf         QPushButton, 
+page#options          QPushButton, 
+page#recipe           QPushButton, 
+page#recipe_select    QPushButton, 
+page#set_password     QPushButton, 
+page#store            QPushButton, 
+page#store_filter     QPushButton, 
+page#system_ini       QPushButton, 
+page#time_set         QPushButton, 
+page#trend            QPushButton, 
+page#trend_other      QPushButton, 
+page#trend_range      QPushButton  {
+        font: 23px "DejaVu Sans";
+}
+/* Display Settings*/ 
+page#display_settings QPushButton#pushButtonPlus, 
+page#display_settings QPushButton#pushButtonMinus  {
+        min-height:  78px;
+        min-width:   78px;
+        max-height:  78px;
+        max-width:   78px;
+        height:      78px;
+        width:       78px;
+        margin:      13px;
+        border: 0px solid transparent;
+        border-color:     transparent;
+        background-color: transparent;
+}
+/* Menu Pages */
+page#data_manager     QPushButton, 
+page#menu             QPushButton, 
+page#options          QPushButton  {
+        min-height:  90px;
+        font: 42px "DejaVu Sans";
+}
+/* Navigation Buttons or Actions for all forms */
+QDialog#item_selector QPushButton#pushButtonBack, 
+page#alarms           QPushButton#pushButtonACK, 
+page#alarms           QPushButton#pushButtonACKall, 
+page#alarms           QPushButton#pushButtonBack, 
+page#alarms           QPushButton#pushButtonHistory, 
+page#alarms           QPushButton#pushButtonHome, 
+page#alarms           QPushButton#pushButtonHornACK, 
+page#alarms_history   QPushButton#pushButtonBack, 
+page#alarms_history   QPushButton#pushButtonHome, 
+page#alarms_history   QPushButton#pushButtonNext, 
+page#alarms_history   QPushButton#pushButtonPrevious, 
+page#alarms_history   QPushButton#pushButtonSave, 
+page#data_manager     QPushButton#pushButtonBack, 
+page#data_manager     QPushButton#pushButtonHome, 
+page#display_settings QPushButton#pushButtonBack, 
+page#display_settings QPushButton#pushButtonConfirm, 
+page#display_settings QPushButton#pushButtonHome, 
+page#info             QPushButton#pushButtonBack, 
+page#info             QPushButton#pushButtonHome, 
+page#info             QPushButton#pushButtonQrc, 
+page#info             QPushButton#pushButtonRefresh, 
+page#login_pwd        QPushButton#pushButtonBack, 
+page#login_pwd        QPushButton#pushButtonHome, 
+page#menu             QPushButton#pushButtonBack, 
+page#menu             QPushButton#pushButtonHome, 
+page#net_conf         QPushButton#pushButtonBack, 
+page#net_conf         QPushButton#pushButtonHome, 
+page#net_conf         QPushButton#pushButtonSaveAll, 
+page#net_conf         QPushButton#pushButton_vpn_getcert, 
+page#net_conf         QPushButton#pushButton_wan0_enable, 
+page#net_conf         QPushButton#pushButton_wlan0_enable, 
+page#net_conf         QPushButton#pushButton_wlan0_scan, 
+page#options          QPushButton#pushButtonBack, 
+page#options          QPushButton#pushButtonHome, 
+page#recipe           QPushButton#pushButtonBack, 
+page#recipe           QPushButton#pushButtonDown, 
+page#recipe           QPushButton#pushButtonHome, 
+page#recipe           QPushButton#pushButtonLeft, 
+page#recipe           QPushButton#pushButtonLoad, 
+page#recipe           QPushButton#pushButtonRead, 
+page#recipe           QPushButton#pushButtonRight, 
+page#recipe           QPushButton#pushButtonSave, 
+page#recipe           QPushButton#pushButtonUp, 
+page#recipe_select    QPushButton#pushButtonBack, 
+page#recipe_select    QPushButton#pushButtonDelete, 
+page#recipe_select    QPushButton#pushButtonEdit, 
+page#recipe_select    QPushButton#pushButtonHome, 
+page#recipe_select    QPushButton#pushButtonLoadUSB, 
+page#recipe_select    QPushButton#pushButtonSaveUSB, 
+page#set_password     QPushButton#pushButtonBack, 
+page#set_password     QPushButton#pushButtonHome, 
+page#store            QPushButton#pushButtonBack, 
+page#store            QPushButton#pushButtonDown, 
+page#store            QPushButton#pushButtonDownload, 
+page#store            QPushButton#pushButtonFilter, 
+page#store            QPushButton#pushButtonHome,
+page#store            QPushButton#pushButtonLeft, 
+page#store            QPushButton#pushButtonRight, 
+page#store            QPushButton#pushButtonSaveUSB, 
+page#store            QPushButton#pushButtonUp, 
+page#store            QPushButton#pushButtonUpload, 
+page#store_filter     QPushButton#pushButtonCancel,
+page#store_filter     QPushButton#pushButtonOk,
+page#store_filter     QPushButton#pushButtonReset,
+page#system_ini       QPushButton#pushButtonBack,
+page#system_ini       QPushButton#pushButtonHome, 
+page#system_ini       QPushButton#pushButtonSave,
+page#time_set         QPushButton#pushButtonBack, 
+page#time_set         QPushButton#pushButtonHome, 
+page#time_set         QPushButton#pushButtonNTPDefaults, 
+page#time_set         QPushButton#pushButtonNTPSet, 
+page#time_set         QPushButton#pushButtonNTPStart, 
+page#time_set         QPushButton#pushButtonNTPSync, 
+page#time_set         QPushButton#pushButtonSetManual, 
+page#time_set         QPushButton#pushButtonSetManual_cm4, 
+page#time_set         QPushButton#pushButtonTZSet, 
+page#trend_range      QPushButton#pushButtonBack,
+page#trend_range      QPushButton#pushButtonHome, 
+page#trend_range      QPushButton#pushButtonOk  {
+        border: 2px solid  rgb(94, 94, 94);
+        border-radius: 10px;
+        min-height:  70px;
+        min-width:   70px;
+        max-height:  70px;
+        max-width:   70px;
+        height:      70px;
+        width:       70px;
+        qproperty-iconSize: 62px;
+}
+/* QCheckBox && QLabel (system_ini) */
+page#system_ini       QCheckBox, 
+page#system_ini       QLabel  {
+        font: 20px "DejaVu Sans";
+}
+page#net_conf         QCheckBox::indicator,
+page#system_ini       QCheckBox::indicator  {
+        width: 42px;
+        height:42px;
+}
+/* QTabWidget and Tab Bar (info, net_conf, system_ini) */
+page#info             QTabWidget,
+page#net_conf         QTabWidget,
+page#system_ini       QTabWidget  {
+        font: 20px "DejaVu Sans";
+}
+page#info             QTabWidget::tab-bar, 
+page#net_conf         QTabWidget::tab-bar,
+page#system_ini       QTabWidget::tab-bar  {
+        left: 13px;
+}
+page#info             QTabBar::scroller,
+page#net_conf         QTabBar::scroller,
+page#system_ini       QTabBar::scroller  { /* the width of the scroll buttons */
+        width: 50px;
+        height: 50px;
+}
+page#info             QTabBar::tab,
+page#net_conf         QTabBar::tab,
+page#system_ini       QTabBar::tab  {
+        font: 20px "DejaVu Sans";
+        padding: 8px;
+        min-width:  150px;
+        min-height:  46px;
+}
+page#info             QTabWidget::pane, 
+page#net_conf         QTabWidget::pane, 
+page#system_ini       QTabWidget::pane  {
+        border-top: 1px solid rgb(87, 130, 193);
+        border: 1px solid rgb(87, 130, 193);
+        background-color: DimGray;
+        color: rgb(255, 237, 0);
+}
+page#info             QTabBar::tab:selected, 
+page#net_conf         QTabBar::tab:selected, 
+page#system_ini       QTabBar::tab:selected  {
+        qproperty-focusPolicy: NoFocus;
+        background: DimGray;
+        color: Yellow;
+        margin-left: -1px;
+        margin-right: -1px;
+}
+/* Info Page QPlainTextEdit */
+page#info             QPlainTextEdit  {
+        font: 20px "DejaVu Sans Mono";
+}
+/* system_ini objects */
+page#system_ini       QTabWidget QPushButton, 
+page#system_ini       QTabWidget QLabel, 
+page#system_ini       QTabWidget QLineEdit, 
+page#system_ini       QTabWidget QComboBox, 
+page#system_ini       QTabWidget QCheckBox  {
+        font: 20px "DejaVu Sans";
+        min-height: 36;
+}  
+/* net_conf Objects */
+page#net_conf         QLabel, 
+page#net_conf         QComboBox, 
+page#net_conf         QCheckBox, 
+page#net_conf         QPushButton  {
+        font: 21px "DejaVu Sans";
+        min-height:  38px;
+        max-height:  72px;
+}
+page#net_conf         QPushButton#pushButton_wifi_pwd  {
+        min-height:  35px;
+        max-height:  60px;
+}
+page#net_conf         QPushButton#pushButton_wifi_scan,
+page#net_conf         QPushButton#pushButton_wifi_disable,
+page#net_conf         QPushButton#pushButton_wifi_connect,
+page#net_conf         QPushButton#pushButton_wifi_disconnect,
+page#net_conf         QPushButton#pushButton_wifi_remove  {
+        min-height:  60px;
+        min-width:   60px;
+        max-height:  60px;
+        max-width:   60px;
+        height:      60px;
+        width:       60px;
+        border-radius: 6px;
+        border: 2px solid  rgb(94, 94, 94);
+        qproperty-iconSize: 50px;
+}
+page#net_conf         QPushButton#pushButton_wifi_disable  {
+        min-height:  34px;
+        min-width:   34px;
+        max-height:  34px;
+        max-width:   34px;
+        height:      34px;
+        width:       34px;
+        border-radius: 4px;
+        border: 2px solid  rgb(94, 94, 94);
+        qproperty-iconSize: 28px;
+}
+/* Scrollbars */
+QDialog#item_selector QScrollBar:vertical, 
+page#alarms           QScrollBar:vertical, 
+page#alarms_history   QScrollBar:vertical, 
+page#net_conf         QScrollBar:vertical, 
+page#recipe_select    QScrollBar:vertical  {
+        width: 42px;
+}
+/* QProgressBar in page0 (startup), recipe, time_set  */
+page#page0            QProgressBar, 
+page#recipe           QProgressBar, 
+page#time_set         QProgressBar  {
+        font: 18px "DejaVu Sans";
+}
+/* QListWidget in alarms, alarms_history, recipe_select, item_selector */
+/* QTableWidget in recipe, store  net_conf */
+QDialog#item_selector QListWidget,
+page#alarms           QListWidget, 
+page#alarms_history   QListWidget, 
+page#net_conf         QTableWidget, 
+page#recipe           QTableWidget, 
+page#recipe_select    QListWidget, 
+page#store            QTableWidget  {
+        outline: 0; 
+        font: 20px "DejaVu Sans";
+}
+QDialog#item_selector QListWidget::item, 
+page#net_conf         QTableWidget::item, 
+page#recipe           QTableWidget::item, 
+page#recipe_select    QListWidget::item, 
+page#store            QTableWidget::item  {
+        min-height:     36px;
+        min-width:     160px;
+        padding-top:     6px;
+        padding-bottom:  6px;
+        padding-left:    9px;
+        padding-right:   9px;
+        font: 24px "DejaVu Sans";
+}
+page#net_conf         QHeaderView::section, 
+page#recipe           QHeaderView::section,
+page#store            QHeaderView::section  {
+        min-height:   32px;
+        font: 18px "DejaVu Sans";
+}
+/* Trend Page */
+/* trend QLabel, Qwt */
+page#trend            QPushButton#pushButtonHome, 
+page#trend            QPushButton#pushButtonTime, 
+page#trend            QPushButton#pushButtonPan, 
+page#trend            QPushButton#pushButtonZoom, 
+page#trend            QPushButton#pushButtonTools, 
+page#trend            QPushButton#pushButtonBack,
+page#trend            QPushButton#pushButtonOnline, 
+page#trend_other      QPushButton#pushButtonRight, 
+page#trend_other      QPushButton#pushButtonLeft, 
+page#trend_other      QPushButton#pushButtonUp, 
+page#trend_other      QPushButton#pushButtonDown, 
+page#trend_other      QPushButton#pushButtonOnline, 
+page#trend_other      QPushButton#pushButtonScreenshot  {
+        min-height:  65px;
+        min-width:   65px;
+        max-height:  65px;
+        max-width:   65px;
+        height:      65px;
+        width:       65px;  
+        qproperty-iconSize: 50px;
+}
+page#trend            QwtScaleWidget  {
+        color: rgb(255, 237, 0);
+        font: 15px DejaVu Sans;
+}
+/* Spinbox for time_set trend_range store_filter  */
+page#store_filter     QAbstractSpinBox, 
+page#time_set         QAbstractSpinBox, 
+page#trend_range      QAbstractSpinBox  {
+        font: 19px "DejaVu Sans";
+        background-color: white;
+        border: 1px solid  rgb(100,100,100);
+        min-height:  78px;
+        max-height:  78px;
+        min-width:  180px;
+        padding-left:  30px;
+        padding-right: 3px;
+}
+page#store_filter     QAbstractSpinBox::up-button, 
+page#time_set         QAbstractSpinBox::up-button, 
+page#trend_range      QAbstractSpinBox::up-button  {
+        subcontrol-position: right center;
+        subcontrol-origin:margin;
+        background-color: DarkGray;
+        border: 1px  solid rgb(100,100,100);
+        spacing: 1px;
+        height: 72px;
+        width: 72px;
+}
+page#store_filter     QAbstractSpinBox::up-arrow, 
+page#time_set         QAbstractSpinBox::up-arrow, 
+page#trend_range      QAbstractSpinBox::up-arrow  {
+        image: url(:/libicons/img/Sq-plus.png);
+        width: 58px;
+        height: 58px;
+}
+page#store_filter     QAbstractSpinBox::down-button, 
+page#time_set         QAbstractSpinBox::down-button, 
+page#trend_range      QAbstractSpinBox::down-button  {
+        subcontrol-position: left center;
+        subcontrol-origin:margin;
+        background-color: DarkGray;
+        border: 1px solid  rgb(100,100,100);
+        spacing: 1px;
+        height: 72px;
+        width: 72px;
+}
+page#store_filter     QAbstractSpinBox::down-arrow, 
+page#time_set         QAbstractSpinBox::down-arrow, 
+page#trend_range      QAbstractSpinBox::down-arrow {
+        image: url(:/libicons/img/Sq-minus.png);
+        width: 58px;
+        height: 58px;
+}
+page#store_filter     QDateEdit, 
+page#time_set         QDateEdit, 
+page#trend_range      QDateEdit  {
+        background-color: white;
+        border: 1px solid  rgb(100,100,100);
+        spacing: 1px;
+        font: 26px "DejaVu Sans";
+}
+page#store_filter     QDateEdit::down-arrow, 
+page#time_set         QDateEdit::down-arrow, 
+page#trend_range      QDateEdit::down-arrow  {
+    image: url();
+}
+page#store_filter     QDateEdit::drop-down, 
+page#time_set         QDateEdit::drop-down, 
+page#trend_range      QDateEdit::drop-down  {
+        image: url(:/libicons/img/Chevron-down-double);
+        width:70px;
+        height:70px;
+        subcontrol-position: right center;
+        subcontrol-origin:margin;
+        background-color: DarkGray;
+        border: 1px solid  rgb(100,100,100);
+}
+page#store_filter     QCalendarWidget QToolButton#qt_calendar_prevmonth, 
+page#time_set         QCalendarWidget QToolButton#qt_calendar_prevmonth, 
+page#trend_range      QCalendarWidget QToolButton#qt_calendar_prevmonth  {
+        width: 40px;
+        height: 40px;
+        qproperty-iconSize: 38px;
+        qproperty-icon: url(:/libicons/img/Sq-left.png);
+}
+page#store_filter     QCalendarWidget QToolButton#qt_calendar_nextmonth,
+page#time_set         QCalendarWidget QToolButton#qt_calendar_nextmonth,
+page#trend_range      QCalendarWidget QToolButton#qt_calendar_nextmonth  {
+        width: 40px;
+        height: 40px;
+        qproperty-iconSize: 38px;
+        qproperty-icon: url(:/libicons/img/Sq-right.png);
+}
+/* Combobox for alarms, alarms_history net_conf time_set system_ini */
+page#alarms           QComboBox, 
+page#alarms_history   QComboBox, 
+page#net_conf         QComboBox, 
+page#system_ini       QComboBox, 
+page#time_set         QComboBox  {
+        padding: 1px 0px 1px 3px;
+        font: 24px "DejaVu Sans";
+}
+page#alarms           QComboBox QAbstractItemView, 
+page#alarms_history   QComboBox QAbstractItemView, 
+page#net_conf         QComboBox QAbstractItemView, 
+page#system_ini       QComboBox QAbstractItemView, 
+page#time_set         QComboBox QAbstractItemView  {
+        background-color: LightGray;
+        color: MediumBlue;
+}
+page#alarms           QComboBox::drop-down, 
+page#alarms_history   QComboBox::drop-down, 
+page#net_conf         QComboBox::drop-down, 
+page#system_ini       QComboBox::drop-down, 
+page#time_set         QComboBox::drop-down  {
+        subcontrol-position: right center;
+        subcontrol-origin:margin;
+        background-color: DarkGray;
+        border: 1px solid  rgb(100,100,100);
+        width: 85px;
+}
+page#alarms           QComboBox::down-arrow, 
+page#alarms_history   QComboBox::down-arrow, 
+page#net_conf         QComboBox::down-arrow, 
+page#system_ini       QComboBox::down-arrow, 
+page#time_set         QComboBox::down-arrow  {
+        image: url(:/libicons/img/Chevron-down-double);
+        width: 58px;
+        height: 58px;
+}
+/* alphanumpad and numpad common  settings */
+QDialog#alphanumpad, 
+QDialog#numpad  {
+        font: 48px DejaVu Sans Mono;
+}
+QDialog#alphanumpad   QPushButton,
+QDialog#numpad        QPushButton   {
+        qproperty-iconSize: 60px;
+        font: 44px DejaVu Sans Mono;
+}
+QDialog#numpad        QLabel#labelMax,
+QDialog#numpad        QLabel#labelMin,
+QDialog#alphanumpad   QLabel#labelPrompt,
+QDialog#numpad        QLabel#labelPrompt   {
+        font: 36px DejaVu Sans Mono;
+}
+QDialog#alphanumpad   QLineEdit#lineEditVal   {
+        font: 32px  DejaVu Sans Mono;
+}
+/* Only for numpad */
+QDialog#numpad        QLineEdit#lineEditVal   {
+        font: 67px DejaVu Sans Mono;
+}
+QDialog#numpad        QLineEdit#lineEditMax,
+QDialog#numpad        QLineEdit#lineEditMin   {
+        max-height: 72px;
+        height: 72px;
+        font: 52px DejaVu Sans Mono;
+}
+/* Only for alphanumpad */
+QDialog#alphanumpad   QLineEdit   {
+        font: 57px DejaVu Sans Mono;
+}
+/* QMessageBox for System and User QMessageBox */
+QMessageBox {
+        min-width: 520px;
+        min-height: 240px;
+        background-color: DarkGray;
+        color: rgb(255, 237, 0);
+        font: 18px "DejaVu Sans";
+}
+QMessageBox           QLabel {
+        color: Navy;
+        font: 18px "DejaVu Sans";
+}
+QMessageBox           QPushButton {
+        icon-size: 40px  40x;
+        min-width: 140px;
+        min-height: 65px;
+        border: 2px solid CornflowerBlue;
+        border-radius: 8px;
+        color:  DarkGreen;
+        background-color: LightBlue;
+        background-repeat: no-repeat;
+        background-position: center center;
+        image-position: top center;
+        text-align: bottom center;
+        font: 18px "DejaVu Sans";
+}

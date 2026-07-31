@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 16.0.1, 2026-07-17T18:37:00. -->
+<!-- Written by QtCreator 16.0.1, 2026-07-30T14:50:35. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -92,8 +92,8 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">GenericLinuxOsType</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MectSuite ARM64 kit (MectSuite 6.1.0)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MectSuite ARM64 kit (MectSuite 6.1.0)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MectSuite ARM64 kit (MectSuite 6.1.1)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MectSuite ARM64 kit (MectSuite 6.1.1)</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">mectsuite_arm64.kit</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
@@ -101,7 +101,7 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">build/%{Asciify:%{Kit:FileSystemName}_%{BuildConfig:Name}}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_0_Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_1_Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -140,7 +140,7 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">build/%{Asciify:%{Kit:FileSystemName}_%{BuildConfig:Name}}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_0_Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_1_Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -180,7 +180,7 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">./build/%{Asciify:%{Kit:FileSystemName}_%{BuildConfig:Name}}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_0_Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">build/MectSuite_ARM64_kit_MectSuite_6_1_1_Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -284,6 +284,36 @@
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
   <value type="int">22</value>
+ </data>
+ <data>
+  <variable>UserStickyKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ProjectExplorer.Project.Target.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.ProjectConfiguration.DefaultDisplayName</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.ProjectConfiguration.DisplayName</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0/ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0/ProjectExplorer.BuildConfiguration.BuildStepList.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0/QtProjectManager.QMakeBuildStep.SelectedAbis</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.0/ProjectExplorer.BuildConfiguration.UserEnvironmentChanges</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1/ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1/ProjectExplorer.BuildConfiguration.BuildStepList.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0/QtProjectManager.QMakeBuildStep.SelectedAbis</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.1/ProjectExplorer.BuildConfiguration.UserEnvironmentChanges</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2/ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2/ProjectExplorer.BuildConfiguration.BuildStepList.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2/ProjectExplorer.BuildConfiguration.BuildStepList.0/ProjectExplorer.BuildStepList.Step.0/QtProjectManager.QMakeBuildStep.SelectedAbis</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.BuildConfiguration.2/ProjectExplorer.BuildConfiguration.UserEnvironmentChanges</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.RunConfiguration.0</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.RunConfiguration.0/PE.EnvironmentAspect.Changes</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.RunConfiguration.0/ProjectExplorer.ProjectConfiguration.DisplayName</value>
+   <value type="QString">ProjectExplorer.Project.Target.0/ProjectExplorer.Target.RunConfiguration.0/ProjectExplorer.RunConfiguration.BuildKey</value>
+  </valuelist>
  </data>
  <data>
   <variable>Version</variable>

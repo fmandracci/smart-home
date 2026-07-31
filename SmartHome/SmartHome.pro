@@ -131,6 +131,8 @@ RESOURCES += \
 OTHER_FILES += \
     hmi.ini \
     hmi.qss \
+    TPX4100.qss \
+    TPX4120.qss \
     home_C.ini \
     home_L.ini \
     home_P.ini \
