@@ -23,7 +23,6 @@
 
 #include <math.h>
 
-#include "app_logprint.h"
 #include "crosstable.h"
 #include "global_var.h"
 #include "utility.h"
